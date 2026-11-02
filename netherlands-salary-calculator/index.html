@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netherlands Salary Calculator — Net Salary 2026 with 30% Ruling</title>
+<meta name="description" content="Dutch gross-to-net salary calculator for 2026: Box 1 tax, general and labour tax credits, 8% holiday allowance and the 30% ruling with its salary norm.">
+<meta name="keywords" content="netherlands salary calculator, dutch salary calculator, net salary calculator netherlands, 30% ruling calculator">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/netherlands-salary-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Netherlands Salary Calculator 2026 — Loona">
+<meta property="og:description" content="Calculate your Dutch net salary for 2026, with or without the 30% ruling. Tax credits and holiday allowance included.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/netherlands-salary-calculator/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Netherlands Salary Calculator 2026 — Loona">
+<meta name="twitter:description" content="Gross to net in the Netherlands for 2026 — Box 1 tax, both credits, holiday allowance, 30% ruling. Free.">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Netherlands Salary Calculator","url":"https://loonaautomation.github.io/loona-salary-calculators/netherlands-salary-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the 30% ruling and who qualifies?","acceptedAnswer":{"@type":"Answer","text":"The expat ruling lets an employer pay up to 30% of your salary tax-free as an extraterritorial-costs allowance, for up to 5 years. Your taxable salary after the allowance must exceed the salary norm — €48,013 in 2026, or €36,497 if you are under 30 with a qualifying master's degree. You must also have been recruited from abroad and have lived more than 150 km from the Dutch border for at least 16 of the 24 months before starting."}},
+{"@type":"Question","name":"Does the 30% ruling change in 2027?","acceptedAnswer":{"@type":"Answer","text":"Yes. From 1 January 2027 the maximum allowance drops from 30% to 27% for rulings first applied from 2024 onwards. Employees whose ruling was applied before 1 January 2024 keep 30% for the rest of their term. This calculator has a selector for each case."}},
+{"@type":"Question","name":"What is holiday allowance (vakantiegeld)?","acceptedAnswer":{"@type":"Answer","text":"By law your employer pays at least 8% of your gross annual salary as holiday allowance, usually in May. Dutch job offers quote salaries including or excluding it, so this calculator asks which applies — it changes your taxable salary."}},
+{"@type":"Question","name":"Why is my payslip different from this estimate?","acceptedAnswer":{"@type":"Answer","text":"Most Dutch employees pay pension contributions through their employer's scheme, which are deducted before tax and lower the tax bill. Schemes differ, so this calculator offers an optional pension percentage input (default 0%). Sector funds, a company car and other benefits also change a real payslip."}},
+{"@type":"Question","name":"What are the Dutch income tax brackets for 2026?","acceptedAnswer":{"@type":"Answer","text":"Box 1 for 2026 (below pension age): 35.75% up to €38,883; 37.56% from €38,883 to €78,426; 49.50% above €78,426. Two tax credits then reduce the bill: the general tax credit (max €3,115) and the labour tax credit (max €5,685)."}}
+]}
+</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+label.ck{font-weight:500;color:var(--ink);display:flex;gap:8px;align-items:center}
+label.ck input{width:auto}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="../">← Loona Salary &amp; Tax Calculators</a>
+<h1>Netherlands Salary Calculator — Net Salary 2026</h1>
+<p>Your Dutch gross-to-net for tax year 2026: Box 1 brackets, the general and labour tax credits, the 8% holiday allowance, and the 30% ruling (with the 2027 change to 27% built in as an option).</p>
+</div></header>
+<div class="wrap">
+<div class="calc">
+<label for="gross">Gross annual salary (€)</label>
+<input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal">
+<label class="ck"><input type="checkbox" id="inclHol"> This salary <strong>includes</strong> the 8% holiday allowance</label>
+<div class="row">
+<div><label for="pension">Pension contribution (% of gross, optional)</label><input type="number" id="pension" min="0" max="40" step="any" value="0" inputmode="decimal"></div>
+<div><label for="ruling">30% ruling</label>
+<select id="ruling">
+<option value="0">No ruling</option>
+<option value="2026" selected>Yes — 30% (2026)</option>
+<option value="2027">Yes — 27% (from 1 Jan 2027)</option>
+<option value="pre2024">Yes — started before 2024 (keeps 30%)</option>
+</select></div>
+</div>
+<label class="ck"><input type="checkbox" id="master"> I am under 30 with a qualifying master's degree (lower salary norm)</label>
+<div class="result" id="result">
+<div>Net salary per month</div>
+<div class="big" id="rNetM">€0</div>
+<table>
+<tr><td>Gross annual salary (incl. holiday allowance)</td><td id="rGross">—</td></tr>
+<tr><td>of which holiday allowance (8%)</td><td id="rHol">—</td></tr>
+<tr><td>Tax-free ruling allowance</td><td id="rAllow">—</td></tr>
+<tr><td>Pension contribution (deductible)</td><td id="rPen">—</td></tr>
+<tr><td>Taxable salary</td><td id="rTaxable">—</td></tr>
+<tr><td>Box 1 tax before credits</td><td id="rTaxB">—</td></tr>
+<tr><td>General tax credit</td><td id="rGC">—</td></tr>
+<tr><td>Labour tax credit</td><td id="rLC">—</td></tr>
+<tr><td>Income tax payable</td><td id="rTax">—</td></tr>
+<tr><td>Net annual salary</td><td id="rNetA">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>How it is calculated</h2>
+<ul>
+<li><strong>Box 1 brackets 2026:</strong> 35.75% up to €38,883 · 37.56% from €38,883 to €78,426 · 49.50% above €78,426 (rates include national-insurance premiums).</li>
+<li><strong>Holiday allowance:</strong> at least 8% of gross. If your quoted salary includes it, the calculator shows it separately; if not, 8% is added on top.</li>
+<li><strong>30% ruling:</strong> the chosen percentage of salary is paid tax-free. It applies only to salary up to €262,000 (maximum allowance €78,600 in 2026) and your taxable salary after the allowance must stay above the salary norm — <strong>€48,013</strong> in 2026, or <strong>€36,497</strong> if under 30 with a qualifying master's. If the full percentage would breach the norm, this calculator reduces the allowance to the largest amount the norm allows and tells you. From 1 January 2027 the percentage drops to 27%, except for rulings applied before 1 January 2024, which keep 30%.</li>
+<li><strong>Tax credits</strong> (subtracted from the tax, never below zero): general tax credit max €3,115, reduced by 6.398% of income above €29,736; labour tax credit max €5,685 at €45,592 of income, reduced by 6.51% above that (gone at €132,920).</li>
+<li><strong>Pension:</strong> employee pension contributions are scheme-specific, not statutory. If you enter a percentage, it is deducted from taxable salary.</li>
+</ul>
+<p style="margin-top:8px">Worked example: €60,000 gross, no ruling, no pension → tax €15,906.47 → net <strong>€44,093.53 per year (€3,674.46 per month)</strong>. The same salary with the 30% ruling: the norm limits the tax-free allowance to €11,987 (so that taxable salary stays at €48,013), tax falls to €9,856.87 and net rises to <strong>€50,143.13 per year</strong>.</p>
+</div>
+
+<div class="sec">
+<h2>Frequently asked questions</h2>
+<div class="faq"><h3>What is the 30% ruling?</h3><p>An expat scheme: up to 30% of salary paid tax-free for up to 5 years, if you were recruited from abroad, lived 150+ km from the Dutch border, and your post-allowance taxable salary exceeds the norm (€48,013 in 2026; €36,497 under-30 with a master's).</p></div>
+<div class="faq"><h3>What changes in 2027?</h3><p>The maximum drops to 27% for rulings first applied from 2024; pre-2024 rulings keep 30%. Use the selector above to preview either case.</p></div>
+<div class="faq"><h3>Is holiday allowance taxed?</h3><p>Yes — it is part of your taxable salary, usually withheld at a special rate when paid in May. This calculator includes it in the annual figures either way.</p></div>
+<div class="faq"><h3>Why does my real payslip differ?</h3><p>Pension contributions through your employer's scheme (enter your % above), a company car, and other benefits change a real payslip. This tool is an estimate on salary alone.</p></div>
+<div class="faq"><h3>What are the 2026 brackets?</h3><p>35.75% to €38,883; 37.56% to €78,426; 49.50% above — then both tax credits reduce the bill.</p></div>
+</div>
+
+<div class="note"><strong>Privacy:</strong> this calculation runs 100% on your device — your salary never leaves your browser. <strong>Disclaimer:</strong> estimate only, based on the 2026 Box 1 tables and credits published by the Belastingdienst/KVK; not tax advice. The 2027 salary norms are not yet final and are not hard-coded here — the norm test uses the 2026 norms. Figures last verified: 2 November 2026.</div>
+
+<div class="sec"><h2>More calculators</h2>
+<div class="links">
+<a href="../uae-gratuity-calculator/">UAE Gratuity</a>
+<a href="../saudi-end-of-service-calculator/">Saudi End of Service</a>
+<a href="../pakistan-salary-tax-calculator/">Pakistan Salary Tax</a>
+<a href="../germany-salary-calculator/">Germany Gross-to-Net</a>
+<a class="alt" href="../">All calculators</a>
+</div></div>
+</div>
+<footer>© 2026 Loona Automation — <a href="../">Loona Salary &amp; Tax Calculators</a></footer>
+<script>
+/*CALC-START*/
+var NL2026 = { b1:38883, r1:0.3575, b2:78426, r2:0.3756, r3:0.495,
+  gcMax:3115, gcFrom:29736, gcRate:0.06398,
+  lcMax:5685, lcPeak:45592, lcRate:0.0651,
+  norm:48013, normMaster:36497, cap:262000 };
+function nlBracketTax(t){
+  if(t<=0) return 0;
+  var tax = Math.min(t,NL2026.b1)*NL2026.r1;
+  if(t>NL2026.b1) tax += (Math.min(t,NL2026.b2)-NL2026.b1)*NL2026.r2;
+  if(t>NL2026.b2) tax += (t-NL2026.b2)*NL2026.r3;
+  return tax;
+}
+function nlGeneralCredit(income){
+  var c = NL2026.gcMax - NL2026.gcRate*Math.max(0,income-NL2026.gcFrom);
+  return Math.max(0,c);
+}
+function nlLabourCredit(income){
+  if(income<=0) return 0;
+  if(income>=NL2026.lcPeak) return Math.max(0, NL2026.lcMax - NL2026.lcRate*(income-NL2026.lcPeak));
+  /* Build-up below the peak uses the published Belastingdienst step rates
+     (8.425% / 29.936% / 2.961% steps) joined to the verified maximum of
+     EUR 5,685 at EUR 45,592. Endpoints and phase-out are verified; the
+     low-income step thresholds are secondary-source (see PLAN Appendix A). */
+  var s1=11491, s2=24681, s3=40041;
+  if(income<=s1) return income*0.08425;
+  if(income<=s2) return 968 + (income-s1)*0.29936;
+  if(income<=s3) return 4917 + (income-s2)*0.02961;
+  var atS3 = 4917 + (s3-s2)*0.02961;
+  return atS3 + (income-s3)*((NL2026.lcMax-atS3)/(NL2026.lcPeak-s3));
+}
+function nlNet(o){
+  var gross = o.gross||0;
+  var totalGross = o.includesHoliday ? gross : gross*1.08;
+  var holiday = totalGross - totalGross/1.08;
+  var pension = totalGross*(o.pensionPct||0)/100;
+  var pct = o.rulingPct||0;
+  var norm = o.under30Master ? NL2026.normMaster : NL2026.norm;
+  var allowance = 0, normLimited = false, normFailed = false;
+  if(pct>0){
+    allowance = (pct/100)*Math.min(totalGross, NL2026.cap);
+    var maxAllow = totalGross - pension - norm;
+    if(maxAllow < 0){ allowance = 0; normFailed = true; }
+    else if(allowance > maxAllow){ allowance = maxAllow; normLimited = true; }
+  }
+  var taxable = Math.max(0, totalGross - pension - allowance);
+  var taxBefore = nlBracketTax(taxable);
+  var gc = nlGeneralCredit(taxable);
+  var lc = nlLabourCredit(taxable);
+  var tax = Math.max(0, taxBefore - gc - lc);
+  var net = totalGross - pension - tax;
+  return {totalGross:totalGross, holiday:holiday, allowance:allowance, pension:pension,
+    taxable:taxable, taxBefore:taxBefore, gc:gc, lc:lc, tax:tax, netAnnual:net,
+    netMonthly:net/12, normLimited:normLimited, normFailed:normFailed};
+}
+/*CALC-END*/
+function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function calc(){
+  var gross = parseFloat(document.getElementById("gross").value)||0;
+  var box = document.getElementById("result");
+  if(gross<=0){ box.style.display="none"; return; }
+  var rv = document.getElementById("ruling").value;
+  var pct = rv==="2026"||rv==="pre2024" ? 30 : (rv==="2027" ? 27 : 0);
+  var r = nlNet({gross:gross, includesHoliday:document.getElementById("inclHol").checked,
+    pensionPct:parseFloat(document.getElementById("pension").value)||0,
+    rulingPct:pct, under30Master:document.getElementById("master").checked});
+  document.getElementById("rGross").textContent = fmt(r.totalGross);
+  document.getElementById("rHol").textContent = fmt(r.holiday);
+  document.getElementById("rAllow").textContent = fmt(r.allowance);
+  document.getElementById("rPen").textContent = fmt(r.pension);
+  document.getElementById("rTaxable").textContent = fmt(r.taxable);
+  document.getElementById("rTaxB").textContent = fmt(r.taxBefore);
+  document.getElementById("rGC").textContent = "− " + fmt(r.gc);
+  document.getElementById("rLC").textContent = "− " + fmt(r.lc);
+  document.getElementById("rTax").textContent = fmt(r.tax);
+  document.getElementById("rNetA").textContent = fmt(r.netAnnual);
+  document.getElementById("rNetM").textContent = fmt(r.netMonthly);
+  var note = "Net monthly is the annual net divided by 12; in practice the holiday allowance is usually paid once a year (often in May), so monthly payslips vary.";
+  if(r.normLimited) note = "Salary norm applied: the tax-free allowance was reduced so your taxable salary stays at the 2026 norm. " + note;
+  if(r.normFailed) note = "Your salary does not clear the 2026 salary norm after pension, so the ruling gives no benefit in this estimate. " + note;
+  document.getElementById("rNote").textContent = note;
+  box.style.display = "block";
+}
+["gross","inclHol","pension","ruling","master"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
+calc();
+</script>
+</body>
+</html>
