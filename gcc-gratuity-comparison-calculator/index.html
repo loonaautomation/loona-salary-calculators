@@ -138,6 +138,26 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="note"><strong>Privacy:</strong> this calculation runs 100% on your device — your salary and dates never leave your browser. <strong>Disclaimer:</strong> comparison estimate only, using each country's standard formula as documented on its dedicated Loona calculator page (Qatar at its 21-day legal floor; Kuwait with the disclosed ÷ 26 / full-wage method); not legal advice. Formulas last verified: 2 November 2026.</div>
 
+<div class="sec">
+<h2>How it works — the formula</h2>
+<p>This tool runs one set of inputs through the six national formulas side by side, exactly as each country's own Loona calculator implements them. Three different salary bases are in play: the UAE, Qatar and Oman use the basic salary only; Saudi Arabia and Kuwait use the total wage (basic plus fixed allowances); Bahrain uses basic plus the social allowance. Service years come from your dates (days ÷ 365.25), and Oman is split at 1 August 2023 into old-law and new-law service.</p>
+<ul style="margin-top:8px">
+<li><strong>UAE:</strong> basic ÷ 30 × (21 days × first 5 years + 30 days × later years); nothing under 1 year; capped at 24 months of basic salary.</li>
+<li><strong>Saudi Arabia:</strong> 0.5 month of total wage × first 5 years + 1 month × later years; Article 85 resignation scale 0 / ⅓ / ⅔ / full.</li>
+<li><strong>Qatar:</strong> basic ÷ 30 × 21 days × years — the Article 54 legal floor; nothing under 1 year.</li>
+<li><strong>Kuwait:</strong> 15 days per year for 5 years at total wage ÷ 26, then 1 month per year; Article 53 resignation scale 0 / ½ / ⅔ / full; capped at 18 months of wage.</li>
+<li><strong>Oman:</strong> pre-Aug-2023 service at 0.5 month × first 3 years + 1 month after; post-Aug-2023 service at 1 month per year — all on basic salary.</li>
+<li><strong>Bahrain:</strong> (basic + social allowance) × (0.5 × first 3 years + 1 × later years); no cap.</li>
+</ul>
+<h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Worked example</h3>
+<p>Monthly basic salary 6,000, total monthly wage 9,000, no social allowance, service 1 March 2018 to 1 March 2026 — exactly 8.00 years, of which 5.42 years fall before Oman's August 2023 law change, employer ends the contract. Results: <strong>Kuwait 52,961.54 · Saudi Arabia 49,500.00 · UAE 39,000.00 · Oman 39,000.00 · Bahrain 39,000.00 · Qatar 33,600.00</strong>. Switch the ending to "resigns" and only two figures move: Saudi Arabia falls to 33,000.00 (the ⅔ share at 8 years) and Kuwait to 35,307.69.</p>
+<h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Frequently asked questions</h3>
+<div class="faq"><h3>Why do the UAE, Oman and Bahrain all show 39,000 in the example above?</h3><p>A coincidence of these particular inputs, not a shared formula. At 8 years the UAE day-count formula happens to total 6.5 months of basic salary, Bahrain's rate is also 6.5 months of its (here identical) wage base, and Oman's split service lands on the same total. Change the service length or the allowance mix and the three separate immediately.</p></div>
+<div class="faq"><h3>I worked in two Gulf countries — can I add the two results together?</h3><p>Each country's gratuity covers only the service you completed there, under that country's law and on the wage you earned there. Run the comparison once per employment, with that job's salary and dates — there is no combined GCC scheme, and service in one country does not count in another.</p></div>
+<div class="faq"><h3>Why is Kuwait's daily wage the monthly wage divided by 26?</h3><p>Kuwaiti practice converts a monthly wage to a daily wage over 26 working days, and Article 51's first-five-years rate is expressed in days (15 days per year). This comparison follows that convention — the same one used by our Kuwait calculator — while service after the fifth year is paid as full months.</p></div>
+<div class="faq"><h3>Does the comparison include notice pay or unused leave?</h3><p>No — it compares end-of-service gratuity and indemnity only. Final settlements usually contain other items (unused leave, notice pay, repatriation), which depend on the contract and are not part of any of the six formulas.</p></div>
+<div class="faq"><h3>My contract promises more than the legal formula — which figure should I rely on?</h3><p>The higher one. These are statutory formulas, and Qatar's is explicitly a floor (21 days per year); a contract can improve on the law but cannot lawfully pay less than it. Where your contract gives a better rate, that rate governs your actual payment.</p></div>
+</div>
 <div class="sec"><h2>More calculators</h2>
 <div class="links">
 <a href="../uae-gratuity-calculator/">UAE Gratuity</a>
