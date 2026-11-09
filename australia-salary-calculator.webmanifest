@@ -1,6 +1,6 @@
 {
   "name": "Loona Australia Net Salary Calculator",
-  "short_name": "Australia Net Salary Calculator",
+  "short_name": "Australia Net Salary",
   "description": "Calculate your take-home pay in Australia for 2025–26: resident PAYG income tax rates, the low income tax offset (LITO) and the 2% Medicare levy. Free.",
   "id": "/loona-salary-calculators/australia-salary-calculator.html",
   "start_url": "./australia-salary-calculator.html",

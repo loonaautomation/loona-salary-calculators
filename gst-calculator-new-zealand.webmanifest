@@ -1,6 +1,6 @@
 {
   "name": "Loona New Zealand GST Calculator (15% Rate)",
-  "short_name": "New Zealand GST Calculator (15% ",
+  "short_name": "New Zealand GST Calculator",
   "description": "Free New Zealand GST calculator: add or remove 15% GST in seconds, with the full formula and worked examples in NZD. No sign-up, runs on your device.",
   "id": "/loona-salary-calculators/gst-calculator-new-zealand.html",
   "start_url": "./gst-calculator-new-zealand.html",

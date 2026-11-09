@@ -1,6 +1,6 @@
 {
   "name": "Loona Saudi End of Service Calculator",
-  "short_name": "Saudi End of Service Calculator",
+  "short_name": "Saudi End of Service",
   "description": "Calculate your Saudi end of service benefits (EOSB): half a month's wage per year for 5 years, a full month after — plus the Article 85 resignation scale. Free.",
   "id": "/loona-salary-calculators/saudi-end-of-service-calculator/",
   "start_url": ".",

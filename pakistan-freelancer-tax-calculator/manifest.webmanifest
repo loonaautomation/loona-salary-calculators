@@ -1,6 +1,6 @@
 {
   "name": "Loona Pakistan Freelancer Tax Calculator",
-  "short_name": "Pakistan Freelancer Tax Calculat",
+  "short_name": "Pakistan Freelancer Tax",
   "description": "Calculate Pakistan freelancer and IT-export tax under Section 154A: 0.25% if PSEB-registered, 1% if not, with filer and non-filer rates compared. Free.",
   "id": "/loona-salary-calculators/pakistan-freelancer-tax-calculator/",
   "start_url": ".",
