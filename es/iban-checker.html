@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comprobador de IBAN — Validador gratuito de IBAN (suma de comprobación Mod-97)</title>
+<meta name="description" content="Verificador de IBAN gratuito: valida cualquier IBAN europeo al instante con la suma de control real mod-97, la comprobación de longitud por país y el formato agrupado. Sin registro, privado.">
+<meta name="keywords" content="iban checker, iban validator, validate iban, iban check, mod 97 iban, european iban checker">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/iban-checker.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/iban-checker.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/iban-checker.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/iban-checker.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><meta property="og:locale" content="es_ES">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Comprobador de IBAN — Loona">
+<meta property="og:description" content="Validador de IBAN gratuito con la suma de control real mod-97 y la tabla de longitudes por país para Europa. Instantáneo, privado y sin registro.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comprobador de IBAN — Loona">
+<meta name="twitter:description" content="Valida cualquier IBAN europeo al instante con la suma de verificación mod-97. Gratis, privado y sin registro.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Verificador de IBAN","url":"https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es el mod-97 y cómo comprueba un IBAN?","acceptedAnswer":{"@type":"Answer","text":"Mod-97 es la suma de comprobación integrada en cada IBAN según la norma ISO 13616. Los cuatro primeros caracteres se mueven al final, las letras se convierten en números (A=10 a Z=35) y el número largo resultante se divide entre 97 por bloques. Un IBAN auténtico siempre deja un resto de exactamente 1; cualquier otro resto significa que se escribió mal un dígito o una letra."}},{"@type":"Question","name":"¿Cuál es la diferencia entre un IBAN y un código SWIFT/BIC?","acceptedAnswer":{"@type":"Answer","text":"Un IBAN identifica una cuenta bancaria concreta en un país. Un código SWIFT/BIC identifica al propio banco y sucursal, no tu cuenta. Las transferencias internacionales suelen necesitar el IBAN de la cuenta y también pueden pedir el SWIFT/BIC del banco."}},{"@type":"Question","name":"¿Un IBAN válido significa que la cuenta existe?","acceptedAnswer":{"@type":"Answer","text":"No. Un resultado válido significa solo que el formato y la suma de comprobación mod-97 son correctos para ese país. No puede confirmar que la cuenta existe, está abierta, pertenece a la persona que esperas o tiene dinero. Confirma siempre los datos de la cuenta con el destinatario a través de un canal de confianza antes de enviar dinero."}},{"@type":"Question","name":"¿Dónde puedo encontrar mi propio IBAN?","acceptedAnswer":{"@type":"Answer","text":"En tu extracto bancario, dentro de tu aplicación bancaria o en la banca en línea (normalmente en los datos de la cuenta), en algunas tarjetas bancarias, o preguntando a tu banco. En la mayoría de los países europeos el IBAN aparece impreso en la parte superior de cada extracto."}},{"@type":"Question","name":"¿Por qué este comprobador no pide ningún acceso bancario ni datos personales?","acceptedAnswer":{"@type":"Answer","text":"Porque no se necesita ninguno. La validación del IBAN es pura matemática sobre el propio número, por lo que esta herramienta funciona al 100% en tu dispositivo y nunca envía a ningún sitio el IBAN que escribas."}},{"@type":"Question","name":"¿Puede un solo dígito erróneo superar aun así la prueba mod-97?","acceptedAnswer":{"@type":"Answer","text":"Casi nunca por un solo error. La suma de control mod-97 está diseñada para detectar todos los errores de un solo dígito y casi todos los dígitos vecinos intercambiados, por lo que los bancos rechazan un IBAN mal escrito de inmediato en lugar de enviar dinero a la cuenta equivocada."}},{"@type":"Question","name":"¿Cuánto mide un IBAN en cada país?","acceptedAnswer":{"@type":"Answer","text":"La longitud es fija por país, desde 15 caracteres en Noruega hasta 31 en Malta. Alemania usa 22, Francia 27, el Reino Unido 22, España 24 y Suiza 21. Este comprobador compara tu IBAN con la longitud oficial exacta de su código de país antes de ejecutar la suma de verificación."}},{"@type":"Question","name":"¿Debo escribir mi IBAN con espacios o sin ellos?","acceptedAnswer":{"@type":"Answer","text":"Ambas formas funcionan aquí. Los IBAN suelen imprimirse en bloques de cuatro para su lectura, pero los espacios no forman parte del número. Este verificador elimina los espacios automáticamente y te muestra la versión agrupada lista para imprimir."}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://loonaautomation.github.io/loona-salary-calculators/es/"},{"@type":"ListItem","position":2,"name":"Verificador de IBAN","item":"https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"}]}</script>
+<link rel="manifest" href="../iban-checker.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>Verificador de IBAN</h1>
+<p>Valida cualquier IBAN europeo en segundos con la verdadera suma de verificación mod-97 de la norma ISO 13616, más la comprobación de longitud oficial de su país, el nombre de su país y un formato agrupado listo para imprimir. Gratis, sin registro.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>En resumen:</strong> escribe o pega un IBAN y este comprobador elimina los espacios, comprueba el código de país de dos letras y la longitud exacta de ese país, y luego ejecuta la suma de verificación mod-97. Un resto de 1 significa que el número está correctamente formado: no demuestra que la cuenta exista.</p></div>
+<div class="calc">
+<label for="iban">IBAN</label>
+<input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<div class="result" id="result">
+<div id="rTitle">Resultado</div>
+<div class="big" id="rVerdict">—</div>
+<table>
+<tr><td>País</td><td id="rCountry">—</td></tr>
+<tr><td>IBAN normalizado</td><td id="rNorm">—</td></tr>
+<tr><td>Agrupado (bloques de 4)</td><td id="rGrouped">—</td></tr>
+<tr><td>Longitud</td><td id="rLength">—</td></tr>
+<tr><td>Resto de Mod-97 (debe ser 1)</td><td id="rMod">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>Cómo se calcula</h2>
+<p>Todo IBAN sigue la norma ISO 13616. La validación que usan los bancos —y este verificador— tiene cuatro pasos:</p>
+<ul>
+<li><strong>Normalizar:</strong> elimina los espacios y convierte a mayúsculas.</li>
+<li><strong>Estructura:</strong> el número debe coincidir con dos letras (país), dos dígitos de control y luego solo letras y dígitos.</li>
+<li><strong>Longitud:</strong> la longitud total debe ser igual a la longitud fija de ese país: por ejemplo, 22 para Alemania, 27 para Francia, 22 para el Reino Unido, 21 para Suiza y 15 para Noruega.</li>
+<li><strong>Suma de comprobación Mod-97:</strong> mueve los cuatro primeros caracteres al final, convierte las letras en números (A = 10, B = 11, … Z = 35) y luego divide entre 97 por bloques. Fórmula: IBAN reordenado mod 97 = 1 para un IBAN válido.</li>
+</ul>
+<p style="margin-top:8px">Ejemplos resueltos: cada resultado siguiente lo rellena el propio validador de esta página cuando la página se carga, así que nunca puede discrepar del comprobador anterior:</p>
+<ul>
+<li>Alemania: DE89370400440532013000 → <span id="ex1">comprobando…</span></li>
+<li>Reino Unido: GB29NWBK60161331926819 → <span id="ex2">comprobando…</span></li>
+<li>Francia: FR1420041010050500013M02606 → <span id="ex3">comprobando…</span></li>
+<li>Suiza: CH9300762011623852957 → <span id="ex4">comprobando…</span></li>
+<li>Noruega: NO9386011117947 → <span id="ex5">comprobando…</span></li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>Preguntas frecuentes</h2>
+<div class="faq"><h3>¿Qué es el mod-97 y cómo comprueba un IBAN?</h3><p>Mod-97 es la suma de comprobación integrada en cada IBAN según la norma ISO 13616. Los cuatro primeros caracteres se mueven al final, las letras se convierten en números (A=10 a Z=35) y el número largo resultante se divide entre 97 por bloques. Un IBAN auténtico siempre deja un resto de exactamente 1; cualquier otro resto significa que se escribió mal un dígito o una letra.</p></div>
+<div class="faq"><h3>¿Cuál es la diferencia entre un IBAN y un código SWIFT/BIC?</h3><p>Un IBAN identifica una cuenta bancaria concreta en un país. Un código SWIFT/BIC identifica al propio banco y sucursal, no tu cuenta. Las transferencias internacionales suelen necesitar el IBAN de la cuenta y también pueden pedir el SWIFT/BIC del banco.</p></div>
+<div class="faq"><h3>¿Un IBAN válido significa que la cuenta existe?</h3><p>No. Un resultado válido significa solo que el formato y la suma de comprobación mod-97 son correctos para ese país. No puede confirmar que la cuenta existe, está abierta, pertenece a la persona que esperas o tiene dinero. Confirma siempre los datos de la cuenta con el destinatario a través de un canal de confianza antes de enviar dinero.</p></div>
+<div class="faq"><h3>¿Dónde puedo encontrar mi propio IBAN?</h3><p>En tu extracto bancario, dentro de tu aplicación bancaria o en la banca en línea (normalmente en los datos de la cuenta), en algunas tarjetas bancarias, o preguntando a tu banco. En la mayoría de los países europeos el IBAN aparece impreso en la parte superior de cada extracto.</p></div>
+<div class="faq"><h3>¿Por qué este comprobador no pide ningún acceso bancario ni datos personales?</h3><p>Porque no se necesita ninguno. La validación del IBAN es pura matemática sobre el propio número, por lo que esta herramienta funciona al 100% en tu dispositivo y nunca envía a ningún sitio el IBAN que escribas.</p></div>
+</div>
+
+<div class="note"><strong>Privacidad:</strong> este comprobador se ejecuta al 100% en tu dispositivo: el IBAN que escribes nunca sale de tu navegador. <strong>Aviso:</strong> solo validación de formato y suma de verificación, basada en la norma de IBAN ISO 13616; no puede confirmar que una cuenta exista. Longitudes y normas verificadas en noviembre de 2026 con el Registro de IBAN de la ISO 13616.</div>
+
+<div class="sec"><h2>Más calculadoras</h2>
+<div class="links">
+<a href="vat-calculator.html">Calculadora de IVA</a>
+<a href="reverse-vat-calculator.html">Calculadora inversa de IVA</a>
+<a href="vat-number-checker.html">Verificador de número de IVA</a>
+<a class="alt" href="./">Todas las calculadoras</a>
+</div></div>
+<div class="sec">
+<h2>Cómo funciona — la fórmula</h2>
+<p>Un IBAN se autocomprueba por diseño. Su tercer y cuarto carácter son dígitos de control elegidos por el banco emisor para que el número completo supere una prueba aritmética exacta. Para ejecutar esa prueba, toma el IBAN, mueve sus cuatro primeros caracteres (código de país más dígitos de control) al final, sustituye cada letra por un número de dos dígitos (A = 10 hasta Z = 35), y calcula ese número tan largo módulo 97: en la práctica en trozos pequeños, llevando cada resto al siguiente trozo para que los números se mantengan manejables. Si el resto final es exactamente 1, el IBAN está correctamente formado; cualquier error al escribir un dígito o una letra cambia el resto y se detecta antes de que el dinero se mueva.</p>
+<h3>Ejemplo resuelto</h3>
+<p>Toma el IBAN alemán DE89370400440532013000. Su código de país es DE (Alemania), su longitud prevista es 22 y tiene exactamente 22 caracteres. Reordenado y convertido, empieza por 370400440532013000131489 — y ese número módulo 97 es <strong><span id="exWorked">…</span></strong>, completado por el validador de esta página. Un resto de 1 es la nota de aprobado que busca todo banco.</p>
+<h3>Preguntas frecuentes</h3>
+<div class="faq"><h3>¿Puede un solo dígito erróneo superar aun así la prueba mod-97?</h3><p>Casi nunca por un solo error. La suma de control mod-97 está diseñada para detectar todos los errores de un solo dígito y casi todos los dígitos vecinos intercambiados, por lo que los bancos rechazan un IBAN mal escrito de inmediato en lugar de enviar dinero a la cuenta equivocada.</p></div>
+<div class="faq"><h3>¿Cuánto mide un IBAN en cada país?</h3><p>La longitud es fija por país, desde 15 caracteres en Noruega hasta 31 en Malta. Alemania usa 22, Francia 27, el Reino Unido 22, España 24 y Suiza 21. Este comprobador compara tu IBAN con la longitud oficial exacta de su código de país antes de ejecutar la suma de verificación.</p></div>
+<div class="faq"><h3>¿Debo escribir mi IBAN con espacios o sin ellos?</h3><p>Ambas formas funcionan aquí. Los IBAN suelen imprimirse en bloques de cuatro para su lectura, pero los espacios no forman parte del número. Este verificador elimina los espacios automáticamente y te muestra la versión agrupada lista para imprimir.</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>Incrusta esta calculadora en tu sitio web — gratis</h2>
+<p>Añade esta calculadora a tu propio sitio web o blog — es completamente gratuita, no requiere registro y siempre muestra la última versión. Copia el código de abajo y pégalo en tu página donde quieras que aparezca la calculadora. Mantener la pequeña línea de crédito &ldquo;Powered by Loona Automation&rdquo; debajo del elemento incrustado ayuda a mantener gratuita esta herramienta &mdash; pero eres libre de darle estilo o eliminarla; la herramienta funciona de cualquier modo.</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="IBAN Checker by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;Desarrollado por &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; gratis Verificador de IBAN&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">Copiar código de inserción</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='¡Copiado!';setTimeout(function(){b.textContent='Copiar código de inserción';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">Acerca de</a> · <a href="privacy.html">Política de privacidad</a> · <a href="terms.html">Términos</a> · <a href="contact.html">Contacto</a></footer>
+<script>
+/*CALC-START*/
+var IBAN_LENGTHS = {AL:28,AD:24,AT:20,BE:16,BA:20,BG:22,HR:21,CY:28,CZ:24,DK:18,EE:20,FO:18,FI:18,FR:27,GE:22,DE:22,GI:23,GR:27,GL:18,HU:28,IS:26,IE:22,IT:27,LV:21,LI:21,LT:20,LU:20,MK:19,MT:31,MC:27,ME:22,NL:18,NO:15,PL:28,PT:25,RO:24,SM:27,RS:22,SK:24,SI:19,ES:24,SE:24,CH:21,TR:26,GB:22,UA:29,VA:22};
+var IBAN_COUNTRIES = {AL:"Albania",AD:"Andorra",AT:"Austria",BE:"Bélgica",BA:"Bosnia y Herzegovina",BG:"Bulgaria",HR:"Croacia",CY:"Chipre",CZ:"Chequia",DK:"Dinamarca",EE:"Estonia",FO:"Islas Feroe",FI:"Finlandia",FR:"Francia",GE:"Georgia",DE:"Alemania",GI:"Gibraltar",GR:"Grecia",GL:"Groenlandia",HU:"Hungría",IS:"Islandia",IE:"Irlanda",IT:"Italia",LV:"Letonia",LI:"Liechtenstein",LT:"Lituania",LU:"Luxemburgo",MK:"Macedonia del Norte",MT:"Malta",MC:"Mónaco",ME:"Montenegro",NL:"Países Bajos",NO:"Noruega",PL:"Polonia",PT:"Portugal",RO:"Rumanía",SM:"San Marino",RS:"Serbia",SK:"Eslovaquia",SI:"Eslovenia",ES:"España",SE:"Suecia",CH:"Suiza",TR:"Turquía",GB:"Reino Unido",UA:"Ucrania",VA:"Ciudad del Vaticano"};
+function ibanMod97(iban){
+  var rearranged = iban.slice(4) + iban.slice(0,4);
+  var numeric = "";
+  for(var i=0;i<rearranged.length;i++){
+    var c = rearranged[i];
+    if(c >= "0" && c <= "9") numeric += c;
+    else numeric += String(c.charCodeAt(0) - 55);
+  }
+  var remainder = 0;
+  for(var j=0;j<numeric.length;j+=7){
+    remainder = parseInt(String(remainder) + numeric.slice(j, j+7), 10) % 97;
+  }
+  return remainder;
+}
+function ibanValidate(iban){
+  var normalized = String(iban == null ? "" : iban).replace(/\s+/g,"").toUpperCase();
+  var grouped = normalized.replace(/(.{4})/g,"$1 ").trim();
+  var result = {valid:false, ok:false, normalized:normalized, grouped:grouped, countryCode:"", countryName:"", expectedLength:null, actualLength:normalized.length, mod97:null, message:""};
+  if(!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(normalized)){
+    result.message = "No coincide con la estructura IBAN: dos letras de país, dos dígitos de control y, a continuación, letras y dígitos.";
+    return result;
+  }
+  var cc = normalized.slice(0,2);
+  result.countryCode = cc;
+  result.countryName = IBAN_COUNTRIES[cc] || "Desconocido";
+  if(!(cc in IBAN_LENGTHS)){
+    result.message = "Código de país " + cc + " no está en esta tabla europea de longitudes IBAN.";
+    return result;
+  }
+  result.expectedLength = IBAN_LENGTHS[cc];
+  if(normalized.length !== IBAN_LENGTHS[cc]){
+    result.message = "Longitud incorrecta para " + result.countryName + ": esperado " + IBAN_LENGTHS[cc] + " caracteres, se recibieron " + normalized.length + ".";
+    return result;
+  }
+  result.mod97 = ibanMod97(normalized);
+  if(result.mod97 !== 1){
+    result.message = "La suma de control mod-97 falló: el resto es " + result.mod97 + ", pero un IBAN válido debe dar 1.";
+    return result;
+  }
+  result.valid = true; result.ok = true;
+  result.message = "Formato IBAN y suma de control válidos para " + result.countryName + ". Esto confirma solo que el número está correctamente formado — no demuestra que la cuenta exista.";
+  return result;
+}
+/*CALC-END*/
+function calc(){
+  var v = document.getElementById("iban").value;
+  var box = document.getElementById("result");
+  if(!v || !v.trim()){ box.style.display="none"; return; }
+  var r = ibanValidate(v);
+  document.getElementById("rVerdict").textContent = r.valid ? "✓ IBAN válido" : "✗ IBAN no válido";
+  document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
+  document.getElementById("rNorm").textContent = r.normalized || "—";
+  document.getElementById("rGrouped").textContent = r.grouped || "—";
+  document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
+  document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
+  document.getElementById("rNote").textContent = r.message;
+  box.style.display = "block";
+}
+document.getElementById("iban").addEventListener("input",calc);
+(function(){
+  var examples = [["ex1","DE89370400440532013000"],["ex2","GB29NWBK60161331926819"],["ex3","FR1420041010050500013M02606"],["ex4","CH9300762011623852957"],["ex5","NO9386011117947"]];
+  examples.forEach(function(pair){
+    var r = ibanValidate(pair[1]);
+    document.getElementById(pair[0]).textContent = r.valid ? "✓ válido — " + r.countryName + ", longitud " + r.actualLength + ", resto mod-97 1" : "✗ no válido — " + r.message;
+  });
+  var w = ibanValidate("DE89370400440532013000");
+  document.getElementById("exWorked").textContent = (w.mod97 === null ? "—" : String(w.mod97));
+})();
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Instalar aplicación';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Instala esta aplicación: toca el botón Compartir y luego elige "Añadir a la pantalla de inicio".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
