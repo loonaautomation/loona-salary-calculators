@@ -1,0 +1,29 @@
+{
+  "name": "Loona New Zealand Salary Calculator 2026",
+  "short_name": "New Zealand Salary Calculator 20",
+  "description": "What is a NZ$80,000 salary worth after tax in New Zealand in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
+  "id": "/loona-salary-calculators/new-zealand-salary-calculator.html",
+  "start_url": "./new-zealand-salary-calculator.html",
+  "scope": "./new-zealand-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

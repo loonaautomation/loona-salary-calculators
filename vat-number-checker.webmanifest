@@ -1,0 +1,29 @@
+{
+  "name": "Loona VAT Number Checker",
+  "short_name": "VAT Number Checker",
+  "description": "Free VAT number format checker for EU, UK, Swiss and Norwegian numbers: instant pattern check for 30 countries, plus links to official VIES verification.",
+  "id": "/loona-salary-calculators/vat-number-checker.html",
+  "start_url": "./vat-number-checker.html",
+  "scope": "./vat-number-checker.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Loona $12 an Hour Is How Much a Year? $24,960.00 Gross, $22,164.56 After Tax",
+  "short_name": "$12 an Hour Is How Much a Year? ",
+  "description": "$12 an hour is $24,960.00 a year gross ($22,164.56 after federal tax, single filer, 2026). Monthly, weekly and take-home hourly pay — free calculator.",
+  "id": "/loona-salary-calculators/12-per-hour-to-annual-salary.html",
+  "start_url": "./12-per-hour-to-annual-salary.html",
+  "scope": "./12-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

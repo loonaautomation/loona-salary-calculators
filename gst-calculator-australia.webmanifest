@@ -1,0 +1,29 @@
+{
+  "name": "Loona Australia GST Calculator (10% Rate)",
+  "short_name": "Australia GST Calculator (10% Ra",
+  "description": "Free Australia GST calculator: add or remove 10% GST in seconds, with the full formula and worked examples in AUD. No sign-up, runs on your device.",
+  "id": "/loona-salary-calculators/gst-calculator-australia.html",
+  "start_url": "./gst-calculator-australia.html",
+  "scope": "./gst-calculator-australia.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

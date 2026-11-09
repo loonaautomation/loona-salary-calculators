@@ -1,0 +1,29 @@
+{
+  "name": "Loona Thailand Salary Calculator 2026",
+  "short_name": "Thailand Salary Calculator 2026",
+  "description": "What is a ฿600,000 salary worth after tax in Thailand in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
+  "id": "/loona-salary-calculators/thailand-salary-calculator.html",
+  "start_url": "./thailand-salary-calculator.html",
+  "scope": "./thailand-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Loona Electricians Salary in New York 2026",
+  "short_name": "Electricians Salary in New York ",
+  "description": "A electricians earning the national median of $63,190 in New York takes home $50,137.90 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/electricians-salary-new-york.html",
+  "start_url": "./electricians-salary-new-york.html",
+  "scope": "./electricians-salary-new-york.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

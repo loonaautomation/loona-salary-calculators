@@ -1,0 +1,29 @@
+{
+  "name": "Loona Kuwait Net Salary Calculator",
+  "short_name": "Kuwait Net Salary Calculator",
+  "description": "Calculate your net salary in Kuwait: no income tax for employees. Kuwaiti citizens pay PIFSS social security (10.5% employee share); expatriates keep 100% of gross. Free.",
+  "id": "/loona-salary-calculators/kuwait-salary-calculator.html",
+  "start_url": "./kuwait-salary-calculator.html",
+  "scope": "./kuwait-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

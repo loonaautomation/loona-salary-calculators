@@ -1,0 +1,29 @@
+{
+  "name": "Loona Saudi Arabia Salary Tax 2024",
+  "short_name": "Saudi Arabia Salary Tax 2024",
+  "description": "What is a SR 180,000 salary worth after tax in Saudi Arabia in 2024? The 2024 table, worked out — free calculator with a 2024–2026 comparison.",
+  "id": "/loona-salary-calculators/saudi-arabia-salary-tax-2024.html",
+  "start_url": "./saudi-arabia-salary-tax-2024.html",
+  "scope": "./saudi-arabia-salary-tax-2024.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

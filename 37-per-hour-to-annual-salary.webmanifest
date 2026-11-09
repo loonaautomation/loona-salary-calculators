@@ -1,0 +1,29 @@
+{
+  "name": "Loona $37 an Hour Is How Much a Year? $76,960.00 Gross, $62,971.36 After Tax",
+  "short_name": "$37 an Hour Is How Much a Year? ",
+  "description": "$37 an hour is $76,960.00 a year gross ($62,971.36 after federal tax, single filer, 2026). Monthly, weekly and take-home hourly pay — free calculator.",
+  "id": "/loona-salary-calculators/37-per-hour-to-annual-salary.html",
+  "start_url": "./37-per-hour-to-annual-salary.html",
+  "scope": "./37-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

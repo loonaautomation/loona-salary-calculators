@@ -1,0 +1,29 @@
+{
+  "name": "Loona Construction Laborers Salary 2026",
+  "short_name": "Construction Laborers Salary 202",
+  "description": "How much does a construction laborers make? Median pay $47,120 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
+  "id": "/loona-salary-calculators/construction-laborers-salary.html",
+  "start_url": "./construction-laborers-salary.html",
+  "scope": "./construction-laborers-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Loona Oman Net Salary Calculator",
+  "short_name": "Oman Net Salary Calculator",
+  "description": "Calculate your net salary in Oman: no personal income tax in 2026. Omani citizens pay 7.5% Social Protection Fund contributions; expatriates currently pay nothing. Free.",
+  "id": "/loona-salary-calculators/oman-salary-calculator.html",
+  "start_url": "./oman-salary-calculator.html",
+  "scope": "./oman-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

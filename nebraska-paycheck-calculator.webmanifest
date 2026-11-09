@@ -1,0 +1,29 @@
+{
+  "name": "Loona Nebraska Paycheck Calculator 2026",
+  "short_name": "Nebraska Paycheck Calculator 202",
+  "description": "What is a salary worth after tax in Nebraska in 2026? Federal + Nebraska income tax, Social Security and Medicare — free paycheck calculator with the 2026 tables.",
+  "id": "/loona-salary-calculators/nebraska-paycheck-calculator.html",
+  "start_url": "./nebraska-paycheck-calculator.html",
+  "scope": "./nebraska-paycheck-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Loona GCC Gratuity Comparison Calculator",
+  "short_name": "GCC Gratuity Comparison Calculat",
+  "description": "Compare end-of-service gratuity across all six Gulf countries — UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain — for one salary and service period. Free.",
+  "id": "/loona-salary-calculators/gcc-gratuity-comparison-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

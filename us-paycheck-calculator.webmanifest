@@ -1,0 +1,29 @@
+{
+  "name": "Loona US Paycheck Calculator 2026",
+  "short_name": "US Paycheck Calculator 2026",
+  "description": "Work out your take-home pay in 2026: federal tax, Social Security and Medicare, plus every state’s income tax — free calculator for all 50 states and DC.",
+  "id": "/loona-salary-calculators/us-paycheck-calculator.html",
+  "start_url": "./us-paycheck-calculator.html",
+  "scope": "./us-paycheck-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

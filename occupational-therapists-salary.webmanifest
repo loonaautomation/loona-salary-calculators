@@ -1,0 +1,29 @@
+{
+  "name": "Loona Occupational Therapists Salary 2026",
+  "short_name": "Occupational Therapists Salary 2",
+  "description": "How much does a occupational therapists make? Median pay $100,330 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
+  "id": "/loona-salary-calculators/occupational-therapists-salary.html",
+  "start_url": "./occupational-therapists-salary.html",
+  "scope": "./occupational-therapists-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

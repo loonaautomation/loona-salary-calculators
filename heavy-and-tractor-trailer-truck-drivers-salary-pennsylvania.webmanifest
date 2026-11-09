@@ -1,0 +1,29 @@
+{
+  "name": "Loona Heavy and Tractor-Trailer Truck Drivers Salary in Pennsylvania 2026",
+  "short_name": "Heavy and Tractor-Trailer Truck ",
+  "description": "A heavy and tractor-trailer truck drivers earning the national median of $58,640 in Pennsylvania takes home $47,496.99 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/heavy-and-tractor-trailer-truck-drivers-salary-pennsylvania.html",
+  "start_url": "./heavy-and-tractor-trailer-truck-drivers-salary-pennsylvania.html",
+  "scope": "./heavy-and-tractor-trailer-truck-drivers-salary-pennsylvania.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

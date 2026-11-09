@@ -1,0 +1,29 @@
+{
+  "name": "Loona Software Developers Salary in Georgia 2026",
+  "short_name": "Software Developers Salary in Ge",
+  "description": "A software developers earning the national median of $135,980 in Georgia takes home $98,171.43 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/software-developers-salary-georgia.html",
+  "start_url": "./software-developers-salary-georgia.html",
+  "scope": "./software-developers-salary-georgia.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

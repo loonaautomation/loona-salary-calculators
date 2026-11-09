@@ -1,0 +1,29 @@
+{
+  "name": "Loona General and Operations Managers Salary in New York 2026",
+  "short_name": "General and Operations Managers ",
+  "description": "A general and operations managers earning the national median of $105,770 in New York takes home $78,039.01 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/general-and-operations-managers-salary-new-york.html",
+  "start_url": "./general-and-operations-managers-salary-new-york.html",
+  "scope": "./general-and-operations-managers-salary-new-york.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

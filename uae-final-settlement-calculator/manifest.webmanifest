@@ -1,0 +1,29 @@
+{
+  "name": "Loona UAE Final Settlement Calculator",
+  "short_name": "UAE Final Settlement Calculator",
+  "description": "Work out your complete UAE final settlement in one place: Article 51 gratuity plus unused annual-leave pay and notice-period compensation, itemised. Free.",
+  "id": "/loona-salary-calculators/uae-final-settlement-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
