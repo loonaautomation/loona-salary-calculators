@@ -20,7 +20,7 @@
 <meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
-<link rel="manifest" href="/loona-salary-calculators/site.webmanifest">
+
 <meta name="theme-color" content="#07332f">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
@@ -66,6 +66,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "US Paycheck Calculator 2026", "url": "https://loonaautomation.github.io/loona-salary-calculators/us-paycheck-calculator.html", "description": "Work out your take-home pay in 2026: federal tax, Social Security and Medicare, plus every state\u2019s income tax \u2014 free calculator for all 50 states and DC.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "provider": {"@type": "Organization", "name": "Loona Automation", "url": "https://loonaautomation.github.io/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://loonaautomation.github.io/loona-salary-calculators/"}, {"@type": "ListItem", "position": 2, "name": "Loona Salary & Tax Calculators", "item": "https://loonaautomation.github.io/loona-salary-calculators/"}, {"@type": "ListItem", "position": 3, "name": "US Paycheck Calculator 2026", "item": "https://loonaautomation.github.io/loona-salary-calculators/us-paycheck-calculator.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is take-home pay calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Gross salary minus federal income tax (progressive brackets on taxable income after the standard deduction), minus Social Security (6.2% up to $184,500) and Medicare (1.45%, plus 0.9% on high wages), minus state income tax where it applies."}}, {"@type": "Question", "name": "Which states have no income tax?", "acceptedAnswer": {"@type": "Answer", "text": "Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas and Wyoming levy no individual income tax; Washington taxes capital gains only, not wages."}}, {"@type": "Question", "name": "What is the 2026 standard deduction?", "acceptedAnswer": {"@type": "Answer", "text": "$16,100 for single filers, $32,200 for married filing jointly, $24,150 for heads of household (IRS Rev. Proc. 2025-32)."}}, {"@type": "Question", "name": "Does this include local taxes?", "acceptedAnswer": {"@type": "Answer", "text": "No \u2014 city and county income taxes (New York City, Maryland counties and others) are additional and are not included."}}]}</script>
+<link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 <header><div class="in">
@@ -180,5 +181,6 @@ function calc(){
 calc();
 
 </script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Install App';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Install this app: tap the Share button, then choose "Add to Home Screen".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
 </body>
 </html>
