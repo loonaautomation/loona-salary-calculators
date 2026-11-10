@@ -1,0 +1,29 @@
+{
+  "name": "مدقق أهلية قرار 30% — هل أنت مؤهل؟ (هولندا)",
+  "short_name": "مدقق أهلية قرار 30%",
+  "description": "تحقق مما إذا كنت مؤهلًا لقرار هولندا 30%: معايير رواتب 2026، قاعدة 150 كم، التوظيف من الخارج واختبارات صاحب العمل. فحص مجاني.",
+  "id": "/loona-salary-calculators/ar/netherlands-30-percent-ruling-eligibility-checker/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

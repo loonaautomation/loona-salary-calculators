@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة ضريبة القيمة المضافة في فنلندا (معدل 25.5%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
+  "short_name": "حاسبة ضريبة القيمة المضافة في فنلندا (معدل 25.5%)",
+  "description": "حاسبة ضريبة قيمة مضافة مجانية لـفنلندا: أضف أو أزل ضريبة 25.5% في ثوانٍ والمخفّضة 13.5%/10%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
+  "id": "/loona-salary-calculators/ar/vat-calculator-finland.html",
+  "start_url": "./vat-calculator-finland.html",
+  "scope": "./vat-calculator-finland.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "رواتب المديرون العامون ومديرو العمليات في نيويورك 2026 – الأجر بعد الضريبة | Loona Salary",
+  "short_name": "رواتب المديرون العامون ومديرو العمليات في نيويورك 2026",
+  "description": "يحصل المديرون العامون ومديرو العمليات الذين يكسبون المتوسط الوطني البالغ $105,770 في نيويورك على $78,039.01 سنويًا بعد الضريبة — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/general-and-operations-managers-salary-new-york.html",
+  "start_url": "./general-and-operations-managers-salary-new-york.html",
+  "scope": "./general-and-operations-managers-salary-new-york.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

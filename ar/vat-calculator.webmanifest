@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة ضريبة القيمة المضافة — إضافة أو إزالة ضريبة القيمة المضافة لـ30 دولة أوروبية",
+  "short_name": "حاسبة ضريبة القيمة المضافة",
+  "description": "حاسبة ضريبة قيمة مضافة مجانية لـ30 دولة أوروبية: أضف أو أزل ضريبة القيمة المضافة بالمعدل القياسي الموثّق وشاهد الصافي وضريبة القيمة المضافة والإجمالي فورًا. لا حاجة للتسجيل.",
+  "id": "/loona-salary-calculators/ar/vat-calculator.html",
+  "start_url": "./vat-calculator.html",
+  "scope": "./vat-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

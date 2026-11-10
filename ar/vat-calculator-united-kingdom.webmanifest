@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة ضريبة القيمة المضافة في المملكة المتحدة (معدل 20%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
+  "short_name": "حاسبة ضريبة القيمة المضافة في المملكة المتحدة (معدل 20%)",
+  "description": "حاسبة ضريبة قيمة مضافة مجانية في المملكة المتحدة — أضف أو أزل ضريبة قيمة مضافة 20% فورًا والمخفّضة 5%/0%. الصيغة وأمثلة محسوبة ودليل المعدلات بـ GBP. لا حاجة للتسجيل.",
+  "id": "/loona-salary-calculators/ar/vat-calculator-united-kingdom.html",
+  "start_url": "./vat-calculator-united-kingdom.html",
+  "scope": "./vat-calculator-united-kingdom.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

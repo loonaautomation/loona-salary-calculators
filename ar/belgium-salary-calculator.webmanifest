@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة الرواتب في بلجيكا 2026 – صافي الأجر بعد الضريبة | Loona Salary",
+  "short_name": "حاسبة الرواتب في بلجيكا 2026",
+  "description": "كم تبلغ قيمة راتب €48,000.00 بعد الضريبة في بلجيكا في 2026؟ ضريبة الدخل والمساهمات الاجتماعية، محسوبة على جدول 2026 — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/belgium-salary-calculator.html",
+  "start_url": "./belgium-salary-calculator.html",
+  "scope": "./belgium-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

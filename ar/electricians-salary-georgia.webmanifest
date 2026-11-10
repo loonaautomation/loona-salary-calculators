@@ -1,0 +1,29 @@
+{
+  "name": "رواتب الكهربائيون في جورجيا 2026 – الأجر بعد الضريبة | Loona Salary",
+  "short_name": "رواتب الكهربائيون في جورجيا 2026",
+  "description": "يحصل الكهربائيون الذين يكسبون المتوسط الوطني البالغ $63,190 في جورجيا على $50,548.48 سنويًا بعد الضريبة — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/electricians-salary-georgia.html",
+  "start_url": "./electricians-salary-georgia.html",
+  "scope": "./electricians-salary-georgia.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

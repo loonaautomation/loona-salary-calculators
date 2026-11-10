@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة مكافأة الكويت — نهاية الخدمة (المواد 51–53)",
+  "short_name": "حاسبة مكافأة الكويت",
+  "description": "احسب مكافأة نهاية خدمة الكويت بموجب المادتين 51 و53 من قانون العمل 6/2010: ‏15 يومًا سنويًا لمدة 5 سنوات، شهر بعدها، مع السقف. مجاني.",
+  "id": "/loona-salary-calculators/ar/kuwait-indemnity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

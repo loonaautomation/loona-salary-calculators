@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة قرار هولندا 30% — ما يستحق القرار",
+  "short_name": "حاسبة قرار هولندا 30%",
+  "description": "شاهد بالضبط ما يستحق قرار هولندا 30%: صافي الأجر معه وبدونه، المنفعة السنوية، ومعاينة 2027 بالمعدل الجديد 27%. مجاني للاستخدام.",
+  "id": "/loona-salary-calculators/ar/netherlands-30-percent-ruling-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

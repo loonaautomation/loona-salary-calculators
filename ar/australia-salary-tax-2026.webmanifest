@@ -1,0 +1,29 @@
+{
+  "name": "ضريبة الرواتب في أستراليا 2026 – صافي الأجر المستلم | Loona Salary",
+  "short_name": "ضريبة الرواتب في أستراليا 2026",
+  "description": "كم تبلغ قيمة راتب A$90,000 بعد الضريبة في أستراليا في 2026؟ جدول 2026، محسوبًا — حاسبة مجانية مع مقارنة 2024–2026.",
+  "id": "/loona-salary-calculators/ar/australia-salary-tax-2026.html",
+  "start_url": "./australia-salary-tax-2026.html",
+  "scope": "./australia-salary-tax-2026.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "رواتب المحاسبون والمراجعون في بنسلفانيا 2026 – الأجر بعد الضريبة | Loona Salary",
+  "short_name": "رواتب المحاسبون والمراجعون في بنسلفانيا 2026",
+  "description": "يحصل المحاسبون والمراجعون الذين يكسبون المتوسط الوطني البالغ $83,680 في بنسلفانيا على $65,129.90 سنويًا بعد الضريبة — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/accountants-and-auditors-salary-pennsylvania.html",
+  "start_url": "./accountants-and-auditors-salary-pennsylvania.html",
+  "scope": "./accountants-and-auditors-salary-pennsylvania.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

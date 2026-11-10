@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة الرواتب في المكسيك 2026 – صافي الأجر بعد الضريبة | Loona Salary",
+  "short_name": "حاسبة الرواتب في المكسيك 2026",
+  "description": "ماذا تساوي راتب MX$360,000 بعد الضريبة في المكسيك في 2026؟ ضريبة الدخل والمساهمات الاجتماعية، محسوبة على جدول 2026 — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/mexico-salary-calculator.html",
+  "start_url": "./mexico-salary-calculator.html",
+  "scope": "./mexico-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

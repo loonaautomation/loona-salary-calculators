@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة ضريبة مستقل باكستان — صادرات تقنية معلومات القسم 154A",
+  "short_name": "حاسبة ضريبة مستقل باكستان",
+  "description": "احسب ضريبة مستقل باكستان وتصدير تقنية معلومات بموجب القسم 154A: ‏0.25% إذا مسجل في PSEB، ‏1% إذا لا، مع مقارنة معدلات المدرج وغير المدرج. مجاني.",
+  "id": "/loona-salary-calculators/ar/pakistan-freelancer-tax-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

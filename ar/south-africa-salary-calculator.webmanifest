@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة الرواتب في جنوب أفريقيا 2026 – صافي الأجر بعد الضريبة | Loona Salary",
+  "short_name": "حاسبة الرواتب في جنوب أفريقيا 2026",
+  "description": "ماذا تساوي راتب R300,000 بعد الضريبة في جنوب أفريقيا في 2026؟ ضريبة الدخل والمساهمات الاجتماعية، محسوبة على جدول 2026 — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/south-africa-salary-calculator.html",
+  "start_url": "./south-africa-salary-calculator.html",
+  "scope": "./south-africa-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

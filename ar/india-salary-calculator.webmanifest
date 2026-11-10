@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة صافي الراتب في الهند — النظام الجديد السنة المالية 2026–27",
+  "short_name": "حاسبة صافي الراتب في الهند",
+  "description": "احسب راتبك في اليد في الهند للسنة المالية 2026–27 بموجب النظام الجديد: شرائح حتى ₹24 lakh، خصم قياسي ₹75,000، خصم القسم 87A (ضريبة صفر حتى ₹12 lakh) ورسم 4%، بالإضافة إلى EPF. مجاني.",
+  "id": "/loona-salary-calculators/ar/india-salary-calculator.html",
+  "start_url": "./india-salary-calculator.html",
+  "scope": "./india-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

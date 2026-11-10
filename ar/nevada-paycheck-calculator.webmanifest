@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة رواتب نيفادا 2026 – الراتب بعد الضريبة | Loona Salary",
+  "short_name": "حاسبة رواتب نيفادا 2026",
+  "description": "كم تبلغ قيمة الراتب بعد الضريبة في نيفادا في 2026؟ الضريبة الاتحادية + ضريبة دخل نيفادا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
+  "id": "/loona-salary-calculators/ar/nevada-paycheck-calculator.html",
+  "start_url": "./nevada-paycheck-calculator.html",
+  "scope": "./nevada-paycheck-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

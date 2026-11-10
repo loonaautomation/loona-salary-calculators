@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة صافي الراتب في سنغافورة — CPF وضريبة الدخل 2026",
+  "short_name": "حاسبة صافي الراتب في سنغافورة",
+  "description": "احسب أجرك الصافي المستلم في سنغافورة لعام 2026: مساهمات CPF حسب العمر للمواطنين والمقيمين الدائمين (20% حتى سقف الأجر S$8,000)، لا شيء للأجانب، بالإضافة إلى ضريبة دخل المقيم. مجاني.",
+  "id": "/loona-salary-calculators/ar/singapore-salary-calculator.html",
+  "start_url": "./singapore-salary-calculator.html",
+  "scope": "./singapore-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

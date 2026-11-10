@@ -1,0 +1,29 @@
+{
+  "name": "مدقق أرقام ضريبة القيمة المضافة — فحص تنسيق مجاني أوروبي وبريطاني وسويسري ونرويجي",
+  "short_name": "مدقق أرقام ضريبة القيمة المضافة",
+  "description": "مدقق تنسيق أرقام ضريبة قيمة مضافة مجاني للأرقام الأوروبية والبريطانية والسويسرية والنرويجية: فحص نمط فوري لـ30 دولة، بالإضافة إلى روابط إلى تحقق VIES الرسمي.",
+  "id": "/loona-salary-calculators/ar/vat-number-checker.html",
+  "start_url": "./vat-number-checker.html",
+  "scope": "./vat-number-checker.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

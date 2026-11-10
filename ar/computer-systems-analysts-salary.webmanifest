@@ -1,0 +1,29 @@
+{
+  "name": "رواتب محللو أنظمة الحاسوب 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
+  "short_name": "رواتب محللو أنظمة الحاسوب 2026",
+  "description": "كم يكسب محللو أنظمة الحاسوب؟ متوسط الأجر $105,850 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/computer-systems-analysts-salary.html",
+  "start_url": "./computer-systems-analysts-salary.html",
+  "scope": "./computer-systems-analysts-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

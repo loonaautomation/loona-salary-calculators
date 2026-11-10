@@ -1,0 +1,29 @@
+{
+  "name": "كم يساوي $12 في الساعة سنويًا؟ الإجمالي $24,960.00، بعد الضريبة $22,164.56 | Loona Salary",
+  "short_name": "كم يساوي $12 في الساعة سنويًا؟ الإجمالي $24,960.00، بعد الضريبة $22,164.56",
+  "description": "$12 في الساعة يساوي $24,960.00 سنويًا إجمالًا ($22,164.56 بعد الضريبة الاتحادية، مقدّم إقرار فردي، 2026). الأجر الشهري والأسبوعي وأجر الساعة الصافي — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/12-per-hour-to-annual-salary.html",
+  "start_url": "./12-per-hour-to-annual-salary.html",
+  "scope": "./12-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

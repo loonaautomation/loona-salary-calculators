@@ -1,0 +1,29 @@
+{
+  "name": "كم يساوي $43 في الساعة سنويًا؟ الإجمالي $89,440.00، بعد الضريبة $71,751.04 | Loona Salary",
+  "short_name": "كم يساوي $43 في الساعة سنويًا؟ الإجمالي $89,440.00، بعد الضريبة $71,751.04",
+  "description": "$43 في الساعة يساوي $89,440.00 سنويًا إجمالًا ($71,751.04 بعد الضريبة الاتحادية، مقدّم إقرار فردي، 2026). الأجر الشهري والأسبوعي وأجر الساعة الصافي — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/43-per-hour-to-annual-salary.html",
+  "start_url": "./43-per-hour-to-annual-salary.html",
+  "scope": "./43-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

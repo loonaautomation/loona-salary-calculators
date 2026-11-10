@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة رواتب ماساتشوستس 2026 – الراتب بعد الضريبة | Loona Salary",
+  "short_name": "حاسبة رواتب ماساتشوستس 2026",
+  "description": "كم تبلغ قيمة الراتب بعد الضريبة في ماساتشوستس في 2026؟ الضريبة الاتحادية + ضريبة دخل ماساتشوستس والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
+  "id": "/loona-salary-calculators/ar/massachusetts-paycheck-calculator.html",
+  "start_url": "./massachusetts-paycheck-calculator.html",
+  "scope": "./massachusetts-paycheck-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

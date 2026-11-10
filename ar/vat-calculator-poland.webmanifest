@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة ضريبة القيمة المضافة في بولندا (معدل 23%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
+  "short_name": "حاسبة ضريبة القيمة المضافة في بولندا (معدل 23%)",
+  "description": "حاسبة ضريبة قيمة مضافة مجانية في بولندا: أضف أو أزل ضريبة قيمة مضافة 23% في ثوانٍ والمخفّضة 8%/5%، الصيغة الكاملة وأمثلة محسوبة بـ PLN. بلا تسجيل، يعمل على جهازك.",
+  "id": "/loona-salary-calculators/ar/vat-calculator-poland.html",
+  "start_url": "./vat-calculator-poland.html",
+  "scope": "./vat-calculator-poland.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

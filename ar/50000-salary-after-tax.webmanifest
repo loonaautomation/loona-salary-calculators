@@ -1,0 +1,29 @@
+{
+  "name": "راتب $50,000 بعد الضريبة 2026 – الصافي $42,355.00 | Loona Salary",
+  "short_name": "راتب $50,000 بعد الضريبة 2026",
+  "description": "راتب بقيمة $50,000 في 2026 يصفّي $42,355.00 سنويًا بعد الضريبة الاتحادية (مقدّم إقرار فردي). الصافي الشهري والأسبوعي وبالساعة — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/50000-salary-after-tax.html",
+  "start_url": "./50000-salary-after-tax.html",
+  "scope": "./50000-salary-after-tax.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة نهاية خدمة السعودية — مكافأة EOSB (المادتان 84–85 من قانون العمل)",
+  "short_name": "حاسبة نهاية خدمة السعودية",
+  "description": "احسب مستحقات نهاية خدمتك السعودية (EOSB): نصف أجر شهر سنويًا لمدة 5 سنوات، شهر كامل بعدها — بالإضافة إلى مقياس استقالة المادة 85. مجاني.",
+  "id": "/loona-salary-calculators/ar/saudi-end-of-service-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

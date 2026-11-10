@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة مكافأة الإمارات — نهاية الخدمة (المادة 51، قانون العمل 33/2021)",
+  "short_name": "حاسبة مكافأة الإمارات",
+  "description": "احسب مكافأة نهاية خدمتك الإماراتية في ثوانٍ: 21 يومًا من الأجر الأساسي سنويًا لمدة 5 سنوات، 30 يومًا بعدها — قواعد المادة 51، لا قطع استقالة. مجاني.",
+  "id": "/loona-salary-calculators/ar/uae-gratuity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

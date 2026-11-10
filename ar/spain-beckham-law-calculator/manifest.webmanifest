@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة قانون Beckham — ضريبة إسبانيا الثابتة 24% مقابل IRPF قياسية",
+  "short_name": "حاسبة قانون Beckham",
+  "description": "قارن ضريبة قانون Beckham الثابتة 24% في إسبانيا مع مقياس IRPF القياسي على راتبك، وشاهد التوفير الإجمالي على كامل نظام الست سنوات. مجاني للاستخدام.",
+  "id": "/loona-salary-calculators/ar/spain-beckham-law-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

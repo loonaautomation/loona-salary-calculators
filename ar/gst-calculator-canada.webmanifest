@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة GST/HST في كندا — إضافة أو إزالة GST/HST حسب المقاطعة | Loona",
+  "short_name": "حاسبة GST/HST في كندا",
+  "description": "حاسبة GST/HST مجانية في كندا: GST ‏5% بالإضافة إلى HST أو PST أو RST أو QST الإقليمية حسب المقاطعة. أضف أو أزل الضريبة مع الصيغة الكاملة وأمثلة محسوبة بـ CAD.",
+  "id": "/loona-salary-calculators/ar/gst-calculator-canada.html",
+  "start_url": "./gst-calculator-canada.html",
+  "scope": "./gst-calculator-canada.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

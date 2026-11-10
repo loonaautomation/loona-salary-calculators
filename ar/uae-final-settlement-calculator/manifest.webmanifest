@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة التسوية النهائية للإمارات — مكافأة + أجر إجازة + أجر إشعار",
+  "short_name": "حاسبة التسوية النهائية للإمارات",
+  "description": "احسب تسويتك النهائية الإماراتية الكاملة في مكان واحد: مكافأة المادة 51 بالإضافة إلى أجر إجازة سنوية غير مستخدمة وتعويض فترة إشعار، مفصّلة. مجاني.",
+  "id": "/loona-salary-calculators/ar/uae-final-settlement-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

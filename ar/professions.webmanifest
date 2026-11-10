@@ -1,0 +1,29 @@
+{
+  "name": "المهن — متوسط الرواتب 2026 | Loona Salary",
+  "short_name": "المهن",
+  "description": "متوسط الأجر لـ60 مهنة في الولايات المتحدة (BLS OEWS مايو 2025) — من عمال الوجبات السريعة إلى أطباء الأسرة — مع الأجر الصافي المستلم بعد الضريبة الاتحادية.",
+  "id": "/loona-salary-calculators/ar/professions.html",
+  "start_url": "./professions.html",
+  "scope": "./professions.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

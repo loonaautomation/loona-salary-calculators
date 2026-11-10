@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة رسوم Etsy — ربحك الحقيقي بعد كل رسوم Etsy",
+  "short_name": "حاسبة رسوم Etsy",
+  "description": "حاسبة رسوم Etsy مجانية: رسوم معاملة 6.5%، ورسوم إدراج $0.20، ومعالجة الدفع، ورسوم تنظيمية وOffsite Ads — تفصيل كامل وربحك الحقيقي. كل سعر قابل للتعديل؛ قيم أمريكية افتراضية موثقة في نوفمبر 2026.",
+  "id": "/loona-salary-calculators/ar/etsy-fee-calculator.html",
+  "start_url": "./etsy-fee-calculator.html",
+  "scope": "./etsy-fee-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

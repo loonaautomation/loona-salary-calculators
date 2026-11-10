@@ -1,0 +1,29 @@
+{
+  "name": "رواتب ممثلو خدمة العملاء في إلينوي 2026 – الأجر بعد الضريبة | Loona Salary",
+  "short_name": "رواتب ممثلو خدمة العملاء في إلينوي 2026",
+  "description": "يحصل ممثلو خدمة العملاء الذين يكسبون المتوسط الوطني البالغ $44,770 في إلينوي على $36,081.37 سنويًا بعد الضريبة — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/customer-service-representatives-salary-illinois.html",
+  "start_url": "./customer-service-representatives-salary-illinois.html",
+  "scope": "./customer-service-representatives-salary-illinois.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

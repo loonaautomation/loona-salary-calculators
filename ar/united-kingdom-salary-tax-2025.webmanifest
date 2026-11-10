@@ -1,0 +1,29 @@
+{
+  "name": "ضريبة الرواتب في المملكة المتحدة 2025 – صافي الأجر المستلم | Loona Salary",
+  "short_name": "ضريبة الرواتب في المملكة المتحدة 2025",
+  "description": "كم تبلغ قيمة راتب £35,000.00 بعد الضريبة في المملكة المتحدة في 2025؟ جدول 2025، محسوبًا — حاسبة مجانية مع مقارنة 2024–2026.",
+  "id": "/loona-salary-calculators/ar/united-kingdom-salary-tax-2025.html",
+  "start_url": "./united-kingdom-salary-tax-2025.html",
+  "scope": "./united-kingdom-salary-tax-2025.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

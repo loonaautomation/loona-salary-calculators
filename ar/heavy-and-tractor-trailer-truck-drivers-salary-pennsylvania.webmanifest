@@ -1,0 +1,29 @@
+{
+  "name": "رواتب سائقي الشاحنات الثقيلة وشاحنات الجرار والمقطورة في بنسلفانيا 2026 – الأجر بعد الضريبة | Loona Salary",
+  "short_name": "رواتب سائقي الشاحنات الثقيلة وشاحنات الجرار والمقطورة في بنسلفانيا 2026",
+  "description": "يحصل سائقو الشاحنات الثقيلة وشاحنات الجرار والمقطورة الذين يكسبون المتوسط الوطني البالغ $58,640 في بنسلفانيا على $47,496.99 سنويًا بعد الضريبة — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/heavy-and-tractor-trailer-truck-drivers-salary-pennsylvania.html",
+  "start_url": "./heavy-and-tractor-trailer-truck-drivers-salary-pennsylvania.html",
+  "scope": "./heavy-and-tractor-trailer-truck-drivers-salary-pennsylvania.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

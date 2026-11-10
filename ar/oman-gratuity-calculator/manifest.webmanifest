@@ -1,0 +1,29 @@
+{
+  "name": "حاسبة مكافأة نهاية الخدمة في عُمان — نهاية الخدمة (المادة 61)",
+  "short_name": "حاسبة مكافأة نهاية الخدمة في عُمان",
+  "description": "احسب مكافأة عُمان بموجب المادة 61 من قانون العمل 2023: شهر أجر أساسي واحد سنويًا، مع معالجة تقسيم خدمة ما قبل أغسطس 2023. مجاني.",
+  "id": "/loona-salary-calculators/ar/oman-gratuity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

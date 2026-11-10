@@ -1,0 +1,29 @@
+{
+  "name": "رواتب اللحّامين والقاطعين والعاملين في اللحام 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
+  "short_name": "رواتب اللحّامين والقاطعين والعاملين في اللحام 2026",
+  "description": "كم يكسب اللحّامون والقاطعون والعاملون في اللحام؟ متوسط الأجر $53,750 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
+  "id": "/loona-salary-calculators/ar/welders-cutters-solderers-and-brazers-salary.html",
+  "start_url": "./welders-cutters-solderers-and-brazers-salary.html",
+  "scope": "./welders-cutters-solderers-and-brazers-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
