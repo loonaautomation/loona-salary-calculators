@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoe de VAE-gratificatie wordt berekend — Formule Artikel 51, voorbeelden &amp; de ontslagregel van 2022</title>
+<meta name="description" content="Hoe de VAE-gratificatie wordt berekend onder Artikel 51: 21 dagen per jaar gedurende 5 jaar, 30 dagen daarna, uitgewerkte voorbeelden, en waarom ontslag je loon niet meer verlaagt.">
+<meta name="keywords" content="how is gratuity calculated in uae, uae gratuity calculation, article 51 gratuity, end of service benefits uae">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/nl/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/guides/how-uae-gratuity-is-calculated.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/guides/how-uae-gratuity-is-calculated.html"><meta property="og:locale" content="nl_NL">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hoe de VAE-gratificatie wordt berekend — Loona">
+<meta property="og:description" content="De formule van Artikel 51 uitgelegd met uitgewerkte voorbeelden — en de verandering van februari 2022 die een einde maakte aan verlagingen bij ontslag.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/nl/guides/how-uae-gratuity-is-calculated.html">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary & Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hoe de gratificatie in de VAE wordt berekend">
+<meta name="twitter:description" content="21 dagen per jaar voor de eerste 5 jaar, 30 dagen daarna — de volledige methode van Artikel 51 met voorbeelden.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Hoe de VAE-gratificatie wordt berekend — Formule Artikel 51, Voorbeelden &amp; de Ontslagregel van 2022","description":"Hoe de VAE-gratificatie wordt berekend onder Artikel 51: 21 dagen per jaar gedurende 5 jaar, 30 dagen daarna, uitgewerkte voorbeelden, en waarom ontslag je loon niet meer verlaagt.","author":{"@type":"Organization","name":"Loona Automation"},"publisher":{"@type":"Organization","name":"Loona Automation"},"datePublished":"2026-11-02","dateModified":"2026-11-02","mainEntityOfPage":"https://loonaautomation.github.io/loona-salary-calculators/nl/guides/how-uae-gratuity-is-calculated.html"}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.5rem;margin:8px 0 6px;line-height:1.3}
+header p{color:#d9e8e4;font-size:.95rem;max-width:720px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.sec{margin-top:26px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p{font-size:.96rem;margin-bottom:10px}
+.sec ul,.sec ol{margin:0 0 10px 20px;font-size:.96rem}
+.sec li{margin-bottom:5px}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:.93rem;background:var(--card)}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.faq p{font-size:.94rem}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px;line-height:1.9}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vermindert ontslag nemen mijn VAE-gratificatie?","acceptedAnswer":{"@type":"Answer","text":"Nee. Sinds 2 februari 2022 heeft ontslag geen effect op gratificatie. De oude verlagingen van een derde en twee derde behoorden tot het afgeschafte systeem van contracten beperkt/onbeperkt."}},{"@type":"Question","name":"Wordt gratificatie berekend over mijn basissalaris of mijn totale salaris?","acceptedAnswer":{"@type":"Answer","text":"Alleen over je laatste basissalaris. Toeslagen zoals huisvesting en vervoer zijn uitgesloten, en het dagtarief is het maandelijkse basissalaris gedeeld door 30."}},{"@type":"Question","name":"Ik heb 11 maanden gewerkt. Krijg ik iets?","acceptedAnswer":{"@type":"Answer","text":"Onder Artikel 51: nee — gratificatie begint na één volledig jaar ononderbroken dienst. Sommige werkgevers betalen vrijwillig bedragen naar rato, maar het is geen wettelijk recht in het eerste jaar."}},{"@type":"Question","name":"Wanneer moet mijn werkgever mijn gratificatie betalen?","acceptedAnswer":{"@type":"Answer","text":"Binnen 14 dagen na het einde van het contract (Artikel 53), samen met eventuele andere rechten bij einde dienstverband."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://loonaautomation.github.io/loona-salary-calculators/nl/"},{"@type":"ListItem","position":2,"name":"Gidsen","item":"https://loonaautomation.github.io/loona-salary-calculators/#guides"},{"@type":"ListItem","position":3,"name":"Hoe de gratificatie in de VAE wordt berekend","item":"https://loonaautomation.github.io/loona-salary-calculators/nl/guides/how-uae-gratuity-is-calculated.html"}]}</script>
+<link rel="manifest" href="../../manifest.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="../">← Loona Salary &amp; Tax Calculators</a>
+<h1>Hoe de gratificatie in de VAE wordt berekend</h1>
+<p>Gratificatie — de betaling bij einde dienstverband — is vaak het grootste enkele bedrag dat een VAE-werknemer ontvangt na zijn salaris. Hier is precies hoe Artikel 51 van de VAE-Arbeidswet het uitrekent, met twee uitgewerkte voorbeelden en de regelwijziging van 2022 die veel oudere gidsen nog steeds verkeerd hebben.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>Kortom:</strong> De VAE-gratificatie is 21 dagen van je laatste basissalaris voor elk van de eerste vijf dienstjaren en 30 dagen per jaar daarna, afgetopt op twee jaar loon. Je hebt minstens één jaar dienst nodig, toeslagen tellen niet mee, en sinds februari 2022 vermindert ontslag het bedrag niet.</p></div>
+
+<div class="sec">
+<h2>De wet in het kort</h2>
+<p>De gratificatie bij einde dienstverband in de private sector op het vasteland van de VAE wordt vastgesteld door <strong>Artikel 51 van Federaal Decreet-Wet nr. 33 van 2021</strong>, de huidige Arbeidswet. Het geldt voor voltijdse buitenlandse (niet-VAE-staatsburger) werknemers. VAE-staatsburgers vallen in plaats daarvan onder het pensioensysteem, en vrije zones zoals DIFC en ADGM hebben hun eigen regelingen (zie de uitzonderingen hieronder).</p>
+<p>De vijf regels die je bedrag beslissen:</p>
+<ul>
+<li>Je moet minstens voltooien <strong>één volledig jaar</strong> van ononderbroken dienst. Onder één jaar is de wettelijke gratificatie nul.</li>
+<li>Alleen je <strong>laatste basissalaris</strong> telt. Huisvesting, vervoer, telefoon en elke andere toeslag zijn uitgesloten — zelfs als ze het grootste deel van je pakket vormen.</li>
+<li>Je dagelijkse basissalaris is je maandelijkse basissalaris <strong>gedeeld door 30</strong>.</li>
+<li>Je verdient <strong>21 dagen</strong> van het basissalaris voor elk van de eerste vijf dienstjaren, en <strong>30 dagen</strong> voor elk jaar na het vijfde. Een deeljaar na je eerste jaar telt naar rato mee.</li>
+<li>Het totaal kan nooit meer bedragen dan <strong>twee jaar loon</strong> — het wettelijke plafond van 24 maandelijkse basissalarissen.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>De formule, stap voor stap</h2>
+<ol>
+<li>Dagloon = laatste maandelijkse basissalaris ÷ 30.</li>
+<li>Deel eerste-vijf-jaar = dagloon × 21 × (dienstjaren, tot 5).</li>
+<li>Later deel = dagloon × 30 × (dienstjaren voorbij 5).</li>
+<li>Tel de twee delen op en pas daarna het plafond toe: als het resultaat meer is dan 24 × je maandelijkse basissalaris, ontvang je in plaats daarvan het plafond.</li>
+</ol>
+<p>In één regel: <strong>Gratificatie = (Basis ÷ 30 × 21 × eerste 5 jaar) + (Basis ÷ 30 × 30 × resterende jaren)</strong>, afgetopt op twee jaar loon. Dagen van onbetaalde afwezigheid zijn uitgesloten van je dienstperiode, dus bewaar je verlofgegevens.</p>
+</div>
+
+<div class="sec">
+<h2>Uitgewerkt voorbeeld 1: vier dienstjaren</h2>
+<p>Het laatste basissalaris van Fatima is <strong>AED 8,000</strong> per maand en zij voltooit precies <strong>4 jaar</strong>.</p>
+<ul>
+<li>Dagloon: 8,000 ÷ 30 = AED 266.67</li>
+<li>Alle 4 jaar vallen in de band van de eerste vijf: 266.67 × 21 dagen × 4 jaar = <strong>AED 22,400</strong></li>
+<li>Plafondcheck: 24 × 8,000 = AED 192,000 — niet bereikt.</li>
+</ul>
+<p>Haar gratificatie is <strong>AED 22,400</strong>. Merk op hoe het antwoord verandert als je per ongeluk haar volledige pakket gebruikte (zeg AED 14,000 met toeslagen): dezelfde formule zou ten onrechte AED 39,200 geven. Controleer altijd welk cijfer je loonstrookje "basis" noemt.</p>
+</div>
+
+<div class="sec">
+<h2>Uitgewerkt voorbeeld 2: negen dienstjaren</h2>
+<p>Het laatste basissalaris van Omar is <strong>AED 15,000</strong> per maand en hij voltooit <strong>9 jaar</strong>.</p>
+<ul>
+<li>Dagloon: 15,000 ÷ 30 = AED 500</li>
+<li>Eerste 5 jaar: 500 × 21 × 5 = AED 52,500</li>
+<li>Volgende 4 jaar: 500 × 30 × 4 = AED 60,000</li>
+<li>Totaal: 52,500 + 60,000 = <strong>AED 112,500</strong> (plafond van AED 360,000 niet bereikt)</li>
+</ul>
+<p>Merk de sprong in het tarief op na het vijfde jaar — elk extra jaar voorbij het vijfde is 30 dagen waard in plaats van 21, grofweg 43% meer per jaar. Daarom zien langdienende werknemers hun gratificatie versnellen.</p>
+</div>
+
+<div class="sec">
+<h2>De verandering van februari 2022: ontslag verlaagt je gratificatie niet meer</h2>
+<p>Dit is het punt dat de meeste verouderde websites — en veel oudere calculators — nog steeds verkeerd hebben. Vóór 2 februari 2022 had de VAE twee soorten contracten, "beperkt" en "onbeperkt", en als je ontslag nam, kon je gratificatie worden verlaagd naar <strong>een derde</strong> (vroege jaren) of <strong>twee derde</strong> (latere jaren) van het volledige bedrag.</p>
+<p>Federaal Decreet-Wet nr. 33 van 2021 schafte dat systeem af. Sinds 2 februari 2022 zijn alle contracten in de private sector voor bepaalde tijd, en <strong>ontslag vermindert je gratificatie helemaal niet</strong>. Omar in het voorbeeld hierboven ontvangt dezelfde AED 112,500 of zijn werkgever het contract nu beëindigt of hij na negen jaar ontslag neemt.</p>
+<p>Dus als een calculator vraagt of je contract "beperkt of onbeperkt" is, gebruikt hij een wet die niet meer bestaat — sluit het tabblad. Eén smalle uitzondering blijft: onder Artikel 68(3) kan een werkgever een echt van vóór 2022 daterend <em>onbeperkt</em> contract onder de oude wet. Als je vóór februari 2022 een contract voor onbepaalde tijd tekende en nooit naar een nieuw contract overstapte, vraag dan HR of MOHRE welke grondslag op je van toepassing is.</p>
+</div>
+
+<div class="sec">
+<h2>Wie valt niet onder deze formule</h2>
+<ul>
+<li><strong>DIFC- en ADGM-werknemers:</strong> deze financiële vrije zones hebben hun eigen arbeidswetten en spaarregelingen op de werkplek (zoals DEWS in DIFC) in plaats van gratificatie volgens Artikel 51.</li>
+<li><strong>Huishoudelijk personeel:</strong> gedekt door een aparte wet (Federaal Decreet-Wet nr. 9 van 2022) met zijn eigen regels voor einde dienstverband.</li>
+<li><strong>VAE-staatsburgers:</strong> gedekt door het federale pensioensysteem, geen gratificatie.</li>
+<li><strong>Werknemers in de alternatieve spaarregeling:</strong> sommige werkgevers hebben personeel overgezet naar de vrijwillige spaarregeling op basis van beleggingen die gratificatie vervangt door maandelijkse fondsbijdragen. Als je werkgever je inschreef, volgt je recht de regeling, niet deze formule.</li>
+</ul>
+<p>Wanneer je vertrekt, vereist Artikel 53 dat je werkgever alle rechten bij einde dienstverband betaalt binnen <strong>14 dagen</strong> van het einde van het contract. Als het bedrag verkeerd lijkt, vergelijk het dan regel voor regel met de formule hierboven voordat je een afrekeningsverklaring tekent.</p>
+</div>
+
+<div class="sec">
+<h2>Veelgestelde vragen</h2>
+<div class="faq"><h3>Vermindert ontslag nemen mijn VAE-gratificatie?</h3><p>Nee. Sinds 2 februari 2022 heeft ontslag geen effect op gratificatie. De oude verlagingen van een derde en twee derde behoorden tot het afgeschafte systeem van contracten beperkt/onbeperkt.</p></div>
+<div class="faq"><h3>Wordt gratificatie berekend over mijn basissalaris of mijn totale salaris?</h3><p>Alleen over je laatste basissalaris. Toeslagen zoals huisvesting en vervoer zijn uitgesloten, en het dagtarief is het maandelijkse basissalaris gedeeld door 30.</p></div>
+<div class="faq"><h3>Ik heb 11 maanden gewerkt. Krijg ik iets?</h3><p>Onder Artikel 51: nee — gratificatie begint na één volledig jaar ononderbroken dienst. Sommige werkgevers betalen vrijwillig bedragen naar rato, maar het is geen wettelijk recht in het eerste jaar.</p></div>
+<div class="faq"><h3>Wanneer moet mijn werkgever mijn gratificatie betalen?</h3><p>Binnen 14 dagen na het einde van het contract (Artikel 53), samen met eventuele andere rechten bij einde dienstverband.</p></div>
+</div>
+
+<div class="note"><strong>Disclaimer:</strong> deze gids legt Artikel 51 van Federaal Decreet-Wet nr. 33 van 2021 uit in algemene termen; het is geen juridisch advies. Cijfers laatst geverifieerd: 2 november 2026.</div>
+
+<div class="sec"><h2>Probeer het met je eigen cijfers</h2>
+<div class="links">
+<a href="../uae-gratuity-calculator/">VAE gratificatiecalculator</a>
+<a href="../saudi-end-of-service-calculator/">Saoedisch Einde Dienstverband</a>
+<a href="../saudi-salary-calculator/">Saoedische Salariscalculator</a>
+<a class="alt" href="../">Alle calculators</a>
+</div></div>
+</div>
+<footer>© 2026 Loona Automation — <a href="../">Loona Salary &amp; Tax Calculators</a><br><a href="../about.html">Over ons</a> · <a href="../privacy.html">Privacybeleid</a> · <a href="../terms.html">Voorwaarden</a> · <a href="../contact.html">Contact</a></footer>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' App installeren';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Installeer deze app: tik op de knop Delen en kies daarna "Zet op beginscherm".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
