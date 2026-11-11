@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBAN检查器 — 免费IBAN验证器（Mod-97校验和）</title>
+<meta name="description" content="免费IBAN检查器：使用真实mod-97校验和、国家长度检查和分组格式即时验证任何欧洲IBAN。无需注册，私密。">
+<meta name="keywords" content="iban checker, iban validator, validate iban, iban check, mod 97 iban, european iban checker">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/iban-checker.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/iban-checker.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/iban-checker.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/iban-checker.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/iban-checker.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/iban-checker.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/iban-checker.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/iban-checker.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/iban-checker.html"><link rel="alternate" hreflang="zh" href="https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><meta property="og:locale" content="zh_CN">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IBAN检查器 — Loona">
+<meta property="og:description" content="使用真实mod-97校验和和欧洲国家长度表的免费IBAN验证器。即时、私密、无需注册。">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IBAN检查器 — Loona">
+<meta name="twitter:description" content="使用mod-97校验和即时验证任何欧洲IBAN。免费、私密、无需注册。">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"IBAN检查器","url":"https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"mod-97是什么，它如何检查IBAN？","acceptedAnswer":{"@type":"Answer","text":"Mod-97是ISO 13616下每个IBAN内置的校验和。前四个字符移到末尾，字母转换为数字 (A=10到Z=35)，结果长数字分块除以97。真正的IBAN始终留下恰好1的余数；任何其他余数意味着数字或字母输入错误。"}},{"@type":"Question","name":"IBAN和SWIFT/BIC代码有什么区别？","acceptedAnswer":{"@type":"Answer","text":"IBAN识别一个国家的一个特定银行账户。SWIFT/BIC代码识别银行和分支本身，而不是您的账户。国际转账通常需要账户的IBAN，还可能要求银行的SWIFT/BIC。"}},{"@type":"Question","name":"有效IBAN意味着账户存在吗？","acceptedAnswer":{"@type":"Answer","text":"否。有效结果仅意味着格式和mod-97校验和对该国正确。它不能确认账户存在、开立、属于您期望的人，或有任何钱。在发送钱之前，始终通过可信渠道与收件人确认账户详情。"}},{"@type":"Question","name":"我在哪里可以找到我自己的IBAN？","acceptedAnswer":{"@type":"Answer","text":"在您的银行对账单上、银行应用或在线银行内（通常在账户详情下）、一些银行卡上，或向您的银行询问。在大多数欧洲国家，IBAN印在每份对账单顶部。"}},{"@type":"Question","name":"为什么此检查器不要求银行登录或个人详情？","acceptedAnswer":{"@type":"Answer","text":"因为不需要。IBAN验证是号码本身的纯数学，所以此工具100%在您的设备上运行，从不将您输入的IBAN发送到任何地方。"}},{"@type":"Question","name":"一个错误数字仍能通过mod-97测试吗？","acceptedAnswer":{"@type":"Answer","text":"单个错误几乎从不。mod-97校验和设计为捕获所有一位数字错误和几乎所有交换的相邻数字，这就是为什么银行立即拒绝拼写错误的IBAN，而不是将钱发送到错误账户。"}},{"@type":"Question","name":"每个国家的IBAN有多长？","acceptedAnswer":{"@type":"Answer","text":"长度按国家固定，从挪威15个字符到马耳他31个。德国使用22，法国27，英国22，西班牙24，瑞士21。此检查器在运行校验和之前将您的IBAN与其国家代码的确切官方长度比较。"}},{"@type":"Question","name":"我应该带空格还是不带空格输入IBAN？","acceptedAnswer":{"@type":"Answer","text":"两种在这里都可以。IBAN经常以四位一组打印以便阅读，但空格不是号码的一部分。此检查器自动删除空格并显示打印友好的分组版本。"}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://loonaautomation.github.io/loona-salary-calculators/zh/"},{"@type":"ListItem","position":2,"name":"IBAN检查器","item":"https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html"}]}</script>
+<link rel="manifest" href="../iban-checker.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary与Tax Calculators</a>
+<h1>IBAN检查器</h1>
+<p>在几秒内验证任何欧洲IBAN，使用ISO 13616的真实mod-97校验和 — 加其国家的官方长度检查、其国家名称和打印友好的分组格式。免费，无需注册。</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>简而言之：</strong> 输入或粘贴IBAN，此检查器会删除空格，检查两位字母国家代码和该国的确切长度，然后运行mod-97校验和。余数为1意味着号码格式正确 — 它不能证明账户存在。</p></div>
+<div class="calc">
+<label for="iban">IBAN</label>
+<input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<div class="result" id="result">
+<div id="rTitle">结果</div>
+<div class="big" id="rVerdict">—</div>
+<table>
+<tr><td>国家</td><td id="rCountry">—</td></tr>
+<tr><td>规范化IBAN</td><td id="rNorm">—</td></tr>
+<tr><td>分组（4个一组）</td><td id="rGrouped">—</td></tr>
+<tr><td>长度</td><td id="rLength">—</td></tr>
+<tr><td>Mod-97余数（必须是1)</td><td id="rMod">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>它如何计算</h2>
+<p>每个IBAN遵循ISO 13616。银行 — 和此检查器 — 使用的验证有四个步骤：</p>
+<ul>
+<li><strong>规范化：</strong> 删除空格并转换为大写。</li>
+<li><strong>结构：</strong> 号码必须由两个字母（国家）、两个校验数字组成，然后只能是字母和数字。</li>
+<li><strong>长度：</strong> 总长度必须等于该国的固定长度 — 例如德国22，法国27，英国22，瑞士21，挪威15。</li>
+<li><strong>Mod-97校验和：</strong> 将前四个字符移到末尾，将字母转换为数字（A = 10，B = 11，… Z = 35），然后分块除以97。公式：重新排列的IBAN mod 97 = 1 表示有效的IBAN。</li>
+</ul>
+<p style="margin-top:8px">工作例子 — 下面每个结果在页面加载时由本页自己的验证器填充，所以它永远不会与上面的检查器不同意：</p>
+<ul>
+<li>德国: DE89370400440532013000 → <span id="ex1">正在检查…</span></li>
+<li>英国: GB29NWBK60161331926819 → <span id="ex2">正在检查…</span></li>
+<li>法国: FR1420041010050500013M02606 → <span id="ex3">正在检查…</span></li>
+<li>瑞士: CH9300762011623852957 → <span id="ex4">正在检查…</span></li>
+<li>挪威: NO9386011117947 → <span id="ex5">正在检查…</span></li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>常见问题</h2>
+<div class="faq"><h3>mod-97是什么，它如何检查IBAN？</h3><p>Mod-97是ISO 13616下每个IBAN内置的校验和。前四个字符移到末尾，字母转换为数字 (A=10到Z=35)，结果长数字分块除以97。真正的IBAN始终留下恰好1的余数；任何其他余数意味着数字或字母输入错误。</p></div>
+<div class="faq"><h3>IBAN和SWIFT/BIC代码有什么区别？</h3><p>IBAN识别一个国家的一个特定银行账户。SWIFT/BIC代码识别银行和分支本身，而不是您的账户。国际转账通常需要账户的IBAN，还可能要求银行的SWIFT/BIC。</p></div>
+<div class="faq"><h3>有效IBAN意味着账户存在吗？</h3><p>否。有效结果仅意味着格式和mod-97校验和对该国正确。它不能确认账户存在、开立、属于您期望的人，或有任何钱。在发送钱之前，始终通过可信渠道与收件人确认账户详情。</p></div>
+<div class="faq"><h3>我在哪里可以找到我自己的IBAN？</h3><p>在您的银行对账单上、银行应用或在线银行内（通常在账户详情下）、一些银行卡上，或向您的银行询问。在大多数欧洲国家，IBAN印在每份对账单顶部。</p></div>
+<div class="faq"><h3>为什么此检查器不要求银行登录或个人详情？</h3><p>因为不需要。IBAN验证是号码本身的纯数学，所以此工具100%在您的设备上运行，从不将您输入的IBAN发送到任何地方。</p></div>
+</div>
+
+<div class="note"><strong>隐私：</strong> 此检查器100%在您的设备上运行 — 您输入的IBAN永远不会离开您的浏览器。 <strong>免责声明：</strong> 仅格式和校验和验证，基于ISO 13616 IBAN标准；无法确认账户是否存在。长度和规则于2026年十一月根据ISO 13616 IBAN登记册核实。</div>
+
+<div class="sec"><h2>更多计算器</h2>
+<div class="links">
+<a href="vat-calculator.html">VAT计算器</a>
+<a href="reverse-vat-calculator.html">反向VAT计算器</a>
+<a href="vat-number-checker.html">VAT编号检查器</a>
+<a class="alt" href="./">所有计算器</a>
+</div></div>
+<div class="sec">
+<h2>它如何运作 — 公式</h2>
+<p>IBAN按设计是自检查的。它的第三和第四个字符是由签发银行选择的校验数字，以便整个号码通过一个确切的算术测试。要运行该测试，取IBAN，将其前四个字符（国家代码加校验数字）移到末尾，将每个字母替换为两位数（A = 10到Z = 35)，并计算那个非常长的数字模97 — 实际上分小块，携带每个余数到下一块，以便数字保持可管理。如果最终余数恰好是1, IBAN正确形成；数字或字母中的任何拼写错误改变余数，在钱移动之前被捕获。</p>
+<h3>工作例子</h3>
+<p>取德国IBAN DE89370400440532013000。其国家代码是DE（德国），其预期长度是22，它有恰好22个字符。重排和转换后，它以370400440532013000131489开头 — 那个数字模97是 <strong><span id="exWorked">…</span></strong>，由本页验证器填写。余数1是每个银行寻找的通过标记。</p>
+<h3>常见问题</h3>
+<div class="faq"><h3>一个错误数字仍能通过mod-97测试吗？</h3><p>单个错误几乎从不。mod-97校验和设计为捕获所有一位数字错误和几乎所有交换的相邻数字，这就是为什么银行立即拒绝拼写错误的IBAN，而不是将钱发送到错误账户。</p></div>
+<div class="faq"><h3>每个国家的IBAN有多长？</h3><p>长度按国家固定，从挪威15个字符到马耳他31个。德国使用22，法国27，英国22，西班牙24，瑞士21。此检查器在运行校验和之前将您的IBAN与其国家代码的确切官方长度比较。</p></div>
+<div class="faq"><h3>我应该带空格还是不带空格输入IBAN？</h3><p>两种在这里都可以。IBAN经常以四位一组打印以便阅读，但空格不是号码的一部分。此检查器自动删除空格并显示打印友好的分组版本。</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>将此计算器嵌入您的网站 — 免费</h2>
+<p>将此计算器添加到您自己的网站或博客 — 完全免费，无需注册，始终显示最新版本。复制下面的代码并将其粘贴到您的页面中您希望计算器出现的地方。保留嵌入下方的小&ldquo;Powered by Loona Automation&rdquo;信用行有助于保持此工具免费 &mdash; 但您可以自由样式化或删除它；工具任一方式都工作。</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="IBAN Checker by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;本站工具由 &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/zh/iban-checker.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; 免费 IBAN检查器&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">复制嵌入代码</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='已复制！';setTimeout(function(){b.textContent='复制嵌入代码';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">关于</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">条款</a> · <a href="contact.html">联系</a></footer>
+<script>
+/*CALC-START*/
+var IBAN_LENGTHS = {AL:28,AD:24,AT:20,BE:16,BA:20,BG:22,HR:21,CY:28,CZ:24,DK:18,EE:20,FO:18,FI:18,FR:27,GE:22,DE:22,GI:23,GR:27,GL:18,HU:28,IS:26,IE:22,IT:27,LV:21,LI:21,LT:20,LU:20,MK:19,MT:31,MC:27,ME:22,NL:18,NO:15,PL:28,PT:25,RO:24,SM:27,RS:22,SK:24,SI:19,ES:24,SE:24,CH:21,TR:26,GB:22,UA:29,VA:22};
+var IBAN_COUNTRIES = {AL:"阿尔巴尼亚",AD:"安道尔",AT:"奥地利",BE:"比利时",BA:"波斯尼亚和黑塞哥维那",BG:"保加利亚",HR:"克罗地亚",CY:"塞浦路斯",CZ:"捷克",DK:"丹麦",EE:"爱沙尼亚",FO:"法罗群岛",FI:"芬兰",FR:"法国",GE:"格鲁吉亚",DE:"德国",GI:"直布罗陀",GR:"希腊",GL:"格陵兰",HU:"匈牙利",IS:"冰岛",IE:"爱尔兰",IT:"意大利",LV:"拉脱维亚",LI:"列支敦士登",LT:"立陶宛",LU:"卢森堡",MK:"北马其顿",MT:"马耳他",MC:"摩纳哥",ME:"黑山",NL:"荷兰",NO:"挪威",PL:"波兰",PT:"葡萄牙",RO:"罗马尼亚",SM:"圣马力诺",RS:"塞尔维亚",SK:"斯洛伐克",SI:"斯洛文尼亚",ES:"西班牙",SE:"瑞典",CH:"瑞士",TR:"土耳其",GB:"英国",UA:"乌克兰",VA:"梵蒂冈"};
+function ibanMod97(iban){
+  var rearranged = iban.slice(4) + iban.slice(0,4);
+  var numeric = "";
+  for(var i=0;i<rearranged.length;i++){
+    var c = rearranged[i];
+    if(c >= "0" && c <= "9") numeric += c;
+    else numeric += String(c.charCodeAt(0) - 55);
+  }
+  var remainder = 0;
+  for(var j=0;j<numeric.length;j+=7){
+    remainder = parseInt(String(remainder) + numeric.slice(j, j+7), 10) % 97;
+  }
+  return remainder;
+}
+function ibanValidate(iban){
+  var normalized = String(iban == null ? "" : iban).replace(/\s+/g,"").toUpperCase();
+  var grouped = normalized.replace(/(.{4})/g,"$1 ").trim();
+  var result = {valid:false, ok:false, normalized:normalized, grouped:grouped, countryCode:"", countryName:"", expectedLength:null, actualLength:normalized.length, mod97:null, message:""};
+  if(!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(normalized)){
+    result.message = "与IBAN结构不符：两个国家字母、两个校验数字，然后是字母和数字。";
+    return result;
+  }
+  var cc = normalized.slice(0,2);
+  result.countryCode = cc;
+  result.countryName = IBAN_COUNTRIES[cc] || "未知";
+  if(!(cc in IBAN_LENGTHS)){
+    result.message = "国家代码 " + cc + " 不在此欧洲IBAN长度表中。";
+    return result;
+  }
+  result.expectedLength = IBAN_LENGTHS[cc];
+  if(normalized.length !== IBAN_LENGTHS[cc]){
+    result.message = "以下对象长度错误： " + result.countryName + ": 预期 " + IBAN_LENGTHS[cc] + " 个字符，得到 " + normalized.length + ".";
+    return result;
+  }
+  result.mod97 = ibanMod97(normalized);
+  if(result.mod97 !== 1){
+    result.message = "Mod-97校验和失败：余数是 " + result.mod97 + "，但有效的IBAN必须得出1。";
+    return result;
+  }
+  result.valid = true; result.ok = true;
+  result.message = "以下对象的IBAN格式和校验和有效： " + result.countryName + "。这仅确认号码格式正确 — 不能证明账户存在。";
+  return result;
+}
+/*CALC-END*/
+function calc(){
+  var v = document.getElementById("iban").value;
+  var box = document.getElementById("result");
+  if(!v || !v.trim()){ box.style.display="none"; return; }
+  var r = ibanValidate(v);
+  document.getElementById("rVerdict").textContent = r.valid ? "✓ 有效的IBAN" : "✗ 无效的IBAN";
+  document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
+  document.getElementById("rNorm").textContent = r.normalized || "—";
+  document.getElementById("rGrouped").textContent = r.grouped || "—";
+  document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
+  document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
+  document.getElementById("rNote").textContent = r.message;
+  box.style.display = "block";
+}
+document.getElementById("iban").addEventListener("input",calc);
+(function(){
+  var examples = [["ex1","DE89370400440532013000"],["ex2","GB29NWBK60161331926819"],["ex3","FR1420041010050500013M02606"],["ex4","CH9300762011623852957"],["ex5","NO9386011117947"]];
+  examples.forEach(function(pair){
+    var r = ibanValidate(pair[1]);
+    document.getElementById(pair[0]).textContent = r.valid ? "✓ 有效 — " + r.countryName + "，长度 " + r.actualLength + "，mod-97余数1" : "✗ 无效 — " + r.message;
+  });
+  var w = ibanValidate("DE89370400440532013000");
+  document.getElementById("exWorked").textContent = (w.mod97 === null ? "—" : String(w.mod97));
+})();
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' 安装应用';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('安装此应用：点按分享按钮，然后选择“添加到主屏幕”。');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
