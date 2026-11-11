@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Công cụ kiểm tra IBAN — Công cụ xác thực IBAN miễn phí (Mã kiểm tra Mod-97)</title>
+<meta name="description" content="Công cụ kiểm tra IBAN miễn phí: xác thực bất kỳ IBAN châu Âu nào ngay lập tức với mã kiểm tra mod-97 thực, kiểm tra độ dài quốc gia và định dạng được nhóm. Không cần đăng ký, riêng tư.">
+<meta name="keywords" content="iban checker, iban validator, validate iban, iban check, mod 97 iban, european iban checker">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/iban-checker.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/iban-checker.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/iban-checker.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/iban-checker.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/iban-checker.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/iban-checker.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/iban-checker.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/iban-checker.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/iban-checker.html"><link rel="alternate" hreflang="vi" href="https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><meta property="og:locale" content="vi_VN">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Công cụ kiểm tra IBAN — Loona">
+<meta property="og:description" content="Công cụ xác thực IBAN miễn phí dùng mã kiểm tra mod-97 thực và bảng độ dài quốc gia cho châu Âu. Ngay lập tức, riêng tư và không cần đăng ký.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Công cụ kiểm tra IBAN — Loona">
+<meta name="twitter:description" content="Xác thực bất kỳ IBAN châu Âu nào ngay lập tức với mã kiểm tra mod-97. Miễn phí, riêng tư, không cần đăng ký.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Máy kiểm tra IBAN","url":"https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mod-97 là gì và nó kiểm tra một IBAN như thế nào?","acceptedAnswer":{"@type":"Answer","text":"Mod-97 là mã kiểm tra được tích hợp trong mọi IBAN theo ISO 13616. Bốn ký tự đầu tiên được chuyển xuống cuối, các chữ cái được chuyển thành số (A=10 tới Z=35), và con số dài kết quả được chia cho 97 theo từng đoạn. Một IBAN thật luôn để lại phần dư đúng bằng 1; bất kỳ phần dư nào khác có nghĩa là một chữ số hoặc chữ cái đã bị gõ sai."}},{"@type":"Question","name":"Sự khác biệt giữa một IBAN và một mã SWIFT/BIC là gì?","acceptedAnswer":{"@type":"Answer","text":"Một IBAN xác định một tài khoản ngân hàng cụ thể tại một quốc gia. Một mã SWIFT/BIC xác định chính ngân hàng và chi nhánh, không phải tài khoản của bạn. Chuyển tiền quốc tế thường cần IBAN cho tài khoản và cũng có thể yêu cầu SWIFT/BIC của ngân hàng."}},{"@type":"Question","name":"Một IBAN hợp lệ có nghĩa là tài khoản tồn tại không?","acceptedAnswer":{"@type":"Answer","text":"Không. Một kết quả hợp lệ chỉ có nghĩa là định dạng và mã kiểm tra mod-97 đúng đối với quốc gia đó. Nó không thể xác nhận rằng tài khoản tồn tại, đang mở, thuộc về người bạn mong đợi, hoặc có bất kỳ khoản tiền nào trong đó. Luôn xác nhận thông tin tài khoản với người nhận qua một kênh đáng tin cậy trước khi gửi tiền."}},{"@type":"Question","name":"Tôi có thể tìm IBAN của chính mình ở đâu?","acceptedAnswer":{"@type":"Answer","text":"Trên sao kê ngân hàng của bạn, bên trong ứng dụng ngân hàng hoặc ngân hàng trực tuyến của bạn (thường dưới thông tin tài khoản), trên một số thẻ ngân hàng, hoặc bằng cách hỏi ngân hàng của bạn. Tại hầu hết các quốc gia châu Âu, IBAN được in ở đầu mọi sao kê."}},{"@type":"Question","name":"Tại sao công cụ kiểm tra này không yêu cầu đăng nhập ngân hàng hoặc thông tin cá nhân?","acceptedAnswer":{"@type":"Answer","text":"Vì không cần bất kỳ thứ gì trong số đó. Việc xác thực IBAN là toán học thuần túy trên chính con số, nên công cụ này chạy 100% trên thiết bị của bạn và không bao giờ gửi IBAN bạn gõ đi bất cứ đâu."}},{"@type":"Question","name":"Một chữ số sai vẫn có thể vượt qua phép kiểm tra mod-97 không?","acceptedAnswer":{"@type":"Answer","text":"Hầu như không bao giờ đối với một lỗi đơn lẻ. Mã kiểm tra mod-97 được thiết kế để bắt mọi lỗi một chữ số và hầu hết lỗi hoán đổi các chữ số kề nhau, đó là lý do ngân hàng từ chối ngay một IBAN gõ sai thay vì gửi tiền tới sai tài khoản."}},{"@type":"Question","name":"Một IBAN dài bao nhiêu tại mỗi quốc gia?","acceptedAnswer":{"@type":"Answer","text":"Độ dài cố định theo quốc gia, từ 15 ký tự tại Na Uy tới 31 tại Malta. Đức dùng 22, Pháp 27, Vương quốc Anh 22, Tây Ban Nha 24 và Thụy Sĩ 21. Công cụ kiểm tra này so sánh IBAN của bạn với độ dài chính thức chính xác cho mã quốc gia của nó trước khi chạy mã kiểm tra."}},{"@type":"Question","name":"Tôi nên gõ IBAN của mình có khoảng trắng hay không?","acceptedAnswer":{"@type":"Answer","text":"Cả hai đều được ở đây. IBAN thường được in thành các khối bốn ký tự để dễ đọc, nhưng các khoảng trắng không phải là một phần của con số. Công cụ kiểm tra này tự động loại bỏ khoảng trắng và hiển thị cho bạn phiên bản được nhóm thân thiện với việc in ấn."}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://loonaautomation.github.io/loona-salary-calculators/vi/"},{"@type":"ListItem","position":2,"name":"Máy kiểm tra IBAN","item":"https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html"}]}</script>
+<link rel="manifest" href="../iban-checker.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>Máy kiểm tra IBAN</h1>
+<p>Xác thực bất kỳ IBAN châu Âu nào trong vài giây với mã kiểm tra mod-97 thực từ ISO 13616 — cộng kiểm tra độ dài chính thức cho quốc gia của nó, tên quốc gia của nó và một định dạng được nhóm thân thiện với việc in ấn. Miễn phí, không cần đăng ký.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>Tóm lại:</strong> gõ hoặc dán một IBAN và công cụ kiểm tra này loại bỏ khoảng trắng, kiểm tra mã quốc gia gồm hai chữ cái và độ dài chính xác cho quốc gia đó, rồi chạy mã kiểm tra mod-97. Một phần dư bằng 1 có nghĩa là con số được tạo đúng — nó không chứng minh tài khoản tồn tại.</p></div>
+<div class="calc">
+<label for="iban">IBAN</label>
+<input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<div class="result" id="result">
+<div id="rTitle">Kết quả</div>
+<div class="big" id="rVerdict">—</div>
+<table>
+<tr><td>Quốc gia</td><td id="rCountry">—</td></tr>
+<tr><td>IBAN đã chuẩn hóa</td><td id="rNorm">—</td></tr>
+<tr><td>Được nhóm (các khối 4)</td><td id="rGrouped">—</td></tr>
+<tr><td>Độ dài</td><td id="rLength">—</td></tr>
+<tr><td>Phần dư Mod-97 (phải bằng 1)</td><td id="rMod">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>Nó được tính như thế nào</h2>
+<p>Mọi IBAN đều tuân theo ISO 13616. Việc xác thực mà ngân hàng — và công cụ kiểm tra này — sử dụng có bốn bước:</p>
+<ul>
+<li><strong>Chuẩn hóa:</strong> loại bỏ khoảng trắng và chuyển thành chữ hoa.</li>
+<li><strong>Cấu trúc:</strong> con số phải khớp hai chữ cái (quốc gia), hai chữ số kiểm tra, rồi chỉ chữ cái và chữ số.</li>
+<li><strong>Độ dài:</strong> tổng độ dài phải bằng độ dài cố định cho quốc gia đó — ví dụ 22 cho Đức, 27 cho Pháp, 22 cho Vương quốc Anh, 21 cho Thụy Sĩ và 15 cho Na Uy.</li>
+<li><strong>Mã kiểm tra Mod-97:</strong> chuyển bốn ký tự đầu tiên xuống cuối, chuyển các chữ cái thành số (A = 10, B = 11, … Z = 35), rồi chia cho 97 theo từng đoạn. Công thức: IBAN đã sắp xếp lại mod 97 = 1 đối với một IBAN hợp lệ.</li>
+</ul>
+<p style="margin-top:8px">Các ví dụ minh họa — mỗi kết quả bên dưới được điền bởi công cụ xác thực của chính trang này khi trang tải, nên nó không bao giờ có thể không khớp với công cụ kiểm tra ở trên:</p>
+<ul>
+<li>Đức: DE89370400440532013000 → <span id="ex1">đang kiểm tra…</span></li>
+<li>Vương quốc Anh: GB29NWBK60161331926819 → <span id="ex2">đang kiểm tra…</span></li>
+<li>Pháp: FR1420041010050500013M02606 → <span id="ex3">đang kiểm tra…</span></li>
+<li>Thụy Sĩ: CH9300762011623852957 → <span id="ex4">đang kiểm tra…</span></li>
+<li>Na Uy: NO9386011117947 → <span id="ex5">đang kiểm tra…</span></li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>Các câu hỏi thường gặp</h2>
+<div class="faq"><h3>Mod-97 là gì và nó kiểm tra một IBAN như thế nào?</h3><p>Mod-97 là mã kiểm tra được tích hợp trong mọi IBAN theo ISO 13616. Bốn ký tự đầu tiên được chuyển xuống cuối, các chữ cái được chuyển thành số (A=10 tới Z=35), và con số dài kết quả được chia cho 97 theo từng đoạn. Một IBAN thật luôn để lại phần dư đúng bằng 1; bất kỳ phần dư nào khác có nghĩa là một chữ số hoặc chữ cái đã bị gõ sai.</p></div>
+<div class="faq"><h3>Sự khác biệt giữa một IBAN và một mã SWIFT/BIC là gì?</h3><p>Một IBAN xác định một tài khoản ngân hàng cụ thể tại một quốc gia. Một mã SWIFT/BIC xác định chính ngân hàng và chi nhánh, không phải tài khoản của bạn. Chuyển tiền quốc tế thường cần IBAN cho tài khoản và cũng có thể yêu cầu SWIFT/BIC của ngân hàng.</p></div>
+<div class="faq"><h3>Một IBAN hợp lệ có nghĩa là tài khoản tồn tại không?</h3><p>Không. Một kết quả hợp lệ chỉ có nghĩa là định dạng và mã kiểm tra mod-97 đúng đối với quốc gia đó. Nó không thể xác nhận rằng tài khoản tồn tại, đang mở, thuộc về người bạn mong đợi, hoặc có bất kỳ khoản tiền nào trong đó. Luôn xác nhận thông tin tài khoản với người nhận qua một kênh đáng tin cậy trước khi gửi tiền.</p></div>
+<div class="faq"><h3>Tôi có thể tìm IBAN của chính mình ở đâu?</h3><p>Trên sao kê ngân hàng của bạn, bên trong ứng dụng ngân hàng hoặc ngân hàng trực tuyến của bạn (thường dưới thông tin tài khoản), trên một số thẻ ngân hàng, hoặc bằng cách hỏi ngân hàng của bạn. Tại hầu hết các quốc gia châu Âu, IBAN được in ở đầu mọi sao kê.</p></div>
+<div class="faq"><h3>Tại sao công cụ kiểm tra này không yêu cầu đăng nhập ngân hàng hoặc thông tin cá nhân?</h3><p>Vì không cần bất kỳ thứ gì trong số đó. Việc xác thực IBAN là toán học thuần túy trên chính con số, nên công cụ này chạy 100% trên thiết bị của bạn và không bao giờ gửi IBAN bạn gõ đi bất cứ đâu.</p></div>
+</div>
+
+<div class="note"><strong>Quyền riêng tư:</strong> công cụ kiểm tra này chạy 100% trên thiết bị của bạn — IBAN bạn gõ không bao giờ rời khỏi trình duyệt của bạn. <strong>Tuyên bố miễn trách nhiệm:</strong> chỉ xác thực định dạng và mã kiểm tra, dựa trên tiêu chuẩn IBAN ISO 13616; nó không thể xác nhận rằng một tài khoản tồn tại. Độ dài và quy tắc đã được xác minh vào tháng Mười Một 2026 theo ISO 13616 IBAN Registry.</div>
+
+<div class="sec"><h2>Thêm máy tính</h2>
+<div class="links">
+<a href="vat-calculator.html">Máy tính VAT</a>
+<a href="reverse-vat-calculator.html">Máy tính VAT ngược</a>
+<a href="vat-number-checker.html">Máy kiểm tra mã số VAT</a>
+<a class="alt" href="./">Tất cả máy tính</a>
+</div></div>
+<div class="sec">
+<h2>Nó hoạt động như thế nào — công thức</h2>
+<p>Một IBAN tự kiểm tra theo thiết kế. Ký tự thứ ba và thứ tư của nó là các chữ số kiểm tra do ngân hàng phát hành chọn để toàn bộ số vượt qua một phép kiểm tra số học chính xác. Để chạy phép kiểm tra đó, hãy lấy IBAN, chuyển bốn ký tự đầu tiên của nó (mã quốc gia cộng các chữ số kiểm tra) xuống cuối, thay mỗi chữ cái bằng một số hai chữ số (A = 10 tới Z = 35), và tính số rất dài đó modulo 97 — trong thực tế theo từng đoạn nhỏ, mang mỗi phần dư sang đoạn tiếp theo để các con số vẫn trong tầm kiểm soát. Nếu phần dư cuối cùng đúng bằng 1, IBAN được tạo đúng; bất kỳ lỗi gõ nào ở một chữ số hoặc chữ cái đều làm thay đổi phần dư và bị phát hiện trước khi tiền di chuyển.</p>
+<h3>Ví dụ minh họa</h3>
+<p>Lấy IBAN của Đức DE89370400440532013000. Mã quốc gia của nó là DE (Đức), độ dài dự kiến của nó là 22 và nó có đúng 22 ký tự. Được sắp xếp lại và chuyển đổi, nó bắt đầu 370400440532013000131489 — và con số đó mod 97 là <strong><span id="exWorked">…</span></strong>, được điền bởi công cụ kiểm tra trên trang này. Phần dư bằng 1 là điểm đạt mà mọi ngân hàng đều tìm kiếm.</p>
+<h3>Các câu hỏi thường gặp</h3>
+<div class="faq"><h3>Một chữ số sai vẫn có thể vượt qua phép kiểm tra mod-97 không?</h3><p>Hầu như không bao giờ đối với một lỗi đơn lẻ. Mã kiểm tra mod-97 được thiết kế để bắt mọi lỗi một chữ số và hầu hết lỗi hoán đổi các chữ số kề nhau, đó là lý do ngân hàng từ chối ngay một IBAN gõ sai thay vì gửi tiền tới sai tài khoản.</p></div>
+<div class="faq"><h3>Một IBAN dài bao nhiêu tại mỗi quốc gia?</h3><p>Độ dài cố định theo quốc gia, từ 15 ký tự tại Na Uy tới 31 tại Malta. Đức dùng 22, Pháp 27, Vương quốc Anh 22, Tây Ban Nha 24 và Thụy Sĩ 21. Công cụ kiểm tra này so sánh IBAN của bạn với độ dài chính thức chính xác cho mã quốc gia của nó trước khi chạy mã kiểm tra.</p></div>
+<div class="faq"><h3>Tôi nên gõ IBAN của mình có khoảng trắng hay không?</h3><p>Cả hai đều được ở đây. IBAN thường được in thành các khối bốn ký tự để dễ đọc, nhưng các khoảng trắng không phải là một phần của con số. Công cụ kiểm tra này tự động loại bỏ khoảng trắng và hiển thị cho bạn phiên bản được nhóm thân thiện với việc in ấn.</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>Nhúng máy tính này vào trang web của bạn — miễn phí</h2>
+<p>Thêm máy tính này vào trang web hoặc blog của riêng bạn — nó hoàn toàn miễn phí, không cần đăng ký, và luôn hiển thị phiên bản mới nhất. Sao chép mã bên dưới và dán nó vào trang của bạn tại nơi bạn muốn máy tính xuất hiện. Giữ dòng ghi công nhỏ &ldquo;Powered by Loona Automation&rdquo; dưới phần nhúng giúp giữ công cụ này miễn phí &mdash; nhưng bạn tự do tạo kiểu hoặc xóa nó; công cụ hoạt động theo bất kỳ cách nào.</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="IBAN Checker by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;Được cung cấp bởi &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/vi/iban-checker.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; miễn phí Máy kiểm tra IBAN&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">Sao chép mã nhúng</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='Đã sao chép!';setTimeout(function(){b.textContent='Sao chép mã nhúng';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">Giới thiệu</a> · <a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="terms.html">Điều khoản</a> · <a href="contact.html">Liên hệ</a></footer>
+<script>
+/*CALC-START*/
+var IBAN_LENGTHS = {AL:28,AD:24,AT:20,BE:16,BA:20,BG:22,HR:21,CY:28,CZ:24,DK:18,EE:20,FO:18,FI:18,FR:27,GE:22,DE:22,GI:23,GR:27,GL:18,HU:28,IS:26,IE:22,IT:27,LV:21,LI:21,LT:20,LU:20,MK:19,MT:31,MC:27,ME:22,NL:18,NO:15,PL:28,PT:25,RO:24,SM:27,RS:22,SK:24,SI:19,ES:24,SE:24,CH:21,TR:26,GB:22,UA:29,VA:22};
+var IBAN_COUNTRIES = {AL:"Albania",AD:"Andorra",AT:"Áo",BE:"Bỉ",BA:"Bosnia và Herzegovina",BG:"Bulgaria",HR:"Croatia",CY:"Síp",CZ:"Séc",DK:"Đan Mạch",EE:"Estonia",FO:"Quần đảo Faroe",FI:"Phần Lan",FR:"Pháp",GE:"Gruzia",DE:"Đức",GI:"Gibraltar",GR:"Hy Lạp",GL:"Greenland",HU:"Hungary",IS:"Iceland",IE:"Ireland",IT:"Ý",LV:"Latvia",LI:"Liechtenstein",LT:"Litva",LU:"Luxembourg",MK:"Bắc Macedonia",MT:"Malta",MC:"Monaco",ME:"Montenegro",NL:"Hà Lan",NO:"Na Uy",PL:"Ba Lan",PT:"Bồ Đào Nha",RO:"Romania",SM:"San Marino",RS:"Serbia",SK:"Slovakia",SI:"Slovenia",ES:"Tây Ban Nha",SE:"Thụy Điển",CH:"Thụy Sĩ",TR:"Thổ Nhĩ Kỳ",GB:"Vương quốc Anh",UA:"Ukraine",VA:"Vatican"};
+function ibanMod97(iban){
+  var rearranged = iban.slice(4) + iban.slice(0,4);
+  var numeric = "";
+  for(var i=0;i<rearranged.length;i++){
+    var c = rearranged[i];
+    if(c >= "0" && c <= "9") numeric += c;
+    else numeric += String(c.charCodeAt(0) - 55);
+  }
+  var remainder = 0;
+  for(var j=0;j<numeric.length;j+=7){
+    remainder = parseInt(String(remainder) + numeric.slice(j, j+7), 10) % 97;
+  }
+  return remainder;
+}
+function ibanValidate(iban){
+  var normalized = String(iban == null ? "" : iban).replace(/\s+/g,"").toUpperCase();
+  var grouped = normalized.replace(/(.{4})/g,"$1 ").trim();
+  var result = {valid:false, ok:false, normalized:normalized, grouped:grouped, countryCode:"", countryName:"", expectedLength:null, actualLength:normalized.length, mod97:null, message:""};
+  if(!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(normalized)){
+    result.message = "Không khớp cấu trúc IBAN: hai chữ cái quốc gia, hai chữ số kiểm tra, rồi các chữ cái và chữ số.";
+    return result;
+  }
+  var cc = normalized.slice(0,2);
+  result.countryCode = cc;
+  result.countryName = IBAN_COUNTRIES[cc] || "Không biết";
+  if(!(cc in IBAN_LENGTHS)){
+    result.message = "Mã quốc gia " + cc + " không có trong bảng độ dài IBAN châu Âu này.";
+    return result;
+  }
+  result.expectedLength = IBAN_LENGTHS[cc];
+  if(normalized.length !== IBAN_LENGTHS[cc]){
+    result.message = "Độ dài sai cho " + result.countryName + ": kỳ vọng " + IBAN_LENGTHS[cc] + " ký tự, nhận " + normalized.length + ".";
+    return result;
+  }
+  result.mod97 = ibanMod97(normalized);
+  if(result.mod97 !== 1){
+    result.message = "Tổng kiểm tra Mod-97 không đạt: phần dư là " + result.mod97 + ", nhưng một IBAN hợp lệ phải cho 1.";
+    return result;
+  }
+  result.valid = true; result.ok = true;
+  result.message = "Định dạng IBAN và tổng kiểm tra hợp lệ cho " + result.countryName + ". Điều này chỉ xác nhận số được tạo thành đúng — nó không chứng minh tài khoản tồn tại.";
+  return result;
+}
+/*CALC-END*/
+function calc(){
+  var v = document.getElementById("iban").value;
+  var box = document.getElementById("result");
+  if(!v || !v.trim()){ box.style.display="none"; return; }
+  var r = ibanValidate(v);
+  document.getElementById("rVerdict").textContent = r.valid ? "✓ IBAN hợp lệ" : "✗ IBAN không hợp lệ";
+  document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
+  document.getElementById("rNorm").textContent = r.normalized || "—";
+  document.getElementById("rGrouped").textContent = r.grouped || "—";
+  document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
+  document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
+  document.getElementById("rNote").textContent = r.message;
+  box.style.display = "block";
+}
+document.getElementById("iban").addEventListener("input",calc);
+(function(){
+  var examples = [["ex1","DE89370400440532013000"],["ex2","GB29NWBK60161331926819"],["ex3","FR1420041010050500013M02606"],["ex4","CH9300762011623852957"],["ex5","NO9386011117947"]];
+  examples.forEach(function(pair){
+    var r = ibanValidate(pair[1]);
+    document.getElementById(pair[0]).textContent = r.valid ? "✓ hợp lệ — " + r.countryName + ", độ dài " + r.actualLength + ", phần dư mod-97 là 1" : "✗ không hợp lệ — " + r.message;
+  });
+  var w = ibanValidate("DE89370400440532013000");
+  document.getElementById("exWorked").textContent = (w.mod97 === null ? "—" : String(w.mod97));
+})();
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Cài đặt Ứng dụng';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Cài đặt ứng dụng này: chạm nút Share, rồi chọn "Add to Home Screen".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>

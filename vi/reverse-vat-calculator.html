@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Máy tính VAT ngược — Trừ VAT khỏi bất kỳ giá châu Âu nào</title>
+<meta name="description" content="Máy tính VAT ngược miễn phí cho 30 quốc gia châu Âu: nhập một giá đã gồm VAT và tách ngay nó thành số tiền ròng và VAT. Thuế suất đã xác minh, riêng tư.">
+<meta name="keywords" content="reverse vat calculator, remove vat calculator, vat inclusive calculator, gross to net vat">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/reverse-vat-calculator.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/reverse-vat-calculator.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/reverse-vat-calculator.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/reverse-vat-calculator.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/reverse-vat-calculator.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/reverse-vat-calculator.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/reverse-vat-calculator.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/reverse-vat-calculator.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/reverse-vat-calculator.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/reverse-vat-calculator.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/reverse-vat-calculator.html"><link rel="alternate" hreflang="vi" href="https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/reverse-vat-calculator.html"><meta property="og:locale" content="vi_VN">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Máy tính VAT ngược — Loona">
+<meta property="og:description" content="Nhập một giá đã gồm VAT cho bất kỳ quốc gia nào trong 30 quốc gia châu Âu và tách nó thành ròng và VAT ngay lập tức. Miễn phí, không cần đăng ký.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Máy tính VAT ngược — Loona">
+<meta name="twitter:description" content="Máy tính VAT ngược miễn phí: €124 tổng tại Estonia ở mức 24% là €100 ròng cộng €24 VAT. Thuế suất đã xác minh cho 30 quốc gia.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Máy tính VAT ngược","url":"https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Phép tính VAT ngược là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là phép tính tách một giá đã gồm VAT (tổng) thành hai phần của nó: số tiền ròng trước VAT và chính số tiền VAT. Các doanh nghiệp dùng nó để yêu cầu hoàn VAT, hạch toán chi phí đúng và kiểm tra các hóa đơn nơi chỉ tổng cộng được hiển thị."}},{"@type":"Question","name":"Công thức để trừ VAT là gì?","acceptedAnswer":{"@type":"Answer","text":"Ròng = tổng ÷ (1 + thuế suất ÷ 100), rồi VAT = tổng − ròng. Đối với mức 24% bạn chia cho 1.24; đối với 19% bạn chia cho 1.19. Lấy tỷ lệ phần trăm thuế suất trực tiếp khỏi giá tổng cho đáp án sai, vì VAT đã được tính trên số tiền ròng nhỏ hơn."}},{"@type":"Question","name":"Ví dụ €124 hoạt động như thế nào?","acceptedAnswer":{"@type":"Answer","text":"Ở mức tiêu chuẩn 24% của Estonia, một số tiền tổng €124 chia cho 1.24 cho đúng €100 ròng, nên VAT nằm trong giá là €124 − €100 = €24. Ví dụ minh họa trên trang này được tính trực tiếp bởi chính công cụ."}},{"@type":"Question","name":"Khi nào tôi cần tính ngược VAT?","acceptedAnswer":{"@type":"Answer","text":"Khi một biên lai hoặc hóa đơn chỉ hiển thị tổng cộng, khi bạn đang yêu cầu hoàn VAT trên chi phí kinh doanh, khi bạn so sánh các giá được báo có và không có VAT, hoặc khi bạn cần con số ròng cho sổ sách kế toán hoặc một tờ khai VAT của bạn."}},{"@type":"Question","name":"Điều này có giống cơ chế khấu trừ ngược không?","acceptedAnswer":{"@type":"Answer","text":"Không. Khấu trừ ngược là một quy tắc kế toán của EU chuyển việc ai báo cáo VAT trên các giao dịch B2B xuyên biên giới. Máy tính VAT ngược này đơn giản là phép tính loại bỏ VAT khỏi một số tiền tổng — hai thứ này cùng tên nhưng khác nhau."}},{"@type":"Question","name":"Việc làm tròn được xử lý như thế nào khi tôi trừ VAT?","acceptedAnswer":{"@type":"Answer","text":"Máy tính chia chính xác và chỉ làm tròn để hiển thị, tới hai chữ số thập phân. Trên các hóa đơn thực, việc làm tròn được thực hiện theo từng dòng hoặc theo từng hóa đơn theo các quy tắc quốc gia, nên một tổng cộng kiểm tra bằng tay có thể chênh một xu — điều đó là bình thường và được cơ quan thuế chấp nhận."}},{"@type":"Question","name":"Tôi có thể tính ngược một thuế suất VAT giảm không?","acceptedAnswer":{"@type":"Answer","text":"Trang này dùng thuế suất tiêu chuẩn của mỗi quốc gia, vốn bao phủ hầu hết hàng hóa và dịch vụ. Nếu mặt hàng của bạn bị đánh thuế ở một mức giảm (thực phẩm, sách, thuốc và các nhóm tương tự), cách tách sẽ khác — hãy kiểm tra các mức giảm được liệt kê trên trang VAT của quốc gia đó và xác nhận mức nào thực sự đã được tính trên hóa đơn của bạn."}},{"@type":"Question","name":"Việc trừ VAT có cho tôi biết tôi có thể yêu cầu hoàn bao nhiêu không?","acceptedAnswer":{"@type":"Answer","text":"Nó cho bạn biết VAT chứa trong giá, vốn là điểm khởi đầu. Việc bạn có thực sự yêu cầu hoàn được hay không tùy thuộc vào đăng ký VAT của bạn, loại chi phí và các quy tắc của quốc gia của bạn — giải trí và sử dụng cá nhân thường bị loại trừ."}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://loonaautomation.github.io/loona-salary-calculators/vi/"},{"@type":"ListItem","position":2,"name":"Máy tính VAT ngược","item":"https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html"}]}</script>
+<link rel="manifest" href="../reverse-vat-calculator.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>Máy tính VAT ngược</h1>
+<p>Nhập một giá đã bao gồm VAT và tách nó thành ròng + VAT cho bất kỳ quốc gia nào trong 30 quốc gia châu Âu — công thức chia đúng, theo các thuế suất tiêu chuẩn đã xác minh.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>Tóm lại:</strong> nhập bất kỳ giá nào đã gồm VAT, chọn quốc gia, và máy tính này tách nó thành số tiền ròng và VAT bên trong nó — dùng công thức ròng = tổng ÷ (1 + thuế suất ÷ 100) theo thuế suất tiêu chuẩn đã xác minh của quốc gia đó.</p></div>
+<div class="calc">
+<label for="country">Quốc gia (thuế suất VAT tiêu chuẩn)</label>
+<select id="country">
+<option value="austria" data-rate="20" data-symbol="€" data-currency="EUR">Áo — 20% (EUR)</option>
+<option value="belgium" data-rate="21" data-symbol="€" data-currency="EUR">Bỉ — 21% (EUR)</option>
+<option value="bulgaria" data-rate="20" data-symbol="€" data-currency="EUR">Bulgaria — 20% (EUR)</option>
+<option value="croatia" data-rate="25" data-symbol="€" data-currency="EUR">Croatia — 25% (EUR)</option>
+<option value="cyprus" data-rate="19" data-symbol="€" data-currency="EUR">Síp — 19% (EUR)</option>
+<option value="czechia" data-rate="21" data-symbol="Kč" data-currency="CZK">Séc — 21% (CZK)</option>
+<option value="denmark" data-rate="25" data-symbol="kr" data-currency="DKK">Đan Mạch — 25% (DKK)</option>
+<option value="estonia" data-rate="24" data-symbol="€" data-currency="EUR" selected>Estonia — 24% (EUR)</option>
+<option value="finland" data-rate="25.5" data-symbol="€" data-currency="EUR">Phần Lan — 25.5% (EUR)</option>
+<option value="france" data-rate="20" data-symbol="€" data-currency="EUR">Pháp — 20% (EUR)</option>
+<option value="germany" data-rate="19" data-symbol="€" data-currency="EUR">Đức — 19% (EUR)</option>
+<option value="greece" data-rate="24" data-symbol="€" data-currency="EUR">Hy Lạp — 24% (EUR)</option>
+<option value="hungary" data-rate="27" data-symbol="Ft" data-currency="HUF">Hungary — 27% (HUF)</option>
+<option value="ireland" data-rate="23" data-symbol="€" data-currency="EUR">Ireland — 23% (EUR)</option>
+<option value="italy" data-rate="22" data-symbol="€" data-currency="EUR">Ý — 22% (EUR)</option>
+<option value="latvia" data-rate="21" data-symbol="€" data-currency="EUR">Latvia — 21% (EUR)</option>
+<option value="lithuania" data-rate="21" data-symbol="€" data-currency="EUR">Litva — 21% (EUR)</option>
+<option value="luxembourg" data-rate="17" data-symbol="€" data-currency="EUR">Luxembourg — 17% (EUR)</option>
+<option value="malta" data-rate="18" data-symbol="€" data-currency="EUR">Malta — 18% (EUR)</option>
+<option value="netherlands" data-rate="21" data-symbol="€" data-currency="EUR">Hà Lan — 21% (EUR)</option>
+<option value="poland" data-rate="23" data-symbol="zł" data-currency="PLN">Ba Lan — 23% (PLN)</option>
+<option value="portugal" data-rate="23" data-symbol="€" data-currency="EUR">Bồ Đào Nha — 23% (EUR)</option>
+<option value="romania" data-rate="21" data-symbol="lei" data-currency="RON">Romania — 21% (RON)</option>
+<option value="slovakia" data-rate="23" data-symbol="€" data-currency="EUR">Slovakia — 23% (EUR)</option>
+<option value="slovenia" data-rate="22" data-symbol="€" data-currency="EUR">Slovenia — 22% (EUR)</option>
+<option value="spain" data-rate="21" data-symbol="€" data-currency="EUR">Tây Ban Nha — 21% (EUR)</option>
+<option value="sweden" data-rate="25" data-symbol="kr" data-currency="SEK">Thụy Điển — 25% (SEK)</option>
+<option value="united-kingdom" data-rate="20" data-symbol="£" data-currency="GBP">Vương quốc Anh — 20% (GBP)</option>
+<option value="switzerland" data-rate="8.1" data-symbol="CHF" data-currency="CHF">Thụy Sĩ — 8.1% (CHF)</option>
+<option value="norway" data-rate="25" data-symbol="kr" data-currency="NOK">Na Uy — 25% (NOK)</option>
+</select>
+<label for="gross">Số tiền tổng (đã gồm VAT)</label>
+<input type="number" id="gross" min="0" step="any" value="124" inputmode="decimal">
+<div class="result" id="result">
+<div>Số tiền ròng (trước VAT)</div>
+<div class="big" id="total">—</div>
+<table>
+<tr><td>Quốc gia</td><td id="rCountry">—</td></tr>
+<tr><td>Thuế suất VAT tiêu chuẩn</td><td id="rRate">—</td></tr>
+<tr><td>Số tiền tổng (đã gồm VAT)</td><td id="rGross">—</td></tr>
+<tr><td>Số tiền VAT</td><td id="rVat">—</td></tr>
+<tr><td>Số tiền ròng (trước VAT)</td><td id="rNet">—</td></tr>
+</table>
+<p style="margin-top:8px;font-size:.88rem;color:var(--mut)">Cần cộng VAT vào một giá ròng thay vào đó? Hãy dùng <a href="vat-calculator.html">Máy tính VAT</a>.</p>
+</div>
+</div>
+
+<div class="sec">
+<h2>Nó được tính như thế nào</h2>
+<p>Công thức là: <strong>ròng = tổng ÷ (1 + thuế suất ÷ 100)</strong> and <strong>VAT = tổng − ròng</strong>. Phép chia là thiết yếu: VAT được cộng trên số tiền ròng, nên VAT nằm trong một giá tổng luôn nhỏ hơn tỷ lệ phần trăm danh nghĩa của giá tổng đó.</p>
+<p style="margin-top:8px">Ví dụ minh họa: một số tiền tổng €124 tại Estonia theo thuế suất tiêu chuẩn 24%. Ròng = €124 ÷ 1.24 = <strong id="exNet">—</strong>, and VAT = €124 − net = <strong id="exVat">—</strong> (tổng <span id="exGross">—</span>). Các con số này được tính trực tiếp bởi máy tính của chính trang này, nên luôn khớp với công cụ ở trên.</p>
+</div>
+
+<div class="sec">
+<h2>Các câu hỏi thường gặp</h2>
+<div class="faq"><h3>Phép tính VAT ngược là gì?</h3><p>Đó là phép tính tách một giá đã gồm VAT (tổng) thành hai phần của nó: số tiền ròng trước VAT và chính số tiền VAT. Các doanh nghiệp dùng nó để yêu cầu hoàn VAT, hạch toán chi phí đúng và kiểm tra các hóa đơn nơi chỉ tổng cộng được hiển thị.</p></div>
+<div class="faq"><h3>Công thức để trừ VAT là gì?</h3><p>Ròng = tổng ÷ (1 + thuế suất ÷ 100), rồi VAT = tổng − ròng. Đối với mức 24% bạn chia cho 1.24; đối với 19% bạn chia cho 1.19. Lấy tỷ lệ phần trăm thuế suất trực tiếp khỏi giá tổng cho đáp án sai, vì VAT đã được tính trên số tiền ròng nhỏ hơn.</p></div>
+<div class="faq"><h3>Ví dụ €124 hoạt động như thế nào?</h3><p>Ở mức tiêu chuẩn 24% của Estonia, một số tiền tổng €124 chia cho 1.24 cho đúng €100 ròng, nên VAT nằm trong giá là €124 − €100 = €24. Ví dụ minh họa trên trang này được tính trực tiếp bởi chính công cụ.</p></div>
+<div class="faq"><h3>Khi nào tôi cần tính ngược VAT?</h3><p>Khi một biên lai hoặc hóa đơn chỉ hiển thị tổng cộng, khi bạn đang yêu cầu hoàn VAT trên chi phí kinh doanh, khi bạn so sánh các giá được báo có và không có VAT, hoặc khi bạn cần con số ròng cho sổ sách kế toán hoặc một tờ khai VAT của bạn.</p></div>
+<div class="faq"><h3>Điều này có giống cơ chế khấu trừ ngược không?</h3><p>Không. Khấu trừ ngược là một quy tắc kế toán của EU chuyển việc ai báo cáo VAT trên các giao dịch B2B xuyên biên giới. Máy tính VAT ngược này đơn giản là phép tính loại bỏ VAT khỏi một số tiền tổng — hai thứ này cùng tên nhưng khác nhau.</p></div>
+</div>
+
+<div class="note"><strong>Quyền riêng tư:</strong> phép tính này chạy 100% trên thiết bị của bạn — các số tiền của bạn không bao giờ rời khỏi trình duyệt của bạn. <strong>Tuyên bố miễn trách nhiệm:</strong> chỉ là ước tính, dựa trên các thuế suất VAT tiêu chuẩn đã được xác minh vào tháng Mười Một 2026 theo các nguồn chính thức — Ủy ban châu Âu (Your Europe), GOV.UK, Cơ quan Thuế Liên bang Thụy Sĩ và Cơ quan Thuế Na Uy (Skatteetaten); không phải tư vấn thuế. Luôn xác nhận mức cho hàng hóa hoặc dịch vụ chính xác của bạn với cơ quan VAT quốc gia.</div>
+
+<div class="sec"><h2>Thêm máy tính</h2>
+<div class="links">
+<a href="vat-calculator.html">Máy tính VAT (tất cả 30 quốc gia)</a>
+<a href="vat-number-checker.html">Máy kiểm tra mã số VAT</a>
+<a href="iban-checker.html">Máy kiểm tra IBAN</a>
+<a href="vat-calculator-estonia.html">Máy tính VAT Estonia</a>
+<a href="vat-calculator-germany.html">Máy tính VAT Đức</a>
+<a href="vat-calculator-france.html">Máy tính VAT Pháp</a>
+<a class="alt" href="./">Tất cả máy tính</a>
+</div></div>
+
+<div class="sec">
+<h2>Nó hoạt động như thế nào — công thức</h2>
+<p>Một giá tổng là giá ròng nhân với (1 + thuế suất ÷ 100). Đảo ngược phép nhân đó là một phép chia: ròng = tổng ÷ (1 + thuế suất ÷ 100). Ở mức 24%, số chia là 1.24, ở mức 20% là 1.20, ở mức 8.1% (Thụy Sĩ) là 1.081. Số tiền VAT sau đó đơn giản là phần còn lại: tổng − ròng. Đó là lý do VAT nằm trong một giá €120 ở mức 20% là €20 chứ không phải €24 — 20% được tính trên €100 ròng, không phải trên tổng €120. Máy tính áp dụng thuế suất tiêu chuẩn của quốc gia bạn chọn và chỉ làm tròn các con số hiển thị, tới hai chữ số thập phân.</p>
+<h3>Ví dụ minh họa</h3>
+<p>Một chiếc laptop mua tại Estonia với giá €1,240 đã gồm VAT ở mức 24%: ròng = €1,240 ÷ 1.24 = <strong id="ex2Net">—</strong>, VAT = <strong id="ex2Vat">—</strong> — số tiền mà một doanh nghiệp đã đăng ký VAT thường sẽ ghi nhận là VAT đầu vào có thể yêu cầu hoàn, tuân theo các quy tắc thông thường. Được tính trực tiếp bởi trang này.</p>
+<h3>Các câu hỏi thường gặp</h3>
+<div class="faq"><h3>Việc làm tròn được xử lý như thế nào khi tôi trừ VAT?</h3><p>Máy tính chia chính xác và chỉ làm tròn để hiển thị, tới hai chữ số thập phân. Trên các hóa đơn thực, việc làm tròn được thực hiện theo từng dòng hoặc theo từng hóa đơn theo các quy tắc quốc gia, nên một tổng cộng kiểm tra bằng tay có thể chênh một xu — điều đó là bình thường và được cơ quan thuế chấp nhận.</p></div>
+<div class="faq"><h3>Tôi có thể tính ngược một thuế suất VAT giảm không?</h3><p>Trang này dùng thuế suất tiêu chuẩn của mỗi quốc gia, vốn bao phủ hầu hết hàng hóa và dịch vụ. Nếu mặt hàng của bạn bị đánh thuế ở một mức giảm (thực phẩm, sách, thuốc và các nhóm tương tự), cách tách sẽ khác — hãy kiểm tra các mức giảm được liệt kê trên trang VAT của quốc gia đó và xác nhận mức nào thực sự đã được tính trên hóa đơn của bạn.</p></div>
+<div class="faq"><h3>Việc trừ VAT có cho tôi biết tôi có thể yêu cầu hoàn bao nhiêu không?</h3><p>Nó cho bạn biết VAT chứa trong giá, vốn là điểm khởi đầu. Việc bạn có thực sự yêu cầu hoàn được hay không tùy thuộc vào đăng ký VAT của bạn, loại chi phí và các quy tắc của quốc gia của bạn — giải trí và sử dụng cá nhân thường bị loại trừ.</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>Nhúng máy tính này vào trang web của bạn — miễn phí</h2>
+<p>Thêm máy tính này vào trang web hoặc blog của riêng bạn — nó hoàn toàn miễn phí, không cần đăng ký, và luôn hiển thị phiên bản mới nhất. Sao chép mã bên dưới và dán nó vào trang của bạn tại nơi bạn muốn máy tính xuất hiện. Giữ dòng ghi công nhỏ &ldquo;Powered by Loona Automation&rdquo; dưới phần nhúng giúp giữ công cụ này miễn phí &mdash; nhưng bạn tự do tạo kiểu hoặc xóa nó; công cụ hoạt động theo bất kỳ cách nào.</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="Reverse VAT Calculator by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;Được cung cấp bởi &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/vi/reverse-vat-calculator.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; miễn phí Máy tính VAT ngược&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">Sao chép mã nhúng</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='Đã sao chép!';setTimeout(function(){b.textContent='Sao chép mã nhúng';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">Giới thiệu</a> · <a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="terms.html">Điều khoản</a> · <a href="contact.html">Liên hệ</a></footer>
+<script>
+/*CALC-START*/
+function vatCalc(amount, ratePct, mode){
+  amount = Number(amount)||0; ratePct = Number(ratePct)||0;
+  if(mode==="remove"){
+    var gross = amount;
+    var net = gross/(1+ratePct/100);
+    return {net:net, vat:gross-net, gross:gross};
+  }
+  var net2 = amount;
+  var vat2 = net2*ratePct/100;
+  return {net:net2, vat:vat2, gross:net2+vat2};
+}
+/*CALC-END*/
+function fmt(n,sym){return sym + " " + n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function selData(){var s=document.getElementById("country");var o=s.options[s.selectedIndex];return {rate:parseFloat(o.getAttribute("data-rate")),sym:o.getAttribute("data-symbol"),label:o.textContent};}
+function calc(){
+  var d=selData();
+  var gross=parseFloat(document.getElementById("gross").value)||0;
+  var r=vatCalc(gross,d.rate,"remove");
+  document.getElementById("rCountry").textContent=d.label;
+  document.getElementById("rRate").textContent=d.rate+"%";
+  document.getElementById("rGross").textContent=fmt(r.gross,d.sym);
+  document.getElementById("rVat").textContent=fmt(r.vat,d.sym);
+  document.getElementById("rNet").textContent=fmt(r.net,d.sym);
+  document.getElementById("total").textContent=fmt(r.net,d.sym);
+  document.getElementById("result").style.display="block";
+  var ex=vatCalc(124,24,"remove");
+  document.getElementById("exNet").textContent=fmt(ex.net,"€");
+  document.getElementById("exVat").textContent=fmt(ex.vat,"€");
+  document.getElementById("exGross").textContent=fmt(ex.gross,"€");
+  var ex2=vatCalc(1240,24,"remove");
+  document.getElementById("ex2Net").textContent=fmt(ex2.net,"€");
+  document.getElementById("ex2Vat").textContent=fmt(ex2.vat,"€");
+}
+["country","gross"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);document.getElementById(id).addEventListener("change",calc);});
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Cài đặt Ứng dụng';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Cài đặt ứng dụng này: chạm nút Share, rồi chọn "Add to Home Screen".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
