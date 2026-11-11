@@ -1,0 +1,29 @@
+{
+  "name": "Loona $75 an Hour Is How Much a Year?",
+  "short_name": "$75 an Hour Is How Much a Year?",
+  "description": "$75 an hour is $156,000.00 a year gross ($117,892.00 after federal tax, single filer, 2026). Monthly, weekly and take-home hourly pay — free calculator.",
+  "id": "/loona-salary-calculators/en-us/75-per-hour-to-annual-salary.html",
+  "start_url": "./75-per-hour-to-annual-salary.html",
+  "scope": "./75-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

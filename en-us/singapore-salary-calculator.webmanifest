@@ -1,0 +1,29 @@
+{
+  "name": "Loona Singapore Net Salary Calculator",
+  "short_name": "Singapore Net Salary Calculator",
+  "description": "Calculate your take-home pay in Singapore for 2026: CPF contributions by age for citizens and PRs (20% up to the S$8,000 wage ceiling), none for foreigners, plus resident income tax. Free.",
+  "id": "/loona-salary-calculators/en-us/singapore-salary-calculator.html",
+  "start_url": "./singapore-salary-calculator.html",
+  "scope": "./singapore-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

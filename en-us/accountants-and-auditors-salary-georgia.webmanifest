@@ -1,0 +1,29 @@
+{
+  "name": "Loona Accountants and Auditors Salary in Georgia 2026",
+  "short_name": "Accountants and Auditors Salary in Georgia 2026",
+  "description": "A accountants and auditors earning the national median of $83,680 in Georgia takes home $64,271.75 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/en-us/accountants-and-auditors-salary-georgia.html",
+  "start_url": "./accountants-and-auditors-salary-georgia.html",
+  "scope": "./accountants-and-auditors-salary-georgia.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

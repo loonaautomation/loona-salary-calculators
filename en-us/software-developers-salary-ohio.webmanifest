@@ -1,0 +1,29 @@
+{
+  "name": "Loona Software Developers Salary in Ohio 2026",
+  "short_name": "Software Developers Salary in Ohio 2026",
+  "description": "A software developers earning the national median of $135,980 in Ohio takes home $101,237.51 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/en-us/software-developers-salary-ohio.html",
+  "start_url": "./software-developers-salary-ohio.html",
+  "scope": "./software-developers-salary-ohio.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

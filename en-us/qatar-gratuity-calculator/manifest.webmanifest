@@ -1,0 +1,29 @@
+{
+  "name": "Loona Qatar Gratuity Calculator",
+  "short_name": "Qatar Gratuity Calculator",
+  "description": "Calculate Qatar end-of-service gratuity under Article 54 of the Labour Law: at least 21 days of basic wage per year, or your better contract rate. Free.",
+  "id": "/loona-salary-calculators/en-us/qatar-gratuity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

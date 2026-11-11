@@ -1,0 +1,29 @@
+{
+  "name": "Loona Heating, Air Conditioning, and Refrigeration Mechanics and Installers Salary 2026",
+  "short_name": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers Salary 2026",
+  "description": "How much does a heating, air conditioning, and refrigeration mechanics and installers make? Median pay $61,010 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
+  "id": "/loona-salary-calculators/en-us/heating-air-conditioning-and-refrigeration-mechanics-and-installers-salary.html",
+  "start_url": "./heating-air-conditioning-and-refrigeration-mechanics-and-installers-salary.html",
+  "scope": "./heating-air-conditioning-and-refrigeration-mechanics-and-installers-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

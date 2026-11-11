@@ -1,0 +1,29 @@
+{
+  "name": "Loona Oman Gratuity Calculator",
+  "short_name": "Oman Gratuity Calculator",
+  "description": "Calculate Oman gratuity under Article 61 of the 2023 Labour Law: one month of basic wage per year, with the pre-August 2023 service split handled. Free.",
+  "id": "/loona-salary-calculators/en-us/oman-gratuity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

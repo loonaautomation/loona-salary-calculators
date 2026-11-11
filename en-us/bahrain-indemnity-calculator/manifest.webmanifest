@@ -1,0 +1,29 @@
+{
+  "name": "Loona Bahrain Indemnity Calculator",
+  "short_name": "Bahrain Indemnity Calculator",
+  "description": "Calculate Bahrain leaving indemnity under Article 116: half a month's wage per year for the first 3 years, one month per year after, with no cap. Free.",
+  "id": "/loona-salary-calculators/en-us/bahrain-indemnity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
