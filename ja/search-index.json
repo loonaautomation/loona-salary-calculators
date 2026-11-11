@@ -1,0 +1,524 @@
+[
+ {
+  "n": "職種 — 給与中央値 2026",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/professions.html",
+  "s": "Loona Salary Calculators",
+  "d": "正看護師からソフトウェア開発者、家庭医までの 60 職種の給与中央値（BLS OEWS 2025年五月）— 連邦税後の手取り給与と、最も検索される十の仕事についての州別ページ付き。",
+  "k": "professions median salaries 2026 professions median pay for 60 occupations from registered nurses to software developers to family physicians bls oews may 2025 with the take home pay after federal tax and state by state pages for the ten most searched jobs 2026 60 bls oews 2025",
+  "p": 100,
+  "c": "Tool"
+ },
+ {
+  "n": "世界の給与計算ツール 2026",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/united-kingdom-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "24 か国での手取り給与 — 英国、日本、ブラジル、スウェーデン、ノルウェー、デンマーク、スイスなど — それぞれ独自の 2026 年の税表付き。さらに 2024 年、2025 年、2026 年の給与税ページで年ごとの比較ができます。",
+  "k": "world salary calculators 2026 united kingdom salary calculator take home pay in 24 countries the uk japan brazil sweden norway denmark switzerland and more each with its own 2026 tax table plus salary tax pages for 2024 2025 and 2026 so you can compare year to year 2026 24 2026 2024 2025 2026",
+  "p": 4,
+  "c": "Tool"
+ },
+ {
+  "n": "米国給与明細計算ツール 2026",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/us-paycheck-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "すべての州での手取り給与：連邦税、社会保障、メディケア、各州の所得税 — さらに、あらゆる給与水準についての時給ページと給与額ページ。",
+  "k": "us paycheck calculator 2026 us paycheck calculator take home pay in every state federal tax social security medicare and each state s income tax plus hourly rate and salary amount pages for every pay level 2026",
+  "p": 3,
+  "c": "Tool"
+ },
+ {
+  "n": "UAE 退職金計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/uae-gratuity-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "UAE 労働法第51条に基づく退職金 — 最初の 5 年間は年 21 日分、その後は年 30 日分。",
+  "k": "uae gratuity calculator uae gratuity calculator end of service gratuity under article 51 of the uae labour law 21 days per year for the first 5 years 30 days after uae uae 51 5 21 30",
+  "p": 0,
+  "c": "Tool"
+ },
+ {
+  "n": "サウジアラビア退職手当計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/saudi-end-of-service-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "サウジアラビア労働法第84～85条に基づく EOSB の支給。退職時のスケールを含む。",
+  "k": "saudi end of service calculator saudi end of service calculator eosb award under articles 84 85 of the saudi labour law including the resignation scale 84 85 eosb",
+  "p": 1,
+  "c": "Tool"
+ },
+ {
+  "n": "オランダ給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/netherlands-salary-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "2026 年の総額から手取りへ：Box 1 の税金、二つの税額控除、休暇手当、30% ルーリングを組み込み済み。",
+  "k": "netherlands salary calculator netherlands salary calculator gross to net for 2026 with box 1 tax both tax credits holiday allowance and the 30 ruling built in 2026 box 1 30",
+  "p": 5,
+  "c": "Tool"
+ },
+ {
+  "n": "パキスタン給与税計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/pakistan-salary-tax-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "Finance Act 2026 の税率表（税年度 2026-27）に基づく給与所得税。2025-26 年の表も選択できます。",
+  "k": "pakistan salary tax calculator pakistan salary tax calculator salary income tax on the finance act 2026 slabs tax year 2026 27 with the 2025 26 table as a selector finance act 2026 2026 27 2025 26",
+  "p": 2,
+  "c": "Tool"
+ },
+ {
+  "n": "ドイツ総額→手取り計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/germany-salary-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "Brutto から Netto へ、英語で解説：税クラス別の所得税、連帯追加税、教会税、四つすべての社会保険。",
+  "k": "germany gross to net calculator germany salary calculator brutto to netto in english income tax by tax class solidarity surcharge church tax and all four social insurances brutto netto",
+  "p": 107,
+  "c": "Tool"
+ },
+ {
+  "n": "UAE 最終精算計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/uae-final-settlement-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "退職金に未使用休暇の給与と通知期間の給与を加え、項目別に表示。",
+  "k": "uae final settlement calculator uae final settlement calculator gratuity plus unused leave pay and notice period pay itemised uae",
+  "p": 108,
+  "c": "Tool"
+ },
+ {
+  "n": "サウジアラビア給与計算ツール（GOSI）",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/saudi-salary-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "GOSI 控除後の月次手取り給与 — 外国人労働者は 0%、サウジアラビア人は登録日による税率。",
+  "k": "saudi salary calculator gosi saudi salary calculator monthly net pay with gosi deductions 0 for expats saudi rates by registration date gosi gosi 0",
+  "p": 109,
+  "c": "Tool"
+ },
+ {
+  "n": "カタール退職金計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/qatar-gratuity-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "第54条：年 21 日の最低日数。より良い契約レートの入力欄付き。",
+  "k": "qatar gratuity calculator qatar gratuity calculator article 54 minimum of 21 days per year with an input for a better contract rate 54 21",
+  "p": 110,
+  "c": "Tool"
+ },
+ {
+  "n": "クウェート補償金計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/kuwait-indemnity-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "労働法 6/2010 第51～53条に基づく退職補償金。",
+  "k": "kuwait indemnity calculator kuwait indemnity calculator end of service indemnity under articles 51 53 of labour law 6 2010 6 2010 51 53",
+  "p": 111,
+  "c": "Tool"
+ },
+ {
+  "n": "オマーン退職金計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/oman-gratuity-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "第61条の退職金：2023年八月の前後での勤続期間の分割付き。",
+  "k": "oman gratuity calculator oman gratuity calculator article 61 gratuity with the pre post august 2023 service split 61 2023",
+  "p": 112,
+  "c": "Tool"
+ },
+ {
+  "n": "バーレーン補償金計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/bahrain-indemnity-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "社会保険の対象外の労働者に対する第116条の退職補償金。",
+  "k": "bahrain indemnity calculator bahrain indemnity calculator leaving indemnity under article 116 for workers outside social insurance 116",
+  "p": 113,
+  "c": "Tool"
+ },
+ {
+  "n": "GCC 退職金比較",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/gcc-gratuity-comparison-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "同じ給与と勤続期間を、六つの湾岸諸国のルールすべてで並べて計算。",
+  "k": "gcc gratuity comparison gcc gratuity comparison calculator the same salary and service run through all six gulf rules side by side gcc",
+  "p": 114,
+  "c": "Tool"
+ },
+ {
+  "n": "オランダ 30% ルーリング計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/netherlands-30-percent-ruling-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "ルーリングあり・なしの手取り給与、年間のメリット、2027 年の 27% プレビュー。",
+  "k": "netherlands 30 ruling calculator netherlands 30 percent ruling calculator net pay with vs without the ruling the yearly benefit and the 2027 27 preview 30 2027 27",
+  "p": 115,
+  "c": "Tool"
+ },
+ {
+  "n": "30% ルーリング適格性チェッカー",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/netherlands-30-percent-ruling-eligibility-checker/",
+  "s": "Loona Salary Calculators",
+  "d": "給与基準、150 km ルール、採用テスト — あなたは対象ですか？",
+  "k": "30 ruling eligibility checker netherlands 30 percent ruling eligibility checker salary norm 150 km rule and recruitment tests do you qualify 30 150 km",
+  "p": 116,
+  "c": "Tool"
+ },
+ {
+  "n": "オランダ休暇手当計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/netherlands-holiday-allowance-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "あなたの 8% の vakantiegeld の金額と、支払い時にどのように課税されるか。",
+  "k": "netherlands holiday allowance calculator netherlands holiday allowance calculator your 8 vakantiegeld amount and how it is taxed when paid 8 vakantiegeld",
+  "p": 117,
+  "c": "Tool"
+ },
+ {
+  "n": "ドイツ税クラスの比較",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/germany-tax-class-comparison-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "同じ給与をクラス I～VI で並べて比較 — カップル向けに III/V と IV/IV も。",
+  "k": "germany tax class comparison germany tax class comparison calculator the same salary in classes i vi side by side iii v vs iv iv for couples i vi iii v iv iv",
+  "p": 118,
+  "c": "Tool"
+ },
+ {
+  "n": "スペイン手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/spain-salary-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "従業員社会保険 6.50% と標準 IRPF スケールによる総額から手取りへ。",
+  "k": "spain net salary calculator spain salary calculator gross to net with 6 50 employee social security and the standard irpf scale 6 50 irpf",
+  "p": 119,
+  "c": "Tool"
+ },
+ {
+  "n": "ベッカム法計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/spain-beckham-law-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "24% のフラット税率と標準 IRPF スケールの比較、6 年間の節約額の全文付き。",
+  "k": "beckham law calculator spain beckham law calculator the 24 flat rate vs the standard irpf scale with the full 6 year saving 24 irpf 6",
+  "p": 120,
+  "c": "Tool"
+ },
+ {
+  "n": "パキスタン フリーランサー税計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/pakistan-freelancer-tax-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "第154A条の IT 輸出最終税：PSEB 登録済みは 0.25%、未登録は 1%。",
+  "k": "pakistan freelancer tax calculator pakistan freelancer tax calculator section 154a it export final tax 0 25 pseb registered 1 unregistered 154a it pseb 0 25 1",
+  "p": 121,
+  "c": "Tool"
+ },
+ {
+  "n": "ザカート計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/zakat-calculator/",
+  "s": "Loona Salary Calculators",
+  "d": "純ザカート対象資産に対する 2.5% のザカート。金と銀のニサブ確認付き。",
+  "k": "zakat calculator zakat calculator 2 5 zakat on net zakatable assets with the gold and silver nisab check 2 5",
+  "p": 122,
+  "c": "Tool"
+ },
+ {
+  "n": "カタール手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/qatar-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "カタールには個人所得税がありません：外国人労働者の手取り給与は総支給額と等しくなります：カタール国民は 7% の GRSIA 社会保険を支払います。",
+  "k": "qatar net salary calculator qatar salary calculator no personal income tax in qatar an expatriate s net pay equals gross pay qatari citizens pay 7 grsia social insurance 7 grsia",
+  "p": 123,
+  "c": "Tool"
+ },
+ {
+  "n": "クウェート手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/kuwait-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "クウェートでは従業員に所得税はありません — 外国人労働者は総額の 100% を保持します：クウェート国民は PIFSS 負担金を支払います。",
+  "k": "kuwait net salary calculator kuwait salary calculator no income tax for employees in kuwait expatriates keep 100 of gross kuwaiti citizens pay pifss contributions 100 pifss",
+  "p": 124,
+  "c": "Tool"
+ },
+ {
+  "n": "オマーン手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/oman-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "2026 年は個人所得税がありません — オマーン国民は Social Protection Fund の負担金を支払い、外国人労働者は現在何も支払いません。",
+  "k": "oman net salary calculator oman salary calculator no personal income tax in 2026 omani citizens pay social protection fund contributions expatriates currently pay nothing 2026 social protection fund",
+  "p": 125,
+  "c": "Tool"
+ },
+ {
+  "n": "バーレーン手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/bahrain-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "バーレーンには所得税がありません — バーレーン人の従業員は 8% の SIO 社会保険を支払います：外国人労働者は 1% の失業負担金のみを支払います。",
+  "k": "bahrain net salary calculator bahrain salary calculator no income tax in bahrain bahraini employees pay 8 sio social insurance expatriates pay only the 1 unemployment contribution 8 sio 1",
+  "p": 126,
+  "c": "Tool"
+ },
+ {
+  "n": "カナダ手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/canada-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "2026 年の手取り給与：連邦税、追加税と医療保険料を含むオンタリオ州税、CPP（CPP2 を含む）、EI。",
+  "k": "canada net salary calculator canada salary calculator 2026 take home pay federal tax ontario provincial tax with surtax and health premium cpp including cpp2 and ei 2026 cpp cpp2 ei",
+  "p": 127,
+  "c": "Tool"
+ },
+ {
+  "n": "オーストラリア手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/australia-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "2025–26 年の手取り給与：居住者の PAYG 所得税率、低所得者税額控除（LITO）、2% のメディケア税。",
+  "k": "australia net salary calculator australia salary calculator take home pay for 2025 26 resident payg income tax rates the low income tax offset lito and the 2 medicare levy 2025 26 payg lito 2",
+  "p": 128,
+  "c": "Tool"
+ },
+ {
+  "n": "フランス手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/france-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "総額から salaire net を試算：非管理職スタッフは約 23%、管理職は 25% の従業員負担 — 明確な見積もりです。",
+  "k": "france net salary calculator france salary calculator estimate your salaire net from gross about 23 employee contributions for non cadre staff and 25 for cadre a clear estimate salaire net 23 25",
+  "p": 129,
+  "c": "Tool"
+ },
+ {
+  "n": "イタリア手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/italy-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "2026 年の手取り給与を試算：INPS の従業員負担 9.19% と 23% / 33% / 43% の区分の IRPEF、雇用税額控除付き。",
+  "k": "italy net salary calculator italy salary calculator estimate your 2026 net pay inps employee contributions of 9 19 and irpef at the 23 33 43 brackets with the employment tax credit 2026 inps 9 19 23 33 43 irpef",
+  "p": 130,
+  "c": "Tool"
+ },
+ {
+  "n": "インド手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/india-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "新制度のもとでの 2026–27 年度の手取り給与：₹24 ラークまでの税率表、₹75,000 の標準控除、第87A条のリベート、EPF。",
+  "k": "india net salary calculator india salary calculator in hand salary for fy 2026 27 under the new regime slabs to 24 lakh 75 000 standard deduction section 87a rebate and epf 2026 27 24 75 000 87a epf",
+  "p": 131,
+  "c": "Tool"
+ },
+ {
+  "n": "シンガポール手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "2026 年の手取り給与：国民と永住者については賃金上限までの年齢別 CPF、外国人はなし、さらに居住者所得税。",
+  "k": "singapore net salary calculator singapore salary calculator take home pay for 2026 cpf by age for citizens and prs up to the wage ceiling none for foreigners plus resident income tax 2026 cpf",
+  "p": 132,
+  "c": "Tool"
+ },
+ {
+  "n": "マレーシア手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/malaysia-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "EPF 11%、賃金上限 RM6,000 までの SOCSO と EIS、人的控除を含む居住者スケールでの PCB 所得税を差し引いた手取り給与。",
+  "k": "malaysia net salary calculator malaysia salary calculator net pay with epf 11 socso and eis up to the rm6 000 wage ceiling and pcb income tax on the resident scale with personal reliefs epf 11 rm6 000 socso eis pcb",
+  "p": 133,
+  "c": "Tool"
+ },
+ {
+  "n": "アイルランド手取り給与計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/ireland-salary-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "2026 年の手取り給与：€4,000 の税額控除付き 20%/40% の PAYE、2026 年の区分の USC、4.2% の PRSI。",
+  "k": "ireland net salary calculator ireland salary calculator take home pay for 2026 paye at 20 40 with 4 000 of tax credits usc at the 2026 bands and prsi at 4 2 2026 4 000 20 40 paye 2026 usc 4 2 prsi",
+  "p": 134,
+  "c": "Tool"
+ },
+ {
+  "n": "VAT 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/vat-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "ヨーロッパ 30 か国の確認済み標準税率で VAT を加算・除去 — 税抜、VAT、総額を即座に表示。",
+  "k": "vat calculator vat calculator add or remove vat for 30 european countries at verified standard rates net vat and gross instantly vat 30 vat vat",
+  "p": 135,
+  "c": "Tool"
+ },
+ {
+  "n": "逆算 VAT 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/reverse-vat-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "ヨーロッパ 30 か国について、VAT 込みの価格を税抜額とその中の VAT に分割します。",
+  "k": "reverse vat calculator reverse vat calculator split any vat inclusive price into its net amount and the vat inside it for 30 european countries vat 30 vat vat",
+  "p": 136,
+  "c": "Tool"
+ },
+ {
+  "n": "VAT 番号チェッカー",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/vat-number-checker.html",
+  "s": "Loona Salary Calculators",
+  "d": "ヨーロッパの VAT 番号がその国の公式フォーマットに合っているか確認できます — 無料ですぐに結果が出ます。",
+  "k": "vat number checker vat number checker check whether a european vat number matches the official format for its country free and instant vat vat",
+  "p": 137,
+  "c": "Tool"
+ },
+ {
+  "n": "IBAN チェッカー",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html",
+  "s": "Loona Salary Calculators",
+  "d": "mod-97 チェックサムの完全検証でヨーロッパの IBAN を検証し、その国と印刷しやすいグループ分けを確認できます。",
+  "k": "iban checker iban checker validate any european iban with the full mod 97 checksum and see its country and print friendly grouping iban mod 97 iban",
+  "p": 138,
+  "c": "Tool"
+ },
+ {
+  "n": "UAE VAT 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/vat-calculator-uae.html",
+  "s": "Loona Salary Calculators",
+  "d": "5% の VAT を数秒で加算・除去。計算式と AED での計算例をすべて掲載。",
+  "k": "uae vat calculator vat calculator uae add or remove 5 vat in seconds with the full formula and worked examples in aed uae vat 5 vat aed",
+  "p": 139,
+  "c": "Tool"
+ },
+ {
+  "n": "サウジアラビア VAT 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/vat-calculator-saudi-arabia.html",
+  "s": "Loona Salary Calculators",
+  "d": "15% の VAT を数秒で加算・除去。計算式と SAR での計算例をすべて掲載。",
+  "k": "saudi arabia vat calculator vat calculator saudi arabia add or remove 15 vat in seconds with the full formula and worked examples in sar vat 15 vat sar",
+  "p": 140,
+  "c": "Tool"
+ },
+ {
+  "n": "インド GST 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/gst-calculator-india.html",
+  "s": "Loona Salary Calculators",
+  "d": "2025年九月以降の区分で GST を加算・除去：5% のメリット、18% の標準、40% のデメリットに、3% の金税率を加えた区分です。",
+  "k": "india gst calculator gst calculator india add or remove gst at the post september 2025 slabs 5 merit 18 standard or 40 demerit plus the 3 gold rate gst 2025 gst 5 18 40 3",
+  "p": 141,
+  "c": "Tool"
+ },
+ {
+  "n": "オーストラリア GST 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/gst-calculator-australia.html",
+  "s": "Loona Salary Calculators",
+  "d": "10% の GST を数秒で加算・除去。計算式と AUD での計算例をすべて掲載。",
+  "k": "australia gst calculator gst calculator australia add or remove 10 gst in seconds with the full formula and worked examples in aud gst 10 gst aud",
+  "p": 142,
+  "c": "Tool"
+ },
+ {
+  "n": "カナダ GST/HST 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/gst-calculator-canada.html",
+  "s": "Loona Salary Calculators",
+  "d": "5% の GST に、州ごとの HST、PST、RST、QST を加えた税金 — CAD での計算例付きで税金の加算・除去ができます。",
+  "k": "canada gst hst calculator gst calculator canada 5 gst plus provincial hst pst rst or qst by province add or remove tax with worked examples in cad gst hst 5 gst hst pst rst qst cad",
+  "p": 143,
+  "c": "Tool"
+ },
+ {
+  "n": "ニュージーランド GST 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/gst-calculator-new-zealand.html",
+  "s": "Loona Salary Calculators",
+  "d": "15% の GST を数秒で加算・除去。計算式と NZD での計算例をすべて掲載。",
+  "k": "new zealand gst calculator gst calculator new zealand add or remove 15 gst in seconds with the full formula and worked examples in nzd gst 15 gst nzd",
+  "p": 144,
+  "c": "Tool"
+ },
+ {
+  "n": "南アフリカ VAT 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/vat-calculator-south-africa.html",
+  "s": "Loona Salary Calculators",
+  "d": "15% の VAT を数秒で加算・除去。計算式と ZAR（ランド）での計算例をすべて掲載。",
+  "k": "south africa vat calculator vat calculator south africa add or remove 15 vat in seconds with the full formula and worked examples in zar rand vat 15 vat zar",
+  "p": 145,
+  "c": "Tool"
+ },
+ {
+  "n": "シンガポール GST 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/gst-calculator-singapore.html",
+  "s": "Loona Salary Calculators",
+  "d": "9% の GST を数秒で加算・除去。計算式と SGD での計算例をすべて掲載。",
+  "k": "singapore gst calculator gst calculator singapore add or remove 9 gst in seconds with the full formula and worked examples in sgd gst 9 gst sgd",
+  "p": 146,
+  "c": "Tool"
+ },
+ {
+  "n": "マレーシア SST 計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/sst-calculator-malaysia.html",
+  "s": "Loona Salary Calculators",
+  "d": "サービス税 8%（維持される区分は 6%）と売上税 10% または 5%。MYR での計算例付き。",
+  "k": "malaysia sst calculator sst calculator malaysia service tax at 8 or 6 for kept categories and sales tax at 10 or 5 with worked examples in myr sst 8 6 10 5 myr",
+  "p": 147,
+  "c": "Tool"
+ },
+ {
+  "n": "パキスタン販売税計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/vat-calculator-pakistan.html",
+  "s": "Loona Salary Calculators",
+  "d": "18% の売上税を数秒で加算・除去。計算式と PKR での計算例をすべて掲載。",
+  "k": "pakistan sales tax calculator vat calculator pakistan add or remove 18 sales tax in seconds with the full formula and worked examples in pkr 18 pkr",
+  "p": 148,
+  "c": "Tool"
+ },
+ {
+  "n": "Etsy 手数料計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/etsy-fee-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "取引、出品、処理、規制、Offsite Ads の手数料を項目別に表示 — そして注文ごとの実際の利益も。",
+  "k": "etsy fee calculator etsy fee calculator transaction listing processing regulatory and offsite ads fees itemised and your real profit per order etsy offsite ads",
+  "p": 149,
+  "c": "Tool"
+ },
+ {
+  "n": "eBay 手数料計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/ebay-fee-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "最終価格手数料 13.6% に注文ごとの手数料 $0.30/$0.40 を加え、基準未満の追加料金とあなたの利益を表示。",
+  "k": "ebay fee calculator ebay fee calculator final value fees at 13 6 plus the 0 30 0 40 per order fee with the below standard surcharge and your profit ebay 13 6 0 30 0 40",
+  "p": 150,
+  "c": "Tool"
+ },
+ {
+  "n": "PayPal 手数料計算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/paypal-fee-calculator.html",
+  "s": "Loona Salary Calculators",
+  "d": "あらゆる支払いにかかる手数料 — そして、設定した金額を受け取るために正確にいくら請求すべきかを教えてくれるグロスアップモード。",
+  "k": "paypal fee calculator paypal fee calculator the fee on any payment and the gross up mode that tells you exactly how much to request to receive a set amount paypal",
+  "p": 151,
+  "c": "Tool"
+ },
+ {
+  "n": "通貨換算ツール",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/currency-converter.html",
+  "s": "Loona Salary Calculators",
+  "d": "ECB の基準レートで 30 通貨間を換算。日付付きレート表の全文をページに掲載。",
+  "k": "currency converter currency converter convert between 30 currencies at ecb reference rates with the full dated rate table printed on the page ecb 30",
+  "p": 152,
+  "c": "Tool"
+ },
+ {
+  "n": "UAE 退職金の計算方法",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/guides/how-uae-gratuity-is-calculated.html",
+  "s": "Loona Salary Calculators",
+  "d": "第51条をステップごとに解説、二つの計算例、そして 2022年二月以降は自己都合退職で退職金が減額されなくなった理由。",
+  "k": "how uae gratuity is calculated guides how uae gratuity is calculated article 51 step by step two worked examples and why resignation no longer cuts your gratuity since february 2022 uae 51 2022",
+  "p": 153,
+  "c": "Tool"
+ },
+ {
+  "n": "サウジアラビア退職手当ガイド",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/guides/saudi-end-of-service-benefits-guide.html",
+  "s": "Loona Salary Calculators",
+  "d": "第84条と第85条、退職時のスケールを表で解説、計算例、そしてすべての外国人労働者が知るべき GOSI の注記。",
+  "k": "saudi end of service benefits guide guides saudi end of service benefits guide articles 84 and 85 the resignation scale in a table a worked example and the gosi note every expat needs 84 85 gosi",
+  "p": 154,
+  "c": "Tool"
+ },
+ {
+  "n": "オランダ 30% ルーリング：解説",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/guides/netherlands-30-percent-ruling-explained.html",
+  "s": "Loona Salary Calculators",
+  "d": "誰が対象か、2026 年の給与基準、€60,000 におけるルーリングの価値、そして 2027 年の 27% への引き下げ。",
+  "k": "netherlands 30 ruling explained guides netherlands 30 percent ruling explained who qualifies the 2026 salary norms what the ruling is worth on 60 000 and the 2027 drop to 27 30 2026 60 000 2027 27",
+  "p": 155,
+  "c": "Tool"
+ },
+ {
+  "n": "パキスタン給与税 2026-27 ガイド",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/guides/pakistan-salary-tax-2026-27-guide.html",
+  "s": "Loona Salary Calculators",
+  "d": "Finance Act 2026 の税率表の全文、月 Rs 100,000 と Rs 250,000 での計算例、そして廃止された追加税。",
+  "k": "pakistan salary tax 2026 27 guide guides pakistan salary tax 2026 27 guide the full finance act 2026 slab table worked examples at rs 100 000 and rs 250 000 a month and the abolished surcharge 2026 27 finance act 2026 rs 100 000 rs 250 000",
+  "p": 156,
+  "c": "Tool"
+ },
+ {
+  "n": "ドイツの総額から手取りへ：解説",
+  "u": "https://loonaautomation.github.io/loona-salary-calculators/ja/guides/germany-gross-to-net-explained.html",
+  "s": "Loona Salary Calculators",
+  "d": "六つの税クラス、四つすべての社会保険料、連帯追加税と教会税 — €60,000 の計算例付き。",
+  "k": "germany gross to net explained guides germany gross to net explained the six tax classes all four social contributions soli and church tax with a worked 60 000 example 60 000",
+  "p": 157,
+  "c": "Tool"
+ }
+]

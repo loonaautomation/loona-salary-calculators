@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>シンガポール手取り給与計算ツール — CPF ＆ 所得税 2026</title>
+<meta name="description" content="シンガポールでの 2026 年の手取り給与を計算：国民と PR に対する年齢別の CPF 拠出（賃金上限 S$8,000 まで 20%）、外国人については無し、さらに居住者所得税。無料。">
+<meta name="keywords" content="singapore salary calculator, net salary singapore, cpf contribution calculator 2026, singapore income tax, gross to net singapore">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/singapore-salary-calculator.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/singapore-salary-calculator.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/singapore-salary-calculator.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/singapore-salary-calculator.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/singapore-salary-calculator.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/singapore-salary-calculator.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/singapore-salary-calculator.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/singapore-salary-calculator.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/singapore-salary-calculator.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/singapore-salary-calculator.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/singapore-salary-calculator.html"><link rel="alternate" hreflang="ja" href="https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/singapore-salary-calculator.html"><meta property="og:locale" content="ja_JP">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="シンガポール 手取り給与計算ツール — Loona">
+<meta property="og:description" content="無料のシンガポール総額から手取りへの計算ツール：年齢区分ごとの CPF（S$8,000 の上限付き）、または外国人には CPF なし、さらに居住者所得税。">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="シンガポール 手取り給与計算ツール — Loona">
+<meta name="twitter:description" content="2026 年のシンガポールにおける総額から手取りへ：CPF 20%（国民／永住者、上限付き）または外国人にはなし ＋ 居住者所得税。無料。">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"シンガポール 手取り給与計算ツール","url":"https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"2026 年に CPF をいくら支払いますか？","acceptedAnswer":{"@type":"Answer","text":"55 歳以下の国民または永住者の場合：賃金の 20% ですが、月あたり最初の S$8,000 に対してのみ（2026年一月1日からの通常賃金上限）— 従業員負担分として最大で月 S$1,600、年 S$19,200。税率は年齢とともに下がります：56～60 歳で 18%、61～65 歳で 12.5%、66～70 歳で 7.5%、70 超で 5%。"}},{"@type":"Question","name":"外国人はシンガポールで CPF を支払いますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。CPF はシンガポール国民と永住者にのみ適用されます。就労パスを持つ外国人従業員は CPF が差し引かれず（雇用主も支払いません）、そのため現金の手取りは高くなります — しかし、CPF の退職、住宅、医療の貯蓄は受けられません。"}},{"@type":"Question","name":"シンガポールの所得税は月給から差し引かれますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ — シンガポールには PAYE の源泉徴収がありません。雇用主は給与全額（該当する場合は CPF を差し引いた額）を支払い、IRAS は年末の後に所得税を賦課します。ほとんどの居住者は無利子の GIRO 分割払いで最大 12 か月かけて支払うため、この計算ツールは税金を均等な月額換算で表示します。"}},{"@type":"Question","name":"シンガポールの所得税率は何ですか？","acceptedAnswer":{"@type":"Answer","text":"居住者は、最初の S$20,000 に対する 0% から S$1,000,000 超に対する 24% までの累進税率を支払います（YA 2026）。S$96,000 の居住者は、CPF 軽減を全額受けると約 S$3,056 を支払います — 実効税率は 3% 近くです。非居住者（183 日未満）は通常、代わりに雇用所得に対してフラットな 24% で課税されます。"}},{"@type":"Question","name":"なぜ私の CPF は給与の 20% 未満なのですか？","acceptedAnswer":{"@type":"Answer","text":"賃金上限のためです：CPF は月次通常賃金の最初の S$8,000 に対してのみ課されます（そして拠出の合計は S$102,000 の年間給与上限を尊重します）。月給 S$12,000 では、従業員拠出は依然として S$1,600 — 給与の 13.3% であり、20% ではありません。"}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://loonaautomation.github.io/loona-salary-calculators/ja/"},{"@type":"ListItem","position":2,"name":"シンガポール 手取り給与計算ツール","item":"https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html"}]}</script>
+<link rel="manifest" href="../singapore-salary-calculator.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>シンガポール 手取り給与計算ツール</h1>
+<p>2026 年のシンガポールにおける総額から手取りへ：国民と永住者に対する CPF 負担金 — 55 歳以下では 20%、月次上限 S$8,000 までの賃金に対して — または外国人従業員については CPF は一切なし。どちらの場合もシンガポール居住者所得税が加わります。</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>要するに：</strong> S$72,000.00 の給与では、55 歳以下の国民または永住者は CPF S$14,400.00 と所得税約 S$1,712.00 を支払い、手取りは <strong>S$55,888.00</strong> 年間（現金ベースで月 S$4,657.33）。同じ給与の外国人従業員は CPF を支払わず、より多くの現金を保持します — S$55,888.00 は国民／永住者の数値です：比較するには上のステータスを切り替えてください。</p></div>
+<div class="calc">
+<label for="gross">年間総給与（SGD）</label>
+<input type="number" id="gross" min="0" step="any" value="72000" inputmode="decimal">
+<div class="row">
+<div><label for="worker">居住ステータス</label>
+<select id="worker"><option value="pr-u55" selected>国民 ／ PR — 55 歳以下（CPF 20%）</option><option value="pr-56-60">国民／永住者 — 56～60歳（CPF 18%）</option><option value="pr-61-65">国民／永住者 — 61～65歳（CPF 12.5%）</option><option value="pr-66-70">国民／永住者 — 66～70歳（CPF 7.5%）</option><option value="pr-o70">国民 ／ PR — 70 超（CPF 5%）</option><option value="fx">外国人従業員 — CPF なし</option></select></div>
+</div>
+<div class="result" id="result">
+<div>月あたりの手取り（現金換算）</div>
+<div class="big" id="total">—</div>
+<table>
+<tr><td>年間総給与</td><td id="rGross">—</td></tr>
+<tr><td>CPF 拠出（従業員）</td><td id="rSocial">—</td></tr>
+<tr><td>所得税（年次、IRAS）</td><td id="rTax">—</td></tr>
+<tr><td>実効控除率</td><td id="rEff">—</td></tr>
+<tr><td>年あたりの手取り</td><td id="rYear">—</td></tr>
+<tr><td>月あたりの手取り（÷ 12）</td><td id="rMonth">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>計算方法</h2>
+<ul>
+<li><strong>CPF — 国民 &amp; PR：</strong> 従業員負担は年齢によって異なります： <strong>20%</strong> （55 歳以下）、18%（56～60）、12.5%（61～65）、7.5%（66～70）、5%（70 超）— 2026年一月1日からの税率。課されるのは最初の部分に対してのみです： <strong>月次賃金の S$8,000</strong> （通常賃金上限、2026年一月1日からの最終段階レベルです：年間給与上限は S$102,000）。雇用主はその上に 17%（55 歳以下）を追加します。あなたから差し引かれることは決してありません。三年目以降の永住者は全税率を支払います：新しい永住者は最初の二年間は段階的な税率を支払います。</li>
+<li><strong>CPF — 外国人従業員：</strong> どちらの側にも CPF はまったくありません。手取りの現金はその分高くなりますが、CPF の貯蓄は積み上がりません。</li>
+<li><strong>所得税：</strong> 2026 年の課税年度の居住者税率 — S$20,000 まで 0%、その後 2% / 3.5% / 7% / 11.5% / 15% / 18% / 19% / 19.5% / 20% / 22% / 23% と区分を上がり、S$1,000,000 超は 24%。あなたの従業員 CPF は税控除の対象であり、勤労所得控除（勤労所得の 20%、上限 S$1,000）が適用されます。ほとんどの国と異なり、シンガポールの税金は <strong>毎月源泉徴収されません</strong> — IRAS は査定後に請求します（ほとんどの人は 12 か月の GIRO で支払います）。そのため、ここでの月額は年税を均等に広げたものです。</li>
+</ul>
+<p style="margin-top:8px">計算例：S$96,000 の場合、55 歳未満の国民／永住者は CPF として 20% × S$8,000 × 12 = S$19,200 を支払います：課税所得は CPF 控除と勤労所得控除の後で S$75,800：税金 S$3,056：手取り <strong>S$73,744</strong>。上の実際の例では S$72,000.00 を使用しています：CPF S$14,400.00、税金 S$1,712.00、手取り S$55,888.00。</p>
+</div>
+
+<div class="sec">
+<h2>よくある質問</h2>
+<div class="faq"><h3>2026 年に CPF をいくら支払いますか？</h3><p>55 歳以下の国民または永住者の場合：賃金の 20% ですが、月あたり最初の S$8,000 に対してのみ（2026年一月1日からの通常賃金上限）— 従業員負担分として最大で月 S$1,600、年 S$19,200。税率は年齢とともに下がります：56～60 歳で 18%、61～65 歳で 12.5%、66～70 歳で 7.5%、70 超で 5%。</p></div>
+<div class="faq"><h3>外国人はシンガポールで CPF を支払いますか？</h3><p>いいえ。CPF はシンガポール国民と永住者にのみ適用されます。就労パスを持つ外国人従業員は CPF が差し引かれず（雇用主も支払いません）、そのため現金の手取りは高くなります — しかし、CPF の退職、住宅、医療の貯蓄は受けられません。</p></div>
+<div class="faq"><h3>シンガポールの所得税は月給から差し引かれますか？</h3><p>いいえ — シンガポールには PAYE の源泉徴収がありません。雇用主は給与全額（該当する場合は CPF を差し引いた額）を支払い、IRAS は年末の後に所得税を賦課します。ほとんどの居住者は無利子の GIRO 分割払いで最大 12 か月かけて支払うため、この計算ツールは税金を均等な月額換算で表示します。</p></div>
+<div class="faq"><h3>シンガポールの所得税率は何ですか？</h3><p>居住者は、最初の S$20,000 に対する 0% から S$1,000,000 超に対する 24% までの累進税率を支払います（YA 2026）。S$96,000 の居住者は、CPF 軽減を全額受けると約 S$3,056 を支払います — 実効税率は 3% 近くです。非居住者（183 日未満）は通常、代わりに雇用所得に対してフラットな 24% で課税されます。</p></div>
+<div class="faq"><h3>なぜ私の CPF は給与の 20% 未満なのですか？</h3><p>賃金上限のためです：CPF は月次通常賃金の最初の S$8,000 に対してのみ課されます（そして拠出の合計は S$102,000 の年間給与上限を尊重します）。月給 S$12,000 では、従業員拠出は依然として S$1,600 — 給与の 13.3% であり、20% ではありません。</p></div>
+</div>
+
+<div class="note"><strong>プライバシー：</strong> この計算はあなたのデバイス上で 100% 実行されます — 給与がブラウザから出ることは決してありません。 <strong>免責事項：</strong> 見積もりのみです。一般情報のためであり、税務アドバイスではありません。2026年十一月時点の税率は、CPF Board（負担率と 2026年一月1日からの通常賃金上限 S$8,000）と IRAS（YA 2026 の居住者スケール）と照合して確認済みです。CPF と勤労所得控除を超える個人控除、SDL やその他の少額の課徴金、ボーナスの追加賃金の計算は簡略化または除外されています。</div>
+
+<div class="sec"><h2>その他の計算ツール</h2>
+<div class="links">
+<a href="malaysia-salary-calculator.html">マレーシア 給与</a>
+<a href="india-salary-calculator.html">インド 給与</a>
+<a href="australia-salary-calculator.html">オーストラリア 給与</a>
+<a href="gst-calculator-singapore.html">シンガポール GST</a>
+<a class="alt" href="./">全ての計算ツール</a>
+</div></div>
+</div>
+<div class="sec">
+<h2>仕組み — 計算式</h2>
+手取り = 総額 − CPF − 所得税。CPF（国民／永住者のみ）= 年齢区分の税率 × min（月次賃金、S$8,000）× 12：外国人従業員についてはゼロです。所得税は課税所得 = 総額 − 従業員 CPF − 勤労所得軽減（所得の 20%、上限 S$1,000）に対して、居住者スケールで課されます：S$20,000 まで 0%：S$30,000 まで 2%：S$40,000 まで 3.5%：S$80,000 まで 7%：S$120,000 まで 11.5%：S$160,000 まで 15%：S$200,000 まで 18%：S$240,000 まで 19%：S$280,000 まで 19.5%：S$320,000 まで 20%：S$500,000 まで 22%：S$1,000,000 まで 23%：それ以上は 24%。
+<h3>実例</h3>
+<p>55 歳以下の国民／PR、年間総額 S$72,000.00。月次賃金は S$72,000.00 ÷ 12：上限 S$8,000 までの賃金に対する 20% の CPF は年間 S$14,400.00 になります。CPF 軽減と S$1,000 の勤労所得軽減後の課税所得により、所得税は S$1,712.00 となります。手取り = <strong>S$55,888.00</strong> 年間 — 現金ベースで月 S$4,657.33（税金の部分は実際には査定後に IRAS から請求され、毎月源泉徴収されるのではないことを覚えておいてください）。</p>
+<h3>よくある質問</h3>
+<div class="faq"><h3>雇用主は CPF にいくら支払いますか？</h3><p>55 歳以下の場合、賃金の 17%（同じ S$8,000 の上限）があなたの給与の上に加わります — そのため、CPF の合計は上限まで賃金の 37% です。それは、住宅や退職に使用するまであなたの銀行口座に触れることが決してなくても、あなたの報酬の実際の部分です。</p></div>
+<div class="faq"><h3>私はちょうど永住者になりました — 私の CPF は本当に 20% ですか？</h3><p>すぐではありません。新しい永住者は、全税率を選択しない限り、永住者ステータスの最初の二年間は段階的な（より低い）CPF 税率を支払います。この計算ツールは三年目から適用される全税率を使用します。</p></div>
+<div class="faq"><h3>ボーナスは CPF の対象ですか？</h3><p>国民／永住者についてははい — ボーナスは「追加賃金」であり、全賃金を通じた年間給与上限 S$102,000 を条件として CPF の対象となります。この計算ツールは、入力全体を通常賃金として扱います。これは上限に達していない場合と一致します。</p></div>
+<div class="faq"><h3>シンガポールは手取りの点で香港や湾岸諸国と比べてどうですか？</h3><p>シンガポールはその中間に位置します：湾岸諸国と違って実際の所得税がありますが、実効税率は低く（CPF 軽減のある居住者については S$96,000 で約 3%）— より大きな「控除」は CPF であり、これは税金ではなくあなた自身の貯蓄です。</p></div>
+</div>
+<div id="loona-embed" style="max-width:780px;margin:30px auto;padding:24px;background:#fdfaf1;border:1px solid #d9c98a;border-radius:14px;text-align:left">
+<h2 style="margin:0 0 10px;color:#062e2a;font-size:1.35rem;line-height:1.3">この計算ツールをウェブサイトに埋め込む — 無料</h2>
+<p style="margin:0 0 12px;line-height:1.6">この計算ツールをあなた自身のウェブサイトやブログに追加しましょう — 完全に無料で、登録は不要、常に最新版が表示されます。下のコードをコピーして、計算ツールを表示したいページの場所に貼り付けてください。埋め込みの下にある小さな &ldquo;Powered by Loona Automation&rdquo; のクレジット行を残していただくと、このツールを無料に保つ助けになります &mdash; しかし、スタイルを変更したり削除したりするのは自由です：ツールはどちらの場合でも動作します。</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;box-sizing:border-box;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="Singapore Net Salary Calculator by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;提供： &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/ja/singapore-salary-calculator.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; 無料 シンガポール 手取り給与計算ツール&lt;/p&gt;</textarea>
+<p style="margin:10px 0 0"><button type="button" id="loonaEmbedBtn" style="background:#062e2a;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">埋め込みコードをコピー</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='コピーしました！';setTimeout(function(){b.textContent='埋め込みコードをコピー';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">概要</a> · <a href="privacy.html">プライバシーポリシー</a> · <a href="terms.html">利用規約</a> · <a href="contact.html">お問い合わせ</a></footer>
+<script>
+/*CALC-START*/
+/* Singapore 2026: CPF employee rates by age band (citizens/PRs), charged on
+   monthly wages up to the S$8,000 Ordinary Wage ceiling (from 1 Jan 2026);
+   foreigners pay no CPF. Resident income tax YA 2026 on chargeable income
+   after CPF relief and earned income relief (20 percent, cap S$1,000). */
+var SGB = [[20000,0],[30000,0.02],[40000,0.035],[80000,0.07],[120000,0.115],[160000,0.15],[200000,0.18],[240000,0.19],[280000,0.195],[320000,0.20],[500000,0.22],[1000000,0.23],[Infinity,0.24]];
+var SGR = {"pr-u55":0.20,"pr-56-60":0.18,"pr-61-65":0.125,"pr-66-70":0.075,"pr-o70":0.05};
+function scaleTax(x, br){
+  var t = 0, prev = 0;
+  for (var i = 0; i < br.length; i++){
+    if (x <= br[i][0]) return t + (x - prev) * br[i][1];
+    t += (br[i][0] - prev) * br[i][1]; prev = br[i][0];
+  }
+  return t;
+}
+function netCalc(gross, opt){
+  var cpf = 0;
+  if (SGR.hasOwnProperty(opt)) cpf = SGR[opt] * Math.min(gross / 12, 8000) * 12;
+  var chargeable = Math.max(0, gross - cpf - Math.min(1000, 0.20 * gross));
+  var tax = scaleTax(chargeable, SGB);
+  var net = gross - cpf - tax;
+  return {gross: gross, social: cpf, tax: tax, net: net, monthly: net / 12,
+    eff: gross > 0 ? (cpf + tax) / gross * 100 : 0};
+}
+/*CALC-END*/
+function fmt(n){return "S$" + n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function calc(){
+  var gross = parseFloat(document.getElementById("gross").value)||0;
+  var box = document.getElementById("result");
+  if(gross<=0){ box.style.display="none"; return; }
+  var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
+  var r = netCalc(gross, opt);
+  document.getElementById("rGross").textContent = fmt(gross);
+  document.getElementById("rSocial").textContent = fmt(r.social);
+  document.getElementById("rTax").textContent = fmt(r.tax);
+  document.getElementById("rEff").textContent = r.eff.toFixed(2) + "%";
+  document.getElementById("rYear").textContent = fmt(r.net);
+  document.getElementById("rMonth").textContent = fmt(r.monthly);
+  document.getElementById("total").textContent = fmt(r.monthly) + " ／月";
+  document.getElementById("rNote").textContent = opt === "fx" ? "外国人従業員：CPF はありません。所得税は査定後に IRAS から請求され、毎月源泉徴収されません。" : "国民／PR：CPF は毎月控除されます：所得税は査定後に IRAS から請求されます — 月額はそれを均等に広げます。";
+  box.style.display = "block";
+}
+["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' アプリをインストール';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('このアプリをインストール：共有ボタンをタップし、次に「ホーム画面に追加」を選択してください。');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBAN チェッカー — 無料の IBAN 検証ツール（Mod-97 チェックサム）</title>
+<meta name="description" content="無料の IBAN チェッカー：本物の mod-97 チェックサム、国の長さチェック、グループ化された書式で、あらゆるヨーロッパの IBAN を即座に検証。登録不要、プライベート。">
+<meta name="keywords" content="iban checker, iban validator, validate iban, iban check, mod 97 iban, european iban checker">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/iban-checker.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/iban-checker.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/iban-checker.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/iban-checker.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/iban-checker.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/iban-checker.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/iban-checker.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/iban-checker.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/iban-checker.html"><link rel="alternate" hreflang="ja" href="https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><meta property="og:locale" content="ja_JP">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IBAN チェッカー — Loona">
+<meta property="og:description" content="本物の mod-97 チェックサムとヨーロッパの国の長さ表を使用する無料の IBAN 検証ツール。即時、プライベート、登録不要。">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IBAN チェッカー — Loona">
+<meta name="twitter:description" content="mod-97 チェックサムで、あらゆるヨーロッパの IBAN を即座に検証。無料、プライベート、登録不要。">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"IBAN チェッカー","url":"https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"mod-97 とは何ですか、IBAN をどのようにチェックしますか？","acceptedAnswer":{"@type":"Answer","text":"Mod-97 は、ISO 13616 のもとで全ての IBAN に組み込まれたチェックサムです。最初の四文字は末尾に移動され、文字は数字に変換され（A=10 から Z=35）、結果として得られる長い数は塊ごとに 97 で割られます。本物の IBAN は常にかならず正確に 1 の余りを残します：その他の余りは、数字や文字が間違って入力されたことを意味します。"}},{"@type":"Question","name":"IBAN と SWIFT/BIC コードの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"IBAN は、一つの国における一つの特定の銀行口座を識別します。SWIFT/BIC コードは、銀行と支店自体を識別し、あなたの口座ではありません。国際送金は通常、口座のための IBAN を必要とし、銀行の SWIFT/BIC も求めることがあります。"}},{"@type":"Question","name":"有効な IBAN は口座が存在することを意味しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。有効な結果は、その国について形式と mod-97 チェックサムが正しいことのみを意味します。それは、口座が存在すること、開いていること、あなたが期待する人のものであること、またはお金が入っていることを確認できません。お金を送る前に、常に信頼できるチャネルを通じて受取人と口座の詳細を確認してください。"}},{"@type":"Question","name":"自分自身の IBAN はどこで見つけられますか？","acceptedAnswer":{"@type":"Answer","text":"あなたの銀行明細書、バンキングアプリまたはオンラインバンキングの中（通常は口座の詳細の下）、一部の銀行カード、または銀行に尋ねることで。ほとんどのヨーロッパの国では、IBAN は全ての明細書の上部に印刷されています。"}},{"@type":"Question","name":"なぜこのチェッカーは銀行ログインや個人情報を求めないのですか？","acceptedAnswer":{"@type":"Answer","text":"何も必要ないためです。IBAN の検証は番号自体に対する純粋な数学であるため、このツールはあなたのデバイス上で 100% 動作し、あなたが入力した IBAN をどこにも送信しません。"}},{"@type":"Question","name":"一桁の間違いでも mod-97 テストに合格することがありますか？","acceptedAnswer":{"@type":"Answer","text":"単一の間違いについてはほぼ決してありません。mod-97 チェックサムは、全ての単一桁のエラーと、ほぼ全ての入れ替わった隣接する数字を捉えるよう設計されており、そのため銀行は、間違った口座にお金を送る代わりに、タイプミスした IBAN を直ちに拒否します。"}},{"@type":"Question","name":"各国で IBAN の長さはどれくらいですか？","acceptedAnswer":{"@type":"Answer","text":"長さは国ごとに固定されており、ノルウェーの 15 文字からマルタの 31 文字までです。ドイツは 22、フランスは 27、イギリスは 22、スペインは 24、スイスは 21 を使用します。このチェッカーは、チェックサムを実行する前に、あなたの IBAN をその国コードに対する正確な公式の長さと比較します。"}},{"@type":"Question","name":"IBAN はスペースありで入力すべきですか、それともスペースなしですか？","acceptedAnswer":{"@type":"Answer","text":"どちらでもここでは機能します。IBAN は読みやすくするために四つの塊で印刷されることが多いですが、スペースは番号の一部ではありません。このチェッカーはスペースを自動的に除去し、印刷しやすいグループ化されたバージョンを表示します。"}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://loonaautomation.github.io/loona-salary-calculators/ja/"},{"@type":"ListItem","position":2,"name":"IBAN チェッカー","item":"https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html"}]}</script>
+<link rel="manifest" href="../iban-checker.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>IBAN チェッカー</h1>
+<p>ISO 13616 の本物の mod-97 チェックサムで、あらゆるヨーロッパの IBAN を数秒で検証 — さらにその国に対する公式の長さチェック、その国の名前、印刷しやすいグループ化された形式。無料、登録不要。</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>要するに：</strong> IBAN を入力または貼り付けると、このチェッカーはスペースを除去し、二文字の国コードとその国に対する正確な長さを確認し、その後 mod-97 チェックサムを実行します。余り 1 は、その番号が正しく形成されていることを意味します — 口座が存在することを証明するものではありません。</p></div>
+<div class="calc">
+<label for="iban">IBAN</label>
+<input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<div class="result" id="result">
+<div id="rTitle">結果</div>
+<div class="big" id="rVerdict">—</div>
+<table>
+<tr><td>国</td><td id="rCountry">—</td></tr>
+<tr><td>正規化された IBAN</td><td id="rNorm">—</td></tr>
+<tr><td>グループ化（4 つの塊）</td><td id="rGrouped">—</td></tr>
+<tr><td>長さ</td><td id="rLength">—</td></tr>
+<tr><td>Mod-97 の余り（1 でなければなりません）</td><td id="rMod">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>計算方法</h2>
+<p>全ての IBAN は ISO 13616 に従います。銀行 — そしてこのチェッカー — が使用する検証には四つのステップがあります：</p>
+<ul>
+<li><strong>正規化：</strong> スペースを除去し、大文字に変換します。</li>
+<li><strong>構造：</strong> 番号は、二文字（国）、二つのチェック数字、その後は文字と数字のみに一致しなければなりません。</li>
+<li><strong>長さ：</strong> 合計の長さはその国に対する固定の長さと等しくなければなりません — 例えばドイツは 22、フランスは 27、イギリスは 22、スイスは 21、ノルウェーは 15 です。</li>
+<li><strong>Mod-97 チェックサム：</strong> 最初の四文字を末尾に移動し、文字を数字に変換し（A = 10、B = 11、… Z = 35）、その後、塊ごとに 97 で割ります。計算式：再配置された IBAN を 97 で割った余り = 有効な IBAN については 1。</li>
+</ul>
+<p style="margin-top:8px">実例 — 下の各結果は、ページが読み込まれる際にこのページ自身の検証ツールにより入力されるため、上のチェッカーと決して食い違うことはありません：</p>
+<ul>
+<li>ドイツ：DE89370400440532013000 → <span id="ex1">確認中…</span></li>
+<li>イギリス：GB29NWBK60161331926819 → <span id="ex2">確認中…</span></li>
+<li>フランス：FR1420041010050500013M02606 → <span id="ex3">確認中…</span></li>
+<li>スイス：CH9300762011623852957 → <span id="ex4">確認中…</span></li>
+<li>ノルウェー：NO9386011117947 → <span id="ex5">確認中…</span></li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>よくある質問</h2>
+<div class="faq"><h3>mod-97 とは何ですか、IBAN をどのようにチェックしますか？</h3><p>Mod-97 は、ISO 13616 のもとで全ての IBAN に組み込まれたチェックサムです。最初の四文字は末尾に移動され、文字は数字に変換され（A=10 から Z=35）、結果として得られる長い数は塊ごとに 97 で割られます。本物の IBAN は常にかならず正確に 1 の余りを残します：その他の余りは、数字や文字が間違って入力されたことを意味します。</p></div>
+<div class="faq"><h3>IBAN と SWIFT/BIC コードの違いは何ですか？</h3><p>IBAN は、一つの国における一つの特定の銀行口座を識別します。SWIFT/BIC コードは、銀行と支店自体を識別し、あなたの口座ではありません。国際送金は通常、口座のための IBAN を必要とし、銀行の SWIFT/BIC も求めることがあります。</p></div>
+<div class="faq"><h3>有効な IBAN は口座が存在することを意味しますか？</h3><p>いいえ。有効な結果は、その国について形式と mod-97 チェックサムが正しいことのみを意味します。それは、口座が存在すること、開いていること、あなたが期待する人のものであること、またはお金が入っていることを確認できません。お金を送る前に、常に信頼できるチャネルを通じて受取人と口座の詳細を確認してください。</p></div>
+<div class="faq"><h3>自分自身の IBAN はどこで見つけられますか？</h3><p>あなたの銀行明細書、バンキングアプリまたはオンラインバンキングの中（通常は口座の詳細の下）、一部の銀行カード、または銀行に尋ねることで。ほとんどのヨーロッパの国では、IBAN は全ての明細書の上部に印刷されています。</p></div>
+<div class="faq"><h3>なぜこのチェッカーは銀行ログインや個人情報を求めないのですか？</h3><p>何も必要ないためです。IBAN の検証は番号自体に対する純粋な数学であるため、このツールはあなたのデバイス上で 100% 動作し、あなたが入力した IBAN をどこにも送信しません。</p></div>
+</div>
+
+<div class="note"><strong>プライバシー：</strong> このチェッカーはあなたのデバイス上で 100% 動作します — あなたが入力した IBAN がブラウザを離れることは決してありません。 <strong>免責事項：</strong> 形式とチェックサムの検証のみ。ISO 13616 の IBAN 標準に基づきます：口座が存在することは確認できません。長さと規則は 2026年十一月に ISO 13616 IBAN Registry に対して検証されました。</div>
+
+<div class="sec"><h2>その他の計算ツール</h2>
+<div class="links">
+<a href="vat-calculator.html">VAT 計算ツール</a>
+<a href="reverse-vat-calculator.html">逆算 VAT 計算ツール</a>
+<a href="vat-number-checker.html">VAT 番号チェッカー</a>
+<a class="alt" href="./">全ての計算ツール</a>
+</div></div>
+<div class="sec">
+<h2>仕組み — 計算式</h2>
+<p>IBAN は設計上自己チェック機能を持ちます。その三番目と四番目の文字は、発行銀行が選んだチェック数字であり、全体の番号が一つの正確な算術テストに合格するようになっています。そのテストを実行するには、IBAN を取り、最初の四文字（国コードとチェック数字）を末尾に移動し、全ての文字を二桁の数字に置き換え（A = 10 から Z = 35）、その非常に長い数を 97 で割った余りを計算します — 実際には小さな塊で、各余りを次の塊に繰り越して数字を扱いやすく保ちます。最終的な余りが正確に 1 であれば、IBAN は正しく形成されています：数字や文字のタイプミスは余りを変え、お金が動く前に捕捉されます。</p>
+<h3>実例</h3>
+<p>ドイツの IBAN DE89370400440532013000 を取り上げます。その国コードは DE（ドイツ）であり、想定される長さは 22 で、正確に 22 文字を持ちます。再配置され変換されると、それは 370400440532013000131489 で始まります — そしてその数を 97 で割った余りは <strong><span id="exWorked">…</span></strong>、このページの検証ツールにより入力されます。余り 1 が、全ての銀行が求める合格点です。</p>
+<h3>よくある質問</h3>
+<div class="faq"><h3>一桁の間違いでも mod-97 テストに合格することがありますか？</h3><p>単一の間違いについてはほぼ決してありません。mod-97 チェックサムは、全ての単一桁のエラーと、ほぼ全ての入れ替わった隣接する数字を捉えるよう設計されており、そのため銀行は、間違った口座にお金を送る代わりに、タイプミスした IBAN を直ちに拒否します。</p></div>
+<div class="faq"><h3>各国で IBAN の長さはどれくらいですか？</h3><p>長さは国ごとに固定されており、ノルウェーの 15 文字からマルタの 31 文字までです。ドイツは 22、フランスは 27、イギリスは 22、スペインは 24、スイスは 21 を使用します。このチェッカーは、チェックサムを実行する前に、あなたの IBAN をその国コードに対する正確な公式の長さと比較します。</p></div>
+<div class="faq"><h3>IBAN はスペースありで入力すべきですか、それともスペースなしですか？</h3><p>どちらでもここでは機能します。IBAN は読みやすくするために四つの塊で印刷されることが多いですが、スペースは番号の一部ではありません。このチェッカーはスペースを自動的に除去し、印刷しやすいグループ化されたバージョンを表示します。</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>この計算ツールをウェブサイトに埋め込む — 無料</h2>
+<p>この計算ツールをあなた自身のウェブサイトやブログに追加しましょう — 完全に無料で、登録は不要、常に最新版が表示されます。下のコードをコピーして、計算ツールを表示したいページの場所に貼り付けてください。埋め込みの下にある小さな &ldquo;Powered by Loona Automation&rdquo; のクレジット行を残していただくと、このツールを無料に保つ助けになります &mdash; しかし、スタイルを変更したり削除したりするのは自由です：ツールはどちらの場合でも動作します。</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="IBAN Checker by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;提供： &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/ja/iban-checker.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; 無料 IBAN チェッカー&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">埋め込みコードをコピー</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='コピーしました！';setTimeout(function(){b.textContent='埋め込みコードをコピー';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">概要</a> · <a href="privacy.html">プライバシーポリシー</a> · <a href="terms.html">利用規約</a> · <a href="contact.html">お問い合わせ</a></footer>
+<script>
+/*CALC-START*/
+var IBAN_LENGTHS = {AL:28,AD:24,AT:20,BE:16,BA:20,BG:22,HR:21,CY:28,CZ:24,DK:18,EE:20,FO:18,FI:18,FR:27,GE:22,DE:22,GI:23,GR:27,GL:18,HU:28,IS:26,IE:22,IT:27,LV:21,LI:21,LT:20,LU:20,MK:19,MT:31,MC:27,ME:22,NL:18,NO:15,PL:28,PT:25,RO:24,SM:27,RS:22,SK:24,SI:19,ES:24,SE:24,CH:21,TR:26,GB:22,UA:29,VA:22};
+var IBAN_COUNTRIES = {AL:"アルバニア",AD:"アンドラ",AT:"オーストリア",BE:"ベルギー",BA:"ボスニア・ヘルツェゴビナ",BG:"ブルガリア",HR:"クロアチア",CY:"キプロス",CZ:"チェコ",DK:"デンマーク",EE:"エストニア",FO:"フェロー諸島",FI:"フィンランド",FR:"フランス",GE:"ジョージア",DE:"ドイツ",GI:"ジブラルタル",GR:"ギリシャ",GL:"グリーンランド",HU:"ハンガリー",IS:"アイスランド",IE:"アイルランド",IT:"イタリア",LV:"ラトビア",LI:"リヒテンシュタイン",LT:"リトアニア",LU:"ルクセンブルク",MK:"北マケドニア",MT:"マルタ",MC:"モナコ",ME:"モンテネグロ",NL:"オランダ",NO:"ノルウェー",PL:"ポーランド",PT:"ポルトガル",RO:"ルーマニア",SM:"サンマリノ",RS:"セルビア",SK:"スロバキア",SI:"スロベニア",ES:"スペイン",SE:"スウェーデン",CH:"スイス",TR:"トルコ",GB:"イギリス",UA:"ウクライナ",VA:"バチカン市国"};
+function ibanMod97(iban){
+  var rearranged = iban.slice(4) + iban.slice(0,4);
+  var numeric = "";
+  for(var i=0;i<rearranged.length;i++){
+    var c = rearranged[i];
+    if(c >= "0" && c <= "9") numeric += c;
+    else numeric += String(c.charCodeAt(0) - 55);
+  }
+  var remainder = 0;
+  for(var j=0;j<numeric.length;j+=7){
+    remainder = parseInt(String(remainder) + numeric.slice(j, j+7), 10) % 97;
+  }
+  return remainder;
+}
+function ibanValidate(iban){
+  var normalized = String(iban == null ? "" : iban).replace(/\s+/g,"").toUpperCase();
+  var grouped = normalized.replace(/(.{4})/g,"$1 ").trim();
+  var result = {valid:false, ok:false, normalized:normalized, grouped:grouped, countryCode:"", countryName:"", expectedLength:null, actualLength:normalized.length, mod97:null, message:""};
+  if(!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(normalized)){
+    result.message = "IBAN の構造と一致しません：二つの国文字、二つのチェック数字、その後は文字と数字。";
+    return result;
+  }
+  var cc = normalized.slice(0,2);
+  result.countryCode = cc;
+  result.countryName = IBAN_COUNTRIES[cc] || "不明";
+  if(!(cc in IBAN_LENGTHS)){
+    result.message = "国コード " + cc + " はこのヨーロッパの IBAN 長さ表にありません。";
+    return result;
+  }
+  result.expectedLength = IBAN_LENGTHS[cc];
+  if(normalized.length !== IBAN_LENGTHS[cc]){
+    result.message = "長さが正しくありません： " + result.countryName + ": 予想 " + IBAN_LENGTHS[cc] + " 文字、取得したのは " + normalized.length + ".";
+    return result;
+  }
+  result.mod97 = ibanMod97(normalized);
+  if(result.mod97 !== 1){
+    result.message = "Mod-97 チェックサムが失敗しました：余りは " + result.mod97 + "、しかし有効な IBAN は 1 を返さなければなりません。";
+    return result;
+  }
+  result.valid = true; result.ok = true;
+  result.message = "有効な IBAN 形式とチェックサム： " + result.countryName + "。これは、その番号が正しく形成されていることのみを確認します — 口座が存在することを証明するものではありません。";
+  return result;
+}
+/*CALC-END*/
+function calc(){
+  var v = document.getElementById("iban").value;
+  var box = document.getElementById("result");
+  if(!v || !v.trim()){ box.style.display="none"; return; }
+  var r = ibanValidate(v);
+  document.getElementById("rVerdict").textContent = r.valid ? "✓ 有効な IBAN" : "✗ 無効な IBAN";
+  document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
+  document.getElementById("rNorm").textContent = r.normalized || "—";
+  document.getElementById("rGrouped").textContent = r.grouped || "—";
+  document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
+  document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
+  document.getElementById("rNote").textContent = r.message;
+  box.style.display = "block";
+}
+document.getElementById("iban").addEventListener("input",calc);
+(function(){
+  var examples = [["ex1","DE89370400440532013000"],["ex2","GB29NWBK60161331926819"],["ex3","FR1420041010050500013M02606"],["ex4","CH9300762011623852957"],["ex5","NO9386011117947"]];
+  examples.forEach(function(pair){
+    var r = ibanValidate(pair[1]);
+    document.getElementById(pair[0]).textContent = r.valid ? "✓ 有効 — " + r.countryName + ", 長さ " + r.actualLength + "、mod-97 の余り 1" : "✗ 無効 — " + r.message;
+  });
+  var w = ibanValidate("DE89370400440532013000");
+  document.getElementById("exWorked").textContent = (w.mod97 === null ? "—" : String(w.mod97));
+})();
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' アプリをインストール';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('このアプリをインストール：共有ボタンをタップし、次に「ホーム画面に追加」を選択してください。');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
