@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBAN 확인기 — 무료 IBAN 검증기 (Mod-97 체크섬)</title>
+<meta name="description" content="무료 IBAN 확인기: 실제 mod-97 체크섬, 국가 길이 확인, 그룹 형식으로 모든 유럽 IBAN을 즉시 검증하세요. 가입 없음, 비공개.">
+<meta name="keywords" content="iban checker, iban validator, validate iban, iban check, mod 97 iban, european iban checker">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/iban-checker.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/iban-checker.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/iban-checker.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/iban-checker.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/iban-checker.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/iban-checker.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/iban-checker.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/iban-checker.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/iban-checker.html"><link rel="alternate" hreflang="ko" href="https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><meta property="og:locale" content="ko_KR">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IBAN 확인기 — Loona">
+<meta property="og:description" content="실제 mod-97 체크섬과 유럽 국가 길이 표를 사용하는 무료 IBAN 검증기. 즉시, 비공개, 가입 없음.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IBAN 확인기 — Loona">
+<meta name="twitter:description" content="mod-97 체크섬으로 모든 유럽 IBAN을 즉시 검증하세요. 무료, 비공개, 가입 없음.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"IBAN 확인기","url":"https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"mod-97은 무엇이고 IBAN을 어떻게 확인하나요?","acceptedAnswer":{"@type":"Answer","text":"Mod-97은 ISO 13616으로 모든 IBAN에 내장된 체크섬이에요. 처음 네 문자가 끝으로 이동하고, 문자는 숫자로 변환되고 (A=10부터 Z=35까지), 결과인 긴 숫자는 덩어리로 97로 나눠져요. 진짜 IBAN은 항상 나머지가 정확히 1이에요. 다른 나머지는 숫자나 문자가 잘못 입력됐다는 뜻이에요."}},{"@type":"Question","name":"IBAN과 SWIFT/BIC 코드의 차이는 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"IBAN은 한 국가의 특정 은행 계좌 하나를 식별해요. SWIFT/BIC 코드는 은행과 지점 자체를 식별해요. 계좌가 아니에요. 국제 송금에는 보통 계좌의 IBAN이 필요하고 은행의 SWIFT/BIC도 물을 수 있어요."}},{"@type":"Question","name":"유효한 IBAN은 계좌가 존재한다는 뜻인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 유효한 결과는 형식과 mod-97 체크섬이 그 국가에 대해 올바르다는 것만을 의미해요. 계좌가 존재하는지, 열려 있는지, 기대하는 사람의 것인지, 돈이 있는지는 확인할 수 없어요. 돈을 보내기 전에 항상 신뢰할 수 있는 채널로 수취인과 계좌 상세를 확인하세요."}},{"@type":"Question","name":"본인 IBAN은 어디서 찾을 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"은행 명세서에서, 은행 앱이나 온라인 뱅킹 안에서 (보통 계좌 상세 아래), 일부 은행 카드에서, 또는 은행에 물어서요. 대부분의 유럽 국가에서는 IBAN이 모든 명세서 상단에 인쇄돼요."}},{"@type":"Question","name":"왜 이 확인기는 은행 로그인이나 개인 정보를 묻지 않나요?","acceptedAnswer":{"@type":"Answer","text":"필요한 것이 없기 때문이에요. IBAN 검증은 숫자 자체에 대한 순수 수학이에요. 그래서 이 도구는 기기에서 100% 실행되고 입력한 IBAN을 어디에도 절대 전송하지 않아요."}},{"@type":"Question","name":"틀린 숫자 하나가 여전히 mod-97 테스트를 통과할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"단일 실수로는 거의 절대 아니에요. mod-97 체크섬은 모든 한 자리 오류와 거의 모든 이웃 자리 바꿈을 잡도록 설계됐어요. 그래서 은행은 잘못 입력한 IBAN을 잘못된 계좌로 돈을 보내는 대신 즉시 거부해요."}},{"@type":"Question","name":"각 국가에서 IBAN은 몇 자리인가요?","acceptedAnswer":{"@type":"Answer","text":"길이는 국가마다 고정돼요 — 노르웨이의 15문자부터 몰타의 31문자까지. 독일은 22, 프랑스는 27, 영국은 22, 스페인은 24, 스위스는 21을 사용해요. 이 확인기는 체크섬을 실행하기 전에 본인 IBAN을 국가 코드에 대한 정확한 공식 길이와 비교해요."}},{"@type":"Question","name":"IBAN을 공백을 넣고 입력해야 하나요, 빼고 입력해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"어느 쪽이든 여기서 작동해요. IBAN은 읽기를 위해 종종 네 개 블록으로 인쇄되지만, 공백은 번호의 일부가 아니에요. 이 확인기는 공백을 자동으로 제거하고 인쇄 친화적 그룹 버전을 보여줘요."}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://loonaautomation.github.io/loona-salary-calculators/ko/"},{"@type":"ListItem","position":2,"name":"IBAN 확인기","item":"https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html"}]}</script>
+<link rel="manifest" href="../iban-checker.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>IBAN 확인기</h1>
+<p>모든 유럽 IBAN을 몇 초 만에 mod-97 체크섬으로 검증하세요 — ISO 13616의 실제 — — 국가의 공식 길이 확인, 국가 이름, 인쇄 친화적인 그룹 형식까지 더해서요. 무료, 가입 없음.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>요약하면:</strong> IBAN을 입력하거나 붙여넣으면 이 확인기가 공백을 제거하고, 두 글자 국가 코드와 그 국가의 정확한 길이를 확인한 다음, mod-97 체크섬을 실행해요. 나머지가 1이면 번호가 올바르게 형성된 거예요 — 계좌가 존재한다는 것을 증명하지는 않아요.</p></div>
+<div class="calc">
+<label for="iban">IBAN</label>
+<input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<div class="result" id="result">
+<div id="rTitle">결과</div>
+<div class="big" id="rVerdict">—</div>
+<table>
+<tr><td>국가</td><td id="rCountry">—</td></tr>
+<tr><td>정규화된 IBAN</td><td id="rNorm">—</td></tr>
+<tr><td>그룹 (4개 블록)</td><td id="rGrouped">—</td></tr>
+<tr><td>길이</td><td id="rLength">—</td></tr>
+<tr><td>Mod-97 나머지 (1이어야 해요)</td><td id="rMod">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>계산 방법</h2>
+<p>모든 IBAN은 ISO 13616을 따라요. 은행 — 그리고 이 확인기 — 가 사용하는 검증은 네 단계예요:</p>
+<ul>
+<li><strong>정규화:</strong> 공백을 제거하고 대문자로 변환하세요.</li>
+<li><strong>구조:</strong> 번호는 두 글자 (국가), 체크 숫자 두 개, 그다음 문자와 숫자만으로 맞아야 해요.</li>
+<li><strong>길이:</strong> 총 길이는 그 국가의 고정 길이와 같아야 해요 — 예를 들어 독일 22, 프랑스 27, 영국 22, 스위스 21, 노르웨이 15.</li>
+<li><strong>Mod-97 체크섬:</strong> 첫 네 문자를 끝으로 옮기고, 문자를 숫자로 변환해요 (A = 10, B = 11, … Z = 35). 그다음 97로 덩어리로 나눠요. 공식: 재배열된 IBAN mod 97 = 1이면 유효한 IBAN이에요.</li>
+</ul>
+<p style="margin-top:8px">실행 예시 — 아래의 각 결과는 페이지가 로드될 때 이 페이지 자체의 검증기가 채워요. 그래서 위 확인기와 절대 어긋날 수 없어요:</p>
+<ul>
+<li>독일: DE89370400440532013000 → <span id="ex1">확인 중…</span></li>
+<li>영국: GB29NWBK60161331926819 → <span id="ex2">확인 중…</span></li>
+<li>프랑스: FR1420041010050500013M02606 → <span id="ex3">확인 중…</span></li>
+<li>스위스: CH9300762011623852957 → <span id="ex4">확인 중…</span></li>
+<li>노르웨이: NO9386011117947 → <span id="ex5">확인 중…</span></li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>자주 묻는 질문</h2>
+<div class="faq"><h3>mod-97은 무엇이고 IBAN을 어떻게 확인하나요?</h3><p>Mod-97은 ISO 13616으로 모든 IBAN에 내장된 체크섬이에요. 처음 네 문자가 끝으로 이동하고, 문자는 숫자로 변환되고 (A=10부터 Z=35까지), 결과인 긴 숫자는 덩어리로 97로 나눠져요. 진짜 IBAN은 항상 나머지가 정확히 1이에요. 다른 나머지는 숫자나 문자가 잘못 입력됐다는 뜻이에요.</p></div>
+<div class="faq"><h3>IBAN과 SWIFT/BIC 코드의 차이는 무엇인가요?</h3><p>IBAN은 한 국가의 특정 은행 계좌 하나를 식별해요. SWIFT/BIC 코드는 은행과 지점 자체를 식별해요. 계좌가 아니에요. 국제 송금에는 보통 계좌의 IBAN이 필요하고 은행의 SWIFT/BIC도 물을 수 있어요.</p></div>
+<div class="faq"><h3>유효한 IBAN은 계좌가 존재한다는 뜻인가요?</h3><p>아니요. 유효한 결과는 형식과 mod-97 체크섬이 그 국가에 대해 올바르다는 것만을 의미해요. 계좌가 존재하는지, 열려 있는지, 기대하는 사람의 것인지, 돈이 있는지는 확인할 수 없어요. 돈을 보내기 전에 항상 신뢰할 수 있는 채널로 수취인과 계좌 상세를 확인하세요.</p></div>
+<div class="faq"><h3>본인 IBAN은 어디서 찾을 수 있나요?</h3><p>은행 명세서에서, 은행 앱이나 온라인 뱅킹 안에서 (보통 계좌 상세 아래), 일부 은행 카드에서, 또는 은행에 물어서요. 대부분의 유럽 국가에서는 IBAN이 모든 명세서 상단에 인쇄돼요.</p></div>
+<div class="faq"><h3>왜 이 확인기는 은행 로그인이나 개인 정보를 묻지 않나요?</h3><p>필요한 것이 없기 때문이에요. IBAN 검증은 숫자 자체에 대한 순수 수학이에요. 그래서 이 도구는 기기에서 100% 실행되고 입력한 IBAN을 어디에도 절대 전송하지 않아요.</p></div>
+</div>
+
+<div class="note"><strong>개인정보:</strong> 이 확인기는 본인 기기에서 100% 실행돼요 — 입력한 IBAN은 브라우저를 절대 떠나지 않아요. <strong>면책 조항:</strong> 형식과 체크섬 검증만이며, ISO 13616 IBAN 표준을 기준으로 해요. 계좌가 존재하는지는 확인할 수 없어요. 길이와 규칙은 November 2026에 ISO 13616 IBAN Registry와 대조해 확인됐어요.</div>
+
+<div class="sec"><h2>더 많은 계산기</h2>
+<div class="links">
+<a href="vat-calculator.html">VAT 계산기</a>
+<a href="reverse-vat-calculator.html">역 VAT 계산기</a>
+<a href="vat-number-checker.html">VAT 번호 확인기</a>
+<a class="alt" href="./">모든 계산기</a>
+</div></div>
+<div class="sec">
+<h2>작동 방식 — 공식</h2>
+<p>IBAN은 설계부터 자체 확인이에요. 세 번째와 네 번째 문자는 발행 은행이 선택한 확인 숫자예요. 전체 숫자가 하나의 정확한 산술 테스트를 통과하도록요. 그 테스트를 실행하려면, IBAN을 가져와 처음 네 문자 (국가 코드 + 확인 숫자)를 끝으로 옮기고, 모든 문자를 두 자리 숫자로 바꾸고 (A = 10부터 Z = 35까지), 그 아주 긴 숫자를 97로 나눈 나머지를 계산하세요 — 실제로는 작은 덩어리로, 각 나머지를 다음 덩어리로 가져가 숫자가 관리 가능하게 유지되도록요. 최종 나머지가 정확히 1이면 IBAN은 올바르게 형성된 거예요. 숫자나 문자의 입력 오류는 나머지를 바꿔 돈이 움직이기 전에 잡혀요.</p>
+<h3>실행 예시</h3>
+<p>독일 IBAN DE89370400440532013000를 가져오세요. 국가 코드는 DE (독일)이고, 예상 길이는 22이며 정확히 22문자예요. 재배열하고 변환하면 370400440532013000131489로 시작해요 — 그리고 그 숫자를 97로 나눈 나머지는 <strong><span id="exWorked">…</span></strong>, 이 페이지의 검증기가 채워요. 나머지가 1이면 모든 은행이 찾는 합격 기준이에요.</p>
+<h3>자주 묻는 질문</h3>
+<div class="faq"><h3>틀린 숫자 하나가 여전히 mod-97 테스트를 통과할 수 있나요?</h3><p>단일 실수로는 거의 절대 아니에요. mod-97 체크섬은 모든 한 자리 오류와 거의 모든 이웃 자리 바꿈을 잡도록 설계됐어요. 그래서 은행은 잘못 입력한 IBAN을 잘못된 계좌로 돈을 보내는 대신 즉시 거부해요.</p></div>
+<div class="faq"><h3>각 국가에서 IBAN은 몇 자리인가요?</h3><p>길이는 국가마다 고정돼요 — 노르웨이의 15문자부터 몰타의 31문자까지. 독일은 22, 프랑스는 27, 영국은 22, 스페인은 24, 스위스는 21을 사용해요. 이 확인기는 체크섬을 실행하기 전에 본인 IBAN을 국가 코드에 대한 정확한 공식 길이와 비교해요.</p></div>
+<div class="faq"><h3>IBAN을 공백을 넣고 입력해야 하나요, 빼고 입력해야 하나요?</h3><p>어느 쪽이든 여기서 작동해요. IBAN은 읽기를 위해 종종 네 개 블록으로 인쇄되지만, 공백은 번호의 일부가 아니에요. 이 확인기는 공백을 자동으로 제거하고 인쇄 친화적 그룹 버전을 보여줘요.</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>이 계산기를 웹사이트에 임베드하세요 — 무료</h2>
+<p>이 계산기를 본인의 웹사이트나 블로그에 추가하세요 — 완전히 무료이고, 가입이 필요 없으며, 항상 최신 버전을 보여줘요. 아래 코드를 복사해 계산기가 나타나길 원하는 페이지 위치에 붙여 넣으세요. 임베드 아래의 작은 &ldquo;Powered by Loona Automation&rdquo; 크레딧 줄을 유지하면 이 도구를 무료로 유지하는 데 도움이 돼요 &mdash; 하지만 스타일을 바꾸거나 제거해도 자유예요. 도구는 어느 쪽이든 작동해요.</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="IBAN Checker by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;제공: &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/ko/iban-checker.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; 무료 IBAN 확인기&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">임베드 코드 복사</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='복사됐어요!';setTimeout(function(){b.textContent='임베드 코드 복사';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">소개</a> · <a href="privacy.html">개인정보 처리방침</a> · <a href="terms.html">약관</a> · <a href="contact.html">연락처</a></footer>
+<script>
+/*CALC-START*/
+var IBAN_LENGTHS = {AL:28,AD:24,AT:20,BE:16,BA:20,BG:22,HR:21,CY:28,CZ:24,DK:18,EE:20,FO:18,FI:18,FR:27,GE:22,DE:22,GI:23,GR:27,GL:18,HU:28,IS:26,IE:22,IT:27,LV:21,LI:21,LT:20,LU:20,MK:19,MT:31,MC:27,ME:22,NL:18,NO:15,PL:28,PT:25,RO:24,SM:27,RS:22,SK:24,SI:19,ES:24,SE:24,CH:21,TR:26,GB:22,UA:29,VA:22};
+var IBAN_COUNTRIES = {AL:"알바니아",AD:"안도라",AT:"오스트리아",BE:"벨기에",BA:"보스니아 헤르체고비나",BG:"불가리아",HR:"크로아티아",CY:"키프로스",CZ:"체코",DK:"덴마크",EE:"에스토니아",FO:"페로 제도",FI:"핀란드",FR:"프랑스",GE:"조지아",DE:"독일",GI:"지브롤터",GR:"그리스",GL:"그린란드",HU:"헝가리",IS:"아이슬란드",IE:"아일랜드",IT:"이탈리아",LV:"라트비아",LI:"리히텐슈타인",LT:"리투아니아",LU:"룩셈부르크",MK:"북마케도니아",MT:"몰타",MC:"모나코",ME:"몬테네그로",NL:"네덜란드",NO:"노르웨이",PL:"폴란드",PT:"포르투갈",RO:"루마니아",SM:"산마리노",RS:"세르비아",SK:"슬로바키아",SI:"슬로베니아",ES:"스페인",SE:"스웨덴",CH:"스위스",TR:"튀르키예",GB:"영국",UA:"우크라이나",VA:"바티칸 시국"};
+function ibanMod97(iban){
+  var rearranged = iban.slice(4) + iban.slice(0,4);
+  var numeric = "";
+  for(var i=0;i<rearranged.length;i++){
+    var c = rearranged[i];
+    if(c >= "0" && c <= "9") numeric += c;
+    else numeric += String(c.charCodeAt(0) - 55);
+  }
+  var remainder = 0;
+  for(var j=0;j<numeric.length;j+=7){
+    remainder = parseInt(String(remainder) + numeric.slice(j, j+7), 10) % 97;
+  }
+  return remainder;
+}
+function ibanValidate(iban){
+  var normalized = String(iban == null ? "" : iban).replace(/\s+/g,"").toUpperCase();
+  var grouped = normalized.replace(/(.{4})/g,"$1 ").trim();
+  var result = {valid:false, ok:false, normalized:normalized, grouped:grouped, countryCode:"", countryName:"", expectedLength:null, actualLength:normalized.length, mod97:null, message:""};
+  if(!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(normalized)){
+    result.message = "IBAN 구조와 맞지 않아요: 국가 문자 두 개, 체크 숫자 두 개, 그다음 문자와 숫자.";
+    return result;
+  }
+  var cc = normalized.slice(0,2);
+  result.countryCode = cc;
+  result.countryName = IBAN_COUNTRIES[cc] || "알 수 없음";
+  if(!(cc in IBAN_LENGTHS)){
+    result.message = "국가 코드 " + cc + "는 이 유럽 IBAN 길이 표에 없어요.";
+    return result;
+  }
+  result.expectedLength = IBAN_LENGTHS[cc];
+  if(normalized.length !== IBAN_LENGTHS[cc]){
+    result.message = "길이가 잘못됐어요 — 대상 " + result.countryName + ": 예상 " + IBAN_LENGTHS[cc] + " 문자, 받은 값 " + normalized.length + ".";
+    return result;
+  }
+  result.mod97 = ibanMod97(normalized);
+  if(result.mod97 !== 1){
+    result.message = "Mod-97 체크섬 실패: 나머지는 " + result.mod97 + ", 하지만 유효한 IBAN은 1을 줘야 해요.";
+    return result;
+  }
+  result.valid = true; result.ok = true;
+  result.message = "유효한 IBAN 형식과 체크섬 — 대상 " + result.countryName + ". 이것은 번호가 올바르게 형성됐다는 것만 확인해요 — 계좌가 존재한다는 것을 증명하지 않아요.";
+  return result;
+}
+/*CALC-END*/
+function calc(){
+  var v = document.getElementById("iban").value;
+  var box = document.getElementById("result");
+  if(!v || !v.trim()){ box.style.display="none"; return; }
+  var r = ibanValidate(v);
+  document.getElementById("rVerdict").textContent = r.valid ? "✓ 유효한 IBAN" : "✗ 유효하지 않은 IBAN";
+  document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
+  document.getElementById("rNorm").textContent = r.normalized || "—";
+  document.getElementById("rGrouped").textContent = r.grouped || "—";
+  document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
+  document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
+  document.getElementById("rNote").textContent = r.message;
+  box.style.display = "block";
+}
+document.getElementById("iban").addEventListener("input",calc);
+(function(){
+  var examples = [["ex1","DE89370400440532013000"],["ex2","GB29NWBK60161331926819"],["ex3","FR1420041010050500013M02606"],["ex4","CH9300762011623852957"],["ex5","NO9386011117947"]];
+  examples.forEach(function(pair){
+    var r = ibanValidate(pair[1]);
+    document.getElementById(pair[0]).textContent = r.valid ? "✓ 유효 — " + r.countryName + ", 길이 " + r.actualLength + ", mod-97 나머지 1" : "✗ 유효하지 않음 — " + r.message;
+  });
+  var w = ibanValidate("DE89370400440532013000");
+  document.getElementById("exWorked").textContent = (w.mod97 === null ? "—" : String(w.mod97));
+})();
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' 앱 설치';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('이 앱을 설치하세요: 공유 버튼을 누른 다음 "홈 화면에 추가"를 선택하세요.');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
