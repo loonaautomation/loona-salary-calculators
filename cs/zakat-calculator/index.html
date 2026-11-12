@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulačka zakátu — 2.5% ze zakátovatelných aktiv s kontrolou nisabu</title>
+<meta name="description" content="Vypočítejte si svůj zakát ve výši 2.5% z čistého zakátovatelného majetku — zlato, stříbro, hotovost, zásoby a pohledávky minus dluhy — se zabudovanou kontrolou nisabu. Zdarma k použití.">
+<meta name="keywords" content="zakat calculator, zakat calculator pakistan, zakat on gold calculator, nisab calculator, how to calculate zakat">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/zakat-calculator/"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/zakat-calculator/"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/zakat-calculator/"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/zakat-calculator/"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/zakat-calculator/"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/zakat-calculator/"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/zakat-calculator/"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/zakat-calculator/"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/zakat-calculator/"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/zakat-calculator/"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/zakat-calculator/"><link rel="alternate" hreflang="cs" href="https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/zakat-calculator/"><meta property="og:locale" content="cs_CZ">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalkulačka zakátu — Loona">
+<meta property="og:description" content="Bezplatná kalkulačka zakátu: 2.5% z čistého zakátovatelného majetku s kontrolou nisabu zlata/stříbra, úpravou karátů pro šperky.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary & Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kalkulačka zakátu — Loona">
+<meta name="twitter:description" content="Spočítejte si zakát 2.5% s kontrolou nisabu — zlato, stříbro, hotovost, zásoby, pohledávky, minus dluhy. Zdarma.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kalkulačka zakátu","url":"https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak se počítá zakát?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sečtěte svá aktiva podléhající zakátu — hodnotu svého zlata a stříbra, hotovost a bankovní zůstatky, obchodní zásoby a peníze, které vám někdo dluží — odečtěte dluhy, které jsou nyní splatné, a pokud výsledek dosáhne nisabu a uplynul nad ním lunární rok (hawl), zaplaťte 2.5% (jednu čtyřicetinu) čisté částky."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaký je nisab pro zakát?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nisab je 87.48 gramů zlata (7.5 tola) nebo 612.36 gramů stříbra (52.5 tola). U smíšeného majetku je nisab stříbra nejčastěji používaným měřítkem v Pákistánu (hanafijská praxe); nisab zlata platí, když je zlato jediným aktivem podléhajícím zakátu. Zadejte dnešní sazby kovů a tato kalkulačka ukáže nisab v peněžních termínech."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Je zakát splatný ze šperků?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Názorové školy se liší: hanafijská škola obecně považuje zlaté a stříbrné šperky za podléhající zakátu, ať se nosí, nebo ne, zatímco jiné školy vyjímají šperky v běžném osobním užívání. Tato kalkulačka počítá zlato a stříbro, které zadáte — zadávejte pouze šperky, které vaše škola počítá, a řiďte se pokyny svého učence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak ocením zlato, které není 24karátové?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pouze obsah čistého zlata nese cenu 24 karátů. Tato kalkulačka upravuje automaticky: hodnota = hmotnost x (karát / 24) x sazba 24K. Takže 22karátové šperky se oceňují na 22/24 ceny 24K za svou hmotnost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaký je nisab pro bankovní srážku v Pákistánu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nezávise na vaší vlastní povinnosti pákistánské banky srážejí 2.5% zakátu 1. ramadánu z účtů na úrovni nebo nad nisabem každoročně oznamovaným Ministerstvem pro zmírňování chudoby a sociální bezpečí — Rs 503,529 pro rok zakátu 1446-47 AH (oznámeno 16. února 2026). Tento údaj rozhoduje pouze o bankovní srážce; váš osobní zakát se počítá z vašeho celkového majetku, jak je ukázáno výše."
+      }
+    }
+  ]
+}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://loonaautomation.github.io/loona-salary-calculators/cs/"},{"@type":"ListItem","position":2,"name":"Kalkulačka zakátu","item":"https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/"}]}</script>
+<link rel="manifest" href="../../zakat-calculator/manifest.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="../">← Loona Salary &amp; Tax Calculators</a>
+<h1>Kalkulačka zakátu</h1>
+<p>Spočítejte si zakát pečlivým způsobem: zlato a stříbro oceněné dnešními kurzy (s úpravou karátů pro šperky), plus hotovost, zásoby a pohledávky, minus dluhy — zkontrolováno vůči nisabu, než se uplatní 2.5%.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>Stručně:</strong> Zakát je 2.5% vašeho čistého zakátovatelného majetku, splatný, když tento majetek zůstal na nisabu nebo nad ním — 52.5 tola stříbra (obvyklá referenční hodnota pro smíšený majetek) nebo 7.5 tola zlata — po jeden lunární rok. Zadejte dnešní kurzy zlata a stříbra za tola, svá aktiva a své dluhy splatné nyní a kalkulačka udělá zbytek.</p></div>
+<div class="calc">
+<div class="row">
+<div><label for="goldRate">Dnešní kurz zlata, 24K (za tola)</label><input type="number" id="goldRate" min="0" step="any" value="200000" inputmode="decimal"></div>
+<div><label for="silverRate">Dnešní kurz stříbra (za tola)</label><input type="number" id="silverRate" min="0" step="any" value="2500" inputmode="decimal"></div>
+</div>
+<div class="row">
+<div><label for="goldG">Zlato, které vlastníte (gramy)</label><input type="number" id="goldG" min="0" step="any" value="116.64" inputmode="decimal"></div>
+<div><label for="karat">Ryzost zlata</label>
+<select id="karat"><option value="24" selected>24 karátů (čisté)</option><option value="22">22 karátů</option><option value="21">21 karátů</option><option value="18">18 karátů</option></select></div>
+</div>
+<div class="row">
+<div><label for="silverG">Stříbro, které vlastníte (gramy)</label><input type="number" id="silverG" min="0" step="any" value="0" inputmode="decimal"></div>
+<div><label for="cash">Hotovost a bankovní zůstatky</label><input type="number" id="cash" min="0" step="any" value="500000" inputmode="decimal"></div>
+</div>
+<div class="row">
+<div><label for="stock">Zásoby podniku / obchodní zboží (hodnota)</label><input type="number" id="stock" min="0" step="any" value="0" inputmode="decimal"></div>
+<div><label for="recv">Pohledávky (peníze, které vám dluží, očekávané zpět)</label><input type="number" id="recv" min="0" step="any" value="0" inputmode="decimal"></div>
+</div>
+<div class="row">
+<div><label for="debts">Dluhy splatné nyní (odečíst)</label><input type="number" id="debts" min="0" step="any" value="100000" inputmode="decimal"></div>
+<div><label for="basis">Referenční hodnota nisabu</label>
+<select id="basis"><option value="silver" selected>Nisab stříbra — 52.5 tola (obvyklý pro smíšený majetek)</option><option value="gold">Nisab zlata — 7.5 tola</option></select></div>
+</div>
+<div class="result" id="result">
+<div>Váš splatný zakát</div>
+<div class="big" id="total">0</div>
+<table>
+<tr><td>Hodnota zlata</td><td id="rGold">—</td></tr>
+<tr><td>Hodnota stříbra</td><td id="rSilver">—</td></tr>
+<tr><td>Celková zakátovatelná aktiva</td><td id="rAssets">—</td></tr>
+<tr><td>Minus dluhy splatné nyní</td><td id="rDebts">—</td></tr>
+<tr><td>Čistý zakátovatelný majetek</td><td id="rNet">—</td></tr>
+<tr><td>Nisab (práh)</td><td id="rNisab">—</td></tr>
+<tr><td>Nisab dosažen?</td><td id="rMet">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>Jak se to počítá</h2>
+<ul>
+<li><strong>Vzorec:</strong> Zakátovatelný = hodnota zlata + hodnota stříbra + hotovost &amp; banka + obchodní zásoby + pohledávky − dluhy splatné nyní. Pokud zakátovatelný ≥ nisab, zakát = 2.5% × zakátovatelný; jinak není splatný žádný zakát.</li>
+<li><strong>Nisab:</strong> 87.48 g zlata (7.5 tola) nebo 612.36 g stříbra (52.5 tola). Pro smíšený majetek je stříbrný nisab měřítkem nejčastěji používaným v Pákistánu (praxe Hanafi); zlatý nisab je k dispozici výše pro majetek pouze ve zlatě. 1 tola = 11.664 g.</li>
+<li><strong>Ocenění zlata:</strong> hmotnost v tola × dnešní kurz 24K × (karát ÷ 24) — takže 22karátové šperky se oceňují podle obsahu čistého zlata. Stříbro se oceňuje kurzem čistého stříbra.</li>
+<li><strong>Hawl:</strong> Zakát je splatný, když majetek zůstal na nisabu nebo nad ním po jeden lunární rok — kalkulačka kontroluje částku; rok je na vás, abyste potvrdili.</li>
+<li><strong>Nepočítáno:</strong> váš domov, auto, nábytek a předměty pro osobní potřebu nejsou zakátovatelné. Obchodní zásoby se oceňují prodejní hodnotou.</li>
+<li><strong>Kontext:</strong> pro rok zakátu 1446-47 AH byl oficiálně oznámený nisab pro bankovní srážku v Pákistánu Rs 503,529 (16. února 2026) — toto číslo řídí pouze automatickou bankovní srážku 1. ramadánu, ne vaši osobní povinnost, kterou tato kalkulačka počítá z vašeho skutečného majetku.</li>
+</ul>
+<p style="margin-top:8px">Vypracovaný příklad: 10 tola zlata 24K při Rs 200,000 za tola = Rs 2,000,000; hotovost Rs 500,000; dluhy Rs 100,000 → čistý zakátovatelný majetek Rs 2,400,000, vysoko nad nisabem stříbra Rs 131,250 (52.5 × Rs 2,500) → zakát = <strong>Rs 60,000</strong>.</p>
+</div>
+
+<div class="sec">
+<h2>Časté dotazy</h2>
+<div class="faq"><h3>Jak se počítá zakát?</h3><p>2.5% čistého zakátovatelného majetku (zlato + stříbro + hotovost + zásoby + pohledávky − splatné dluhy), jakmile dosáhne nisabu a uplyne lunární rok.</p></div>
+<div class="faq"><h3>Co je nisab?</h3><p>87.48 g zlata (7.5 tola) nebo 612.36 g stříbra (52.5 tola). Smíšený majetek v Pákistánu obvykle používá stříbrný nisab; majetek pouze ve zlatě používá zlatý nisab.</p></div>
+<div class="faq"><h3>Je zakát splatný ze šperků?</h3><p>Školy se liší — hanáfijská praxe obecně počítá zlaté a stříbrné šperky; jiné školy osvobozují šperky v pravidelném používání. Zadejte, co vaše škola počítá, a řiďte se vedením svého učence.</p></div>
+<div class="faq"><h3>Jak se oceňuje zlato jiné než 24K?</h3><p>Z obsahu čistého zlata: hmotnost × (karát ÷ 24) × sazba 24K. Kalkulačka upravuje automaticky.</p></div>
+<div class="faq"><h3>A co nisab bankovní srážky?</h3><p>Banky strhávají 1. ramadánu z účtů nad každoročně oznamovanou částkou (Rs 503,529 pro rok 1446-47 AH). To je oddělené od vašeho osobního zakátu z celkového majetku.</p></div>
+</div>
+
+<div class="note"><strong>Soukromí:</strong> tento výpočet běží 100% na vašem zařízení — údaje o vašem majetku nikdy neopustí váš prohlížeč. <strong>Upozornění:</strong> tento nástroj dělá aritmetiku, ne fatwu: školy se liší v bodech, jako jsou šperky v používání, takže se řiďte vedením svého učence. Kurzy kovů jsou ty, které zadáte — před výpočtem zkontrolujte dnešní kurz. Metoda naposledy ověřena: 2. listopadu 2026.</div>
+
+<div class="sec"><h2>Další kalkulačky</h2>
+<div class="links">
+<a href="../pakistan-freelancer-tax-calculator/">Daň pro freelancery v Pákistánu</a>
+<a href="../pakistan-salary-tax-calculator/">Daň ze mzdy v Pákistánu</a>
+<a href="../saudi-salary-calculator/">Saúdská mzda (GOSI)</a>
+<a href="../uae-final-settlement-calculator/">Konečné vyrovnání SAE</a>
+<a class="alt" href="../">Všechny kalkulačky</a>
+</div></div>
+</div>
+<div class="sec">
+<h2>Jak to funguje — vzorec</h2>
+<p>Vše se nejprve ocení v hotovosti. Zlato se oceňuje podle svého čistého obsahu: (gramy ÷ 11.664) × dnešní sazba 24K za tola × (karát ÷ 24) a stříbro (gramy ÷ 11.664) × sazba stříbra za tola. Zakátovatelný majetek = hodnota zlata + hodnota stříbra + hotovost a bankovní zůstatky + zásoby podniku + pohledávky − dluhy splatné nyní. Kontrola nisabu používá měřítko, které vyberete: stříbrný nisab, 52.5 tola × sazba stříbra, ve výchozím nastavení pro smíšený majetek, nebo zlatý nisab, 7.5 tola × sazba zlata. Pokud zakátovatelný majetek dosáhne nisabu, zakát = 2.5% z něj; pod nisabem není splatné nic.</p>
+<h3>Vypracovaný příklad</h3>
+<p>Zlato 58.32 g (5 tola) 24K při Rs 200,000 za tola = Rs 1,000,000. Stříbro 116.64 g (10 tola) při Rs 2,500 za tola = Rs 25,000. Hotovost Rs 400,000, obchodní zásoby Rs 200,000 a pohledávky Rs 50,000 přinášejí celková aktiva Rs 1,675,000; splatné dluhy Rs 75,000 ponechávají zakátovatelný majetek Rs 1,600,000. Nisab stříbra při těchto sazbách je Rs 131,250, takže nisab je splněn a zakát = 2.5% × 1,600,000 = <strong>Rs 40,000</strong>. (Na zlatém nisabu — Rs 1,500,000 při těchto sazbách — by byla rovněž splatná a částka by byla stejná.)</p>
+<h3>Časté dotazy</h3>
+<div class="faq"><h3>Proč referenční hodnota nisabu mění, zda je zakát splatný?</h3><p>Protože oba nisaby mají velmi odlišnou hodnotu. Při sazbách v příkladu je stříbrný nisab Rs 131,250, zatímco zlatý nisab je Rs 1,500,000 — majetek mezi těmito dvěma částkami dluží zakát podle stříbrného měřítka, ale ne podle zlatého. Samotná sazba je v obou případech 2.5%.</p></div>
+<div class="faq"><h3>Kolik gramů je v jedné tola?</h3><p>11.664 gramů. Zlatý nisab 7.5 tola je tedy 87.48 g, stříbrný nisab 52.5 tola je 612.36 g a 58.32 g v příkladu je přesně 5 tola.</p></div>
+<div class="faq"><h3>Které dluhy mohu odečíst?</h3><p>Pole v této kalkulačce jsou dluhy splatné nyní — částky, které jste v současnosti povinni zaplatit. Jak zacházet s budoucími splátkami delší půjčky je bod, v němž se učenci liší, takže zadejte, co je splatné nyní, a pro zbytek se řiďte vedením svého učence.</p></div>
+<div class="faq"><h3>Mám zahrnout peníze, které mi lidé dluží?</h3><p>Pole pohledávek je pro peníze, které vám dluží a u kterých očekáváte vrácení, a kalkulačka je počítá jako zakátovatelné. Pokud je dluh vůči vám pochybný, je to další bod, který školy řeší odlišně — řiďte se vedením svého učence, zda ho zadat.</p></div>
+<div class="faq"><h3>Co když můj majetek během roku klesl pod nisab?</h3><p>Zakát potřebuje, aby majetek zůstal na nisabu nebo nad ním po lunární rok (hawl). Tato kalkulačka kontroluje částku, kterou dnes zadáte, vůči nisabu; zda je podmínka celého roku splněna, je na vás, abyste potvrdili.</p></div>
+</div>
+<div id="loona-embed" style="max-width:780px;margin:30px auto;padding:24px;background:#fdfaf1;border:1px solid #d9c98a;border-radius:14px;text-align:left">
+<h2 style="margin:0 0 10px;color:#062e2a;font-size:1.35rem;line-height:1.3">Vložte si tuto kalkulačku na svůj web — zdarma</h2>
+<p style="margin:0 0 12px;line-height:1.6">Přidejte si tuto kalkulačku na vlastní web nebo blog — je zcela zdarma, nevyžaduje registraci a vždy ukazuje nejnovější verzi. Zkopírujte níže uvedený kód a vložte ho do své stránky tam, kde chcete, aby se kalkulačka objevila. Ponechání drobného řádku s uvedením zdroje &ldquo;Powered by Loona Automation&rdquo; pod vloženým prvkem pomáhá udržet tento nástroj zdarma &mdash; ale můžete ho libovolně upravit nebo odstranit; nástroj funguje tak jako tak.</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;box-sizing:border-box;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="Zakat Calculator by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;Poskytuje &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/cs/zakat-calculator/" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; zdarma Kalkulačka zakátu&lt;/p&gt;</textarea>
+<p style="margin:10px 0 0"><button type="button" id="loonaEmbedBtn" style="background:#062e2a;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">Zkopírovat vkládací kód</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='Zkopírováno!';setTimeout(function(){b.textContent='Kopírovat kód pro vložení';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+<footer>© 2026 Loona Automation — <a href="../">Loona Salary &amp; Tax Calculators</a><br><a href="../about.html">O nás</a> · <a href="../privacy.html">Zásady ochrany osobních údajů</a> · <a href="../terms.html">Podmínky</a> · <a href="../contact.html">Kontakt</a> · <a href="../guides/pakistan-salary-tax-2026-27-guide.html">Průvodce: daň ze mzdy v Pákistánu 2026-27</a></footer>
+<script>
+/*CALC-START*/
+/* Zakat: 2.5% of net zakatable wealth once it reaches the nisab.
+   Nisab: 87.48 g gold (7.5 tola) or 612.36 g silver (52.5 tola);
+   1 tola = 11.664 g. Mixed wealth uses the silver nisab by default
+   (Hanafi practice in Pakistan); gold nisab selectable. Gold valued on
+   pure content: (grams / 11.664) x 24K rate per tola x karat/24. */
+function zakatCalc(o){
+  var goldValue = (o.goldGrams||0)/11.664*(o.goldRate||0)*((o.karat||24)/24);
+  var silverValue = (o.silverGrams||0)/11.664*(o.silverRate||0);
+  var assets = goldValue + silverValue + (o.cash||0) + (o.stock||0) + (o.receivables||0);
+  var zakatable = Math.max(0, assets - (o.debts||0));
+  var nisabValue = o.basis==="gold" ? 7.5*(o.goldRate||0) : 52.5*(o.silverRate||0);
+  var met = nisabValue>0 && zakatable>=nisabValue;
+  return {goldValue:goldValue, silverValue:silverValue, assets:assets,
+    zakatable:zakatable, nisabValue:nisabValue, nisabMet:met,
+    zakat: met ? zakatable*0.025 : 0};
+}
+/*CALC-END*/
+function fmt(n){return n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function num(id){return parseFloat(document.getElementById(id).value)||0;}
+function calc(){
+  var box = document.getElementById("result");
+  var r = zakatCalc({goldGrams:num("goldG"), karat:parseFloat(document.getElementById("karat").value)||24,
+    silverGrams:num("silverG"), cash:num("cash"), stock:num("stock"),
+    receivables:num("recv"), debts:num("debts"),
+    goldRate:num("goldRate"), silverRate:num("silverRate"),
+    basis:document.getElementById("basis").value});
+  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; return; }
+  document.getElementById("rGold").textContent = fmt(r.goldValue);
+  document.getElementById("rSilver").textContent = fmt(r.silverValue);
+  document.getElementById("rAssets").textContent = fmt(r.assets);
+  document.getElementById("rDebts").textContent = fmt(num("debts"));
+  document.getElementById("rNet").textContent = fmt(r.zakatable);
+  document.getElementById("rNisab").textContent = fmt(r.nisabValue);
+  document.getElementById("rMet").textContent = r.nisabMet ? "Ano" : "Ne";
+  document.getElementById("total").textContent = fmt(r.zakat);
+  document.getElementById("rNote").textContent = r.nisabMet ?
+    "Váš čistý majetek podléhající zakátu je na úrovni nisábu nebo nad ní, takže je splatný zakát 2.5% (jakmile nad ním uplyne lunární rok — hawl)." :
+    "Váš čistý majetek podléhající zakátu je pod nisábem, takže při těchto částkách není splatný žádný zakát. Pokud váš majetek nisáb překročí a zůstane tam po lunární rok, zakát se stane splatným.";
+  box.style.display = "block";
+}
+["goldRate","silverRate","goldG","karat","silverG","cash","stock","recv","debts","basis"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Nainstalovat aplikaci';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Nainstalujte si tuto aplikaci: klepněte na tlačítko Sdílet a poté zvolte „Přidat na plochu“.');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>

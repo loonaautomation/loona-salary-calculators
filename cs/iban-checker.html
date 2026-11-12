@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontrola IBAN — Bezplatný validátor IBAN (kontrolní součet Mod-97)</title>
+<meta name="description" content="Bezplatná kontrola IBAN: ověřte jakýkoli evropský IBAN okamžitě se skutečným kontrolním součtem mod-97, kontrolou délky podle země a seskupeným formátováním. Bez registrace, soukromé.">
+<meta name="keywords" content="iban checker, iban validator, validate iban, iban check, mod 97 iban, european iban checker">
+<link rel="canonical" href="https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html"><link rel="alternate" hreflang="en" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><link rel="alternate" hreflang="es" href="https://loonaautomation.github.io/loona-salary-calculators/es/iban-checker.html"><link rel="alternate" hreflang="de" href="https://loonaautomation.github.io/loona-salary-calculators/de/iban-checker.html"><link rel="alternate" hreflang="fr" href="https://loonaautomation.github.io/loona-salary-calculators/fr/iban-checker.html"><link rel="alternate" hreflang="pt" href="https://loonaautomation.github.io/loona-salary-calculators/pt/iban-checker.html"><link rel="alternate" hreflang="it" href="https://loonaautomation.github.io/loona-salary-calculators/it/iban-checker.html"><link rel="alternate" hreflang="nl" href="https://loonaautomation.github.io/loona-salary-calculators/nl/iban-checker.html"><link rel="alternate" hreflang="ar" href="https://loonaautomation.github.io/loona-salary-calculators/ar/iban-checker.html"><link rel="alternate" hreflang="ur" href="https://loonaautomation.github.io/loona-salary-calculators/ur/iban-checker.html"><link rel="alternate" hreflang="tr" href="https://loonaautomation.github.io/loona-salary-calculators/tr/iban-checker.html"><link rel="alternate" hreflang="ru" href="https://loonaautomation.github.io/loona-salary-calculators/ru/iban-checker.html"><link rel="alternate" hreflang="cs" href="https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html"><link rel="alternate" hreflang="x-default" href="https://loonaautomation.github.io/loona-salary-calculators/iban-checker.html"><meta property="og:locale" content="cs_CZ">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kontrola IBAN — Loona">
+<meta property="og:description" content="Bezplatný validátor IBAN používající skutečný kontrolní součet mod-97 a tabulku délek podle zemí pro Evropu. Okamžité, soukromé a bez registrace.">
+<meta property="og:url" content="https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kontrola IBAN — Loona">
+<meta name="twitter:description" content="Ověřte jakýkoli evropský IBAN okamžitě s kontrolním součtem mod-97. Zdarma, soukromé, bez registrace.">
+<meta name="twitter:image" content="https://loonaautomation.github.io/loona-salary-calculators/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/loona-salary-calculators/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/loona-salary-calculators/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Kontrola IBAN","url":"https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Co je mod-97 a jak kontroluje IBAN?","acceptedAnswer":{"@type":"Answer","text":"Mod-97 je kontrolní součet zabudovaný do každého IBAN podle ISO 13616. První čtyři znaky se přesunou na konec, písmena se převedou na čísla (A=10 až Z=35) a výsledné dlouhé číslo se dělí 97 po částech. Skutečný IBAN vždy zanechává zbytek přesně 1; jakýkoli jiný zbytek znamená, že číslice nebo písmeno bylo zadáno špatně."}},{"@type":"Question","name":"Jaký je rozdíl mezi IBAN a kódem SWIFT/BIC?","acceptedAnswer":{"@type":"Answer","text":"IBAN identifikuje jeden konkrétní bankovní účet v jedné zemi. Kód SWIFT/BIC identifikuje samotnou banku a pobočku, ne váš účet. Mezinárodní převody obvykle potřebují IBAN pro účet a mohou také požádat o SWIFT/BIC banky."}},{"@type":"Question","name":"Znamená platný IBAN, že účet existuje?","acceptedAnswer":{"@type":"Answer","text":"Ne. Platný výsledek znamená pouze to, že formát a kontrolní součet mod-97 jsou pro danou zemi správné. Nemůže potvrdit, že účet existuje, je otevřený, patří osobě, kterou očekáváte, nebo na něm jsou nějaké peníze. Před odesláním peněz si vždy ověřte údaje o účtu u příjemce prostřednictvím důvěryhodného kanálu."}},{"@type":"Question","name":"Kde najdu svůj vlastní IBAN?","acceptedAnswer":{"@type":"Answer","text":"Na vašem bankovním výpisu, uvnitř vaší bankovní aplikace nebo internetového bankovnictví (obvykle pod údaji o účtu), na některých bankovních kartách nebo dotazem u vaší banky. Ve většině evropských zemí je IBAN vytištěn v horní části každého výpisu."}},{"@type":"Question","name":"Proč tato kontrola nepožaduje žádné bankovní přihlášení ani osobní údaje?","acceptedAnswer":{"@type":"Answer","text":"Protože žádné nejsou potřeba. Ověření IBAN je čistá matematika na samotném čísle, takže tento nástroj běží 100% na vašem zařízení a IBAN, který zadáte, nikdy nikam neodesílá."}},{"@type":"Question","name":"Může jedna špatná číslice přesto projít testem mod-97?","acceptedAnswer":{"@type":"Answer","text":"Téměř nikdy za jedinou chybu. Kontrolní součet mod-97 je navržen tak, aby zachytil všechny chyby jedné číslice a téměř všechny záměny sousedních číslic, a proto banky chybně zadaný IBAN okamžitě odmítnou, místo aby poslaly peníze na špatný účet."}},{"@type":"Question","name":"Jak dlouhý je IBAN v každé zemi?","acceptedAnswer":{"@type":"Answer","text":"Délka je stanovena pro každou zemi, od 15 znaků v Norsku po 31 na Maltě. Německo používá 22, Francie 27, Spojené království 22, Španělsko 24 a Švýcarsko 21. Tato kontrola porovnává váš IBAN s přesnou oficiální délkou pro jeho kód země před spuštěním kontrolního součtu."}},{"@type":"Question","name":"Mám svůj IBAN psát s mezerami nebo bez nich?","acceptedAnswer":{"@type":"Answer","text":"Obě zde fungují. IBAN se často tisknou v blocích po čtyřech pro čtení, ale mezery nejsou součástí čísla. Tato kontrola mezery automaticky odstraňuje a ukazuje vám seskupenou verzi vhodnou pro tisk."}}]}</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.55rem;margin:8px 0 6px}
+header p{color:#d9e8e4;font-size:.95rem;max-width:700px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.calc{background:var(--card);border:1px solid #e4ddc8;border-top:4px solid var(--gold);border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(7,51,47,.06)}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 5px;color:var(--teal)}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:8px;font-size:1rem;background:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.result{margin-top:18px;background:#eef6f2;border:1px solid #cfe3da;border-radius:10px;padding:16px;display:none}
+.result .big{font-size:1.6rem;font-weight:800;color:var(--teal)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.93rem}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.sec{margin-top:28px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p,.sec li{font-size:.95rem}
+.sec ul{margin-left:20px}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://loonaautomation.github.io/loona-salary-calculators/cs/"},{"@type":"ListItem","position":2,"name":"Kontrola IBAN","item":"https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html"}]}</script>
+<link rel="manifest" href="../iban-checker.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="./">← Loona Salary &amp; Tax Calculators</a>
+<h1>Kontrola IBAN</h1>
+<p>Ověřte jakýkoli evropský IBAN během vteřin se skutečným kontrolním součtem mod-97 z ISO 13616 — plus oficiální kontrolou délky pro jeho zemi, názvem země a seskupeným formátem vhodným pro tisk. Zdarma, bez registrace.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>Stručně:</strong> zadejte nebo vložte IBAN a tato kontrola odstraní mezery, zkontroluje dvoupísmenný kód země a přesnou délku pro danou zemi, poté spustí kontrolní součet mod-97. Zbytek 1 znamená, že číslo je správně utvořeno — nedokazuje to, že účet existuje.</p></div>
+<div class="calc">
+<label for="iban">IBAN</label>
+<input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<div class="result" id="result">
+<div id="rTitle">Výsledek</div>
+<div class="big" id="rVerdict">—</div>
+<table>
+<tr><td>Země</td><td id="rCountry">—</td></tr>
+<tr><td>Normalizovaný IBAN</td><td id="rNorm">—</td></tr>
+<tr><td>Seskupené (bloky po 4)</td><td id="rGrouped">—</td></tr>
+<tr><td>Délka</td><td id="rLength">—</td></tr>
+<tr><td>Zbytek Mod-97 (musí být 1)</td><td id="rMod">—</td></tr>
+</table>
+<p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
+</div>
+</div>
+
+<div class="sec">
+<h2>Jak se to počítá</h2>
+<p>Každý IBAN se řídí ISO 13616. Ověření používané bankami — a touto kontrolou — má čtyři kroky:</p>
+<ul>
+<li><strong>Normalizovat:</strong> odstraňte mezery a převeďte na velká písmena.</li>
+<li><strong>Struktura:</strong> číslo musí odpovídat dvěma písmenům (země), dvěma kontrolním číslicím, poté pouze písmenům a číslicím.</li>
+<li><strong>Délka:</strong> celková délka se musí rovnat pevné délce pro danou zemi — například 22 pro Německo, 27 pro Francii, 22 pro Spojené království, 21 pro Švýcarsko a 15 pro Norsko.</li>
+<li><strong>Kontrolní součet Mod-97:</strong> přesuňte první čtyři znaky na konec, převeďte písmena na čísla (A = 10, B = 11, … Z = 35), poté vydělte 97 po částech. Vzorec: přeskupený IBAN mod 97 = 1 pro platný IBAN.</li>
+</ul>
+<p style="margin-top:8px">Vypracované příklady — každý výsledek níže vyplní vlastní validátor této stránky při načtení stránky, takže nikdy nemůže nesouhlasit s kontrolou výše:</p>
+<ul>
+<li>Německo: DE89370400440532013000 → <span id="ex1">kontroluji…</span></li>
+<li>Spojené království: GB29NWBK60161331926819 → <span id="ex2">kontroluji…</span></li>
+<li>Francie: FR1420041010050500013M02606 → <span id="ex3">kontroluji…</span></li>
+<li>Švýcarsko: CH9300762011623852957 → <span id="ex4">kontroluji…</span></li>
+<li>Norsko: NO9386011117947 → <span id="ex5">kontroluji…</span></li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>Časté dotazy</h2>
+<div class="faq"><h3>Co je mod-97 a jak kontroluje IBAN?</h3><p>Mod-97 je kontrolní součet zabudovaný do každého IBAN podle ISO 13616. První čtyři znaky se přesunou na konec, písmena se převedou na čísla (A=10 až Z=35) a výsledné dlouhé číslo se dělí 97 po částech. Skutečný IBAN vždy zanechává zbytek přesně 1; jakýkoli jiný zbytek znamená, že číslice nebo písmeno bylo zadáno špatně.</p></div>
+<div class="faq"><h3>Jaký je rozdíl mezi IBAN a kódem SWIFT/BIC?</h3><p>IBAN identifikuje jeden konkrétní bankovní účet v jedné zemi. Kód SWIFT/BIC identifikuje samotnou banku a pobočku, ne váš účet. Mezinárodní převody obvykle potřebují IBAN pro účet a mohou také požádat o SWIFT/BIC banky.</p></div>
+<div class="faq"><h3>Znamená platný IBAN, že účet existuje?</h3><p>Ne. Platný výsledek znamená pouze to, že formát a kontrolní součet mod-97 jsou pro danou zemi správné. Nemůže potvrdit, že účet existuje, je otevřený, patří osobě, kterou očekáváte, nebo na něm jsou nějaké peníze. Před odesláním peněz si vždy ověřte údaje o účtu u příjemce prostřednictvím důvěryhodného kanálu.</p></div>
+<div class="faq"><h3>Kde najdu svůj vlastní IBAN?</h3><p>Na vašem bankovním výpisu, uvnitř vaší bankovní aplikace nebo internetového bankovnictví (obvykle pod údaji o účtu), na některých bankovních kartách nebo dotazem u vaší banky. Ve většině evropských zemí je IBAN vytištěn v horní části každého výpisu.</p></div>
+<div class="faq"><h3>Proč tato kontrola nepožaduje žádné bankovní přihlášení ani osobní údaje?</h3><p>Protože žádné nejsou potřeba. Ověření IBAN je čistá matematika na samotném čísle, takže tento nástroj běží 100% na vašem zařízení a IBAN, který zadáte, nikdy nikam neodesílá.</p></div>
+</div>
+
+<div class="note"><strong>Soukromí:</strong> tato kontrola běží 100% na vašem zařízení — IBAN, který zadáte, nikdy neopustí váš prohlížeč. <strong>Upozornění:</strong> pouze ověření formátu a kontrolního součtu, na základě standardu IBAN ISO 13616; nemůže potvrdit, že účet existuje. Délky a pravidla ověřeny v listopadu 2026 vůči ISO 13616 IBAN Registry.</div>
+
+<div class="sec"><h2>Další kalkulačky</h2>
+<div class="links">
+<a href="vat-calculator.html">Kalkulačka VAT</a>
+<a href="reverse-vat-calculator.html">Kalkulačka zpětné VAT</a>
+<a href="vat-number-checker.html">Kontrola DIČ</a>
+<a class="alt" href="./">Všechny kalkulačky</a>
+</div></div>
+<div class="sec">
+<h2>Jak to funguje — vzorec</h2>
+<p>IBAN je samokontrolní konstrukcí. Jeho třetí a čtvrtý znak jsou kontrolní číslice zvolené vydávající bankou tak, aby celé číslo prošlo jedním přesným aritmetickým testem. Pro spuštění tohoto testu vezměte IBAN, přesuňte jeho první čtyři znaky (kód země plus kontrolní číslice) na konec, nahraďte každé písmeno dvoumístným číslem (A = 10 až Z = 35) a spočítejte toto velmi dlouhé číslo modulo 97 — v praxi po malých částech, přenášejíc každý zbytek do další části, aby čísla zůstala zvládnutelná. Pokud je konečný zbytek přesně 1, IBAN je správně utvořen; jakákoli chyba při psaní číslice nebo písmene zbytek změní a je zachycena dříve, než se peníze pohnou.</p>
+<h3>Vypracovaný příklad</h3>
+<p>Vezměte německý IBAN DE89370400440532013000. Jeho kód země je DE (Německo), jeho očekávaná délka je 22 a má přesně 22 znaků. Přeskupené a převedené začíná 370400440532013000131489 — a toto číslo mod 97 je <strong><span id="exWorked">…</span></strong>, vyplněno validátorem na této stránce. Zbytek 1 je známka úspěchu, kterou každá banka hledá.</p>
+<h3>Časté dotazy</h3>
+<div class="faq"><h3>Může jedna špatná číslice přesto projít testem mod-97?</h3><p>Téměř nikdy za jedinou chybu. Kontrolní součet mod-97 je navržen tak, aby zachytil všechny chyby jedné číslice a téměř všechny záměny sousedních číslic, a proto banky chybně zadaný IBAN okamžitě odmítnou, místo aby poslaly peníze na špatný účet.</p></div>
+<div class="faq"><h3>Jak dlouhý je IBAN v každé zemi?</h3><p>Délka je stanovena pro každou zemi, od 15 znaků v Norsku po 31 na Maltě. Německo používá 22, Francie 27, Spojené království 22, Španělsko 24 a Švýcarsko 21. Tato kontrola porovnává váš IBAN s přesnou oficiální délkou pro jeho kód země před spuštěním kontrolního součtu.</p></div>
+<div class="faq"><h3>Mám svůj IBAN psát s mezerami nebo bez nich?</h3><p>Obě zde fungují. IBAN se často tisknou v blocích po čtyřech pro čtení, ale mezery nejsou součástí čísla. Tato kontrola mezery automaticky odstraňuje a ukazuje vám seskupenou verzi vhodnou pro tisk.</p></div>
+</div>
+<div class="sec" id="loona-embed">
+<h2>Vložte si tuto kalkulačku na svůj web — zdarma</h2>
+<p>Přidejte si tuto kalkulačku na vlastní web nebo blog — je zcela zdarma, nevyžaduje registraci a vždy ukazuje nejnovější verzi. Zkopírujte níže uvedený kód a vložte ho do své stránky tam, kde chcete, aby se kalkulačka objevila. Ponechání drobného řádku s uvedením zdroje &ldquo;Powered by Loona Automation&rdquo; pod vloženým prvkem pomáhá udržet tento nástroj zdarma &mdash; ale můžete ho libovolně upravit nebo odstranit; nástroj funguje tak jako tak.</p>
+<textarea id="loonaEmbedCode" readonly rows="4" style="width:100%;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.45;padding:12px;border:1px solid #e4ddc8;border-radius:10px;background:#fff;color:#1c2422;resize:vertical">&lt;iframe src="https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html" width="100%" height="720" style="border:1px solid #e5e7eb;border-radius:12px;max-width:760px" loading="lazy" title="IBAN Checker by Loona"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:13px;font-family:Arial,sans-serif"&gt;Poskytuje &lt;a href="https://loonaautomation.github.io/loona-salary-calculators/cs/iban-checker.html" target="_blank" rel="noopener"&gt;Loona Automation&lt;/a&gt; &mdash; zdarma Kontrola IBAN&lt;/p&gt;</textarea>
+<p style="margin-top:10px"><button type="button" id="loonaEmbedBtn" style="background:#07332f;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:.95rem;font-weight:700;cursor:pointer">Zkopírovat vkládací kód</button></p>
+</div>
+<script>
+(function(){var b=document.getElementById('loonaEmbedBtn'),t=document.getElementById('loonaEmbedCode');if(!b||!t)return;b.addEventListener('click',function(){var done=function(){b.textContent='Zkopírováno!';setTimeout(function(){b.textContent='Kopírovat kód pro vložení';},2000);};var fallback=function(){t.removeAttribute('readonly');t.select();try{document.execCommand('copy');}catch(e){}t.setAttribute('readonly','');done();};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,fallback);}else{fallback();}});})();
+</script>
+</div>
+<footer>© 2026 Loona Automation — <a href="./">Loona Salary &amp; Tax Calculators</a><br><a href="about.html">O nás</a> · <a href="privacy.html">Zásady ochrany osobních údajů</a> · <a href="terms.html">Podmínky</a> · <a href="contact.html">Kontakt</a></footer>
+<script>
+/*CALC-START*/
+var IBAN_LENGTHS = {AL:28,AD:24,AT:20,BE:16,BA:20,BG:22,HR:21,CY:28,CZ:24,DK:18,EE:20,FO:18,FI:18,FR:27,GE:22,DE:22,GI:23,GR:27,GL:18,HU:28,IS:26,IE:22,IT:27,LV:21,LI:21,LT:20,LU:20,MK:19,MT:31,MC:27,ME:22,NL:18,NO:15,PL:28,PT:25,RO:24,SM:27,RS:22,SK:24,SI:19,ES:24,SE:24,CH:21,TR:26,GB:22,UA:29,VA:22};
+var IBAN_COUNTRIES = {AL:"Albánie",AD:"Andorra",AT:"Rakousko",BE:"Belgie",BA:"Bosna a Hercegovina",BG:"Bulharsko",HR:"Chorvatsko",CY:"Kypr",CZ:"Česko",DK:"Dánsko",EE:"Estonsko",FO:"Faerské ostrovy",FI:"Finsko",FR:"Francie",GE:"Gruzie",DE:"Německo",GI:"Gibraltar",GR:"Řecko",GL:"Grónsko",HU:"Maďarsko",IS:"Island",IE:"Irsko",IT:"Itálie",LV:"Lotyšsko",LI:"Lichtenštejnsko",LT:"Litva",LU:"Lucembursko",MK:"Severní Makedonie",MT:"Malta",MC:"Monako",ME:"Černá Hora",NL:"Nizozemsko",NO:"Norsko",PL:"Polsko",PT:"Portugalsko",RO:"Rumunsko",SM:"San Marino",RS:"Srbsko",SK:"Slovensko",SI:"Slovinsko",ES:"Španělsko",SE:"Švédsko",CH:"Švýcarsko",TR:"Turecko",GB:"Spojené království",UA:"Ukrajina",VA:"Vatikán"};
+function ibanMod97(iban){
+  var rearranged = iban.slice(4) + iban.slice(0,4);
+  var numeric = "";
+  for(var i=0;i<rearranged.length;i++){
+    var c = rearranged[i];
+    if(c >= "0" && c <= "9") numeric += c;
+    else numeric += String(c.charCodeAt(0) - 55);
+  }
+  var remainder = 0;
+  for(var j=0;j<numeric.length;j+=7){
+    remainder = parseInt(String(remainder) + numeric.slice(j, j+7), 10) % 97;
+  }
+  return remainder;
+}
+function ibanValidate(iban){
+  var normalized = String(iban == null ? "" : iban).replace(/\s+/g,"").toUpperCase();
+  var grouped = normalized.replace(/(.{4})/g,"$1 ").trim();
+  var result = {valid:false, ok:false, normalized:normalized, grouped:grouped, countryCode:"", countryName:"", expectedLength:null, actualLength:normalized.length, mod97:null, message:""};
+  if(!/^[A-Z]{2}\d{2}[A-Z0-9]+$/.test(normalized)){
+    result.message = "Neodpovídá struktuře IBAN: dvě písmena země, dvě kontrolní číslice, poté písmena a číslice.";
+    return result;
+  }
+  var cc = normalized.slice(0,2);
+  result.countryCode = cc;
+  result.countryName = IBAN_COUNTRIES[cc] || "Neznámý";
+  if(!(cc in IBAN_LENGTHS)){
+    result.message = "Kód země " + cc + " není v této evropské tabulce délek IBAN.";
+    return result;
+  }
+  result.expectedLength = IBAN_LENGTHS[cc];
+  if(normalized.length !== IBAN_LENGTHS[cc]){
+    result.message = "Špatná délka pro " + result.countryName + ": očekáváno " + IBAN_LENGTHS[cc] + " znaků, zadáno " + normalized.length + ".";
+    return result;
+  }
+  result.mod97 = ibanMod97(normalized);
+  if(result.mod97 !== 1){
+    result.message = "Kontrolní součet Mod-97 selhal: zbytek je " + result.mod97 + ", ale platný IBAN musí dát 1.";
+    return result;
+  }
+  result.valid = true; result.ok = true;
+  result.message = "Platný formát a kontrolní součet IBAN pro " + result.countryName + ". Toto potvrzuje pouze, že je číslo správně utvořeno — nedokazuje, že účet existuje.";
+  return result;
+}
+/*CALC-END*/
+function calc(){
+  var v = document.getElementById("iban").value;
+  var box = document.getElementById("result");
+  if(!v || !v.trim()){ box.style.display="none"; return; }
+  var r = ibanValidate(v);
+  document.getElementById("rVerdict").textContent = r.valid ? "✓ Platný IBAN" : "✗ Neplatný IBAN";
+  document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
+  document.getElementById("rNorm").textContent = r.normalized || "—";
+  document.getElementById("rGrouped").textContent = r.grouped || "—";
+  document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
+  document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
+  document.getElementById("rNote").textContent = r.message;
+  box.style.display = "block";
+}
+document.getElementById("iban").addEventListener("input",calc);
+(function(){
+  var examples = [["ex1","DE89370400440532013000"],["ex2","GB29NWBK60161331926819"],["ex3","FR1420041010050500013M02606"],["ex4","CH9300762011623852957"],["ex5","NO9386011117947"]];
+  examples.forEach(function(pair){
+    var r = ibanValidate(pair[1]);
+    document.getElementById(pair[0]).textContent = r.valid ? "✓ platný — " + r.countryName + ", délka " + r.actualLength + ", zbytek mod-97 1" : "✗ neplatný — " + r.message;
+  });
+  var w = ibanValidate("DE89370400440532013000");
+  document.getElementById("exWorked").textContent = (w.mod97 === null ? "—" : String(w.mod97));
+})();
+calc();
+</script>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Nainstalovat aplikaci';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Nainstalujte si tuto aplikaci: klepněte na tlačítko Sdílet a poté zvolte „Přidat na plochu“.');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
