@@ -1,0 +1,29 @@
+{
+  "name": "Loona Electricians Salary in Illinois 2026",
+  "short_name": "Electricians Salary in Illinois 2026",
+  "description": "A electricians earning the national median of $63,190 in Illinois takes home $49,970.05 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/en-gb/electricians-salary-illinois.html",
+  "start_url": "./electricians-salary-illinois.html",
+  "scope": "./electricians-salary-illinois.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

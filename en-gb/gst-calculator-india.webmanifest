@@ -1,0 +1,29 @@
+{
+  "name": "Loona India GST Calculator",
+  "short_name": "India GST Calculator",
+  "description": "Free India GST calculator with the post-September-2025 slabs: add or remove GST at 5% merit, 18% standard or 40% demerit rates, plus the 3% gold rate. Worked examples in INR.",
+  "id": "/loona-salary-calculators/en-gb/gst-calculator-india.html",
+  "start_url": "./gst-calculator-india.html",
+  "scope": "./gst-calculator-india.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

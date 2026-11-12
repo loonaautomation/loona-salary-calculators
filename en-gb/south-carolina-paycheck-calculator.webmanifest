@@ -1,0 +1,29 @@
+{
+  "name": "Loona South Carolina Paycheck Calculator 2026",
+  "short_name": "South Carolina Paycheck Calculator 2026",
+  "description": "What is a salary worth after tax in South Carolina in 2026? Federal + South Carolina income tax, Social Security and Medicare — free paycheck calculator with the 2026 tables.",
+  "id": "/loona-salary-calculators/en-gb/south-carolina-paycheck-calculator.html",
+  "start_url": "./south-carolina-paycheck-calculator.html",
+  "scope": "./south-carolina-paycheck-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

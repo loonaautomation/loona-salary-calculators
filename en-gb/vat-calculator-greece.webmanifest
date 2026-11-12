@@ -1,0 +1,29 @@
+{
+  "name": "Loona Greece VAT Calculator",
+  "short_name": "Greece VAT Calculator",
+  "description": "Free Greece VAT calculator: add or remove 24% VAT in seconds and reduced 13%/6%, full formula and worked examples in EUR. No sign-up, runs on your device.",
+  "id": "/loona-salary-calculators/en-gb/vat-calculator-greece.html",
+  "start_url": "./vat-calculator-greece.html",
+  "scope": "./vat-calculator-greece.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

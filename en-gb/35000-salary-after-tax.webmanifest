@@ -1,0 +1,29 @@
+{
+  "name": "Loona $35,000 Salary After Tax 2026",
+  "short_name": "$35,000 Salary After Tax 2026",
+  "description": "A $35,000 salary in 2026 nets $30,302.50 a year after federal tax (single filer). Monthly, weekly and hourly take-home — free calculator.",
+  "id": "/loona-salary-calculators/en-gb/35000-salary-after-tax.html",
+  "start_url": "./35000-salary-after-tax.html",
+  "scope": "./35000-salary-after-tax.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

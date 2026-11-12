@@ -1,0 +1,29 @@
+{
+  "name": "Loona India Net Salary Calculator",
+  "short_name": "India Net Salary Calculator",
+  "description": "Calculate your in-hand salary in India for FY 2026–27 under the NEW regime: slabs to ₹24 lakh, ₹75,000 standard deduction, Section 87A rebate (zero tax to ₹12 lakh) and 4% cess, plus EPF. Free.",
+  "id": "/loona-salary-calculators/en-gb/india-salary-calculator.html",
+  "start_url": "./india-salary-calculator.html",
+  "scope": "./india-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

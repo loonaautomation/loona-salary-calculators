@@ -1,0 +1,29 @@
+{
+  "name": "Loona Software Developers Salary in Texas 2026",
+  "short_name": "Software Developers Salary in Texas 2026",
+  "description": "A software developers earning the national median of $135,980 in Texas takes home $104,208.33 a year after tax — free calculator.",
+  "id": "/loona-salary-calculators/en-gb/software-developers-salary-texas.html",
+  "start_url": "./software-developers-salary-texas.html",
+  "scope": "./software-developers-salary-texas.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Loona $30 an Hour Is How Much a Year?",
+  "short_name": "$30 an Hour Is How Much a Year?",
+  "description": "$30 an hour is $62,400.00 a year gross ($52,318.40 after federal tax, single filer, 2026). Monthly, weekly and take-home hourly pay — free calculator.",
+  "id": "/loona-salary-calculators/en-gb/30-per-hour-to-annual-salary.html",
+  "start_url": "./30-per-hour-to-annual-salary.html",
+  "scope": "./30-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

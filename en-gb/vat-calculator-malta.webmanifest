@@ -1,0 +1,29 @@
+{
+  "name": "Loona Malta VAT Calculator",
+  "short_name": "Malta VAT Calculator",
+  "description": "Free Malta VAT calculator: add or remove 18% VAT in seconds and reduced 7%/5%, full formula and worked examples in EUR. No sign-up, runs on your device.",
+  "id": "/loona-salary-calculators/en-gb/vat-calculator-malta.html",
+  "start_url": "./vat-calculator-malta.html",
+  "scope": "./vat-calculator-malta.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

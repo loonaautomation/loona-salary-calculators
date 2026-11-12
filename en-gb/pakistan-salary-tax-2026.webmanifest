@@ -1,0 +1,29 @@
+{
+  "name": "Loona Pakistan Salary Tax 2026",
+  "short_name": "Pakistan Salary Tax 2026",
+  "description": "What is a PKR 2,400,000 salary worth after tax in Pakistan in 2026? The 2026 table, worked out — free calculator with a 2024–2026 comparison.",
+  "id": "/loona-salary-calculators/en-gb/pakistan-salary-tax-2026.html",
+  "start_url": "./pakistan-salary-tax-2026.html",
+  "scope": "./pakistan-salary-tax-2026.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

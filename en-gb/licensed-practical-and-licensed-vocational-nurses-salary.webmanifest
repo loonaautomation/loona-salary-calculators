@@ -1,0 +1,29 @@
+{
+  "name": "Loona Licensed Practical and Licensed Vocational Nurses Salary 2026",
+  "short_name": "Licensed Practical and Licensed Vocational Nurses Salary 2026",
+  "description": "How much does a licensed practical and licensed vocational nurses make? Median pay $64,400 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
+  "id": "/loona-salary-calculators/en-gb/licensed-practical-and-licensed-vocational-nurses-salary.html",
+  "start_url": "./licensed-practical-and-licensed-vocational-nurses-salary.html",
+  "scope": "./licensed-practical-and-licensed-vocational-nurses-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
