@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון שכר נטו לאירלנד — PAYE, USC &amp; PRSI 2026",
+  "short_name": "מחשבון שכר נטו לאירלנד — PAYE, USC &amp; PRSI 2026",
+  "description": "חשבו את שכר הביתה שלכם באירלנד ל-2026: PAYE ב-20%/40% עם זיכויי מס של €4,000, USC במדרגות 2026 ו-PRSI ב-4.2%. יחיד, זיכויים סטנדרטיים. בחינם.",
+  "id": "/loona-salary-calculators/he/ireland-salary-calculator.html",
+  "start_url": "./ireland-salary-calculator.html",
+  "scope": "./ireland-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

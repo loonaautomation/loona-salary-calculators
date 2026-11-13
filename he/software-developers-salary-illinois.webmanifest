@@ -1,0 +1,29 @@
+{
+  "name": "משכורת מפתחי תוכנה ב-אילינוי 2026 – שכר אחרי מס | Loona Salary",
+  "short_name": "משכורת מפתחי תוכנה ב-אילינוי 2026 – שכר אחרי מס",
+  "description": "מפתחי תוכנה שמרוויח את החציון הלאומי של $135,980 ב-אילינוי לוקח הביתה $97,622.11 לשנה אחרי מס — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/software-developers-salary-illinois.html",
+  "start_url": "./software-developers-salary-illinois.html",
+  "scope": "./software-developers-salary-illinois.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

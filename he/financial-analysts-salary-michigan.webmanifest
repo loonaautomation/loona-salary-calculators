@@ -1,0 +1,29 @@
+{
+  "name": "משכורת אנליסטים פיננסיים ב-מישיגן 2026 – שכר אחרי מס | Loona Salary",
+  "short_name": "משכורת אנליסטים פיננסיים ב-מישיגן 2026 – שכר אחרי מס",
+  "description": "אנליסטים פיננסיים שמרוויח את החציון הלאומי של $102,740 ב-מישיגן לוקח הביתה $76,991.89 לשנה אחרי מס — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/financial-analysts-salary-michigan.html",
+  "start_url": "./financial-analysts-salary-michigan.html",
+  "scope": "./financial-analysts-salary-michigan.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

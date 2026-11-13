@@ -1,0 +1,29 @@
+{
+  "name": "מקצועות — משכורות חציוניות 2026 | Loona Salary",
+  "short_name": "מקצועות — משכורות חציוניות 2026",
+  "description": "שכר חציוני ל-60 מקצועות בארצות הברית (BLS OEWS מאי 2025) — מעובדי מזון מהיר ועד רופאי משפחה — עם שכר הנטו אחרי מס פדרלי.",
+  "id": "/loona-salary-calculators/he/professions.html",
+  "start_url": "./professions.html",
+  "scope": "./professions.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

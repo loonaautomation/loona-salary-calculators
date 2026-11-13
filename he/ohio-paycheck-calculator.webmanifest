@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון תלוש שכר של אוהיו 2026 – משכורת אחרי מס | Loona Salary",
+  "short_name": "מחשבון תלוש שכר של אוהיו 2026 – משכורת אחרי מס",
+  "description": "כמה שווה משכורת אחרי מס ב-אוהיו ב-2026? מס פדרלי + מס הכנסה של אוהיו, Social Security ו-Medicare — מחשבון תלוש שכר חינמי עם טבלאות 2026.",
+  "id": "/loona-salary-calculators/he/ohio-paycheck-calculator.html",
+  "start_url": "./ohio-paycheck-calculator.html",
+  "scope": "./ohio-paycheck-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

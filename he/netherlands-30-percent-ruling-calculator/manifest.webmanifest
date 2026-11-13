@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון החלטת 30% של הולנד — כמה ההחלטה שווה",
+  "short_name": "מחשבון החלטת 30% של הולנד — כמה ההחלטה שווה",
+  "description": "ראו בדיוק כמה שווה החלטת ה-30% של הולנד: שכר נטו עם ובלעדיה, ההטבה השנתית, ותצוגה מקדימה של 2027 בשיעור החדש של 27%. חינם לשימוש.",
+  "id": "/loona-salary-calculators/he/netherlands-30-percent-ruling-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

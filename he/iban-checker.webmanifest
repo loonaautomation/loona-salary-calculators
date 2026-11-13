@@ -1,0 +1,29 @@
+{
+  "name": "בודק IBAN — בודק IBAN חינמי (סכום ביקורת Mod-97)",
+  "short_name": "בודק IBAN — בודק IBAN חינמי (סכום ביקורת Mod-97)",
+  "description": "בודק IBAN חינמי: אמתו כל IBAN אירופי באופן מיידי עם סכום הביקורת האמיתי mod-97, בדיקת אורך מדינה ועיצוב מקובץ. ללא הרשמה, פרטי.",
+  "id": "/loona-salary-calculators/he/iban-checker.html",
+  "start_url": "./iban-checker.html",
+  "scope": "./iban-checker.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

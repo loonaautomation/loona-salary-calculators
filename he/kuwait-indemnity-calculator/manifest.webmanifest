@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון פיצוי כווית — סיום שירות (סעיפים 51–53)",
+  "short_name": "מחשבון פיצוי כווית — סיום שירות (סעיפים 51–53)",
+  "description": "חשבו פיצוי סיום שירות בכווית לפי סעיפים 51 ו-53 של חוק העבודה 6/2010: 15 ימים בשנה במשך 5 שנים, חודש אחד לאחר מכן, עם התקרה. חינם.",
+  "id": "/loona-salary-calculators/he/kuwait-indemnity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

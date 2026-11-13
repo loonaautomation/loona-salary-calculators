@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון מע\"מ של רומניה (שיעור 21%) — הוספה או הסרה של מע\"מ | Loona",
+  "short_name": "מחשבון מע\"מ של רומניה (שיעור 21%) — הוספה או הסרה של מע\"מ",
+  "description": "מחשבון VAT לרומניה חינמי: הוסיפו או הסירו VAT ב-21% ומופחת 11% תוך שניות, נוסחה מלאה ודוגמאות מחושבות ב-RON. ללא הרשמה, פועל על המכשיר שלכם.",
+  "id": "/loona-salary-calculators/he/vat-calculator-romania.html",
+  "start_url": "./vat-calculator-romania.html",
+  "scope": "./vat-calculator-romania.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

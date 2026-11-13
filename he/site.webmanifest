@@ -1,0 +1,22 @@
+{
+  "name": "Loona — מחשבוני משכורת ומס",
+  "short_name": "Loona Salary",
+  "start_url": "https://loonaautomation.github.io/loona-salary-calculators/he/",
+  "scope": "https://loonaautomation.github.io/loona-salary-calculators/he/",
+  "display": "standalone",
+  "theme_color": "#07332f",
+  "background_color": "#f6f3ea",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "מחשבוני משכורת, פיצויים ומס חינמיים לאיחוד האמירויות, ערב הסעודית, הולנד, גרמניה ופקיסטן — נוסחאות מדויקות, ללא הרשמה, פרטיים לחלוטין."
+}

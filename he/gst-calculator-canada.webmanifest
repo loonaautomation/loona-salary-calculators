@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון GST/HST של קנדה — הוספה או הסרה של GST/HST לפי מחוז | Loona",
+  "short_name": "מחשבון GST/HST של קנדה — הוספה או הסרה של GST/HST לפי מחוז",
+  "description": "מחשבון GST/HST חינמי לקנדה: 5% GST בתוספת HST, PST, RST או QST מחוזיים לפי מחוז. הוסיפו או הסירו מס עם הנוסחה המלאה ודוגמאות מחושבות ב-CAD.",
+  "id": "/loona-salary-calculators/he/gst-calculator-canada.html",
+  "start_url": "./gst-calculator-canada.html",
+  "scope": "./gst-calculator-canada.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

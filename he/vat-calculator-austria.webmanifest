@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון מע\"מ של אוסטריה (שיעור 20%) — הוספה או הסרה של מע\"מ | Loona",
+  "short_name": "מחשבון מע\"מ של אוסטריה (שיעור 20%) — הוספה או הסרה של מע\"מ",
+  "description": "מחשבון מע\"מ חינמי של אוסטריה: הוסיפו או הסירו 20% מע\"מ בתוך שניות ומופחת 10%/13%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
+  "id": "/loona-salary-calculators/he/vat-calculator-austria.html",
+  "start_url": "./vat-calculator-austria.html",
+  "scope": "./vat-calculator-austria.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

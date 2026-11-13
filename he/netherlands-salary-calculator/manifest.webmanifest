@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון שכר להולנד — שכר נטו 2026 עם החלטת 30%",
+  "short_name": "מחשבון שכר להולנד — שכר נטו 2026 עם החלטת 30%",
+  "description": "מחשבון שכר מברוטו לנטו הולנדי לשנת 2026: מס Box 1, זיכויי מס כללי ועבודה, קצבת חופשה של 8% והחלטת ה-30% עם נורמת השכר שלה.",
+  "id": "/loona-salary-calculators/he/netherlands-salary-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

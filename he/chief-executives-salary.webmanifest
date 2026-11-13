@@ -1,0 +1,29 @@
+{
+  "name": "משכורת מנכ\"לים 2026 – שכר חציוני ושכר נטו | Loona Salary",
+  "short_name": "משכורת מנכ\"לים 2026 – שכר חציוני ושכר נטו",
+  "description": "כמה מרוויח מנכ\"לים? שכר חציוני $213,990 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/chief-executives-salary.html",
+  "start_url": "./chief-executives-salary.html",
+  "scope": "./chief-executives-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

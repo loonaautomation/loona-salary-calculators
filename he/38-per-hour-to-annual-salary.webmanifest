@@ -1,0 +1,29 @@
+{
+  "name": "כמה זה $38 לשעה בשנה? $79,040.00 ברוטו, $64,434.64 אחרי מס | Loona Salary",
+  "short_name": "כמה זה $38 לשעה בשנה? $79,040.00 ברוטו, $64,434.64 אחרי מס",
+  "description": "$38 לשעה הם $79,040.00 לשנה ברוטו ($64,434.64 אחרי מס פדרלי, מגיש יחיד, 2026). שכר חודשי, שבועי ושכר נטו לשעה — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/38-per-hour-to-annual-salary.html",
+  "start_url": "./38-per-hour-to-annual-salary.html",
+  "scope": "./38-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

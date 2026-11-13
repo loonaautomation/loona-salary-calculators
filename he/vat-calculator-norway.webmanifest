@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון מע\"מ של נורווגיה (שיעור 25%) — הוספה או הסרה של מע\"מ | Loona",
+  "short_name": "מחשבון מע\"מ של נורווגיה (שיעור 25%) — הוספה או הסרה של מע\"מ",
+  "description": "מחשבון VAT לנורווגיה חינמי: הוסיפו או הסירו VAT ב-25% ומופחת 15%/12% תוך שניות, נוסחה מלאה ודוגמאות מחושבות ב-NOK. ללא הרשמה, פועל על המכשיר שלכם.",
+  "id": "/loona-salary-calculators/he/vat-calculator-norway.html",
+  "start_url": "./vat-calculator-norway.html",
+  "scope": "./vat-calculator-norway.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

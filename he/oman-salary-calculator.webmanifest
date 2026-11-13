@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון משכורת נטו של עומאן — ללא מס הכנסה 2026",
+  "short_name": "מחשבון משכורת נטו של עומאן — ללא מס הכנסה 2026",
+  "description": "חשבו את שכר הנטו שלכם בעומאן: אין מס הכנסה אישי ב-2026. אזרחי עומאן משלמים 7.5% תרומות לקרן ההגנה החברתית; גולים אינם משלמים כיום שום דבר. בחינם.",
+  "id": "/loona-salary-calculators/he/oman-salary-calculator.html",
+  "start_url": "./oman-salary-calculator.html",
+  "scope": "./oman-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

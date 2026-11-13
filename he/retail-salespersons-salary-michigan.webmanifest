@@ -1,0 +1,29 @@
+{
+  "name": "משכורת מוכרים קמעונאיים ב-מישיגן 2026 – שכר אחרי מס | Loona Salary",
+  "short_name": "משכורת מוכרים קמעונאיים ב-מישיגן 2026 – שכר אחרי מס",
+  "description": "מוכרים קמעונאיים שמרוויח את החציון הלאומי של $35,410 ב-מישיגן לוקח הביתה $29,377.76 לשנה אחרי מס — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/retail-salespersons-salary-michigan.html",
+  "start_url": "./retail-salespersons-salary-michigan.html",
+  "scope": "./retail-salespersons-salary-michigan.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

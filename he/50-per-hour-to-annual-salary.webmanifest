@@ -1,0 +1,29 @@
+{
+  "name": "כמה זה $50 לשעה בשנה? $104,000.00 ברוטו, $81,994.00 אחרי מס | Loona Salary",
+  "short_name": "כמה זה $50 לשעה בשנה? $104,000.00 ברוטו, $81,994.00 אחרי מס",
+  "description": "$50 לשעה הם $104,000.00 לשנה ברוטו ($81,994.00 אחרי מס פדרלי, מגיש יחיד, 2026). שכר חודשי, שבועי ושכר נטו לשעה — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/50-per-hour-to-annual-salary.html",
+  "start_url": "./50-per-hour-to-annual-salary.html",
+  "scope": "./50-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

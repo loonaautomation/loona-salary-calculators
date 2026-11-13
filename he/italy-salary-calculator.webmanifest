@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון שכר נטו לאיטליה — הערכת IRPEF ו-INPS 2026",
+  "short_name": "מחשבון שכר נטו לאיטליה — הערכת IRPEF ו-INPS 2026",
+  "description": "העריכו את שכר הנטו שלכם באיטליה ל-2026: תרומות עובד INPS של 9.19% ו-IRPEF במדרגות 2026 (23% / 33% / 43%) עם זיכוי המס על תעסוקה. הערכה מסומנת. בחינם.",
+  "id": "/loona-salary-calculators/he/italy-salary-calculator.html",
+  "start_url": "./italy-salary-calculator.html",
+  "scope": "./italy-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

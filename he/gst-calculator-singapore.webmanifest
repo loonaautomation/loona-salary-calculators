@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון GST של סינגפור (שיעור 9%) — הוספה או הסרה של GST | Loona",
+  "short_name": "מחשבון GST של סינגפור (שיעור 9%) — הוספה או הסרה של GST",
+  "description": "מחשבון GST לסינגפור חינמי: הוסיפו או הסירו GST ב-9% תוך שניות, עם הנוסחה המלאה ודוגמאות מחושבות ב-SGD. ללא הרשמה, פועל על המכשיר שלכם.",
+  "id": "/loona-salary-calculators/he/gst-calculator-singapore.html",
+  "start_url": "./gst-calculator-singapore.html",
+  "scope": "./gst-calculator-singapore.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

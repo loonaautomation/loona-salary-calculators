@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון שכר לגרמניה — מברוטו לנטו (Brutto-Netto) 2026",
+  "short_name": "מחשבון שכר לגרמניה — מברוטו לנטו (Brutto-Netto) 2026",
+  "description": "מחשבון שכר מברוטו לנטו גרמני לשנת 2026: מס לפי סיווג מס, תוספת סולידריות, מס כנסייה וכל ארבעת הביטוחים הסוציאליים, מפורטים.",
+  "id": "/loona-salary-calculators/he/germany-salary-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

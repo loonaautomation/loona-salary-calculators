@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון פיצויי סיום שירות של עומאן — סיום שירות (סעיף 61)",
+  "short_name": "מחשבון פיצויי סיום שירות של עומאן — סיום שירות (סעיף 61)",
+  "description": "חשבו מענק עומאן לפי סעיף 61 של חוק העבודה 2023: חודש אחד משכר הבסיס בשנה, עם פיצול השירות שלפני אוגוסט 2023 מטופל. חינם.",
+  "id": "/loona-salary-calculators/he/oman-gratuity-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

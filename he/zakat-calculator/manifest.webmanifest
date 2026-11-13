@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון זכאת — 2.5% על נכסים חייבים בזכאת עם בדיקת ניסאב",
+  "short_name": "מחשבון זכאת — 2.5% על נכסים חייבים בזכאת עם בדיקת ניסאב",
+  "description": "חשבו את הזכאת שלכם ב-2.5% על נכסים נטו החייבים בזכאת — זהב, כסף, מזומנים, מלאי וחובות לקבל פחות חובות — עם בדיקת הניסאב מובנית. חינם לשימוש.",
+  "id": "/loona-salary-calculators/he/zakat-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

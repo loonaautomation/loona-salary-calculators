@@ -1,0 +1,29 @@
+{
+  "name": "משכורת מורי בית ספר יסודי ב-אילינוי 2026 – שכר אחרי מס | Loona Salary",
+  "short_name": "משכורת מורי בית ספר יסודי ב-אילינוי 2026 – שכר אחרי מס",
+  "description": "מורי בית ספר יסודי שמרוויחים את החציון הלאומי של $63,970 ב-אילינוי לוקחים הביתה $50,558.17 לשנה אחרי מס — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/elementary-school-teachers-except-special-education-salary-illinois.html",
+  "start_url": "./elementary-school-teachers-except-special-education-salary-illinois.html",
+  "scope": "./elementary-school-teachers-except-special-education-salary-illinois.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

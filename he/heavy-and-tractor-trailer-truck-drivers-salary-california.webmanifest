@@ -1,0 +1,29 @@
+{
+  "name": "משכורת נהגי משאיות כבדות וסמי-טריילר ב-קליפורניה 2026 – שכר אחרי מס | Loona Salary",
+  "short_name": "משכורת נהגי משאיות כבדות וסמי-טריילר ב-קליפורניה 2026 – שכר אחרי מס",
+  "description": "נהגי משאיות כבדות וסמי-טריילר שמרוויחים את החציון הלאומי של $58,640 ב-קליפורניה לוקחים הביתה $47,729.35 לשנה אחרי מס — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/heavy-and-tractor-trailer-truck-drivers-salary-california.html",
+  "start_url": "./heavy-and-tractor-trailer-truck-drivers-salary-california.html",
+  "scope": "./heavy-and-tractor-trailer-truck-drivers-salary-california.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

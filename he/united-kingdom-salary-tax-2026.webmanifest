@@ -1,0 +1,29 @@
+{
+  "name": "מס משכורת ב-הממלכה המאוחדת 2026 – שכר נטו | Loona Salary",
+  "short_name": "מס משכורת ב-הממלכה המאוחדת 2026 – שכר נטו",
+  "description": "כמה שווה משכורת של £35,000.00 אחרי מס ב-הממלכה המאוחדת ב-2026? טבלת 2026 מחושבת — מחשבון חינמי עם השוואת 2024–2026.",
+  "id": "/loona-salary-calculators/he/united-kingdom-salary-tax-2026.html",
+  "start_url": "./united-kingdom-salary-tax-2026.html",
+  "scope": "./united-kingdom-salary-tax-2026.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון סיום שירות סעודי — מענק EOSB (סעיפים 84–85 של חוק העבודה)",
+  "short_name": "מחשבון סיום שירות סעודי — מענק EOSB (סעיפים 84–85 של חוק העבודה)",
+  "description": "חשבו את תגמולי סיום השירות שלכם בערב הסעודית (EOSB): שכר של חצי חודש בשנה במשך 5 שנים, חודש מלא לאחר מכן — בתוספת סולם ההתפטרות של סעיף 85. חינם.",
+  "id": "/loona-salary-calculators/he/saudi-end-of-service-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

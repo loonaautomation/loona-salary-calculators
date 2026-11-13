@@ -1,0 +1,29 @@
+{
+  "name": "כמה זה $13 לשעה בשנה? $27,040.00 ברוטו, $23,877.44 אחרי מס | Loona Salary",
+  "short_name": "כמה זה $13 לשעה בשנה? $27,040.00 ברוטו, $23,877.44 אחרי מס",
+  "description": "$13 לשעה הם $27,040.00 לשנה ברוטו ($23,877.44 אחרי מס פדרלי, מגיש יחיד, 2026). שכר חודשי, שבועי ושכר נטו לשעה — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/13-per-hour-to-annual-salary.html",
+  "start_url": "./13-per-hour-to-annual-salary.html",
+  "scope": "./13-per-hour-to-annual-salary.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

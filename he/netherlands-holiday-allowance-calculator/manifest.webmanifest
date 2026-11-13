@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון קצבת חופשה של הולנד — 8% Vakantiegeld ומס",
+  "short_name": "מחשבון קצבת חופשה של הולנד — 8% Vakantiegeld ומס",
+  "description": "חשבו את קצבת החופשה ההולנדית שלכם (vakantiegeld): ה-8% החוקי מהשכר ברוטו, והמס שתשלמו עליה בפועל במאי. חינם לשימוש.",
+  "id": "/loona-salary-calculators/he/netherlands-holiday-allowance-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

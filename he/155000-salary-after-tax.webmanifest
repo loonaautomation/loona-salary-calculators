@@ -1,0 +1,29 @@
+{
+  "name": "משכורת של $155,000 אחרי מס 2026 – $117,208.50 נטו | Loona Salary",
+  "short_name": "משכורת של $155,000 אחרי מס 2026 – $117,208.50 נטו",
+  "description": "משכורת של $155,000 ב-2026 מניבה $117,208.50 לשנה אחרי מס פדרלי (מגיש יחיד). שכר נטו חודשי, שבועי ולשעה — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/155000-salary-after-tax.html",
+  "start_url": "./155000-salary-after-tax.html",
+  "scope": "./155000-salary-after-tax.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

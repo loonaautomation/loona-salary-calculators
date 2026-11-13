@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון שכר נטו להודו — משטר חדש שנת כספים 2026–27",
+  "short_name": "מחשבון שכר נטו להודו — משטר חדש שנת כספים 2026–27",
+  "description": "חשבו את השכר ביד שלכם בהודו לשנת הכספים 2026–27 תחת המשטר החדש: מדרגות עד ₹24 לאך, ניכוי סטנדרטי של ₹75,000, החזר סעיף 87A (מס אפס עד ₹12 לאך) ומס של 4%, בתוספת EPF. בחינם.",
+  "id": "/loona-salary-calculators/he/india-salary-calculator.html",
+  "start_url": "./india-salary-calculator.html",
+  "scope": "./india-salary-calculator.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

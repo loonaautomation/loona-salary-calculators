@@ -1,0 +1,29 @@
+{
+  "name": "ממיר מטבעות — שערי ייחוס של ה-ECB ל-30 מטבעות",
+  "short_name": "ממיר מטבעות — שערי ייחוס של ה-ECB ל-30 מטבעות",
+  "description": "ממיר מטבעות חינמי לפי שערי ייחוס של הבנק המרכזי האירופי מתאריך 6 בנובמבר 2026: המירו בין 30 מטבעות ועיינו בטבלת הייחוס המלאה של האירו. שערים מתוארכים וכנים — לציון בלבד.",
+  "id": "/loona-salary-calculators/he/currency-converter.html",
+  "start_url": "./currency-converter.html",
+  "scope": "./currency-converter.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

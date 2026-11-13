@@ -1,0 +1,29 @@
+{
+  "name": "מחשבון חוק בקהאם — מס 24% אחיד של ספרד לעומת IRPF סטנדרטי",
+  "short_name": "מחשבון חוק בקהאם — מס 24% אחיד של ספרד לעומת IRPF סטנדרטי",
+  "description": "השוו את מס ה-24% האחיד של חוק בקהאם בספרד עם סולם ה-IRPF הסטנדרטי על השכר שלכם, וראו את החיסכון הכולל לאורך כל משטר שש השנים. חינם לשימוש.",
+  "id": "/loona-salary-calculators/he/spain-beckham-law-calculator/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "משכורת נציגי שירות לקוחות ב-פנסילבניה 2026 – שכר אחרי מס | Loona Salary",
+  "short_name": "משכורת נציגי שירות לקוחות ב-פנסילבניה 2026 – שכר אחרי מס",
+  "description": "נציגי שירות לקוחות שמרוויח את החציון הלאומי של $44,770 ב-פנסילבניה לוקח הביתה $36,778.26 לשנה אחרי מס — מחשבון חינמי.",
+  "id": "/loona-salary-calculators/he/customer-service-representatives-salary-pennsylvania.html",
+  "start_url": "./customer-service-representatives-salary-pennsylvania.html",
+  "scope": "./customer-service-representatives-salary-pennsylvania.html",
+  "display": "standalone",
+  "background_color": "#062e2a",
+  "theme_color": "#062e2a",
+  "icons": [
+    {
+      "src": "/loona-salary-calculators/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/loona-salary-calculators/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
