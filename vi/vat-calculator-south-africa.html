@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>VAT tại Nam Phi được tính ở mức 15% trên hầu hết các giao dịch chịu thuế bởi các nhà cung cấp đã đăng ký. Hai công thức là:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Giá trị ròng × 15 ÷ 100, và Giá trị tổng = Giá trị ròng + VAT.</li>
+<li><strong>Cộng VAT:</strong> VAT = Giá trị ròng × 15 ÷ 100, và Giá trị tổng = Giá trị ròng + VAT.</li>
 <li><strong>Trừ VAT:</strong> Giá chưa thuế = Giá đã gồm thuế ÷ (1 + 15 ÷ 100), và VAT = Giá đã gồm thuế − Giá chưa thuế.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 15%. <strong>Các mức khác:</strong> một thuế suất tiêu chuẩn duy nhất là 15% — thay vào đó áp dụng các nhóm hàng chịu thuế suất bằng không và được miễn thuế (xem Câu hỏi thường gặp).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng VAT, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được VAT, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ VAT, nó coi số tiền của bạn là một giá tổng, đã gồm VAT — loại được in trên một biên lai hoặc nhãn kệ tại Nam Phi — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là VAT chứa trong giá. Vì giá tiêu dùng tại Nam Phi theo luật được báo đã gồm VAT và giá doanh nghiệp thường được báo chưa gồm VAT, hai chế độ là nghịch đảo chính xác của nhau: trừ VAT khỏi một con số tổng rồi cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng ZAR.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 15% với các số tiền lớn hơn: một giá ròng R 250.00 cộng VAT cho VAT là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là R 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 15% với các số tiền lớn hơn: một giá ròng R 250.00 cộng VAT cho VAT là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là R 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và VAT là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Hóa đơn thuế tại Nam Phi phải thể hiện những gì?</h3><p>Đối với các giao dịch trên R50, một hóa đơn thuế đầy đủ phải thể hiện dòng chữ 'tax invoice', tên, địa chỉ và mã số VAT của người bán và người mua, một số hóa đơn và ngày duy nhất, mô tả và số lượng hàng hóa hoặc dịch vụ, số tiền chưa gồm VAT, VAT đã tính và tổng cộng gồm VAT tính bằng rand. Hóa đơn rút gọn được phép tới R5,000.</p></div>
 <div class="faq"><h3>Tôi bán từ Nam Phi cho khách hàng ở nước ngoài — VAT có được tính không?</h3><p>Xuất khẩu được áp thuế suất bằng không nếu hàng hóa được xuất khẩu trong các quy tắc quy định và bằng chứng tài liệu được lưu giữ; nhiều dịch vụ cho khách hàng không cư trú cũng được áp thuế suất bằng không khi các điều kiện luật định được đáp ứng. Dịch vụ nhập khẩu và hàng hóa nhập khẩu chịu VAT khi nhập, thường được xử lý bởi hải quan hoặc các quy tắc khấu trừ ngược.</p></div>

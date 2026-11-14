@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>GST tại Úc được áp dụng ở mức 10% trên hầu hết các hàng hóa, dịch vụ chịu thuế. Hai công thức là:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Giá trị ròng × 10 ÷ 100, và Giá trị tổng = Giá trị ròng + GST.</li>
+<li><strong>Cộng GST:</strong> GST = Giá trị ròng × 10 ÷ 100, và Giá trị tổng = Giá trị ròng + GST.</li>
 <li><strong>Trừ GST:</strong> Giá chưa thuế = Giá đã gồm thuế ÷ (1 + 10 ÷ 100), và GST = Giá đã gồm thuế − Giá chưa thuế.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 10%. <strong>Các mức khác:</strong> một mức cố định duy nhất 10% — thay vào đó áp dụng các nhóm miễn GST và chịu thuế đầu vào (xem Câu hỏi thường gặp).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng GST, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được GST, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ GST, nó coi số tiền của bạn là một giá tổng, đã gồm GST — loại được in trên một biên lai hoặc nhãn kệ tại Úc — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là GST chứa trong giá. Vì giá tiêu dùng tại Úc phải được hiển thị đã gồm GST và giá doanh nghiệp thường được báo theo cả hai cách, hai chế độ là nghịch đảo chính xác của nhau: trừ GST khỏi một con số tổng rồi cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng AUD.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 10% với các số tiền lớn hơn: một giá ròng A$ 250.00 cộng GST cho GST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là A$ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 10% với các số tiền lớn hơn: một giá ròng A$ 250.00 cộng GST cho GST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là A$ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và GST là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Hóa đơn thuế tại Úc phải thể hiện những gì?</h3><p>Đối với các giao dịch bán hàng trên $82.50 (đã gồm GST), một hóa đơn thuế phải thể hiện rằng đó là một hóa đơn thuế, danh tính và ABN của người bán, ngày phát hành, một mô tả ngắn gọn về những gì đã bán, số tiền GST (hoặc một ghi chú rằng tổng cộng bao gồm GST) và, đối với các hóa đơn từ $1,000 trở lên, danh tính hoặc ABN của người mua.</p></div>
 <div class="faq"><h3>Tôi bán hàng từ Úc cho khách hàng ở nước ngoài — có phải thu GST không?</h3><p>Thường là không: xuất khẩu hàng hóa và nhiều dịch vụ cung cấp cho khách hàng ở nước ngoài được miễn GST, với điều kiện các điều kiện và giới hạn thời gian xuất khẩu được đáp ứng. Hàng nhập khẩu giá trị thấp do người tiêu dùng Úc mua thay vào đó bị đánh thuế tại biên giới hoặc bởi người bán ở nước ngoài theo các quy tắc dịch vụ nhập khẩu và hàng hóa giá trị thấp.</p></div>

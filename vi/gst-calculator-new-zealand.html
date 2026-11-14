@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>GST tại New Zealand được tính ở mức 15% trên hầu hết các giao dịch. Hai công thức là:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Giá trị ròng × 15 ÷ 100, và Giá trị tổng = Giá trị ròng + GST.</li>
+<li><strong>Cộng GST:</strong> GST = Giá trị ròng × 15 ÷ 100, và Giá trị tổng = Giá trị ròng + GST.</li>
 <li><strong>Trừ GST:</strong> Giá chưa thuế = Giá đã gồm thuế ÷ (1 + 15 ÷ 100), và GST = Giá đã gồm thuế − Giá chưa thuế.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 15%. <strong>Các mức khác:</strong> một mức cố định duy nhất 15% — không có mức giảm; thay vào đó áp dụng các nhóm thuế suất bằng không và được miễn (xem Câu hỏi thường gặp).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng GST, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được GST, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ GST, nó coi số tiền của bạn là một giá tổng, đã gồm GST — loại được in trên một biên lai hoặc nhãn kệ tại New Zealand — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là GST chứa trong giá. Vì giá tiêu dùng tại New Zealand được hiển thị đã gồm GST và giá doanh nghiệp thường được báo cộng GST, hai chế độ là nghịch đảo chính xác của nhau: trừ GST khỏi một con số tổng rồi cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng NZD.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 15% với các số tiền lớn hơn: một giá ròng NZ$ 250.00 cộng GST cho GST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là NZ$ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 15% với các số tiền lớn hơn: một giá ròng NZ$ 250.00 cộng GST cho GST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là NZ$ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và GST là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Hóa đơn thuế tại New Zealand phải thể hiện những gì?</h3><p>Một hóa đơn thuế phải thể hiện dòng chữ 'tax invoice', tên và mã số GST của người bán, ngày, mô tả hàng hóa hoặc dịch vụ, và số tiền GST hoặc một ghi chú rằng giá đã gồm GST. Kể từ tháng Tư 2023, các quy tắc dựa trên thông tin thay vì dựa trên định dạng, nên các hồ sơ tuân thủ (bao gồm hóa đơn điện tử) đều được tính.</p></div>
 <div class="faq"><h3>Tôi bán hàng từ New Zealand cho khách hàng ở nước ngoài — có phải thu GST không?</h3><p>Xuất khẩu được áp thuế suất bằng không: bạn tính 0% GST và vẫn có thể yêu cầu GST trên các chi phí của bạn, miễn là các quy tắc xuất khẩu và yêu cầu bằng chứng được đáp ứng. Các dịch vụ cung cấp cho người không cư trú đang ở ngoài New Zealand khi dịch vụ được thực hiện cũng có thể được áp thuế suất bằng không.</p></div>

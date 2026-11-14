@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>GST tại Ấn Độ được tính theo thuế suất bậc cho hàng hóa hoặc dịch vụ — 18% tiêu chuẩn kể từ ngày 22 tháng Chín 2025. Hai công thức là:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Giá trị ròng × 18 ÷ 100, và Giá trị tổng = Giá trị ròng + GST.</li>
+<li><strong>Cộng GST:</strong> GST = Giá trị ròng × 18 ÷ 100, và Giá trị tổng = Giá trị ròng + GST.</li>
 <li><strong>Trừ GST:</strong> Giá chưa thuế = Giá đã gồm thuế ÷ (1 + 18 ÷ 100), và GST = Giá đã gồm thuế − Giá chưa thuế.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 18%. <strong>Các mức khác:</strong> 5% ưu đãi, 40% phạt và 3% đối với vàng và vật phẩm quý (tất cả trong bộ chọn thuế suất ở trên).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng GST, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được GST, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ GST, nó coi số tiền của bạn là một giá tổng, đã gồm GST — loại được in trên một biên lai hoặc nhãn kệ tại Ấn Độ — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là GST chứa trong giá. Vì giá tiêu dùng tại Ấn Độ thường được báo đã gồm GST (MRP) và giá doanh nghiệp thường được báo ròng, hai chế độ là nghịch đảo chính xác của nhau: trừ GST khỏi một con số tổng rồi cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng INR.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 18% với các số tiền lớn hơn: một giá ròng ₹ 250.00 cộng GST cho GST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là ₹ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 18% với các số tiền lớn hơn: một giá ròng ₹ 250.00 cộng GST cho GST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là ₹ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và GST là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Một hóa đơn GST tại Ấn Độ phải thể hiện những gì?</h3><p>Một hóa đơn thuế thường thể hiện tên, địa chỉ và GSTIN của nhà cung cấp và người mua, một số hóa đơn và ngày duy nhất, các mã HSN/SAC, mô tả hàng hóa hoặc dịch vụ, giá trị chịu thuế, cách tách thuế suất GST (CGST + SGST, hoặc IGST), số tiền GST và tổng cộng tính bằng INR. Hóa đơn điện tử (IRN) áp dụng trên các ngưỡng doanh thu đã thông báo.</p></div>
 <div class="faq"><h3>Tôi bán từ Ấn Độ cho khách hàng ở các bang hoặc quốc gia khác — GST nào áp dụng?</h3><p>Qua các ranh giới bang, hãy tính IGST ở cùng thuế suất hợp nhất. Xuất khẩu được áp thuế suất bằng không: bạn có thể xuất khẩu mà không tính GST theo Thư cam kết (LUT) và yêu cầu hoàn thuế đầu vào. Trước khi áp thuế suất bằng không cho một giao dịch B2B, bạn có thể xác thực GSTIN của người mua trên cổng GST và giữ lại bằng chứng xác thực.</p></div>

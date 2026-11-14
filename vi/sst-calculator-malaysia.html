@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>SST tại Malaysia được tính theo mức cho loại thuế — thuế dịch vụ 8% tiêu chuẩn kể từ ngày 1 tháng Ba 2024. Hai công thức là:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Ròng × 8 ÷ 100, và Tổng = Ròng + SST.</li>
+<li><strong>Cộng SST:</strong> SST = Ròng × 8 ÷ 100, và Tổng = Ròng + SST.</li>
 <li><strong>Trừ SST:</strong> Ròng = Tổng ÷ (1 + 8 ÷ 100), và SST = Tổng − Ròng.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 8%. <strong>Các mức khác:</strong> thuế dịch vụ 6% (các nhóm được giữ lại), thuế bán hàng 10% và 5% — tất cả trong bộ chọn thuế suất ở trên.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng SST, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được SST, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ SST, nó coi số tiền của bạn là một giá tổng, đã gồm SST — loại được in trên một biên lai hoặc nhãn kệ tại Malaysia — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là SST chứa trong giá. Hai chế độ là nghịch đảo chính xác cho phép tính giá — trừ SST khỏi một con số đã gồm thuế và cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng MYR. Tuy nhiên hãy nhớ rằng, bản thân SST là một giai đoạn: khác với VAT, không có tín dụng cho SST đã trả trên các đầu vào của chính bạn.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 8% với các số tiền lớn hơn: một giá ròng RM 250.00 cộng SST cho SST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là RM 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 8% với các số tiền lớn hơn: một giá ròng RM 250.00 cộng SST cho SST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là RM 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và SST là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Một hóa đơn SST tại Malaysia phải thể hiện những gì?</h3><p>Một hóa đơn thuế dịch vụ từ một nhà cung cấp đã đăng ký thể hiện tên, địa chỉ và số đăng ký SST của nhà cung cấp, số hóa đơn và ngày, mô tả dịch vụ, số tiền chưa gồm thuế, thuế suất và số tiền thuế dịch vụ, và tổng cộng tính bằng MYR. Thuế bán hàng được thể hiện trên hóa đơn của nhà sản xuất và nhà nhập khẩu theo các quy tắc của Luật Thuế bán hàng.</p></div>
 <div class="faq"><h3>Tôi bán dịch vụ từ nước ngoài cho người Malaysia — SST có áp dụng không?</h3><p>Các nhà cung cấp nước ngoài về dịch vụ số cho người tiêu dùng Malaysia phải đăng ký thuế dịch vụ và tính 8% (chế độ dịch vụ chịu thuế nhập khẩu). Các doanh nghiệp Malaysia nhập khẩu dịch vụ tự hạch toán thuế dịch vụ theo các quy tắc kiểu khấu trừ ngược đối với dịch vụ chịu thuế nhập khẩu.</p></div>

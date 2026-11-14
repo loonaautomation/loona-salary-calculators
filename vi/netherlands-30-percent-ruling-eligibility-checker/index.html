@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Lương tổng hằng năm được đề nghị (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Mức lương đó có bao gồm phụ cấp nghỉ lễ 8% không?</label>
-<select id="hol"><option value="yes" selected>Có, nó được bao gồm</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Có, nó được bao gồm</option><option value="no">Không — cộng thêm 8% ở trên</option></select></div>
 </div>
 <label for="cat">Chuẩn lương nào áp dụng cho bạn?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Trong 24 tháng trước khi bắt đầu, bạn có sống cách biên giới Hà Lan hơn 150 km trong ít nhất 16 của các tháng đó không?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Có</option><option value="no">Không</option></select></div>
 <div><label for="recr">Bạn có được tuyển từ nước ngoài không (được thuê trong khi sống ngoài Hà Lan, hoặc được cử đi)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Không — Tôi đã sống tại Hà Lan</option></select></div>
+<select id="recr"><option value="yes" selected>Có</option><option value="no">Không — Tôi đã sống tại Hà Lan</option></select></div>
 </div>
 <label for="empl">Người sử dụng lao động của bạn có phải là một đại lý khấu trừ thuế lương Hà Lan (một người sử dụng lao động Hà Lan hoặc bảng lương Hà Lan) không?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Có</option><option value="no">Không</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Công cụ kiểm tra áp dụng các bài kiểm tra 2026 theo thứ tự Belastingdienst áp dụng chúng. Đầu tiên, lời đề nghị của bạn được đặt trên cơ sở hằng năm (× 1.08 nếu nó loại trừ phụ cấp nghỉ lễ 8%). Bài kiểm tra lương sau đó hỏi liệu lương chịu thuế của bạn sau một khoản phụ cấp miễn thuế 30% vẫn sẽ vượt quá chuẩn — €48,013, hoặc €36,497 nếu bạn dưới 30 tuổi có bằng thạc sĩ đủ điều kiện; các nhà nghiên cứu khoa học và bác sĩ trong đào tạo chuyên khoa bỏ qua bài kiểm tra này hoàn toàn. Nếu 30% đầy đủ sẽ vi phạm chuẩn nhưng bản thân mức lương vượt qua nó, bạn vẫn đạt, với một khoản phụ cấp bị giảm bằng lương − chuẩn. Ba bài kiểm tra còn lại — lịch sử 150 km, được tuyển từ nước ngoài, và một người sử dụng lao động khấu trừ thuế lương Hà Lan — là các điều kiện cứng: không đạt bất kỳ cái nào trong chúng là không đạt toàn bộ kiểm tra.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Ví dụ minh họa</h3>
-<p>Lời đề nghị €52,000 một năm bao gồm phụ cấp nghỉ lễ, chuẩn tiêu chuẩn, và "yes" cho ba bài kiểm tra còn lại. Bản thân mức lương vượt qua €48,013, nhưng một khoản phụ cấp 30% đầy đủ (€15,600) sẽ chỉ còn €36,400 lương chịu thuế — dưới chuẩn. Kết quả: <strong>"Bạn có khả năng đủ điều kiện — với một khoản phụ cấp bị giảm"</strong> of €52,000 − €48,013 = <strong>€3,987 một năm</strong>, điều này giữ lương chịu thuế ở mức chuẩn €48,013.</p>
+<p>Lời đề nghị €52,000 một năm bao gồm phụ cấp nghỉ lễ, chuẩn tiêu chuẩn, và "yes" cho ba bài kiểm tra còn lại. Bản thân mức lương vượt qua €48,013, nhưng một khoản phụ cấp 30% đầy đủ (€15,600) sẽ chỉ còn €36,400 lương chịu thuế — dưới chuẩn. Kết quả: <strong>"Bạn có khả năng đủ điều kiện — với một khoản phụ cấp bị giảm"</strong> bằng €52,000 − €48,013 = <strong>€3,987 một năm</strong>, điều này giữ lương chịu thuế ở mức chuẩn €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Khoảng cách 150 km chính xác được đo như thế nào?</h3><p>Theo đường thẳng từ nhà của bạn tới điểm gần nhất của biên giới Hà Lan — không phải tới nơi làm việc của bạn hoặc tới Amsterdam — và bạn phải đã sống vượt quá khoảng cách đó trong ít nhất 16 của 24 tháng trước ngày làm việc đầu tiên của bạn. Các giai đoạn sống hoặc làm việc tại Hà Lan trước đó cũng rút ngắn thời hạn tối đa của quyết định.</p></div>
 <div class="faq"><h3>Tôi là nhà nghiên cứu — tôi nhận phụ cấp bao nhiêu nếu tôi đạt?</h3><p>30% đầy đủ của lương tới trần €262,000, không có bài kiểm tra chuẩn lương: trên một mức lương nghiên cứu €30,000 công cụ kiểm tra này hiển thị một khoản phụ cấp miễn thuế €9,000. Bạn vẫn cần các điều kiện khác — được tuyển từ nước ngoài, lịch sử 150 km và một người sử dụng lao động khấu trừ Hà Lan.</p></div>

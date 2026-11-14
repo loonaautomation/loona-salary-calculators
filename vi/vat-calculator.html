@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Nó được tính như thế nào</h2>
-<p>To <strong>add VAT</strong>: VAT = ròng × thuế suất ÷ 100, và tổng = ròng + VAT. Để <strong>trừ VAT</strong>: ròng = tổng ÷ (1 + thuế suất ÷ 100), và VAT = tổng − ròng. Đừng bao giờ tính VAT nằm trong một giá tổng như một tỷ lệ phần trăm trực tiếp của giá tổng — ở mức 19%, VAT nằm trong €119 là €19, không phải €22.61.</p>
-<p style="margin-top:8px">Ví dụ minh họa: một số tiền ròng €100 tại Đức theo thuế suất tiêu chuẩn 19% cho VAT là <strong id="exVat">—</strong> và một số tiền tổng là <strong id="exGross">—</strong> (net <span id="exNet">—</span>). Các con số này được tính trực tiếp bởi máy tính của chính trang này, nên luôn khớp với công cụ ở trên.</p>
+<p>Đến <strong>cộng VAT</strong>: VAT = ròng × thuế suất ÷ 100, và tổng = ròng + VAT. Để <strong>trừ VAT</strong>: ròng = tổng ÷ (1 + thuế suất ÷ 100), và VAT = tổng − ròng. Đừng bao giờ tính VAT nằm trong một giá tổng như một tỷ lệ phần trăm trực tiếp của giá tổng — ở mức 19%, VAT nằm trong €119 là €19, không phải €22.61.</p>
+<p style="margin-top:8px">Ví dụ minh họa: một số tiền ròng €100 tại Đức theo thuế suất tiêu chuẩn 19% cho VAT là <strong id="exVat">—</strong> và một số tiền tổng là <strong id="exGross">—</strong> (ròng <span id="exNet">—</span>). Các con số này được tính trực tiếp bởi máy tính của chính trang này, nên luôn khớp với công cụ ở trên.</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính lưu giữ thuế suất VAT tiêu chuẩn của mỗi quốc gia dưới dạng tỷ lệ phần trăm. Ở chế độ Cộng, nó coi số tiền của bạn là giá ròng: VAT = số tiền × thuế suất ÷ 100 và tổng = số tiền + VAT. Ở chế độ Trừ, nó coi số tiền của bạn là giá tổng: ròng = số tiền ÷ (1 + thuế suất ÷ 100) và VAT = tổng − ròng. Kết quả được làm tròn tới hai chữ số thập phân để hiển thị, với ký hiệu tiền tệ của quốc gia bạn đã chọn. Các mức giảm được liệt kê trong bảng ở trên và trên mỗi trang quốc gia để hướng dẫn, nhưng bản thân máy tính luôn dùng mức tiêu chuẩn — mức áp dụng cho hầu hết hàng hóa và dịch vụ.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Trừ VAT tại Estonia: một số tiền tổng €124 ở mức tiêu chuẩn 24% của Estonia&#x27;s (mức kể từ ngày 1 tháng Bảy 2025) tách thành một số tiền ròng là <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Được tính trực tiếp bởi trang này: €124 ÷ 1.24 = €100 ròng, và €124 − €100 = €24 VAT.</p>
+<p>Trừ VAT tại Estonia: một số tiền tổng €124 ở mức tiêu chuẩn 24% của Estonia&#x27;s (mức kể từ ngày 1 tháng Bảy 2025) tách thành một số tiền ròng là <strong id="ex2Net">—</strong> và VAT là <strong id="ex2Vat">—</strong>. Được tính trực tiếp bởi trang này: €124 ÷ 1.24 = €100 ròng, và €124 − €100 = €24 VAT.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Tại sao các mức VAT khác nhau nhiều như vậy khắp châu Âu?</h3><p>Mỗi quốc gia tự đặt các mức của mình trong các quy tắc tối thiểu của EU (mức tiêu chuẩn ít nhất 15%). Đó là lý do Luxembourg tính 17% và Hungary 27%, với hầu hết các quốc gia ở mức từ 19% tới 25%. Thụy Sĩ (8.1%) và Vương quốc Anh (20%) đặt các mức của mình hoàn toàn ngoài hệ thống EU.</p></div>
 <div class="faq"><h3>VAT có áp dụng khi tôi bán sang một nước EU khác không?</h3><p>Thường VAT được tính tại quốc gia của khách hàng đối với các dịch vụ B2B xuyên biên giới và nhiều dịch vụ B2C, thường qua cơ chế khấu trừ ngược hoặc One Stop Shop (OSS) của EU. Máy tính này tính các số tiền theo mức của một quốc gia đã chọn; mức của quốc gia nào áp dụng về mặt pháp lý tùy thuộc vào loại giao dịch, nên hãy xin tư vấn đối với thương mại xuyên biên giới thường xuyên.</p></div>

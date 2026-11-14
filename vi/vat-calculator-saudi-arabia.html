@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>VAT tại Ả Rập Xê Út được áp dụng ở mức 15% trên hầu hết hàng hóa và dịch vụ. Hai công thức là:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Giá trị ròng × 15 ÷ 100, và Giá trị tổng = Giá trị ròng + VAT.</li>
+<li><strong>Cộng VAT:</strong> VAT = Giá trị ròng × 15 ÷ 100, và Giá trị tổng = Giá trị ròng + VAT.</li>
 <li><strong>Trừ VAT:</strong> Giá chưa thuế = Giá đã gồm thuế ÷ (1 + 15 ÷ 100), và VAT = Giá đã gồm thuế − Giá chưa thuế.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 15%. <strong>Các mức khác:</strong> không có mức giảm — thay vào đó áp dụng các nhóm thuế suất bằng không và được miễn (xem Câu hỏi thường gặp).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng VAT, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được VAT, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ VAT, nó coi số tiền của bạn là một giá tổng, đã gồm VAT — loại được in trên một biên lai hoặc nhãn kệ tại Ả Rập Xê Út — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là VAT chứa trong giá. Vì giá tiêu dùng tại Ả Rập Xê Út được báo đã gồm VAT và giá doanh nghiệp thường được báo ròng, hai chế độ là nghịch đảo chính xác của nhau: trừ VAT khỏi một con số tổng rồi cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng SAR.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 15% với các số tiền lớn hơn: một giá ròng SAR 250.00 cộng VAT cho VAT là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là SAR 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 15% với các số tiền lớn hơn: một giá ròng SAR 250.00 cộng VAT cho VAT là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là SAR 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và VAT là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Hóa đơn VAT tại Ả Rập Xê Út phải thể hiện những gì?</h3><p>Một hóa đơn thuế phải thể hiện một số thứ tự duy nhất, ngày phát hành, tên, địa chỉ và mã số VAT của người bán và người mua, mô tả hàng hóa hoặc dịch vụ, số tiền ròng, thuế suất VAT, số tiền VAT tính bằng SAR và tổng cộng. Theo các quy tắc hóa đơn điện tử FATOORA, hóa đơn cũng phải mang dấu xác thực mật mã và mã QR và được thông quan hoặc báo cáo qua hệ thống của ZATCA.</p></div>
 <div class="faq"><h3>Tôi bán từ Ả Rập Xê Út cho khách hàng ở nước ngoài — VAT nào áp dụng?</h3><p>Xuất khẩu hàng hóa và dịch vụ đủ điều kiện cho khách hàng ngoài Ả Rập Xê Út (và ngoài một quốc gia GCC đang thực thi) được áp thuế suất bằng không, với điều kiện bạn nắm giữ bằng chứng vận chuyển và hải quan mà ZATCA yêu cầu. Hàng nhập khẩu vào Ả Rập Xê Út chịu 15% VAT, thường được tự kê khai theo cơ chế khấu trừ ngược bởi các doanh nghiệp đã đăng ký.</p></div>

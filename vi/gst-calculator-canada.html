@@ -104,7 +104,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó được tính như thế nào</h2>
 <p>Thuế bán hàng tại Canada là 5% GST liên bang cộng một lớp tỉnh tùy thuộc vào tỉnh cung cấp. Hai công thức là:</p>
 <ul>
-<li><strong>Add GST/HST:</strong> GST/HST = Ròng × 13 ÷ 100, và Tổng = Ròng + GST/HST.</li>
+<li><strong>Cộng GST/HST:</strong> GST/HST = Ròng × 13 ÷ 100, và Tổng = Ròng + GST/HST.</li>
 <li><strong>Trừ GST/HST:</strong> Ròng = Tổng ÷ (1 + 13 ÷ 100), và GST/HST = Tổng − Ròng.</li>
 <li><strong>Mức tiêu chuẩn:</strong> 13%. <strong>Các mức khác:</strong> 5% chỉ GST, 14% hoặc 15% HST, và các kết hợp PST/RST/QST — tất cả trong bộ chọn thuế suất ở trên.</li>
 
@@ -141,7 +141,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nó hoạt động như thế nào — công thức</h2>
 <p>Máy tính không lưu trữ dữ liệu và thực hiện một phép tính số học cho mỗi chế độ. Ở chế độ Cộng GST/HST, nó coi số tiền của bạn là giá ròng: nó nhân khoản ròng với thuế suất đã chọn chia cho 100 để được GST/HST, rồi cộng hai thứ lại cho giá tổng bạn tính. Ở chế độ Trừ GST/HST, nó coi số tiền của bạn là một giá tổng, đã gồm GST/HST — loại được in trên một biên lai hoặc nhãn kệ tại Canada — và chia nó cho (1 + thuế suất ÷ 100) để khôi phục số tiền ròng; chênh lệch giữa tổng và ròng là GST/HST chứa trong giá. Vì giá tiêu dùng tại Canada thường được hiển thị trước thuế tại quầy tính tiền ở nhiều tỉnh — trong khi giá đã gồm HST được niêm yết phổ biến ở các tỉnh khác — hai chế độ cho phép bạn làm việc theo cả hai cách: trừ thuế khỏi một con số tổng rồi cộng nó trở lại sẽ trả về số tiền ban đầu, ngoài việc làm tròn tới hai chữ số thập phân tính bằng CAD.</p>
 <h3>Ví dụ minh họa</h3>
-<p>Dùng thuế suất tiêu chuẩn 13% với các số tiền lớn hơn: một giá ròng $ 250.00 cộng GST/HST cho GST/HST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là $ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> and GST/HST of <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
+<p>Dùng thuế suất tiêu chuẩn 13% với các số tiền lớn hơn: một giá ròng $ 250.00 cộng GST/HST cho GST/HST là <span id="exDAddVat">…</span> và một giá tổng là <span id="exDAddGross">…</span>. Ngược lại, một giá tổng là $ 250.00 được tách thành một số tiền ròng là <span id="exDRemNet">…</span> và GST/HST là <span id="exDRemVat">…</span>. Cả hai kết quả đều được chèn trực tiếp bởi mã máy tính của chính trang này.</p>
 <h3>Các câu hỏi thường gặp</h3>
 <div class="faq"><h3>Một hóa đơn bán hàng tại Canada phải thể hiện những gì?</h3><p>Một hóa đơn cho mục đích GST/HST nên thể hiện tên và số tài khoản GST/HST của người bán, ngày, mô tả hàng hóa hoặc dịch vụ, số tiền đã trả, và thuế đã trả hoặc một ghi chú rằng thuế đã được bao gồm — cộng tên người mua đối với các giao dịch lớn hơn. Tại các tỉnh PST/QST, thuế tỉnh và các số đăng ký được thể hiện thành các dòng riêng.</p></div>
 <div class="faq"><h3>Tôi bán từ Canada cho khách hàng ở các tỉnh hoặc quốc gia khác — thuế suất nào áp dụng?</h3><p>Thường là thuế suất của tỉnh nơi hàng hóa được giao hoặc dịch vụ được tiêu thụ (các quy tắc 'nơi cung cấp'), không phải tỉnh của chính bạn — nên một người bán tại Ontario gửi hàng tới BC tính 5% GST cộng các quy tắc PST của BC, và hàng xuất khẩu ra ngoài Canada thường được áp thuế suất bằng không cho GST/HST. Nghĩa vụ đăng ký có thể phát sinh tại các tỉnh PST và Quebec ngay cả đối với người bán ở ngoài tỉnh.</p></div>
