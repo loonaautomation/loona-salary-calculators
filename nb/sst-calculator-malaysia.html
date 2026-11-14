@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det beregnes</h2>
 <p>SST i Malaysia belastes med satsen for avgiftstypen — tjenesteavgift 8 % standard siden 1. mars 2024. De to formlene er:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Netto × 8 ÷ 100, og Brutto = Netto + SST.</li>
+<li><strong>Legg til SST:</strong> SST = Netto × 8 ÷ 100, og Brutto = Netto + SST.</li>
 <li><strong>Fjern SST:</strong> Netto = Brutto ÷ (1 + 8 ÷ 100), og SST = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 8%. <strong>Andre satser:</strong> tjenesteavgift 6 % (beholdte kategorier), omsetningsavgift 10 % og 5 % — alt i satsvelgeren ovenfor.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det fungerer — formelen</h2>
 <p>Kalkulatoren lagrer ingen data og gjør ett regnestykke per modus. I Legg til SST-modus behandler den beløpet ditt som nettoprisen: den multipliserer nettoen med den valgte satsen delt på 100 for å få SST-en, og legger deretter de to sammen for bruttoprisen du belaster. I Fjern SST-modus behandler den beløpet ditt som en brutto pris inklusive SST — den typen som er trykt på en kvittering eller hylleetikett fra Malaysia — og deler den med (1 + sats ÷ 100) for å finne nettobeløpet igjen; forskjellen mellom brutto og netto er SST-en som er inneholdt i prisen. De to modusene er nøyaktige inverser for prismatematikk — å fjerne SST fra et avgiftsinkludert tall og legge den tilbake gir det opprinnelige beløpet, bortsett fra avrunding til to desimaler i MYR. Husk imidlertid at SST selv er ett-trinns: i motsetning til MVA finnes det ingen fradrag for SST betalt på egne innsatsfaktorer.</p>
 <h3>Gjennomarbeidet eksempel</h3>
-<p>Med normalsatsen på 8 % og større beløp: en nettopris på RM 250.00 pluss SST gir SST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på RM 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
+<p>Med normalsatsen på 8 % og større beløp: en nettopris på RM 250.00 pluss SST gir SST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på RM 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> og SST på <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
 <h3>Ofte stilte spørsmål</h3>
 <div class="faq"><h3>Hva må en SST-faktura i Malaysia vise?</h3><p>En tjenesteavgiftsfaktura fra en registrert leverandør viser leverandørens navn, adresse og SST-registreringsnummer, fakturanummeret og datoen, en beskrivelse av tjenesten, beløpet eksklusive avgift, tjenesteavgiftssatsen og -beløpet, og totalen i MYR. Omsetningsavgift vises på produsenters og importørers fakturaer etter reglene i Sales Tax Act.</p></div>
 <div class="faq"><h3>Jeg selger tjenester fra utlandet til malaysiere — gjelder SST?</h3><p>Utenlandske leverandører av digitale tjenester til malaysiske forbrukere må registrere seg for tjenesteavgift og belaste 8 % (ordningen for importerte avgiftspliktige tjenester). Malaysiske virksomheter som importerer tjenester, regnskapsfører tjenesteavgift selv under reglene i stil med omvendt avgiftsplikt for importerte avgiftspliktige tjenester.</p></div>

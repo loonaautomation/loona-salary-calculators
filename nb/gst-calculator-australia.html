@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det beregnes</h2>
 <p>GST i Australia beregnes med 10% på de fleste avgiftspliktige leveranser. De to formlene er:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Netto × 10 ÷ 100, og Brutto = Netto + GST.</li>
+<li><strong>Legg til GST:</strong> GST = Netto × 10 ÷ 100, og Brutto = Netto + GST.</li>
 <li><strong>Fjern GST:</strong> Netto = Brutto ÷ (1 + 10 ÷ 100), og GST = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 10%. <strong>Andre satser:</strong> én enkelt flat sats på 10 % — GST-frie og inngående-beskattede kategorier gjelder i stedet (se FAQ-en).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det fungerer — formelen</h2>
 <p>Kalkulatoren lagrer ingen data og gjør ett regnestykke per modus. I Legg til GST-modus behandler den beløpet ditt som nettoprisen: den multipliserer nettoen med den valgte satsen delt på 100 for å få GST-en, og legger deretter de to sammen for bruttoprisen du belaster. I Fjern GST-modus behandler den beløpet ditt som en brutto pris inklusive GST — den typen som er trykt på en kvittering eller hylleetikett fra Australia — og deler den med (1 + sats ÷ 100) for å finne nettobeløpet igjen; forskjellen mellom brutto og netto er GST-en som er inneholdt i prisen. Fordi forbrukerpriser i Australia må vises inklusive GST og virksomhetspriser ofte oppgis begge veier, er de to modusene nøyaktige inverser: å fjerne GST fra et bruttotall og deretter legge den tilbake gir det opprinnelige beløpet, bortsett fra avrunding til to desimaler i AUD.</p>
 <h3>Gjennomarbeidet eksempel</h3>
-<p>Med normalsatsen på 10 % og større beløp: en nettopris på A$ 250.00 pluss GST gir GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på A$ 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
+<p>Med normalsatsen på 10 % og større beløp: en nettopris på A$ 250.00 pluss GST gir GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på A$ 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> og GST på <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
 <h3>Ofte stilte spørsmål</h3>
 <div class="faq"><h3>Hva må en skattefaktura i Australia vise?</h3><p>For salg over $82.50 (inkludert GST) må en skattefaktura vise at den er en skattefaktura, selgerens identitet og ABN, utstedelsesdatoen, en kort beskrivelse av hva som ble solgt, GST-beløpet (eller en erklæring om at totalen inkluderer GST) og, for fakturaer på $1,000 eller mer, kjøperens identitet eller ABN.</p></div>
 <div class="faq"><h3>Jeg selger fra Australia til kunder i utlandet — beregnes det GST?</h3><p>Vanligvis nei: eksport av varer og mange tjenester levert til utenlandske kunder er GST-frie, forutsatt at eksportvilkårene og tidsfristene er oppfylt. Importerte varer med lav verdi kjøpt av australske forbrukere beskattes i stedet ved grensen eller av den utenlandske selgeren under reglene for importerte tjenester og varer med lav verdi.</p></div>

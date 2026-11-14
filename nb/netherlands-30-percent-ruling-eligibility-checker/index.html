@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Brutto årslønn tilbudt (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Inkluderer den lønnen feriepengene på 8 %?</label>
-<select id="hol"><option value="yes" selected>Ja, det er inkludert</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Ja, det er inkludert</option><option value="no">Nei — legg til 8% ekstra</option></select></div>
 </div>
 <label for="cat">Hvilken lønnsnorm gjelder for deg?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">I de 24 månedene før du startet, bodde du mer enn 150 km fra den nederlandske grensen i minst 16 av disse månedene?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Ja</option><option value="no">Nei</option></select></div>
 <div><label for="recr">Ble du rekruttert fra utlandet (ansatt mens du bodde utenfor Nederland, eller utstasjonert)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nei — jeg bodde allerede i Nederland</option></select></div>
+<select id="recr"><option value="yes" selected>Ja</option><option value="no">Nei — jeg bodde allerede i Nederland</option></select></div>
 </div>
 <label for="empl">Er arbeidsgiveren din en nederlandsk lønnsskatte-kildeagent (en nederlandsk arbeidsgiver eller nederlandsk lønnskjøring)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Ja</option><option value="no">Nei</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det fungerer — formelen</h2>
 <p>Sjekken anvender 2026-testene i rekkefølgen Belastingdienst anvender dem. Først settes tilbudet ditt på et årlig grunnlag (× 1.08 hvis det utelukker feriepengene på 8 %). Lønnstesten spør deretter om den skattepliktige lønnen din etter et skattefritt fradrag på 30 % fortsatt ville overstige normen — €48,013, eller €36,497 hvis du er under 30 med en kvalifiserende mastergrad; vitenskapelige forskere og leger i spesialistutdanning hopper over denne testen helt. Hvis hele 30 % ville brutt normen, men lønnen selv klarerer den, består du fortsatt, med et redusert fradrag lik lønn − norm. De resterende tre testene — 150 km-historikken, å bli rekruttert fra utlandet og en nederlandsk arbeidsgiver med trekkplikt for lønnesskatt — er harde vilkår: å feile én av dem feiler hele sjekken.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Gjennomarbeidet eksempel</h3>
-<p>Tilbud på €52,000 i året inkludert feriepenger, standard norm, og "yes" til de tre andre testene. Lønnen selv klarerer €48,013, men et fullt fradrag på 30 % (€15,600) ville etterlatt bare €36,400 av skattepliktig lønn — under normen. Resultat: <strong>"Du kvalifiserer sannsynligvis — med et redusert fradrag"</strong> of €52,000 − €48,013 = <strong>€3,987 i året</strong>, som holder den skattepliktige lønnen på normnivået €48,013.</p>
+<p>Tilbud på €52,000 i året inkludert feriepenger, standard norm, og "yes" til de tre andre testene. Lønnen selv klarerer €48,013, men et fullt fradrag på 30 % (€15,600) ville etterlatt bare €36,400 av skattepliktig lønn — under normen. Resultat: <strong>"Du kvalifiserer sannsynligvis — med et redusert fradrag"</strong> på €52,000 − €48,013 = <strong>€3,987 i året</strong>, som holder den skattepliktige lønnen på normnivået €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Ofte stilte spørsmål</h3>
 <div class="faq"><h3>Hvordan måles 150 km-avstanden nøyaktig?</h3><p>I en rett linje fra hjemmet ditt til det nærmeste punktet på den nederlandske grensen — ikke til arbeidsplassen din eller til Amsterdam — og du må ha bodd utover den avstanden i minst 16 av de 24 månedene før din første arbeidsdag. Tidligere perioder med å bo eller arbeide i Nederland forkorter også regelens maksimale varighet.</p></div>
 <div class="faq"><h3>Jeg er forsker — hvor mye fradrag får jeg hvis jeg består?</h3><p>Hele 30 % av lønnen opptil €262,000-taket, uten lønnsnormtest: på en forskningslønn på €30,000 viser denne sjekken et skattefritt fradrag på €9,000. Du trenger fortsatt de andre vilkårene — rekruttert fra utlandet, 150 km-historikken og en nederlandsk arbeidsgiver med trekkplikt.</p></div>

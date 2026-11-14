@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det beregnes</h2>
 <p>GST i India belastes med satsnivået for varene eller tjenestene — 18 % standard siden 22. september 2025. De to formlene er:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Netto × 18 ÷ 100, og Brutto = Netto + GST.</li>
+<li><strong>Legg til GST:</strong> GST = Netto × 18 ÷ 100, og Brutto = Netto + GST.</li>
 <li><strong>Fjern GST:</strong> Netto = Brutto ÷ (1 + 18 ÷ 100), og GST = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 18%. <strong>Andre satser:</strong> 5 % merit, 40 % demerit og 3 % for gull og edle gjenstander (alt i satsvelgeren ovenfor).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det fungerer — formelen</h2>
 <p>Kalkulatoren lagrer ingen data og gjør ett regnestykke per modus. I Legg til GST-modus behandler den beløpet ditt som nettoprisen: den multipliserer nettoen med den valgte satsen delt på 100 for å få GST-en, og legger deretter de to sammen for bruttoprisen du belaster. I Fjern GST-modus behandler den beløpet ditt som en brutto pris inklusive GST — den typen som er trykt på en kvittering eller hylleetikett fra India — og deler den med (1 + sats ÷ 100) for å finne nettobeløpet igjen; forskjellen mellom brutto og netto er GST-en som er inneholdt i prisen. Fordi forbrukerpriser i India vanligvis oppgis inklusive GST (MRP) og virksomhetspriser vanligvis oppgis netto, er de to modusene nøyaktige inverser: å fjerne GST fra et bruttotall og deretter legge den tilbake gir det opprinnelige beløpet, bortsett fra avrunding til to desimaler i INR.</p>
 <h3>Gjennomarbeidet eksempel</h3>
-<p>Med normalsatsen på 18 % og større beløp: en nettopris på ₹ 250.00 pluss GST gir GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på ₹ 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
+<p>Med normalsatsen på 18 % og større beløp: en nettopris på ₹ 250.00 pluss GST gir GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på ₹ 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> og GST på <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
 <h3>Ofte stilte spørsmål</h3>
 <div class="faq"><h3>Hva må en GST-faktura i India vise?</h3><p>En skattefaktura viser normalt leverandørens og kjøperens navn, adresser og GSTIN-er, et unikt fakturanummer og dato, HSN/SAC-koder, en beskrivelse av varene eller tjenestene, den skattepliktige verdien, GST-satsdelingen (CGST + SGST, eller IGST), GST-beløpet og totalen i INR. E-fakturering (IRN) gjelder over kunngjorte omsetningsterskler.</p></div>
 <div class="faq"><h3>Jeg selger fra India til kunder i andre delstater eller land — hvilken GST gjelder?</h3><p>På tvers av delstatsgrenser, belast IGST med den samme kombinerte satsen. Eksport er nullsatt: du kan eksportere uten å belaste GST under en Letter of Undertaking (LUT) og kreve refusjon av inngående avgift. Før du nullsetter en B2B-leveranse, kan du validere kjøperens GSTIN på GST-portalen og ta vare på valideringen som dokumentasjon.</p></div>

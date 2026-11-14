@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det beregnes</h2>
 <p>GST i New Zealand belastes med 15 % på de fleste leveranser. De to formlene er:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Netto × 15 ÷ 100, og Brutto = Netto + GST.</li>
+<li><strong>Legg til GST:</strong> GST = Netto × 15 ÷ 100, og Brutto = Netto + GST.</li>
 <li><strong>Fjern GST:</strong> Netto = Brutto ÷ (1 + 15 ÷ 100), og GST = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 15%. <strong>Andre satser:</strong> én enkelt flat sats på 15 % — ingen redusert sats; nullsatte og fritatte kategorier gjelder i stedet (se FAQ-en).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det fungerer — formelen</h2>
 <p>Kalkulatoren lagrer ingen data og gjør ett regnestykke per modus. I Legg til GST-modus behandler den beløpet ditt som nettoprisen: den multipliserer nettoen med den valgte satsen delt på 100 for å få GST-en, og legger deretter de to sammen for bruttoprisen du belaster. I Fjern GST-modus behandler den beløpet ditt som en brutto pris inklusive GST — den typen som er trykt på en kvittering eller hylleetikett fra New Zealand — og deler den med (1 + sats ÷ 100) for å finne nettobeløpet igjen; forskjellen mellom brutto og netto er GST-en som er inneholdt i prisen. Fordi forbrukerpriser i New Zealand vises inklusive GST og virksomhetspriser ofte oppgis pluss GST, er de to modusene nøyaktige inverser: å fjerne GST fra et bruttotall og deretter legge den tilbake gir det opprinnelige beløpet, bortsett fra avrunding til to desimaler i NZD.</p>
 <h3>Gjennomarbeidet eksempel</h3>
-<p>Med normalsatsen på 15 % og større beløp: en nettopris på NZ$ 250.00 pluss GST gir GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på NZ$ 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
+<p>Med normalsatsen på 15 % og større beløp: en nettopris på NZ$ 250.00 pluss GST gir GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på NZ$ 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> og GST på <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
 <h3>Ofte stilte spørsmål</h3>
 <div class="faq"><h3>Hva må en skattefaktura i New Zealand vise?</h3><p>En skattefaktura må vise ordene «tax invoice», selgerens navn og GST-nummer, datoen, en beskrivelse av varene eller tjenestene, og GST-beløpet eller en erklæring om at prisen inkluderer GST. Siden april 2023 er reglene informasjonsbaserte snarere enn formatbaserte, så samsvarende poster (inkludert e-fakturaer) teller.</p></div>
 <div class="faq"><h3>Jeg selger fra New Zealand til kunder i utlandet — beregnes det GST?</h3><p>Eksport er nullsatt: du belaster 0 % GST og kan fortsatt kreve GST på kostnadene dine, så lenge eksportreglene og dokumentasjonskravene er oppfylt. Tjenester levert til ikke-bosatte som befinner seg utenfor New Zealand når tjenestene utføres, kan også nullsettes.</p></div>

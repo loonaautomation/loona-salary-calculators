@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det beregnes</h2>
 <p>MVA i Sør-Afrika belastes med 15 % på de fleste avgiftspliktige leveranser fra registrerte leverandører. De to formlene er:</p>
 <ul>
-<li><strong>Add VAT:</strong> MVA = Netto × 15 ÷ 100, og Brutto = Netto + MVA.</li>
+<li><strong>Legg til MVA:</strong> MVA = Netto × 15 ÷ 100, og Brutto = Netto + MVA.</li>
 <li><strong>Fjern MVA:</strong> Netto = Brutto ÷ (1 + 15 ÷ 100), og MVA = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 15%. <strong>Andre satser:</strong> én enkelt normalsats på 15% — nullsatte og fritatte kategorier gjelder i stedet (se vanlige spørsmål).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hvordan det fungerer — formelen</h2>
 <p>Kalkulatoren lagrer ingen data og gjør ett regnestykke per modus. I Legg til MVA-modus behandler den beløpet ditt som nettoprisen: den multipliserer nettoen med den valgte satsen delt på 100 for å få MVA-en, og legger deretter de to sammen for bruttoprisen du belaster. I Fjern MVA-modus behandler den beløpet ditt som en brutto pris inklusive MVA — den typen som er trykt på en kvittering eller hylleetikett fra Sør-Afrika — og deler den med (1 + sats ÷ 100) for å finne nettobeløpet igjen; forskjellen mellom brutto og netto er MVA-en som er inneholdt i prisen. Fordi sørafrikanske forbrukerpriser lovlig oppgis inklusive MVA og virksomhetspriser ofte oppgis uten MVA, er de to modusene nøyaktige inverser: å fjerne MVA fra et bruttotall og deretter legge den tilbake gir det opprinnelige beløpet, bortsett fra avrunding til to desimaler i ZAR.</p>
 <h3>Gjennomarbeidet eksempel</h3>
-<p>Med normalsatsen på 15 % og større beløp: en nettopris på R 250.00 pluss MVA gir MVA på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på R 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
+<p>Med normalsatsen på 15 % og større beløp: en nettopris på R 250.00 pluss MVA gir MVA på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den andre veien brytes en bruttopris på R 250.00 ned til et nettobeløp på <span id="exDRemNet">…</span> og MVA på <span id="exDRemVat">…</span>. Begge resultatene settes inn direkte av sidens egen kalkulatorkode.</p>
 <h3>Ofte stilte spørsmål</h3>
 <div class="faq"><h3>Hva må en skattefaktura i Sør-Afrika vise?</h3><p>Overstiger leveransen R50, må en full skattefaktura vise ordene 'tax invoice', leverandørens og kjøperens navn, adresser og MVA-numre, et unikt fakturanummer og dato, en beskrivelse og mengde av varene eller tjenestene, beløpet uten MVA, MVA-en som er belastet og totalen inklusive MVA i rand. Forkortede fakturaer er tillatt opp til R5,000.</p></div>
 <div class="faq"><h3>Jeg selger fra Sør-Afrika til kunder i utlandet — belastes det MVA?</h3><p>Eksport er nullsatt hvis varene eksporteres innenfor de foreskrevne reglene og dokumentasjon oppbevares; mange tjenester til ikke-bosatte kunder er også nullsatt når de lovpålagte vilkårene er oppfylt. Importerte tjenester og importerte varer tiltrekker seg MVA ved innførsel, vanligvis håndtert av tollvesenet eller reglene om omvendt avgiftsplikt.</p></div>
