@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Salaire annuel brut proposé (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Ce salaire inclut-il l’allocation de vacances de 8% ?</label>
-<select id="hol"><option value="yes" selected>Oui, elle est incluse</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Oui, elle est incluse</option><option value="no">Non — ajouter 8% en plus</option></select></div>
 </div>
 <label for="cat">Quelle norme de salaire s’applique à vous ?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Au cours des 24 mois précédant le début, avez-vous vécu à plus de 150 km de la frontière néerlandaise pendant au moins 16 de ces mois ?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Oui</option><option value="no">Non</option></select></div>
 <div><label for="recr">Avez-vous été recruté depuis l’étranger (embauché alors que vous viviez hors des Pays-Bas, ou détaché) ?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Non — je vivais déjà aux Pays-Bas</option></select></div>
+<select id="recr"><option value="yes" selected>Oui</option><option value="no">Non — je vivais déjà aux Pays-Bas</option></select></div>
 </div>
 <label for="empl">Votre employeur est-il un redevable néerlandais de la retenue sur les salaires (un employeur néerlandais ou une paie néerlandaise) ?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Oui</option><option value="no">Non</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Comment ça marche — la formule</h2>
 <p>Le vérificateur applique les tests 2026 dans l’ordre où le Belastingdienst les applique. D’abord, votre offre est ramenée sur une base annuelle (× 1.08 si elle exclut l’indemnité de vacances de 8%). Le test de salaire demande ensuite si votre salaire imposable après un abattement exonéré de 30% resterait supérieur à la norme — €48,013, ou €36,497 si vous avez moins de 30 ans et un diplôme de master éligible ; les chercheurs scientifiques et les médecins en formation spécialisée échappent entièrement à ce test. Si les 30% complets enfreignaient la norme mais que le salaire lui-même la dépasse, vous réussissez quand même, avec un abattement réduit égal à salaire − norme. Les trois tests restants — l’historique des 150 km, le recrutement depuis l’étranger, et un employeur néerlandais retenant l’impôt sur les salaires — sont des conditions strictes : échouer à l’un d’eux fait échouer l’ensemble du contrôle.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Exemple détaillé</h3>
-<p>Offre de €52,000 par an indemnité de congés comprise, norme standard, et "yes" aux trois autres tests. Le salaire lui-même dépasse €48,013, mais un abattement complet de 30% (€15,600) ne laisserait que €36,400 de salaire imposable — en dessous de la norme. Résultat : <strong>"Vous remplissez probablement les conditions — avec une allocation réduite"</strong> of €52,000 − €48,013 = <strong>€3,987 par an</strong>, ce qui maintient le salaire imposable au niveau de la norme de €48,013.</p>
+<p>Offre de €52,000 par an indemnité de congés comprise, norme standard, et "yes" aux trois autres tests. Le salaire lui-même dépasse €48,013, mais un abattement complet de 30% (€15,600) ne laisserait que €36,400 de salaire imposable — en dessous de la norme. Résultat : <strong>"Vous remplissez probablement les conditions — avec une allocation réduite"</strong> de €52,000 − €48,013 = <strong>€3,987 par an</strong>, ce qui maintient le salaire imposable au niveau de la norme de €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Questions fréquemment posées</h3>
 <div class="faq"><h3>Comment la distance de 150 km est-elle mesurée exactement ?</h3><p>En ligne droite de votre domicile au point le plus proche de la frontière néerlandaise — pas jusqu’à votre lieu de travail ni jusqu’à Amsterdam — et vous devez avoir vécu au-delà de cette distance pendant au moins 16 des 24 mois précédant votre premier jour de travail. Les périodes antérieures de vie ou de travail aux Pays-Bas raccourcissent aussi la durée maximale de la règle.</p></div>
 <div class="faq"><h3>Je suis chercheur — quel abattement est-ce que je reçois si je réussis le test ?</h3><p>Les 30% complets du salaire jusqu’au plafond de €262,000, sans aucun test de norme de salaire : sur un salaire de recherche de €30,000, ce vérificateur affiche un abattement exonéré de €9,000. Il vous faut quand même les autres conditions — recrutement depuis l’étranger, historique des 150 km et employeur néerlandais retenant l’impôt.</p></div>

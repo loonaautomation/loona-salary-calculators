@@ -129,7 +129,7 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Comment c’est calculé</h2>
-<p>To <strong>add VAT</strong>: TVA = net × taux ÷ 100, et brut = net + TVA. Pour <strong>retirer la TVA</strong>: net = brut ÷ (1 + taux ÷ 100), et TVA = brut − net. Ne calculez jamais la TVA contenue dans un prix brut comme un pourcentage direct du brut — à 19%, la TVA contenue dans €119 est de €19, et non de €22.61.</p>
+<p>Pour <strong>ajouter la TVA</strong>: TVA = net × taux ÷ 100, et brut = net + TVA. Pour <strong>retirer la TVA</strong>: net = brut ÷ (1 + taux ÷ 100), et TVA = brut − net. Ne calculez jamais la TVA contenue dans un prix brut comme un pourcentage direct du brut — à 19%, la TVA contenue dans €119 est de €19, et non de €22.61.</p>
 <p style="margin-top:8px">Exemple détaillé : un montant net de €100 en Allemagne au taux standard de 19% donne une TVA de <strong id="exVat">—</strong> et un montant brut de <strong id="exGross">—</strong> (net <span id="exNet">—</span>). Ces chiffres sont calculés en direct par le calculateur de cette page, ils correspondent donc toujours à l’outil ci-dessus.</p>
 </div>
 
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Comment ça marche — la formule</h2>
 <p>Le calculateur conserve le taux normal de TVA de chaque pays sous forme de pourcentage. En mode Ajouter, il traite votre montant comme le prix net : TVA = montant × taux ÷ 100 et brut = montant + TVA. En mode Retirer, il traite votre montant comme le prix brut : net = montant ÷ (1 + taux ÷ 100) et TVA = brut − net. Les résultats sont arrondis à deux décimales pour l’affichage, avec le symbole de la devise du pays que vous avez sélectionné. Les taux réduits sont listés dans le tableau ci-dessus et sur chaque page de pays à titre indicatif, mais le calculateur lui-même utilise toujours le taux normal — le taux qui s’applique à la plupart des biens et services.</p>
 <h3>Exemple détaillé</h3>
-<p>Retirer la TVA en Estonie : un montant brut de 124 € au taux normal de 24% de l’Estonie (le taux depuis le 1 juillet 2025) se répartit en un montant net de <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Calculé en direct par cette page : €124 ÷ 1.24 = €100 net, et €124 − €100 = €24 de TVA.</p>
+<p>Retirer la TVA en Estonie : un montant brut de 124 € au taux normal de 24% de l’Estonie (le taux depuis le 1 juillet 2025) se répartit en un montant net de <strong id="ex2Net">—</strong> et une TVA de <strong id="ex2Vat">—</strong>. Calculé en direct par cette page : €124 ÷ 1.24 = €100 net, et €124 − €100 = €24 de TVA.</p>
 <h3>Questions fréquemment posées</h3>
 <div class="faq"><h3>Pourquoi les taux de TVA varient-ils autant en Europe ?</h3><p>Chaque pays fixe ses propres taux dans le cadre des règles minimales de l’UE (un taux standard d’au moins 15%). C’est pourquoi le Luxembourg facture 17% et la Hongrie 27%, la plupart des pays se situant entre 19% et 25%. La Suisse (8.1%) et le Royaume-Uni (20%) fixent leurs taux entièrement en dehors du système de l’UE.</p></div>
 <div class="faq"><h3>La TVA s’applique-t-elle lorsque je vends à un autre pays de l’UE ?</h3><p>En général, la TVA est facturée dans le pays du client pour les services transfrontaliers B2B et de nombreux services B2C, souvent via le mécanisme d’autoliquidation ou le guichet unique de l’UE (OSS). Ce calculateur calcule les montants au taux du pays choisi ; le pays dont le taux s’applique légalement dépend du type de fourniture, demandez donc conseil pour un commerce transfrontalier régulier.</p></div>
