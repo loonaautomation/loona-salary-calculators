@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">الراتب السنوي الإجمالي المعروض (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">هل يشمل ذلك الراتب بدل الإجازة 8%؟</label>
-<select id="hol"><option value="yes" selected>نعم، مشمول</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>نعم، مشمول</option><option value="no">لا — أضف 8% فوق ذلك</option></select></div>
 </div>
 <label for="cat">أي معيار راتب ينطبق عليك؟</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">في الـ24 شهرًا قبل البدء، هل عشت على بعد أكثر من 150 كم من الحدود الهولندية لـ16 شهرًا على الأقل من تلك الشهور؟</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>نعم</option><option value="no">لا</option></select></div>
 <div><label for="recr">هل جُندت من الخارج (وُظفت بينما تعيش خارج هولندا، أو أُعيرت)؟</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">لا — عشت أصلًا في هولندا</option></select></div>
+<select id="recr"><option value="yes" selected>نعم</option><option value="no">لا — عشت أصلًا في هولندا</option></select></div>
 </div>
 <label for="empl">هل صاحب عملك وكيل استقطاع ضريبة أجر هولندي (صاحب عمل هولندي أو رواتب هولندية)؟</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>نعم</option><option value="no">لا</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>كيف يعمل — الصيغة</h2>
 <p>يطبق المدقق اختبارات 2026 بالترتيب الذي تطبقه Belastingdienst. أولًا، يُوضع عرضك على أساس سنوي (× 1.08 إذا استثنى بدل الإجازة 8%). ثم يسأل اختبار الراتب ما إذا كان راتبك الخاضع للضريبة بعد بدل معفى من الضريبة 30% سيظل يتجاوز المعيار — €48,013، أو €36,497 إذا كنت دون 30 مع درجة ماجستير مؤهلة؛ الباحثون العلميون والأطباء في تدريب متخصص يتخطون هذا الاختبار تمامًا. إذا كان كمال 30% سيخرق المعيار لكن الراتب نفسه يتجاوزه، فأنت ما تزال ناجحًا، مع بدل مخفض يساوي الراتب − المعيار. الاختبارات الثلاثة المتبقية — تاريخ 150 كم، كونك جُندت من الخارج، وصاحب عمل استقطاع ضريبة أجر هولندي — شروط صعبة: فشل أي منها يفشل الفحص كله.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">مثال محسوب</h3>
-<p>عرض €52,000 سنويًا يشمل بدل الإجازة، معيار قياسي، و"نعم" للاختبارات الثلاثة الأخرى. الراتب نفسه يتجاوز €48,013، لكن بدل 30% كامل (€15,600) سيترك فقط €36,400 من الراتب الخاضع للضريبة — دون المعيار. النتيجة: <strong>"من المحتمل أنك مؤهل — مع بدل مخفض"</strong> of €52,000 − €48,013 = <strong>€3,987 سنويًا</strong>، وهو ما يبقي الراتب الخاضع للضريبة عند مستوى معيار €48,013.</p>
+<p>عرض €52,000 سنويًا يشمل بدل الإجازة، معيار قياسي، و"نعم" للاختبارات الثلاثة الأخرى. الراتب نفسه يتجاوز €48,013، لكن بدل 30% كامل (€15,600) سيترك فقط €36,400 من الراتب الخاضع للضريبة — دون المعيار. النتيجة: <strong>"من المحتمل أنك مؤهل — مع بدل مخفض"</strong> بقدر €52,000 − €48,013 = <strong>€3,987 سنويًا</strong>، وهو ما يبقي الراتب الخاضع للضريبة عند مستوى معيار €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">الأسئلة الشائعة</h3>
 <div class="faq"><h3>كيف تُقاس مسافة 150 كم بالضبط؟</h3><p>في خط مستقيم من منزلك إلى أقرب نقطة من الحدود الهولندية — لا إلى مكان عملك أو إلى أمستردام — ويجب أن تكون قد عشت على بعد يفوق تلك المسافة لـ16 شهرًا على الأقل من الـ24 شهرًا قبل يوم عملك الأول. الفترات السابقة للعيش أو العمل في هولندا تختصر أيضًا المدة القصوى للقرار.</p></div>
 <div class="faq"><h3>أنا باحث — كم بدل أحصل إذا نجحت؟</h3><p>30% كاملة من الراتب حتى سقف €262,000، بلا اختبار معيار راتب: على راتب بحث €30,000 يعرض هذا المدقق بدلًا معفى من الضريبة €9,000. ما زلت بحاجة إلى الشروط الأخرى — جُندت من الخارج، تاريخ 150 كم وصاحب عمل استقطاع هولندي.</p></div>
