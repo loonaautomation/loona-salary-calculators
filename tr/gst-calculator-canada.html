@@ -104,7 +104,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl hesaplanır</h2>
 <p>Kanada'da satış vergisi, federal %5 GST artı tedarik eyaletine bağlı bir eyalet katmanıdır. İki formül şöyledir:</p>
 <ul>
-<li><strong>Add GST/HST:</strong> GST/HST = Net × 13 ÷ 100 ve Brüt = Net + GST/HST.</li>
+<li><strong>GST/HST Ekle:</strong> GST/HST = Net × 13 ÷ 100 ve Brüt = Net + GST/HST.</li>
 <li><strong>GST/HST'yi Kaldır:</strong> Net = Brüt ÷ (1 + 13 ÷ 100) ve GST/HST = Brüt − Net.</li>
 <li><strong>Standart oran:</strong> 13%. <strong>Diğer oranlar:</strong> Tek başına %5 GST, %14 veya %15 HST ve PST/RST/QST kombinasyonları — tamamı yukarıdaki oran seçicide.</li>
 
@@ -141,7 +141,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı hiçbir veri saklamaz ve mod başına tek bir aritmetik işlem yapar. GST/HST Ekle modunda tutarınızı net fiyat olarak ele alır: GST/HST tutarını bulmak için neti, seçilen oranın 100'e bölünmesiyle çarpar ve sonra ikisini toplayarak aldığınız brüt fiyatı bulur. GST/HST Kaldır modunda tutarınızı brüt, GST/HST dahil bir fiyat olarak ele alır — bir Kanada fişinde veya raf etiketinde basılan türden — ve net tutarı geri bulmak için (1 + oran ÷ 100) değerine böler; brüt ile net arasındaki fark, fiyatın içerdiği GST/HST tutarıdır. Kanada'da tüketici fiyatları birçok eyalette kasada vergiden önce gösterildiğinden — diğerlerinde HST dahil fiyatlandırma yaygınken — iki mod her iki yönde de çalışmanızı sağlar: brüt bir rakamdan vergiyi kaldırmak ve sonra geri eklemek, orijinal tutarı geri verir, CAD cinsinden iki ondalığa yuvarlama dışında.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Daha büyük tutarlarda %13 standart oran: $ 250.00 net fiyat artı GST/HST → GST/HST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, $ 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> and GST/HST of <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
+<p>Daha büyük tutarlarda %13 standart oran: $ 250.00 net fiyat artı GST/HST → GST/HST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, $ 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> ve GST/HST tutarı <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>Kanada'da bir satış faturası ne göstermelidir?</h3><p>GST/HST amaçlı bir fatura, satıcının adını ve GST/HST hesap numarasını, tarihi, mal veya hizmetlerin açıklamasını, ödenen tutarı ve ödenen vergiyi veya verginin dahil olduğu ifadesini göstermelidir — artı daha büyük satışlar için alıcının adı. PST/QST eyaletlerinde eyalet vergisi ve kayıt numaraları ayrı satırlar olarak gösterilir.</p></div>
 <div class="faq"><h3>Kanada'dan diğer eyaletlerdeki veya ülkelerdeki müşterilere satış yapıyorum — hangi oran geçerli?</h3><p>Genellikle malların teslim edildiği veya hizmetlerin tüketildiği eyaletin oranı ('tedarik yeri' kuralları), kendi eyaletiniz değil — yani BC'ye gönderen bir Ontario satıcısı %5 GST artı BC PST kuralları alır ve Kanada dışına ihraç edilen mallar genellikle GST/HST için sıfır oranlıdır. PST eyaletlerinde ve Quebec'te, eyalet dışından satıcılar için bile kayıt yükümlülükleri doğabilir.</p></div>

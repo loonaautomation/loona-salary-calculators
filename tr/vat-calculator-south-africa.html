@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl hesaplanır</h2>
 <p>Güney Afrika'da KDV, kayıtlı satıcılar tarafından çoğu vergiye tabi tedarikte %15 alınır. İki formül şöyledir:</p>
 <ul>
-<li><strong>Add VAT:</strong> KDV = Net × 15 ÷ 100, ve Brüt = Net + KDV.</li>
+<li><strong>KDV Ekle:</strong> KDV = Net × 15 ÷ 100, ve Brüt = Net + KDV.</li>
 <li><strong>KDV'yi Kaldır:</strong> Net = Brüt ÷ (1 + 15 ÷ 100) ve KDV = Brüt − Net.</li>
 <li><strong>Standart oran:</strong> 15%. <strong>Diğer oranlar:</strong> tek bir standart oran olan %15 — bunun yerine sıfır oranlı ve muaf kategoriler uygulanır (SSS'ye bakın).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı hiçbir veri saklamaz ve mod başına tek bir aritmetik işlem yapar. KDV Ekle modunda tutarınızı net fiyat olarak ele alır: KDV tutarını bulmak için neti, seçilen oranın 100'e bölünmesiyle çarpar ve sonra ikisini toplayarak aldığınız brüt fiyatı bulur. KDV Kaldır modunda tutarınızı brüt, KDV dahil bir fiyat olarak ele alır — bir Güney Afrika fişinde veya raf etiketinde basılan türden — ve net tutarı geri bulmak için (1 + oran ÷ 100) değerine böler; brüt ile net arasındaki fark, fiyatın içerdiği KDV tutarıdır. Güney Afrika tüketici fiyatları yasal olarak KDV dahil belirtildiğinden ve işletme fiyatları genellikle KDV hariç belirtildiğinden, iki mod birbirinin tam tersidir: brüt bir rakamdan KDV'yi kaldırmak ve sonra geri eklemek, orijinal tutarı geri verir, ZAR cinsinden iki ondalığa yuvarlama dışında.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Daha büyük tutarlarda %15 standart oran: R 250.00 net fiyat artı KDV → KDV tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, R 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
+<p>Daha büyük tutarlarda %15 standart oran: R 250.00 net fiyat artı KDV → KDV tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, R 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> ve KDV tutarı <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>Güney Afrika içinde bir vergi faturası neyi göstermelidir?</h3><p>R50 üzerindeki tedarikler için tam bir vergi faturası, 'tax invoice' kelimelerini, satıcının ve alıcının adlarını, adreslerini ve KDV numaralarını, benzersiz bir fatura numarası ve tarihi, mal veya hizmetlerin açıklaması ve miktarını, KDV hariç tutarı, alınan KDV'yi ve rand cinsinden KDV dahil toplamı göstermelidir. Kısaltılmış faturalara R5,000'e kadar izin verilir.</p></div>
 <div class="faq"><h3>Güney Afrika'dan yurtdışındaki müşterilere satış yapıyorum — KDV alınır mı?</h3><p>İhracatlar, mallar öngörülen kurallar içinde ihraç edilirse ve belgesel kanıt saklanırsa sıfır oranlıdır; yerleşik olmayan müşterilere birçok hizmet de yasal koşullar karşılandığında sıfır oranlıdır. İthal edilen hizmetler ve mallar, girişte KDV çeker; genellikle gümrük veya ters charge kurallarıyla ele alınır.</p></div>

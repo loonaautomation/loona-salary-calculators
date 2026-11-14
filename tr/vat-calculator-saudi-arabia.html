@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl hesaplanır</h2>
 <p>Suudi Arabistan içinde KDV, çoğu mal ve hizmette %15 oranında uygulanır. İki formül şöyledir:</p>
 <ul>
-<li><strong>Add VAT:</strong> KDV = Net × 15 ÷ 100, ve Brüt = Net + KDV.</li>
+<li><strong>KDV Ekle:</strong> KDV = Net × 15 ÷ 100, ve Brüt = Net + KDV.</li>
 <li><strong>KDV'yi Kaldır:</strong> Net = Brüt ÷ (1 + 15 ÷ 100) ve KDV = Brüt − Net.</li>
 <li><strong>Standart oran:</strong> 15%. <strong>Diğer oranlar:</strong> indirimli oran yok — bunun yerine sıfır oranlı ve muaf kategoriler geçerlidir (SSS'ye bakın).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı hiçbir veri saklamaz ve mod başına tek bir aritmetik işlem yapar. KDV Ekle modunda tutarınızı net fiyat olarak ele alır: KDV tutarını bulmak için neti, seçilen oranın 100'e bölünmesiyle çarpar ve sonra ikisini toplayarak aldığınız brüt fiyatı bulur. KDV Kaldır modunda tutarınızı brüt, KDV dahil bir fiyat olarak ele alır — bir Suudi Arabistan fişinde veya raf etiketinde basılan türden — ve net tutarı geri bulmak için (1 + oran ÷ 100) değerine böler; brüt ile net arasındaki fark, fiyatın içerdiği KDV tutarıdır. Suudi Arabistan'da tüketici fiyatları KDV dahil ve işletme fiyatları genellikle net belirtildiğinden, iki mod birbirinin tam tersidir: brüt bir rakamdan KDV'yi kaldırmak ve sonra geri eklemek, orijinal tutarı geri verir, SAR cinsinden iki ondalığa yuvarlama dışında.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Daha büyük tutarlarda %15 standart oran: SAR 250.00 net fiyat artı KDV → KDV tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, SAR 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
+<p>Daha büyük tutarlarda %15 standart oran: SAR 250.00 net fiyat artı KDV → KDV tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, SAR 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> ve KDV tutarı <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>Suudi Arabistan içinde bir KDV faturası neyi göstermelidir?</h3><p>Bir vergi faturası benzersiz bir sıralı numara, düzenleme tarihi, satıcının ve alıcının adları, adresleri ve KDV numaraları, mal veya hizmetlerin açıklaması, net tutar, KDV oranı, SAR cinsinden KDV tutarı ve brüt toplamı göstermelidir. FATOORA e-fatura kuralları kapsamında faturalar ayrıca kriptografik bir damga ve QR kodu taşımalı ve ZATCA sistemi aracılığıyla onaylanmalı veya bildirilmelidir.</p></div>
 <div class="faq"><h3>Suudi Arabistan'dan yurtdışındaki müşterilere satış yapıyorum — hangi KDV geçerli?</h3><p>Suudi Arabistan dışındaki (ve uygulayan bir GCC ülkesi dışındaki) müşterilere mal ve nitelikli hizmet ihracatı, ZATCA'nın gerektirdiği nakliye ve gümrük kanıtına sahip olmanız koşuluyla sıfır oranlıdır. Suudi Arabistan'a ithalatlar %15 KDV çeker; genellikle kayıtlı işletmeler tarafından ters charge kapsamında öz değerlendirilir.</p></div>

@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Nasıl hesaplanır</h2>
-<p>To <strong>add VAT</strong>: KDV = net × oran ÷ 100 ve brüt = net + KDV. Şuna <strong>KDV'yi kaldırın</strong>: net = brüt ÷ (1 + oran ÷ 100) ve KDV = brüt − net. Brüt fiyatın içindeki KDV'yi asla brütün düz bir yüzdesi olarak hesaplamayın — %19'da €119 içindeki KDV €19'dur, €22.61 değil.</p>
-<p style="margin-top:8px">İşlenmiş örnek: Almanya'da %19 standart oranda €100 net tutar, KDV olarak şunu verir <strong id="exVat">—</strong> ve brüt tutar olarak <strong id="exGross">—</strong> (net <span id="exNet">—</span>"). Bu rakamlar, bu sayfanın kendi hesaplayıcısı tarafından canlı olarak hesaplanır, bu yüzden her zaman yukarıdaki araçla uyuşur."</p>
+<p><strong>KDV eklemek</strong>: KDV = net × oran ÷ 100 ve brüt = net + KDV. Şuna <strong>KDV'yi kaldırın</strong>: net = brüt ÷ (1 + oran ÷ 100) ve KDV = brüt − net. Brüt fiyatın içindeki KDV'yi asla brütün düz bir yüzdesi olarak hesaplamayın — %19'da €119 içindeki KDV €19'dur, €22.61 değil.</p>
+<p style="margin-top:8px">İşlenmiş örnek: Almanya'da %19 standart oranda €100 net tutar, KDV olarak şunu verir <strong id="exVat">—</strong> ve brüt tutar olarak <strong id="exGross">—</strong> (net tutar <span id="exNet">—</span>"). Bu rakamlar, bu sayfanın kendi hesaplayıcısı tarafından canlı olarak hesaplanır, bu yüzden her zaman yukarıdaki araçla uyuşur."</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı, her ülkenin standart KDV oranını bir yüzde olarak tutar. Ekle modunda tutarınızı net fiyat olarak ele alır: KDV = tutar × oran ÷ 100 ve brüt = tutar + KDV. Kaldır modunda tutarınızı brüt fiyat olarak ele alır: net = tutar ÷ (1 + oran ÷ 100) ve KDV = brüt − net. Sonuçlar, görüntü için iki ondalığa yuvarlanır ve seçtiğiniz ülkenin para birimi sembolüyle. İndirimli oranlar, rehberlik için yukarıdaki tabloda ve her ülke sayfasında listelenir, ancak hesaplayıcının kendisi her zaman standart oranı kullanır — çoğu mal ve hizmete uygulanan oran.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Estonya'da KDV'yi kaldırma: Estonya'nın %24 standart oranında (1 Temmuz 2025'ten beri oran) €124 brüt tutar, net tutara şöyle ayrışır <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Bu sayfa tarafından canlı hesaplanır: €124 ÷ 1.24 = €100 net ve €124 − €100 = €24 KDV.</p>
+<p>Estonya'da KDV'yi kaldırma: Estonya'nın %24 standart oranında (1 Temmuz 2025'ten beri oran) €124 brüt tutar, net tutara şöyle ayrışır <strong id="ex2Net">—</strong> ve KDV tutarı <strong id="ex2Vat">—</strong>. Bu sayfa tarafından canlı hesaplanır: €124 ÷ 1.24 = €100 net ve €124 − €100 = €24 KDV.</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>KDV oranları Avrupa genelinde neden bu kadar farklılık gösterir?</h3><p>Her ülke, AB minimum kuralları içinde kendi oranlarını belirler (en az %15 standart oran). Lüksemburg'un %17 ve Macaristan'ın %27 almasının nedeni budur; çoğu ülke %19 ile %25 arasındadır. İsviçre (%8.1) ve Birleşik Krallık (%20) oranlarını tamamen AB sistemi dışında belirler.</p></div>
 <div class="faq"><h3>Başka bir AB ülkesine satış yaptığımda KDV uygulanır mı?</h3><p>Genellikle KDV, sınır ötesi B2B ve birçok B2C hizmetinde müşterinin ülkesinde alınır; sıklıkla ters charge mekanizması veya AB Tek Durak (OSS) aracılığıyla. Bu hesaplayıcı, seçilen bir ülkenin oranında tutarları hesaplar; hangi ülkenin oranının yasal olarak geçerli olduğu, tedarik türüne bağlıdır, bu yüzden düzenli sınır ötesi ticaret için tavsiye alın.</p></div>

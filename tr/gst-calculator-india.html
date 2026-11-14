@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl hesaplanır</h2>
 <p>Hindistan'da GST, mal veya hizmetler için dilim oranında alınır — 22 Eylül 2025'ten beri %18 standart. İki formül şöyledir:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Net × 18 ÷ 100, ve Brüt = Net + GST.</li>
+<li><strong>GST Ekle:</strong> GST = Net × 18 ÷ 100, ve Brüt = Net + GST.</li>
 <li><strong>GST'yi Kaldır:</strong> Net = Brüt ÷ (1 + 18 ÷ 100) ve GST = Brüt − Net.</li>
 <li><strong>Standart oran:</strong> 18%. <strong>Diğer oranlar:</strong> %5 merit, %40 demerit ve altın ve değerli eşyalar için %3 (tamamı yukarıdaki oran seçicide).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı hiçbir veri saklamaz ve mod başına tek bir aritmetik işlem yapar. GST Ekle modunda tutarınızı net fiyat olarak ele alır: GST tutarını bulmak için neti, seçilen oranın 100'e bölünmesiyle çarpar ve sonra ikisini toplayarak aldığınız brüt fiyatı bulur. GST Kaldır modunda tutarınızı brüt, GST dahil bir fiyat olarak ele alır — bir Hindistan fişinde veya raf etiketinde basılan türden — ve net tutarı geri bulmak için (1 + oran ÷ 100) değerine böler; brüt ile net arasındaki fark, fiyatın içerdiği GST tutarıdır. Hindistan'da tüketici fiyatları genellikle GST dahil (MRP) ve işletme fiyatları genellikle net belirtildiğinden, iki mod birbirinin tam tersidir: brüt bir rakamdan GST'yi kaldırmak ve sonra geri eklemek, orijinal tutarı geri verir, INR cinsinden iki ondalığa yuvarlama dışında.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Daha büyük tutarlarda %18 standart oran: ₹ 250.00 net fiyat artı GST → GST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, ₹ 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
+<p>Daha büyük tutarlarda %18 standart oran: ₹ 250.00 net fiyat artı GST → GST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, ₹ 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> ve GST tutarı <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>Hindistan'da bir GST faturası ne göstermelidir?</h3><p>Bir vergi faturası normalde tedarikçinin ve alıcının adlarını, adreslerini ve GSTIN'lerini, benzersiz bir fatura numarası ve tarihi, HSN/SAC kodlarını, mal veya hizmetlerin açıklamasını, vergiye tabi değeri, GST oran bölüşümünü (CGST + SGST veya IGST), GST tutarını ve INR cinsinden toplamı gösterir. E-fatura (IRN), bildirilen ciro eşiklerinin üzerinde geçerlidir.</p></div>
 <div class="faq"><h3>Hindistan'dan diğer eyaletlerdeki veya ülkelerdeki müşterilere satış yapıyorum — hangi GST geçerli?</h3><p>Eyalet sınırları arasında, aynı birleşik oranda IGST alın. İhracatlar sıfır oranlıdır: bir Taahhüt Mektubu (LUT) kapsamında GST almadan ihraç edebilir ve girdi vergisi iadelerini talep edebilirsiniz. Bir B2B tedarikini sıfır oranlamadan önce, alıcının GSTIN'ini GST portalında doğrulayabilir ve doğrulamayı kanıt olarak saklayabilirsiniz.</p></div>

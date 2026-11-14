@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl hesaplanır</h2>
 <p>Malezya'da SST, vergi türü için oranla alınır — 1 Mart 2024'ten beri hizmet vergisi %8 standart. İki formül şöyledir:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Net × 8 ÷ 100 ve Brüt = Net + SST.</li>
+<li><strong>SST Ekle:</strong> SST = Net × 8 ÷ 100 ve Brüt = Net + SST.</li>
 <li><strong>SST'yi Kaldır:</strong> Net = Brüt ÷ (1 + 8 ÷ 100) ve SST = Brüt − Net.</li>
 <li><strong>Standart oran:</strong> 8%. <strong>Diğer oranlar:</strong> hizmet vergisi %6 (korunan kategoriler), satış vergisi %10 ve %5 — tamamı yukarıdaki oran seçicide.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı hiçbir veri saklamaz ve mod başına tek bir aritmetik işlem yapar. SST Ekle modunda tutarınızı net fiyat olarak ele alır: SST tutarını bulmak için neti, seçilen oranın 100'e bölünmesiyle çarpar ve sonra ikisini toplayarak aldığınız brüt fiyatı bulur. SST Kaldır modunda tutarınızı brüt, SST dahil bir fiyat olarak ele alır — bir Malezya fişinde veya raf etiketinde basılan türden — ve net tutarı geri bulmak için (1 + oran ÷ 100) değerine böler; brüt ile net arasındaki fark, fiyatın içerdiği SST tutarıdır. İki mod, fiyat matematiği için birbirinin tam tersidir — vergi dahil bir rakamdan SST'yi kaldırmak ve geri eklemek, MYR cinsinden iki ondalığa yuvarlama dışında orijinal tutarı geri verir. Ancak SST'nin kendisinin tek aşamalı olduğunu unutmayın: KDV'den farklı olarak, kendi girdilerinizde ödediğiniz SST için kredi yoktur.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Daha büyük tutarlarda %8 standart oran: RM 250.00 net fiyat artı SST → SST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, RM 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
+<p>Daha büyük tutarlarda %8 standart oran: RM 250.00 net fiyat artı SST → SST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, RM 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> ve SST tutarı <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>Malezya'da bir SST faturası ne göstermelidir?</h3><p>Kayıtlı bir sağlayıcıdan alınan hizmet vergisi faturası, sağlayıcının adını, adresini ve SST kayıt numarasını, fatura numarasını ve tarihini, hizmetin açıklamasını, vergi hariç tutarı, hizmet vergisi oranını ve tutarını ve MYR cinsinden toplamı gösterir. Satış vergisi, Satış Vergisi Kanunu kuralları kapsamında üreticilerin ve ithalatçıların faturalarında gösterilir.</p></div>
 <div class="faq"><h3>Yurtdışından Malezyalılara hizmet satıyorum — SST geçerli mi?</h3><p>Malezya tüketicilerine dijital hizmetlerin yabancı sağlayıcıları, hizmet vergisi için kaydolmalı ve %8 almalıdır (ithal vergiye tabi hizmetler rejimi). Hizmet ithal eden Malezya işletmeleri, ithal vergiye tabi hizmetler için ters charge tarzı kurallar kapsamında hizmet vergisini kendileri muhasebeleştirir.</p></div>

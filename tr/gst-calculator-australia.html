@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl hesaplanır</h2>
 <p>Avustralya içinde GST, vergiye tabi çoğu tedarikte %10 oranında uygulanır. İki formül şöyledir:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Net × 10 ÷ 100, ve Brüt = Net + GST.</li>
+<li><strong>GST Ekle:</strong> GST = Net × 10 ÷ 100, ve Brüt = Net + GST.</li>
 <li><strong>GST'yi Kaldır:</strong> Net = Brüt ÷ (1 + 10 ÷ 100) ve GST = Brüt − Net.</li>
 <li><strong>Standart oran:</strong> 10%. <strong>Diğer oranlar:</strong> tek bir düz %10 oran — bunun yerine GST'siz ve girdi vergili kategoriler geçerlidir (SSS'ye bakın).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Hesaplayıcı hiçbir veri saklamaz ve mod başına tek bir aritmetik işlem yapar. GST Ekle modunda tutarınızı net fiyat olarak ele alır: GST tutarını bulmak için neti, seçilen oranın 100'e bölünmesiyle çarpar ve sonra ikisini toplayarak aldığınız brüt fiyatı bulur. GST Kaldır modunda tutarınızı brüt, GST dahil bir fiyat olarak ele alır — bir Avustralya fişinde veya raf etiketinde basılan türden — ve net tutarı geri bulmak için (1 + oran ÷ 100) değerine böler; brüt ile net arasındaki fark, fiyatın içerdiği GST tutarıdır. Avustralya'da tüketici fiyatları GST dahil gösterilmek zorunda olduğundan ve işletme fiyatları genellikle her iki şekilde de belirtildiğinden, iki mod birbirinin tam tersidir: brüt bir rakamdan GST'yi kaldırmak ve sonra geri eklemek, orijinal tutarı geri verir, AUD cinsinden iki ondalığa yuvarlama dışında.</p>
 <h3>İşlenmiş örnek</h3>
-<p>Daha büyük tutarlarda %10 standart oran: A$ 250.00 net fiyat artı GST → GST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, A$ 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
+<p>Daha büyük tutarlarda %10 standart oran: A$ 250.00 net fiyat artı GST → GST tutarı <span id="exDAddVat">…</span> ve brüt fiyat olarak <span id="exDAddGross">…</span>. Diğer yönde, A$ 250.00 brüt fiyatın net tutarı: <span id="exDRemNet">…</span> ve GST tutarı <span id="exDRemVat">…</span>". Her iki sonuç da bu sayfanın kendi hesaplayıcı kodu tarafından canlı eklenir."</p>
 <h3>Sık sorulan sorular</h3>
 <div class="faq"><h3>Avustralya içinde bir vergi faturası neyi göstermelidir?</h3><p>GST dahil $82.50 üzerindeki satışlar için bir vergi faturası, vergi faturası olduğunu, satıcının kimliğini ve ABN'sini, düzenleme tarihini, satılanın kısa bir açıklamasını, GST tutarını (veya toplamın GST içerdiği ifadesini) ve $1,000 veya üzeri faturalar için alıcının kimliğini veya ABN'sini göstermelidir.</p></div>
 <div class="faq"><h3>Avustralya'den yurt dışındaki müşterilere satış yapıyorum — GST uygulanır mı?</h3><p>Genellikle hayır: mal ihracatı ve yurtdışı müşterilere sunulan birçok hizmet, ihracat koşulları ve süre sınırları karşılandığı koşuluyla GST'sizdir. Avustralya tüketicilerinin aldığı düşük değerli ithal mallar bunun yerine sınırda veya yabancı satıcı tarafından, ithal hizmetler ve düşük değerli mallar kuralları kapsamında vergilendirilir.</p></div>

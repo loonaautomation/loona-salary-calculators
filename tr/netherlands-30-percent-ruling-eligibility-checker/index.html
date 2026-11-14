@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Teklif edilen brüt yıllık maaş (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Bu maaş %8 tatil ödeneğini içeriyor mu?</label>
-<select id="hol"><option value="yes" selected>Evet, dahil</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Evet, dahil</option><option value="no">Hayır — üstüne 8% ekle</option></select></div>
 </div>
 <label for="cat">Size hangi maaş normu uygulanır?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Başlamadan önceki 24 ayda, Hollanda sınırından 150 km'den uzakta, bu ayların en az 16'sında mı yaşadınız?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Evet</option><option value="no">Hayır</option></select></div>
 <div><label for="recr">Yurt dışından mı işe alındınız (Hollanda dışında yaşarken işe alınma veya görevlendirme)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Hayır — zaten Hollanda'da yaşıyordum</option></select></div>
+<select id="recr"><option value="yes" selected>Evet</option><option value="no">Hayır — zaten Hollanda'da yaşıyordum</option></select></div>
 </div>
 <label for="empl">İşvereniniz, Hollanda ücret vergisi stopaj ajanı mı (Hollandalı bir işveren veya Hollanda bordrosu)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Evet</option><option value="no">Hayır</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Nasıl çalışır — formül</h2>
 <p>Denetleyici, 2026 testlerini Belastingdienst'in uyguladığı sırada uygular. Önce, teklifiniz yıllık bir esasa konur (× 1.08, %8 tatil ödeneğini hariç tutuyorsa). Maaş testi sonra, %30 vergisiz ödenekten sonra vergiye tabi maaşınızın hâlâ normu aşıp aşmadığını sorar — €48,013 veya nitelikli bir yüksek lisans derecesiyle 30 yaşın altındaysanız €36,497; bilimsel araştırmacılar ve uzmanlık eğitimindeki doktorlar bu testi tamamen atlar. Tam %30, normu ihlal etse ama maaşın kendisi aşsa, yine de geçersiniz; maaş − norma eşit azaltılmış bir ödenekle. Kalan üç test — 150 km geçmişi, yurt dışından işe alınma ve Hollandalı bir ücret vergisi stopaj işvereni — zor koşullardır: herhangi birinde başarısız olmak, tüm kontrolü başarısız yapar.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">İşlenmiş örnek</h3>
-<p>Yılda €52,000 teklif, tatil ödeneği dahil, standart norm ve diğer üç teste "evet". Maaşın kendisi €48,013'ü aşar, ancak tam %30 ödenek (€15,600) yalnızca €36,400 vergiye tabi maaş bırakır — normun altında. Sonuç: <strong>"Muhtemelen hak kazanıyorsunuz — indirimli bir ödenekle"</strong> of €52,000 − €48,013 = <strong>yıllık €3,987</strong>, bu da vergiye tabi maaşı €48,013 norm seviyesinde tutar.</p>
+<p>Yılda €52,000 teklif, tatil ödeneği dahil, standart norm ve diğer üç teste "evet". Maaşın kendisi €48,013'ü aşar, ancak tam %30 ödenek (€15,600) yalnızca €36,400 vergiye tabi maaş bırakır — normun altında. Sonuç: <strong>"Muhtemelen hak kazanıyorsunuz — indirimli bir ödenekle"</strong> tutarı €52,000 − €48,013 = <strong>yıllık €3,987</strong>, bu da vergiye tabi maaşı €48,013 norm seviyesinde tutar.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Sık sorulan sorular</h3>
 <div class="faq"><h3>150 km mesafesi tam olarak nasıl ölçülür?</h3><p>Evinizden Hollanda sınırının en yakın noktasına düz bir çizgide — iş yerinize veya Amsterdam'a değil — ve ilk çalışma gününüzden önceki 24 ayın en az 16'sında bu mesafenin ötesinde yaşamış olmalısınız. Hollanda'da daha önceki yaşama veya çalışma dönemleri de kararın maksimum süresini kısaltır.</p></div>
 <div class="faq"><h3>Araştırmacıyım — geçersem ne kadar ödenek alırım?</h3><p>€262,000 tavanına kadar maaşın tam %30'u, maaş normu testi olmadan: €30,000 araştırma maaşında bu denetleyici, €9,000 vergisiz ödenek gösterir. Diğer koşullara hâlâ ihtiyacınız var — yurt dışından işe alınma, 150 km geçmişi ve Hollandalı bir stopaj işvereni.</p></div>
