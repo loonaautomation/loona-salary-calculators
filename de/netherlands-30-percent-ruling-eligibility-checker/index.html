@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Angebotenes Brutto-Jahresgehalt (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Enthält dieses Gehalt die 8% Urlaubsgeld?</label>
-<select id="hol"><option value="yes" selected>Ja, es ist enthalten</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Ja, es ist enthalten</option><option value="no">Nein — 8% zusätzlich hinzurechnen</option></select></div>
 </div>
 <label for="cat">Welche Gehaltsnorm gilt für Sie?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Haben Sie in den 24 Monaten vor Beginn für mindestens 16 dieser Monate mehr als 150 km von der niederländischen Grenze entfernt gelebt?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Ja</option><option value="no">Nein</option></select></div>
 <div><label for="recr">Wurden Sie aus dem Ausland angeworben (eingestellt, während Sie außerhalb der Niederlande lebten, oder entsandt)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nein — ich habe bereits in den Niederlanden gelebt</option></select></div>
+<select id="recr"><option value="yes" selected>Ja</option><option value="no">Nein — ich habe bereits in den Niederlanden gelebt</option></select></div>
 </div>
 <label for="empl">Ist Ihr Arbeitgeber ein niederländischer Lohnsteuer-Abzugspflichtiger (ein niederländischer Arbeitgeber oder eine niederländische Lohnabrechnung)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Ja</option><option value="no">Nein</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Wie es funktioniert — die Formel</h2>
 <p>Der Prüfer wendet die Tests 2026 in der Reihenfolge an, in der der Belastingdienst sie anwendet. Zuerst wird Ihr Angebot auf ein Jahr hochgerechnet (× 1.08, wenn es die 8% Urlaubszulage ausschließt). Der Gehaltstest fragt dann, ob Ihr steuerpflichtiges Gehalt nach einem steuerfreien Freibetrag von 30% immer noch die Norm übersteigen würde — €48,013, oder €36,497, wenn Sie unter 30 sind und einen qualifizierenden Masterabschluss haben; wissenschaftliche Forscher und Ärzte in Facharztausbildung überspringen diesen Test vollständig. Wenn die vollen 30% die Norm verletzen würden, das Gehalt selbst sie aber erfüllt, bestehen Sie dennoch, mit einem verminderten Freibetrag in Höhe von Gehalt − Norm. Die verbleibenden drei Tests — die 150-km-Vorgeschichte, die Anwerbung aus dem Ausland und ein niederländischer Arbeitgeber mit Lohnsteuerabzug — sind harte Bedingungen: Wer einen davon nicht erfüllt, fällt im gesamten Check durch.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Rechenbeispiel</h3>
-<p>Angebot von €52,000 pro Jahr einschließlich Urlaubsgeld, Standardnorm und "yes" zu den anderen drei Tests. Das Gehalt selbst erfüllt €48,013, aber eine volle Zulage von 30% (€15,600) würde nur €36,400 an steuerpflichtigem Gehalt übrig lassen — unterhalb der Norm. Ergebnis: <strong>"Sie erfüllen die Voraussetzungen wahrscheinlich — mit einer reduzierten Zulage"</strong> of €52,000 − €48,013 = <strong>€3,987 pro Jahr</strong>, wodurch das zu versteuernde Gehalt auf dem Normniveau von €48,013 bleibt.</p>
+<p>Angebot von €52,000 pro Jahr einschließlich Urlaubsgeld, Standardnorm und "yes" zu den anderen drei Tests. Das Gehalt selbst erfüllt €48,013, aber eine volle Zulage von 30% (€15,600) würde nur €36,400 an steuerpflichtigem Gehalt übrig lassen — unterhalb der Norm. Ergebnis: <strong>"Sie erfüllen die Voraussetzungen wahrscheinlich — mit einer reduzierten Zulage"</strong> von €52,000 − €48,013 = <strong>€3,987 pro Jahr</strong>, wodurch das zu versteuernde Gehalt auf dem Normniveau von €48,013 bleibt.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Häufig gestellte Fragen</h3>
 <div class="faq"><h3>Wie genau wird die Entfernung von 150 km gemessen?</h3><p>In gerader Linie von Ihrem Wohnort zum nächstgelegenen Punkt der niederländischen Grenze — nicht zu Ihrem Arbeitsplatz oder nach Amsterdam — und Sie müssen mindestens 16 der 24 Monate vor Ihrem ersten Arbeitstag jenseits dieser Entfernung gelebt haben. Frühere Zeiträume des Lebens oder Arbeitens in den Niederlanden verkürzen außerdem die maximale Dauer der Regelung.</p></div>
 <div class="faq"><h3>Ich bin Forscher — wie viel Zulage erhalte ich, wenn ich bestehe?</h3><p>Die vollen 30% des Gehalts bis zur Obergrenze von €262,000, ohne Gehaltsnorm-Test: Bei einem Forschungsgehalt von €30,000 zeigt dieser Prüfer einen steuerfreien Freibetrag von €9,000. Sie benötigen weiterhin die anderen Bedingungen — Anwerbung aus dem Ausland, die 150-km-Vorgeschichte und einen niederländischen Arbeitgeber mit Lohnsteuerabzug.</p></div>
