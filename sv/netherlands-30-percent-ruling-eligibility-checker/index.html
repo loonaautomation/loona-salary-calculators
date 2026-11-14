@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Erbjuden bruttoårslön (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Inkluderar den lönen semesterersättningen på 8%?</label>
-<select id="hol"><option value="yes" selected>Ja, det är inkluderat</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Ja, det är inkluderat</option><option value="no">Nej — lägg till 8% extra</option></select></div>
 </div>
 <label for="cat">Vilken lönenorm gäller för dig?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Bodde du under de 24 månaderna före start mer än 150 km från den nederländska gränsen i minst 16 av de månaderna?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Ja</option><option value="no">Nej</option></select></div>
 <div><label for="recr">Rekryterades du från utlandet (anställd medan du bodde utanför Nederländerna, eller utstationerad)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nej — jag bodde redan i Nederländerna</option></select></div>
+<select id="recr"><option value="yes" selected>Ja</option><option value="no">Nej — jag bodde redan i Nederländerna</option></select></div>
 </div>
 <label for="empl">Är din arbetsgivare en nederländsk löneskatteavdragsagent (en nederländsk arbetsgivare eller nederländsk löneberäkning)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Ja</option><option value="no">Nej</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hur den fungerar — formeln</h2>
 <p>Kontrollen tillämpar 2026 års tester i den ordning Belastingdienst tillämpar dem. Först sätts ditt erbjudande på årsbasis (× 1.08 om det exkluderar semesterersättningen på 8%). Lönetestet frågar sedan om din beskattningsbara lön efter en skattefri ersättning på 30% fortfarande skulle överstiga normen — €48,013, eller €36,497 om du är under 30 med en kvalificerande masterexamen; vetenskapliga forskare och läkare i specialistutbildning hoppar över det här testet helt. Om hela 30% skulle bryta mot normen men lönen själv klarar den, klarar du ändå, med en reducerad ersättning lika med lön − norm. De återstående tre testerna — 150 km-historiken, att vara rekryterad från utlandet, och en nederländsk arbetsgivare som innehåller löneskatt — är hårda villkor: att misslyckas med något av dem gör att hela kontrollen misslyckas.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Räkneexempel</h3>
-<p>Erbjudande på €52,000 om året inklusive semesterersättning, standardnorm, och ”ja” till de andra tre testerna. Själva lönen klarar €48,013, men ett helt 30%-tillägg (€15,600) skulle lämna endast €36,400 i beskattningsbar lön — under normen. Resultat: <strong>”Du kvalificerar dig sannolikt — med ett reducerat tillägg”</strong> of €52,000 − €48,013 = <strong>€3,987 om året</strong>, vilket håller den beskattningsbara lönen på normnivån €48,013.</p>
+<p>Erbjudande på €52,000 om året inklusive semesterersättning, standardnorm, och ”ja” till de andra tre testerna. Själva lönen klarar €48,013, men ett helt 30%-tillägg (€15,600) skulle lämna endast €36,400 i beskattningsbar lön — under normen. Resultat: <strong>”Du kvalificerar dig sannolikt — med ett reducerat tillägg”</strong> på €52,000 − €48,013 = <strong>€3,987 om året</strong>, vilket håller den beskattningsbara lönen på normnivån €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Vanliga frågor</h3>
 <div class="faq"><h3>Hur exakt mäts 150 km-avståndet?</h3><p>I en rak linje från ditt hem till den närmaste punkten av den nederländska gränsen — inte till din arbetsplats eller till Amsterdam — och du måste ha bott bortom det avståndet i minst 16 av de 24 månaderna före din första arbetsdag. Tidigare perioder av boende eller arbete i Nederländerna förkortar också regelns maximala varaktighet.</p></div>
 <div class="faq"><h3>Jag är forskare — hur mycket tillägg får jag om jag klarar mig?</h3><p>Hela 30% av lönen upp till taket på €262,000, utan test av lönenorm: med en forskningslön på €30,000 visar den här kontrollen en skattefri ersättning på €9,000. Du behöver fortfarande de andra villkoren — rekryterad från utlandet, 150 km-historiken och en nederländsk innehållande arbetsgivare.</p></div>

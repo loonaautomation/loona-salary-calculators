@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hur den beräknas</h2>
 <p>Moms i Förenade Arabemiraten tas ut med 5% på de flesta varor och tjänster. De två formlerna är:</p>
 <ul>
-<li><strong>Add VAT:</strong> Moms = Netto × 5 ÷ 100, och Brutto = Netto + Moms.</li>
+<li><strong>Lägg till moms:</strong> Moms = Netto × 5 ÷ 100, och Brutto = Netto + Moms.</li>
 <li><strong>Ta bort moms:</strong> Netto = Brutto ÷ (1 + 5 ÷ 100), och moms = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 5%. <strong>Andra satser:</strong> ingen reducerad sats — nollbeskattade och undantagna kategorier gäller i stället (se FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hur den fungerar — formeln</h2>
 <p>Kalkylatorn lagrar ingen data och gör en enda aritmetisk operation per läge. I läget Lägg till moms behandlar den ditt belopp som nettopriset: den multiplicerar nettobeloppet med den valda satsen delad med 100 för att få momsen, och lägger sedan ihop de två för det bruttopris du tar ut. I läget Ta bort moms behandlar den ditt belopp som ett bruttopris inklusive moms — den sort som trycks på ett kvitto eller en hyllkantsetikett i Förenade Arabemiraten — och delar det med (1 + sats ÷ 100) för att få tillbaka nettobeloppet; skillnaden mellan brutto och netto är momsen som ingår i priset. Eftersom konsumentpriser i Förenade Arabemiraten anges inklusive moms och företagspriser vanligtvis anges netto, är de två lägena exakta inverser: att ta bort moms från ett bruttobelopp och sedan lägga tillbaka den ger det ursprungliga beloppet, bortsett från avrundning till två decimaler i AED.</p>
 <h3>Räkneexempel</h3>
-<p>Med normalsatsen 5% och större belopp: ett nettopris på AED 250.00 plus moms ger moms på <span id="exDAddVat">…</span> och ett bruttopris på <span id="exDAddGross">…</span>. Åt andra hållet bryts ett bruttopris på AED 250.00 ner till ett nettobelopp på <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Båda resultaten matas in live av sidans egen kalkylatorkod.</p>
+<p>Med normalsatsen 5% och större belopp: ett nettopris på AED 250.00 plus moms ger moms på <span id="exDAddVat">…</span> och ett bruttopris på <span id="exDAddGross">…</span>. Åt andra hållet bryts ett bruttopris på AED 250.00 ner till ett nettobelopp på <span id="exDRemNet">…</span> och moms på <span id="exDRemVat">…</span>. Båda resultaten matas in live av sidans egen kalkylatorkod.</p>
 <h3>Vanliga frågor</h3>
 <div class="faq"><h3>Vad måste en momsfaktura i Förenade Arabemiraten visa?</h3><p>En skattefaktura måste visa orden 'Tax Invoice', leverantörens namn, adress och TRN, kundens uppgifter (och TRN för registrerade kunder), ett löpande fakturanummer och datum, en beskrivning och mängd av varorna eller tjänsterna, nettobeloppet, momssatsen, momsbeloppet i AED och bruttototalen. Förenklade fakturor är tillåtna för detaljhandelsleveranser under AED 10,000.</p></div>
 <div class="faq"><h3>Jag säljer från Förenade Arabemiraten till kunder utomlands — vilken moms gäller?</h3><p>Export av varor och tjänster utanför GCC:s momsramverk är i allmänhet nollbeskattad, förutsatt att du sparar den nödvändiga exportdokumentationen (fraktdokument och kommersiella bevis). Import redovisas vanligtvis genom omvänd skattskyldighet av registrerade företag, så ingen moms betalas kontant vid gränsen.</p></div>

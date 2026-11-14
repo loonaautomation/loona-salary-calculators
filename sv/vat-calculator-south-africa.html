@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hur den beräknas</h2>
 <p>Moms i Sydafrika tas ut med 15% på de flesta beskattningsbara leveranser av registrerade säljare. De två formlerna är:</p>
 <ul>
-<li><strong>Add VAT:</strong> Moms = Netto × 15 ÷ 100, och Brutto = Netto + Moms.</li>
+<li><strong>Lägg till moms:</strong> Moms = Netto × 15 ÷ 100, och Brutto = Netto + Moms.</li>
 <li><strong>Ta bort moms:</strong> Netto = Brutto ÷ (1 + 15 ÷ 100), och moms = Brutto − Netto.</li>
 <li><strong>Normalsats:</strong> 15%. <strong>Andra satser:</strong> en enda normalsats på 15% — nollbeskattade och undantagna kategorier gäller i stället (se FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hur den fungerar — formeln</h2>
 <p>Kalkylatorn lagrar ingen data och gör en enda aritmetisk operation per läge. I läget Lägg till moms behandlar den ditt belopp som nettopriset: den multiplicerar nettobeloppet med den valda satsen delad med 100 för att få momsen, och lägger sedan ihop de två för det bruttopris du tar ut. I läget Ta bort moms behandlar den ditt belopp som ett bruttopris inklusive moms — den sort som trycks på ett kvitto eller en hyllkantsetikett i Sydafrika — och delar det med (1 + sats ÷ 100) för att få tillbaka nettobeloppet; skillnaden mellan brutto och netto är momsen som ingår i priset. Eftersom sydafrikanska konsumentpriser enligt lag anges inklusive moms och företagspriser ofta anges exklusive moms, är de två lägena exakta inverser: att ta bort moms från ett bruttobelopp och sedan lägga tillbaka den ger det ursprungliga beloppet, bortsett från avrundning till två decimaler i ZAR.</p>
 <h3>Räkneexempel</h3>
-<p>Med normalsatsen 15% och större belopp: ett nettopris på R 250.00 plus moms ger moms på <span id="exDAddVat">…</span> och ett bruttopris på <span id="exDAddGross">…</span>. Åt andra hållet bryts ett bruttopris på R 250.00 ner till ett nettobelopp på <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Båda resultaten matas in live av sidans egen kalkylatorkod.</p>
+<p>Med normalsatsen 15% och större belopp: ett nettopris på R 250.00 plus moms ger moms på <span id="exDAddVat">…</span> och ett bruttopris på <span id="exDAddGross">…</span>. Åt andra hållet bryts ett bruttopris på R 250.00 ner till ett nettobelopp på <span id="exDRemNet">…</span> och moms på <span id="exDRemVat">…</span>. Båda resultaten matas in live av sidans egen kalkylatorkod.</p>
 <h3>Vanliga frågor</h3>
 <div class="faq"><h3>Vad måste en skattefaktura i Sydafrika innehålla?</h3><p>För leveranser över R50 måste en fullständig skattefaktura visa orden 'tax invoice', säljarens och köparens namn, adresser och momsnummer, ett unikt fakturanummer och datum, en beskrivning och mängd av varorna eller tjänsterna, beloppet exklusive moms, den debiterade momsen och totalen inklusive moms i rand. Förkortade fakturor är tillåtna upp till R5,000.</p></div>
 <div class="faq"><h3>Jag säljer från Sydafrika till kunder utomlands — tas moms ut?</h3><p>Export är nollbeskattad om varorna exporteras inom de föreskrivna reglerna och dokumentationsbevis sparas; många tjänster till kunder utan hemvist i landet är också nollbeskattade när de lagstadgade villkoren är uppfyllda. Importerade tjänster och importerade varor beläggs med moms vid införseln, vanligtvis hanterat av tullen eller genom reglerna för omvänd skattskyldighet.</p></div>
