@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Miten se lasketaan</h2>
 <p>VAT maassa Saudi-Arabia peritään 15% useimpiin tavaroihin ja palveluihin. Kaksi kaavaa ovat:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Netto × 15 ÷ 100, ja Brutto = Netto + VAT.</li>
+<li><strong>Lisää VAT:</strong> VAT = Netto × 15 ÷ 100, ja Brutto = Netto + VAT.</li>
 <li><strong>Poista VAT:</strong> Netto = Brutto ÷ (1 + 15 ÷ 100), ja VAT = Brutto − Netto.</li>
 <li><strong>Vakiokanta:</strong> 15%. <strong>Muut kannat:</strong> ei alennettua kantaa — sen sijaan soveltuvat nollakantaiset ja vapautetut luokat (katso UKK).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Miten se toimii — kaava</h2>
 <p>Laskuri ei tallenna mitään tietoja ja tekee yhden laskutoimituksen tilaa kohden. Lisää VAT -tilassa se käsittelee summaasi nettopalkkahintana: se kertoo neton valitulla kannalla jaettuna 100:lla saadakseen VAT:in, sitten lisää nämä kaksi yhteen veloittamaksesi bruttohinnaksi. Poista VAT -tilassa se käsittelee summaasi bruttohintana, joka sisältää VAT:in — sellaisena kuin se on painettu Saudi-Arabian kuitille tai hyllymerkintään — ja jakaa sen luvulla (1 + kanta ÷ 100) saadakseen nettosumman takaisin; bruton ja neton välinen ero on hintaan sisältyvä VAT. Koska kuluttajahinnat Saudi-Arabiassa ilmoitetaan VAT:in sisältävinä ja yrityshinnat yleensä nettona, Nämä kaksi tilaa ovat tarkkoja käänteistoimintoja: VAT:in poistaminen bruttoluvusta ja sen lisääminen takaisin palauttaa alkuperäisen summan, lukuun ottamatta pyöristystä kahteen desimaaliin valuutassa SAR.</p>
 <h3>Laskettu esimerkki</h3>
-<p>Käyttäen 15% vakiokantaa suuremmilla summilla: nettopalkkahinta SAR 250.00 plus VAT antaa VAT:n määräksi <span id="exDAddVat">…</span> ja bruttohinta <span id="exDAddGross">…</span>. Toiseen suuntaan bruttohinta SAR 250.00 jakautuu nettosummaksi <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Molemmat tulokset syötetään reaaliajassa tämän sivun omalla laskurikoodilla.</p>
+<p>Käyttäen 15% vakiokantaa suuremmilla summilla: nettopalkkahinta SAR 250.00 plus VAT antaa VAT:n määräksi <span id="exDAddVat">…</span> ja bruttohinta <span id="exDAddGross">…</span>. Toiseen suuntaan bruttohinta SAR 250.00 jakautuu nettosummaksi <span id="exDRemNet">…</span> ja VAT:n määräksi <span id="exDRemVat">…</span>. Molemmat tulokset syötetään reaaliajassa tämän sivun omalla laskurikoodilla.</p>
 <h3>Usein kysytyt kysymykset</h3>
 <div class="faq"><h3>Mitä VAT-laskussa maassa Saudi-Arabia on oltava?</h3><p>Verolaskussa on näyttävä yksilöllinen juokseva numero, myöntämispäivämäärä, myyjän ja ostajan nimet, osoitteet ja VAT-numerot, tavaroiden tai palveluiden kuvaus, nettosumma, VAT-kanta, VAT-summa SAR-määräisenä ja bruttokokonaissumma. FATOORA-sähköisen laskutuksen sääntöjen mukaisesti laskuissa on myös oltava salausleima ja QR-koodi, ja ne on selvitettävä tai raportoitava ZATCA:n järjestelmän kautta.</p></div>
 <div class="faq"><h3>Myyn Saudi-Arabiasta asiakkaille ulkomaille — mikä VAT soveltuu?</h3><p>Tavaroiden ja kelpoisten palveluiden vienti asiakkaille Saudi-Arabian ulkopuolelle (ja toteuttavan GCC-valtion ulkopuolelle) on nollakantaista, edellyttäen että sinulla on ZATCA:n vaatimat kuljetus- ja tullitodisteet. Tuonti Saudi-Arabiaan houkuttelee 15% VAT:ia, yleensä rekisteröityjen yritysten itsearvioimana käänteisen verovelvollisuuden mukaisesti.</p></div>

@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Miten se lasketaan</h2>
-<p>To <strong>add VAT</strong>: VAT = netto × kanta ÷ 100, ja brutto = netto + VAT. Jotta <strong>poista VAT</strong>: netto = brutto ÷ (1 + kanta ÷ 100), ja VAT = brutto − netto. Älä koskaan laske bruttohinnan sisällä olevaa VAT:ia suorana prosenttina brutosta — 19%:lla €119:n sisällä oleva VAT on €19, ei €22.61.</p>
-<p style="margin-top:8px">Laskettu esimerkki: nettosumma €100 Saksassa 19% vakiokannalla antaa VATiksi <strong id="exVat">—</strong> ja bruttosumma <strong id="exGross">—</strong> (net <span id="exNet">—</span>). Nämä luvut lasketaan reaaliajassa tämän sivun omalla laskurilla, joten ne vastaavat aina yllä olevaa työkalua.</p>
+<p><strong>Lisää VAT</strong>: VAT = netto × kanta ÷ 100, ja brutto = netto + VAT. Jotta <strong>poista VAT</strong>: netto = brutto ÷ (1 + kanta ÷ 100), ja VAT = brutto − netto. Älä koskaan laske bruttohinnan sisällä olevaa VAT:ia suorana prosenttina brutosta — 19%:lla €119:n sisällä oleva VAT on €19, ei €22.61.</p>
+<p style="margin-top:8px">Laskettu esimerkki: nettosumma €100 Saksassa 19% vakiokannalla antaa VATiksi <strong id="exVat">—</strong> ja bruttosumma <strong id="exGross">—</strong> (netto <span id="exNet">—</span>). Nämä luvut lasketaan reaaliajassa tämän sivun omalla laskurilla, joten ne vastaavat aina yllä olevaa työkalua.</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Miten se toimii — kaava</h2>
 <p>Laskuri pitää kunkin maan VAT-vakiokannan prosenttina. Lisää-tilassa se käsittelee summaasi nettopalkkahintana: VAT = summa × kanta ÷ 100 ja brutto = summa + VAT. Poista-tilassa se käsittelee summaasi bruttohintana: netto = summa ÷ (1 + kanta ÷ 100) ja VAT = brutto − netto. Tulokset pyöristetään kahteen desimaaliin näyttöä varten, valitsemasi maan valuuttasymbolilla. Alennetut kannat on lueteltu yllä olevassa taulukossa ja kunkin maan sivulla ohjeeksi, mutta laskuri itse käyttää aina vakiokantaa — kantaa, joka soveltuu useimpiin tavaroihin ja palveluihin.</p>
 <h3>Laskettu esimerkki</h3>
-<p>VAT:in poistaminen Virossa: bruttosumma €124 Viron 24% vakiokannalla (kanta 1. heinäkuuta 2025 alkaen) jakautuu nettosummaksi <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Lasketaan reaaliajassa tällä sivulla: €124 ÷ 1.24 = €100 netto, ja €124 − €100 = €24 VAT.</p>
+<p>VAT:in poistaminen Virossa: bruttosumma €124 Viron 24% vakiokannalla (kanta 1. heinäkuuta 2025 alkaen) jakautuu nettosummaksi <strong id="ex2Net">—</strong> ja VAT:n määräksi <strong id="ex2Vat">—</strong>. Lasketaan reaaliajassa tällä sivulla: €124 ÷ 1.24 = €100 netto, ja €124 − €100 = €24 VAT.</p>
 <h3>Usein kysytyt kysymykset</h3>
 <div class="faq"><h3>Miksi VAT-kannat eroavat niin paljon eri puolilla Eurooppaa?</h3><p>Jokainen maa asettaa omat kantansa EU:n vähimmäissääntöjen sisällä (vakiokanta vähintään 15%). Siksi Luxemburg veloittaa 17% ja Unkari 27%, useimpien maiden ollessa välillä 19% ja 25%. Sveitsi (8.1%) ja Yhdistynyt kuningaskunta (20%) asettavat kantansa kokonaan EU-järjestelmän ulkopuolella.</p></div>
 <div class="faq"><h3>Soveltuuko VAT, kun myyn toiseen EU-maahan?</h3><p>Yleensä VAT veloitetaan asiakkaan maassa rajat ylittävistä B2B- ja monista B2C-palveluista, usein käänteisen verovelvollisuuden mekanismin tai EU:n One Stop Shopin (OSS) kautta. Tämä laskuri laskee summat valitun maan kannalla; se, minkä maan kanta laillisesti soveltuu, riippuu toimituksen tyypistä, joten pyydä neuvoa säännölliseen rajat ylittävään kauppaan.</p></div>

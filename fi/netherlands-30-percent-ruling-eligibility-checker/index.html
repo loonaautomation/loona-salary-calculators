@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Tarjottu brutto vuotuinen palkka (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Sisältääkö kyseinen palkka 8%:n lomakorvauksen?</label>
-<select id="hol"><option value="yes" selected>Kyllä, se sisältyy</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Kyllä, se sisältyy</option><option value="no">Ei — lisää 8% päälle</option></select></div>
 </div>
 <label for="cat">Mikä palkkanormi koskee sinua?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">24 kuukaudessa ennen aloittamista, asuitko yli 150 km Alankomaiden rajalta vähintään 16 kuukautta kyseisistä kuukausista?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Kyllä</option><option value="no">Ei</option></select></div>
 <div><label for="recr">Rekrytoitiinko sinut ulkomailta (palkattu asuessasi Alankomaiden ulkopuolella, tai lähetetty)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Ei — asuin jo Alankomaissa</option></select></div>
+<select id="recr"><option value="yes" selected>Kyllä</option><option value="no">Ei — asuin jo Alankomaissa</option></select></div>
 </div>
 <label for="empl">Onko työnantajasi hollantilainen palkan veron pidättäjä (hollantilainen työnantaja tai hollantilainen palkanlaskenta)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Kyllä</option><option value="no">Ei</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Miten se toimii — kaava</h2>
 <p>Tarkistaja soveltaa vuoden 2026 testejä siinä järjestyksessä, jossa Belastingdienst soveltaa niitä. Ensin tarjouksesi asetetaan vuosittaiselle pohjalle (× 1.08, jos se ei sisällä 8% lomakorvausta). Palkkatesti kysyy sitten, ylittäisikö verotettava palkkasi 30% verovapaan korvauksen jälkeen silti normin — €48,013, tai €36,497, jos olet alle 30-vuotias ja sinulla on kelpoinen maisterin tutkinto; tieteelliset tutkijat ja erikoistumiskoulutuksessa olevat lääkärit ohittavat tämän testin kokonaan. Jos täysi 30% rikkoisi normin mutta palkka itse ylittää sen, läpäiset silti, alennetulla korvauksella, joka on palkka − normi. Loput kolme testiä — 150 km historia, rekrytointi ulkomailta ja alankomaalainen palkanpidätyksen työnantaja — ovat kovia ehtoja: minkä tahansa niistä epäonnistuminen epäonnistaa koko tarkistuksen.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Laskettu esimerkki</h3>
-<p>Tarjous €52,000 vuodessa sisältäen lomarahan, vakionormi, ja ”kyllä” kolmeen muuhun testiin. Palkka itsessään ylittää €48,013, mutta täysi 30% korvaus (€15,600) jättäisi vain €36,400 verotettavaa palkkaa — normin alle. Tulos: <strong>"Täytät todennäköisesti ehdot — alennetulla etuudella"</strong> of €52,000 − €48,013 = <strong>€3,987 vuodessa</strong>, mikä pitää verotettavan palkan €48,013:n normitasolla.</p>
+<p>Tarjous €52,000 vuodessa sisältäen lomarahan, vakionormi, ja ”kyllä” kolmeen muuhun testiin. Palkka itsessään ylittää €48,013, mutta täysi 30% korvaus (€15,600) jättäisi vain €36,400 verotettavaa palkkaa — normin alle. Tulos: <strong>"Täytät todennäköisesti ehdot — alennetulla etuudella"</strong> €52,000 − €48,013 = <strong>€3,987 vuodessa</strong>, mikä pitää verotettavan palkan €48,013:n normitasolla.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Usein kysytyt kysymykset</h3>
 <div class="faq"><h3>Miten tarkalleen 150 km:n etäisyys mitataan?</h3><p>Suorassa linjassa kotoasi Alankomaiden rajan lähimpään pisteeseen — ei työpaikallesi tai Amsterdamiin — ja sinun on asuttava kyseisen etäisyyden ulkopuolella vähintään 16 kuukautta 24 kuukaudesta ennen ensimmäistä työpäivääsi. Aiemmat Alankomaissa asumisen tai työskentelyn jaksot myös lyhentävät säännön enimmäiskestoa.</p></div>
 <div class="faq"><h3>Olen tutkija — kuinka paljon korvausta saan, jos läpäisen?</h3><p>Koko 30% palkasta €262,000 enimmäismäärään asti, ilman palkkanormitestiä: tutkimuspalkalla €30,000 tämä tarkistaja näyttää €9,000 verovapaan korvauksen. Tarvitset silti muut ehdot — rekrytointi ulkomailta, 150 km historia ja alankomaalainen pidättävä työnantaja.</p></div>
