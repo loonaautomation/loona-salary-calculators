@@ -127,7 +127,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="children">子供の人数</label><input type="number" id="children" min="0" step="1" value="1" inputmode="numeric"></div>
 <div><label for="childless">子供がおらず 23 歳以上ですか？</label>
-<select id="childless"><option value="no" selected>No</option><option value="yes">はい（介護の追加料金 +0.6%）</option></select></div>
+<select id="childless"><option value="no" selected>いいえ</option><option value="yes">はい（介護の追加料金 +0.6%）</option></select></div>
 </div>
 <div class="row">
 <div><label for="church">教会税</label>
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="result" id="result">
 <div>税クラス別の月あたり手取り（あなたの給与）</div>
 <table>
-<tr><th>税クラス</th><th>Who it is for</th><th>手取り ／ 月</th><th>手取り ／ 年</th></tr>
+<tr><th>税クラス</th><th>対象者</th><th>手取り ／ 月</th><th>手取り ／ 年</th></tr>
 <tr><td>I</td><td>単身</td><td id="rM1">—</td><td id="rY1">—</td></tr>
 <tr><td>II</td><td>単親</td><td id="rM2">—</td><td id="rY2">—</td></tr>
 <tr><td>III</td><td>既婚、高所得者</td><td id="rM3">—</td><td id="rY3">—</td></tr>
@@ -170,7 +170,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>よくある質問</h2>
 <div class="faq"><h3>六つのドイツの税クラスは何ですか？</h3><p>I 単身 · II 単親 · III 既婚の高所得者 · IV 既婚、似た所得 · V 既婚の低所得者（パートナーは III）· VI 二つ目の仕事。</p></div>
 <div class="faq"><h3>私のクラスは税金の合計を変えますか？</h3><p>いいえ — 月次の源泉徴収のみです。年次申告が差額を精算します：III/V のカップルは申告しなければなりません。</p></div>
-<div class="faq"><h3>III/V or IV/IV?</h3><p>不均等な所得：III/V は通常、月次のキャッシュフローを改善します。似た所得：IV/IV はよりシンプルで、年末の返済を避けます。最終的な年間税金は同一です。</p></div>
+<div class="faq"><h3>III/V または IV/IV?</h3><p>不均等な所得：III/V は通常、月次のキャッシュフローを改善します。似た所得：IV/IV はよりシンプルで、年末の返済を避けます。最終的な年間税金は同一です。</p></div>
 <div class="faq"><h3>なぜここでは V と VI が等しいのですか？</h3><p>どちらも人的控除なしで源泉徴収し、この試算ツールでは同一に近似されます：実際の給与計算では両者の間にわずかな違いが生じることがあります。</p></div>
 <div class="faq"><h3>税クラスを変更できますか？</h3><p>カップルは Finanzamt または ELSTER を通じて年に一度、組み合わせを変更でき、将来の給与明細に有効です。</p></div>
 </div>

@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">提示された年間総給与（EUR）</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">その給与には 8% の休暇手当が含まれていますか？</label>
-<select id="hol"><option value="yes" selected>はい、含まれています</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>はい、含まれています</option><option value="no">いいえ — 8% を上乗せ</option></select></div>
 </div>
 <label for="cat">どの給与基準があなたに適用されますか？</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">開始前の 24 か月において、そのうち少なくとも 16 か月はオランダ国境から 150 km 以上離れて住んでいましたか？</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>はい</option><option value="no">いいえ</option></select></div>
 <div><label for="recr">海外から採用されましたか（オランダの外に住んでいる間に雇用された、または出向しましたか）？</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">いいえ — 既にオランダに住んでいました</option></select></div>
+<select id="recr"><option value="yes" selected>はい</option><option value="no">いいえ — 既にオランダに住んでいました</option></select></div>
 </div>
 <label for="empl">あなたの雇用主はオランダの賃金税源泉徴収代理人（オランダの雇用主またはオランダの給与計算）ですか？</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>はい</option><option value="no">いいえ</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>仕組み — 計算式</h2>
 <p>このチェッカーは、Belastingdienst が適用する順序で 2026 年のテストを適用します。まず、あなたのオファーは年間の基礎に置かれます（8% の休暇手当を除く場合は × 1.08）。給与テストは次に、30% の非課税手当の後の課税給与が依然として基準を超えるかどうかを尋ねます — €48,013、または資格のある修士号を持つ 30 歳未満の場合は €36,497：科学研究者と専門医研修中の医師はこのテストを完全にスキップします。30% 全額では基準に違反するが、給与自体はそれをクリアする場合、給与 − 基準に等しい軽減された手当で、依然として合格します。残りの三つのテスト — 150 km の履歴、海外から採用されたこと、オランダの賃金税源泉徴収雇用主 — は厳しい条件です：そのうち一つでも失敗すれば、チェック全体が失敗します。</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">実例</h3>
-<p>休暇手当を含む年 €52,000 のオファー、標準基準、その他の三つのテストに「はい」。給与自体は €48,013 をクリアしますが、30% の手当全額（€15,600）では課税給与が €36,400 しか残らず — 基準を下回ります。結果： <strong>「おそらく資格があります — ただし軽減された手当で」</strong> of €52,000 − €48,013 = <strong>€3,987／年</strong>、これにより課税給与は €48,013 の基準レベルに保たれます。</p>
+<p>休暇手当を含む年 €52,000 のオファー、標準基準、その他の三つのテストに「はい」。給与自体は €48,013 をクリアしますが、30% の手当全額（€15,600）では課税給与が €36,400 しか残らず — 基準を下回ります。結果： <strong>「おそらく資格があります — ただし軽減された手当で」</strong> €52,000 − €48,013 = <strong>€3,987／年</strong>、これにより課税給与は €48,013 の基準レベルに保たれます。</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">よくある質問</h3>
 <div class="faq"><h3>150 km の距離は正確にはどのように測られますか？</h3><p>自宅からオランダ国境の最も近い地点までの直線距離です — 職場やアムステルダムまでではありません — そして最初の勤務日の前の 24 か月のうち少なくとも 16 か月は、その距離を超えて住んでいなければなりません。オランダで住んだり働いたりした以前の期間も、ルーリングの最大期間を短くします。</p></div>
 <div class="faq"><h3>私は研究者です — 合格したら手当はいくらもらえますか？</h3><p>€262,000 の上限までの給与の 30% 全額、給与基準テストなしで：€30,000 の研究給与では、このチェッカーは €9,000 の非課税手当を表示します。その他の条件は依然として必要です — 海外からの採用、150 km の履歴、オランダの源泉徴収雇用主。</p></div>
