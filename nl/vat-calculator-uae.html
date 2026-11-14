@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hoe het wordt berekend</h2>
 <p>Btw in de VAE wordt berekend tegen 5% op de meeste goederen en diensten. De twee formules zijn:</p>
 <ul>
-<li><strong>Add VAT:</strong> btw = Netto × 5 ÷ 100, en Bruto = Netto + btw.</li>
+<li><strong>Btw toevoegen:</strong> btw = Netto × 5 ÷ 100, en Bruto = Netto + btw.</li>
 <li><strong>Btw verwijderen:</strong> Netto = Bruto ÷ (1 + 5 ÷ 100), en btw = Bruto − Netto.</li>
 <li><strong>Standaardtarief:</strong> 5%. <strong>Andere tarieven:</strong> geen verlaagd tarief — nultarief- en vrijgestelde categorieën gelden in plaats daarvan (zie de FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hoe het werkt — de formule</h2>
 <p>De calculator slaat geen gegevens op en doet één stuk rekenwerk per modus. In de modus Btw toevoegen behandelt hij je bedrag als de nettoprijs: hij vermenigvuldigt het netto met het gekozen tarief gedeeld door 100 om de btw te krijgen, en telt de twee dan samen voor de brutoprijs die je berekent. In de modus Btw verwijderen behandelt hij je bedrag als een bruto, btw-inclusief prijs — het soort dat op een bon of schaplabel van de VAE is gedrukt — en deelt het door (1 + tarief ÷ 100) om het nettobedrag terug te krijgen; het verschil tussen het bruto en het netto is de btw in de prijs. Omdat consumentenprijzen in de VAE inclusief btw worden opgegeven en zakelijke prijzen gewoonlijk netto worden opgegeven, zijn de twee modi exacte omkeringen: btw uit een brutobedrag verwijderen en haar dan weer toevoegen geeft het oorspronkelijke bedrag terug, afgezien van afronding op twee decimalen in AED.</p>
 <h3>Uitgewerkt voorbeeld</h3>
-<p>Met het standaardtarief van 5% en grotere bedragen: een nettoprijs van AED 250.00 plus btw geeft btw van <span id="exDAddVat">…</span> en een brutoprijs van <span id="exDAddGross">…</span>. Andersom valt een brutoprijs van AED 250.00 uiteen in een nettobedrag van <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Beide resultaten worden live ingevoegd door de eigen calculatorcode van deze pagina.</p>
+<p>Met het standaardtarief van 5% en grotere bedragen: een nettoprijs van AED 250.00 plus btw geeft btw van <span id="exDAddVat">…</span> en een brutoprijs van <span id="exDAddGross">…</span>. Andersom valt een brutoprijs van AED 250.00 uiteen in een nettobedrag van <span id="exDRemNet">…</span> en btw van <span id="exDRemVat">…</span>. Beide resultaten worden live ingevoegd door de eigen calculatorcode van deze pagina.</p>
 <h3>Veelgestelde vragen</h3>
 <div class="faq"><h3>Wat moet een btw-factuur in de VAE tonen?</h3><p>Een belastingfactuur moet de woorden 'Tax Invoice' tonen, de naam, het adres en het TRN van de leverancier, de gegevens van de klant (en TRN voor geregistreerde klanten), een opeenvolgend factuurnummer en datum, een beschrijving en hoeveelheid van de goederen of diensten, het nettobedrag, het btw-tarief, het btw-bedrag in AED en het brutototaal. Vereenvoudigde facturen zijn toegestaan voor retailleveringen onder AED 10,000.</p></div>
 <div class="faq"><h3>Ik verkoop vanuit de VAE aan klanten in het buitenland — welke btw geldt?</h3><p>Exporten van goederen en diensten buiten het GCC-btw-kader zijn over het algemeen nultarief, mits je het vereiste exportbewijs bewaart (verzenddocumenten en commercieel bewijs). Importen worden meestal verwerkt onder de verlegging door geregistreerde bedrijven, dus er wordt geen btw in contanten aan de grens betaald.</p></div>

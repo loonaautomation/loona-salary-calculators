@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hoe het wordt berekend</h2>
 <p>SST in Maleisië wordt berekend tegen het tarief voor het belastingtype — service tax 8% standaard sinds 1 maart 2024. De twee formules zijn:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Netto × 8 ÷ 100, en Bruto = Netto + SST.</li>
+<li><strong>SST toevoegen:</strong> SST = Netto × 8 ÷ 100, en Bruto = Netto + SST.</li>
 <li><strong>SST verwijderen:</strong> Netto = Bruto ÷ (1 + 8 ÷ 100), en SST = Bruto − Netto.</li>
 <li><strong>Standaardtarief:</strong> 8%. <strong>Andere tarieven:</strong> service tax 6% (behouden categorieën), sales tax 10% en 5% — allemaal in de tariefkiezer hierboven.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hoe het werkt — de formule</h2>
 <p>De calculator slaat geen gegevens op en doet één stuk rekenwerk per modus. In de modus SST toevoegen behandelt hij je bedrag als de nettoprijs: hij vermenigvuldigt het netto met het gekozen tarief gedeeld door 100 om de SST te krijgen, en telt de twee dan samen voor de brutoprijs die je berekent. In de modus SST verwijderen behandelt hij je bedrag als een bruto, SST-inclusief prijs — het soort dat op een Maleisische bon of schaplabel is gedrukt — en deelt het door (1 + tarief ÷ 100) om het nettobedrag terug te krijgen; het verschil tussen het bruto en het netto is de SST in de prijs. De twee modi zijn exacte omkeringen voor prijsberekeningen — SST uit een bedrag inclusief belasting verwijderen en haar weer toevoegen geeft het oorspronkelijke bedrag terug, afgezien van afronding op twee decimalen in MYR. Onthoud echter dat SST zelf enkelvoudig is: anders dan btw is er geen tegoed voor SST betaald op je eigen inputs.</p>
 <h3>Uitgewerkt voorbeeld</h3>
-<p>Met het standaardtarief van 8% en grotere bedragen: een nettoprijs van RM 250.00 plus SST geeft SST van <span id="exDAddVat">…</span> en een brutoprijs van <span id="exDAddGross">…</span>. Andersom valt een brutoprijs van RM 250.00 uiteen in een nettobedrag van <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Beide resultaten worden live ingevoegd door de eigen calculatorcode van deze pagina.</p>
+<p>Met het standaardtarief van 8% en grotere bedragen: een nettoprijs van RM 250.00 plus SST geeft SST van <span id="exDAddVat">…</span> en een brutoprijs van <span id="exDAddGross">…</span>. Andersom valt een brutoprijs van RM 250.00 uiteen in een nettobedrag van <span id="exDRemNet">…</span> en SST van <span id="exDRemVat">…</span>. Beide resultaten worden live ingevoegd door de eigen calculatorcode van deze pagina.</p>
 <h3>Veelgestelde vragen</h3>
 <div class="faq"><h3>Wat moet een SST-factuur in Maleisië tonen?</h3><p>Een service-tax-factuur van een geregistreerde aanbieder toont de naam, het adres en het SST-registratienummer van de aanbieder, het factuurnummer en de datum, een beschrijving van de dienst, het bedrag exclusief belasting, het service-tax-tarief en -bedrag, en het totaal in MYR. Sales tax wordt getoond op facturen van fabrikanten en importeurs onder de regels van de Sales Tax Act.</p></div>
 <div class="faq"><h3>Ik verkoop diensten vanuit het buitenland aan Maleisiërs — geldt SST?</h3><p>Buitenlandse aanbieders van digitale diensten aan Maleisische consumenten moeten zich registreren voor service tax en 8% berekenen (het regime voor imported taxable services). Maleisische bedrijven die diensten importeren, verantwoorden zelf service tax onder de regels in verleggingsstijl voor imported taxable services.</p></div>
