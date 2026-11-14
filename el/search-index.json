@@ -135,7 +135,7 @@
   "c": "Tool"
  },
  {
-  "n": "Υπολογιστής Απόφασης 30% Ολλανδίας",
+  "n": "Υπολογιστής Κανόνα 30% Ολλανδίας",
   "u": "https://loonaautomation.github.io/loona-salary-calculators/el/netherlands-30-percent-ruling-calculator/",
   "s": "Loona Salary Calculators",
   "d": "Καθαρές αποδοχές με έναντι χωρίς τον κανόνα, το ετήσιο όφελος, και η προεπισκόπηση 27% του 2027.",
@@ -144,7 +144,7 @@
   "c": "Tool"
  },
  {
-  "n": "Έλεγχος Επιλεξιμότητας Απόφασης 30%",
+  "n": "Έλεγχος Επιλεξιμότητας Κανόνα 30%",
   "u": "https://loonaautomation.github.io/loona-salary-calculators/el/netherlands-30-percent-ruling-eligibility-checker/",
   "s": "Loona Salary Calculators",
   "d": "Πρότυπο μισθού, κανόνας 150 km και έλεγχοι πρόσληψης — πληροίτε τις προϋποθέσεις;",
@@ -495,10 +495,10 @@
   "c": "Tool"
  },
  {
-  "n": "Απόφαση 30% Ολλανδίας, Εξηγημένη",
+  "n": "Κανόνας 30% Ολλανδίας, Εξηγημένος",
   "u": "https://loonaautomation.github.io/loona-salary-calculators/el/guides/netherlands-30-percent-ruling-explained.html",
   "s": "Loona Salary Calculators",
-  "d": "Ποιος πληροί τις προϋποθέσεις, τα πρότυπα μισθών 2026, πόσο αξίζει η απόφαση στα €60,000, και η πτώση του 2027 στο 27%.",
+  "d": "Ποιος πληροί τις προϋποθέσεις, τα πρότυπα μισθών 2026, πόσο αξίζει ο κανόνας στα €60,000, και η πτώση του 2027 στο 27%.",
   "k": "netherlands 30 ruling explained guides netherlands 30 percent ruling explained who qualifies the 2026 salary norms what the ruling is worth on 60 000 and the 2027 drop to 27 30 2026 60 000 2027 27",
   "p": 155,
   "c": "Tool"
