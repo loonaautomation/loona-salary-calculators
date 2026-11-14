@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Sådan beregnes det</h2>
-<p>To <strong>add VAT</strong>: moms = netto × sats ÷ 100, og brutto = netto + moms. For at <strong>fjern moms</strong>: netto = brutto ÷ (1 + sats ÷ 100), og moms = brutto − netto. Beregn aldrig momsen i en bruttopris som en direkte procentdel af bruttobeløbet — ved 19% er momsen i €119 kun €19, ikke €22.61.</p>
-<p style="margin-top:8px">Gennemregnet eksempel: et nettobeløb på €100 i Tyskland ved standardsatsen på 19% giver en moms på <strong id="exVat">—</strong> og et bruttobeløb på <strong id="exGross">—</strong> (net <span id="exNet">—</span>). Disse tal beregnes live af sidens egen beregner, så de altid passer til værktøjet ovenfor.</p>
+<p>For at <strong>lægge moms til</strong>: moms = netto × sats ÷ 100, og brutto = netto + moms. For at <strong>fjern moms</strong>: netto = brutto ÷ (1 + sats ÷ 100), og moms = brutto − netto. Beregn aldrig momsen i en bruttopris som en direkte procentdel af bruttobeløbet — ved 19% er momsen i €119 kun €19, ikke €22.61.</p>
+<p style="margin-top:8px">Gennemregnet eksempel: et nettobeløb på €100 i Tyskland ved standardsatsen på 19% giver en moms på <strong id="exVat">—</strong> og et bruttobeløb på <strong id="exGross">—</strong> (netto <span id="exNet">—</span>). Disse tal beregnes live af sidens egen beregner, så de altid passer til værktøjet ovenfor.</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan fungerer det — formlen</h2>
 <p>Beregneren gemmer hvert lands standardmomssats som en procent. I funktionen Læg til behandler den dit beløb som nettoprisen: Moms = beløb × sats ÷ 100, og brutto = beløb + moms. I funktionen Fjern behandler den dit beløb som bruttoprisen: netto = beløb ÷ (1 + sats ÷ 100), og moms = brutto − netto. Resultater afrundes til to decimaler til visning, med valutasymbolet for det land, du har valgt. Reducerede satser er opregnet i tabellen ovenfor og på hver landeside som vejledning, men selve beregneren bruger altid standardsatsen — den sats, der gælder for de fleste varer og tjenester.</p>
 <h3>Gennemregnet eksempel</h3>
-<p>At fjerne moms i Estland: et bruttobeløb på €124 ved Estlands standardsats på 24% (satsen siden 1. juli 2025) opdeles i et nettobeløb på <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Beregnet live på denne side: €124 ÷ 1.24 = €100 netto, og €124 − €100 = €24 i moms.</p>
+<p>At fjerne moms i Estland: et bruttobeløb på €124 ved Estlands standardsats på 24% (satsen siden 1. juli 2025) opdeles i et nettobeløb på <strong id="ex2Net">—</strong> og moms på <strong id="ex2Vat">—</strong>. Beregnet live på denne side: €124 ÷ 1.24 = €100 netto, og €124 − €100 = €24 i moms.</p>
 <h3>Ofte stillede spørgsmål</h3>
 <div class="faq"><h3>Hvorfor varierer momssatserne så meget på tværs af Europa?</h3><p>Hvert land fastsætter sine egne satser inden for EU's minimumsregler (en standardsats på mindst 15%). Det er derfor, Luxembourg opkræver 17% og Ungarn 27%, mens de fleste lande ligger mellem 19% og 25%. Schweiz (8.1%) og Storbritannien (20%) fastsætter deres satser helt uden for EU-systemet.</p></div>
 <div class="faq"><h3>Gælder moms, når jeg sælger til et andet EU-land?</h3><p>Normalt opkræves moms i kundens land ved grænseoverskridende B2B og mange B2C-tjenester, ofte via mekanismen omvendt betalingspligt eller EU's One Stop Shop (OSS). Denne beregner regner beløb ud med et valgt lands sats; hvilket lands sats der juridisk gælder, afhænger af leverancens art, så søg rådgivning ved regelmæssig grænseoverskridende handel.</p></div>

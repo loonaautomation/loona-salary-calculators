@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Tilbudt bruttoårsløn (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Omfatter den løn ferietillægget på 8%?</label>
-<select id="hol"><option value="yes" selected>Ja, det er medregnet</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Ja, det er medregnet</option><option value="no">Nej — læg 8% oveni</option></select></div>
 </div>
 <label for="cat">Hvilken lønnorm gælder for dig?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Boede du i de 24 måneder før start mere end 150 km fra den hollandske grænse i mindst 16 af de måneder?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Ja</option><option value="no">Nej</option></select></div>
 <div><label for="recr">Blev du rekrutteret fra udlandet (ansat, mens du boede uden for Holland, eller udstationeret)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nej — jeg boede allerede i Holland</option></select></div>
+<select id="recr"><option value="yes" selected>Ja</option><option value="no">Nej — jeg boede allerede i Holland</option></select></div>
 </div>
 <label for="empl">Er din arbejdsgiver en hollandsk indeholder af lønskat (en hollandsk arbejdsgiver eller hollandsk lønsystem)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Ja</option><option value="no">Nej</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan fungerer det — formlen</h2>
 <p>Tjekkeren anvender testene for 2026 i den rækkefølge, Belastingdienst anvender dem. Først sættes dit tilbud på årsbasis (× 1.08, hvis det ikke omfatter ferietillægget på 8%). Løntesten spørger derefter, om din skattepligtige løn efter et skattefrit tillæg på 30% stadig ville overstige normen — €48,013, eller €36,497, hvis du er under 30 med en kvalificerende kandidatgrad; videnskabelige forskere og læger i speciallægeuddannelse springer denne test helt over. Hvis de fulde 30% ville bryde normen, men lønnen selv klarer den, består du stadig, med et reduceret tillæg svarende til løn − norm. De resterende tre tests — 150 km-historikken, at være rekrutteret fra udlandet og en hollandsk arbejdsgiver med pligt til at indeholde lønskat — er hårde betingelser: at fejle én af dem betyder at fejle hele tjekket.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Gennemregnet eksempel</h3>
-<p>Tilbud på €52,000 om året inklusive ferietillæg, standardnorm og "ja" til de andre tre tests. Lønnen selv klarer €48,013, men et fuldt 30%-tillæg (€15,600) ville kun efterlade €36,400 i skattepligtig løn — under normen. Resultat: <strong>"Du er sandsynligvis berettiget — med et reduceret tillæg"</strong> of €52,000 − €48,013 = <strong>€3,987 om året</strong>, hvilket holder den skattepligtige løn på normniveauet €48,013.</p>
+<p>Tilbud på €52,000 om året inklusive ferietillæg, standardnorm og "ja" til de andre tre tests. Lønnen selv klarer €48,013, men et fuldt 30%-tillæg (€15,600) ville kun efterlade €36,400 i skattepligtig løn — under normen. Resultat: <strong>"Du er sandsynligvis berettiget — med et reduceret tillæg"</strong> af €52,000 − €48,013 = <strong>€3,987 om året</strong>, hvilket holder den skattepligtige løn på normniveauet €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Ofte stillede spørgsmål</h3>
 <div class="faq"><h3>Hvordan måles afstanden på 150 km præcist?</h3><p>I en lige linje fra dit hjem til det nærmeste punkt på den hollandske grænse — ikke til din arbejdsplads eller til Amsterdam — og du skal have boet ud over den afstand i mindst 16 af de 24 måneder før din første arbejdsdag. Tidligere perioder med bopæl eller arbejde i Holland forkorter også afgørelsens maksimale varighed.</p></div>
 <div class="faq"><h3>Jeg er forsker — hvor meget tillæg får jeg, hvis jeg består?</h3><p>De fulde 30% af lønnen op til loftet på €262,000, uden lønnormtest: på en forskningsløn på €30,000 viser denne tjekker et skattefrit tillæg på €9,000. Du skal stadig opfylde de øvrige betingelser — rekrutteret fra udlandet, 150 km-historikken og en hollandsk arbejdsgiver med indeholdelsespligt.</p></div>

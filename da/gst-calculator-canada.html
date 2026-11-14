@@ -104,7 +104,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan beregnes det</h2>
 <p>Salgsafgift i Canada er den føderale GST på 5% plus et provinsielt lag, der afhænger af leveringsprovinsen. De to formler er:</p>
 <ul>
-<li><strong>Add GST/HST:</strong> GST/HST = Netto × 13 ÷ 100, og Brutto = Netto + GST/HST.</li>
+<li><strong>Læg GST/HST til:</strong> GST/HST = Netto × 13 ÷ 100, og Brutto = Netto + GST/HST.</li>
 <li><strong>Fjern GST/HST:</strong> Netto = Brutto ÷ (1 + 13 ÷ 100), og GST/HST = Brutto − Netto.</li>
 <li><strong>Standardsats:</strong> 13%. <strong>Andre satser:</strong> 5% GST alene, 14% eller 15% HST og kombinationerne med PST/RST/QST — alt sammen i satsvælgeren ovenfor.</li>
 
@@ -141,7 +141,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan fungerer det — formlen</h2>
 <p>Beregneren gemmer ingen data og udfører ét stykke regning pr. funktion. I funktionen Læg GST/HST til behandler den dit beløb som nettoprisen: den ganger nettobeløbet med den valgte sats divideret med 100 for at få GST/HST og lægger derefter de to sammen til den bruttopris, du tager. I funktionen Fjern GST/HST behandler den dit beløb som en bruttopris inklusive GST/HST — den slags, der står på en kvittering eller hyldeetiket i Canada — og dividerer det med (1 + sats ÷ 100) for at nå frem til nettobeløbet; forskellen mellem brutto og netto er den GST/HST, der er indeholdt i prisen. Fordi forbrugerpriser i Canada i mange provinser normalt vises før skat ved kassen — mens angivelse af priser inklusive HST er almindelig i andre provinser — lader de to funktioner dig arbejde på begge måder: fjerner du skatten fra et bruttotal og lægger den til igen, får du det oprindelige beløb, bortset fra afrunding til to decimaler i CAD.</p>
 <h3>Gennemregnet eksempel</h3>
-<p>Med standardsatsen på 13% og større beløb: en nettopris på $ 250.00 plus GST/HST giver en GST/HST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den anden vej opdeles en bruttopris på $ 250.00 i et nettobeløb på <span id="exDRemNet">…</span> and GST/HST of <span id="exDRemVat">…</span>. Begge resultater indsættes live af sidens egen beregnerkode.</p>
+<p>Med standardsatsen på 13% og større beløb: en nettopris på $ 250.00 plus GST/HST giver en GST/HST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den anden vej opdeles en bruttopris på $ 250.00 i et nettobeløb på <span id="exDRemNet">…</span> og GST/HST på <span id="exDRemVat">…</span>. Begge resultater indsættes live af sidens egen beregnerkode.</p>
 <h3>Ofte stillede spørgsmål</h3>
 <div class="faq"><h3>Hvad skal en salgsfaktura i Canada vise?</h3><p>En faktura til GST/HST-formål bør vise sælgerens navn og GST/HST-kontonummer, datoen, en beskrivelse af varerne eller tjenesterne, det betalte beløb og den betalte afgift eller en erklæring om, at afgiften er inkluderet — plus køberens navn ved større salg. I PST/QST-provinser vises provinsafgiften og registreringsnumrene som særskilte linjer.</p></div>
 <div class="faq"><h3>Jeg sælger fra Canada til kunder i andre provinser eller lande — hvilken sats gælder?</h3><p>Generelt satsen i den provins, hvor varerne leveres, eller tjenesterne forbruges (reglerne om 'leveringssted'), ikke din egen provins — så en sælger fra Ontario, der sender til BC, opkræver 5% GST plus BC's PST-regler, og varer eksporteret ud af Canada er normalt nulbeskattede for GST/HST. Registreringspligter kan opstå i PST-provinser og Quebec, også for sælgere fra andre provinser.</p></div>

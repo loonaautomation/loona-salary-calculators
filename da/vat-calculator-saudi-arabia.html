@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan beregnes det</h2>
 <p>Moms i Saudi-Arabien opkræves med 15% på de fleste varer og tjenester. De to formler er:</p>
 <ul>
-<li><strong>Add VAT:</strong> Moms = Netto × 15 ÷ 100, og Brutto = Netto + Moms.</li>
+<li><strong>Læg moms til:</strong> Moms = Netto × 15 ÷ 100, og Brutto = Netto + Moms.</li>
 <li><strong>Fjern moms:</strong> Netto = Brutto ÷ (1 + 15 ÷ 100), og Moms = Brutto − Netto.</li>
 <li><strong>Standardsats:</strong> 15%. <strong>Andre satser:</strong> ingen reduceret sats — nulbeskattede og fritagne kategorier gælder i stedet (se FAQ'en).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan fungerer det — formlen</h2>
 <p>Beregneren gemmer ingen data og udfører ét stykke regning pr. funktion. I funktionen Læg moms til behandler den dit beløb som nettoprisen: den ganger nettobeløbet med den valgte sats divideret med 100 for at få momsen og lægger derefter de to sammen til den bruttopris, du tager. I funktionen Fjern moms behandler den dit beløb som en bruttopris inklusive moms — den slags, der står på en kvittering eller hyldeetiket i Saudi-Arabien — og dividerer det med (1 + sats ÷ 100) for at nå frem til nettobeløbet; forskellen mellem brutto og netto er den moms, der er indeholdt i prisen. Fordi forbrugerpriser i Saudi-Arabien angives inklusive moms, og erhvervspriser normalt angives eksklusive moms, er de to funktioner hinandens præcise modsætninger: fjerner du momsen fra et bruttotal og lægger den til igen, får du det oprindelige beløb, bortset fra afrunding til to decimaler i SAR.</p>
 <h3>Gennemregnet eksempel</h3>
-<p>Med standardsatsen på 15% og større beløb: en nettopris på SAR 250.00 plus moms giver en moms på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den anden vej opdeles en bruttopris på SAR 250.00 i et nettobeløb på <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Begge resultater indsættes live af sidens egen beregnerkode.</p>
+<p>Med standardsatsen på 15% og større beløb: en nettopris på SAR 250.00 plus moms giver en moms på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den anden vej opdeles en bruttopris på SAR 250.00 i et nettobeløb på <span id="exDRemNet">…</span> og moms på <span id="exDRemVat">…</span>. Begge resultater indsættes live af sidens egen beregnerkode.</p>
 <h3>Ofte stillede spørgsmål</h3>
 <div class="faq"><h3>Hvad skal en momsfaktura i Saudi-Arabien vise?</h3><p>En skattefaktura skal vise et entydigt fortløbende nummer, udstedelsesdatoen, sælgerens og køberens navne, adresser og momsnumre, en beskrivelse af varerne eller tjenesterne, nettobeløbet, momssatsen, momsbeløbet i SAR og bruttobeløbet i alt. Efter FATOORA-reglerne for e-fakturering skal fakturaer også bære et kryptografisk stempel og en QR-kode og klareres eller indberettes via ZATCA's system.</p></div>
 <div class="faq"><h3>Jeg sælger fra Saudi-Arabien til kunder i udlandet — hvilken moms gælder?</h3><p>Eksport af varer og kvalificerede tjenester til kunder uden for Saudi-Arabien (og uden for en implementerende GCC-stat) er til nulsats, forudsat at du er i besiddelse af den transport- og tolddokumentation, ZATCA kræver. Import til Saudi-Arabien pålægges 15% moms, som registrerede virksomheder normalt selv angiver efter reglerne om omvendt betalingspligt.</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan beregnes det</h2>
 <p>GST i Singapore opkræves med 9% på de fleste afgiftspligtige leverancer. De to formler er:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Netto × 9 ÷ 100, og Brutto = Netto + GST.</li>
+<li><strong>Læg GST til:</strong> GST = Netto × 9 ÷ 100, og Brutto = Netto + GST.</li>
 <li><strong>Fjern GST:</strong> Netto = Brutto ÷ (1 + 9 ÷ 100), og GST = Brutto − Netto.</li>
 <li><strong>Standardsats:</strong> 9%. <strong>Andre satser:</strong> en enkelt standardsats på 9% — i stedet gælder nulbeskattede og fritagne kategorier (se FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Sådan fungerer det — formlen</h2>
 <p>Beregneren gemmer ingen data og udfører ét stykke regning pr. funktion. I funktionen Læg GST til behandler den dit beløb som nettoprisen: den ganger nettobeløbet med den valgte sats divideret med 100 for at få GST og lægger derefter de to sammen til den bruttopris, du tager. I funktionen Fjern GST behandler den dit beløb som en bruttopris inklusive GST — den slags, der står på en kvittering eller hyldeetiket i Singapore — og dividerer det med (1 + sats ÷ 100) for at nå frem til nettobeløbet; forskellen mellem brutto og netto er den GST, der er indeholdt i prisen. Fordi registrerede detailhandlere i Singapore viser priser inklusive GST, mens mange B2B-tilbud er eksklusive GST, er de to funktioner hinandens præcise modsætninger: fjerner du GST fra et bruttotal og lægger den til igen, får du det oprindelige beløb, bortset fra afrunding til to decimaler i SGD.</p>
 <h3>Gennemregnet eksempel</h3>
-<p>Med standardsatsen på 9% og større beløb: en nettopris på S$ 250.00 plus GST giver en GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den anden vej opdeles en bruttopris på S$ 250.00 i et nettobeløb på <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Begge resultater indsættes live af sidens egen beregnerkode.</p>
+<p>Med standardsatsen på 9% og større beløb: en nettopris på S$ 250.00 plus GST giver en GST på <span id="exDAddVat">…</span> og en bruttopris på <span id="exDAddGross">…</span>. Den anden vej opdeles en bruttopris på S$ 250.00 i et nettobeløb på <span id="exDRemNet">…</span> og GST på <span id="exDRemVat">…</span>. Begge resultater indsættes live af sidens egen beregnerkode.</p>
 <h3>Ofte stillede spørgsmål</h3>
 <div class="faq"><h3>Hvad skal en skattefaktura i Singapore vise?</h3><p>En skattefaktura skal vise ordene 'tax invoice', leverandørens navn, adresse og GST-registreringsnummer, et fakturanummer og dato, kundens navn og adresse, en beskrivelse af varerne eller tjenesterne, det beløb, der skal betales eksklusive GST, GST-sats og -beløb samt totalen inklusive GST i SGD (hvor GST-beløbet også vises i SGD på fakturaer i fremmed valuta).</p></div>
 <div class="faq"><h3>Jeg sælger fra Singapore til kunder i udlandet — opkræves der GST?</h3><p>Eksport af varer og kvalificerede internationale tjenester er til nulsats på 0%, forudsat at den krævede eksportdokumentation opbevares. Omvendt registrerer udenlandske sælgere af digitale og andre importerede tjenester til forbrugere i Singapore sig under ordningen for udenlandske leverandører og opkræver 9% GST.</p></div>
