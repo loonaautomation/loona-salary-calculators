@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>A GST-t Szingapúr területén 9% kulccsal számítják fel a legtöbb adóköteles teljesítésre. A két képlet:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Nettó × 9 ÷ 100, és Bruttó = Nettó + GST.</li>
+<li><strong>GST hozzáadása:</strong> GST = Nettó × 9 ÷ 100, és Bruttó = Nettó + GST.</li>
 <li><strong>GST eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 9 ÷ 100), és GST = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 9%. <strong>Egyéb kulcsok:</strong> egyetlen általános kulcs: 9% — ehelyett nullakulcsos és mentes kategóriák érvényesek (lásd a GYIK-et).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. GST hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja a GST-t, majd a kettőt összeadja az Ön által felszámított bruttó árért. GST eltávolítása módban az Ön összegét bruttó, GST-t tartalmazó árként kezeli — olyanként, amilyen egy Szingapúr nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő GST. Mivel Szingapúrban a regisztrált kiskereskedők GST-t tartalmazó árakat jelenítenek meg, miközben sok B2B árajánlat GST nélküli, a két mód pontosan egymás fordítottja: a GST eltávolítása egy bruttó számból, majd visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve SGD-ben.</p>
 <h3>Kidolgozott példa</h3>
-<p>A 9%-os általános kulcs használata nagyobb összegekkel: egy S$ 250.00 nettó ár plusz GST esetén a GST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve S$ 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>A 9%-os általános kulcs használata nagyobb összegekkel: egy S$ 250.00 nettó ár plusz GST esetén a GST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve S$ 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és GST összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy adószámlának Szingapúr területén?</h3><p>Egy adószámlán szerepelnie kell a „tax invoice” feliratnak, a szállító nevének, címének és GST-regisztrációs számának, egy számlaszámnak és dátumnak, az ügyfél nevének és címének, az áruk vagy szolgáltatások leírásának, a GST nélkül fizetendő összegnek, a GST kulcsának és összegének, valamint a GST-t tartalmazó végösszegnek SGD-ben (a GST összege devizás számlák esetén is SGD-ben feltüntetve).</p></div>
 <div class="faq"><h3>Szingapúr területéről értékesítek külföldi vevőknek — felszámításra kerül-e a GST?</h3><p>Az áruk és jogosító nemzetközi szolgáltatások exportja 0%-kal nulla kulcsú, feltéve, hogy megőrzi a szükséges exportbizonyítékot. Ezzel szemben a digitális és egyéb importált szolgáltatások tengerentúli eladói szingapúri fogyasztóknak a tengerentúli szállítói regisztrációs rendszer szerint regisztrálnak, és 9% GST-t számítanak fel.</p></div>

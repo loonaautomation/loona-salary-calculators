@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>A GST-t Ausztrália területén 10% kulccsal számítják fel a legtöbb adóköteles teljesítésre. A két képlet:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Nettó × 10 ÷ 100, és Bruttó = Nettó + GST.</li>
+<li><strong>GST hozzáadása:</strong> GST = Nettó × 10 ÷ 100, és Bruttó = Nettó + GST.</li>
 <li><strong>GST eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 10 ÷ 100), és GST = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 10%. <strong>Egyéb kulcsok:</strong> egyetlen átalány 10%-os kulcs — helyette GST-mentes és inputadó-köteles kategóriák alkalmazandók (lásd a GYIK-et).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. GST hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja a GST-t, majd a kettőt összeadja az Ön által felszámított bruttó árért. GST eltávolítása módban az Ön összegét bruttó, GST-t tartalmazó árként kezeli — olyanként, amilyen egy Ausztrália nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő GST. Mivel Ausztráliában a fogyasztói árakat GST-t tartalmazóan kell megjeleníteni, és az üzleti árakat gyakran mindkét módon adják meg, a két mód pontosan egymás fordítottja: a GST eltávolítása egy bruttó számból, majd visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve AUD-ban.</p>
 <h3>Kidolgozott példa</h3>
-<p>A 10%-os általános kulcs használata nagyobb összegekkel: egy A$ 250.00 nettó ár plusz GST esetén a GST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve A$ 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>A 10%-os általános kulcs használata nagyobb összegekkel: egy A$ 250.00 nettó ár plusz GST esetén a GST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve A$ 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és GST összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy adószámlának Ausztrália területén?</h3><p>A $82.50 feletti eladásokra (GST-t beleértve) az adószámlának meg kell mutatnia, hogy adószámla, az eladó személyazonosságát és ABN-jét, a kiállítás dátumát, egy rövid leírást, mit adtak el, a GST összegét (vagy egy nyilatkozatot, hogy a végösszeg tartalmazza a GST-t) és, $1,000 vagy nagyobb számlák esetén, a vevő személyazonosságát vagy ABN-jét.</p></div>
 <div class="faq"><h3>Ausztrália területéről értékesítek külföldi vevőknek — felszámításra kerül-e a GST?</h3><p>Általában nem: az áruk exportja és sok tengerentúli ügyfeleknek nyújtott szolgáltatás GST-mentes, feltéve, hogy az exportfeltételek és időhatárok teljesülnek. Az ausztrál fogyasztók által vásárolt alacsony értékű importált árukat ehelyett a határon vagy a tengerentúli eladó adóztatja az importált szolgáltatások és alacsony értékű áruk szabályai szerint.</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>A VAT Dél-Afrikában 15%-kal kerül felszámításra a legtöbb adóköteles szolgáltatásra regisztrált eladók által. A két képlet a következő:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Nettó × 15 ÷ 100, és Bruttó = Nettó + VAT.</li>
+<li><strong>VAT hozzáadása:</strong> VAT = Nettó × 15 ÷ 100, és Bruttó = Nettó + VAT.</li>
 <li><strong>VAT eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 15 ÷ 100), és VAT = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 15%. <strong>Egyéb kulcsok:</strong> egyetlen általános kulcs: 15% — ehelyett nullakulcsos és mentes kategóriák érvényesek (lásd a GYIK-et).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. VAT hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja a VAT-ot, majd a kettőt összeadja az Ön által felszámított bruttó árért. VAT eltávolítása módban az Ön összegét bruttó, VAT-ot tartalmazó árként kezeli — olyanként, amilyen egy Dél-Afrika nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő VAT. Mivel Dél-Afrikában a fogyasztói árakat törvény szerint VAT-ot tartalmazóan adják meg, és az üzleti árakat gyakran VAT nélkül, a két mód pontosan egymás fordítottja: a VAT eltávolítása egy bruttó számból, majd visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve ZAR-ban.</p>
 <h3>Kidolgozott példa</h3>
-<p>A 15%-os általános kulcs használata nagyobb összegekkel: egy R 250.00 nettó ár plusz VAT esetén a VAT összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve R 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>A 15%-os általános kulcs használata nagyobb összegekkel: egy R 250.00 nettó ár plusz VAT esetén a VAT összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve R 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és áfa összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy adószámlának Dél-afrikai Köztársaság területén?</h3><p>Az R50 feletti értékesítésekre egy teljes adószámlának meg kell mutatnia a „tax invoice” szavakat, a szállító és a vevő nevét, címét és áfaszámát, egy egyedi számlaszámot és dátumot, az áruk vagy szolgáltatások leírását és mennyiségét, az áfát kizáró összeget, a felszámított áfát és az áfát tartalmazó végösszeget randban. Rövidített számlák megengedettek R5,000-ig.</p></div>
 <div class="faq"><h3>Dél-Afrikából adok el külföldi ügyfeleknek — felszámítanak áfát?</h3><p>Az export nulla kulcsú, ha az árukat az előírt szabályokon belül exportálják, és a dokumentációs bizonyítékot megőrzik; sok szolgáltatás nem illetőségű ügyfeleknek szintén nulla kulcsú, ha a törvényi feltételek teljesülnek. Az importált szolgáltatások és importált áruk behozatalkor áfát vonnak maguk után, általában vám vagy a fordított adózás szabályai szerint kezelve.</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>Az új-zélandi GST-t 15%-kal számítják a legtöbb értékesítésre. A két képlet:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Nettó × 15 ÷ 100, és Bruttó = Nettó + GST.</li>
+<li><strong>GST hozzáadása:</strong> GST = Nettó × 15 ÷ 100, és Bruttó = Nettó + GST.</li>
 <li><strong>GST eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 15 ÷ 100), és GST = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 15%. <strong>Egyéb kulcsok:</strong> egyetlen átalány 15%-os kulcs — nincs kedvezményes kulcs; helyette nulla kulcsos és mentes kategóriák alkalmazandók (lásd a GYIK-et).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. GST hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja a GST-t, majd a kettőt összeadja az Ön által felszámított bruttó árért. GST eltávolítása módban az Ön összegét bruttó, GST-t tartalmazó árként kezeli — olyanként, amilyen egy Új-Zéland nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő GST. Mivel Új-Zélandon a fogyasztói árakat GST-t tartalmazóan jelenítik meg, és az üzleti árakat gyakran plusz GST-vel adják meg, a két mód pontosan egymás fordítottja: a GST eltávolítása egy bruttó számból, majd visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve NZD-ben.</p>
 <h3>Kidolgozott példa</h3>
-<p>A 15%-os általános kulcs használata nagyobb összegekkel: egy NZ$ 250.00 nettó ár plusz GST esetén a GST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve NZ$ 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>A 15%-os általános kulcs használata nagyobb összegekkel: egy NZ$ 250.00 nettó ár plusz GST esetén a GST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve NZ$ 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és GST összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy adószámlának Új-Zéland területén?</h3><p>Egy adószámlán szerepelnie kell a „tax invoice” feliratnak, az eladó nevének és GST-számának, a dátumnak, az áruk vagy szolgáltatások leírásának, valamint a GST összegének vagy egy nyilatkozatnak, hogy az ár tartalmazza a GST-t. 2023 áprilisa óta a szabályok információalapúak, nem formátumalapúak, így a megfelelő nyilvántartások (beleértve az e-számlákat) is számítanak.</p></div>
 <div class="faq"><h3>Új-Zéland területéről értékesítek külföldi vevőknek — felszámításra kerül-e a GST?</h3><p>Az export nulla kulcsú: 0% GST-t számít fel, és még mindig igényelheti a GST-t a költségeire, amíg az exportszabályok és bizonyíték-követelmények teljesülnek. A nem illetőségűeknek nyújtott szolgáltatások, akik Új-Zélandon kívül vannak, amikor a szolgáltatásokat teljesítik, szintén nulla kulcsúak lehetnek.</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>A VAT az Egyesült Arab Emírségekben 5%-kal kerül felszámításra a legtöbb árura és szolgáltatásra. A két képlet a következő:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Nettó × 5 ÷ 100, és Bruttó = Nettó + VAT.</li>
+<li><strong>VAT hozzáadása:</strong> VAT = Nettó × 5 ÷ 100, és Bruttó = Nettó + VAT.</li>
 <li><strong>VAT eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 5 ÷ 100), és VAT = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 5%. <strong>Egyéb kulcsok:</strong> nincs kedvezményes kulcs — helyette nulla kulcsos és mentes kategóriák alkalmazandók (lásd a GYIK-et).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. VAT hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja a VAT-ot, majd a kettőt összeadja az Ön által felszámított bruttó árért. VAT eltávolítása módban az Ön összegét bruttó, VAT-ot tartalmazó árként kezeli — olyanként, amilyen egy az UAE nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő VAT. Mivel az UAE-ben a fogyasztói árakat VAT-ot tartalmazóan adják meg, és az üzleti árakat általában nettóban, a két mód pontosan egymás fordítottja: a VAT eltávolítása egy bruttó számból, majd visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve AED-ben.</p>
 <h3>Kidolgozott példa</h3>
-<p>Az 5%-os általános kulcs használata nagyobb összegekkel: egy AED 250.00 nettó ár plusz VAT esetén a VAT összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve AED 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>Az 5%-os általános kulcs használata nagyobb összegekkel: egy AED 250.00 nettó ár plusz VAT esetén a VAT összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve AED 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és áfa összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy VAT-számlának az Egyesült Arab Emírségekben?</h3><p>Egy adószámlán szerepelnie kell a „Tax Invoice” feliratnak, a szállító nevének, címének és TRN-jének, az ügyfél adatainak (és regisztrált ügyfelek esetén a TRN-nek), egy sorszámozott számlaszámnak és dátumnak, az áruk vagy szolgáltatások leírásának és mennyiségének, a nettó összegnek, az áfakulcsnak, az áfa összegének AED-ben és a bruttó végösszegnek. Egyszerűsített számlák megengedettek AED 10,000 alatti kiskereskedelmi értékesítéseknél.</p></div>
 <div class="faq"><h3>Az UAE-ből adok el külföldi ügyfeleknek — melyik áfa érvényes?</h3><p>Az áruk és szolgáltatások exportja a GCC áfakeretén kívül általában nulla kulcsú, feltéve, hogy megőrzi a szükséges exportbizonyítékot (szállítási dokumentumok és kereskedelmi bizonyíték). Az importot általában a regisztrált vállalkozások a fordított adózás szerint számolják el, így határon nem fizetnek áfát készpénzben.</p></div>

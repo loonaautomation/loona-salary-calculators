@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>Az SST-t Malajziában az adótípus kulcsán számítják fel — szolgáltatási adó 8% általános 2024. március 1. óta. A két képlet:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Nettó × 8 ÷ 100, és Bruttó = Nettó + SST.</li>
+<li><strong>SST hozzáadása:</strong> SST = Nettó × 8 ÷ 100, és Bruttó = Nettó + SST.</li>
 <li><strong>SST eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 8 ÷ 100), és SST = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 8%. <strong>Egyéb kulcsok:</strong> szolgáltatási adó 6% (megtartott kategóriák), forgalmi adó 10% és 5% — minden a fenti kulcsválasztóban.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. SST hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja az SST-t, majd a kettőt összeadja az Ön által felszámított bruttó árért. SST eltávolítása módban az Ön összegét bruttó, SST-t tartalmazó árként kezeli — olyanként, amilyen egy Malajzia nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő SST. A két mód pontosan egymás fordítottja az árszámításban — az SST eltávolítása egy adót tartalmazó számból és visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve MYR-ban. Ne feledje azonban, hogy maga az SST egylépcsős: a VAT-tal ellentétben nincs jóváírás a saját inputjain fizetett SST-re.</p>
 <h3>Kidolgozott példa</h3>
-<p>A 8%-os általános kulcs használata nagyobb összegekkel: egy RM 250.00 nettó ár plusz SST esetén az SST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve RM 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>A 8%-os általános kulcs használata nagyobb összegekkel: egy RM 250.00 nettó ár plusz SST esetén az SST összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve RM 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és SST összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy SST-számlának Malajziában?</h3><p>Egy regisztrált szolgáltató szolgáltatási adó számlája tartalmazza a szolgáltató nevét, címét és SST-regisztrációs számát, a számlaszámot és dátumot, a szolgáltatás leírását, az adó nélküli összeget, a szolgáltatási adó kulcsát és összegét, valamint a végösszeget MYR-ban. A forgalmi adót a gyártók és importőrök számláin a forgalmi adóról szóló törvény szabályai szerint tüntetik fel.</p></div>
 <div class="faq"><h3>Külföldről nyújtok szolgáltatásokat malajziaiaknak — érvényes az SST?</h3><p>A digitális szolgáltatások külföldi szolgáltatói malajziai fogyasztóknak regisztrálniuk kell a szolgáltatási adóra, és 8%-ot kell felszámítaniuk (az importált adóköteles szolgáltatások rendszere). A szolgáltatásokat importáló malajziai vállalkozások maguk számolják el a szolgáltatási adót az importált adóköteles szolgáltatások fordított adózás jellegű szabályai szerint.</p></div>

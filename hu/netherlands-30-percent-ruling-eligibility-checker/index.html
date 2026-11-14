@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Felajánlott bruttó éves fizetés (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Az a fizetés tartalmazza a 8% szabadságpótlékot?</label>
-<select id="hol"><option value="yes" selected>Igen, tartalmazza</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Igen, tartalmazza</option><option value="no">Nem — adjon hozzá 8%-ot felül</option></select></div>
 </div>
 <label for="cat">Melyik fizetési norma alkalmazandó Önre?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">A kezdést megelőző 24 hónapban élt-e Ön több mint 150 km-re a holland határtól e hónapok közül legalább 16-ban?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Igen</option><option value="no">Nem</option></select></div>
 <div><label for="recr">Toborozták Önt külföldről (akkor vették fel, amikor Hollandián kívül élt, vagy kiküldték)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nem — már Hollandiában éltem</option></select></div>
+<select id="recr"><option value="yes" selected>Igen</option><option value="no">Nem — már Hollandiában éltem</option></select></div>
 </div>
 <label for="empl">A munkáltatója holland béradó-levonási ügynök (holland munkáltató vagy holland bérszámfejtés)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Igen</option><option value="no">Nem</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>Az ellenőrző a 2026-os teszteket abban a sorrendben alkalmazza, ahogyan a Belastingdienst alkalmazza őket. Először az ajánlatát éves alapra helyezik (× 1.08, ha nem tartalmazza a 8%-os szabadságpótlékot). A fizetési teszt ezután azt kérdezi, hogy a 30%-os adómentes pótlék utáni adóköteles fizetése továbbra is meghaladná-e a normát — €48,013, vagy €36,497, ha Ön 30 év alatti, megfelelő mesterdiplomával; a tudományos kutatók és a szakképzésben lévő orvosok ezt a tesztet teljesen kihagyják. Ha a teljes 30% sértené a normát, de maga a fizetés meghaladja azt, Ön még mindig megfelel, csökkentett pótlékkal, amely egyenlő a fizetés − normával. A fennmaradó három teszt — a 150 km-es előzmény, a külföldről történő toborzás, és egy holland béradó-forráslevonó munkáltató — kemény feltételek: bármelyik meghiúsulása az egész ellenőrzést meghiúsítja.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Kidolgozott példa</h3>
-<p>Évi €52,000 ajánlat szabadságpótlékkal együtt, általános norma, és "igen" a másik három tesztre. Maga a fizetés meghaladja a €48,013-t, de a teljes 30%-os kedvezmény (€15,600) csak €36,400 adóköteles fizetést hagyna — a norma alatt. Eredmény: <strong>"Valószínűleg jogosult — csökkentett kedvezménnyel"</strong> of €52,000 − €48,013 = <strong>€3,987 évente</strong>, amely az adóköteles fizetést a €48,013 normaszinten tartja.</p>
+<p>Évi €52,000 ajánlat szabadságpótlékkal együtt, általános norma, és "igen" a másik három tesztre. Maga a fizetés meghaladja a €48,013-t, de a teljes 30%-os kedvezmény (€15,600) csak €36,400 adóköteles fizetést hagyna — a norma alatt. Eredmény: <strong>"Valószínűleg jogosult — csökkentett kedvezménnyel"</strong> összege €52,000 − €48,013 = <strong>€3,987 évente</strong>, amely az adóköteles fizetést a €48,013 normaszinten tartja.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Pontosan hogyan mérik a 150 km távolságot?</h3><p>Egyenes vonalban az otthonától a holland határ legközelebbi pontjáig — nem a munkahelyéig vagy Amszterdamig —, és az első munkanapja előtti 24 hónapból legalább 16 hónapon keresztül e távolságon túl kellett élnie. A Hollandiában töltött korábbi élet- vagy munkaidőszakok szintén rövidítik a határozat maximális időtartamát.</p></div>
 <div class="faq"><h3>Kutató vagyok — mennyi kedvezményt kapok, ha átmegyek?</h3><p>A fizetés teljes 30%-a a €262,000 felső határig, fizetési norma teszt nélkül: egy €30,000 kutatói fizetésen ez az ellenőrző €9,000 adómentes pótlékot mutat. Önnek még mindig szüksége van a többi feltételre — külföldről toborzás, a 150 km-es előzmény és egy holland forráslevonó munkáltató.</p></div>

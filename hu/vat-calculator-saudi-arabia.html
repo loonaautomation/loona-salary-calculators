@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan számítják</h2>
 <p>A VAT-ot Szaúd-Arábia területén 15% kulccsal számítják fel a legtöbb árura és szolgáltatásra. A két képlet:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Nettó × 15 ÷ 100, és Bruttó = Nettó + VAT.</li>
+<li><strong>VAT hozzáadása:</strong> VAT = Nettó × 15 ÷ 100, és Bruttó = Nettó + VAT.</li>
 <li><strong>VAT eltávolítása:</strong> Nettó = Bruttó ÷ (1 + 15 ÷ 100), és VAT = Bruttó − Nettó.</li>
 <li><strong>Általános kulcs:</strong> 15%. <strong>Egyéb kulcsok:</strong> nincs kedvezményes kulcs — helyette nulla kulcsos és mentes kategóriák alkalmazandók (lásd a GYIK-et).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Hogyan működik — a képlet</h2>
 <p>A kalkulátor nem tárol adatot, és módonként egy számolást végez. VAT hozzáadása módban az Ön összegét nettó árként kezeli: megszorozza a nettót a választott kulcs 100-zal osztott értékével, hogy megkapja a VAT-ot, majd a kettőt összeadja az Ön által felszámított bruttó árért. VAT eltávolítása módban az Ön összegét bruttó, VAT-ot tartalmazó árként kezeli — olyanként, amilyen egy Szaúd-Arábia nyugtán vagy polccímen szerepel —, és elosztja (1 + kulcs ÷ 100) értékkel, hogy visszanyerje a nettó összeget; a bruttó és a nettó közötti különbség az árban lévő VAT. Mivel Szaúd-Arábiában a fogyasztói árakat VAT-ot tartalmazóan adják meg, és az üzleti árakat általában nettóban, a két mód pontosan egymás fordítottja: a VAT eltávolítása egy bruttó számból, majd visszaadása az eredeti összeget adja vissza, a két tizedesjegyre kerekítéstől eltekintve SAR-ban.</p>
 <h3>Kidolgozott példa</h3>
-<p>A 15%-os általános kulcs használata nagyobb összegekkel: egy SAR 250.00 nettó ár plusz VAT esetén a VAT összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve SAR 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
+<p>A 15%-os általános kulcs használata nagyobb összegekkel: egy SAR 250.00 nettó ár plusz VAT esetén a VAT összege <span id="exDAddVat">…</span> és egy bruttó ár <span id="exDAddGross">…</span>. Fordítva nézve SAR 250.00 bruttó ár nettó összege <span id="exDRemNet">…</span> és áfa összege <span id="exDRemVat">…</span>. Mindkét eredményt élőben, ennek az oldalnak a saját kalkulátorkódja illeszti be.</p>
 <h3>Gyakran ismételt kérdések</h3>
 <div class="faq"><h3>Mit kell tartalmaznia egy VAT-számlának Szaúd-Arábia területén?</h3><p>Egy adószámlán szerepelnie kell egy egyedi sorszámnak, a kiállítás dátumának, az eladó és a vevő nevének, címének és áfaszámának, az áruk vagy szolgáltatások leírásának, a nettó összegnek, az áfakulcsnak, az áfa összegének SAR-ban és a bruttó végösszegnek. A FATOORA e-számlázási szabályok szerint a számláknak kriptográfiai bélyegzőt és QR-kódot is tartalmazniuk kell, és a ZATCA rendszerén keresztül kell őket elszámolni vagy jelenteni.</p></div>
 <div class="faq"><h3>Szaúd-Arábiából adok el külföldi ügyfeleknek — melyik áfa érvényes?</h3><p>Az áruk és szolgáltatások exportja Szaúd-Arábián kívüli (és egy végrehajtó GCC-államon kívüli) ügyfeleknek nulla kulcsú, feltéve, hogy rendelkezik a ZATCA által előírt szállítási és vámbizonyítékkal. A Szaúd-Arábiába irányuló import 15% áfát von maga után, általában a regisztrált vállalkozások által a fordított adózás szerint önbevallva.</p></div>
