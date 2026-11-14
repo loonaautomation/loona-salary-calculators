@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum se calculează</h2>
 <p>GST în India se percepe la cota tranșei pentru bunuri sau servicii — 18% standard din 22 septembrie 2025. Cele două formule sunt:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Net × 18 ÷ 100,, iar Brut = Net + GST.</li>
+<li><strong>Adaugă GST:</strong> GST = Net × 18 ÷ 100,, iar Brut = Net + GST.</li>
 <li><strong>Elimină GST:</strong> Net = Brut ÷ (1 + 18 ÷ 100), iar GST = Brut − Net.</li>
 <li><strong>Cotă standard:</strong> 18%. <strong>Alte cote:</strong> 5% merit, 40% demerit și 3% pentru aur și obiecte prețioase (toate în selectorul de cote de mai sus).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum funcționează — formula</h2>
 <p>Calculatorul nu stochează date și face o singură operație aritmetică pe mod. În modul Adaugă GST tratează suma ta ca preț net: înmulțește netul cu cota aleasă împărțită la 100 pentru a obține GST, apoi le adună pentru prețul brut pe care îl percepi. În modul Elimină GST tratează suma ta ca preț brut, cu GST inclus — genul tipărit pe un bon sau o etichetă de raft din India — și o împarte la (1 + cotă ÷ 100) pentru a recupera suma netă; diferența dintre brut și net este GST-ul conținut în preț. Deoarece prețurile de consum din India sunt de obicei cotate cu GST inclus (MRP), iar prețurile pentru întreprinderi sunt de obicei cotate net, cele două moduri sunt inverse exacte: eliminarea GST dintr-o cifră brută și adăugarea lui înapoi returnează suma inițială, mai puțin rotunjirea la două zecimale în INR.</p>
 <h3>Exemplu calculat</h3>
-<p>Folosind cota standard de 18% cu sume mai mari: un preț net de ₹ 250.00 plus GST dă un GST de <span id="exDAddVat">…</span> și un preț brut de <span id="exDAddGross">…</span>. În sens invers, un preț brut de ₹ 250.00 se împarte într-o sumă netă de <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Ambele rezultate sunt inserate în timp real de codul calculatorului propriu al acestei pagini.</p>
+<p>Folosind cota standard de 18% cu sume mai mari: un preț net de ₹ 250.00 plus GST dă un GST de <span id="exDAddVat">…</span> și un preț brut de <span id="exDAddGross">…</span>. În sens invers, un preț brut de ₹ 250.00 se împarte într-o sumă netă de <span id="exDRemNet">…</span> și GST în valoare de <span id="exDRemVat">…</span>. Ambele rezultate sunt inserate în timp real de codul calculatorului propriu al acestei pagini.</p>
 <h3>Întrebări frecvente</h3>
 <div class="faq"><h3>Ce trebuie să arate o factură GST în India?</h3><p>O factură fiscală arată în mod normal numele, adresele și GSTIN-urile furnizorului și cumpărătorului, un număr unic de factură și data, coduri HSN/SAC, o descriere a bunurilor sau serviciilor, valoarea impozabilă, împărțirea cotei GST (CGST + SGST sau IGST), suma GST și totalul în INR. Facturarea electronică (IRN) se aplică peste pragurile de cifră de afaceri notificate.</p></div>
 <div class="faq"><h3>Vând din India către clienți din alte state sau țări — ce GST se aplică?</h3><p>Peste granițele statelor, percepe IGST la aceeași cotă combinată. Exporturile au cotă zero: poți exporta fără să percepi GST în baza unei Scrisori de Angajament (LUT) și poți solicita rambursări ale taxei pe intrări. Înainte de a aplica cota zero unei livrări B2B, poți valida GSTIN-ul cumpărătorului pe portalul GST și păstra validarea ca dovadă.</p></div>

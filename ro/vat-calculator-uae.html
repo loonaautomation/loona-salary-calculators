@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum se calculează</h2>
 <p>TVA în EAU se percepe la 5% pentru majoritatea bunurilor și serviciilor. Cele două formule sunt:</p>
 <ul>
-<li><strong>Add VAT:</strong> TVA = Net × 5 ÷ 100,, iar Brut = Net + TVA.</li>
+<li><strong>Adaugă TVA:</strong> TVA = Net × 5 ÷ 100,, iar Brut = Net + TVA.</li>
 <li><strong>Elimină TVA:</strong> Net = Brut ÷ (1 + 5 ÷ 100), iar TVA = Brut − Net.</li>
 <li><strong>Cotă standard:</strong> 5%. <strong>Alte cote:</strong> fără cotă redusă — în schimb se aplică categoriile cu cotă zero și scutite (vezi întrebările frecvente).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum funcționează — formula</h2>
 <p>Calculatorul nu stochează date și face o singură operație aritmetică pe mod. În modul Adaugă TVA tratează suma ta ca preț net: înmulțește netul cu cota aleasă împărțită la 100 pentru a obține TVA, apoi le adună pentru prețul brut pe care îl percepi. În modul Elimină TVA tratează suma ta ca preț brut, cu TVA inclus — genul tipărit pe un bon sau o etichetă de raft din EAU — și o împarte la (1 + cotă ÷ 100) pentru a recupera suma netă; diferența dintre brut și net este TVA-ul conținut în preț. Deoarece prețurile de consum din EAU sunt cotate cu TVA inclus, iar prețurile pentru întreprinderi sunt de obicei cotate net, cele două moduri sunt inverse exacte: eliminarea TVA dintr-o cifră brută și adăugarea lui înapoi returnează suma inițială, mai puțin rotunjirea la două zecimale în AED.</p>
 <h3>Exemplu calculat</h3>
-<p>Folosind cota standard de 5% cu sume mai mari: un preț net de AED 250.00 plus TVA dă un TVA de <span id="exDAddVat">…</span> și un preț brut de <span id="exDAddGross">…</span>. În sens invers, un preț brut de AED 250.00 se împarte într-o sumă netă de <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Ambele rezultate sunt inserate în timp real de codul calculatorului propriu al acestei pagini.</p>
+<p>Folosind cota standard de 5% cu sume mai mari: un preț net de AED 250.00 plus TVA dă un TVA de <span id="exDAddVat">…</span> și un preț brut de <span id="exDAddGross">…</span>. În sens invers, un preț brut de AED 250.00 se împarte într-o sumă netă de <span id="exDRemNet">…</span> și TVA în valoare de <span id="exDRemVat">…</span>. Ambele rezultate sunt inserate în timp real de codul calculatorului propriu al acestei pagini.</p>
 <h3>Întrebări frecvente</h3>
 <div class="faq"><h3>Ce trebuie să arate o factură de TVA în EAU?</h3><p>O factură fiscală trebuie să arate cuvintele „Tax Invoice”, numele, adresa și TRN-ul furnizorului, datele clientului (și TRN pentru clienții înregistrați), un număr secvențial de factură și data, o descriere și cantitatea bunurilor sau serviciilor, suma netă, cota de TVA, suma TVA în AED și totalul brut. Facturile simplificate sunt permise pentru livrările cu amănuntul sub AED 10,000.</p></div>
 <div class="faq"><h3>Vând din EAU către clienți din străinătate — ce TVA se aplică?</h3><p>Exporturile de bunuri și servicii în afara cadrului TVA al GCC au în general cotă zero, cu condiția să păstrezi dovezile de export cerute (documente de transport și dovezi comerciale). Importurile sunt de obicei contabilizate prin taxare inversă de întreprinderile înregistrate, așa că nu se plătește TVA în numerar la frontieră.</p></div>

@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Salariul anual brut oferit (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Acel salariu include indemnizația de vacanță de 8%?</label>
-<select id="hol"><option value="yes" selected>Da, este inclusă</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Da, este inclusă</option><option value="no">Nu — adaugă 8% în plus</option></select></div>
 </div>
 <label for="cat">Ce normă salarială ți se aplică?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">În cele 24 de luni dinainte de începere, ai locuit la mai mult de 150 km de frontiera olandeză cel puțin 16 dintre acele luni?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Da</option><option value="no">Nu</option></select></div>
 <div><label for="recr">Ai fost recrutat din străinătate (angajat în timp ce locuiai în afara Țărilor de Jos, sau detașat)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nu — locuiam deja în Țările de Jos</option></select></div>
+<select id="recr"><option value="yes" selected>Da</option><option value="no">Nu — locuiam deja în Țările de Jos</option></select></div>
 </div>
 <label for="empl">Angajatorul tău este un agent olandez de reținere a impozitului salarial (un angajator olandez sau salarizare olandeză)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Da</option><option value="no">Nu</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum funcționează — formula</h2>
 <p>Verificatorul aplică testele din 2026 în ordinea în care le aplică Belastingdienst. Mai întâi, oferta ta este pusă pe bază anuală (× 1.08 dacă exclude indemnizația de concediu de 8%). Testul salarial întreabă apoi dacă salariul tău impozabil după o indemnizație neimpozabilă de 30% ar depăși în continuare norma — €48,013 sau €36,497 dacă ai sub 30 de ani și un masterat eligibil; cercetătorii științifici și medicii în formare de specialitate sar complet peste acest test. Dacă 30% complet ar încălca norma, dar salariul însuși o depășește, treci totuși, cu o indemnizație redusă egală cu salariu − normă. Celelalte trei teste — istoricul de 150 km, recrutarea din străinătate și un angajator olandez care reține impozitul pe salariu — sunt condiții stricte: picarea oricăruia dintre ele pică întreaga verificare.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Exemplu calculat</h3>
-<p>Ofertă de €52,000 pe an incluzând indemnizația de concediu, normă standard și „da” la celelalte trei teste. Salariul în sine depășește €48,013, dar o sumă neimpozabilă integrală de 30% (€15,600) ar lăsa doar €36,400 de salariu impozabil — sub normă. Rezultat: <strong>„Probabil te califici — cu o sumă neimpozabilă redusă”</strong> of €52,000 − €48,013 = <strong>€3,987 pe an</strong>, ceea ce menține salariul impozabil la nivelul normei de €48,013.</p>
+<p>Ofertă de €52,000 pe an incluzând indemnizația de concediu, normă standard și „da” la celelalte trei teste. Salariul în sine depășește €48,013, dar o sumă neimpozabilă integrală de 30% (€15,600) ar lăsa doar €36,400 de salariu impozabil — sub normă. Rezultat: <strong>„Probabil te califici — cu o sumă neimpozabilă redusă”</strong> de €52,000 − €48,013 = <strong>€3,987 pe an</strong>, ceea ce menține salariul impozabil la nivelul normei de €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Întrebări frecvente</h3>
 <div class="faq"><h3>Cum se măsoară mai exact distanța de 150 km?</h3><p>În linie dreaptă de la locuința ta până la cel mai apropiat punct al frontierei olandeze — nu până la locul de muncă sau până la Amsterdam — și trebuie să fi locuit dincolo de acea distanță cel puțin 16 din cele 24 de luni dinaintea primei tale zile de lucru. Perioadele anterioare de locuire sau muncă în Țările de Jos scurtează, de asemenea, durata maximă a facilității.</p></div>
 <div class="faq"><h3>Sunt cercetător — ce sumă neimpozabilă primesc dacă trec testul?</h3><p>Întregul 30% din salariu până la plafonul de €262,000, fără test al normei salariale: la un salariu de cercetare de €30,000, acest verificator arată o indemnizație neimpozabilă de €9,000. Ai nevoie în continuare de celelalte condiții — recrutat din străinătate, istoricul de 150 km și un angajator olandez care reține impozitul.</p></div>

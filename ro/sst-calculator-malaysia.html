@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum se calculează</h2>
 <p>SST în Malaezia se percepe la cota tipului de taxă — taxa pe servicii 8% standard de la 1 martie 2024. Cele două formule sunt:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Net × 8 ÷ 100, iar Brut = Net + SST.</li>
+<li><strong>Adaugă SST:</strong> SST = Net × 8 ÷ 100, iar Brut = Net + SST.</li>
 <li><strong>Elimină SST:</strong> Net = Brut ÷ (1 + 8 ÷ 100), iar SST = Brut − Net.</li>
 <li><strong>Cotă standard:</strong> 8%. <strong>Alte cote:</strong> taxă pe servicii 6% (categorii păstrate), taxă pe vânzări 10% și 5% — toate în selectorul de cote de mai sus.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cum funcționează — formula</h2>
 <p>Calculatorul nu stochează date și face o singură operație aritmetică pe mod. În modul Adaugă SST tratează suma ta ca preț net: înmulțește netul cu cota aleasă împărțită la 100 pentru a obține SST, apoi le adună pentru prețul brut pe care îl percepi. În modul Elimină SST tratează suma ta ca preț brut, cu SST inclus — genul tipărit pe un bon sau o etichetă de raft din Malaezia — și o împarte la (1 + cotă ÷ 100) pentru a recupera suma netă; diferența dintre brut și net este SST-ul conținut în preț. Cele două moduri sunt inverse exacte pentru calculele de preț — eliminarea SST dintr-o cifră cu taxa inclusă și adăugarea lui înapoi returnează suma inițială, mai puțin rotunjirea la două zecimale în MYR. Reține însă că SST însuși este cu o singură etapă: spre deosebire de TVA, nu există credit pentru SST-ul plătit pe propriile intrări.</p>
 <h3>Exemplu calculat</h3>
-<p>Folosind cota standard de 8% cu sume mai mari: un preț net de RM 250.00 plus SST dă un SST de <span id="exDAddVat">…</span> și un preț brut de <span id="exDAddGross">…</span>. În sens invers, un preț brut de RM 250.00 se împarte într-o sumă netă de <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Ambele rezultate sunt inserate în timp real de codul calculatorului propriu al acestei pagini.</p>
+<p>Folosind cota standard de 8% cu sume mai mari: un preț net de RM 250.00 plus SST dă un SST de <span id="exDAddVat">…</span> și un preț brut de <span id="exDAddGross">…</span>. În sens invers, un preț brut de RM 250.00 se împarte într-o sumă netă de <span id="exDRemNet">…</span> și SST în valoare de <span id="exDRemVat">…</span>. Ambele rezultate sunt inserate în timp real de codul calculatorului propriu al acestei pagini.</p>
 <h3>Întrebări frecvente</h3>
 <div class="faq"><h3>Ce trebuie să arate o factură SST în Malaezia?</h3><p>O factură de taxă pe servicii de la un prestator înregistrat arată numele, adresa și numărul de înregistrare SST al prestatorului, numărul și data facturii, o descriere a serviciului, suma fără taxă, cota și suma taxei pe servicii și totalul în MYR. Taxa pe vânzări este arătată pe facturile producătorilor și importatorilor conform regulilor Legii taxei pe vânzări.</p></div>
 <div class="faq"><h3>Vând servicii din străinătate către malaezieni — se aplică SST?</h3><p>Prestatorii străini de servicii digitale către consumatorii malaezieni trebuie să se înregistreze pentru taxa pe servicii și să perceapă 8% (regimul serviciilor impozabile importate). Întreprinderile malaeziene care importă servicii își contabilizează singure taxa pe servicii conform regulilor de tip taxare inversă pentru serviciile impozabile importate.</p></div>
