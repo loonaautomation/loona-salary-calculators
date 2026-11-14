@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">提供的年總工資 (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">該工資包含8%假期津貼嗎？</label>
-<select id="hol"><option value="yes" selected>是，它包含</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>是，它包含</option><option value="no">否 — 另加 8%</option></select></div>
 </div>
 <label for="cat">哪個工資規範適用於您？</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">在開始前的24個月中，您是否在這些月份中至少16個月住在距荷蘭邊境150 km以外？</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>是</option><option value="no">否</option></select></div>
 <div><label for="recr">您是從國外招聘的嗎（在住在荷蘭之外時被僱用，或借調）？</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">不 — 我已經住在荷蘭</option></select></div>
+<select id="recr"><option value="yes" selected>是</option><option value="no">不 — 我已經住在荷蘭</option></select></div>
 </div>
 <label for="empl">您的僱主是荷蘭工資稅預扣代理人（荷蘭僱主或荷蘭工資發放）嗎？</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>是</option><option value="no">否</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何運作 — 公式</h2>
 <p>檢查器按Belastingdienst應用它們的順序應用2026年測試。首先，您的報價放在年度基礎上（如果不含8%假期津貼則 × 1.08）。工資測試然後詢問30%免稅津貼後您的應稅工資是否仍超過規範 — €48,013，或€36,497如果您30歲以下持有符合資格的碩士學位；科學研究人員和專科培訓醫生完全跳過此測試。如果全額30%將違反規範但工資本身清除它，您仍然透過，津貼減少等於工資 − 規範。其餘三個測試 — 150 km歷史、從國外招聘和荷蘭工資稅預扣僱主 — 是硬性條件：任何一個失敗都使整個檢查失敗。</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">工作例子</h3>
-<p>每年€52,000的報價含假期津貼，標準規範，對其他三個測試回答“是”。工資本身清除€48,013，但全額30%津貼 (€15,600) 將僅留下€36,400應稅工資 — 低於規範。結果： <strong>“您可能符合資格 — 津貼減少”</strong> of €52,000 − €48,013 = <strong>每年 €3,987</strong>，這使應稅工資保持在€48,013規範水平。</p>
+<p>每年€52,000的報價含假期津貼，標準規範，對其他三個測試回答“是”。工資本身清除€48,013，但全額30%津貼 (€15,600) 將僅留下€36,400應稅工資 — 低於規範。結果： <strong>“您可能符合資格 — 津貼減少”</strong> 即 €52,000 − €48,013 = <strong>每年 €3,987</strong>，這使應稅工資保持在€48,013規範水平。</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">常見問題</h3>
 <div class="faq"><h3>150 km距離究竟如何測量？</h3><p>從您的家到荷蘭邊境最近點的直線 — 不是到您的工作場所或阿姆斯特丹 — 您必須在第一個工作日之前的24個月中至少16個月住在該距離之外。早期在荷蘭居住或工作的時期也縮短裁定的最長持續時間。</p></div>
 <div class="faq"><h3>我是研究人員 — 如果我透過，我獲得多少津貼？</h3><p>工資的完整30%高達€262,000上限，無工資規範測試：在€30,000研究工資上，此檢查器顯示€9,000免稅津貼。您仍需要其他條件 — 從國外招聘、150 km歷史和荷蘭預扣僱主。</p></div>

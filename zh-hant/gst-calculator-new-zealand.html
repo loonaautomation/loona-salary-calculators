@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何計算</h2>
 <p>紐西蘭GST對大多數供應按15%收取。兩個公式是：</p>
 <ul>
-<li><strong>Add GST:</strong> GST = 淨額 × 15 ÷ 100,，總價 = 淨額 + GST。</li>
+<li><strong>新增GST:</strong> GST = 淨額 × 15 ÷ 100,，總價 = 淨額 + GST。</li>
 <li><strong>刪除GST:</strong> 淨額 = 總價 ÷（1 + 15 ÷ 100），GST = 總價 − 淨額。</li>
 <li><strong>標準費率：</strong> 15%. <strong>其他費率：</strong> 單一統一費率15% — 沒有優惠費率；改為適用零稅率和免稅類別（見FAQ）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何運作 — 公式</h2>
 <p>計算器不儲存資料，每個模式做一段算術。在新增GST模式中，它將您的金額視為淨價：它將淨收入乘以所選費率除以100得到GST，然後將兩者相加得到您收取的總價。在刪除GST模式中，它將您的金額視為總價、含GST價格 — 印在紐西蘭收據或貨架標籤上的那種 — 並將其除以 (1 + 費率 ÷ 100) 恢復淨金額；總收入和淨收入之間的差是價格中包含的GST。因為紐西蘭消費者價格顯示含GST，企業價格通常以加GST報價，兩種模式是確切逆運算：從總數字中刪除GST然後加回返回原始金額，除了四捨五入到NZD的兩位小數。</p>
 <h3>工作例子</h3>
-<p>使用15%標準費率和較大金額：NZ$ 250.00淨價加GST給出GST <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，NZ$ 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
+<p>使用15%標準費率和較大金額：NZ$ 250.00淨價加GST給出GST <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，NZ$ 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> 以及 GST 為 <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
 <h3>常見問題</h3>
 <div class="faq"><h3>紐西蘭的稅務發票必須顯示什麼？</h3><p>稅務發票必須顯示“稅務發票”字樣、賣方的姓名和GST號碼、日期、商品或服務的描述，以及GST金額或價格包含GST的宣告。自2023年四月起，規則基於資訊而不是格式，所以合規記錄（包括電子發票）計數。</p></div>
 <div class="faq"><h3>我從紐西蘭向海外客戶銷售 — 是否徵收 GST？</h3><p>出口零稅率：您收取0% GST，仍可以索賠您成本的GST，只要出口規則和證據要求滿足。當服務執行時在紐西蘭外的非居民供應的服務也可以零稅率。</p></div>

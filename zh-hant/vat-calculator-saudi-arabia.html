@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何計算</h2>
 <p>沙烏地阿拉伯對大多數商品和服務按 15% 徵收增值稅。兩個公式如下：</p>
 <ul>
-<li><strong>Add VAT:</strong> 增值稅 = 淨額 × 15 ÷ 100,，總價 = 淨額 + 增值稅。</li>
+<li><strong>新增VAT:</strong> 增值稅 = 淨額 × 15 ÷ 100,，總價 = 淨額 + 增值稅。</li>
 <li><strong>刪除VAT:</strong> 淨額 = 總價 ÷（1 + 15 ÷ 100），增值稅 = 總價 − 淨額。</li>
 <li><strong>標準費率：</strong> 15%. <strong>其他費率：</strong> 沒有優惠費率 — 改為適用零稅率和免稅類別（見FAQ）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何運作 — 公式</h2>
 <p>計算器不儲存資料，每個模式做一段算術。在新增VAT模式中，它將您的金額視為淨價：它將淨收入乘以所選費率除以100得到VAT，然後將兩者相加得到您收取的總價。在刪除VAT模式中，它將您的金額視為總價、含VAT價格 — 印在沙烏地阿拉伯收據或貨架標籤上的那種 — 並將其除以 (1 + 費率 ÷ 100) 恢復淨金額；總收入和淨收入之間的差是價格中包含的VAT。因為沙烏地阿拉伯消費者價格以含VAT報價，企業價格通常以淨價報價，兩種模式是確切逆運算：從總數字中刪除VAT然後加回返回原始金額，除了四捨五入到SAR的兩位小數。</p>
 <h3>工作例子</h3>
-<p>使用15%標準費率和較大金額：SAR 250.00淨價加VAT給出VAT <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，SAR 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
+<p>使用15%標準費率和較大金額：SAR 250.00淨價加VAT給出VAT <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，SAR 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> 以及 VAT 為 <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
 <h3>常見問題</h3>
 <div class="faq"><h3>沙烏地阿拉伯的增值稅發票必須顯示什麼？</h3><p>稅務發票必須顯示唯一順序編號、簽發日期、賣方和買方的姓名、地址和VAT號碼、商品或服務的描述、淨金額、VAT稅率、VAT金額以SAR計和總額。在FATOORA電子發票規則下，發票還必須帶加密印章和QR碼，並透過ZATCA的系統清除或報告。</p></div>
 <div class="faq"><h3>我從沙烏地阿拉伯向國外客戶銷售 — 哪個VAT適用？</h3><p>向沙烏地阿拉伯外（和實施的海灣合作委員會州外）客戶的貨物和服務出口零稅率，前提是您持有ZATCA要求的運輸和海關證據。進口到沙烏地阿拉伯吸引15% VAT，通常由註冊企業在反向收費下自我評估。</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何計算</h2>
 <p>南非VAT由註冊供應商對大多數應稅供應按15%收取。兩個公式是：</p>
 <ul>
-<li><strong>Add VAT:</strong> 增值稅 = 淨額 × 15 ÷ 100,，總價 = 淨額 + 增值稅。</li>
+<li><strong>新增VAT:</strong> 增值稅 = 淨額 × 15 ÷ 100,，總價 = 淨額 + 增值稅。</li>
 <li><strong>刪除VAT:</strong> 淨額 = 總價 ÷（1 + 15 ÷ 100），增值稅 = 總價 − 淨額。</li>
 <li><strong>標準費率：</strong> 15%. <strong>其他費率：</strong> 單一標準稅率 15% — 零稅率和免稅類別另行適用（見常見問題）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何運作 — 公式</h2>
 <p>計算器不儲存資料，每個模式做一段算術。在新增VAT模式中，它將您的金額視為淨價：它將淨收入乘以所選費率除以100得到VAT，然後將兩者相加得到您收取的總價。在刪除VAT模式中，它將您的金額視為總價、含VAT價格 — 印在南非收據或貨架標籤上的那種 — 並將其除以 (1 + 費率 ÷ 100) 恢復淨金額；總收入和淨收入之間的差是價格中包含的VAT。因為南非消費者價格在法律上以含VAT報價，企業價格通常以不含VAT報價，兩種模式是確切逆運算：從總數字中刪除VAT然後加回返回原始金額，除了四捨五入到ZAR的兩位小數。</p>
 <h3>工作例子</h3>
-<p>使用15%標準費率和較大金額：R 250.00淨價加VAT給出VAT <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，R 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
+<p>使用15%標準費率和較大金額：R 250.00淨價加VAT給出VAT <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，R 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> 以及 VAT 為 <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
 <h3>常見問題</h3>
 <div class="faq"><h3>南非的稅務發票必須顯示什麼？</h3><p>對於超過R50的供應，完整稅務發票必須顯示“稅務發票”字樣、供應商和買方的姓名、地址和VAT號碼、唯一發票編號和日期、商品或服務的描述和數量、VAT排除金額、收取的VAT和以蘭特計的含VAT總額。簡略發票允許至R5,000。</p></div>
 <div class="faq"><h3>我從南非向國外客戶銷售 — 收取VAT嗎？</h3><p>如果貨物在規定規則內出口並保留檔案證明，出口零稅率；當法定條件滿足時，對非居民客戶的許多服務也零稅率。進口服務和進口貨物在進入時吸引VAT，通常由海關或反向收費規則處理。</p></div>

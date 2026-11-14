@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何計算</h2>
 <p>阿聯酋VAT對大多數商品和服務按5%收取。兩個公式是：</p>
 <ul>
-<li><strong>Add VAT:</strong> 增值稅 = 淨額 × 5 ÷ 100,，總價 = 淨額 + 增值稅。</li>
+<li><strong>新增VAT:</strong> 增值稅 = 淨額 × 5 ÷ 100,，總價 = 淨額 + 增值稅。</li>
 <li><strong>刪除VAT:</strong> 淨額 = 總價 ÷（1 + 5 ÷ 100），增值稅 = 總價 − 淨額。</li>
 <li><strong>標準費率：</strong> 5%. <strong>其他費率：</strong> 沒有優惠費率 — 改為適用零稅率和免稅類別（見FAQ）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何運作 — 公式</h2>
 <p>計算器不儲存資料，每個模式做一段算術。在新增VAT模式中，它將您的金額視為淨價：它將淨收入乘以所選費率除以100得到VAT，然後將兩者相加得到您收取的總價。在刪除VAT模式中，它將您的金額視為總價、含VAT價格 — 印在阿聯酋收據或貨架標籤上的那種 — 並將其除以 (1 + 費率 ÷ 100) 恢復淨金額；總收入和淨收入之間的差是價格中包含的VAT。因為阿聯酋消費者價格以含VAT報價，企業價格通常以淨價報價，兩種模式是確切逆運算：從總數字中刪除VAT然後加回返回原始金額，除了四捨五入到AED的兩位小數。</p>
 <h3>工作例子</h3>
-<p>使用5%標準費率和較大金額：AED 250.00淨價加VAT給出VAT <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，AED 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
+<p>使用5%標準費率和較大金額：AED 250.00淨價加VAT給出VAT <span id="exDAddVat">…</span> 以及總價格 <span id="exDAddGross">…</span>。反過來，AED 250.00的總價分解為淨金額 <span id="exDRemNet">…</span> 以及 VAT 為 <span id="exDRemVat">…</span>。兩個結果都由本頁自己的計算器程式碼實時注入。</p>
 <h3>常見問題</h3>
 <div class="faq"><h3>阿聯酋VAT發票必須顯示什麼？</h3><p>稅務發票必須顯示“稅務發票”字樣、供應商的姓名、地址和TRN、客戶的詳細資訊（註冊客戶的TRN)、順序發票編號和日期、商品或服務的描述和數量、淨金額、VAT稅率、VAT金額以AED計和總額。零售供應低於AED 10,000允許簡化發票。</p></div>
 <div class="faq"><h3>我從阿聯酋向國外客戶銷售 — 哪個VAT適用？</h3><p>海灣合作委員會VAT框架外的貨物和服務出口通常零稅率，前提是您保留所需出口證據（運輸檔案和商業證明）。進口通常由註冊企業在反向收費下核算，所以邊境不以現金支付VAT。</p></div>
