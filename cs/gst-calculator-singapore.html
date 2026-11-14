@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak se to počítá</h2>
 <p>GST (Singapur) se účtuje sazbou 9% u většiny zdanitelných dodávek. Oba vzorce jsou:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = čistá částka × 9 ÷ 100, a hrubá částka = čistá částka + GST.</li>
+<li><strong>Přidat GST:</strong> GST = čistá částka × 9 ÷ 100, a hrubá částka = čistá částka + GST.</li>
 <li><strong>Odebrat GST:</strong> Čistá částka = hrubá částka ÷ (1 + 9 ÷ 100) a GST = hrubá částka − čistá částka.</li>
 <li><strong>Standardní sazba:</strong> 9%. <strong>Jiné sazby:</strong> jedna základní sazba 9% — místo ní platí kategorie s nulovou sazbou a osvobozené kategorie (viz časté dotazy).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kalkulačka neukládá žádná data a provádí jeden aritmetický úkon na režim. V režimu Přidat GST zachází s vaší částkou jako s čistou cenou: vynásobí čistou částku zvolenou sazbou dělenou 100, aby získala GST, poté obě sečte pro hrubou cenu, kterou účtujete. V režimu Odebrat GST zachází s vaší částkou jako s hrubou cenou včetně GST — takovou, jaká se tiskne na singapurské účtence nebo regálovém štítku — a dělí ji (1 + sazba ÷ 100), aby získala zpět čistou částku; rozdíl mezi hrubou a čistou částkou je GST obsažená v ceně. Protože registrovaní maloobchodníci v Singapuru zobrazují ceny včetně GST, zatímco mnoho nabídek B2B je bez GST, jsou oba režimy přesnými inverzemi: odebrání GST z hrubého čísla a její opětovné přidání vrací původní částku, kromě zaokrouhlení na dvě desetinná místa v SGD.</p>
 <h3>Vypracovaný příklad</h3>
-<p>Při použití standardní sazby 9% s většími částkami: čistá cena S$ 250.00 plus GST dává GST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena S$ 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
+<p>Při použití standardní sazby 9% s většími částkami: čistá cena S$ 250.00 plus GST dává GST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena S$ 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> a GST ve výši <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
 <h3>Časté dotazy</h3>
 <div class="faq"><h3>Co musí obsahovat daňová faktura (Singapur)?</h3><p>Daňový doklad musí uvádět slova „tax invoice“, jméno dodavatele, adresu a registrační číslo GST, číslo faktury a datum, jméno a adresu zákazníka, popis zboží nebo služeb, splatnou částku bez GST, sazbu a částku GST a celkem včetně GST v SGD (s částkou GST uvedenou také v SGD pro faktury v cizí měně).</p></div>
 <div class="faq"><h3>Prodávám zákazníkům v zahraničí (odesílám z Singapur) — účtuje se GST?</h3><p>Export zboží a kvalifikujících se mezinárodních služeb má nulovou sazbu 0%, za předpokladu udržování požadovaných důkazů exportu. Naopak zahraniční prodejci digitálních a jiných dovážených služeb singapurským spotřebitelům se registrují v rámci režimu registrace zahraničních dodavatelů a účtují 9% GST.</p></div>

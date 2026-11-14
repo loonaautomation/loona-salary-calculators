@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak se to počítá</h2>
 <p>VAT (Saúdská Arábie) se účtuje sazbou 15% u většiny zboží a služeb. Oba vzorce jsou:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = čistá částka × 15 ÷ 100, a hrubá částka = čistá částka + VAT.</li>
+<li><strong>Přidat DPH:</strong> VAT = čistá částka × 15 ÷ 100, a hrubá částka = čistá částka + VAT.</li>
 <li><strong>Odebrat DPH:</strong> Čistá částka = hrubá částka ÷ (1 + 15 ÷ 100) a VAT = hrubá částka − čistá částka.</li>
 <li><strong>Standardní sazba:</strong> 15%. <strong>Jiné sazby:</strong> žádná snížená sazba — místo toho platí kategorie s nulovou sazbou a osvobozené (viz FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kalkulačka neukládá žádná data a provádí jeden aritmetický úkon na režim. V režimu Přidat DPH zachází s vaší částkou jako s čistou cenou: vynásobí čistou částku zvolenou sazbou dělenou 100, aby získala DPH, poté obě sečte pro hrubou cenu, kterou účtujete. V režimu Odebrat DPH zachází s vaší částkou jako s hrubou cenou včetně DPH — takovou, jaká se tiskne na saúdské účtence nebo regálovém štítku — a dělí ji (1 + sazba ÷ 100), aby získala zpět čistou částku; rozdíl mezi hrubou a čistou částkou je DPH obsažená v ceně. Protože spotřebitelské ceny v Saúdské Arábii jsou uváděny včetně DPH a obchodní ceny jsou obvykle uváděny čisté, jsou oba režimy přesnými inverzemi: odebrání DPH z hrubého čísla a její opětovné přidání vrací původní částku, kromě zaokrouhlení na dvě desetinná místa v SAR.</p>
 <h3>Vypracovaný příklad</h3>
-<p>Při použití standardní sazby 15% s většími částkami: čistá cena SAR 250.00 plus DPH dává DPH ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena SAR 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
+<p>Při použití standardní sazby 15% s většími částkami: čistá cena SAR 250.00 plus DPH dává DPH ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena SAR 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> a DPH ve výši <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
 <h3>Časté dotazy</h3>
 <div class="faq"><h3>Co musí obsahovat faktura s VAT (Saúdská Arábie)?</h3><p>Daňový doklad musí uvádět jedinečné pořadové číslo, datum vydání, jména prodávajícího a kupujícího, adresy a DIČ, popis zboží nebo služeb, čistou částku, sazbu DPH, částku DPH v SAR a hrubý celkem. Podle pravidel elektronické fakturace FATOORA musí faktury také nést kryptografické razítko a QR kód a být schváleny nebo nahlášeny prostřednictvím systému ZATCA.</p></div>
 <div class="faq"><h3>Prodávám ze Saúdské Arábie zákazníkům v zahraničí — která DPH platí?</h3><p>Export zboží a kvalifikujících se služeb zákazníkům mimo Saúdskou Arábii (a mimo prováděcí stát GCC) má nulovou sazbu, za předpokladu, že máte důkazy o přepravě a celní důkazy, které ZATCA požaduje. Dovozy do Saúdské Arábie přitahují 15% DPH, obvykle samovyměřenou v rámci přenesené daňové povinnosti registrovanými podniky.</p></div>

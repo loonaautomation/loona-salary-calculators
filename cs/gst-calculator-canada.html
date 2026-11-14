@@ -104,7 +104,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak se to počítá</h2>
 <p>Daň z prodeje v Kanadě je federální 5% GST plus provinční vrstva, která závisí na provincii dodávky. Dva vzorce jsou:</p>
 <ul>
-<li><strong>Add GST/HST:</strong> GST/HST = Čistá × 13 ÷ 100 a Hrubá = Čistá + GST/HST.</li>
+<li><strong>Přidat GST/HST:</strong> GST/HST = Čistá × 13 ÷ 100 a Hrubá = Čistá + GST/HST.</li>
 <li><strong>Odebrat GST/HST:</strong> Čistá = Hrubá ÷ (1 + 13 ÷ 100) a GST/HST = Hrubá − Čistá.</li>
 <li><strong>Standardní sazba:</strong> 13%. <strong>Jiné sazby:</strong> Samotná 5% GST, 14% nebo 15% HST a kombinace PST/RST/QST — vše ve voliči sazeb výše.</li>
 
@@ -141,7 +141,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kalkulačka neukládá žádná data a provádí jeden aritmetický úkon na režim. V režimu Přidat GST/HST zachází s vaší částkou jako s čistou cenou: vynásobí čistou částku zvolenou sazbou dělenou 100, aby získala GST/HST, poté obě sečte pro hrubou cenu, kterou účtujete. V režimu Odebrat GST/HST zachází s vaší částkou jako s hrubou cenou včetně GST/HST — takovou, jaká se tiskne na kanadské účtence nebo regálovém štítku — a dělí ji (1 + sazba ÷ 100), aby získala zpět čistou částku; rozdíl mezi hrubou a čistou částkou je GST/HST obsažená v ceně. Protože spotřebitelské ceny v Kanadě jsou v mnoha provinciích u pokladny obvykle uváděny před daní — zatímco vyvěšené ceny včetně HST jsou v jiných běžné — oba režimy vám umožňují pracovat oběma způsoby: odebrání daně z hrubého čísla a její opětovné přidání vrací původní částku, kromě zaokrouhlení na dvě desetinná místa v CAD.</p>
 <h3>Vypracovaný příklad</h3>
-<p>Při použití standardní sazby 13% s většími částkami: čistá cena $ 250.00 plus GST/HST dává GST/HST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena $ 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> and GST/HST of <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
+<p>Při použití standardní sazby 13% s většími částkami: čistá cena $ 250.00 plus GST/HST dává GST/HST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena $ 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> a GST/HST ve výši <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
 <h3>Časté dotazy</h3>
 <div class="faq"><h3>Co musí uvádět prodejní faktura v Kanadě?</h3><p>Faktura pro účely GST/HST by měla uvádět jméno prodávajícího a číslo účtu GST/HST, datum, popis zboží nebo služeb, zaplacenou částku a zaplacenou daň nebo prohlášení, že daň je zahrnuta — plus jméno kupujícího pro větší prodeje. V provinciích PST/QST jsou provinční daň a registrační čísla uvedeny jako samostatné řádky.</p></div>
 <div class="faq"><h3>Prodávám z Kanady zákazníkům v jiných provinciích nebo zemích — která sazba platí?</h3><p>Obecně sazba provincie, kde je zboží dodáno nebo služby spotřebovány (pravidla „místa dodávky“), ne vaší vlastní provincie — takže prodejce z Ontaria, který zasílá do BC, účtuje 5% GST plus pravidla PST BC a zboží vyvážené mimo Kanadu má obvykle nulovou sazbu pro GST/HST. Povinnosti registrace mohou v provinciích PST a Quebecu vzniknout i pro prodejce mimo provincii.</p></div>

@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Nabízená hrubá roční mzda (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Zahrnuje tato mzda 8% příspěvek na dovolenou?</label>
-<select id="hol"><option value="yes" selected>Ano, je zahrnuto</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Ano, je zahrnuto</option><option value="no">Ne — přidat 8% navíc</option></select></div>
 </div>
 <label for="cat">Která platová norma pro vás platí?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Ve 24 měsících před nástupem jste žili více než 150 km od nizozemských hranic nejméně 16 z těchto měsíců?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Ano</option><option value="no">Ne</option></select></div>
 <div><label for="recr">Byli jste nabráni ze zahraničí (najati během bydlení mimo Nizozemsko, nebo vysláni)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Ne — už jsem žil v Nizozemsku</option></select></div>
+<select id="recr"><option value="yes" selected>Ano</option><option value="no">Ne — už jsem žil v Nizozemsku</option></select></div>
 </div>
 <label for="empl">Je váš zaměstnavatel nizozemským plátcem srážkové daně ze mzdy (nizozemský zaměstnavatel nebo nizozemské mzdy)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Ano</option><option value="no">Ne</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kontrola uplatňuje testy pro rok 2026 v pořadí, v jakém je uplatňuje Belastingdienst. Nejprve se vaše nabídka převede na roční základ (× 1.08, pokud vylučuje 8% příspěvek na dovolenou). Platový test se poté ptá, zda by vaše zdanitelná mzda po 30% nezdanitelném příspěvku stále překročila normu — €48,013, nebo €36,497, pokud je vám pod 30 a máte kvalifikující magisterský titul; vědečtí výzkumníci a lékaři v odborné přípravě tento test zcela přeskočí. Pokud by celých 30% normu porušilo, ale samotná mzda ji splňuje, stále projdete, se sníženým příspěvkem rovným mzda − norma. Zbývající tři testy — historie 150 km, nábor ze zahraničí a nizozemský zaměstnavatel plátce srážkové daně ze mzdy — jsou tvrdé podmínky: nesplnění kteréhokoli z nich znamená neúspěch celé kontroly.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Vypracovaný příklad</h3>
-<p>Nabídka €52,000 ročně včetně příspěvku na dovolenou, standardní norma a „ano“ u ostatních tří testů. Samotná mzda splňuje €48,013, ale plný příspěvek 30% (€15,600) by ponechal pouze €36,400 zdanitelné mzdy — pod normou. Výsledek: <strong>„Pravděpodobně splňujete podmínky — se sníženou nezdanitelnou částkou“</strong> of €52,000 − €48,013 = <strong>€3,987 ročně</strong>, což udržuje zdanitelnou mzdu na normové úrovni €48,013.</p>
+<p>Nabídka €52,000 ročně včetně příspěvku na dovolenou, standardní norma a „ano“ u ostatních tří testů. Samotná mzda splňuje €48,013, ale plný příspěvek 30% (€15,600) by ponechal pouze €36,400 zdanitelné mzdy — pod normou. Výsledek: <strong>„Pravděpodobně splňujete podmínky — se sníženou nezdanitelnou částkou“</strong> ve výši €52,000 − €48,013 = <strong>€3,987 ročně</strong>, což udržuje zdanitelnou mzdu na normové úrovni €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Časté dotazy</h3>
 <div class="faq"><h3>Jak přesně se měří vzdálenost 150 km?</h3><p>V přímé linii od vašeho domova k nejbližšímu bodu nizozemských hranic — ne k vašemu pracovišti nebo do Amsterdamu — a musíte mít bydliště za touto vzdáleností nejméně 16 z 24 měsíců před vaším prvním pracovním dnem. Dřívější období bydlení nebo práce v Nizozemsku rovněž zkracují maximální dobu trvání pravidla.</p></div>
 <div class="faq"><h3>Jsem výzkumník — kolik příspěvku dostanu, pokud splním podmínky?</h3><p>Celých 30% mzdy do stropu €262,000, bez testu platové normy: při výzkumné mzdě €30,000 tato kontrola ukazuje nezdanitelný příspěvek €9,000. Stále potřebujete ostatní podmínky — nábor ze zahraničí, historii 150 km a nizozemského zaměstnavatele plátce srážek.</p></div>

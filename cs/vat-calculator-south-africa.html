@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak se to počítá</h2>
 <p>DPH v Jižní Africe se účtuje 15% u většiny zdanitelných dodávek registrovanými dodavateli. Dva vzorce jsou:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = čistá částka × 15 ÷ 100, a hrubá částka = čistá částka + VAT.</li>
+<li><strong>Přidat DPH:</strong> VAT = čistá částka × 15 ÷ 100, a hrubá částka = čistá částka + VAT.</li>
 <li><strong>Odebrat DPH:</strong> Čistá částka = hrubá částka ÷ (1 + 15 ÷ 100) a VAT = hrubá částka − čistá částka.</li>
 <li><strong>Standardní sazba:</strong> 15%. <strong>Jiné sazby:</strong> jedna základní sazba 15% — místo ní platí kategorie s nulovou sazbou a osvobozené kategorie (viz časté dotazy).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kalkulačka neukládá žádná data a provádí jeden aritmetický úkon na režim. V režimu Přidat DPH zachází s vaší částkou jako s čistou cenou: vynásobí čistou částku zvolenou sazbou dělenou 100, aby získala DPH, poté obě sečte pro hrubou cenu, kterou účtujete. V režimu Odebrat DPH zachází s vaší částkou jako s hrubou cenou včetně DPH — takovou, jaká se tiskne na jihoafrické účtence nebo regálovém štítku — a dělí ji (1 + sazba ÷ 100), aby získala zpět čistou částku; rozdíl mezi hrubou a čistou částkou je DPH obsažená v ceně. Protože jihoafrické spotřebitelské ceny jsou ze zákona uváděny včetně DPH a obchodní ceny jsou často uváděny bez DPH, jsou oba režimy přesnými inverzemi: odebrání DPH z hrubého čísla a její opětovné přidání vrací původní částku, kromě zaokrouhlení na dvě desetinná místa v ZAR.</p>
 <h3>Vypracovaný příklad</h3>
-<p>Při použití standardní sazby 15% s většími částkami: čistá cena R 250.00 plus DPH dává DPH ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena R 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
+<p>Při použití standardní sazby 15% s většími částkami: čistá cena R 250.00 plus DPH dává DPH ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena R 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> a DPH ve výši <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
 <h3>Časté dotazy</h3>
 <div class="faq"><h3>Co musí obsahovat daňová faktura (Jihoafrická republika)?</h3><p>Pro dodávky nad R50 musí úplný daňový doklad uvádět slova „tax invoice“, jména dodavatele a kupujícího, adresy a DIČ, jedinečné číslo faktury a datum, popis a množství zboží nebo služeb, částku bez DPH, účtovanou DPH a celkem včetně DPH v randech. Zkrácené faktury jsou povoleny do R5,000.</p></div>
 <div class="faq"><h3>Prodávám z Jižní Afriky zákazníkům v zahraničí — účtuje se DPH?</h3><p>Export má nulovou sazbu, pokud je zboží vyvezeno v rámci předepsaných pravidel a uchovává se dokumentární důkaz; mnoho služeb zákazníkům nerezidentům má také nulovou sazbu, když jsou splněny zákonné podmínky. Dovážené služby a dovážené zboží přitahují DPH při vstupu, obvykle řešeno celními orgány nebo pravidly přenesené daňové povinnosti.</p></div>

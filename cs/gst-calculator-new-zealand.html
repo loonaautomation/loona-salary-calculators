@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak se to počítá</h2>
 <p>GST na Novém Zélandu se účtuje 15% u většiny dodávek. Dva vzorce jsou:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = čistá částka × 15 ÷ 100, a hrubá částka = čistá částka + GST.</li>
+<li><strong>Přidat GST:</strong> GST = čistá částka × 15 ÷ 100, a hrubá částka = čistá částka + GST.</li>
 <li><strong>Odebrat GST:</strong> Čistá částka = hrubá částka ÷ (1 + 15 ÷ 100) a GST = hrubá částka − čistá částka.</li>
 <li><strong>Standardní sazba:</strong> 15%. <strong>Jiné sazby:</strong> jedinou paušální sazbou 15% — žádná snížená sazba; místo toho platí kategorie s nulovou sazbou a osvobozené (viz FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kalkulačka neukládá žádná data a provádí jeden aritmetický úkon na režim. V režimu Přidat GST zachází s vaší částkou jako s čistou cenou: vynásobí čistou částku zvolenou sazbou dělenou 100, aby získala GST, poté obě sečte pro hrubou cenu, kterou účtujete. V režimu Odebrat GST zachází s vaší částkou jako s hrubou cenou včetně GST — takovou, jaká se tiskne na novozélandské účtence nebo regálovém štítku — a dělí ji (1 + sazba ÷ 100), aby získala zpět čistou částku; rozdíl mezi hrubou a čistou částkou je GST obsažená v ceně. Protože spotřebitelské ceny na Novém Zélandu jsou zobrazovány včetně GST a obchodní ceny jsou často uváděny plus GST, jsou oba režimy přesnými inverzemi: odebrání GST z hrubého čísla a její opětovné přidání vrací původní částku, kromě zaokrouhlení na dvě desetinná místa v NZD.</p>
 <h3>Vypracovaný příklad</h3>
-<p>Při použití standardní sazby 15% s většími částkami: čistá cena NZ$ 250.00 plus GST dává GST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena NZ$ 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
+<p>Při použití standardní sazby 15% s většími částkami: čistá cena NZ$ 250.00 plus GST dává GST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena NZ$ 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> a GST ve výši <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
 <h3>Časté dotazy</h3>
 <div class="faq"><h3>Co musí obsahovat daňová faktura (Nový Zéland)?</h3><p>Daňový doklad musí uvádět slova „tax invoice“, jméno prodávajícího a číslo GST, datum, popis zboží nebo služeb a částku GST nebo prohlášení, že cena zahrnuje GST. Od dubna 2023 jsou pravidla založena na informacích spíše než na formátu, takže vyhovující záznamy (včetně e-faktur) se počítají.</p></div>
 <div class="faq"><h3>Prodávám zákazníkům v zahraničí (odesílám z Nový Zéland) — účtuje se GST?</h3><p>Export má nulovou sazbu: účtujete 0% GST a stále můžete nárokovat GST na své náklady, pokud jsou splněna pravidla exportu a požadavky na důkazy. Služby poskytované nerezidentům, kteří jsou mimo Nový Zéland, když jsou služby prováděny, mohou mít také nulovou sazbu.</p></div>

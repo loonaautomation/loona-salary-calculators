@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak se to počítá</h2>
 <p>SST v Malajsii se účtuje sazbou pro typ daně — daň ze služeb 8% standardní od 1. března 2024. Dva vzorce jsou:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Čistá × 8 ÷ 100 a Hrubá = Čistá + SST.</li>
+<li><strong>Přidat SST:</strong> SST = Čistá × 8 ÷ 100 a Hrubá = Čistá + SST.</li>
 <li><strong>Odebrat SST:</strong> Čistá = Hrubá ÷ (1 + 8 ÷ 100) a SST = Hrubá − Čistá.</li>
 <li><strong>Standardní sazba:</strong> 8%. <strong>Jiné sazby:</strong> daň ze služeb 6% (ponecháné kategorie), daň z prodeje 10% a 5% — vše ve voliči sazeb výše.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to funguje — vzorec</h2>
 <p>Kalkulačka neukládá žádná data a provádí jeden aritmetický úkon na režim. V režimu Přidat SST zachází s vaší částkou jako s čistou cenou: vynásobí čistou částku zvolenou sazbou dělenou 100, aby získala SST, poté obě sečte pro hrubou cenu, kterou účtujete. V režimu Odebrat SST zachází s vaší částkou jako s hrubou cenou včetně SST — takovou, jaká se tiskne na malajsijské účtence nebo regálovém štítku — a dělí ji (1 + sazba ÷ 100), aby získala zpět čistou částku; rozdíl mezi hrubou a čistou částkou je SST obsažená v ceně. Oba režimy jsou pro matematiku cen přesnými inverzemi — odebrání SST z čísla včetně daně a její opětovné přidání vrací původní částku, kromě zaokrouhlení na dvě desetinná místa v MYR. Pamatujte však, že samotná SST je jednostupňová: na rozdíl od DPH neexistuje žádný kredit za SST zaplacenou na vašich vlastních vstupech.</p>
 <h3>Vypracovaný příklad</h3>
-<p>Při použití standardní sazby 8% s většími částkami: čistá cena RM 250.00 plus SST dává SST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena RM 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
+<p>Při použití standardní sazby 8% s většími částkami: čistá cena RM 250.00 plus SST dává SST ve výši <span id="exDAddVat">…</span> a hrubou cenu <span id="exDAddGross">…</span>. Opačným směrem se hrubá cena RM 250.00 rozpadá na čistou částku <span id="exDRemNet">…</span> a SST ve výši <span id="exDRemVat">…</span>. Oba výsledky vkládá živě vlastní kód kalkulačky této stránky.</p>
 <h3>Časté dotazy</h3>
 <div class="faq"><h3>Co musí uvádět faktura SST v Malajsii?</h3><p>Faktura daně ze služeb od registrovaného poskytovatele uvádí jméno poskytovatele, adresu a registrační číslo SST, číslo faktury a datum, popis služby, částku bez daně, sazbu a částku daně ze služeb a celkem v MYR. Daň z prodeje je uvedena na fakturách výrobců a dovozců podle pravidel zákona o dani z prodeje.</p></div>
 <div class="faq"><h3>Prodávám služby ze zahraničí Malajsijcům — platí SST?</h3><p>Zahraniční poskytovatelé digitálních služeb malajsijským spotřebitelům se musí registrovat k dani ze služeb a účtovat 8% (režim dovážených zdanitelných služeb). Malajsijské podniky dovážející služby si samy účtují daň ze služeb podle pravidel ve stylu přenesené daňové povinnosti pro dovážené zdanitelné služby.</p></div>
