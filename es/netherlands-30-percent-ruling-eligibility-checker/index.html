@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Salario bruto anual ofrecido (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">¿Incluye ese salario la asignación por vacaciones del 8%?</label>
-<select id="hol"><option value="yes" selected>Sí, está incluido</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Sí, está incluido</option><option value="no">No — sumar el 8% adicional</option></select></div>
 </div>
 <label for="cat">¿Qué norma salarial se te aplica?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">En los 24 meses anteriores a empezar, ¿viviste a más de 150 km de la frontera neerlandesa durante al menos 16 de esos meses?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Sí</option><option value="no">No</option></select></div>
 <div><label for="recr">¿Fuiste reclutado desde el extranjero (contratado mientras vivías fuera de Países Bajos, o destinado)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">No — ya vivía en los Países Bajos</option></select></div>
+<select id="recr"><option value="yes" selected>Sí</option><option value="no">No — ya vivía en los Países Bajos</option></select></div>
 </div>
 <label for="empl">¿Es tu empleador un agente neerlandés de retención del impuesto sobre salarios (un empleador neerlandés o una nómina neerlandesa)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Sí</option><option value="no">No</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Cómo funciona — la fórmula</h2>
 <p>El verificador aplica las pruebas de 2026 en el orden en que las aplica el Belastingdienst. Primero, tu oferta se pone en base anual (× 1.08 si excluye la asignación por vacaciones del 8%). La prueba salarial luego pregunta si tu salario imponible después de una asignación libre de impuestos del 30% seguiría superando la norma — €48,013, o €36,497 si eres menor de 30 con un máster que califica; los investigadores científicos y los médicos en formación especializada se saltan esta prueba por completo. Si el 30% completo incumpliría la norma pero el salario en sí la supera, aún pasas, con una asignación reducida igual a salario − norma. Las tres pruebas restantes — el historial de 150 km, ser reclutado desde el extranjero y un empleador neerlandés que retiene el impuesto salarial — son condiciones estrictas: fallar cualquiera de ellas hace fallar toda la verificación.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Ejemplo resuelto</h3>
-<p>Oferta de €52,000 al año incluida la paga de vacaciones, norma estándar, y «sí» a las otras tres pruebas. El salario en sí supera los €48,013, pero una exención completa del 30% (€15,600) dejaría solo €36,400 de salario imponible — por debajo de la norma. Resultado: <strong>"Probablemente cumples los requisitos — con una asignación reducida"</strong> of €52,000 − €48,013 = <strong>€3,987 al año</strong>, lo que mantiene el salario imponible en el nivel de la norma de €48,013.</p>
+<p>Oferta de €52,000 al año incluida la paga de vacaciones, norma estándar, y «sí» a las otras tres pruebas. El salario en sí supera los €48,013, pero una exención completa del 30% (€15,600) dejaría solo €36,400 de salario imponible — por debajo de la norma. Resultado: <strong>"Probablemente cumples los requisitos — con una asignación reducida"</strong> de €52,000 − €48,013 = <strong>€3,987 al año</strong>, lo que mantiene el salario imponible en el nivel de la norma de €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Preguntas frecuentes</h3>
 <div class="faq"><h3>¿Cómo se mide exactamente la distancia de 150 km?</h3><p>En línea recta desde tu casa hasta el punto más cercano de la frontera neerlandesa — no hasta tu lugar de trabajo ni hasta Ámsterdam — y debes haber vivido más allá de esa distancia durante al menos 16 de los 24 meses anteriores a tu primer día de trabajo. Los períodos anteriores viviendo o trabajando en los Países Bajos también acortan la duración máxima de la regla.</p></div>
 <div class="faq"><h3>Soy investigador — ¿cuánta exención recibo si apruebo?</h3><p>El 30% completo del salario hasta el tope de €262,000, sin prueba de norma salarial: con un salario de investigación de €30,000 este verificador muestra una asignación libre de impuestos de €9,000. Aún necesitas las otras condiciones — reclutado desde el extranjero, el historial de 150 km y un empleador neerlandés que retiene.</p></div>
