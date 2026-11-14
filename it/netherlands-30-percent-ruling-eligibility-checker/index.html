@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Salario annuo lordo offerto (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Quello stipendio include l'indennità di ferie dell'8%?</label>
-<select id="hol"><option value="yes" selected>Sì, è incluso</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Sì, è incluso</option><option value="no">No — aggiungere l'8% in più</option></select></div>
 </div>
 <label for="cat">Quale norma salariale si applica a te?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Nei 24 mesi precedenti l'inizio, hai vissuto a più di 150 km dal confine olandese per almeno 16 di quei mesi?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Sì</option><option value="no">No</option></select></div>
 <div><label for="recr">Sei stato reclutato dall'estero (assunto mentre vivevi fuori dai Paesi Bassi, o distaccato)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">No — vivevo già nei Paesi Bassi</option></select></div>
+<select id="recr"><option value="yes" selected>Sì</option><option value="no">No — vivevo già nei Paesi Bassi</option></select></div>
 </div>
 <label for="empl">Il tuo datore di lavoro è un sostituto d'imposta olandese per i salari (un datore di lavoro olandese o un libro paga olandese)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Sì</option><option value="no">No</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Come funziona — la formula</h2>
 <p>Il verificatore applica i test 2026 nell'ordine in cui li applica il Belastingdienst. Per prima cosa, la tua offerta è portata su base annuale (× 1.08 se esclude l'indennità di ferie dell'8%). Il test salariale chiede poi se il tuo stipendio imponibile dopo un'indennità esentasse del 30% supererebbe comunque la norma — €48,013, o €36,497 se hai meno di 30 anni con una laurea magistrale idonea; i ricercatori scientifici e i medici in formazione specialistica saltano del tutto questo test. Se l'intero 30% violerebbe la norma ma lo stipendio in sé la supera, passi comunque, con un'indennità ridotta pari a stipendio − norma. I restanti tre test — lo storico dei 150 km, essere reclutato dall'estero e un datore di lavoro olandese che applica la ritenuta sull'imposta salariale — sono condizioni rigide: fallirne anche uno solo fa fallire l'intero controllo.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Esempio pratico</h3>
-<p>Offerta di €52,000 all'anno inclusa l'indennità di ferie, norma standard, e "sì" agli altri tre test. Il salario stesso supera €48,013, ma un'indennità completa del 30% (€15,600) lascerebbe solo €36,400 di salario imponibile — sotto la norma. Risultato: <strong>"Probabilmente hai i requisiti — con un'indennità ridotta"</strong> of €52,000 − €48,013 = <strong>€3,987 all'anno</strong>, che mantiene lo stipendio imponibile al livello della norma di €48,013.</p>
+<p>Offerta di €52,000 all'anno inclusa l'indennità di ferie, norma standard, e "sì" agli altri tre test. Il salario stesso supera €48,013, ma un'indennità completa del 30% (€15,600) lascerebbe solo €36,400 di salario imponibile — sotto la norma. Risultato: <strong>"Probabilmente hai i requisiti — con un'indennità ridotta"</strong> di €52,000 − €48,013 = <strong>€3,987 all'anno</strong>, che mantiene lo stipendio imponibile al livello della norma di €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Domande frequenti</h3>
 <div class="faq"><h3>Come viene misurata esattamente la distanza di 150 km?</h3><p>In linea retta da casa tua al punto più vicino del confine olandese — non al tuo luogo di lavoro né ad Amsterdam — e devi aver vissuto oltre tale distanza per almeno 16 dei 24 mesi precedenti il tuo primo giorno di lavoro. Anche i periodi precedenti di vita o lavoro nei Paesi Bassi riducono la durata massima del regime.</p></div>
 <div class="faq"><h3>Sono un ricercatore — quanta indennità ricevo se supero la verifica?</h3><p>L'intero 30% dello stipendio fino al tetto di €262,000, senza test della norma salariale: con uno stipendio da ricerca di €30,000 questo verificatore mostra un'indennità esentasse di €9,000. Ti servono comunque le altre condizioni — reclutamento dall'estero, lo storico dei 150 km e un datore di lavoro olandese che applica la ritenuta.</p></div>
