@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara menghitungnya</h2>
 <p>GST di India dikenakan pada tarif slab untuk barang atau jasa — 18% standar sejak 22 September 2025. Dua rumusnya adalah:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Bersih × 18 ÷ 100, dan Kotor = Bersih + GST.</li>
+<li><strong>Tambah GST:</strong> GST = Bersih × 18 ÷ 100, dan Kotor = Bersih + GST.</li>
 <li><strong>Hapus GST:</strong> Bersih = Kotor ÷ (1 + 18 ÷ 100), dan GST = Kotor − Bersih.</li>
 <li><strong>Tarif standar:</strong> 18%. <strong>Tarif lain:</strong> Merit 5%, demerit 40% dan 3% untuk emas dan barang berharga (semuanya dalam pemilih tarif di atas).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara kerjanya — rumusnya</h2>
 <p>Kalkulator ini tidak menyimpan data dan melakukan satu perhitungan untuk setiap mode. Dalam mode Tambah GST, jumlah Anda diperlakukan sebagai harga bersih: bersih dikalikan tarif yang dipilih dibagi 100 untuk mendapatkan GST, lalu keduanya dijumlahkan untuk harga kotor yang Anda kenakan. Dalam mode Hapus GST, jumlah Anda diperlakukan sebagai harga kotor yang sudah termasuk GST — jenis yang tercetak pada kuitansi atau label rak India — dan membaginya dengan (1 + tarif ÷ 100) untuk mendapatkan kembali jumlah bersih; selisih antara kotor dan bersih adalah GST yang terkandung dalam harga. Karena harga konsumen di India biasanya dikutip sudah termasuk GST (MRP) dan harga bisnis biasanya dikutip bersih, kedua mode ini adalah kebalikan yang persis: menghapus GST dari angka kotor lalu menambahkannya kembali menghasilkan jumlah semula, selain pembulatan ke dua tempat desimal dalam INR.</p>
 <h3>Contoh terapan</h3>
-<p>Menggunakan tarif standar 18% dengan jumlah yang lebih besar: harga bersih ₹ 250.00 ditambah GST memberikan GST sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor ₹ 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
+<p>Menggunakan tarif standar 18% dengan jumlah yang lebih besar: harga bersih ₹ 250.00 ditambah GST memberikan GST sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor ₹ 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> dan GST sebesar <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
 <h3>Pertanyaan yang sering diajukan</h3>
 <div class="faq"><h3>Apa yang harus ditampilkan faktur GST di India?</h3><p>Faktur pajak biasanya menunjukkan nama, alamat dan GSTIN pemasok dan pembeli, nomor faktur unik dan tanggal, kode HSN/SAC, deskripsi barang atau jasa, nilai kena pajak, pembagian tarif GST (CGST + SGST, atau IGST), jumlah GST dan total dalam INR. E-faktur (IRN) berlaku di atas ambang omzet yang diberitahukan.</p></div>
 <div class="faq"><h3>Saya menjual dari India ke pelanggan di negara bagian atau negara lain — GST mana yang berlaku?</h3><p>Melintasi batas negara bagian, kenakan IGST pada tarif gabungan yang sama. Ekspor bertarif nol: Anda dapat mengekspor tanpa mengenakan GST menurut Letter of Undertaking (LUT) dan mengklaim pengembalian pajak masukan. Sebelum memberi tarif nol pada pasokan B2B, Anda dapat memvalidasi GSTIN pembeli di portal GST dan menyimpan validasi sebagai bukti.</p></div>

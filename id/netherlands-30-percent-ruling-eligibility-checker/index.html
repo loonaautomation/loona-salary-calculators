@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Gaji kotor tahunan yang ditawarkan (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Apakah gaji tersebut termasuk tunjangan liburan 8%?</label>
-<select id="hol"><option value="yes" selected>Ya, termasuk</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Ya, termasuk</option><option value="no">Tidak — tambahkan 8% di atas</option></select></div>
 </div>
 <label for="cat">Norma gaji mana yang berlaku untuk Anda?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Dalam 24 bulan sebelum memulai, apakah Anda tinggal lebih dari 150 km dari perbatasan Belanda setidaknya 16 dari bulan-bulan tersebut?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Ya</option><option value="no">Tidak</option></select></div>
 <div><label for="recr">Apakah Anda direkrut dari luar negeri (dipekerjakan saat tinggal di luar Belanda, atau ditugaskan)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Tidak — saya sudah tinggal di Belanda</option></select></div>
+<select id="recr"><option value="yes" selected>Ya</option><option value="no">Tidak — saya sudah tinggal di Belanda</option></select></div>
 </div>
 <label for="empl">Apakah pemberi kerja Anda agen pemotong pajak upah Belanda (pemberi kerja Belanda atau penggajian Belanda)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Ya</option><option value="no">Tidak</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara kerjanya — rumusnya</h2>
 <p>Pemeriksa menerapkan pengujian 2026 dalam urutan yang diterapkan Belastingdienst. Pertama, penawaran Anda diletakkan pada pijakan tahunan (× 1.08 jika mengecualikan tunjangan liburan 8%). Pengujian gaji kemudian menanyakan apakah gaji kena pajak Anda setelah tunjangan bebas pajak 30% masih akan melebihi norma — €48,013, atau €36,497 jika Anda di bawah 30 tahun dengan gelar master yang memenuhi syarat; peneliti ilmiah dan dokter dalam pelatihan spesialis melewati pengujian ini sepenuhnya. Jika 30% penuh akan melanggar norma tetapi gaji itu sendiri melampauinya, Anda tetap lulus, dengan tunjangan yang dikurangi sebesar gaji − norma. Tiga pengujian yang tersisa — riwayat 150 km, direkrut dari luar negeri, dan pemberi kerja pemotong pajak upah Belanda — adalah kondisi keras: gagal pada salah satunya berarti gagal seluruh pemeriksaan.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Contoh terapan</h3>
-<p>Penawaran €52,000 setahun termasuk tunjangan liburan, norma standar, dan "ya" untuk tiga pengujian lainnya. Gaji itu sendiri melampaui €48,013, tetapi tunjangan 30% penuh (€15,600) akan menyisakan hanya €36,400 gaji kena pajak — di bawah norma. Hasil: <strong>"Anda kemungkinan memenuhi syarat — dengan tunjangan yang dikurangi"</strong> of €52,000 − €48,013 = <strong>€3,987 per tahun</strong>, yang menjaga gaji kena pajak pada tingkat norma €48,013.</p>
+<p>Penawaran €52,000 setahun termasuk tunjangan liburan, norma standar, dan "ya" untuk tiga pengujian lainnya. Gaji itu sendiri melampaui €48,013, tetapi tunjangan 30% penuh (€15,600) akan menyisakan hanya €36,400 gaji kena pajak — di bawah norma. Hasil: <strong>"Anda kemungkinan memenuhi syarat — dengan tunjangan yang dikurangi"</strong> sebesar €52,000 − €48,013 = <strong>€3,987 per tahun</strong>, yang menjaga gaji kena pajak pada tingkat norma €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Pertanyaan yang sering diajukan</h3>
 <div class="faq"><h3>Bagaimana tepatnya jarak 150 km diukur?</h3><p>Dalam garis lurus dari rumah Anda ke titik terdekat perbatasan Belanda — bukan ke tempat kerja Anda atau ke Amsterdam — dan Anda harus telah tinggal di luar jarak tersebut setidaknya 16 dari 24 bulan sebelum hari kerja pertama Anda. Periode tinggal atau bekerja di Belanda sebelumnya juga memperpendek durasi maksimum ruling.</p></div>
 <div class="faq"><h3>Saya seorang peneliti — berapa tunjangan yang saya dapatkan jika saya lulus?</h3><p>30% penuh dari gaji hingga batas €262,000, tanpa pengujian norma gaji: pada gaji penelitian €30,000 pemeriksa ini menunjukkan tunjangan bebas pajak €9,000. Anda tetap memerlukan kondisi lain — direkrut dari luar negeri, riwayat 150 km dan pemberi kerja pemotong Belanda.</p></div>

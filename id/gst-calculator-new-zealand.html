@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara menghitungnya</h2>
 <p>GST di Selandia Baru dikenakan 15% pada sebagian besar pasokan. Dua rumusnya adalah:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Bersih × 15 ÷ 100, dan Kotor = Bersih + GST.</li>
+<li><strong>Tambah GST:</strong> GST = Bersih × 15 ÷ 100, dan Kotor = Bersih + GST.</li>
 <li><strong>Hapus GST:</strong> Bersih = Kotor ÷ (1 + 15 ÷ 100), dan GST = Kotor − Bersih.</li>
 <li><strong>Tarif standar:</strong> 15%. <strong>Tarif lain:</strong> tarif tetap tunggal 15% — tidak ada tarif yang dikurangi; kategori berperingkat nol dan yang dikecualikan berlaku sebagai gantinya (lihat FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara kerjanya — rumusnya</h2>
 <p>Kalkulator ini tidak menyimpan data dan melakukan satu perhitungan untuk setiap mode. Dalam mode Tambah GST, jumlah Anda diperlakukan sebagai harga bersih: bersih dikalikan tarif yang dipilih dibagi 100 untuk mendapatkan GST, lalu keduanya dijumlahkan untuk harga kotor yang Anda kenakan. Dalam mode Hapus GST, jumlah Anda diperlakukan sebagai harga kotor yang sudah termasuk GST — jenis yang tercetak pada kuitansi atau label rak Selandia Baru — dan membaginya dengan (1 + tarif ÷ 100) untuk mendapatkan kembali jumlah bersih; selisih antara kotor dan bersih adalah GST yang terkandung dalam harga. Karena harga konsumen di Selandia Baru ditampilkan sudah termasuk GST dan harga bisnis sering dikutip ditambah GST, kedua mode ini adalah kebalikan yang persis: menghapus GST dari angka kotor lalu menambahkannya kembali menghasilkan jumlah semula, selain pembulatan ke dua tempat desimal dalam NZD.</p>
 <h3>Contoh terapan</h3>
-<p>Menggunakan tarif standar 15% dengan jumlah yang lebih besar: harga bersih NZ$ 250.00 ditambah GST memberikan GST sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor NZ$ 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
+<p>Menggunakan tarif standar 15% dengan jumlah yang lebih besar: harga bersih NZ$ 250.00 ditambah GST memberikan GST sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor NZ$ 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> dan GST sebesar <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
 <h3>Pertanyaan yang sering diajukan</h3>
 <div class="faq"><h3>Apa saja yang harus tercantum pada faktur pajak di Selandia Baru?</h3><p>Faktur pajak harus menunjukkan kata 'tax invoice', nama penjual dan nomor GST, tanggal, deskripsi barang atau jasa, dan jumlah GST atau pernyataan bahwa harga termasuk GST. Sejak April 2023 aturan bersifat berbasis informasi, bukan berbasis format, jadi catatan yang patuh (termasuk e-faktur) dihitung.</p></div>
 <div class="faq"><h3>Saya menjual dari Selandia Baru kepada pelanggan di luar negeri — apakah GST dikenakan?</h3><p>Ekspor bertarif nol: Anda mengenakan GST 0% dan tetap dapat mengklaim GST atas biaya Anda, selama aturan ekspor dan persyaratan bukti terpenuhi. Jasa yang dipasok kepada non-residen yang berada di luar Selandia Baru ketika jasa dilakukan juga dapat bertarif nol.</p></div>

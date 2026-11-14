@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara menghitungnya</h2>
 <p>VAT di UEA dikenakan 5% pada sebagian besar barang dan jasa. Dua rumusnya adalah:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Bersih × 5 ÷ 100, dan Kotor = Bersih + VAT.</li>
+<li><strong>Tambah VAT:</strong> VAT = Bersih × 5 ÷ 100, dan Kotor = Bersih + VAT.</li>
 <li><strong>Hapus VAT:</strong> Bersih = Kotor ÷ (1 + 5 ÷ 100), dan VAT = Kotor − Bersih.</li>
 <li><strong>Tarif standar:</strong> 5%. <strong>Tarif lain:</strong> tidak ada tarif yang dikurangi — kategori berperingkat nol dan yang dikecualikan berlaku sebagai gantinya (lihat FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara kerjanya — rumusnya</h2>
 <p>Kalkulator ini tidak menyimpan data dan melakukan satu perhitungan untuk setiap mode. Dalam mode Tambah VAT, jumlah Anda diperlakukan sebagai harga bersih: bersih dikalikan tarif yang dipilih dibagi 100 untuk mendapatkan VAT, lalu keduanya dijumlahkan untuk harga kotor yang Anda kenakan. Dalam mode Hapus VAT, jumlah Anda diperlakukan sebagai harga kotor yang sudah termasuk VAT — jenis yang tercetak pada kuitansi atau label rak UEA — dan membaginya dengan (1 + tarif ÷ 100) untuk mendapatkan kembali jumlah bersih; selisih antara kotor dan bersih adalah VAT yang terkandung dalam harga. Karena harga konsumen di UEA dikutip sudah termasuk VAT dan harga bisnis biasanya dikutip bersih, kedua mode ini adalah kebalikan yang persis: menghapus VAT dari angka kotor lalu menambahkannya kembali menghasilkan jumlah semula, selain pembulatan ke dua tempat desimal dalam AED.</p>
 <h3>Contoh terapan</h3>
-<p>Menggunakan tarif standar 5% dengan jumlah yang lebih besar: harga bersih AED 250.00 ditambah VAT memberikan VAT sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor AED 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
+<p>Menggunakan tarif standar 5% dengan jumlah yang lebih besar: harga bersih AED 250.00 ditambah VAT memberikan VAT sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor AED 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> dan VAT sebesar <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
 <h3>Pertanyaan yang sering diajukan</h3>
 <div class="faq"><h3>Apa yang harus ditampilkan faktur VAT di UEA?</h3><p>Faktur pajak harus menunjukkan kata 'Tax Invoice', nama, alamat dan TRN pemasok, detail pelanggan (dan TRN untuk pelanggan terdaftar), nomor faktur urut dan tanggal, deskripsi dan kuantitas barang atau jasa, jumlah bersih, tarif VAT, jumlah VAT dalam AED dan total kotor. Faktur sederhana diizinkan untuk pasokan ritel di bawah AED 10,000.</p></div>
 <div class="faq"><h3>Saya menjual dari UEA ke pelanggan di luar negeri — VAT mana yang berlaku?</h3><p>Ekspor barang dan jasa di luar kerangka VAT GCC umumnya bertarif nol, asalkan Anda menyimpan bukti ekspor yang diperlukan (dokumen pengiriman dan bukti komersial). Impor biasanya diperhitungkan menurut pembebanan terbalik oleh bisnis terdaftar, jadi tidak ada VAT yang dibayar di perbatasan secara tunai.</p></div>

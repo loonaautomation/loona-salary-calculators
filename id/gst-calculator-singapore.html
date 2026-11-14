@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara menghitungnya</h2>
 <p>GST di Singapura dikenakan sebesar 9% pada sebagian besar pasokan kena pajak. Kedua rumusnya adalah:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = Bersih × 9 ÷ 100, dan Kotor = Bersih + GST.</li>
+<li><strong>Tambah GST:</strong> GST = Bersih × 9 ÷ 100, dan Kotor = Bersih + GST.</li>
 <li><strong>Hapus GST:</strong> Bersih = Kotor ÷ (1 + 9 ÷ 100), dan GST = Kotor − Bersih.</li>
 <li><strong>Tarif standar:</strong> 9%. <strong>Tarif lain:</strong> satu tarif standar tunggal sebesar 9% — kategori tarif nol dan bebas pajak berlaku sebagai gantinya (lihat FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara kerjanya — rumusnya</h2>
 <p>Kalkulator ini tidak menyimpan data dan melakukan satu perhitungan untuk setiap mode. Dalam mode Tambah GST, jumlah Anda diperlakukan sebagai harga bersih: bersih dikalikan tarif yang dipilih dibagi 100 untuk mendapatkan GST, lalu keduanya dijumlahkan untuk harga kotor yang Anda kenakan. Dalam mode Hapus GST, jumlah Anda diperlakukan sebagai harga kotor yang sudah termasuk GST — jenis yang tercetak pada kuitansi atau label rak Singapura — dan membaginya dengan (1 + tarif ÷ 100) untuk mendapatkan kembali jumlah bersih; selisih antara kotor dan bersih adalah GST yang terkandung dalam harga. Karena peritel terdaftar di Singapura menampilkan harga sudah termasuk GST sementara banyak penawaran B2B tidak termasuk GST, kedua mode ini adalah kebalikan yang persis: menghapus GST dari angka kotor lalu menambahkannya kembali menghasilkan jumlah semula, selain pembulatan ke dua tempat desimal dalam SGD.</p>
 <h3>Contoh terapan</h3>
-<p>Menggunakan tarif standar 9% dengan jumlah yang lebih besar: harga bersih S$ 250.00 ditambah GST memberikan GST sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor S$ 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
+<p>Menggunakan tarif standar 9% dengan jumlah yang lebih besar: harga bersih S$ 250.00 ditambah GST memberikan GST sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor S$ 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> dan GST sebesar <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
 <h3>Pertanyaan yang sering diajukan</h3>
 <div class="faq"><h3>Apa saja yang harus tercantum pada faktur pajak di Singapura?</h3><p>Faktur pajak harus menunjukkan kata 'tax invoice', nama, alamat dan nomor registrasi GST pemasok, nomor faktur dan tanggal, nama dan alamat pelanggan, deskripsi barang atau jasa, jumlah yang terutang tanpa GST, tarif dan jumlah GST, dan total termasuk GST dalam SGD (dengan jumlah GST juga ditampilkan dalam SGD untuk faktur mata uang asing).</p></div>
 <div class="faq"><h3>Saya menjual dari Singapura kepada pelanggan di luar negeri — apakah GST dikenakan?</h3><p>Ekspor barang dan jasa internasional yang memenuhi syarat bertarif nol sebesar 0%, tunduk pada pemeliharaan bukti ekspor yang diperlukan. Sebaliknya, penjual luar negeri jasa digital dan jasa impor lainnya kepada konsumen Singapura mendaftar menurut rezim pendaftaran vendor luar negeri dan mengenakan GST 9%.</p></div>

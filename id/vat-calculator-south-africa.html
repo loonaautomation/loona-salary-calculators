@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara menghitungnya</h2>
 <p>VAT di Afrika Selatan dikenakan 15% pada sebagian besar pasokan kena pajak oleh vendor terdaftar. Dua rumusnya adalah:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = Bersih × 15 ÷ 100, dan Kotor = Bersih + VAT.</li>
+<li><strong>Tambah VAT:</strong> VAT = Bersih × 15 ÷ 100, dan Kotor = Bersih + VAT.</li>
 <li><strong>Hapus VAT:</strong> Bersih = Kotor ÷ (1 + 15 ÷ 100), dan VAT = Kotor − Bersih.</li>
 <li><strong>Tarif standar:</strong> 15%. <strong>Tarif lain:</strong> satu tarif standar tunggal sebesar 15% — kategori tarif nol dan bebas pajak berlaku sebagai gantinya (lihat FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Bagaimana cara kerjanya — rumusnya</h2>
 <p>Kalkulator ini tidak menyimpan data dan melakukan satu perhitungan untuk setiap mode. Dalam mode Tambah VAT, jumlah Anda diperlakukan sebagai harga bersih: bersih dikalikan tarif yang dipilih dibagi 100 untuk mendapatkan VAT, lalu keduanya dijumlahkan untuk harga kotor yang Anda kenakan. Dalam mode Hapus VAT, jumlah Anda diperlakukan sebagai harga kotor yang sudah termasuk VAT — jenis yang tercetak pada kuitansi atau label rak Afrika Selatan — dan membaginya dengan (1 + tarif ÷ 100) untuk mendapatkan kembali jumlah bersih; selisih antara kotor dan bersih adalah VAT yang terkandung dalam harga. Karena harga konsumen Afrika Selatan secara hukum dikutip sudah termasuk VAT dan harga bisnis sering dikutip tidak termasuk VAT, kedua mode ini adalah kebalikan yang persis: menghapus VAT dari angka kotor lalu menambahkannya kembali menghasilkan jumlah semula, selain pembulatan ke dua tempat desimal dalam ZAR.</p>
 <h3>Contoh terapan</h3>
-<p>Menggunakan tarif standar 15% dengan jumlah yang lebih besar: harga bersih R 250.00 ditambah VAT memberikan VAT sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor R 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
+<p>Menggunakan tarif standar 15% dengan jumlah yang lebih besar: harga bersih R 250.00 ditambah VAT memberikan VAT sebesar <span id="exDAddVat">…</span> dan harga kotor sebesar <span id="exDAddGross">…</span>. Sebaliknya, harga kotor R 250.00 diuraikan menjadi jumlah bersih sebesar <span id="exDRemNet">…</span> dan VAT sebesar <span id="exDRemVat">…</span>. Kedua hasil disuntikkan secara langsung oleh kode kalkulator halaman ini sendiri.</p>
 <h3>Pertanyaan yang sering diajukan</h3>
 <div class="faq"><h3>Apa saja yang harus tercantum pada faktur pajak di Afrika Selatan?</h3><p>Untuk pasokan di atas R50, faktur pajak penuh harus menunjukkan kata 'tax invoice', nama, alamat dan nomor VAT vendor dan pembeli, nomor faktur unik dan tanggal, deskripsi dan kuantitas barang atau jasa, jumlah tanpa VAT, VAT yang dikenakan dan total termasuk VAT dalam rand. Faktur ringkas diizinkan hingga R5,000.</p></div>
 <div class="faq"><h3>Saya menjual dari Afrika Selatan ke pelanggan di luar negeri — apakah VAT dikenakan?</h3><p>Ekspor bertarif nol jika barang diekspor dalam aturan yang ditentukan dan bukti dokumenter disimpan; banyak jasa kepada pelanggan non-residen juga bertarif nol bila kondisi menurut undang-undang terpenuhi. Jasa impor dan barang impor dikenai VAT saat masuk, biasanya ditangani oleh bea cukai atau aturan pembebanan terbalik.</p></div>
