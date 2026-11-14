@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako sa to počíta</h2>
 <p>GST v Indii sa účtuje pri pásmovej sadzbe pre tovar alebo služby — 18% štandard od 22. septembra 2025. Dva vzorce sú:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = čistá suma × 18 ÷ 100, a hrubá suma = čistá suma + GST.</li>
+<li><strong>Pridať GST:</strong> GST = čistá suma × 18 ÷ 100, a hrubá suma = čistá suma + GST.</li>
 <li><strong>Odstrániť GST:</strong> Čistá suma = hrubá suma ÷ (1 + 18 ÷ 100) a GST = hrubá suma − čistá suma.</li>
 <li><strong>Základná sadzba:</strong> 18%. <strong>Ďalšie sadzby:</strong> 5% merit, 40% demerit a 3% pre zlato a drahé predmety (všetko vo výbere sadzieb vyššie).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako to funguje — vzorec</h2>
 <p>Kalkulačka neukladá žiadne údaje a pre každý režim vykonáva jeden aritmetický výpočet. V režime Pridať GST považuje vašu sumu za čistú cenu: čistú sumu vynásobí zvolenou sadzbou delenou 100, čím získa GST, a obe spolu spočíta do hrubej ceny, ktorú účtujete. V režime Odstrániť GST považuje vašu sumu za hrubú cenu vrátane GST — takú, aká sa tlačí na účtenke alebo regálovej etikete v Indii — a vydelí ju číslom (1 + sadzba ÷ 100), aby získala späť čistú sumu; rozdiel medzi hrubou a čistou sumou je GST obsiahnutá v cene. Keďže spotrebiteľské ceny v Indii sa zvyčajne uvádzajú vrátane GST (MRP) a obchodné ceny sa zvyčajne uvádzajú čisté, tieto dva režimy sú presné inverzie: odstránenie GST z hrubého údaja a jej opätovné pridanie vráti pôvodnú sumu, okrem zaokrúhlenia na dve desatinné miesta v INR.</p>
 <h3>Pracovný príklad</h3>
-<p>Pri základnej sadzbe 18% s väčšími sumami: čistá cena ₹ 250.00 plus GST dá GST vo výške <span id="exDAddVat">…</span> a hrubá cena <span id="exDAddGross">…</span>. Opačným smerom sa hrubá cena ₹ 250.00 rozkladá na čistú sumu <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Obidva výsledky naživo dopĺňa vlastný kód kalkulačky tejto stránky.</p>
+<p>Pri základnej sadzbe 18% s väčšími sumami: čistá cena ₹ 250.00 plus GST dá GST vo výške <span id="exDAddVat">…</span> a hrubá cena <span id="exDAddGross">…</span>. Opačným smerom sa hrubá cena ₹ 250.00 rozkladá na čistú sumu <span id="exDRemNet">…</span> a GST vo výške <span id="exDRemVat">…</span>. Obidva výsledky naživo dopĺňa vlastný kód kalkulačky tejto stránky.</p>
 <h3>Často kladené otázky</h3>
 <div class="faq"><h3>Čo musí obsahovať faktúra GST v Indii?</h3><p>Daňová faktúra zvyčajne obsahuje mená, adresy a čísla GSTIN dodávateľa a kupujúceho, jedinečné číslo faktúry a dátum, kódy HSN/SAC, opis tovaru alebo služieb, zdaniteľnú hodnotu, rozdelenie sadzby GST (CGST + SGST alebo IGST), sumu GST a súčet v INR. Elektronická fakturácia (IRN) sa uplatňuje nad oznámenými prahmi obratu.</p></div>
 <div class="faq"><h3>Predávam z Indie zákazníkom v iných štátoch alebo krajinách — ktorá GST platí?</h3><p>Cez hranice štátov účtujte IGST pri rovnakej kombinovanej sadzbe. Vývoz má nulovú sadzbu: tovar môžete vyviezť bez účtovania GST na základe Letter of Undertaking (LUT) a žiadať vrátenie dane na vstupe. Pred uplatnením nulovej sadzby na plnenie B2B môžete overiť GSTIN kupujúceho na portáli GST a overenie si uchovať ako dôkaz.</p></div>

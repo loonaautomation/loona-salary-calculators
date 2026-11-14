@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Ponúkaná hrubá ročná mzda (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Zahŕňa táto mzda príspevok na dovolenku 8%?</label>
-<select id="hol"><option value="yes" selected>Áno, je zahrnutá</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Áno, je zahrnutá</option><option value="no">Nie — pridať 8% navrch</option></select></div>
 </div>
 <label for="cat">Ktorá mzdová norma sa na vás vzťahuje?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Žili ste v 24 mesiacoch pred nástupom viac než 150 km od holandskej hranice aspoň 16 z týchto mesiacov?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Áno</option><option value="no">Nie</option></select></div>
 <div><label for="recr">Boli ste nabraní zo zahraničia (prijatí, keď ste žili mimo Holandska, alebo vyslaní)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nie — už som žil v Holandsku</option></select></div>
+<select id="recr"><option value="yes" selected>Áno</option><option value="no">Nie — už som žil v Holandsku</option></select></div>
 </div>
 <label for="empl">Je váš zamestnávateľ holandským platiteľom zrážkovej dane zo mzdy (holandský zamestnávateľ alebo holandská mzdová účtáreň)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Áno</option><option value="no">Nie</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako to funguje — vzorec</h2>
 <p>Kontrolór uplatňuje testy na rok 2026 v poradí, v akom ich uplatňuje Belastingdienst. Najprv sa vaša ponuka prevedie na ročný základ (× 1.08, ak vylučuje príspevok na dovolenku 8%). Mzdový test sa potom pýta, či by vaša zdaniteľná mzda po nezdaniteľnej časti 30% stále presahovala normu — €48,013, alebo €36,497, ak máte menej ako 30 rokov a kvalifikovaný magisterský titul; vedeckí výskumníci a lekári v špecializačnej príprave tento test úplne preskakujú. Ak by plných 30% normu porušilo, ale mzda samotná ju spĺňa, stále prejdete, so zníženou nezdaniteľnou časťou rovnajúcou sa mzda − norma. Zvyšné tri testy — história 150 km, nábor zo zahraničia a holandský zamestnávateľ zrážajúci daň zo mzdy — sú tvrdé podmienky: zlyhanie ktoréhokoľvek z nich znamená zlyhanie celej kontroly.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Pracovný príklad</h3>
-<p>Ponuka €52,000 ročne vrátane príspevku na dovolenku, štandardná norma a „áno“ na ostatné tri testy. Mzda samotná normu €48,013 spĺňa, ale plná nezdaniteľná časť 30% (€15,600) by ponechala len €36,400 zdaniteľnej mzdy — pod normou. Výsledok: <strong>„Pravdepodobne sa kvalifikujete — so zníženou nezdaniteľnou časťou“</strong> of €52,000 − €48,013 = <strong>€3,987 ročne</strong>, čo drží zdaniteľnú mzdu na úrovni normy €48,013.</p>
+<p>Ponuka €52,000 ročne vrátane príspevku na dovolenku, štandardná norma a „áno“ na ostatné tri testy. Mzda samotná normu €48,013 spĺňa, ale plná nezdaniteľná časť 30% (€15,600) by ponechala len €36,400 zdaniteľnej mzdy — pod normou. Výsledok: <strong>„Pravdepodobne sa kvalifikujete — so zníženou nezdaniteľnou časťou“</strong> vo výške €52,000 − €48,013 = <strong>€3,987 ročne</strong>, čo drží zdaniteľnú mzdu na úrovni normy €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Často kladené otázky</h3>
 <div class="faq"><h3>Ako presne sa meria vzdialenosť 150 km?</h3><p>V priamej línii od vášho domova k najbližšiemu bodu holandskej hranice — nie k vášmu pracovisku ani do Amsterdamu — a za najmenej 16 z 24 mesiacov pred vaším prvým pracovným dňom ste museli žiť za touto vzdialenosťou. Skoršie obdobia života alebo práce v Holandsku zároveň skracujú maximálnu dĺžku pravidla.</p></div>
 <div class="faq"><h3>Som výskumník — koľko nezdaniteľnej časti dostanem, ak prejdem?</h3><p>Plných 30% mzdy až do stropu €262,000, bez testu mzdovej normy: pri výskumnej mzde €30,000 táto kontrola ukazuje nezdaniteľnú časť €9,000. Ostatné podmienky stále potrebujete — nábor zo zahraničia, históriu 150 km a holandského zamestnávateľa zrážajúceho daň.</p></div>

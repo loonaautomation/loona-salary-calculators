@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako sa to počíta</h2>
 <p>GST sa v krajine Austrália účtuje sadzbou 10% pri väčšine zdaniteľných dodaní. Dva vzorce sú:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = čistá suma × 10 ÷ 100, a hrubá suma = čistá suma + GST.</li>
+<li><strong>Pridať GST:</strong> GST = čistá suma × 10 ÷ 100, a hrubá suma = čistá suma + GST.</li>
 <li><strong>Odstrániť GST:</strong> Čistá suma = hrubá suma ÷ (1 + 10 ÷ 100) a GST = hrubá suma − čistá suma.</li>
 <li><strong>Základná sadzba:</strong> 10%. <strong>Ďalšie sadzby:</strong> jediná paušálna sadzba 10% — namiesto nej platia kategórie oslobodené od GST a zdanené na vstupe (pozri FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako to funguje — vzorec</h2>
 <p>Kalkulačka neukladá žiadne údaje a pre každý režim vykonáva jeden aritmetický výpočet. V režime Pridať GST považuje vašu sumu za čistú cenu: čistú sumu vynásobí zvolenou sadzbou delenou 100, čím získa GST, a obe spolu spočíta do hrubej ceny, ktorú účtujete. V režime Odstrániť GST považuje vašu sumu za hrubú cenu vrátane GST — takú, aká sa tlačí na účtenke alebo regálovej etikete v Austrálii — a vydelí ju číslom (1 + sadzba ÷ 100), aby získala späť čistú sumu; rozdiel medzi hrubou a čistou sumou je GST obsiahnutá v cene. Keďže spotrebiteľské ceny v Austrálii sa musia zobrazovať vrátane GST a obchodné ceny sa často uvádzajú oboma spôsobmi, tieto dva režimy sú presné inverzie: odstránenie GST z hrubého údaja a jej opätovné pridanie vráti pôvodnú sumu, okrem zaokrúhlenia na dve desatinné miesta v AUD.</p>
 <h3>Pracovný príklad</h3>
-<p>Pri základnej sadzbe 10% s väčšími sumami: čistá cena A$ 250.00 plus GST dá GST vo výške <span id="exDAddVat">…</span> a hrubá cena <span id="exDAddGross">…</span>. Opačným smerom sa hrubá cena A$ 250.00 rozkladá na čistú sumu <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Obidva výsledky naživo dopĺňa vlastný kód kalkulačky tejto stránky.</p>
+<p>Pri základnej sadzbe 10% s väčšími sumami: čistá cena A$ 250.00 plus GST dá GST vo výške <span id="exDAddVat">…</span> a hrubá cena <span id="exDAddGross">…</span>. Opačným smerom sa hrubá cena A$ 250.00 rozkladá na čistú sumu <span id="exDRemNet">…</span> a GST vo výške <span id="exDRemVat">…</span>. Obidva výsledky naživo dopĺňa vlastný kód kalkulačky tejto stránky.</p>
 <h3>Často kladené otázky</h3>
 <div class="faq"><h3>Čo musí obsahovať daňová faktúra v krajine Austrália?</h3><p>Pri predajoch nad $82.50 (vrátane GST) musí daňová faktúra uvádzať, že ide o daňovú faktúru, totožnosť predávajúceho a jeho ABN, dátum vystavenia, stručný opis toho, čo sa predalo, sumu GST (alebo vyhlásenie, že súčet zahŕňa GST) a pri faktúrach na $1,000 a viac aj totožnosť kupujúceho alebo jeho ABN.</p></div>
 <div class="faq"><h3>Predávam z krajiny Austrália zákazníkom v zámorí — účtuje sa GST?</h3><p>Vo všeobecnosti nie: vývoz tovaru a mnohé služby poskytované zahraničným zákazníkom sú oslobodené od GST, za predpokladu, že sú splnené podmienky vývozu a lehoty. Tovar nízkej hodnoty dovážaný austrálskymi spotrebiteľmi sa namiesto toho zdaňuje na hranici alebo zahraničným predávajúcim podľa pravidiel pre dovážané služby a tovar nízkej hodnoty.</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako sa to počíta</h2>
 <p>DPH v SAE sa účtuje pri 5% na väčšinu tovaru a služieb. Dva vzorce sú:</p>
 <ul>
-<li><strong>Add VAT:</strong> DPH = čistá suma × 5 ÷ 100, a hrubá suma = čistá suma + DPH.</li>
+<li><strong>Pridať DPH:</strong> DPH = čistá suma × 5 ÷ 100, a hrubá suma = čistá suma + DPH.</li>
 <li><strong>Odstrániť DPH:</strong> Čistá suma = hrubá suma ÷ (1 + 5 ÷ 100) a DPH = hrubá suma − čistá suma.</li>
 <li><strong>Základná sadzba:</strong> 5%. <strong>Ďalšie sadzby:</strong> žiadna znížená sadzba — namiesto nej platia kategórie s nulovou sadzbou a oslobodené kategórie (pozri FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako to funguje — vzorec</h2>
 <p>Kalkulačka neukladá žiadne údaje a pre každý režim vykonáva jeden aritmetický výpočet. V režime Pridať DPH považuje vašu sumu za čistú cenu: čistú sumu vynásobí zvolenou sadzbou delenou 100, čím získa DPH, a obe spolu spočíta do hrubej ceny, ktorú účtujete. V režime Odstrániť DPH považuje vašu sumu za hrubú cenu vrátane DPH — takú, aká sa tlačí na účtenke alebo regálovej etikete v SAE — a vydelí ju číslom (1 + sadzba ÷ 100), aby získala späť čistú sumu; rozdiel medzi hrubou a čistou sumou je DPH obsiahnutá v cene. Keďže spotrebiteľské ceny v SAE sa uvádzajú vrátane DPH a obchodné ceny sa zvyčajne uvádzajú čisté, tieto dva režimy sú presné inverzie: odstránenie DPH z hrubého údaja a jej opätovné pridanie vráti pôvodnú sumu, okrem zaokrúhlenia na dve desatinné miesta v AED.</p>
 <h3>Pracovný príklad</h3>
-<p>Pri základnej sadzbe 5% s väčšími sumami: čistá cena AED 250.00 plus DPH dá DPH vo výške <span id="exDAddVat">…</span> a hrubá cena <span id="exDAddGross">…</span>. Opačným smerom sa hrubá cena AED 250.00 rozkladá na čistú sumu <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Obidva výsledky naživo dopĺňa vlastný kód kalkulačky tejto stránky.</p>
+<p>Pri základnej sadzbe 5% s väčšími sumami: čistá cena AED 250.00 plus DPH dá DPH vo výške <span id="exDAddVat">…</span> a hrubá cena <span id="exDAddGross">…</span>. Opačným smerom sa hrubá cena AED 250.00 rozkladá na čistú sumu <span id="exDRemNet">…</span> a DPH vo výške <span id="exDRemVat">…</span>. Obidva výsledky naživo dopĺňa vlastný kód kalkulačky tejto stránky.</p>
 <h3>Často kladené otázky</h3>
 <div class="faq"><h3>Čo musí obsahovať faktúra DPH v SAE?</h3><p>Daňová faktúra musí obsahovať slová „Tax Invoice“, meno, adresu a TRN dodávateľa, údaje zákazníka (a TRN pre registrovaných zákazníkov), poradové číslo faktúry a dátum, opis a množstvo tovaru alebo služieb, čistú sumu, sadzbu DPH, sumu DPH v AED a hrubý súčet. Zjednodušené faktúry sú povolené pri maloobchodných plneniach pod 10,000 AED.</p></div>
 <div class="faq"><h3>Predávam zo SAE zákazníkom do zahraničia — ktorá DPH platí?</h3><p>Vývoz tovaru a služieb mimo rámca DPH krajín GCC má vo všeobecnosti nulovú sadzbu, za predpokladu, že uchovávate požadované vývozné dôkazy (prepravné dokumenty a obchodný dôkaz). Dovoz registrované podniky zvyčajne účtujú v rámci prenesenia daňovej povinnosti, takže sa na hranici neplatí žiadna DPH v hotovosti.</p></div>

@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Ako sa to počíta</h2>
-<p>To <strong>add VAT</strong>: DPH = čistá suma × sadzba ÷ 100 a hrubá suma = čistá suma + DPH. Na <strong>odstrániť DPH</strong>: čistá = hrubá ÷ (1 + sadzba ÷ 100) a DPH = hrubá − čistá. DPH vnútri hrubej ceny nikdy nepočítajte ako priame percento z hrubej sumy — pri 19% je DPH vnútri sumy €119 presne €19, nie €22.61.</p>
-<p style="margin-top:8px">Názorný príklad: čistá suma €100 v Nemecku pri základnej sadzbe 19% dá DPH vo výške <strong id="exVat">—</strong> a hrubá suma <strong id="exGross">—</strong> (net <span id="exNet">—</span>). Tieto údaje naživo vypočítava vlastná kalkulačka tejto stránky, takže vždy zodpovedajú nástroju vyššie.</p>
+<p>Na <strong>pridať DPH</strong>: DPH = čistá suma × sadzba ÷ 100 a hrubá suma = čistá suma + DPH. Na <strong>odstrániť DPH</strong>: čistá = hrubá ÷ (1 + sadzba ÷ 100) a DPH = hrubá − čistá. DPH vnútri hrubej ceny nikdy nepočítajte ako priame percento z hrubej sumy — pri 19% je DPH vnútri sumy €119 presne €19, nie €22.61.</p>
+<p style="margin-top:8px">Názorný príklad: čistá suma €100 v Nemecku pri základnej sadzbe 19% dá DPH vo výške <strong id="exVat">—</strong> a hrubá suma <strong id="exGross">—</strong> (čistá <span id="exNet">—</span>). Tieto údaje naživo vypočítava vlastná kalkulačka tejto stránky, takže vždy zodpovedajú nástroju vyššie.</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Ako to funguje — vzorec</h2>
 <p>Kalkulačka uchováva základnú sadzbu DPH každej krajiny ako percento. V režime Pridať považuje vašu sumu za čistú cenu: DPH = suma × sadzba ÷ 100 a hrubá = suma + DPH. V režime Odstrániť považuje vašu sumu za hrubú cenu: čistá = suma ÷ (1 + sadzba ÷ 100) a DPH = hrubá − čistá. Výsledky sa pre zobrazenie zaokrúhľujú na dve desatinné miesta, so symbolom meny krajiny, ktorú ste vybrali. Znížené sadzby sú uvedené v tabuľke vyššie a na stránke každej krajiny ako orientácia, ale samotná kalkulačka vždy používa základnú sadzbu — sadzbu, ktorá platí pre väčšinu tovaru a služieb.</p>
 <h3>Pracovný príklad</h3>
-<p>Odstraňovanie DPH v Estónsku: hrubá suma €124 pri základnej sadzbe Estónska 24% (sadzba od 1. júla 2025) sa rozdeľuje na čistú sumu <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Vypočítané naživo touto stránkou: €124 ÷ 1.24 = €100 čistá suma a €124 − €100 = €24 DPH.</p>
+<p>Odstraňovanie DPH v Estónsku: hrubá suma €124 pri základnej sadzbe Estónska 24% (sadzba od 1. júla 2025) sa rozdeľuje na čistú sumu <strong id="ex2Net">—</strong> a DPH vo výške <strong id="ex2Vat">—</strong>. Vypočítané naživo touto stránkou: €124 ÷ 1.24 = €100 čistá suma a €124 − €100 = €24 DPH.</p>
 <h3>Často kladené otázky</h3>
 <div class="faq"><h3>Prečo sa sadzby DPH v Európe tak veľmi líšia?</h3><p>Každá krajina si stanovuje vlastné sadzby v rámci minimálnych pravidiel EÚ (základná sadzba najmenej 15%). Preto Luxembursko účtuje 17% a Maďarsko 27%, pričom väčšina krajín je medzi 19% a 25%. Švajčiarsko (8.1%) a Spojené kráľovstvo (20%) si stanovujú sadzby úplne mimo systému EÚ.</p></div>
 <div class="faq"><h3>Uplatňuje sa DPH, keď predávam do inej krajiny EÚ?</h3><p>DPH sa zvyčajne účtuje v krajine zákazníka pri cezhraničných službách B2B a mnohých službách B2C, často prostredníctvom mechanizmu prenesenia daňovej povinnosti alebo jednotného kontaktného miesta EÚ (OSS). Táto kalkulačka vypočítava sumy pri sadzbe zvolenej krajiny; ktorá sadzba krajiny sa právne uplatňuje, závisí od druhu plnenia, takže pri pravidelnom cezhraničnom obchode vyhľadajte poradenstvo.</p></div>
