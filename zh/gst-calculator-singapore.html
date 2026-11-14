@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何计算</h2>
 <p>新加坡对大多数应税供应按 9% 征收 GST。两个公式如下：</p>
 <ul>
-<li><strong>Add GST:</strong> GST = 净额 × 9 ÷ 100,，总价 = 净额 + GST。</li>
+<li><strong>添加GST:</strong> GST = 净额 × 9 ÷ 100,，总价 = 净额 + GST。</li>
 <li><strong>删除GST:</strong> 净额 = 总价 ÷（1 + 9 ÷ 100），GST = 总价 − 净额。</li>
 <li><strong>标准费率：</strong> 9%. <strong>其他费率：</strong> 单一标准税率 9% — 零税率和免税类别另行适用（见常见问题）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何运作 — 公式</h2>
 <p>计算器不存储数据，每个模式做一段算术。在添加GST模式中，它将您的金额视为净价：它将净收入乘以所选费率除以100得到GST，然后将两者相加得到您收取的总价。在删除GST模式中，它将您的金额视为总价、含GST价格 — 印在新加坡收据或货架标签上的那种 — 并将其除以 (1 + 费率 ÷ 100) 恢复净金额；总收入和净收入之间的差是价格中包含的GST。因为新加坡注册零售商显示含GST价格，而许多B2B报价不含GST，两种模式是确切逆运算：从总数字中删除GST然后加回返回原始金额，除了四舍五入到SGD的两位小数。</p>
 <h3>工作例子</h3>
-<p>使用9%标准费率和较大金额：S$ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，S$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
+<p>使用9%标准费率和较大金额：S$ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，S$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> 以及 GST 为 <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
 <h3>常见问题</h3>
 <div class="faq"><h3>新加坡的税务发票必须显示什么？</h3><p>税务发票必须显示“税务发票”字样、供应商的姓名、地址和GST注册号码、发票编号和日期、客户的姓名和地址、商品或服务的描述、不含GST的应付金额、GST的费率和金额，以及含GST的总计以SGD计（外汇发票的GST金额也以SGD显示）。</p></div>
 <div class="faq"><h3>我从新加坡向海外客户销售 — 是否征收 GST？</h3><p>货物出口和合格国际服务零税率0%，遵守维护所需出口证据。反过来，向新加坡消费者销售数字和其他进口服务的海外卖家在海外供应商注册制度下注册并收取9% GST。</p></div>

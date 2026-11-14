@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何计算</h2>
 <p>澳大利亚对大多数应税供应按 10% 征收 GST。两个公式如下：</p>
 <ul>
-<li><strong>Add GST:</strong> GST = 净额 × 10 ÷ 100,，总价 = 净额 + GST。</li>
+<li><strong>添加GST:</strong> GST = 净额 × 10 ÷ 100,，总价 = 净额 + GST。</li>
 <li><strong>删除GST:</strong> 净额 = 总价 ÷（1 + 10 ÷ 100），GST = 总价 − 净额。</li>
 <li><strong>标准费率：</strong> 10%. <strong>其他费率：</strong> 单一统一费率10% — 改为适用免征GST和进项征税类别（见FAQ）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何运作 — 公式</h2>
 <p>计算器不存储数据，每个模式做一段算术。在添加GST模式中，它将您的金额视为净价：它将净收入乘以所选费率除以100得到GST，然后将两者相加得到您收取的总价。在删除GST模式中，它将您的金额视为总价、含GST价格 — 印在澳大利亚收据或货架标签上的那种 — 并将其除以 (1 + 费率 ÷ 100) 恢复净金额；总收入和净收入之间的差是价格中包含的GST。因为澳大利亚消费者价格必须显示含GST，企业价格通常以任一方式报价，两种模式是确切逆运算：从总数字中删除GST然后加回返回原始金额，除了四舍五入到AUD的两位小数。</p>
 <h3>工作例子</h3>
-<p>使用10%标准费率和较大金额：A$ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，A$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
+<p>使用10%标准费率和较大金额：A$ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，A$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> 以及 GST 为 <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
 <h3>常见问题</h3>
 <div class="faq"><h3>澳大利亚的税务发票必须显示什么？</h3><p>对于超过$82.50（包括GST）的销售，税务发票必须显示它是税务发票、卖方的身份和ABN、签发日期、销售内容的简要描述、GST金额（或总额包含GST的声明），对于$1,000或更多的发票，买方的身份或ABN。</p></div>
 <div class="faq"><h3>我从澳大利亚向海外客户销售 — 是否征收 GST？</h3><p>通常否：出口货物和供应给海外客户的许多服务GST免费，前提是出口条件和时间限制满足。澳大利亚消费者购买的低价值进口货物改为在边境或由海外卖家按进口服务和低价值货物规则征税。</p></div>

@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何计算</h2>
 <p>印度GST按商品或服务的平板费率收取 — 自2025年九月22日起18%标准。两个公式是：</p>
 <ul>
-<li><strong>Add GST:</strong> GST = 净额 × 18 ÷ 100,，总价 = 净额 + GST。</li>
+<li><strong>添加GST:</strong> GST = 净额 × 18 ÷ 100,，总价 = 净额 + GST。</li>
 <li><strong>删除GST:</strong> 净额 = 总价 ÷（1 + 18 ÷ 100），GST = 总价 − 净额。</li>
 <li><strong>标准费率：</strong> 18%. <strong>其他费率：</strong> 5%优点、40%过失和黄金与贵重物品3%（全部在上面费率选择器中）。</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何运作 — 公式</h2>
 <p>计算器不存储数据，每个模式做一段算术。在添加GST模式中，它将您的金额视为净价：它将净收入乘以所选费率除以100得到GST，然后将两者相加得到您收取的总价。在删除GST模式中，它将您的金额视为总价、含GST价格 — 印在印度收据或货架标签上的那种 — 并将其除以 (1 + 费率 ÷ 100) 恢复净金额；总收入和净收入之间的差是价格中包含的GST。因为印度消费者价格通常以含GST报价 (MRP)，企业价格通常以净价报价，两种模式是确切逆运算：从总数字中删除GST然后加回返回原始金额，除了四舍五入到INR的两位小数。</p>
 <h3>工作例子</h3>
-<p>使用18%标准费率和较大金额：₹ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，₹ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
+<p>使用18%标准费率和较大金额：₹ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，₹ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> 以及 GST 为 <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
 <h3>常见问题</h3>
 <div class="faq"><h3>印度GST发票必须显示什么？</h3><p>税务发票通常显示供应商和买方的姓名、地址和GSTIN、唯一发票编号和日期、HSN/SAC代码、商品或服务的描述、应税价值、GST费率分割 (CGST + SGST，或IGST)、GST金额和以INR计的总计。电子发票 (IRN) 适用于通知营业额门槛以上。</p></div>
 <div class="faq"><h3>我从印度向其他州或国家的客户销售 — 哪个GST适用？</h3><p>跨州线，按相同合并费率收取IGST。出口是零税率：您可以在承诺书 (LUT) 下不收取GST出口，并索赔进项税退税。在零税率B2B供应之前，您可以在GST门户上验证买方的GSTIN，并保留验证作为证据。</p></div>

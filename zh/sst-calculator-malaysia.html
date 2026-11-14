@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何计算</h2>
 <p>马来西亚SST按税种费率收取 — 服务税自2024年三月1日起8%标准。两个公式是：</p>
 <ul>
-<li><strong>Add SST:</strong> SST = 净收入 × 8 ÷ 100，总收入 = 净收入 + SST。</li>
+<li><strong>添加SST:</strong> SST = 净收入 × 8 ÷ 100，总收入 = 净收入 + SST。</li>
 <li><strong>删除SST:</strong> 净收入 = 总收入 ÷ (1 + 8 ÷ 100)，SST = 总收入 − 净收入。</li>
 <li><strong>标准费率：</strong> 8%. <strong>其他费率：</strong> 服务税6%（保留类别），销售税10%和5% — 均在上面的费率选择器中。</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何运作 — 公式</h2>
 <p>计算器不存储数据，每个模式做一段算术。在添加SST模式中，它将您的金额视为净价：它将净收入乘以所选费率除以100得到SST，然后将两者相加得到您收取的总价。在删除SST模式中，它将您的金额视为总价、含SST价格 — 印在马来西亚收据或货架标签上的那种 — 并将其除以 (1 + 费率 ÷ 100) 恢复净金额；总收入和净收入之间的差是价格中包含的SST。两种模式是价格数学的确切逆运算 — 从含税数字中删除SST并加回返回原始金额，除了四舍五入到MYR的两位小数。但请记住，SST本身是单阶段：与VAT不同，您自己进项支付的SST无抵免。</p>
 <h3>工作例子</h3>
-<p>使用8%标准费率和较大金额：RM 250.00净价加SST给出SST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，RM 250.00的总价分解为净金额 <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
+<p>使用8%标准费率和较大金额：RM 250.00净价加SST给出SST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，RM 250.00的总价分解为净金额 <span id="exDRemNet">…</span> 以及 SST 为 <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
 <h3>常见问题</h3>
 <div class="faq"><h3>马来西亚SST发票必须显示什么？</h3><p>注册提供商的服务税发票显示提供商的姓名、地址和SST注册号码、发票编号和日期、服务的描述、不含税金额、服务税率和金额，以及以MYR计的总计。销售税在制造商和进口商的发票上按销售税法规则显示。</p></div>
 <div class="faq"><h3>我从国外向马来西亚人销售服务 — SST适用吗？</h3><p>向马来西亚消费者提供数字服务的外国提供商必须注册服务税并收取8%（进口应税服务制度）。进口服务的马来西亚企业在进口应税服务的反向收费式规则下自我核算服务税。</p></div>

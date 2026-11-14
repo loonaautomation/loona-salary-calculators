@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何计算</h2>
 <p>新西兰GST对大多数供应按15%收取。两个公式是：</p>
 <ul>
-<li><strong>Add GST:</strong> GST = 净额 × 15 ÷ 100,，总价 = 净额 + GST。</li>
+<li><strong>添加GST:</strong> GST = 净额 × 15 ÷ 100,，总价 = 净额 + GST。</li>
 <li><strong>删除GST:</strong> 净额 = 总价 ÷（1 + 15 ÷ 100），GST = 总价 − 净额。</li>
 <li><strong>标准费率：</strong> 15%. <strong>其他费率：</strong> 单一统一费率15% — 没有优惠费率；改为适用零税率和免税类别（见FAQ）。</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何运作 — 公式</h2>
 <p>计算器不存储数据，每个模式做一段算术。在添加GST模式中，它将您的金额视为净价：它将净收入乘以所选费率除以100得到GST，然后将两者相加得到您收取的总价。在删除GST模式中，它将您的金额视为总价、含GST价格 — 印在新西兰收据或货架标签上的那种 — 并将其除以 (1 + 费率 ÷ 100) 恢复净金额；总收入和净收入之间的差是价格中包含的GST。因为新西兰消费者价格显示含GST，企业价格通常以加GST报价，两种模式是确切逆运算：从总数字中删除GST然后加回返回原始金额，除了四舍五入到NZD的两位小数。</p>
 <h3>工作例子</h3>
-<p>使用15%标准费率和较大金额：NZ$ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，NZ$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
+<p>使用15%标准费率和较大金额：NZ$ 250.00净价加GST给出GST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，NZ$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> 以及 GST 为 <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
 <h3>常见问题</h3>
 <div class="faq"><h3>新西兰的税务发票必须显示什么？</h3><p>税务发票必须显示“税务发票”字样、卖方的姓名和GST号码、日期、商品或服务的描述，以及GST金额或价格包含GST的声明。自2023年四月起，规则基于信息而不是格式，所以合规记录（包括电子发票）计数。</p></div>
 <div class="faq"><h3>我从新西兰向海外客户销售 — 是否征收 GST？</h3><p>出口零税率：您收取0% GST，仍可以索赔您成本的GST，只要出口规则和证据要求满足。当服务执行时在新西兰外的非居民供应的服务也可以零税率。</p></div>

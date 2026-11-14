@@ -104,7 +104,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何计算</h2>
 <p>加拿大销售税是联邦5% GST加取决于供应省份的省级层。两个公式是：</p>
 <ul>
-<li><strong>Add GST/HST:</strong> GST/HST = 净收入 × 13 ÷ 100，总收入 = 净收入 + GST/HST。</li>
+<li><strong>添加GST/HST:</strong> GST/HST = 净收入 × 13 ÷ 100，总收入 = 净收入 + GST/HST。</li>
 <li><strong>删除GST/HST:</strong> 净收入 = 总收入 ÷ (1 + 13 ÷ 100)，GST/HST = 总收入 − 净收入。</li>
 <li><strong>标准费率：</strong> 13%. <strong>其他费率：</strong> 单独5% GST，14%或15% HST，以及PST/RST/QST组合 — 全部在上面费率选择器中。</li>
 
@@ -141,7 +141,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>它如何运作 — 公式</h2>
 <p>计算器不存储数据，每个模式做一段算术。在添加GST/HST模式中，它将您的金额视为净价：它将净收入乘以所选费率除以100得到GST/HST，然后将两者相加得到您收取的总价。在删除GST/HST模式中，它将您的金额视为总价、含GST/HST价格 — 印在加拿大收据或货架标签上的那种 — 并将其除以 (1 + 费率 ÷ 100) 恢复净金额；总收入和净收入之间的差是价格中包含的GST/HST。因为加拿大消费者价格通常在许多省份在收银台税前显示 — 而发布的含HST定价在其他省份常见 — 两种模式让您任一方式工作：从总数字中删除税然后加回返回原始金额，除了四舍五入到CAD的两位小数。</p>
 <h3>工作例子</h3>
-<p>使用13%标准费率和较大金额：$ 250.00净价加GST/HST给出GST/HST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> and GST/HST of <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
+<p>使用13%标准费率和较大金额：$ 250.00净价加GST/HST给出GST/HST <span id="exDAddVat">…</span> 以及总价格 <span id="exDAddGross">…</span>。反过来，$ 250.00的总价分解为净金额 <span id="exDRemNet">…</span> 以及 GST/HST 为 <span id="exDRemVat">…</span>。两个结果都由本页自己的计算器代码实时注入。</p>
 <h3>常见问题</h3>
 <div class="faq"><h3>加拿大销售发票必须显示什么？</h3><p>GST/HST目的的发票应显示卖方的姓名和GST/HST账户号码、日期、商品或服务的描述、支付的金额，以及支付的税款或税款包含的声明 — 加上较大销售的买方姓名。在PST/QST省份，省级税和注册号码显示为分开的行。</p></div>
 <div class="faq"><h3>我从加拿大向其他省份或国家的客户销售 — 哪个费率适用？</h3><p>通常是货物交付或服务消费的省份费率（“供应地”规则），不是您自己的省份 — 所以运送到BC的安大略卖家收取5% GST加BC PST规则，出口到加拿大外的货物通常GST/HST零税率。注册义务可能在PST省份和魁北克产生，即使对省外卖家。</p></div>
