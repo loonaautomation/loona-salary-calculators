@@ -124,7 +124,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Salário anual bruto oferecido (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Esse salário inclui o subsídio de férias de 8%?</label>
-<select id="hol"><option value="yes" selected>Sim, está incluído</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Sim, está incluído</option><option value="no">Não — adicionar 8% por cima</option></select></div>
 </div>
 <label for="cat">Que norma salarial se aplica a si?</label>
 <select id="cat">
@@ -134,12 +134,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">Nos 24 meses antes de começar, viveu a mais de 150 km da fronteira neerlandesa durante pelo menos 16 desses meses?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Sim</option><option value="no">Não</option></select></div>
 <div><label for="recr">Foi recrutado no estrangeiro (contratado enquanto vivia fora dos Países Baixos, ou destacado)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Não — já vivia nos Países Baixos</option></select></div>
+<select id="recr"><option value="yes" selected>Sim</option><option value="no">Não — já vivia nos Países Baixos</option></select></div>
 </div>
 <label for="empl">O seu empregador é um agente de retenção do imposto salarial neerlandês (um empregador neerlandês ou processamento salarial neerlandês)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Sim</option><option value="no">Não</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -180,7 +180,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Como funciona — a fórmula</h2>
 <p>O verificador aplica os testes de 2026 pela ordem em que o Belastingdienst os aplica. Primeiro, a sua oferta é colocada numa base anual (× 1.08 se excluir o subsídio de férias de 8%). O teste salarial pergunta depois se o seu salário tributável, após um subsídio isento de imposto de 30%, continuaria a exceder a norma — €48,013, ou €36,497 se tiver menos de 30 anos e um mestrado elegível; os investigadores científicos e os médicos em formação de especialidade ignoram por completo este teste. Se os 30% completos violassem a norma, mas o salário em si a ultrapassar, continua a passar, com um subsídio reduzido igual a salário − norma. Os três testes restantes — o historial dos 150 km, ter sido recrutado no estrangeiro e um empregador neerlandês com retenção do imposto sobre salários — são condições rigorosas: falhar qualquer um deles reprova toda a verificação.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Exemplo prático</h3>
-<p>Proposta de €52,000 por ano incluindo subsídio de férias, norma normal, e "sim" nos outros três testes. O salário em si supera €48,013, mas um subsídio completo de 30% (€15,600) deixaria apenas €36,400 de salário tributável — abaixo da norma. Resultado: <strong>"Provavelmente reúne as condições — com um subsídio reduzido"</strong> of €52,000 − €48,013 = <strong>€3,987 por ano</strong>, o que mantém o salário tributável ao nível da norma de €48,013.</p>
+<p>Proposta de €52,000 por ano incluindo subsídio de férias, norma normal, e "sim" nos outros três testes. O salário em si supera €48,013, mas um subsídio completo de 30% (€15,600) deixaria apenas €36,400 de salário tributável — abaixo da norma. Resultado: <strong>"Provavelmente reúne as condições — com um subsídio reduzido"</strong> de €52,000 − €48,013 = <strong>€3,987 por ano</strong>, o que mantém o salário tributável ao nível da norma de €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Perguntas frequentes</h3>
 <div class="faq"><h3>Como é medida exatamente a distância de 150 km?</h3><p>Em linha reta da sua casa até ao ponto mais próximo da fronteira neerlandesa — não até ao seu local de trabalho nem até Amsterdam — e deve ter vivido além dessa distância durante pelo menos 16 dos 24 meses anteriores ao seu primeiro dia de trabalho. Períodos anteriores a viver ou trabalhar nos Países Baixos também encurtam a duração máxima do regime.</p></div>
 <div class="faq"><h3>Sou investigador — quanto subsídio recebo se for aprovado?</h3><p>Os 30% completos do salário até ao limite de €262,000, sem teste da norma salarial: num salário de investigação de €30,000, este verificador mostra um subsídio isento de imposto de €9,000. Continua a precisar das outras condições — recrutado no estrangeiro, o historial dos 150 km e um empregador neerlandês com retenção na fonte.</p></div>
