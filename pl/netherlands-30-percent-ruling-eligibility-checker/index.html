@@ -123,7 +123,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="gross">Zaoferowane roczne wynagrodzenie brutto (EUR)</label><input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal"></div>
 <div><label for="hol">Czy to wynagrodzenie zawiera dodatek urlopowy 8%?</label>
-<select id="hol"><option value="yes" selected>Tak, jest uwzględnione</option><option value="no">No — add 8% on top</option></select></div>
+<select id="hol"><option value="yes" selected>Tak, jest uwzględnione</option><option value="no">Nie — dodaj 8% na wierzch</option></select></div>
 </div>
 <label for="cat">Która norma wynagrodzenia ma do Ciebie zastosowanie?</label>
 <select id="cat">
@@ -133,12 +133,12 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <div class="row">
 <div><label for="dist">W ciągu 24 miesięcy przed rozpoczęciem — czy mieszkałeś ponad 150 km od granicy holenderskiej przez co najmniej 16 z tych miesięcy?</label>
-<select id="dist"><option value="yes" selected>Yes</option><option value="no">No</option></select></div>
+<select id="dist"><option value="yes" selected>Tak</option><option value="no">Nie</option></select></div>
 <div><label for="recr">Czy zostałeś zrekrutowany z zagranicy (zatrudniony, mieszkając poza Holandią, lub oddelegowany)?</label>
-<select id="recr"><option value="yes" selected>Yes</option><option value="no">Nie — już mieszkałem w Holandii</option></select></div>
+<select id="recr"><option value="yes" selected>Tak</option><option value="no">Nie — już mieszkałem w Holandii</option></select></div>
 </div>
 <label for="empl">Czy Twój pracodawca jest holenderskim agentem potrącającym podatek od wynagrodzeń (pracodawca holenderski lub holenderska lista płac)?</label>
-<select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<select id="empl"><option value="yes" selected>Tak</option><option value="no">Nie</option></select>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -179,7 +179,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kontroler stosuje testy 2026 w kolejności, w jakiej stosuje je Belastingdienst. Po pierwsze, Twoja oferta jest ujmowana rocznie (× 1.08, jeśli wyklucza dodatek urlopowy 8%). Test wynagrodzenia pyta następnie, czy Twoje wynagrodzenie podlegające opodatkowaniu po uldze wolnej od podatku 30% nadal przekraczałoby normę — €48,013 lub €36,497, jeśli masz poniżej 30 lat i kwalifikujący tytuł magistra; badacze naukowi i lekarze w trakcie specjalizacji całkowicie pomijają ten test. Jeśli pełne 30% naruszyłoby normę, ale samo wynagrodzenie ją przekracza, nadal zdajesz, przy obniżonej uldze równej wynagrodzeniu − norma. Pozostałe trzy testy — historia 150 km, rekrutacja z zagranicy oraz holenderski pracodawca potrącający podatek od wynagrodzeń — są twardymi warunkami: niespełnienie któregokolwiek z nich oznacza niezaliczenie całej kontroli.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Przykład obliczeniowy</h3>
-<p>Oferta €52,000 rocznie łącznie z dodatkiem urlopowym, norma standardowa oraz „tak” na pozostałe trzy testy. Samo wynagrodzenie przekracza €48,013, ale pełna ulga 30% (€15,600) pozostawiłaby tylko €36,400 wynagrodzenia podlegającego opodatkowaniu — poniżej normy. Wynik: <strong>„Prawdopodobnie się kwalifikujesz — przy obniżonej uldze”</strong> of €52,000 − €48,013 = <strong>€3,987 rocznie</strong>, co utrzymuje wynagrodzenie podlegające opodatkowaniu na poziomie normy €48,013.</p>
+<p>Oferta €52,000 rocznie łącznie z dodatkiem urlopowym, norma standardowa oraz „tak” na pozostałe trzy testy. Samo wynagrodzenie przekracza €48,013, ale pełna ulga 30% (€15,600) pozostawiłaby tylko €36,400 wynagrodzenia podlegającego opodatkowaniu — poniżej normy. Wynik: <strong>„Prawdopodobnie się kwalifikujesz — przy obniżonej uldze”</strong> w wysokości €52,000 − €48,013 = <strong>€3,987 rocznie</strong>, co utrzymuje wynagrodzenie podlegające opodatkowaniu na poziomie normy €48,013.</p>
 <h3 style="color:var(--teal2);font-size:1.02rem;margin:14px 0 5px">Często zadawane pytania</h3>
 <div class="faq"><h3>Jak dokładnie mierzona jest odległość 150 km?</h3><p>W linii prostej od Twojego domu do najbliższego punktu granicy holenderskiej — nie do miejsca pracy ani do Amsterdamu — i musisz mieszkać poza tą odległością przez co najmniej 16 z 24 miesięcy przed pierwszym dniem pracy. Wcześniejsze okresy mieszkania lub pracy w Holandii również skracają maksymalny czas trwania ulgi.</p></div>
 <div class="faq"><h3>Jestem badaczem — ile dodatku otrzymuję, jeśli zdam?</h3><p>Pełne 30% wynagrodzenia do pułapu €262,000, bez testu normy wynagrodzenia: przy wynagrodzeniu badawczym €30,000 ten kontroler pokazuje ulgę wolną od podatku €9,000. Nadal potrzebujesz pozostałych warunków — rekrutacja z zagranicy, historia 150 km oraz holenderski pracodawca potrącający.</p></div>

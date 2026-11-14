@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to jest obliczane</h2>
 <p>VAT w ZEA jest pobierany według 5% od większości towarów i usług. Oba wzory to:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = netto × 5 ÷ 100, oraz brutto = netto + VAT.</li>
+<li><strong>Dodaj VAT:</strong> VAT = netto × 5 ÷ 100, oraz brutto = netto + VAT.</li>
 <li><strong>Usuń VAT:</strong> Netto = brutto ÷ (1 + 5 ÷ 100), a VAT = brutto − netto.</li>
 <li><strong>Stawka standardowa:</strong> 5%. <strong>Inne stawki:</strong> brak stawki obniżonej — zamiast tego mają zastosowanie kategorie o stawce zerowej oraz zwolnione (zobacz FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator nie przechowuje żadnych danych i wykonuje jedną operację arytmetyczną na tryb. W trybie dodawania VAT traktuje Twoją kwotę jako cenę netto: mnoży netto przez wybraną stawkę podzieloną przez 100, aby otrzymać VAT, a następnie dodaje obie wartości, otrzymując cenę brutto, którą pobierasz. W trybie usuwania VAT traktuje Twoją kwotę jako cenę brutto, zawierającą VAT — taką, jaka jest drukowana na paragonie lub etykiecie półkowej w ZEA — i dzieli ją przez (1 + stawka ÷ 100), aby odzyskać kwotę netto; różnica między brutto a netto to VAT zawarty w cenie. Ponieważ ceny konsumenckie w ZEA są podawane łącznie z VAT, a ceny biznesowe zwykle podawane netto, oba tryby są dokładnymi odwrotnościami: usunięcie VAT z kwoty brutto, a następnie dodanie go z powrotem zwraca pierwotną kwotę, oprócz zaokrąglenia do dwóch miejsc po przecinku w AED.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Używając standardowej stawki 5% przy większych kwotach: cena netto AED 250.00 plus VAT daje VAT w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto AED 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
+<p>Używając standardowej stawki 5% przy większych kwotach: cena netto AED 250.00 plus VAT daje VAT w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto AED 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> oraz VAT w wysokości <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Co musi pokazywać faktura VAT w ZEA?</h3><p>Faktura podatkowa musi pokazywać słowa „Tax Invoice”, nazwę, adres i TRN dostawcy, dane klienta (oraz TRN dla klientów zarejestrowanych), sekwencyjny numer faktury i datę, opis i ilość towarów lub usług, kwotę netto, stawkę VAT, kwotę VAT w AED oraz sumę brutto. Uproszczone faktury są dozwolone dla dostaw detalicznych poniżej AED 10,000.</p></div>
 <div class="faq"><h3>Sprzedaję z ZEA klientom za granicą — który VAT ma zastosowanie?</h3><p>Eksport towarów i usług poza ramy VAT GCC jest zasadniczo o stawce zerowej, pod warunkiem że zachowasz wymagany dowód eksportowy (dokumenty wysyłkowe i dowód handlowy). Import jest zwykle rozliczany w ramach odwrotnego obciążenia przez zarejestrowane firmy, więc żaden VAT nie jest płacony na granicy w gotówce.</p></div>

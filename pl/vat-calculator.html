@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>Jak to jest obliczane</h2>
-<p>To <strong>add VAT</strong>: VAT = netto × stawka ÷ 100, a brutto = netto + VAT. Aby <strong>usuń VAT</strong>: netto = brutto ÷ (1 + stawka ÷ 100), a VAT = brutto − netto. Nigdy nie obliczaj VAT wewnątrz ceny brutto jako prostego procentu brutto — według 19% VAT wewnątrz €119 to €19, nie €22.61.</p>
-<p style="margin-top:8px">Przykład obliczeniowy: kwota netto €100 w Niemczech według standardowej stawki 19% daje VAT w wysokości <strong id="exVat">—</strong> oraz kwota brutto w wysokości <strong id="exGross">—</strong> (net <span id="exNet">—</span>). Te liczby są obliczane na żywo przez własny kalkulator tej strony, więc zawsze pasują do narzędzia powyżej.</p>
+<p>Do <strong>dodaj VAT</strong>: VAT = netto × stawka ÷ 100, a brutto = netto + VAT. Aby <strong>usuń VAT</strong>: netto = brutto ÷ (1 + stawka ÷ 100), a VAT = brutto − netto. Nigdy nie obliczaj VAT wewnątrz ceny brutto jako prostego procentu brutto — według 19% VAT wewnątrz €119 to €19, nie €22.61.</p>
+<p style="margin-top:8px">Przykład obliczeniowy: kwota netto €100 w Niemczech według standardowej stawki 19% daje VAT w wysokości <strong id="exVat">—</strong> oraz kwota brutto w wysokości <strong id="exGross">—</strong> (netto <span id="exNet">—</span>). Te liczby są obliczane na żywo przez własny kalkulator tej strony, więc zawsze pasują do narzędzia powyżej.</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator przechowuje standardową stawkę VAT każdego kraju jako procent. W trybie dodawania traktuje Twoją kwotę jako cenę netto: VAT = kwota × stawka ÷ 100, a brutto = kwota + VAT. W trybie usuwania traktuje Twoją kwotę jako cenę brutto: netto = kwota ÷ (1 + stawka ÷ 100), a VAT = brutto − netto. Wyniki są zaokrąglane do dwóch miejsc po przecinku do wyświetlenia, przy symbolu waluty kraju, który wybrałeś. Stawki obniżone są wymienione w tabeli powyżej oraz na każdej stronie kraju jako wskazówka, ale sam kalkulator zawsze używa stawki standardowej — stawki, która ma zastosowanie do większości towarów i usług.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Usuwanie VAT w Estonii: kwota brutto €124 według standardowej stawki Estonii 24% (stawka od 1 lipca 2025) dzieli się na kwotę netto <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. Obliczone na żywo przez tę stronę: €124 ÷ 1.24 = €100 netto, a €124 − €100 = €24 VAT.</p>
+<p>Usuwanie VAT w Estonii: kwota brutto €124 według standardowej stawki Estonii 24% (stawka od 1 lipca 2025) dzieli się na kwotę netto <strong id="ex2Net">—</strong> oraz VAT w wysokości <strong id="ex2Vat">—</strong>. Obliczone na żywo przez tę stronę: €124 ÷ 1.24 = €100 netto, a €124 − €100 = €24 VAT.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Dlaczego stawki VAT tak bardzo różnią się w Europie?</h3><p>Każdy kraj ustala własne stawki w ramach minimalnych zasad UE (stawka standardowa co najmniej 15%). Dlatego Luksemburg pobiera 17%, a Węgry 27%, przy większości krajów między 19% a 25%. Szwajcaria (8.1%) oraz Wielka Brytania (20%) ustalają swoje stawki całkowicie poza systemem UE.</p></div>
 <div class="faq"><h3>Czy VAT ma zastosowanie, gdy sprzedaję do innego kraju UE?</h3><p>Zazwyczaj VAT jest pobierany w kraju klienta przy transgranicznym B2B oraz wielu usługach B2C, często przez mechanizm odwrotnego obciążenia lub unijny One Stop Shop (OSS). Ten kalkulator oblicza kwoty według stawki wybranego kraju; to, którego kraju stawka ma prawne zastosowanie, zależy od rodzaju dostawy, więc zasięgnij porady przy regularnym handlu transgranicznym.</p></div>

@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to jest obliczane</h2>
 <p>GST w Nowej Zelandii jest pobierany według 15% od większości dostaw. Oba wzory to:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = netto × 15 ÷ 100, oraz brutto = netto + GST.</li>
+<li><strong>Dodaj GST:</strong> GST = netto × 15 ÷ 100, oraz brutto = netto + GST.</li>
 <li><strong>Usuń GST:</strong> Netto = brutto ÷ (1 + 15 ÷ 100), a GST = brutto − netto.</li>
 <li><strong>Stawka standardowa:</strong> 15%. <strong>Inne stawki:</strong> jedna płaska stawka 15% — brak stawki obniżonej; zamiast tego mają zastosowanie kategorie o stawce zerowej oraz zwolnione (zobacz FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator nie przechowuje żadnych danych i wykonuje jedną operację arytmetyczną na tryb. W trybie dodawania GST traktuje Twoją kwotę jako cenę netto: mnoży netto przez wybraną stawkę podzieloną przez 100, aby otrzymać GST, a następnie dodaje obie wartości, otrzymując cenę brutto, którą pobierasz. W trybie usuwania GST traktuje Twoją kwotę jako cenę brutto, zawierającą GST — taką, jaka jest drukowana na paragonie lub etykiecie półkowej w Nowej Zelandii — i dzieli ją przez (1 + stawka ÷ 100), aby odzyskać kwotę netto; różnica między brutto a netto to GST zawarty w cenie. Ponieważ ceny konsumenckie w Nowej Zelandii są wyświetlane z GST, a ceny biznesowe są często podawane plus GST, oba tryby są dokładnymi odwrotnościami: usunięcie GST z kwoty brutto, a następnie dodanie go z powrotem zwraca pierwotną kwotę, oprócz zaokrąglenia do dwóch miejsc po przecinku w NZD.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Używając standardowej stawki 15% przy większych kwotach: cena netto NZ$ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto NZ$ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
+<p>Używając standardowej stawki 15% przy większych kwotach: cena netto NZ$ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto NZ$ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> oraz GST w wysokości <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Co musi zawierać faktura podatkowa (Nowa Zelandia)?</h3><p>Faktura podatkowa musi pokazywać słowa „tax invoice”, nazwę sprzedawcy i numer GST, datę, opis towarów lub usług oraz kwotę GST lub oświadczenie, że cena zawiera GST. Od kwietnia 2023 zasady są oparte na informacjach, a nie formacie, więc zgodne zapisy (łącznie z e-fakturami) się liczą.</p></div>
 <div class="faq"><h3>Sprzedaję z Nowa Zelandia klientom za granicą — czy naliczany jest GST?</h3><p>Eksport ma stawkę zerową: naliczasz 0% GST i nadal możesz ubiegać się o GST od swoich kosztów, dopóki spełnione są zasady eksportu oraz wymogi dowodowe. Usługi świadczone nie-rezydentom, którzy są poza Nową Zelandią w czasie wykonywania usług, również mogą mieć stawkę zerową.</p></div>

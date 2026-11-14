@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to jest obliczane</h2>
 <p>GST (Singapur) jest naliczany według stawki 9% od większości dostaw podlegających opodatkowaniu. Oto dwa wzory:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = netto × 9 ÷ 100, oraz brutto = netto + GST.</li>
+<li><strong>Dodaj GST:</strong> GST = netto × 9 ÷ 100, oraz brutto = netto + GST.</li>
 <li><strong>Usuń GST:</strong> Netto = brutto ÷ (1 + 9 ÷ 100), a GST = brutto − netto.</li>
 <li><strong>Stawka standardowa:</strong> 9%. <strong>Inne stawki:</strong> jedna standardowa stawka 9% — zamiast niej obowiązują kategorie opodatkowane stawką zerową i zwolnione (zobacz FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator nie przechowuje żadnych danych i wykonuje jedną operację arytmetyczną na tryb. W trybie dodawania GST traktuje Twoją kwotę jako cenę netto: mnoży netto przez wybraną stawkę podzieloną przez 100, aby otrzymać GST, a następnie dodaje obie wartości, otrzymując cenę brutto, którą pobierasz. W trybie usuwania GST traktuje Twoją kwotę jako cenę brutto, zawierającą GST — taką, jaka jest drukowana na paragonie lub etykiecie półkowej w Singapurze — i dzieli ją przez (1 + stawka ÷ 100), aby odzyskać kwotę netto; różnica między brutto a netto to GST zawarty w cenie. Ponieważ zarejestrowani sprzedawcy w Singapurze wyświetlają ceny z GST, podczas gdy wiele ofert B2B jest bez GST, oba tryby są dokładnymi odwrotnościami: usunięcie GST z kwoty brutto, a następnie dodanie go z powrotem zwraca pierwotną kwotę, oprócz zaokrąglenia do dwóch miejsc po przecinku w SGD.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Używając standardowej stawki 9% przy większych kwotach: cena netto S$ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto S$ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
+<p>Używając standardowej stawki 9% przy większych kwotach: cena netto S$ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto S$ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> oraz GST w wysokości <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Co musi zawierać faktura podatkowa (Singapur)?</h3><p>Faktura podatkowa musi pokazywać słowa „tax invoice”, nazwę, adres i numer rejestracyjny GST dostawcy, numer faktury i datę, nazwę i adres klienta, opis towarów lub usług, należną kwotę z wyłączeniem GST, stawkę i kwotę GST oraz sumę łącznie z GST w SGD (przy kwocie GST pokazanej również w SGD dla faktur w walucie obcej).</p></div>
 <div class="faq"><h3>Sprzedaję z Singapur klientom za granicą — czy naliczany jest GST?</h3><p>Eksport towarów oraz kwalifikujących usług międzynarodowych ma stawkę zerową 0%, z zastrzeżeniem utrzymania wymaganego dowodu eksportowego. Z kolei zagraniczni sprzedawcy usług cyfrowych i innych importowanych dla konsumentów w Singapurze rejestrują się w ramach reżimu rejestracji dostawców zagranicznych i naliczają 9% GST.</p></div>

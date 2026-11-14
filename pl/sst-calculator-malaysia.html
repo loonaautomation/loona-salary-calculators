@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to jest obliczane</h2>
 <p>SST w Malezji jest pobierany według stawki dla rodzaju podatku — podatek od usług 8% standardowo od 1 marca 2024. Oba wzory to:</p>
 <ul>
-<li><strong>Add SST:</strong> SST = Netto × 8 ÷ 100, a Brutto = Netto + SST.</li>
+<li><strong>Dodaj SST:</strong> SST = Netto × 8 ÷ 100, a Brutto = Netto + SST.</li>
 <li><strong>Usuń SST:</strong> Netto = Brutto ÷ (1 + 8 ÷ 100), a SST = Brutto − Netto.</li>
 <li><strong>Stawka standardowa:</strong> 8%. <strong>Inne stawki:</strong> podatek od usług 6% (zachowane kategorie), podatek od sprzedaży 10% i 5% — wszystko w selektorze stawek powyżej.</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator nie przechowuje żadnych danych i wykonuje jedną operację arytmetyczną na tryb. W trybie dodawania SST traktuje Twoją kwotę jako cenę netto: mnoży netto przez wybraną stawkę podzieloną przez 100, aby otrzymać SST, a następnie dodaje obie wartości, otrzymując cenę brutto, którą pobierasz. W trybie usuwania SST traktuje Twoją kwotę jako cenę brutto, zawierającą SST — taką, jaka jest drukowana na paragonie lub etykiecie półkowej w Malezji — i dzieli ją przez (1 + stawka ÷ 100), aby odzyskać kwotę netto; różnica między brutto a netto to SST zawarty w cenie. Oba tryby są dokładnymi odwrotnościami w matematyce cen — usunięcie SST z kwoty z podatkiem i dodanie go z powrotem zwraca pierwotną kwotę, oprócz zaokrąglenia do dwóch miejsc po przecinku w MYR. Pamiętaj jednak, że sam SST jest jednostopniowy: w przeciwieństwie do VAT nie ma kredytu za SST zapłacony od własnych nakładów.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Używając standardowej stawki 8% przy większych kwotach: cena netto RM 250.00 plus SST daje SST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto RM 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> and SST of <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
+<p>Używając standardowej stawki 8% przy większych kwotach: cena netto RM 250.00 plus SST daje SST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto RM 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> oraz SST w wysokości <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Co musi pokazywać faktura SST w Malezji?</h3><p>Faktura podatku od usług od zarejestrowanego dostawcy pokazuje nazwę, adres i numer rejestracyjny SST dostawcy, numer faktury i datę, opis usługi, kwotę z wyłączeniem podatku, stawkę i kwotę podatku od usług oraz sumę w MYR. Podatek od sprzedaży jest pokazywany na fakturach producentów i importerów na podstawie zasad ustawy o podatku od sprzedaży.</p></div>
 <div class="faq"><h3>Sprzedaję usługi z zagranicy Malezyjczykom — czy SST ma zastosowanie?</h3><p>Zagraniczni dostawcy usług cyfrowych dla konsumentów malezyjskich muszą zarejestrować się do podatku od usług i naliczać 8% (reżim importowanych usług podlegających opodatkowaniu). Malezyjskie firmy importujące usługi samorozliczają podatek od usług na podstawie zasad w stylu odwrotnego obciążenia dla importowanych usług podlegających opodatkowaniu.</p></div>

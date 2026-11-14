@@ -100,7 +100,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to jest obliczane</h2>
 <p>GST w Indiach jest pobierany według stawki progowej dla towarów lub usług — 18% standardowo od 22 września 2025. Oba wzory to:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = netto × 18 ÷ 100, oraz brutto = netto + GST.</li>
+<li><strong>Dodaj GST:</strong> GST = netto × 18 ÷ 100, oraz brutto = netto + GST.</li>
 <li><strong>Usuń GST:</strong> Netto = brutto ÷ (1 + 18 ÷ 100), a GST = brutto − netto.</li>
 <li><strong>Stawka standardowa:</strong> 18%. <strong>Inne stawki:</strong> 5% dodatnia, 40% ujemna oraz 3% dla złota i przedmiotów szlachetnych (wszystkie w selektorze stawek powyżej).</li>
 
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator nie przechowuje żadnych danych i wykonuje jedną operację arytmetyczną na tryb. W trybie dodawania GST traktuje Twoją kwotę jako cenę netto: mnoży netto przez wybraną stawkę podzieloną przez 100, aby otrzymać GST, a następnie dodaje obie wartości, otrzymując cenę brutto, którą pobierasz. W trybie usuwania GST traktuje Twoją kwotę jako cenę brutto, zawierającą GST — taką, jaka jest drukowana na paragonie lub etykiecie półkowej w Indiach — i dzieli ją przez (1 + stawka ÷ 100), aby odzyskać kwotę netto; różnica między brutto a netto to GST zawarty w cenie. Ponieważ ceny konsumenckie w Indiach są zwykle podawane z GST (MRP), a ceny biznesowe są zwykle podawane netto, oba tryby są dokładnymi odwrotnościami: usunięcie GST z kwoty brutto, a następnie dodanie go z powrotem zwraca pierwotną kwotę, oprócz zaokrąglenia do dwóch miejsc po przecinku w INR.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Używając standardowej stawki 18% przy większych kwotach: cena netto ₹ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto ₹ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
+<p>Używając standardowej stawki 18% przy większych kwotach: cena netto ₹ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto ₹ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> oraz GST w wysokości <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Co musi pokazywać faktura GST w Indiach?</h3><p>Faktura podatkowa zwykle pokazuje nazwy, adresy i GSTIN dostawcy i kupującego, unikalny numer faktury i datę, kody HSN/SAC, opis towarów lub usług, wartość podlegającą opodatkowaniu, podział stawki GST (CGST + SGST lub IGST), kwotę GST oraz sumę w INR. E-fakturowanie (IRN) ma zastosowanie powyżej ogłoszonych progów obrotu.</p></div>
 <div class="faq"><h3>Sprzedaję z Indii klientom w innych stanach lub krajach — który GST ma zastosowanie?</h3><p>Przez granice stanów naliczaj IGST według tej samej połączonej stawki. Eksport ma stawkę zerową: możesz eksportować bez naliczania GST na podstawie Letter of Undertaking (LUT) i ubiegać się o zwroty podatku naliczonego. Przed zastosowaniem stawki zerowej do dostawy B2B możesz zweryfikować GSTIN kupującego na portalu GST i zachować weryfikację jako dowód.</p></div>

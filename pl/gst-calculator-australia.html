@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to jest obliczane</h2>
 <p>GST (Australia) jest naliczany według stawki 10% od większości dostaw podlegających opodatkowaniu. Oto dwa wzory:</p>
 <ul>
-<li><strong>Add GST:</strong> GST = netto × 10 ÷ 100, oraz brutto = netto + GST.</li>
+<li><strong>Dodaj GST:</strong> GST = netto × 10 ÷ 100, oraz brutto = netto + GST.</li>
 <li><strong>Usuń GST:</strong> Netto = brutto ÷ (1 + 10 ÷ 100), a GST = brutto − netto.</li>
 <li><strong>Stawka standardowa:</strong> 10%. <strong>Inne stawki:</strong> jedna płaska stawka 10% — zamiast tego mają zastosowanie kategorie wolne od GST oraz opodatkowane naliczeniowo (zobacz FAQ).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>Jak to działa — wzór</h2>
 <p>Kalkulator nie przechowuje żadnych danych i wykonuje jedną operację arytmetyczną na tryb. W trybie dodawania GST traktuje Twoją kwotę jako cenę netto: mnoży netto przez wybraną stawkę podzieloną przez 100, aby otrzymać GST, a następnie dodaje obie wartości, otrzymując cenę brutto, którą pobierasz. W trybie usuwania GST traktuje Twoją kwotę jako cenę brutto, zawierającą GST — taką, jaka jest drukowana na paragonie lub etykiecie półkowej w Australii — i dzieli ją przez (1 + stawka ÷ 100), aby odzyskać kwotę netto; różnica między brutto a netto to GST zawarty w cenie. Ponieważ ceny konsumenckie w Australii muszą być wyświetlane z GST, a ceny biznesowe są często podawane w dowolny sposób, oba tryby są dokładnymi odwrotnościami: usunięcie GST z kwoty brutto, a następnie dodanie go z powrotem zwraca pierwotną kwotę, oprócz zaokrąglenia do dwóch miejsc po przecinku w AUD.</p>
 <h3>Przykład obliczeniowy</h3>
-<p>Używając standardowej stawki 10% przy większych kwotach: cena netto A$ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto A$ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> and GST of <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
+<p>Używając standardowej stawki 10% przy większych kwotach: cena netto A$ 250.00 plus GST daje GST w wysokości <span id="exDAddVat">…</span> oraz cena brutto w wysokości <span id="exDAddGross">…</span>. W drugą stronę cena brutto A$ 250.00 rozkłada się na kwotę netto wynoszącą <span id="exDRemNet">…</span> oraz GST w wysokości <span id="exDRemVat">…</span>. Oba wyniki są wstrzykiwane na żywo przez własny kod kalkulatora tej strony.</p>
 <h3>Często zadawane pytania</h3>
 <div class="faq"><h3>Co musi zawierać faktura podatkowa (Australia)?</h3><p>Przy sprzedaży powyżej $82.50 (łącznie z GST) faktura podatkowa musi pokazywać, że jest fakturą podatkową, tożsamość sprzedawcy i ABN, datę wystawienia, krótki opis tego, co sprzedano, kwotę GST (lub oświadczenie, że suma zawiera GST) oraz, dla faktur o wartości $1,000 lub więcej, tożsamość kupującego lub ABN.</p></div>
 <div class="faq"><h3>Sprzedaję z Australia klientom za granicą — czy naliczany jest GST?</h3><p>Zasadniczo nie: eksport towarów oraz wiele usług świadczonych klientom zagranicznym jest wolnych od GST, pod warunkiem że spełnione są warunki eksportu oraz limity czasowe. Towary importowane o niskiej wartości kupowane przez konsumentów australijskich są zamiast tego opodatkowane na granicy lub przez sprzedawcę zagranicznego na podstawie zasad usług importowanych oraz towarów o niskiej wartości.</p></div>
