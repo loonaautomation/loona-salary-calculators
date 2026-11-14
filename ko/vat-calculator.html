@@ -129,8 +129,8 @@ footer a{color:var(--gold2);text-decoration:none}
 
 <div class="sec">
 <h2>계산 방법</h2>
-<p>To <strong>add VAT</strong>: VAT = 순액 × 세율 ÷ 100, 총액 = 순액 + VAT. 하려면 <strong>VAT 빼기</strong>: 순액 = 총액 ÷ (1 + 세율 ÷ 100), VAT = 총액 − 순액. 총 가격 안의 VAT를 총액의 단순 백분율로 절대 계산하지 마세요 — 19%에서는 €119 안의 VAT가 €19예요, €22.61이 아니라.</p>
-<p style="margin-top:8px">실행 예시: 순액 €100 — 독일에서 표준 세율 19%로 — 은 VAT를 줘요 — 의 <strong id="exVat">—</strong> 그리고 총액 — 의 <strong id="exGross">—</strong> (net <span id="exNet">—</span>"). 이 수치는 이 페이지 자체 계산기가 실시간으로 계산해요. 그래서 위 도구와 항상 일치해요.</p>
+<p>도착 <strong>VAT 더하기</strong>: VAT = 순액 × 세율 ÷ 100, 총액 = 순액 + VAT. 하려면 <strong>VAT 빼기</strong>: 순액 = 총액 ÷ (1 + 세율 ÷ 100), VAT = 총액 − 순액. 총 가격 안의 VAT를 총액의 단순 백분율로 절대 계산하지 마세요 — 19%에서는 €119 안의 VAT가 €19예요, €22.61이 아니라.</p>
+<p style="margin-top:8px">실행 예시: 순액 €100 — 독일에서 표준 세율 19%로 — 은 VAT를 줘요 — 의 <strong id="exVat">—</strong> 그리고 총액 — 의 <strong id="exGross">—</strong> (순액 <span id="exNet">—</span>"). 이 수치는 이 페이지 자체 계산기가 실시간으로 계산해요. 그래서 위 도구와 항상 일치해요.</p>
 </div>
 
 <div class="sec">
@@ -234,7 +234,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>작동 방식 — 공식</h2>
 <p>계산기는 각 국가의 표준 VAT 세율을 백분율로 유지해요. 더하기 모드에서는 금액을 순 가격으로 취급해요: VAT = 금액 × 세율 ÷ 100, 총액 = 금액 + VAT. 제거 모드에서는 금액을 총 가격으로 취급해요: 순액 = 금액 ÷ (1 + 세율 ÷ 100), VAT = 총액 − 순액. 결과는 선택한 국가의 통화 기호와 함께 표시를 위해 소수점 두 자리로 반올림돼요. 감면 세율은 위 표와 안내를 위한 각 국가 페이지에 나열돼 있지만, 계산기 자체는 항상 표준 세율을 사용해요 — 대부분의 재화와 서비스에 적용되는 세율이에요.</p>
 <h3>실행 예시</h3>
-<p>Estonia에서 VAT 제거: 총액 €124 — Estonia의 표준 세율 24% (July 1일, 2025년부터의 세율)로 — 는 순액으로 나뉘어요 — 의 <strong id="ex2Net">—</strong> and VAT of <strong id="ex2Vat">—</strong>. 이 페이지가 실시간으로 계산해요: €124 ÷ 1.24 = 순액 €100, €124 − €100 = VAT €24.</p>
+<p>Estonia에서 VAT 제거: 총액 €124 — Estonia의 표준 세율 24% (July 1일, 2025년부터의 세율)로 — 는 순액으로 나뉘어요 — 의 <strong id="ex2Net">—</strong> 및 VAT <strong id="ex2Vat">—</strong>. 이 페이지가 실시간으로 계산해요: €124 ÷ 1.24 = 순액 €100, €124 − €100 = VAT €24.</p>
 <h3>자주 묻는 질문</h3>
 <div class="faq"><h3>왜 VAT 세율이 유럽 전역에서 이렇게 다른가요?</h3><p>각 국가는 EU 최소 규칙 안에서 자체 세율을 정해요 (표준 세율 최소 15%). 그래서 룩셈부르크는 17%, 헝가리는 27%를 부과하고, 대부분의 국가는 19%에서 25% 사이예요. 스위스 (8.1%)와 영국 (20%)은 EU 시스템 밖에서 완전히 세율을 정해요.</p></div>
 <div class="faq"><h3>다른 EU 국가에 판매할 때 VAT가 적용되나요?</h3><p>보통 국경 간 B2B와 많은 B2C 서비스에서는 VAT가 고객의 국가에서 부과돼요. 종종 역과세 메커니즘이나 EU One Stop Shop (OSS)를 통해요. 이 계산기는 선택한 국가의 세율로 금액을 계산해요. 어떤 국가의 세율이 법적으로 적용되는지는 공급 유형에 따라 달라요. 그래서 정기적인 국경 간 거래에는 조언을 받으세요.</p></div>

@@ -127,7 +127,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="row">
 <div><label for="children">자녀 수</label><input type="number" id="children" min="0" step="1" value="1" inputmode="numeric"></div>
 <div><label for="childless">자녀가 없고 23세 이상인가요?</label>
-<select id="childless"><option value="no" selected>No</option><option value="yes">맞아요 (+0.6% 요양 추가 부담금)</option></select></div>
+<select id="childless"><option value="no" selected>아니요</option><option value="yes">맞아요 (+0.6% 요양 추가 부담금)</option></select></div>
 </div>
 <div class="row">
 <div><label for="church">교회세</label>
@@ -137,7 +137,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="result" id="result">
 <div>세금 등급별 월 순액 (본인 급여)</div>
 <table>
-<tr><th>세금 등급</th><th>Who it is for</th><th>순액 / 월</th><th>순액 / 연</th></tr>
+<tr><th>세금 등급</th><th>대상자</th><th>순액 / 월</th><th>순액 / 연</th></tr>
 <tr><td>I</td><td>단독</td><td id="rM1">—</td><td id="rY1">—</td></tr>
 <tr><td>II</td><td>한부모</td><td id="rM2">—</td><td id="rY2">—</td></tr>
 <tr><td>III</td><td>기혼, 고소득자</td><td id="rM3">—</td><td id="rY3">—</td></tr>
@@ -170,7 +170,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>자주 묻는 질문</h2>
 <div class="faq"><h3>독일 여섯 세금 등급은 무엇인가요?</h3><p>I 단독 · II 한부모 · III 기혼 고소득자 · IV 기혼, 비슷한 소득 · V 기혼 저소득자 (파트너가 III) · VI 두 번째 일자리.</p></div>
 <div class="faq"><h3>제 등급이 총 세금을 바꾸나요?</h3><p>아니에요 — 월 원천징수만이에요. 연간 신고가 차이를 정산해요. III/V 커플은 신고를 해야 해요.</p></div>
-<div class="faq"><h3>III/V or IV/IV?</h3><p>불균등한 소득: III/V는 보통 월 현금 흐름을 개선해요. 비슷한 소득: IV/IV가 더 단순하고 연말 상환을 피할 수 있어요. 최종 연간 세금은 동일해요.</p></div>
+<div class="faq"><h3>III/V 또는 IV/IV?</h3><p>불균등한 소득: III/V는 보통 월 현금 흐름을 개선해요. 비슷한 소득: IV/IV가 더 단순하고 연말 상환을 피할 수 있어요. 최종 연간 세금은 동일해요.</p></div>
 <div class="faq"><h3>V와 VI는 왜 여기서 같나요?</h3><p>둘 다 개인 공제 없이 원천징수하고 이 추정기에서는 동일하게 근사해요. 실제 급여에서는 둘 사이에 조금 차이가 날 수 있어요.</p></div>
 <div class="faq"><h3>세금 등급을 바꿀 수 있나요?</h3><p>커플은 Finanzamt나 ELSTER를 통해 연 한 번 조합을 바꿀 수 있어요. 향후 급여 명세부터 적용돼요.</p></div>
 </div>

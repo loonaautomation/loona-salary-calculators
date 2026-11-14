@@ -97,7 +97,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>계산 방법</h2>
 <p>아랍에미리트의 VAT는 대부분의 재화와 서비스에 5%로 부과해요. 두 공식은:</p>
 <ul>
-<li><strong>Add VAT:</strong> VAT = 순액 × 5 ÷ 100, 이고, 총액 = 순액 + VAT예요.</li>
+<li><strong>VAT 더하기:</strong> VAT = 순액 × 5 ÷ 100, 이고, 총액 = 순액 + VAT예요.</li>
 <li><strong>VAT 제거:</strong> 순액 = 총액 ÷ (1 + 5 ÷ 100), VAT = 총액 − 순액이에요.</li>
 <li><strong>표준 세율:</strong> 5%. <strong>다른 세율:</strong> 감면 세율 없음 — 대신 영세율과 면제 범주가 적용돼요 (FAQ를 보세요).</li>
 
@@ -134,7 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>작동 방식 — 공식</h2>
 <p>계산기는 데이터를 저장하지 않고 모드당 산수 하나를 해요. VAT 더하기 모드에서는 금액을 순 가격으로 취급해요: 순액에 선택한 세율을 100으로 나눈 값을 곱해 VAT를 구하고, 둘을 더해 부과하는 총 가격을 만들어요. VAT 제거 모드에서는 금액을 VAT 포함 총 가격으로 취급해요 — 아랍에미리트 영수증이나 진열 라벨에 인쇄되는 종류의 — 그리고 (1 + 세율 ÷ 100)로 나눠 순액을 되찾아요. 총액과 순액의 차이가 가격에 포함된 VAT예요. 아랍에미리트 소비자 가격은 VAT 포함으로 제시되고 사업 가격은 보통 순액으로 제시되기 때문이에요 두 모드는 정확히 역이에요: 총액 수치에서 VAT를 제거했다가 다시 더하면 원래 금액이 돌아와요. AED로 소수점 두 자리 반올림은 별도예요.</p>
 <h3>실행 예시</h3>
-<p>5% 표준 세율로 더 큰 금액 사용하기: 순 가격 AED 250.00에 VAT를 더하면 VAT가 <span id="exDAddVat">…</span> 그리고 총 가격 — 의 <span id="exDAddGross">…</span>. 반대로, 총 가격 AED 250.00는 순액으로 나뉘어요 — 의 <span id="exDRemNet">…</span> and VAT of <span id="exDRemVat">…</span>". 두 결과 모두 이 페이지 자체 계산기 코드가 실시간으로 주입해요.</p>
+<p>5% 표준 세율로 더 큰 금액 사용하기: 순 가격 AED 250.00에 VAT를 더하면 VAT가 <span id="exDAddVat">…</span> 그리고 총 가격 — 의 <span id="exDAddGross">…</span>. 반대로, 총 가격 AED 250.00는 순액으로 나뉘어요 — 의 <span id="exDRemNet">…</span> 및 VAT <span id="exDRemVat">…</span>". 두 결과 모두 이 페이지 자체 계산기 코드가 실시간으로 주입해요.</p>
 <h3>자주 묻는 질문</h3>
 <div class="faq"><h3>아랍에미리트의 VAT 송장에는 무엇이 표시돼야 하나요?</h3><p>세금 송장은 'Tax Invoice'라는 문구, 공급자의 이름, 주소, TRN, 고객 상세 정보 (등록 고객은 TRN), 순차 송장 번호와 날짜, 재화나 서비스의 설명과 수량, 순액, VAT 세율, AED의 VAT 금액, 총합계를 표시해야 해요. AED 10,000 미만의 소매 공급에는 간이 송장이 허용돼요.</p></div>
 <div class="faq"><h3>UAE에서 해외 고객에게 판매해요 — 어느 VAT가 적용되나요?</h3><p>GCC VAT 체계 밖으로의 상품·서비스 수출은 일반적으로 영세율이에요. 필요한 수출 증거 (배송 서류와 상업적 증명)를 보관해야 해요. 수입은 보통 등록 기업이 역과세로 회계해요. 그래서 국경에서 현금으로 VAT가 지급되지 않아요.</p></div>

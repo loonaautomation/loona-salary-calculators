@@ -104,7 +104,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>계산 방법</h2>
 <p>캐나다의 판매세는 연방 GST 5%에 공급 주에 따라 달라지는 주 층을 더한 것이에요. 두 공식은:</p>
 <ul>
-<li><strong>Add GST/HST:</strong> GST/HST = 순액 × 13 ÷ 100, 총액 = 순액 + GST/HST.</li>
+<li><strong>GST/HST 더하기:</strong> GST/HST = 순액 × 13 ÷ 100, 총액 = 순액 + GST/HST.</li>
 <li><strong>GST/HST 제거:</strong> 순액 = 총액 ÷ (1 + 13 ÷ 100), GST/HST = 총액 − 순액.</li>
 <li><strong>표준 세율:</strong> 13%. <strong>다른 세율:</strong> GST 5%만, HST 14% 또는 15%, PST/RST/QST 조합 — 모두 위 세율 선택기에 있어요.</li>
 
@@ -141,7 +141,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <h2>작동 방식 — 공식</h2>
 <p>계산기는 데이터를 저장하지 않고 모드당 산수 하나를 해요. GST/HST 더하기 모드에서는 금액을 순 가격으로 취급해요: 순액에 선택한 세율을 100으로 나눈 값을 곱해 GST/HST를 구하고, 둘을 더해 부과하는 총 가격을 만들어요. GST/HST 제거 모드에서는 금액을 GST/HST 포함 총 가격으로 취급해요 — 캐나다 영수증이나 진열 라벨에 인쇄되는 종류의 — 그리고 (1 + 세율 ÷ 100)로 나눠 순액을 되찾아요. 총액과 순액의 차이가 가격에 포함된 GST/HST예요. 캐나다 소비자 가격은 많은 주에서 계산대에서 세금 전에 표시되기 때문이에요 — 다른 주에서는 HST 포함 가격 표시가 흔하지만요 — 두 모드는 어느 쪽으로도 작업하게 해요: 총액 수치에서 세금을 제거했다가 다시 더하면 원래 금액이 돌아와요. CAD로 소수점 두 자리 반올림은 별도예요.</p>
 <h3>실행 예시</h3>
-<p>13% 표준 세율로 더 큰 금액 사용하기: 순 가격 $ 250.00에 GST/HST를 더하면 GST/HST가 <span id="exDAddVat">…</span> 그리고 총 가격 — 의 <span id="exDAddGross">…</span>. 반대로, 총 가격 $ 250.00는 순액으로 나뉘어요 — 의 <span id="exDRemNet">…</span> and GST/HST of <span id="exDRemVat">…</span>". 두 결과 모두 이 페이지 자체 계산기 코드가 실시간으로 주입해요.</p>
+<p>13% 표준 세율로 더 큰 금액 사용하기: 순 가격 $ 250.00에 GST/HST를 더하면 GST/HST가 <span id="exDAddVat">…</span> 그리고 총 가격 — 의 <span id="exDAddGross">…</span>. 반대로, 총 가격 $ 250.00는 순액으로 나뉘어요 — 의 <span id="exDRemNet">…</span> 및 GST/HST <span id="exDRemVat">…</span>". 두 결과 모두 이 페이지 자체 계산기 코드가 실시간으로 주입해요.</p>
 <h3>자주 묻는 질문</h3>
 <div class="faq"><h3>캐나다의 판매 송장에는 무엇이 표시돼야 하나요?</h3><p>GST/HST 목적의 송장은 판매자의 이름과 GST/HST 계좌 번호, 날짜, 재화나 서비스의 설명, 지급 금액, 납부한 세금 또는 세금이 포함됐다는 진술을 표시해야 해요 — 더 큰 판매에서는 구매자의 이름도요. PST/QST 주에서는 주 세금과 등록 번호가 별도 줄로 표시돼요.</p></div>
 <div class="faq"><h3>캐나다에서 다른 주나 국가의 고객에게 판매해요 — 어느 세율이 적용되나요?</h3><p>일반적으로 상품이 배송되는 주나 서비스가 소비되는 주의 세율이에요 ('공급지' 규칙). 본인 주가 아니에요 — 그래서 BC로 배송하는 Ontario 판매자는 GST 5%에 BC PST 규칙을 더해 부과하고, 캐나다 밖으로 수출되는 상품은 보통 GST/HST 영세율이에요. PST 주와 Quebec에서는 주 밖 판매자에게도 등록 의무가 생길 수 있어요.</p></div>
