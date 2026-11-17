@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">巴基斯坦</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">仅适用于受薪个人。2024 年（TY2024）：仅前两个税档（0% 至 PKR 600,000，2.5% 至 PKR 1,200,000）在搜索结果中得到确认 — 其余按《金融法》2023 并标记为未核实；发布前请向 FBR 复核。2025 年（TY2025，《金融法》2024）和 2026 年（TY2026，《金融法》2025）已完全确认。请注意，此处 2026 年的数字是 TY2026（2025 年七月至 2026 年六月）的税档；较新的《金融法》2026 税档（TY2027，2026 年七月至 2027 年六月：1%/11%/20%/25%/29%/32%/35%，新门槛为 5.6M/7M）属于不同年份 — 切勿混用。来源：https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>每月净工资</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="请输入大于零的金额以查看您的结果。";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " 每月";
   document.getElementById("rNote").textContent = "仅限受薪个人。2024 (TY2024)：仅前两个税档（0% 至 PKR 600,000，2.5% 至 PKR 1,200,000）在搜索结果中得到确认 \u2014 其余按《金融法》2023并标记为未核实；发布前请向FBR重新核对。2025 (TY2025, Finance Act 2024) 和 2026 (TY2026, Finance Act 2025) 已完全确认。请注意，这里的2026年数字是 TY2026 (Jul 2025-Jun 2026) 税档；较新的《金融法》2026税档 (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35%，新门槛 5.6M/7M) 是不同年份 \u2014 不要混淆。来源：https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

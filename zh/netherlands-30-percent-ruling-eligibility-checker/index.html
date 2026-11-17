@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">您的雇主是荷兰工资税预扣代理人（荷兰雇主或荷兰工资发放）吗？</label>
 <select id="empl"><option value="yes" selected>是</option><option value="no">否</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="请输入您的总工资以检查您的资格。";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ 免税（研究人员）" :
     r.salaryStatus==="full" ? "✓ 通过 — 完整的30%可能" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "您的工资超过标准，但完整的30%不能，因此津贴限制为约 " + fmt(r.allowance) + " — 应税余额略高于 €" + r.norm.toLocaleString("en-US") + " 标准。 " + note;
   if(!r.overall) note = "检查上方未通过的测试 — 每项都是硬性条件。工资数字使用2026年标准；如果您在2027年开始，将适用更高的标准。";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">加入日期</label><input type="date" id="start" value="2019-01-01"></div>
 <div><label for="end">最后工作日</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>按国家的服务终止金额（相同输入）</div>
 <table>
@@ -253,9 +254,9 @@ function calc(){
   var reason = document.getElementById("reason").value;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="请输入您的基本工资(或总工资)和两个日期 — 最后工作日必须在加入日期之后。";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="最后工作日必须在加入日期之后 — 请检查您的日期。";m.style.display="block";} return; }
   var years = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var omanBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -270,7 +271,7 @@ function calc(){
   var vals = [["UAE",r.uae],["沙特阿拉伯",r.saudi],["卡塔尔",r.qatar],["科威特",r.kuwait],["阿曼",r.oman],["巴林",r.bahrain]];
   vals.sort(function(a,b){return b[1]-a[1];});
   document.getElementById("rNote").textContent = "根据这些数字，最慷慨的公式是 " + vals[0][0] + " (" + fmt(vals[0][1]) + ")，最低的是 " + vals[5][0] + " (" + fmt(vals[5][1]) + ") — 以每个国家自己的货币单位计，共 " + years.toFixed(2) + " 年工龄。卡塔尔按其21天的法定下限显示；更好的合同费率会提高它。";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","social","reason","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

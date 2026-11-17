@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="resigned">我正在辞职（第85条比例）</option>
 <option value="art87">第87条案件中的辞职（全额奖励）</option>
 </select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>应付服务终止奖励</div>
 <div class="big" id="total">SAR 0</div>
@@ -225,9 +226,9 @@ function calc(){
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var reason = document.getElementById("reason").value;
   var box = document.getElementById("result");
-  if(!s || !e || wage<=0){ box.style.display="none"; return; }
+  if(!s || !e || wage<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="请输入您的月工资和两个日期 — 最后工作日必须在加入日期之后。";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="最后工作日必须在加入日期之后 — 请检查您的日期。";m.style.display="block";} return; }
   var years = days/365.25;
   var r = saudiEOS(wage, years, reason);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -244,7 +245,7 @@ function calc(){
   else if(reason==="art87") note = "第87条案件获得全部补偿。相比之下，根据第80条因故终止不支付补偿。";
   else note = "不足年份按比例计算，补偿没有法定上限。";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["wage","start","end","reason"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
