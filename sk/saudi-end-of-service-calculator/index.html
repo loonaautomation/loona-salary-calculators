@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="resigned">Dávam výpoveď (stupnica podľa článku 85)</option>
 <option value="art87">Výpoveď zamestnanca v prípade podľa článku 87 (plná náhrada)</option>
 </select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Splatná náhrada pri skončení služby</div>
 <div class="big" id="total">SAR 0</div>
@@ -225,9 +226,9 @@ function calc(){
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var reason = document.getElementById("reason").value;
   var box = document.getElementById("result");
-  if(!s || !e || wage<=0){ box.style.display="none"; return; }
+  if(!s || !e || wage<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Zadajte mesačnú mzdu a oba dátumy — dátum ukončenia musí byť po dátume začiatku.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Dátum ukončenia musí byť po dátume začiatku — skontrolujte prosím dátumy.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = saudiEOS(wage, years, reason);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -244,7 +245,7 @@ function calc(){
   else if(reason==="art87") note = "Prípady podľa článku 87 dostanú plnú odmenu. Pri skončení z dôvodu zavinenia podľa článku 80 sa naopak žiadna odmena nevypláca.";
   else note = "Čiastkové roky sa prepočítavajú pomernou časťou a na odmenu neplatí žiadny zákonný strop.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["wage","start","end","reason"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
