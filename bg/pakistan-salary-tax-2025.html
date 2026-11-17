@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Пакистан</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Само за наети физически лица. 2024 (TY2024): само първите две групи (0% до PKR 600,000, 2.5% до PKR 1,200,000) бяха потвърдени в резултатите от търсенето — останалото е по Закона за финансите 2023 и е отбелязано като НЕПОТВЪРДЕНО; проверете отново във FBR преди публикуване. 2025 (TY2025, Закон за финансите 2024) и 2026 (TY2026, Закон за финансите 2025) са напълно потвърдени. Обърнете внимание, че цифрите за 2026 г. тук са групите за TY2026 (юли 2025–юни 2026); по-новите групи от Закона за финансите 2026 (TY2027, юли 2026–юни 2027: 1%/11%/20%/25%/29%/32%/35% с нови прагове от 5.6M/7M) са за друга година — не ги смесвайте. Източници: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Нетна заплата на месец</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Въведете сума, по-голяма от нула, за да видите резултата.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " на месец";
   document.getElementById("rNote").textContent = "Само заплатени лица. 2024 (TY2024): само първите две групи (0% до PKR 600,000, 2.5% до PKR 1,200,000) бяха потвърдени в резултатите от търсенето \u2014 останалото е по Закона за финансите от 2023 г. и е отбелязано НЕПОТВЪРДЕНО; проверете отново FBR преди публикуване. 2025 (TY2025, Закон за финансите от 2024 г.) и 2026 (TY2026, Закон за финансите от 2025 г.) напълно потвърдени. Обърнете внимание, че цифрите за 2026 г. тук са групите TY2026 (юли 2025-юни 2026); по-новите групи на Закона за финансите от 2026 г. (TY2027, юли 2026-юни 2027: 1%/11%/20%/25%/29%/32%/35% с нови прагове 5.6M/7M) са различна година \u2014 не смесвайте. Източници: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
