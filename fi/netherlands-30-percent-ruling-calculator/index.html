@@ -133,6 +133,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Milloin sääntöä sovellettiin sinuun ensimmäisen kerran?</label>
 <select id="start"><option value="new" selected>Vuodesta 2024 alkaen</option><option value="old">Ennen 1. tammikuuta 2024 (säilyttää 30% vuonna 2027)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Ylimääräinen nettopalkka säännöstä (2026)</div>
 <div class="big" id="total">€0 vuodessa</div>
@@ -279,7 +280,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Anna nollaa suurempi summa nähdäksesi tuloksesi.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -300,7 +301,7 @@ function calc(){
   if(r.y2026.normFailed) note = "Palkkasi ei ylitä palkkanormia, joten päätös ei tällä hetkellä anna etua: verotettavan palkan on ylitettävä normi vähennyksen jälkeen. " + note;
   else if(r.y2026.normLimited) note = "Vähennystäsi rajoittaa palkkanormi — täysi 30% painaisi verotettavan palkkasi normin alle, joten sitä pienennetään. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
