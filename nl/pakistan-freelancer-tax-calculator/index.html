@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">Belastingstatus</label>
 <select id="filer"><option value="filer" selected>Filer (op de Active Taxpayer List)</option><option value="nonfiler">Non-filer (tarieven Tiende Schema)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Definitieve belasting sectie 154A voor het jaar</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Voer je inkomen in om je belasting te berekenen.";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% van de bruto overboekingen";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "De belasting onder sectie 154A is definitief zodra je aangifte is ingediend. Houd je PSEB-registratie actief en leid de opbrengsten via bankkanalen om in het stelsel te blijven." :
     "Het getoonde tarief voor niet-aangevers is de door praktijkmensen toegepaste verdubbeling uit de Tenth Schedule — aangever worden halveert het en verwijdert ook de hogere inhouding op je andere banktransacties.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

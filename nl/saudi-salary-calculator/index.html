@@ -136,6 +136,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="expat">Niet-Saoedisch (expat) — 0%</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Netto maandloon</div>
 <div class="big" id="total">SAR 0</div>
@@ -240,7 +241,7 @@ function calc(){
   var other = parseFloat(document.getElementById("other").value)||0;
   var nat = document.getElementById("nat").value;
   var box = document.getElementById("result");
-  if(basic+housing+other<=0){ box.style.display="none"; return; }
+  if(basic+housing+other<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Voer ten minste één salarisbedrag in (basissalaris, huisvestingstoeslag of andere toeslagen) om je resultaat te zien.";m.style.display="block";} return; }
   var isSaudi = nat!=="expat";
   var r = saudiGOSI({basic:basic, housing:housing, other:other, isSaudi:isSaudi, pensionRate: PENSION[nat]||0});
   document.getElementById("rGross").textContent = fmt(r.gross);
@@ -253,7 +254,7 @@ function calc(){
   document.getElementById("rNote").textContent = isSaudi ?
     "Het GOSI-pensioenaandeel voor werknemers in het nieuwe stelsel stijgt met 0.5 punt elke 1 juli tot 2028 — kies de periode die past bij wanneer je dit leest." :
     "Als niet-Saoedische werknemer heb je helemaal geen GOSI-inhouding; de tak beroepsrisico's van 2% wordt alleen door je werkgever betaald.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","housing","other","nat"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

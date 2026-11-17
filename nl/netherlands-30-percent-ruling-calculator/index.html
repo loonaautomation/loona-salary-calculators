@@ -133,6 +133,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Wanneer werd je regeling voor het eerst toegepast?</label>
 <select id="start"><option value="new" selected>Vanaf 2024</option><option value="old">Vóór 1 januari 2024 (behoudt 30% in 2027)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Extra nettoloon uit de regeling (2026)</div>
 <div class="big" id="total">€0 per jaar</div>
@@ -279,7 +280,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Voer een bedrag groter dan nul in om je resultaat te zien.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -300,7 +301,7 @@ function calc(){
   if(r.y2026.normFailed) note = "Je salaris haalt de salarisnorm niet, dus de regeling levert momenteel geen voordeel op: het belastbare salaris moet na de vergoeding boven de norm uitkomen. " + note;
   else if(r.y2026.normLimited) note = "Je vergoeding wordt beperkt door de salarisnorm — de volledige 30% zou je belastbare salaris onder de norm brengen, dus wordt ze verlaagd. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

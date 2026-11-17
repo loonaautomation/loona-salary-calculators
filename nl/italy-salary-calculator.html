@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Bruto jaarsalaris (EUR) — RAL</label>
 <input type="number" id="gross" min="0" step="any" value="35000" inputmode="decimal">
 
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Geschat nettosalaris per maand</div>
 <div class="big" id="total">—</div>
@@ -179,7 +180,7 @@ function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Voer een bedrag groter dan nul in om je resultaat te zien.";m.style.display="block";} return; }
   var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
   var r = netCalc(gross, opt);
   document.getElementById("rGross").textContent = fmt(gross);
@@ -190,7 +191,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " per maand";
   document.getElementById("rNote").textContent = "SCHATTING: alleen nationale IRPEF + INPS. Je regio en gemeente voegen daar een toeslag van ongeveer 1-3% bovenop — zie de opmerkingen hieronder.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
