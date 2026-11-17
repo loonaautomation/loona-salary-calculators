@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Samo za zaposlene fizičke osobe. 2024. (TY2024): u rezultatima pretraživanja potvrđena su samo prva dva razreda (0% do PKR 600,000 i 2.5% do PKR 1,200,000) — ostatak je prema Finance Actu 2023 i označen kao NEPROVJERENO; prije objave ponovno provjerite kod FBR-a. 2025. (TY2025, Finance Act 2024) i 2026. (TY2026, Finance Act 2025) u potpunosti potvrđeni. Napomena: ovdje navedeni iznosi za 2026. odnose se na razrede za TY2026 (srpanj 2025. – lipanj 2026.); noviji razredi prema Finance Actu 2026 (TY2027, srpanj 2026. – lipanj 2027.: 1%/11%/20%/25%/29%/32%/35% s novim pragovima od 5.6M/7M) odnose se na drugu godinu — nemojte ih miješati. Izvori: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Neto plaća mjesečno</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Unesite iznos veći od nule da biste vidjeli rezultat.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " mjesečno";
   document.getElementById("rNote").textContent = "Samo osobe koje primaju plaću. 2024 (TY2024): samo prva dva pojasa (0% do PKR 600,000, 2.5% do PKR 1,200,000) potvrđena su u rezultatima pretraživanja \u2014 ostatak je prema Zakonu o financijama 2023 i označen kao NEPOTVRĐENO; ponovno provjerite FBR prije objave. 2025 (TY2025, Zakon o financijama 2024) i 2026 (TY2026, Zakon o financijama 2025) u cijelosti potvrđeni. Primijetite da su brojke za 2026 ovdje razredi za TY2026 (srpanj 2025-lipanj 2026); noviji razredi Zakona o financijama 2026 (TY2027, srpanj 2026-lipanj 2027: 1%/11%/20%/25%/29%/32%/35% s novim pragovima 5.6M/7M) druga su godina \u2014 nemojte miješati. Izvori: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

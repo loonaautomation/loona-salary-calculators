@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="payments">Isplate godišnje</label>
 <select id="payments"><option value="12" selected>12 isplata</option><option value="14">14 isplata (pagas extraordinarias)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Neto plaća po isplati</div>
 <div class="big" id="total">€0</div>
@@ -235,7 +236,7 @@ function calc(){
   var temp = document.getElementById("contract").value==="temp";
   var pays = parseInt(document.getElementById("payments").value)||12;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Unesite iznos veći od nule da biste vidjeli rezultat.";m.style.display="block";} return; }
   var r = spainNet({gross:gross, temporary:temp});
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rSS").textContent = fmt(r.ss);
@@ -247,7 +248,7 @@ function calc(){
   document.getElementById("rNote").textContent = gross>61214.40 ?
     "Vaša plaća iznad je gornje granice socijalnog osiguranja, pa se doprinosi naplaćuju samo na prvih €61,214.40. Regionalne ljestvice IRPF-a mogu pomaknuti iznos poreza — vidi regionalno upozorenje u nastavku." :
     "Izračunato prema standardnoj ljestvici IRPF-a. Vlastita ljestvica vaše autonomne zajednice može pomaknuti iznos poreza gore ili dolje — vidi regionalno upozorenje u nastavku.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","contract","payments"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -133,6 +133,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Kada je vaš ruling prvi put primijenjen?</label>
 <select id="start"><option value="new" selected>Od 2024. nadalje</option><option value="old">Prije 1. siječnja 2024. (zadržava 30% u 2027.)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Dodatna neto plaća od rulinga (2026)</div>
 <div class="big" id="total">€0 godišnje</div>
@@ -279,7 +280,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Unesite iznos veći od nule da biste vidjeli rezultat.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -300,7 +301,7 @@ function calc(){
   if(r.y2026.normFailed) note = "Vaša plaća ne prolazi normu plaće, pa ruling trenutno ne daje korist: oporeziva plaća mora prelaziti normu nakon naknade. " + note;
   else if(r.y2026.normLimited) note = "Vaša naknada ograničena je normom plaće — punih 30% gurnulo bi vašu oporezivu plaću ispod norme, pa se reže. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
