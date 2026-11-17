@@ -134,6 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <select id="church"><option value="0" selected>Yok</option><option value="9">gelir vergisinin %9'u (çoğu eyalet)</option><option value="8">gelir vergisinin %8'i (Bavyera, Baden-Württemberg)</option></select></div>
 <div><label for="zusatz">Sağlık sigortası Zusatzbeitrag (%)</label><input type="number" id="zusatz" min="0" step="any" value="2.9" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Vergi sınıfına göre ay başına net (maaşınız)</div>
 <table>
@@ -278,7 +279,7 @@ function calc(){
   var church = parseFloat(document.getElementById("church").value)||0;
   var zusatz = parseFloat(document.getElementById("zusatz").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Sonucunuzu görmek için lütfen sıfırdan büyük bir tutar girin.";m.style.display="block";} return; }
   var r = deCompare({gross:gross, partnerGross:partner, church:church, childless:childless, children:children, zusatz:zusatz});
   for(var c=1;c<=6;c++){
     document.getElementById("rM"+c).textContent = fmt(r.rows[c].netMonthly);
@@ -298,7 +299,7 @@ function calc(){
     ct.style.display = "none";
     document.getElementById("rNote").textContent = "III/V ile IV/IV çift toplamlarını görmek için bir eş maaşı ekleyin. Sınıflar yalnızca stopajı değiştirir — yıllık vergi, vergi beyannamesinde kesinleşir.";
   }
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","partner","children","childless","church","zusatz"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
