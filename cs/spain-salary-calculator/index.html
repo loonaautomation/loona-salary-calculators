@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="payments">Platby ročně</label>
 <select id="payments"><option value="12" selected>12 plateb</option><option value="14">14 plateb (pagas extraordinarias)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Čistá mzda za platbu</div>
 <div class="big" id="total">€0</div>
@@ -235,7 +236,7 @@ function calc(){
   var temp = document.getElementById("contract").value==="temp";
   var pays = parseInt(document.getElementById("payments").value)||12;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Zadejte částku větší než nula, abyste viděli výsledek.";m.style.display="block";} return; }
   var r = spainNet({gross:gross, temporary:temp});
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rSS").textContent = fmt(r.ss);
@@ -247,7 +248,7 @@ function calc(){
   document.getElementById("rNote").textContent = gross>61214.40 ?
     "Vaše mzda je nad stropem sociálního zabezpečení, takže odvody se účtují pouze z prvních €61,214.40. Regionální škály IRPF mohou částku daně posunout — viz regionální upozornění níže." :
     "Vypočteno na standardní škále IRPF. Vlastní škála vaší autonomní oblasti může částku daně posunout nahoru nebo dolů — viz regionální upozornění níže.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","contract","payments"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

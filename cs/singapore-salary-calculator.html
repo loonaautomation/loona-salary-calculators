@@ -81,6 +81,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="worker">Status rezidence</label>
 <select id="worker"><option value="pr-u55" selected>Občan / PR — věk 55 nebo méně (CPF 20%)</option><option value="pr-56-60">Občan / trvalý rezident — věk 56–60 (CPF 18%)</option><option value="pr-61-65">Občan / trvalý rezident — věk 61–65 (CPF 12.5%)</option><option value="pr-66-70">Občan / trvalý rezident — věk 66–70 (CPF 7.5%)</option><option value="pr-o70">Občan / PR — nad 70 let (CPF 5%)</option><option value="fx">Zahraniční zaměstnanec — žádné CPF</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Čistá mzda měsíčně (hotovostní ekvivalent)</div>
 <div class="big" id="total">—</div>
@@ -178,7 +179,7 @@ function fmt(n){return "S$" + n.toLocaleString("en-US",{minimumFractionDigits:2,
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Zadejte částku větší než nula, abyste viděli výsledek.";m.style.display="block";} return; }
   var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
   var r = netCalc(gross, opt);
   document.getElementById("rGross").textContent = fmt(gross);
@@ -189,7 +190,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " měsíčně";
   document.getElementById("rNote").textContent = opt === "fx" ? "Zahraniční zaměstnanec: žádné CPF. Daň z příjmů účtuje IRAS po vyměření, nesráží se měsíčně." : "Občan/PR: CPF se strhává měsíčně; daň z příjmů účtuje IRAS po vyměření — měsíční částka ji rozkládá rovnoměrně.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

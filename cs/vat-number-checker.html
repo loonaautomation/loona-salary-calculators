@@ -110,6 +110,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </select>
 <label for="vatnum">DIČ</label>
 <input type="text" id="vatnum" value="DE123456789" autocomplete="off" spellcheck="false" placeholder="e.g. DE123456789">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Výsledek formátu</div>
 <div class="big" id="rVerdict">—</div>
@@ -258,14 +259,14 @@ function calc(){
   var country = document.getElementById("country").value;
   var v = document.getElementById("vatnum").value;
   var box = document.getElementById("result");
-  if(!v || !v.trim()){ box.style.display="none"; return; }
+  if(!v || !v.trim()){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Zadejte DIČ ke kontrole.";m.style.display="block";} return; }
   var r = vatNumberFormat(country, v);
   document.getElementById("rVerdict").textContent = r.ok ? "✓ Formát vypadá platně" : "✗ Formát neodpovídá";
   document.getElementById("rCountry").textContent = VAT_COUNTRY_NAMES[r.country] ? (VAT_COUNTRY_NAMES[r.country] + " (" + r.country + ")") : r.country;
   document.getElementById("rNorm").textContent = r.normalized || "—";
   document.getElementById("rPattern").textContent = r.pattern || "—";
   document.getElementById("rNote").textContent = r.message;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["country","vatnum"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);document.getElementById(id).addEventListener("change",calc);});
 (function(){

@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pákistán</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Pouze zaměstnanci. 2024 (TY2024): ve výsledcích vyhledávání byla potvrzena pouze první dvě pásma (0% do PKR 600,000, 2.5% do PKR 1,200,000) — zbytek je podle Finance Act 2023 a označen jako UNVERIFIED; před publikováním znovu ověřte u FBR. 2025 (TY2025, Finance Act 2024) a 2026 (TY2026, Finance Act 2025) plně potvrzeny. Pozor, čísla 2026 zde jsou pásma TY2026 (červenec 2025–červen 2026); novější pásma Finance Act 2026 (TY2027, červenec 2026–červen 2027: 1%/11%/20%/25%/29%/32%/35% s novými prahy 5.6M/7M) jsou jiný rok — nemíchejte. Zdroje: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Čistá mzda měsíčně</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Zadejte částku větší než nula, abyste viděli výsledek.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " měsíčně";
   document.getElementById("rNote").textContent = "Pouze zaměstnané osoby. 2024 (TY2024): pouze první dvě pásma (0% do PKR 600,000, 2.5% do PKR 1,200,000) byla potvrzena ve výsledcích vyhledávání — zbytek je podle Finance Act 2023 a označen jako NEOVĚŘENÝ; před zveřejněním znovu zkontrolujte u FBR. 2025 (TY2025, Finance Act 2024) a 2026 (TY2026, Finance Act 2025) plně potvrzeny. Poznámka: částky 2026 zde jsou pásma TY2026 (červenec 2025–červen 2026); novější pásma Finance Act 2026 (TY2027, červenec 2026–červen 2027: 1%/11%/20%/25%/29%/32%/35% s novými prahy 5.6M/7M) se týkají jiného roku — nemíchejte je. Zdroje: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

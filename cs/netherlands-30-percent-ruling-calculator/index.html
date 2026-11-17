@@ -133,6 +133,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Kdy bylo vaše pravidlo poprvé uplatněno?</label>
 <select id="start"><option value="new" selected>Od roku 2024 dále</option><option value="old">Před 1. lednem 2024 (ponechává 30% v roce 2027)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Dodatečná čistá mzda z rozhodnutí (2026)</div>
 <div class="big" id="total">€0 za rok</div>
@@ -279,7 +280,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Zadejte částku větší než nula, abyste viděli výsledek.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -300,7 +301,7 @@ function calc(){
   if(r.y2026.normFailed) note = "Vaše mzda nepřekračuje mzdovou normu, takže pravidlo v současnosti nepřináší žádnou výhodu: zdanitelná mzda musí po příspěvku normu překročit. " + note;
   else if(r.y2026.normLimited) note = "Váš příspěvek je omezen mzdovou normou — plných 30% by vaši zdanitelnou mzdu srazilo pod normu, takže je zkrácen. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
