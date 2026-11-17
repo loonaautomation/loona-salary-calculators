@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Doar persoanele salariate. 2024 (TY2024): numai primele două tranșe (0% până la PKR 600,000, 2.5% până la PKR 1,200,000) au fost confirmate în rezultatele căutării — restul este conform Finance Act 2023 și marcat NEVERIFICAT; reverifică la FBR înainte de publicare. 2025 (TY2025, Finance Act 2024) și 2026 (TY2026, Finance Act 2025) confirmate complet. Reține că cifrele din 2026 de aici sunt tranșele TY2026 (iul. 2025–iun. 2026); tranșele mai noi din Finance Act 2026 (TY2027, iul. 2026–iun. 2027: 1%/11%/20%/25%/29%/32%/35% cu noi praguri de 5.6M/7M) aparțin altui an — nu le amesteca. Surse: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Salariu net pe lună</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introdu o sumă mai mare decât zero pentru a vedea rezultatul.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " pe lună";
   document.getElementById("rNote").textContent = "Doar persoane salariate. 2024 (TY2024): doar primele două benzi (0% până la PKR 600,000, 2.5% până la PKR 1,200,000) au fost confirmate în rezultatele căutării \u2014 restul este conform Legii finanțelor 2023 și marcat NEVERIFICAT; reverifică la FBR înainte de publicare. 2025 (TY2025, Legea finanțelor 2024) și 2026 (TY2026, Legea finanțelor 2025) complet confirmate. Reține că cifrele din 2026 de aici sunt tranșele TY2026 (iul. 2025-iun. 2026); tranșele mai noi ale Legii finanțelor 2026 (TY2027, iul. 2026-iun. 2027: 1%/11%/20%/25%/29%/32%/35% cu noile praguri de 5.6M/7M) sunt un an diferit \u2014 nu le amesteca. Surse: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

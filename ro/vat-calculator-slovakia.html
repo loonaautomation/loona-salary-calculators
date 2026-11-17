@@ -81,6 +81,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="mode">Calcul</label><select id="mode"><option value="add" selected>Adaugă TVA (net → brut)</option><option value="remove">Elimină TVA (brut → net)</option></select></div>
 <div><label for="rate">Cotă TVA</label><select id="rate"><option value="23" selected>23% — cotă standard</option><option value="19">19% — cotă redusă</option><option value="5">5% — cotă redusă</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Sumă brută (inclusiv TVA)</div>
 <div class="big" id="rGross">—</div>
@@ -163,14 +164,14 @@ function calc(){
   var mode = document.getElementById("mode").value;
   var rate = parseFloat(document.getElementById("rate").value);
   var box = document.getElementById("result");
-  if(!(amount >= 0) || isNaN(amount)){ box.style.display = "none"; return; }
+  if(!(amount >= 0) || isNaN(amount)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introdu o sumă validă (0 sau mai mult) pentru a calcula taxa.";m.style.display="block";} return; }
   var r = vatCalc(amount, rate, mode);
   document.getElementById("rNet").textContent = fmt(r.net);
   document.getElementById("rVat").textContent = fmt(r.vat);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rRate").textContent = rate + "%";
   document.getElementById("rNote").textContent = mode === "add" ? "Mod Adaugă TVA: suma ta a fost tratată ca prețul net (fără TVA)." : "Mod Elimină TVA: suma ta a fost tratată ca prețul brut (cu TVA inclus).";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 function fillExamples(){
   var a = vatCalc(100, STD_RATE, "add");
