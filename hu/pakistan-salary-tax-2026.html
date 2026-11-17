@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakisztán</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Csak fizetett magánszemélyek. 2024 (TY2024): csak az első két sávot (0% PKR 600,000-ig, 2.5% PKR 1,200,000-ig) erősítették meg a keresési eredményekben — a többi a Finance Act 2023 szerint van, és NEM ELLENŐRZÖTTKÉNT van jelölve; ellenőrizze újra az FBR-nél közzététel előtt. 2025 (TY2025, Finance Act 2024) és 2026 (TY2026, Finance Act 2025) teljesen megerősítve. Vegye figyelembe, hogy az itteni 2026-os számok a TY2026 (2025. júl. - 2026. jún.) sávjai; az újabb Finance Act 2026 sávok (TY2027, 2026. júl. - 2027. jún.: 1%/11%/20%/25%/29%/32%/35% új 5.6M/7M küszöbökkel) másik év — ne keverje. Források: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Havi nettó fizetés</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Adjon meg nullánál nagyobb összeget az eredmény megtekintéséhez.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " havonta";
   document.getElementById("rNote").textContent = "Csak fizetett alkalmazottakra vonatkozik. 2024 (TY2024): csak az első két sávot erősítették meg a keresési eredmények (0% PKR 600,000-ig, 2.5% PKR 1,200,000-ig) — a többi a Finance Act 2023 szerinti, és ELLENŐRIZETLENKÉNT van megjelölve; közzététel előtt ellenőrizze újra az FBR-nél. A 2025 (TY2025, Finance Act 2024) és a 2026 (TY2026, Finance Act 2025) teljes mértékben megerősített. Vegye figyelembe, hogy az itteni 2026-os adatok a TY2026 (2025. július – 2026. június) sávjai; az újabb Finance Act 2026 sávok (TY2027, 2026. július – 2027. június: 1%/11%/20%/25%/29%/32%/35% új 5.6M/7M küszöbökkel) másik évre vonatkoznak — ne keverje őket össze. Források: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
