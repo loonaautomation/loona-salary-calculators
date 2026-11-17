@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filing">Tình trạng nộp thuế</label>
 <select id="filing"><option value="single" selected>Độc thân</option><option value="mfj">Vợ chồng khai chung</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Bắc Carolina: bảng 2026 — Tax Foundation (tại ngày 1 tháng Giêng 2026). Chưa bao gồm thuế thu nhập địa phương.</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Lương ròng mỗi tháng</div>
 <div class="big" id="total">—</div>
@@ -163,7 +164,7 @@ function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var filing = document.getElementById("filing").value;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập số tiền lớn hơn 0 để xem kết quả của bạn.";m.style.display="block";} return; }
   var r = netCalc(gross, filing);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -177,7 +178,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " mỗi tháng";
   document.getElementById("rNote").textContent = "Bảng North Carolina 2026: Tax Foundation (tính đến ngày 1 tháng Giêng 2026). Thuế thu nhập địa phương không được bao gồm.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","filing"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

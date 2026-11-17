@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Ngày gia nhập</label><input type="date" id="start" value="2019-01-01"></div>
 <div><label for="end">Ngày làm việc cuối cùng</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Số tiền cuối dịch vụ theo quốc gia (cùng đầu vào)</div>
 <table>
@@ -253,9 +254,9 @@ function calc(){
   var reason = document.getElementById("reason").value;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Nhập lương cơ bản của bạn (hoặc tổng lương) và cả hai ngày — ngày kết thúc phải sau ngày bắt đầu.";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Ngày kết thúc phải sau ngày bắt đầu — vui lòng kiểm tra lại ngày của bạn.";m.style.display="block";} return; }
   var years = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var omanBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -270,7 +271,7 @@ function calc(){
   var vals = [["UAE",r.uae],["Ả Rập Xê Út",r.saudi],["Qatar",r.qatar],["Kuwait",r.kuwait],["Oman",r.oman],["Bahrain",r.bahrain]];
   vals.sort(function(a,b){return b[1]-a[1];});
   document.getElementById("rNote").textContent = "Trên các con số này công thức hào phóng nhất là " + vals[0][0] + " (" + fmt(vals[0][1]) + ") và ít nhất là " + vals[5][0] + " (" + fmt(vals[5][1]) + "\") — bằng các đơn vị tiền tệ riêng của mỗi quốc gia, cho \"" + years.toFixed(2) + " năm phục vụ. Qatar được hiển thị ở sàn luật định 21 ngày của nó; một mức hợp đồng tốt hơn nâng nó lên.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","social","reason","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -142,6 +142,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="basis">Chuẩn mực nisab</label>
 <select id="basis"><option value="silver" selected>Nisab bạc — 52.5 tola (thường cho tài sản hỗn hợp)</option><option value="gold">Nisab vàng — 7.5 tola</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Zakat phải trả của bạn</div>
 <div class="big" id="total">0</div>
@@ -242,7 +243,7 @@ function calc(){
     receivables:num("recv"), debts:num("debts"),
     goldRate:num("goldRate"), silverRate:num("silverRate"),
     basis:document.getElementById("basis").value});
-  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; return; }
+  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập tài sản của bạn, hoặc mức vàng hoặc mức bạc, để tính Zakat của bạn.";m.style.display="block";} return; }
   document.getElementById("rGold").textContent = fmt(r.goldValue);
   document.getElementById("rSilver").textContent = fmt(r.silverValue);
   document.getElementById("rAssets").textContent = fmt(r.assets);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.nisabMet ?
     "Tài sản chịu zakat ròng của bạn ở hoặc trên nisab, nên Zakat 2.5% đến hạn (một khi năm âm lịch — hawl — đã trôi qua trên nó)." :
     "Tài sản chịu zakat ròng của bạn dưới nisab, nên không có Zakat đến hạn trên các con số này. Nếu tài sản của bạn vượt qua nisab và giữ ở đó trong một năm âm lịch, Zakat trở nên đến hạn.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["goldRate","silverRate","goldG","karat","silverG","cash","stock","recv","debts","basis"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

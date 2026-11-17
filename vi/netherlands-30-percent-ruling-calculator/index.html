@@ -133,6 +133,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Quyết định của bạn được áp dụng lần đầu khi nào?</label>
 <select id="start"><option value="new" selected>Từ năm 2024 trở đi</option><option value="old">Trước ngày 1 tháng Giêng 2024 (giữ 30% vào năm 2027)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Lương ròng thêm từ quyết định (2026)</div>
 <div class="big" id="total">€0 mỗi năm</div>
@@ -279,7 +280,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập số tiền lớn hơn 0 để xem kết quả của bạn.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -300,7 +301,7 @@ function calc(){
   if(r.y2026.normFailed) note = "Lương của bạn không vượt qua chuẩn lương, nên quyết định hiện không cho lợi ích: lương chịu thuế phải vượt quá chuẩn sau khoản phụ cấp. " + note;
   else if(r.y2026.normLimited) note = "Khoản phụ cấp của bạn bị giới hạn bởi chuẩn lương — 30% đầy đủ sẽ đẩy lương chịu thuế của bạn xuống dưới chuẩn, nên nó bị cắt lại. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

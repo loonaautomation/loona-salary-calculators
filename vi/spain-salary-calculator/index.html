@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="payments">Số lần thanh toán mỗi năm</label>
 <select id="payments"><option value="12" selected>12 lần thanh toán</option><option value="14">14 lần thanh toán (pagas extraordinarias)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Lương ròng mỗi lần thanh toán</div>
 <div class="big" id="total">€0</div>
@@ -235,7 +236,7 @@ function calc(){
   var temp = document.getElementById("contract").value==="temp";
   var pays = parseInt(document.getElementById("payments").value)||12;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập số tiền lớn hơn 0 để xem kết quả của bạn.";m.style.display="block";} return; }
   var r = spainNet({gross:gross, temporary:temp});
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rSS").textContent = fmt(r.ss);
@@ -247,7 +248,7 @@ function calc(){
   document.getElementById("rNote").textContent = gross>61214.40 ?
     "Lương của bạn trên trần an sinh xã hội, nên đóng góp chỉ bị tính trên €61,214.40 đầu tiên. Các thang IRPF khu vực có thể di chuyển con số thuế — xem cảnh báo khu vực bên dưới." :
     "Được tính trên thang IRPF tiêu chuẩn. Thang riêng của cộng đồng tự trị của bạn có thể di chuyển con số thuế lên hoặc xuống — xem cảnh báo khu vực bên dưới.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","contract","payments"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

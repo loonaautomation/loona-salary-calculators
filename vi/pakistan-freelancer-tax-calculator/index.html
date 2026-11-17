@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">Tình trạng thuế</label>
 <select id="filer"><option value="filer" selected>Người nộp hồ sơ (trên Danh sách Người nộp thuế Tích cực)</option><option value="nonfiler">Người không nộp hồ sơ (các mức Phụ lục Thứ mười)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Thuế cuối cùng Mục 154A cho năm</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập thu nhập của bạn để tính thuế của bạn.";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% của các khoản chuyển tiền tổng";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "Thuế Mục 154A là cuối cùng khi tờ khai của bạn được nộp. Hãy giữ đăng ký PSEB của bạn hoạt động và chuyển tiền thu qua các kênh ngân hàng để giữ trong chế độ." :
     "Mức cho người không nộp hồ sơ hiển thị là việc gấp đôi Phụ lục Thứ mười được người hành nghề áp dụng — trở thành người nộp hồ sơ giảm nó một nửa và cũng loại bỏ khấu trừ cao hơn qua các giao dịch ngân hàng khác của bạn.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

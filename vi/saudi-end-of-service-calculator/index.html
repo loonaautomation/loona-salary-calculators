@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="resigned">Tôi đang từ chức (thang Điều 85)</option>
 <option value="art87">Từ chức trong một trường hợp Điều 87 (khoản đầy đủ)</option>
 </select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Khoản cuối dịch vụ phải trả</div>
 <div class="big" id="total">SAR 0</div>
@@ -225,9 +226,9 @@ function calc(){
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var reason = document.getElementById("reason").value;
   var box = document.getElementById("result");
-  if(!s || !e || wage<=0){ box.style.display="none"; return; }
+  if(!s || !e || wage<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Nhập lương hằng tháng của bạn và cả hai ngày — ngày kết thúc phải sau ngày bắt đầu.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Ngày kết thúc phải sau ngày bắt đầu — vui lòng kiểm tra lại ngày của bạn.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = saudiEOS(wage, years, reason);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -244,7 +245,7 @@ function calc(){
   else if(reason==="art87") note = "Các trường hợp Điều 87 nhận khoản đầy đủ. Ngược lại, chấm dứt vì lý do theo Điều 80, không trả khoản nào.";
   else note = "Các năm lẻ được tính theo tỷ lệ, và không có trần luật định trên khoản này.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["wage","start","end","reason"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

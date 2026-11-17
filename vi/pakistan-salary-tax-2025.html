@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Chỉ áp dụng cho cá nhân làm công ăn lương. 2024 (TY2024): chỉ hai bậc đầu tiên (0% đến PKR 600,000, 2.5% đến PKR 1,200,000) được xác nhận trong kết quả tìm kiếm — phần còn lại theo Đạo luật Tài chính 2023 và được đánh dấu CHƯA ĐƯỢC XÁC THỰC; hãy kiểm tra lại với FBR trước khi đăng. 2025 (TY2025, Đạo luật Tài chính 2024) và 2026 (TY2026, Đạo luật Tài chính 2025) đã được xác nhận đầy đủ. Lưu ý các con số 2026 ở đây là các bậc thuế của TY2026 (tháng Bảy 2025-tháng Sáu 2026); các bậc thuế mới hơn của Đạo luật Tài chính 2026 (TY2027, tháng Bảy 2026-tháng Sáu 2027: 1%/11%/20%/25%/29%/32%/35% với các ngưỡng 5.6M/7M mới) thuộc một năm khác — không được trộn lẫn. Nguồn: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Lương ròng mỗi tháng</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập số tiền lớn hơn 0 để xem kết quả của bạn.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " mỗi tháng";
   document.getElementById("rNote").textContent = "Chỉ cá nhân có lương. 2024 (TY2024): chỉ hai dải đầu tiên (0% tới PKR 600,000, 2.5% tới PKR 1,200,000) được xác nhận trong kết quả tìm kiếm \u2014 phần còn lại theo Finance Act 2023 và được đánh dấu CHƯA XÁC MINH; hãy kiểm tra lại FBR trước khi xuất bản. 2025 (TY2025, Finance Act 2024) và 2026 (TY2026, Finance Act 2025) đã xác nhận đầy đủ. Lưu ý các con số 2026 ở đây là các bậc TY2026 (tháng Bảy 2025-tháng Sáu 2026); các bậc Finance Act 2026 mới hơn (TY2027, tháng Bảy 2026-tháng Sáu 2027: 1%/11%/20%/25%/29%/32%/35% với các ngưỡng mới 5.6M/7M) là một năm khác \u2014 đừng trộn lẫn. Nguồn: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

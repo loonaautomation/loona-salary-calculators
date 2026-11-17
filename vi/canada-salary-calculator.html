@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="worker">Tỉnh (mô hình)</label>
 <select id="worker"><option value="ON" selected>Ontario — phép tính 2026 đầy đủ</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Ontario là mô hình mặc định đã nêu. Các tỉnh khác dùng cùng thuế liên bang và CPP/EI nhưng các mức tỉnh khác — xem Câu hỏi thường gặp bên dưới.</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Lương ròng mỗi tháng</div>
 <div class="big" id="total">—</div>
@@ -200,7 +201,7 @@ function fmt(n){return "$" + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập số tiền lớn hơn 0 để xem kết quả của bạn.";m.style.display="block";} return; }
   var r = netCalc(gross, "ON");
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -213,7 +214,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " mỗi tháng";
   document.getElementById("rNote").textContent = "Mô hình Ontario: thuế liên bang + thuế Ontario (với phụ phí và phí y tế) + CPP/CPP2 + EI. Các tỉnh khác khác nhau — xem Câu hỏi thường gặp.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

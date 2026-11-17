@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Hà Lan</label>
 <input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Box 1, dưới tuổi hưởng lương hưu nhà nước; bậc 1 bao gồm phí bảo hiểm quốc gia (27.65%). 2024 thực tế có hai thuế suất (36.97% đến EUR 75,518, 49.5% trên mức đó). Ngưỡng cao nhất 2026: ba nguồn nói EUR 78,426, Wikipedia nói EUR 79,137 — đã dùng 78,426 (Belastingdienst qua taxsavers/expatica). Nguồn: https://en.wikipedia.org/wiki/Income_tax_in_the_Netherlands ; https://taxsavers.nl/en/clarity/tax-brackets-and-tariffs</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Lương ròng mỗi tháng</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập số tiền lớn hơn 0 để xem kết quả của bạn.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " mỗi tháng";
   document.getElementById("rNote").textContent = "Box 1, dưới tuổi hưu trí nhà nước; bậc 1 bao gồm phí bảo hiểm quốc gia (27.65%). 2024 hiệu dụng là hai mức (36.97% tới EUR 75,518, 49.5% trên mức đó). Ngưỡng cao nhất 2026: ba nguồn nói EUR 78,426, Wikipedia nói EUR 79,137 \u2014 đã dùng 78,426 (Belastingdienst qua taxsavers/expatica). Nguồn: https://en.wikipedia.org/wiki/Income_tax_in_the_Netherlands ; https://taxsavers.nl/en/clarity/tax-brackets-and-tariffs";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">Người sử dụng lao động của bạn có phải là một đại lý khấu trừ thuế lương Hà Lan (một người sử dụng lao động Hà Lan hoặc bảng lương Hà Lan) không?</label>
 <select id="empl"><option value="yes" selected>Có</option><option value="no">Không</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Vui lòng nhập lương tổng của bạn để kiểm tra điều kiện của bạn.";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ Được miễn (nhà nghiên cứu)" :
     r.salaryStatus==="full" ? "✓ Đạt — 30% đầy đủ khả thi" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "Lương của bạn vượt qua chuẩn nhưng 30% đầy đủ thì không, nên khoản phụ cấp bị giới hạn ở khoảng " + fmt(r.allowance) + " — phần còn lại chịu thuế nằm ngay trên €" + r.norm.toLocaleString("en-US") + " chuẩn. " + note;
   if(!r.overall) note = "Hãy kiểm tra bài kiểm tra không đạt ở trên — mỗi cái là một điều kiện cứng. Các con số lương dùng các chuẩn 2026; nếu lần bắt đầu của bạn vào năm 2027, các chuẩn cao hơn sẽ áp dụng.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
