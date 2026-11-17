@@ -138,6 +138,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">Is your employer a Dutch wage-tax withholding agent (a Dutch employer or Dutch payroll)?</label>
 <select id="empl"><option value="yes" selected>Yes</option><option value="no">No</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -249,7 +250,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Please enter your gross salary to check your eligibility.";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ Exempt (researcher)" :
     r.salaryStatus==="full" ? "✓ Pass — full 30% possible" :
@@ -266,7 +267,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "Your salary clears the norm but the full 30% would not, so the allowance is limited to about " + fmt(r.allowance) + " — the taxable remainder sits just above the €" + r.norm.toLocaleString("en-US") + " norm. " + note;
   if(!r.overall) note = "Check the failed test above — each one is a hard condition. Salary figures use 2026 norms; if your start is in 2027, higher norms will apply.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

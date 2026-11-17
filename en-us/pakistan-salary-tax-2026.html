@@ -77,6 +77,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Salaried individuals only. 2024 (TY2024): only the first two bands (0% to PKR 600,000, 2.5% to PKR 1,200,000) were confirmed in search results — the rest is per Finance Act 2023 and flagged UNVERIFIED; re-check FBR before publish. 2025 (TY2025, Finance Act 2024) and 2026 (TY2026, Finance Act 2025) fully confirmed. Note the 2026 figures here are the TY2026 (Jul 2025-Jun 2026) slabs; the newer Finance Act 2026 slabs (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% with new 5.6M/7M thresholds) are a different year — do not mix. Sources: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Net salary per month</div>
 <div class="big" id="total">—</div>
@@ -182,7 +183,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Please enter an amount greater than zero to see your result.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -194,7 +195,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " per month";
   document.getElementById("rNote").textContent = "Salaried individuals only. 2024 (TY2024): only the first two bands (0% to PKR 600,000, 2.5% to PKR 1,200,000) were confirmed in search results \u2014 the rest is per Finance Act 2023 and flagged UNVERIFIED; re-check FBR before publish. 2025 (TY2025, Finance Act 2024) and 2026 (TY2026, Finance Act 2025) fully confirmed. Note the 2026 figures here are the TY2026 (Jul 2025-Jun 2026) slabs; the newer Finance Act 2026 slabs (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% with new 5.6M/7M thresholds) are a different year \u2014 do not mix. Sources: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

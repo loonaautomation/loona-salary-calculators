@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">When was your ruling first applied?</label>
 <select id="start"><option value="new" selected>From 2024 onwards</option><option value="old">Before January 1, 2024 (keeps 30% in 2027)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Extra net pay from the ruling (2026)</div>
 <div class="big" id="total">€0 per year</div>
@@ -278,7 +279,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Please enter an amount greater than zero to see your result.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -299,7 +300,7 @@ function calc(){
   if(r.y2026.normFailed) note = "Your salary does not clear the salary norm, so the ruling currently gives no benefit: the taxable salary must exceed the norm after the allowance. " + note;
   else if(r.y2026.normLimited) note = "Your allowance is limited by the salary norm — the full 30% would push your taxable salary below the norm, so it is cut back. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
