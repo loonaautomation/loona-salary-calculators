@@ -136,6 +136,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="expat">非サウジ（外国人労働者）— 0%</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>月次手取り給与</div>
 <div class="big" id="total">SAR 0</div>
@@ -240,7 +241,7 @@ function calc(){
   var other = parseFloat(document.getElementById("other").value)||0;
   var nat = document.getElementById("nat").value;
   var box = document.getElementById("result");
-  if(basic+housing+other<=0){ box.style.display="none"; return; }
+  if(basic+housing+other<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="結果を表示するには、給与額を少なくとも1つ（基本給、住宅手当、その他の手当）入力してください。";m.style.display="block";} return; }
   var isSaudi = nat!=="expat";
   var r = saudiGOSI({basic:basic, housing:housing, other:other, isSaudi:isSaudi, pensionRate: PENSION[nat]||0});
   document.getElementById("rGross").textContent = fmt(r.gross);
@@ -253,7 +254,7 @@ function calc(){
   document.getElementById("rNote").textContent = isSaudi ?
     "新制度の従業員に対する GOSI 年金負担分は、0.5 ポイントずつ、毎年七月1日に、2028 年まで上昇します — あなたがこれを読む時期に合う期間を選んでください。" :
     "サウジアラビア人でない従業員として、あなたには GOSI の控除は全くありません：2% の労働災害部門はあなたの雇用主のみが支払います。";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","housing","other","nat"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

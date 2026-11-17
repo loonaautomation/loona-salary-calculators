@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">カナダ</label>
 <input type="number" id="gross" min="0" step="any" value="75000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">連邦のみ — 州が独自の税率区分を加えます。2025 年の最低税率 14.5% は混合です（一月～六月 15%、2025年七月1日から 14%）：2026 年は通年で 14% です。基礎人的控除額：2024 年 最大 $15,705：2025 年 最大 $16,129：2026 年 最大 $16,452。出典：https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ： https://tax-services.ca/canada-tax-brackets</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>月あたりの手取り給与</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="結果を表示するには、0より大きい金額を入力してください。";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " ／月";
   document.getElementById("rNote").textContent = "連邦のみ — 州は独自の区分を追加します。2025 年の最低税率 14.5% はブレンドです（15% は一月から六月、14% は七月1日（2025年）から）。2026 年は通年 14% です。基礎人的金額：2024 年最大 $15,705、2025 年最大 $16,129、2026 年最大 $16,452。出典：https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ； https://tax-services.ca/canada-tax-brackets";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

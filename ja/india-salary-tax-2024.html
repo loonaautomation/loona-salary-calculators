@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">インド</label>
 <input type="number" id="gross" min="0" step="any" value="1200000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">新制度（デフォルト）、全年齢。計算された税金に 4% の健康・教育税（cess）が上乗せされます — ページにその旨を明記する必要があります。第 87A 条のリベート：INR 7 ラーク（2024 年）まで税金なし、INR 12 ラーク（2025 年、2026 年）まで税金なし。給与所得者の標準控除は INR 75,000（2024-2026）。出典：https://tax2win.in/guide/income-tax-slabs ： https://www.hrcalcy.in/2025/01/income-tax-slab-fy-2024-25.html</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>月あたりの手取り給与</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="結果を表示するには、0より大きい金額を入力してください。";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " ／月";
   document.getElementById("rNote").textContent = "新制度（デフォルト）、全ての年齢。計算された税金の上に 4% の健康・教育セスが適用されます — ページはこれを明記しなければなりません。87A に基づく還付：INR 7 ラクまでは無税（2024 年）、INR 12 ラクまで（2025 年、2026 年）。給与所得者向け標準控除 INR 75,000（2024-2026 年）。出典：https://tax2win.in/guide/income-tax-slabs ； https://www.hrcalcy.in/2025/01/income-tax-slab-fy-2024-25.html";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

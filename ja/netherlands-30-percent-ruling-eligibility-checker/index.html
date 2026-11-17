@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">あなたの雇用主はオランダの賃金税源泉徴収代理人（オランダの雇用主またはオランダの給与計算）ですか？</label>
 <select id="empl"><option value="yes" selected>はい</option><option value="no">いいえ</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="適格性を確認するには、総給与を入力してください。";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ 免除（研究者）" :
     r.salaryStatus==="full" ? "✓ 合格 — 完全な 30% が可能" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "あなたの給与は規範をクリアしますが、完全な 30% はクリアしないため、手当はおよそ次に制限されます " + fmt(r.allowance) + " — 課税対象の残りは € のすぐ上にあります" + r.norm.toLocaleString("en-US") + " 規範。 " + note;
   if(!r.overall) note = "上の失敗したテストを確認してください — それぞれが厳しい条件です。給与の数値は 2026 年の規範を使用します：あなたの開始が 2027 年の場合は、より高い規範が適用されます。";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

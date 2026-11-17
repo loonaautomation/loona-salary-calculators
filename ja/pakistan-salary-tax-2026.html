@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">パキスタン</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">給与所得者のみ。2024 年（TY2024）：最初の二つの区分（PKR 600,000 まで 0%、PKR 1,200,000 まで 2.5%）のみが検索結果で確認されました — 残りは Finance Act 2023 に基づき、未確認（UNVERIFIED）のフラグ付きです：公開前に FBR で再確認してください。2025 年（TY2025、Finance Act 2024）と 2026 年（TY2026、Finance Act 2025）は完全に確認済みです。ここでの 2026 年の数値は TY2026（2025年七月～2026年六月）の税率表であることにご注意ください：新しい Finance Act 2026 の税率表（TY2027、2026年七月～2027年六月：1%/11%/20%/25%/29%/32%/35%、新しい 5.6M/7M のしきい値付き）は別の年度のものです — 混同しないでください。出典：https://fairtaxint.com/pk/tools/salary-tax-calculator ： https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>月あたりの手取り給与</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="結果を表示するには、0より大きい金額を入力してください。";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " ／月";
   document.getElementById("rNote").textContent = "給与所得者のみ。2024 年（TY2024）：最初の二つの区分のみ（0% から PKR 600,000、2.5% から PKR 1,200,000）が検索結果で確認されました — 残りは Finance Act 2023 に基づき、未検証とフラグが付けられています：公開前に FBR で再確認してください。2025 年（TY2025、Finance Act 2024）と 2026 年（TY2026、Finance Act 2025）は完全に確認されました。ここでの 2026 年の数値は TY2026（2025年七月-2026年六月）の区分であることに注意してください：より新しい Finance Act 2026 の区分（TY2027、2026年七月-2027年六月：1%/11%/20%/25%/29%/32%/35%、新しい 5.6M/7M の閾値付き）は異なる年です — 混ぜないでください。出典：https://fairtaxint.com/pk/tools/salary-tax-calculator ； https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
