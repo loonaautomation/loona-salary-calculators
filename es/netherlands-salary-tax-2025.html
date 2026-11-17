@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Países Bajos</label>
 <input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Box 1, por debajo de la edad de pensión estatal; el tramo 1 incluye las cotizaciones al seguro nacional (27.65%). En 2024 hubo en la práctica dos tipos (36.97% hasta EUR 75,518, 49.5% por encima). Umbral superior de 2026: tres fuentes dicen EUR 78,426, Wikipedia dice EUR 79,137 — se utilizó 78,426 (Belastingdienst vía taxsavers/expatica). Fuentes: https://en.wikipedia.org/wiki/Income_tax_in_the_Netherlands ; https://taxsavers.nl/en/clarity/tax-brackets-and-tariffs</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Salario neto por mes</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introduce un importe superior a cero para ver tu resultado.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " al mes";
   document.getElementById("rNote").textContent = "Box 1, por debajo de la edad de pensión estatal; el tramo 1 incluye las primas del seguro nacional (27.65%). En 2024 hubo en la práctica dos tipos (36.97% hasta EUR 75,518, 49.5% por encima). Umbral máximo de 2026: tres fuentes dicen EUR 78,426, Wikipedia dice EUR 79,137 — se usó 78,426 (Belastingdienst a través de taxsavers/expatica). Fuentes: https://en.wikipedia.org/wiki/Income_tax_in_the_Netherlands ; https://taxsavers.nl/en/clarity/tax-brackets-and-tariffs";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

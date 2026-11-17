@@ -126,6 +126,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Fecha de incorporación</label><input type="date" id="start" value="2021-01-01"></div>
 <div><label for="end">Último día de trabajo</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Indemnización total por salida pagable</div>
 <div class="big" id="total">BHD 0</div>
@@ -212,9 +213,9 @@ function calc(){
   var wage = parseFloat(document.getElementById("wage").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || wage<=0){ box.style.display="none"; return; }
+  if(!s || !e || wage<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introduce tu salario mensual y ambas fechas — el último día de trabajo debe ser posterior a la fecha de incorporación.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="El último día de trabajo debe ser posterior a la fecha de incorporación — por favor, comprueba las fechas.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = bahrainIndemnity(wage, years);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -224,7 +225,7 @@ function calc(){
   document.getElementById("rAfter").textContent = fmt(r.after);
   document.getElementById("total").textContent = fmt(r.total);
   document.getElementById("rNote").textContent = "No se aplica ningún tope en Baréin, y dimitir no reduce la indemnización. Asegúrate de que el salario que introdujiste sea solo el básico más el complemento social (Artículo 47).";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["wage","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

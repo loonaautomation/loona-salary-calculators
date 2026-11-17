@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="ruling">¿norma del 30%?</label>
 <select id="ruling"><option value="0" selected>Sin regla</option><option value="30">Sí — se aplica la resolución del 30%</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Paga neta de vacaciones (después de impuestos)</div>
 <div class="big" id="total">€0</div>
@@ -264,7 +265,7 @@ function calc(){
   var incl = document.getElementById("hol").value==="yes";
   var ruling = parseFloat(document.getElementById("ruling").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introduce un importe superior a cero para ver tu resultado.";m.style.display="block";} return; }
   var r = nlHoliday({gross:gross, includesHoliday:incl, rulingPct:ruling});
   document.getElementById("rHol").textContent = fmt(r.holiday);
   document.getElementById("rTax").textContent = fmt(r.taxOnHoliday);
@@ -272,7 +273,7 @@ function calc(){
   document.getElementById("rGross").textContent = fmt(r.totalGross);
   document.getElementById("total").textContent = fmt(r.netHoliday);
   document.getElementById("rNote").textContent = "El tipo impositivo sobre la exención es mayor que tu tipo medio porque el importe completo se grava a tu tipo máximo y elimina progresivamente tus créditos fiscales. Cualquier retención en exceso se liquida en tu declaración anual de la renta.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","ruling"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
