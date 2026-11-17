@@ -77,6 +77,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="calc">
 <label for="iban">IBAN</label>
 <input type="text" id="iban" value="DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false" placeholder="e.g. DE89 3704 0044 0532 0130 00">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div id="rTitle">Ergebnis</div>
 <div class="big" id="rVerdict">—</div>
@@ -201,7 +202,7 @@ function ibanValidate(iban){
 function calc(){
   var v = document.getElementById("iban").value;
   var box = document.getElementById("result");
-  if(!v || !v.trim()){ box.style.display="none"; return; }
+  if(!v || !v.trim()){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Bitte geben Sie eine IBAN zur Prüfung ein.";m.style.display="block";} return; }
   var r = ibanValidate(v);
   document.getElementById("rVerdict").textContent = r.valid ? "✓ Gültige IBAN" : "✗ Ungültige IBAN";
   document.getElementById("rCountry").textContent = r.countryCode ? (r.countryName + " (" + r.countryCode + ")") : "—";
@@ -210,7 +211,7 @@ function calc(){
   document.getElementById("rLength").textContent = r.expectedLength ? (r.actualLength + " / " + r.expectedLength) : String(r.actualLength);
   document.getElementById("rMod").textContent = (r.mod97 === null ? "—" : String(r.mod97));
   document.getElementById("rNote").textContent = r.message;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 document.getElementById("iban").addEventListener("input",calc);
 (function(){

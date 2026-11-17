@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Nur für Angestellte. 2024 (TY2024): Nur die ersten beiden Stufen (0% bis PKR 600,000, 2.5% bis PKR 1,200,000) wurden in den Suchergebnissen bestätigt — der Rest entspricht dem Finance Act 2023 und ist als NICHT VERIFIZIERT gekennzeichnet; vor der Veröffentlichung bitte beim FBR erneut prüfen. 2025 (TY2025, Finance Act 2024) und 2026 (TY2026, Finance Act 2025) vollständig bestätigt. Beachten Sie: Die 2026-Werte hier sind die Stufen für TY2026 (Jul 2025–Jun 2026); die neueren Stufen des Finance Act 2026 (TY2027, Jul 2026–Jun 2027: 1%/11%/20%/25%/29%/32%/35% mit neuen Schwellen von 5.6M/7M) betreffen ein anderes Jahr — bitte nicht vermischen. Quellen: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Nettogehalt pro Monat</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Bitte geben Sie einen Betrag größer als null ein, um Ihr Ergebnis zu sehen.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " pro Monat";
   document.getElementById("rNote").textContent = "Nur für angestellte Personen. 2024 (TY2024): Nur die ersten zwei Stufen (0% bis PKR 600,000, 2.5% bis PKR 1,200,000) wurden in Suchergebnissen bestätigt — der Rest entspricht Finance Act 2023 und ist als UNVERIFIED gekennzeichnet; vor Veröffentlichung bei FBR erneut prüfen. 2025 (TY2025, Finance Act 2024) und 2026 (TY2026, Finance Act 2025) vollständig bestätigt. Beachten Sie, dass die 2026-Zahlen hier die Stufen TY2026 (Jul 2025-Jun 2026) sind; die neueren Stufen des Finance Act 2026 (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% mit neuen Schwellen 5.6M/7M) sind ein anderes Jahr — nicht vermischen. Quellen: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
