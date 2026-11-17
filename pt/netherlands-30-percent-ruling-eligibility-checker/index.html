@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">O seu empregador é um agente de retenção do imposto salarial neerlandês (um empregador neerlandês ou processamento salarial neerlandês)?</label>
 <select id="empl"><option value="yes" selected>Sim</option><option value="no">Não</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introduza o salário bruto anual para verificar a elegibilidade, por favor.";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ Isento (investigador)" :
     r.salaryStatus==="full" ? "✓ Aprovado — 30% completos possíveis" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "O seu salário ultrapassa a norma, mas os 30% completos não, pelo que o abatimento está limitado a cerca de " + fmt(r.allowance) + " — o restante tributável fica ligeiramente acima dos €" + r.norm.toLocaleString("en-US") + " norma. " + note;
   if(!r.overall) note = "Verifique o teste reprovado acima — cada um é uma condição obrigatória. Os valores salariais utilizam as normas de 2026; se o seu início for em 2027, aplicar-se-ão normas mais elevadas.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

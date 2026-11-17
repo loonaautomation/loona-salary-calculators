@@ -134,6 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Data de entrada</label><input type="date" id="start" value="2021-01-01"></div>
 <div><label for="end">Último dia de trabalho</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Indemnização total a pagar</div>
 <div class="big" id="total">AED 0</div>
@@ -226,9 +227,9 @@ function calc(){
   var basic = parseFloat(document.getElementById("basic").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introduza o salário base mensal e ambas as datas — o último dia de trabalho deve ser posterior à data de entrada.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="O último dia de trabalho deve ser posterior à data de entrada — verifique as datas, por favor.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = uaeGratuity(basic, years);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -244,7 +245,7 @@ function calc(){
   else if(r.capped) note = "Aplica-se o limite de 2 anos: o montante sem limite teria sido superior, pelo que o total está limitado ao salário de dois anos.";
   else note = "A sua entidade empregadora tem de pagar os direitos de fim de serviço no prazo de 14 dias após o termo do seu contrato (Artigo 53).";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

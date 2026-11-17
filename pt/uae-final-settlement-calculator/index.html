@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="leave">Dias de férias anuais não gozados</label><input type="number" id="leave" min="0" step="any" value="10" inputmode="decimal"></div>
 <div><label for="notice">Dias de pré-aviso devidos a si (0 se o pré-aviso foi cumprido)</label><input type="number" id="notice" min="0" step="any" value="30" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Liquidação final total</div>
 <div class="big" id="total">AED 0</div>
@@ -223,9 +224,9 @@ function calc(){
   var notice = parseFloat(document.getElementById("notice").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Introduza o salário base mensal (ou o salário mensal total) e ambas as datas — o último dia de trabalho deve ser posterior à data de entrada.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="O último dia de trabalho deve ser posterior à data de entrada — verifique as datas, por favor.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = uaeFinalSettlement({basic:basic, totalWage:wage, years:years, leaveDays:leave, noticeDays:notice});
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -238,7 +239,7 @@ function calc(){
   var note = "A sua entidade empregadora tem de pagar todos os direitos de fim de serviço no prazo de 14 dias após o termo do seu contrato (Artigo 53).";
   if(years < 1) note = "Menos de 1 ano de serviço: não é devida qualquer indemnização, mas o pagamento de férias não gozadas relativas a férias já vencidas pode ainda ser devido — verifique o seu contrato.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","leave","notice","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
