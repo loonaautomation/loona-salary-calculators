@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">Φορολογικό καθεστώς</label>
 <select id="filer"><option value="filer" selected>Δηλωμένος (στη Λίστα Ενεργών Φορολογουμένων)</option><option value="nonfiler">Μη δηλώνων (συντελεστές Δέκατου Παραρτήματος)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Τελικός φόρος Άρθρου 154A για το έτος</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Εισαγάγετε το εισόδημά σας για να υπολογίσετε τον φόρο σας.";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% των μικτών εμβασμάτων";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "Ο φόρος της Ενότητας 154A είναι οριστικός όταν υποβληθεί η δήλωσή σας. Διατηρήστε ενεργή την εγγραφή σας στο PSEB και διοχετεύστε τα έσοδα μέσω τραπεζικών καναλιών για να παραμείνετε στο καθεστώς." :
     "Ο συντελεστής μη υποβάλλοντος που εμφανίζεται είναι ο διπλασιασμός του Tenth Schedule που εφαρμόζουν οι επαγγελματίες — το να γίνετε υποβάλλων τον μειώνει στο μισό και αφαιρεί επίσης την υψηλότερη παρακράτηση στις άλλες τραπεζικές συναλλαγές σας.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

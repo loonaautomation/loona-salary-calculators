@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Πακιστάν</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Μόνο μισθωτά άτομα. 2024 (ΦΕ2024): μόνο οι δύο πρώτες κλίμακες (0% έως PKR 600,000, 2.5% έως PKR 1,200,000) επιβεβαιώθηκαν στα αποτελέσματα αναζήτησης — τα υπόλοιπα είναι σύμφωνα με τον Νόμο περί Οικονομικών 2023 και επισημαίνονται ΜΗ ΕΠΑΛΗΘΕΥΜΕΝΑ· ελέγξτε ξανά το FBR πριν από τη δημοσίευση. 2025 (ΦΕ2025, Νόμος περί Οικονομικών 2024) και 2026 (ΦΕ2026, Νόμος περί Οικονομικών 2025) πλήρως επιβεβαιωμένα. Σημειώστε ότι τα ποσά του 2026 εδώ είναι οι κλίμακες ΦΕ2026 (Ιουλ 2025-Ιουν 2026)· οι νεότερες κλίμακες του Νόμου περί Οικονομικών 2026 (ΦΕ2027, Ιουλ 2026-Ιουν 2027: 1%/11%/20%/25%/29%/32%/35% με νέα όρια 5.6M/7M) είναι διαφορετικό έτος — μην τα αναμειγνύετε. Πηγές: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Καθαρός μισθός ανά μήνα</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Εισαγάγετε ένα ποσό μεγαλύτερο από το μηδέν για να δείτε το αποτέλεσμά σας.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " ανά μήνα";
   document.getElementById("rNote").textContent = "Μόνο μισθωτοί. 2024 (TY2024): μόνο οι δύο πρώτες κλίμακες (0% έως PKR 600,000, 2.5% έως PKR 1,200,000) επιβεβαιώθηκαν στα αποτελέσματα αναζήτησης — τα υπόλοιπα είναι σύμφωνα με τον Νόμο περί Οικονομικών 2023 και σημειώνονται ΜΗ ΕΠΑΛΗΘΕΥΜΕΝΑ· ελέγξτε ξανά το FBR πριν από τη δημοσίευση. Το 2025 (TY2025, Νόμος περί Οικονομικών 2024) και το 2026 (TY2026, Νόμος περί Οικονομικών 2025) επιβεβαιώθηκαν πλήρως. Σημειώστε ότι τα ποσά του 2026 εδώ είναι οι κλίμακες του TY2026 (Ιουλ 2025–Ιουν 2026)· οι νεότερες κλίμακες του Νόμου περί Οικονομικών 2026 (TY2027, Ιουλ 2026–Ιουν 2027: 1%/11%/20%/25%/29%/32%/35% με νέα όρια 5.6M/7M) αφορούν διαφορετικό έτος — μην τις αναμειγνύετε. Πηγές: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

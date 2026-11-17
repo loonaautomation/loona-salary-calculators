@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="worker">Επαρχία (μοντέλο)</label>
 <select id="worker"><option value="ON" selected>Οντάριο — πλήρης υπολογισμός 2026</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Το Οντάριο είναι το δηλωμένο προεπιλεγμένο μοντέλο. Άλλες επαρχίες χρησιμοποιούν τον ίδιο ομοσπονδιακό φόρο και CPP/EI αλλά διαφορετικούς επαρχιακούς συντελεστές — δείτε τις Συχνές Ερωτήσεις παρακάτω.</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Καθαρός μισθός ανά μήνα</div>
 <div class="big" id="total">—</div>
@@ -200,7 +201,7 @@ function fmt(n){return "$" + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Εισαγάγετε ένα ποσό μεγαλύτερο από το μηδέν για να δείτε το αποτέλεσμά σας.";m.style.display="block";} return; }
   var r = netCalc(gross, "ON");
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -213,7 +214,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " ανά μήνα";
   document.getElementById("rNote").textContent = "Μοντέλο Οντάριο: ομοσπονδιακός φόρος + φόρος Οντάριο (με προσαύξηση και εισφορά υγείας) + CPP/CPP2 + EI. Άλλες επαρχίες διαφέρουν — δείτε τις Συχνές Ερωτήσεις.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
