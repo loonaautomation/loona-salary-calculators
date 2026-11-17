@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">加拿大</label>
 <input type="number" id="gross" min="0" step="any" value="75000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">僅聯邦稅 — 各省另有自己的稅級。2025 年最低稅率 14.5% 為混合稅率（15% 一月至六月，14% 自 2025 年七月 1 日起）；2026 年全年為 14%。基本個人免稅額：2024 年最高 $15,705；2025 年最高 $16,129；2026 年最高 $16,452。來源：https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ; https://tax-services.ca/canada-tax-brackets</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>每月淨工資</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入大於零的金額以查看您的結果。";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " 每月";
   document.getElementById("rNote").textContent = "僅聯邦 \u2014 各省有自己的稅檔。2025年最低費率14.5%是混合費率（15% Jan-Jun，14% 從第1天起，2025年七月）；2026年全年為14%。基本個人金額：2024年最高 $15,705；2025年最高 $16,129；2026年最高 $16,452。來源：https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ; https://tax-services.ca/canada-tax-brackets";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

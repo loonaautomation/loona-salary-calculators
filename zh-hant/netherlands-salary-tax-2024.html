@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">荷蘭</label>
 <input type="number" id="gross" min="0" step="any" value="60000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Box 1，低於國家養老金年齡；稅級 1 包括國民保險費（27.65%）。2024 年實際上有兩種稅率（36.97% 至 EUR 75,518，以上為 49.5%）。2026 年最高門檻：三個來源稱 EUR 78,426，Wikipedia 稱 EUR 79,137 — 採用 78,426（Belastingdienst，經 taxsavers/expatica）。來源：https://en.wikipedia.org/wiki/Income_tax_in_the_Netherlands ; https://taxsavers.nl/en/clarity/tax-brackets-and-tariffs</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>每月淨工資</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入大於零的金額以查看您的結果。";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " 每月";
   document.getElementById("rNote").textContent = "Box 1，低於國家養老金年齡；第1檔包括國民保險費 (27.65%)。2024年實際上是兩個費率（36.97% 至 EUR 75,518，49.5% 以上）。2026年最高門檻：三個來源說是 EUR 78,426，Wikipedia 說是 EUR 79,137 \u2014 使用了 78,426（Belastingdienst via taxsavers/expatica）。來源：https://en.wikipedia.org/wiki/Income_tax_in_the_Netherlands ; https://taxsavers.nl/en/clarity/tax-brackets-and-tariffs";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

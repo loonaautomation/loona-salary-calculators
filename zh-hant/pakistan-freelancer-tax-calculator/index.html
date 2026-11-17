@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">稅務狀態</label>
 <select id="filer"><option value="filer" selected>申報人（在活躍納稅人名單上）</option><option value="nonfiler">非申報人（第十附表費率）</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>該年第154A條最終稅</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入您的收入以計算您的稅款。";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% 佔總匯款額";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "第154A條稅款在您提交申報時為最終稅款。保持您的PSEB註冊有效，並透過銀行渠道匯入收益，以留在該制度內。" :
     "顯示的非申報者費率是從業者應用的第十附表雙倍費率 — 成為申報者可將其減半，並消除您其他銀行交易的更高預扣。";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

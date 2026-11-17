@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="ty26">納稅年度 2025-26（《金融法》2025）</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>每月扣除的稅款</div>
 <div class="big" id="rTaxM">Rs 0</div>
@@ -247,7 +248,7 @@ function calc(){
   var monthly = parseFloat(document.getElementById("monthly").value)||0;
   var year = document.getElementById("tyear").value;
   var box = document.getElementById("result");
-  if(monthly<=0){ box.style.display="none"; return; }
+  if(monthly<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入您的月工資以計算您的稅款。";m.style.display="block";} return; }
   var annual = monthly*12;
   var r = pkSalaryTax(annual, year);
   document.getElementById("rAnnual").textContent = fmt(annual);
@@ -263,7 +264,7 @@ function calc(){
     ? "稅年2026-27：受薪人員不適用附加稅，無論收入多少。"
     : (annual>10000000 ? "稅年2025-26：9%的第4AB條附加稅適用，因為收入超過 Rs 10 million。" : "稅年2025-26：9%的附加稅僅適用於超過 Rs 10 million 的應稅收入。");
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["monthly","tyear"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

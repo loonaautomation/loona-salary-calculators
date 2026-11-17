@@ -154,6 +154,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="zusatz">健康保險公司補充繳款% (2026年平均2.9)</label><input type="number" id="zusatz" min="0" max="10" step="any" value="2.9" inputmode="decimal"></div>
 </div>
 <label class="ck"><input type="checkbox" id="childless"> 我無子女且23歲或以上（護理保險+0.6%)</label>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>每月淨工資</div>
 <div class="big" id="rNetM">€0</div>
@@ -286,7 +287,7 @@ function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入大於零的金額以查看您的結果。";m.style.display="block";} return; }
   var r = deNet({gross:gross,
     tclass:parseInt(document.getElementById("tclass").value,10),
     church:parseFloat(document.getElementById("church").value)||0,
@@ -307,7 +308,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.soli>0
     ? "您的所得稅超過了團結附加稅門檻，因此適用 soli（透過緩解區逐步引入）。數字為年度數字；每月的工資單將其除以12。"
     : "此收入沒有團結附加稅 — 大多數員工都不付。數字為年度數字；每月的工資單將其除以12。";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","tclass","church","children","zusatz","childless"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

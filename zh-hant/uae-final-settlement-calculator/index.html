@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="leave">未使用年假天數</label><input type="number" id="leave" min="0" step="any" value="10" inputmode="decimal"></div>
 <div><label for="notice">欠您的通知天數（如果通知已發出則為0)</label><input type="number" id="notice" min="0" step="any" value="30" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>最終結算總計</div>
 <div class="big" id="total">AED 0</div>
@@ -223,9 +224,9 @@ function calc(){
   var notice = parseFloat(document.getElementById("notice").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入您的基本工資(或總工資)和兩個日期 — 最後工作日必須在加入日期之後。";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="最後工作日必須在加入日期之後 — 請檢查您的日期。";m.style.display="block";} return; }
   var years = days/365.25;
   var r = uaeFinalSettlement({basic:basic, totalWage:wage, years:years, leaveDays:leave, noticeDays:notice});
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -238,7 +239,7 @@ function calc(){
   var note = "您的僱主必須在合同結束後14天內支付所有離職權益（第53條）。";
   if(years < 1) note = "服務不到1年：不支付離職金，但已累積的未休假工資仍可能到期 — 請檢查您的合同。";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","leave","notice","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">您的僱主是荷蘭工資稅預扣代理人（荷蘭僱主或荷蘭工資發放）嗎？</label>
 <select id="empl"><option value="yes" selected>是</option><option value="no">否</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入您的總工資以檢查您的資格。";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ 免稅（研究人員）" :
     r.salaryStatus==="full" ? "✓ 透過 — 完整的30%可能" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "您的工資超過標準，但完整的30%不能，因此津貼限制為約 " + fmt(r.allowance) + " — 應稅餘額略高於 €" + r.norm.toLocaleString("en-US") + " 標準。 " + note;
   if(!r.overall) note = "檢查上方未透過的測試 — 每項都是硬性條件。工資數字使用2026年標準；如果您在2027年開始，將適用更高的標準。";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

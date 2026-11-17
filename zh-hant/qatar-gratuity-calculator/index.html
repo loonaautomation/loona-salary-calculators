@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="days">每年服務工資天數 (21 = 法定最低；如果更高，使用您的合同費率）</label>
 <input type="number" id="days" min="0" step="any" value="21" inputmode="decimal">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>應付退休金總計</div>
 <div class="big" id="total">QAR 0</div>
@@ -214,9 +215,9 @@ function calc(){
   var dpy = parseFloat(document.getElementById("days").value)||21;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="請輸入您的基本工資和兩個日期 — 最後工作日必須在加入日期之後。";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="最後工作日必須在加入日期之後 — 請檢查您的日期。";m.style.display="block";} return; }
   var years = days/365.25;
   var r = qatarGratuity(basic, years, dpy);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -229,7 +230,7 @@ function calc(){
     "服務不到1年：根據第54條不支付離職金。" :
     (dpy>21 ? "按您的合同費率計算： " + dpy + " 天/年，高於21天的法定最低標準。" :
     "按21天的法定最低標準計算。如果您的合同承諾每年更多天數，請在上方輸入該費率。");
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","days","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
