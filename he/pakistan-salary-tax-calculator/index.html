@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="ty26">שנת מס 2025-26 (חוק הכספים 2025)</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>מס מנוכה בחודש</div>
 <div class="big" id="rTaxM">Rs 0</div>
@@ -247,7 +248,7 @@ function calc(){
   var monthly = parseFloat(document.getElementById("monthly").value)||0;
   var year = document.getElementById("tyear").value;
   var box = document.getElementById("result");
-  if(monthly<=0){ box.style.display="none"; return; }
+  if(monthly<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="הזינו את השכר החודשי שלכם כדי לחשב את המס שלכם.";m.style.display="block";} return; }
   var annual = monthly*12;
   var r = pkSalaryTax(annual, year);
   document.getElementById("rAnnual").textContent = fmt(annual);
@@ -263,7 +264,7 @@ function calc(){
     ? "שנת מס 2026-27: לא חל היטל על שכירים, בכל הכנסה."
     : (annual>10000000 ? "שנת מס 2025-26: היטל 9% של Section 4AB חל מכיוון שההכנסה עולה על Rs 10 million." : "שנת מס 2025-26: ההיטל של 9% היה חל רק מעל Rs 10 million של הכנסה חייבת.");
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["monthly","tyear"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

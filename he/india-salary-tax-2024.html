@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">הודו</label>
 <input type="number" id="gross" min="0" step="any" value="1200000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">משטר חדש (ברירת מחדל), לכל הגילים. מס בריאות וחינוך של 4% חל בנוסף למס המחושב — יש לציין זאת בעמוד. החזר לפי סעיף 87A: אין מס עד INR 7 לאך (2024), עד INR 12 לאך (2025, 2026). ניכוי סטנדרטי של INR 75,000 לשכירים (2024-2026). מקורות: https://tax2win.in/guide/income-tax-slabs ; https://www.hrcalcy.in/2025/01/income-tax-slab-fy-2024-25.html</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>שכר נטו בחודש</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="הזינו סכום גדול מאפס כדי לראות את התוצאה שלכם.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " לחודש";
   document.getElementById("rNote").textContent = "משטר חדש (ברירת מחדל), כל הגילים. היטל בריאות וחינוך של 4% חל מעל המס המחושב \u2014 על הדף לציין זאת. הנחה לפי סעיף 87A: אין מס עד INR 7 lakh (2024), עד INR 12 lakh (2025, 2026). ניכוי סטנדרטי INR 75,000 לשכירים (2024-2026). מקורות: https://tax2win.in/guide/income-tax-slabs ; https://www.hrcalcy.in/2025/01/income-tax-slab-fy-2024-25.html";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
