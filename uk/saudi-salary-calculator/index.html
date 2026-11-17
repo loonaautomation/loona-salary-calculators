@@ -136,6 +136,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="expat">Не саудівець (експатріант) — 0%</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Чиста місячна оплата</div>
 <div class="big" id="total">SAR 0</div>
@@ -240,7 +241,7 @@ function calc(){
   var other = parseFloat(document.getElementById("other").value)||0;
   var nat = document.getElementById("nat").value;
   var box = document.getElementById("result");
-  if(basic+housing+other<=0){ box.style.display="none"; return; }
+  if(basic+housing+other<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Введіть принаймні одну суму зарплати (базову, житлову або іншу), щоб побачити результат.";m.style.display="block";} return; }
   var isSaudi = nat!=="expat";
   var r = saudiGOSI({basic:basic, housing:housing, other:other, isSaudi:isSaudi, pensionRate: PENSION[nat]||0});
   document.getElementById("rGross").textContent = fmt(r.gross);
@@ -253,7 +254,7 @@ function calc(){
   document.getElementById("rNote").textContent = isSaudi ?
     "Пенсійна частка GOSI для працівників нової системи зростає на 0.5 пункта щокожного 1 липня до 2028 року — оберіть період, що відповідає часу, коли ви це читаєте." :
     "Як несаудівський працівник ви взагалі не маєте відрахування GOSI; гілку професійних ризиків 2% сплачує сам ваш роботодавець.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","housing","other","nat"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

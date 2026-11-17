@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Канада</label>
 <input type="number" id="gross" min="0" step="any" value="75000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Лише ФЕДЕРАЛЬНІ — провінції додають власні діапазони. Найнижча ставка 2025 року 14.5% — це суміш (15% січень–червень, 14% із 1 липня 2025 року); 2026 рік — 14% на весь рік. Базова персональна сума: максимум 2024 року $15,705; максимум 2025 року $16,129; максимум 2026 року $16,452. Джерела: https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ; https://tax-services.ca/canada-tax-brackets</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Чиста зарплата на місяць</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Введіть суму більше нуля, щоб побачити результат.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " на місяць";
   document.getElementById("rNote").textContent = "ЛИШЕ ФЕДЕРАЛЬНИЙ \u2014 провінції додають власні шкали. Найнижча ставка 2025 року 14.5% є сумішшю (15% січень–червень, 14% із 1 липня 2025); 2026 рік — 14% на повний рік. Базова особиста сума: 2024 — максимум $15,705; 2025 — максимум $16,129; 2026 — максимум $16,452. Джерела: https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ; https://tax-services.ca/canada-tax-brackets";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
