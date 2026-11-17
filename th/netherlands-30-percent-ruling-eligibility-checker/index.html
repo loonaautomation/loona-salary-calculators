@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">นายจ้างของคุณเป็นตัวแทนหักภาษีค่าจ้างของเนเธอร์แลนด์ (นายจ้างชาวดัตช์หรือบัญชีเงินเดือนชาวดัตช์) หรือไม่</label>
 <select id="empl"><option value="yes" selected>ใช่</option><option value="no">ไม่</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="โปรดป้อนเงินเดือนรวมของคุณเพื่อตรวจสอบคุณสมบัติของคุณ";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ ได้รับการยกเว้น (นักวิจัย)" :
     r.salaryStatus==="full" ? "✓ ผ่าน — 30% เต็มเป็นไปได้" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "เงินเดือนของคุณผ่านเกณฑ์แต่ 30% เต็มจะไม่ผ่าน ดังนั้นเงินช่วยเหลือจำกัดที่ประมาณ " + fmt(r.allowance) + " — ยอดคงเหลือที่ต้องเสียภาษีอยู่เหนือ € เล็กน้อย" + r.norm.toLocaleString("en-US") + " มาตรฐาน " + note;
   if(!r.overall) note = "ตรวจสอบการทดสอบที่ล้มเหลวด้านบน — แต่ละข้อเป็นเงื่อนไขบังคับ ตัวเลขเงินเดือนใช้เกณฑ์ปี 2026 หากคุณเริ่มในปี 2027 เกณฑ์ที่สูงกว่าจะใช้";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

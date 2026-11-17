@@ -136,6 +136,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="expat">ไม่ใช่ชาวซาอุดี (ชาวต่างชาติ) — 0%</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>ค่าจ้างสุทธิรายเดือน</div>
 <div class="big" id="total">SAR 0</div>
@@ -240,7 +241,7 @@ function calc(){
   var other = parseFloat(document.getElementById("other").value)||0;
   var nat = document.getElementById("nat").value;
   var box = document.getElementById("result");
-  if(basic+housing+other<=0){ box.style.display="none"; return; }
+  if(basic+housing+other<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="โปรดป้อนจำนวนเงินเดือนอย่างน้อยหนึ่งรายการ (พื้นฐาน ที่อยู่อาศัย หรืออื่น ๆ) เพื่อดูผลลัพธ์ของคุณ";m.style.display="block";} return; }
   var isSaudi = nat!=="expat";
   var r = saudiGOSI({basic:basic, housing:housing, other:other, isSaudi:isSaudi, pensionRate: PENSION[nat]||0});
   document.getElementById("rGross").textContent = fmt(r.gross);
@@ -253,7 +254,7 @@ function calc(){
   document.getElementById("rNote").textContent = isSaudi ?
     "สัดส่วนบำนาญ GOSI สำหรับลูกจ้างระบบใหม่เพิ่มขึ้น 0.5 จุดทุกวันที่ 1 กรกฎาคมจนถึงปี 2028 — เลือกช่วงเวลาที่ตรงกับเวลาที่คุณอ่านสิ่งนี้" :
     "ในฐานะลูกจ้างที่ไม่ใช่ชาวซาอุดี คุณไม่มีการหัก GOSI เลย สาขาความเสี่ยงจากการทำงาน 2% นายจ้างของคุณจ่ายเพียงฝ่ายเดียว";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","housing","other","nat"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
