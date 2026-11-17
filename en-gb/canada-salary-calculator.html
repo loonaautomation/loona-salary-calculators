@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="worker">Province (model)</label>
 <select id="worker"><option value="ON" selected>Ontario — full 2026 calculation</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Ontario is the stated default model. Other provinces use the same federal tax and CPP/EI but different provincial rates — see the FAQ below.</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Net salary per month</div>
 <div class="big" id="total">—</div>
@@ -200,7 +201,7 @@ function fmt(n){return "$" + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Please enter an amount greater than zero to see your result.";m.style.display="block";} return; }
   var r = netCalc(gross, "ON");
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -213,7 +214,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " per month";
   document.getElementById("rNote").textContent = "Ontario model: federal tax + Ontario tax (with surtax and health premium) + CPP/CPP2 + EI. Other provinces differ — see the FAQ.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
