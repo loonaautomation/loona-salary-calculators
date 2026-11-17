@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="leave">미사용 연차 휴가 일수</label><input type="number" id="leave" min="0" step="any" value="10" inputmode="decimal"></div>
 <div><label for="notice">본인에게 빚진 통지 일수 (통지가 이행됐으면 0)</label><input type="number" id="notice" min="0" step="any" value="30" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>총 최종 정산</div>
 <div class="big" id="total">AED 0</div>
@@ -223,9 +224,9 @@ function calc(){
   var notice = parseFloat(document.getElementById("notice").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="기본급(또는 총임금)과 두 날짜를 모두 입력해 주세요 — 마지막 근무일은 입사일보다 뒤여야 해요.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="마지막 근무일은 입사일보다 뒤여야 해요 — 날짜를 확인해 주세요.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = uaeFinalSettlement({basic:basic, totalWage:wage, years:years, leaveDays:leave, noticeDays:notice});
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -238,7 +239,7 @@ function calc(){
   var note = "고용주는 계약 종료 후 14일 이내에 모든 퇴직 수당을 지급해야 해요 (Article 53).";
   if(years < 1) note = "근무 1년 미만: 지급할 퇴직금이 없어요. 하지만 이미 발생한 휴가에 대한 미사용 휴가 수당은 여전히 지급될 수 있어요 — 계약을 확인하세요.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","leave","notice","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

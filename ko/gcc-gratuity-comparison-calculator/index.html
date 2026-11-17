@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">입사일</label><input type="date" id="start" value="2019-01-01"></div>
 <div><label for="end">마지막 근무일</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>국가별 근속 종료 금액 (같은 입력)</div>
 <table>
@@ -253,9 +254,9 @@ function calc(){
   var reason = document.getElementById("reason").value;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="기본급(또는 총임금)과 두 날짜를 모두 입력해 주세요 — 마지막 근무일은 입사일보다 뒤여야 해요.";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="마지막 근무일은 입사일보다 뒤여야 해요 — 날짜를 확인해 주세요.";m.style.display="block";} return; }
   var years = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var omanBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -270,7 +271,7 @@ function calc(){
   var vals = [["UAE",r.uae],["사우디아라비아",r.saudi],["카타르",r.qatar],["쿠웨이트",r.kuwait],["오만",r.oman],["바레인",r.bahrain]];
   vals.sort(function(a,b){return b[1]-a[1];});
   document.getElementById("rNote").textContent = "이 수치에서는 가장 관대한 공식은 " + vals[0][0] + " (" + fmt(vals[0][1]) + ")이고 가장 적은 것은 " + vals[5][0] + " (" + fmt(vals[5][1]) + ") — 각 국가 자체 통화 단위로, 대상 \"" + years.toFixed(2) + "년의 근무 기간. Qatar는 법적 최소 21일로 표시돼요; 더 나은 계약 세율이 그것을 높여요.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","social","reason","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

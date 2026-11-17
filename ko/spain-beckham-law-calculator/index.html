@@ -122,6 +122,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="calc">
 <label for="gross">스페인 연 총 고용 소득 (EUR)</label>
 <input type="number" id="gross" min="0" step="any" value="100000" inputmode="decimal">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div id="bigLabel">Beckham 제도 절약, 연도당</div>
 <div class="big" id="total">€0</div>
@@ -239,7 +240,7 @@ function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="결과를 보려면 0보다 큰 금액을 입력해 주세요.";m.style.display="block";} return; }
   var r = spainBeckham(gross);
   document.getElementById("rBTax").textContent = fmt(r.beckhamTax);
   document.getElementById("rSTax").textContent = fmt(r.standardTax);
@@ -259,7 +260,7 @@ function calc(){
     document.getElementById("total").textContent = fmt(-r.saving);
     document.getElementById("rNote").textContent = "이 급여에서는 표준 구간이 더 싸요 — Beckham 제도에는 개인 최소액이 없어요. 그래서 첫 유로 (EUR)부터의 24%가 누진 구간에 져요. 조언 없이 선택하지 마세요.";
   }
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

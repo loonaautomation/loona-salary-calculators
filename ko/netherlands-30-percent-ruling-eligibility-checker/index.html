@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">본인의 고용주는 네덜란드 임금세 원천징수 대리인인가요 (네덜란드 고용주 또는 네덜란드 급여)?</label>
 <select id="empl"><option value="yes" selected>예</option><option value="no">아니요</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="자격을 확인하려면 총급여를 입력해 주세요.";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ 면제 (연구자)" :
     r.salaryStatus==="full" ? "✓ 통과 — 전체 30% 가능" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "급여가 기준을 넘지만 전체 30%는 그렇지 않아요. 그래서 수당은 약 로 제한돼요 — 의 " + fmt(r.allowance) + " — 과세 잔액은 € 바로 위에 있어요 — 의" + r.norm.toLocaleString("en-US") + " 기준. " + note;
   if(!r.overall) note = "위에서 실패한 테스트를 확인하세요 — 각각이 엄격한 조건이에요. 급여 수치는 2026 기준을 사용해요; 시작이 2027년이면 더 높은 기준이 적용돼요.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

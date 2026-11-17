@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="worker">주 (모델)</label>
 <select id="worker"><option value="ON" selected>Ontario — 2026년 전체 계산</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Ontario가 명시된 기본 모델이에요. 다른 주는 같은 연방세와 CPP/EI를 쓰지만 주 세율이 달라요 — 아래 FAQ를 보세요.</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>월 순급여</div>
 <div class="big" id="total">—</div>
@@ -200,7 +201,7 @@ function fmt(n){return "$" + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="결과를 보려면 0보다 큰 금액을 입력해 주세요.";m.style.display="block";} return; }
   var r = netCalc(gross, "ON");
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -213,7 +214,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + "/월";
   document.getElementById("rNote").textContent = "Ontario 모델: 연방세 + Ontario 세금 (추가세와 건강 보험료 포함) + CPP/CPP2 + EI. 다른 주는 달라요 — FAQ를 보세요.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

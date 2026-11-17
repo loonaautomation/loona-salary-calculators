@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">세금 상태</label>
 <select id="filer"><option value="filer" selected>신고자 (현행 납세자 명단)</option><option value="nonfiler">비신고자 (Tenth Schedule 세율)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>연 Section 154A 최종 세금</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="세금을 계산하려면 소득을 입력해 주세요.";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% — 총 송금액의";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "Section 154A 세금은 신고가 제출되면 최종이에요. 제도에 머물려면 PSEB 등록을 활성으로 유지하고 수익을 은행 채널로 보내세요." :
     "표시된 비신고자 세율은 실무자가 적용하는 Tenth Schedule 두 배예요 — 신고자가 되면 그것이 절반이 되고 다른 은행 거래 전반의 더 높은 원천징수도 사라져요.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

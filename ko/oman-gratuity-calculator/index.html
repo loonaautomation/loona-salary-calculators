@@ -126,6 +126,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">입사일</label><input type="date" id="start" value="2020-01-01"></div>
 <div><label for="end">마지막 근무일</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>지급할 총 퇴직금</div>
 <div class="big" id="total">OMR 0</div>
@@ -217,9 +218,9 @@ function calc(){
   var basic = parseFloat(document.getElementById("basic").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="기본급과 두 날짜를 모두 입력해 주세요 — 마지막 근무일은 입사일보다 뒤여야 해요.";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="마지막 근무일은 입사일보다 뒤여야 해요 — 날짜를 확인해 주세요.";m.style.display="block";} return; }
   var totalYears = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var yearsBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -236,7 +237,7 @@ function calc(){
   document.getElementById("rNote").textContent = yearsBefore>0 ?
     "근무 기간이 법 변경에 걸쳐 있어요 — August 1일, 2023년에 — 그래서 두 법이 각 기간에, 마지막 기본급으로 적용돼요." :
     "전 근무 기간이 2023년 법 아래에 있어요: 첫 해부터 해마다 기본급 한 달분.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -133,6 +133,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">룰링은 언제 처음 적용됐나요?</label>
 <select id="start"><option value="new" selected>2024년부터</option><option value="old">January 1일, 2024년 이전 (30% — 2027년에도 유지)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>룰링으로 얻는 추가 순급여 (2026년)</div>
 <div class="big" id="total">연 €0</div>
@@ -279,7 +280,7 @@ function calc(){
   var master = document.getElementById("norm").value==="master";
   var old = document.getElementById("start").value==="old";
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="결과를 보려면 0보다 큰 금액을 입력해 주세요.";m.style.display="block";} return; }
   var r = nlRuling({gross:gross, includesHoliday:incl, pensionPct:pension, under30Master:master, startedBefore2024:old});
   document.getElementById("rA0").textContent = fmt(0);
   document.getElementById("rA26").textContent = fmt(r.y2026.allowance);
@@ -300,7 +301,7 @@ function calc(){
   if(r.y2026.normFailed) note = "급여가 급여 기준을 넘지 않아요. 그래서 룰링은 현재 혜택을 주지 않아요: 과세 급여가 수당 후 기준을 넘어야 해요. " + note;
   else if(r.y2026.normLimited) note = "수당이 급여 기준에 제한돼요 — 전체 30%는 과세 급여를 기준 아래로 밀 거예요. 그래서 줄어요. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","pension","hol","norm","start"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -81,6 +81,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="worker">거주 상태</label>
 <select id="worker"><option value="pr-u55" selected>시민권자 / PR — 55세 이하 (CPF 20%)</option><option value="pr-56-60">시민권자 / PR — 56–60세 (CPF 18%)</option><option value="pr-61-65">시민권자 / PR — 61–65세 (CPF 12.5%)</option><option value="pr-66-70">시민권자 / PR — 66–70세 (CPF 7.5%)</option><option value="pr-o70">시민권자 / PR — 70세 초과 (CPF 5%)</option><option value="fx">외국인 근로자 — CPF 없음</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>월 실수령액 (현금 환산)</div>
 <div class="big" id="total">—</div>
@@ -178,7 +179,7 @@ function fmt(n){return "S$" + n.toLocaleString("en-US",{minimumFractionDigits:2,
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="결과를 보려면 0보다 큰 금액을 입력해 주세요.";m.style.display="block";} return; }
   var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
   var r = netCalc(gross, opt);
   document.getElementById("rGross").textContent = fmt(gross);
@@ -189,7 +190,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + "/월";
   document.getElementById("rNote").textContent = opt === "fx" ? "외국인 직원: CPF 없음. 소득세는 평가 후 IRAS가 청구해요. 매월 원천징수되지 않아요." : "시민/PR: CPF가 매월 공제돼요; 소득세는 평가 후 IRAS가 청구해요 — 월 수치는 그것을 고르게 나눠요.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="ruling">30% 룰링?</label>
 <select id="ruling"><option value="0" selected>룰링 없음</option><option value="30">맞아요 — 30% 룰링 적용</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>순 휴가 수당 (세후)</div>
 <div class="big" id="total">€0</div>
@@ -264,7 +265,7 @@ function calc(){
   var incl = document.getElementById("hol").value==="yes";
   var ruling = parseFloat(document.getElementById("ruling").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="결과를 보려면 0보다 큰 금액을 입력해 주세요.";m.style.display="block";} return; }
   var r = nlHoliday({gross:gross, includesHoliday:incl, rulingPct:ruling});
   document.getElementById("rHol").textContent = fmt(r.holiday);
   document.getElementById("rTax").textContent = fmt(r.taxOnHoliday);
@@ -272,7 +273,7 @@ function calc(){
   document.getElementById("rGross").textContent = fmt(r.totalGross);
   document.getElementById("total").textContent = fmt(r.netHoliday);
   document.getElementById("rNote").textContent = "수당에 대한 세율이 평균 세율보다 높아요. 전액이 최고 세율로 과세되고 세액 공제를 단계적으로 없애기 때문이에요. 초과 원천징수는 연간 세금 신고에서 정산돼요.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","ruling"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

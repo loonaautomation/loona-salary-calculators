@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">파키스탄</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">급여 소득자만 해당해요. 2024년(TY2024): 처음 두 구간(0%부터 PKR 600,000까지, 2.5%부터 PKR 1,200,000까지)만 검색 결과에서 확인됐어요 — 나머지는 Finance Act 2023 기준이며 UNVERIFIED로 표시돼 있어요. 게시 전에 FBR에서 다시 확인하세요. 2025년(TY2025, Finance Act 2024)과 2026년(TY2026, Finance Act 2025)은 완전히 확인됐어요. 여기의 2026년 수치는 TY2026(Jul 2025-Jun 2026) 구간표라는 점에 유의하세요. 더 새로운 Finance Act 2026 구간표(TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% 및 새 5.6M/7M 기준선)는 다른 연도예요 — 섞지 마세요. 출처: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>월 순급여</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="결과를 보려면 0보다 큰 금액을 입력해 주세요.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + "/월";
   document.getElementById("rNote").textContent = "급여 생활자만. 2024 (TY2024): 처음 두 구간만 (0% — PKR 600,000까지, 2.5% — PKR 1,200,000까지)이 검색 결과에서 확인됐어요 — 나머지는 Finance Act 2023에 따르고 UNVERIFIED로 표시돼요; 게시 전에 FBR로 다시 확인하세요. 2025 (TY2025, Finance Act 2024)와 2026 (TY2026, Finance Act 2025)은 완전히 확인됐어요. 여기의 2026 수치는 TY2026 (July 2025–June 2026) 구간이라는 점에 유의하세요; 더 새로운 Finance Act 2026 구간 (TY2027, July 2026–June 2027: 1%/11%/20%/25%/29%/32%/35% — 새 기준선 5.6M/7M으로)은 다른 연도예요 — 섞지 마세요. 출처: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
