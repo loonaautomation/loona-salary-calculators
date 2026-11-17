@@ -79,6 +79,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Arábia Saudita</label>
 <input type="number" id="gross" min="0" step="any" value="180000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">0% de imposto sobre o rendimento nos salários para sauditas e expatriados (ZATCA). GOSI: cidadãos sauditas 9.75% a cargo do trabalhador (com aumento segundo o calendário em MEMORY), expatriados 2% apenas por risco profissional a cargo da entidade patronal. O IVA de 15% é separado. Fonte: https://blog.wego.com/countries-with-no-income-tax/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Salário líquido por mês</div>
 <div class="big" id="total">—</div>
@@ -184,7 +185,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Insira um valor maior que zero para ver o resultado.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -196,7 +197,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " por mês";
   document.getElementById("rNote").textContent = "0% de imposto sobre o rendimento nos salários para sauditas e expatriados (ZATCA). GOSI: nacionais sauditas, contribuição do trabalhador de 9.75% (a aumentar de acordo com o calendário em MEMORY), expatriados, apenas 2% de risco profissional através do empregador. O IVA de 15% é separado. Fonte: https://blog.wego.com/countries-with-no-income-tax/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
