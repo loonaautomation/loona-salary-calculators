@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filing">Stato di dichiarazione fiscale</label>
 <select id="filing"><option value="single" selected>Singolo</option><option value="mfj">Coniugi con dichiarazione congiunta</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Solo imposta federale — l'imposta statale non è inclusa. Inserisci la tua tariffa oraria; il calcolatore la annualizza su 2,080 ore (40 ore a settimana × 52 settimane).</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Salario netto al mese</div>
 <div class="big" id="total">—</div>
@@ -162,7 +163,7 @@ function calc(){
   var gross = (parseFloat(document.getElementById("gross").value)||0) * 2080;
   var filing = document.getElementById("filing").value;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Inserisci un importo superiore a zero per vedere il risultato.";m.style.display="block";} return; }
   var r = netCalc(gross, filing);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -176,7 +177,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " al mese";
   document.getElementById("rNote").textContent = "Solo imposta federale — l’imposta statale non è inclusa.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","filing"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

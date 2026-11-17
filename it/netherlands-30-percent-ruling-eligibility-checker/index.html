@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">Il tuo datore di lavoro è un sostituto d'imposta olandese per i salari (un datore di lavoro olandese o un libro paga olandese)?</label>
 <select id="empl"><option value="yes" selected>Sì</option><option value="no">No</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Inserisci il tuo salario annuo lordo per verificare la tua idoneità, per favore.";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ Esente (ricercatore)" :
     r.salaryStatus==="full" ? "✓ Superato — 30% completo possibile" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "Il tuo stipendio supera la norma ma il 30% completo no, quindi l’indennità è limitata a circa " + fmt(r.allowance) + " — il resto imponibile è appena superiore a €" + r.norm.toLocaleString("en-US") + " norma. " + note;
   if(!r.overall) note = "Controlla il test non superato sopra — ciascuno è una condizione obbligatoria. Le cifre salariali utilizzano le norme 2026; se il tuo inizio è nel 2027, si applicheranno norme più elevate.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
