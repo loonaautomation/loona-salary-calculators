@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Hanya individu bergaji. 2024 (TY2024): hanya dua kelompok pertama (0% hingga PKR 600,000, 2.5% hingga PKR 1,200,000) yang terkonfirmasi dalam hasil pencarian — sisanya menurut Finance Act 2023 dan ditandai BELUM TERVERIFIKASI; periksa ulang ke FBR sebelum menerbitkan. 2025 (TY2025, Finance Act 2024) dan 2026 (TY2026, Finance Act 2025) terkonfirmasi penuh. Perhatikan bahwa angka 2026 di sini adalah lapisan TY2026 (Jul 2025-Jun 2026); lapisan Finance Act 2026 yang lebih baru (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% dengan ambang baru 5.6M/7M) adalah tahun yang berbeda — jangan dicampur. Sumber: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Gaji bersih per bulan</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Silakan masukkan jumlah lebih dari nol untuk melihat hasil Anda.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " per bulan";
   document.getElementById("rNote").textContent = "Hanya individu bergaji. 2024 (TY2024): hanya dua band pertama (0% hingga PKR 600,000, 2.5% hingga PKR 1,200,000) yang dikonfirmasi dalam hasil pencarian \u2014 sisanya menurut Finance Act 2023 dan ditandai BELUM TERVERIFIKASI; periksa ulang FBR sebelum menerbitkan. 2025 (TY2025, Finance Act 2024) dan 2026 (TY2026, Finance Act 2025) dikonfirmasi penuh. Perhatikan angka 2026 di sini adalah slab TY2026 (Jul 2025-Jun 2026); slab Finance Act 2026 yang lebih baru (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% dengan ambang baru 5.6M/7M) adalah tahun yang berbeda \u2014 jangan dicampur. Sumber: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

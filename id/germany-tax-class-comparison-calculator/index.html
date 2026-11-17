@@ -134,6 +134,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <select id="church"><option value="0" selected>Tidak ada</option><option value="9">9% dari pajak penghasilan (sebagian besar negara bagian)</option><option value="8">8% dari pajak penghasilan (Bavaria, Baden-Württemberg)</option></select></div>
 <div><label for="zusatz">Zusatzbeitrag asuransi kesehatan (%)</label><input type="number" id="zusatz" min="0" step="any" value="2.9" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Bersih per bulan menurut kelas pajak (gaji Anda)</div>
 <table>
@@ -278,7 +279,7 @@ function calc(){
   var church = parseFloat(document.getElementById("church").value)||0;
   var zusatz = parseFloat(document.getElementById("zusatz").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Silakan masukkan jumlah lebih dari nol untuk melihat hasil Anda.";m.style.display="block";} return; }
   var r = deCompare({gross:gross, partnerGross:partner, church:church, childless:childless, children:children, zusatz:zusatz});
   for(var c=1;c<=6;c++){
     document.getElementById("rM"+c).textContent = fmt(r.rows[c].netMonthly);
@@ -298,7 +299,7 @@ function calc(){
     ct.style.display = "none";
     document.getElementById("rNote").textContent = "Tambahkan gaji pasangan untuk melihat total pasangan III/V versus IV/IV. Kelas hanya mengubah pemotongan — pajak tahunan diselesaikan dalam laporan pajak.";
   }
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","partner","children","childless","church","zusatz"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

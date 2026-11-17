@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="ty26">Tahun Pajak 2025-26 (Finance Act 2025)</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Pajak yang dipotong per bulan</div>
 <div class="big" id="rTaxM">Rs 0</div>
@@ -247,7 +248,7 @@ function calc(){
   var monthly = parseFloat(document.getElementById("monthly").value)||0;
   var year = document.getElementById("tyear").value;
   var box = document.getElementById("result");
-  if(monthly<=0){ box.style.display="none"; return; }
+  if(monthly<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Silakan masukkan gaji bulanan Anda untuk menghitung pajak Anda.";m.style.display="block";} return; }
   var annual = monthly*12;
   var r = pkSalaryTax(annual, year);
   document.getElementById("rAnnual").textContent = fmt(annual);
@@ -263,7 +264,7 @@ function calc(){
     ? "Tahun Pajak 2026-27: tidak ada pajak tambahan yang berlaku untuk orang bergaji, pada pendapatan berapa pun."
     : (annual>10000000 ? "Tahun Pajak 2025-26: pajak tambahan 9% pasal 4AB berlaku karena pendapatan melebihi Rs 10 juta." : "Tahun Pajak 2025-26: pajak tambahan 9% hanya akan berlaku di atas Rs 10 juta pendapatan kena pajak.");
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["monthly","tyear"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
