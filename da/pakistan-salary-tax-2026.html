@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Kun lønmodtagere. 2024 (TY2024): kun de to første bånd (0% op til PKR 600,000, 2.5% op til PKR 1,200,000) blev bekræftet i søgeresultater — resten følger Finance Act 2023 og er markeret UBEKRÆFTET; tjek FBR igen før udgivelse. 2025 (TY2025, Finance Act 2024) og 2026 (TY2026, Finance Act 2025) fuldt bekræftet. Bemærk, at 2026-tallene her er TY2026-trinene (juli 2025-juni 2026); de nyere Finance Act 2026-trin (TY2027, juli 2026-juni 2027: 1%/11%/20%/25%/29%/32%/35% med nye grænser på 5.6M/7M) er et andet år — bland dem ikke sammen. Kilder: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Nettoløn pr. måned</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Indtast et beløb større end nul for at se dit resultat.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " om måneden";
   document.getElementById("rNote").textContent = "Kun lønmodtagere. 2024 (TY2024): kun de to første trin (0% op til PKR 600,000, 2.5% op til PKR 1,200,000) blev bekræftet i søgeresultater — resten følger Finance Act 2023 og er markeret som IKKE BEKRÆFTET; kontrollér igen hos FBR før offentliggørelse. 2025 (TY2025, Finance Act 2024) og 2026 (TY2026, Finance Act 2025) er fuldt bekræftet. Bemærk, at tallene for 2026 her er trinene for TY2026 (jul 2025-jun 2026); de nyere trin i Finance Act 2026 (TY2027, jul 2026-jun 2027: 1%/11%/20%/25%/29%/32%/35% med nye grænser på 5.6M/7M) tilhører et andet år — bland dem ikke sammen. Kilder: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

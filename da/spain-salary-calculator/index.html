@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="payments">Betalinger pr. år</label>
 <select id="payments"><option value="12" selected>12 betalinger</option><option value="14">14 betalinger (pagas extraordinarias)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Nettoløn pr. betaling</div>
 <div class="big" id="total">€0</div>
@@ -235,7 +236,7 @@ function calc(){
   var temp = document.getElementById("contract").value==="temp";
   var pays = parseInt(document.getElementById("payments").value)||12;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Indtast et beløb større end nul for at se dit resultat.";m.style.display="block";} return; }
   var r = spainNet({gross:gross, temporary:temp});
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rSS").textContent = fmt(r.ss);
@@ -247,7 +248,7 @@ function calc(){
   document.getElementById("rNote").textContent = gross>61214.40 ?
     "Din løn er over loftet for social sikring, så der kun opkræves bidrag af de første €61,214.40. Regionale IRPF-skalaer kan flytte skattebeløbet — se den regionale advarsel nedenfor." :
     "Beregnet ud fra standardskalaen for IRPF. Din selvstyrende regions egen skala kan flytte skattebeløbet op eller ned — se den regionale advarsel nedenfor.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","contract","payments"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
