@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">پاکستان</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">صرف تنخواہ دار افراد۔ 2024 (TY2024): تلاش کے نتائج میں صرف پہلے دو درجے (0% سے PKR 600,000، 2.5% سے PKR 1,200,000) کی تصدیق ہوئی — باقی Finance Act 2023 کے مطابق ہے اور غیر تصدیق شدہ نشان زد ہے؛ اشاعت سے پہلے FBR سے دوبارہ جانچیں۔ 2025 (TY2025، Finance Act 2024) اور 2026 (TY2026، Finance Act 2025) مکمل تصدیق شدہ۔ نوٹ: یہاں 2026 کے اعداد TY2026 (جولائی 2025–جون 2026) کے درجے ہیں؛ نئے Finance Act 2026 کے درجے (TY2027، جولائی 2026–جون 2027: 1%/11%/20%/25%/29%/32%/35%، نئی 5.6M/7M حدوں کے ساتھ) ایک مختلف سال ہیں — ملائیں نہیں۔ ماخذ: https://fairtaxint.com/pk/tools/salary-tax-calculator ؛ https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>خالص تنخواہ فی ماہ</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="براہ کرم اپنا نتیجہ دیکھنے کے لیے صفر سے زیادہ رقم درج کریں۔";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " فی ماہ";
   document.getElementById("rNote").textContent = "صرف تنخواہ دار افراد۔ 2024 (TY2024): صرف پہلے دو درجے (0% سے PKR 600,000 تک، 2.5% سے PKR 1,200,000 تک) تلاش نتائج میں تصدیق شدہ تھے \u2014 باقی Finance Act 2023 کے مطابق ہے اور غیر تصدیق شدہ نشان زد ہے؛ اشاعت سے پہلے FBR سے دوبارہ جانچیں۔ 2025 (TY2025, Finance Act 2024) اور 2026 (TY2026, Finance Act 2025) مکمل تصدیق شدہ۔ نوٹ کریں یہاں 2026 اعداد TY2026 (جولائی 2025-جون 2026) درجے ہیں؛ نئے Finance Act 2026 درجے (TY2027, جولائی 2026-جون 2027: 1%/11%/20%/25%/29%/32%/35% نئی 5.6M/7M حدوں کے ساتھ) مختلف سال ہیں \u2014 نہ ملائیں۔ ماخذ: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="days">خدمت کے ہر سال اجرت کے دن (21 = قانونی کم از کم؛ اپنے معاہدے کی شرح استعمال کریں اگر زیادہ ہو)</label>
 <input type="number" id="days" min="0" step="any" value="21" inputmode="decimal">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>کل قابلِ ادا گریجویٹی</div>
 <div class="big" id="total">QAR 0</div>
@@ -214,9 +215,9 @@ function calc(){
   var dpy = parseFloat(document.getElementById("days").value)||21;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="اپنی بنیادی تنخواہ اور دونوں تاریخیں درج کریں — اختتامی تاریخ آغاز کی تاریخ کے بعد ہونی چاہیے۔";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="اختتامی تاریخ آغاز کی تاریخ کے بعد ہونی چاہیے — براہ کرم اپنی تاریخیں جانچیں۔";m.style.display="block";} return; }
   var years = days/365.25;
   var r = qatarGratuity(basic, years, dpy);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -229,7 +230,7 @@ function calc(){
     "1 سال سے کم خدمت: Article 54 کے تحت کوئی گریجویٹی قابلِ ادائیگی نہیں۔" :
     (dpy>21 ? "آپ کی معاہدہ شرح پر حساب شدہ " + dpy + " دن فی سال، جو 21 دن قانونی کم از کم سے اوپر ہے۔" :
     "21 دن قانونی کم از کم پر حساب شدہ۔ اگر آپ کا معاہدہ فی سال زیادہ دنوں کا وعدہ کرے تو وہ شرح اوپر درج کریں۔");
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","days","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

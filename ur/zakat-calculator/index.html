@@ -142,6 +142,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="basis">نصاب معیار</label>
 <select id="basis"><option value="silver" selected>چاندی نصاب — 52.5 تولہ (مخلوط دولت کے لیے معمول)</option><option value="gold">سونے کا نصاب — 7.5 تولہ</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>آپ کی قابلِ ادا زکاۃ</div>
 <div class="big" id="total">0</div>
@@ -242,7 +243,7 @@ function calc(){
     receivables:num("recv"), debts:num("debts"),
     goldRate:num("goldRate"), silverRate:num("silverRate"),
     basis:document.getElementById("basis").value});
-  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; return; }
+  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="براہ کرم اپنی زکاۃ کا حساب لگانے کے لیے اپنے اثاثے، یا سونے یا چاندی کی شرح درج کریں۔";m.style.display="block";} return; }
   document.getElementById("rGold").textContent = fmt(r.goldValue);
   document.getElementById("rSilver").textContent = fmt(r.silverValue);
   document.getElementById("rAssets").textContent = fmt(r.assets);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.nisabMet ?
     "آپ کی خالص قابلِ زکاۃ دولت نصاب پر یا اس سے اوپر ہے، تو 2.5% زکاۃ واجب ہے (جب قمری سال — حول — اس پر گزر جائے)۔" :
     "آپ کی خالص قابلِ زکاۃ دولت نصاب سے نیچے ہے، تو ان اعداد پر کوئی زکاۃ واجب نہیں۔ اگر آپ کی دولت نصاب سے گزرے اور قمری سال وہاں رہے تو زکاۃ واجب ہو جاتی ہے۔";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["goldRate","silverRate","goldG","karat","silverG","cash","stock","recv","debts","basis"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

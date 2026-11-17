@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">کیا آپ کا آجر ڈچ اجرت ٹیکس روکنے والا ایجنٹ ہے (ڈچ آجر یا ڈچ پے رول)؟</label>
 <select id="empl"><option value="yes" selected>ہاں</option><option value="no">نہیں</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="براہ کرم اپنی اہلیت جانچنے کے لیے اپنی مجموعی تنخواہ درج کریں۔";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ مستثنیٰ (محقق)" :
     r.salaryStatus==="full" ? "✓ پاس — مکمل 30% ممکن" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "آپ کی تنخواہ معیار صاف کرتی ہے لیکن مکمل 30% نہیں کرے گا، تو الاؤنس تقریباً اس تک محدود ہے " + fmt(r.allowance) + " — قابلِ ٹیکس بقیہ € کے بالکل اوپر ہے" + r.norm.toLocaleString("en-US") + " معیار۔ " + note;
   if(!r.overall) note = "اوپر ناکام ٹیسٹ جانچیں — ہر ایک سخت شرط ہے۔ تنخواہ اعداد 2026 معیارات استعمال کرتے ہیں؛ اگر آپ کا آغاز 2027 میں ہے تو زیادہ معیارات لاگو ہوں گے۔";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
