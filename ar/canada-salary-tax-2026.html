@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">كندا</label>
 <input type="number" id="gross" min="0" step="any" value="75000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">اتحادي فقط — تضيف المقاطعات شرائحها الخاصة. أدنى معدل في 2025 البالغ 14.5% مزيج (15% يناير-يونيو، و14% اعتبارًا من 1 يوليو 2025)؛ وعام 2026 هو 14% للسنة الكاملة. المبلغ الشخصي الأساسي: 2024 بحد أقصى $15,705؛ و2025 بحد أقصى $16,129؛ و2026 بحد أقصى $16,452. المصادر: https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ؛ https://tax-services.ca/canada-tax-brackets</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>صافي الراتب شهريًا</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="يرجى إدخال مبلغ أكبر من الصفر لعرض نتيجتك.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " شهريًا";
   document.getElementById("rNote").textContent = "فيدرالي فقط — تضيف المقاطعات نطاقاتها الخاصة. أدنى معدل 2025 ‏14.5% مزيج (15% يناير-يونيو، 14% من 1 يوليو 2025)؛ 2026 ‏14% للسنة كاملة. مبلغ شخصي أساسي: 2024 حد أقصى $15,705؛ 2025 حد أقصى $16,129؛ 2026 حد أقصى $16,452. المصادر: https://www.taxtips.ca/priortaxrates/tax-rates-2024-2025/canada.htm ; https://tax-services.ca/canada-tax-brackets";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

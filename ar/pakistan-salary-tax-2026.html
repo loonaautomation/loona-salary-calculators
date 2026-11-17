@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">باكستان</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">للموظفين بأجر فقط. عام 2024 (TY2024): تأكدت أول شريحتين فقط (0% حتى PKR 600,000، و2.5% حتى PKR 1,200,000) في نتائج البحث — والباقي وفق قانون المالية 2023 ومُعلَّم بأنه غير مؤكد؛ أعد التحقق لدى FBR قبل النشر. عام 2025 (TY2025، قانون المالية 2024) وعام 2026 (TY2026، قانون المالية 2025) مؤكدان بالكامل. لاحظ أن أرقام 2026 هنا هي شرائح TY2026 (يوليو 2025-يونيو 2026)؛ أما شرائح قانون المالية 2026 الأحدث (TY2027، يوليو 2026-يونيو 2027: 1%/11%/20%/25%/29%/32%/35% مع عتبات جديدة 5.6M/7M) فهي لسنة مختلفة — لا تخلط بينها. المصادر: https://fairtaxint.com/pk/tools/salary-tax-calculator ؛ https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>صافي الراتب شهريًا</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="يرجى إدخال مبلغ أكبر من الصفر لعرض نتيجتك.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " شهريًا";
   document.getElementById("rNote").textContent = "ذوو رواتب فقط. 2024 (TY2024): تأكد في نتائج البحث أول نطاقين فقط (0% حتى PKR 600,000، ‏2.5% حتى PKR 1,200,000) — الباقي وفق قانون المالية 2023 ومُعلّم غير مؤكد؛ أعد الفحص عند FBR قبل النشر. 2025 (TY2025، قانون المالية 2024) و2026 (TY2026، قانون المالية 2025) مؤكدان بالكامل. لاحظ أن أرقام 2026 هنا هي شرائح TY2026 (يوليو 2025–يونيو 2026)؛ شرائح قانون المالية 2026 الأحدث (TY2027، يوليو 2026–يونيو 2027: ‏1%/11%/20%/25%/29%/32%/35% مع عتبات جديدة 5.6M/7M) سنة مختلفة — لا تخلط. المصادر: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
