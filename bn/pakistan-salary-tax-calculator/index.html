@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="ty26">কর বছর 2025-26 (Finance Act 2025)</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>প্রতি মাসে কাটা কর</div>
 <div class="big" id="rTaxM">Rs 0</div>
@@ -247,7 +248,7 @@ function calc(){
   var monthly = parseFloat(document.getElementById("monthly").value)||0;
   var year = document.getElementById("tyear").value;
   var box = document.getElementById("result");
-  if(monthly<=0){ box.style.display="none"; return; }
+  if(monthly<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার কর হিসাব করতে অনুগ্রহ করে আপনার মাসিক বেতন লিখুন।";m.style.display="block";} return; }
   var annual = monthly*12;
   var r = pkSalaryTax(annual, year);
   document.getElementById("rAnnual").textContent = fmt(annual);
@@ -263,7 +264,7 @@ function calc(){
     ? "কর বছর 2026-27: কোনো আয়ে বেতনভোগী ব্যক্তিদের কোনো সারচার্জ প্রযোজ্য নয়।"
     : (annual>10000000 ? "কর বছর 2025-26: 9% ধারা 4AB সারচার্জ প্রযোজ্য কারণ আয় Rs 10 মিলিয়ন অতিক্রম করে।" : "কর বছর 2025-26: 9% সারচার্জ শুধুমাত্র করযোগ্য আয় Rs 10 মিলিয়নের উপরে প্রযোজ্য হতো।");
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["monthly","tyear"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

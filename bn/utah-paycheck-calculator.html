@@ -80,6 +80,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filing">দাখিলের অবস্থা</label>
 <select id="filing"><option value="single" selected>একক</option><option value="mfj">যৌথভাবে দাখিলকারী বিবাহিত</option></select></div>
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">ইউটাহ 2026-এর সারণি: Tax Foundation (1 জানুয়ারি 2026 অনুযায়ী)। স্থানীয় আয়কর অন্তর্ভুক্ত নয়।</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>প্রতি মাসে নিট বেতন</div>
 <div class="big" id="total">—</div>
@@ -163,7 +164,7 @@ function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var filing = document.getElementById("filing").value;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার ফলাফল দেখতে অনুগ্রহ করে শূন্যের বেশি পরিমাণ লিখুন।";m.style.display="block";} return; }
   var r = netCalc(gross, filing);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rFed").textContent = fmt(r.fed);
@@ -177,7 +178,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " প্রতি মাসে";
   document.getElementById("rNote").textContent = "ইউটাহ 2026 সারণি: Tax Foundation (1 জানুয়ারি 2026 অনুযায়ী)। স্থানীয় আয়কর অন্তর্ভুক্ত নয়।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","filing"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

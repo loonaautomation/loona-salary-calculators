@@ -142,6 +142,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="basis">নিসাব মানদণ্ড</label>
 <select id="basis"><option value="silver" selected>রৌপ্য নিসাব — 52.5 tola (মিশ্র সম্পদের জন্য স্বাভাবিক)</option><option value="gold">স্বর্ণ নিসাব — 7.5 tola</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>আপনার প্রদেয় যাকাত</div>
 <div class="big" id="total">0</div>
@@ -242,7 +243,7 @@ function calc(){
     receivables:num("recv"), debts:num("debts"),
     goldRate:num("goldRate"), silverRate:num("silverRate"),
     basis:document.getElementById("basis").value});
-  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; return; }
+  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার যাকাত হিসাব করতে অনুগ্রহ করে আপনার সম্পদ, অথবা স্বর্ণ বা রৌপ্যের হার লিখুন।";m.style.display="block";} return; }
   document.getElementById("rGold").textContent = fmt(r.goldValue);
   document.getElementById("rSilver").textContent = fmt(r.silverValue);
   document.getElementById("rAssets").textContent = fmt(r.assets);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.nisabMet ?
     "আপনার নিট যাকাতযোগ্য সম্পদ নিসাবের উপর বা উপরে, তাই 2.5% যাকাত প্রদেয় (একবার চান্দ্র বছর — hawl — এর উপর দিয়ে গেলে)।" :
     "আপনার নিট যাকাতযোগ্য সম্পদ নিসাবের নিচে, তাই এই অঙ্কে কোনো যাকাত প্রদেয় নয়। আপনার সম্পদ নিসাব অতিক্রম করলে এবং একটি চান্দ্র বছর সেখানে থাকলে, যাকাত প্রদেয় হয়।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["goldRate","silverRate","goldG","karat","silverG","cash","stock","recv","debts","basis"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

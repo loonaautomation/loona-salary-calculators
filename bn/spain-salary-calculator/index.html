@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="payments">বছরে পেমেন্ট</label>
 <select id="payments"><option value="12" selected>12 পেমেন্ট</option><option value="14">14 পেমেন্ট (pagas extraordinarias)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>প্রতি পেমেন্টে নিট বেতন</div>
 <div class="big" id="total">€0</div>
@@ -235,7 +236,7 @@ function calc(){
   var temp = document.getElementById("contract").value==="temp";
   var pays = parseInt(document.getElementById("payments").value)||12;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার ফলাফল দেখতে অনুগ্রহ করে শূন্যের বেশি পরিমাণ লিখুন।";m.style.display="block";} return; }
   var r = spainNet({gross:gross, temporary:temp});
   document.getElementById("rGross").textContent = fmt(gross);
   document.getElementById("rSS").textContent = fmt(r.ss);
@@ -247,7 +248,7 @@ function calc(){
   document.getElementById("rNote").textContent = gross>61214.40 ?
     "আপনার বেতন সামাজিক-নিরাপত্তা সীমার উপরে, তাই অবদান শুধুমাত্র প্রথম €61,214.40-এ ধার্য হয়। আঞ্চলিক IRPF স্কেল কর অঙ্ক সরাতে পারে — নিচের আঞ্চলিক সতর্কতা দেখুন।" :
     "মানক IRPF স্কেলে হিসাব করা। আপনার স্বায়ত্তশাসিত সম্প্রদায়ের নিজের স্কেল কর অঙ্ক উপরে বা নিচে সরাতে পারে — নিচের আঞ্চলিক সতর্কতা দেখুন।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","contract","payments"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

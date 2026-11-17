@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">UAE</label>
 <input type="number" id="gross" min="0" step="any" value="240000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">কোনো বছরেই ফেডারেল বা আমিরাত পর্যায়ে চাকরির বেতনের উপর ব্যক্তিগত আয়কর নেই। 9% কর্পোরেট কর (AED 375,000-এর বেশি মুনাফার উপর) ব্যক্তিগত চাকরির আয়ের ক্ষেত্রে প্রযোজ্য নয়। সূত্র: https://blog.wego.com/countries-with-no-income-tax/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>প্রতি মাসে নিট বেতন</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার ফলাফল দেখতে অনুগ্রহ করে শূন্যের বেশি পরিমাণ লিখুন।";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " প্রতি মাসে";
   document.getElementById("rNote").textContent = "কোনো বছরে ফেডারেল বা আমিরাত স্তরে কর্মসংস্থান বেতনে কোনো ব্যক্তিগত আয়কর নেই। 9% কর্পোরেট কর (AED 375,000-এর উপরে লাভ) ব্যক্তিগত কর্মসংস্থান আয়ে প্রযোজ্য নয়। উৎস: https://blog.wego.com/countries-with-no-income-tax/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

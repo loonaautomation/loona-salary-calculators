@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">আপনার নিয়োগকর্তা কি একজন ডাচ মজুরি-কর উইথহোল্ডিং এজেন্ট (একজন ডাচ নিয়োগকর্তা বা ডাচ বেতন-তালিকা)?</label>
 <select id="empl"><option value="yes" selected>হ্যাঁ</option><option value="no">না</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার যোগ্যতা যাচাই করতে অনুগ্রহ করে আপনার মোট বেতন লিখুন।";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ অব্যাহতিপ্রাপ্ত (গবেষক)" :
     r.salaryStatus==="full" ? "✓ পাস — পূর্ণ 30% সম্ভব" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "আপনার বেতন নিয়ম অতিক্রম করে কিন্তু পূর্ণ 30% করত না, তাই ভাতা প্রায় সীমাবদ্ধ " + fmt(r.allowance) + " — করযোগ্য অবশিষ্ট €-এর ঠিক উপরে বসে" + r.norm.toLocaleString("en-US") + " নিয়ম। " + note;
   if(!r.overall) note = "উপরে ব্যর্থ পরীক্ষা যাচাই করুন — প্রতিটি একটি কঠিন শর্ত। বেতনের অঙ্ক 2026 নিয়ম ব্যবহার করে; আপনার শুরু 2027-এ হলে, উচ্চতর নিয়ম প্রযোজ্য হবে।";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

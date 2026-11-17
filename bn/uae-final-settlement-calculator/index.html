@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="leave">অব্যবহৃত বার্ষিক-ছুটির দিন</label><input type="number" id="leave" min="0" step="any" value="10" inputmode="decimal"></div>
 <div><label for="notice">আপনার পাওনা নোটিশ দিন (নোটিশ পরিবেশিত হলে 0)</label><input type="number" id="notice" min="0" step="any" value="30" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>মোট চূড়ান্ত নিষ্পত্তি</div>
 <div class="big" id="total">AED 0</div>
@@ -223,9 +224,9 @@ function calc(){
   var notice = parseFloat(document.getElementById("notice").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার মৌলিক বেতন (বা মোট মজুরি) ও দুটি তারিখই লিখুন — শেষ তারিখ অবশ্যই শুরুর তারিখের পরে হতে হবে।";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="শেষ তারিখ অবশ্যই শুরুর তারিখের পরে হতে হবে — অনুগ্রহ করে আপনার তারিখগুলো যাচাই করুন।";m.style.display="block";} return; }
   var years = days/365.25;
   var r = uaeFinalSettlement({basic:basic, totalWage:wage, years:years, leaveDays:leave, noticeDays:notice});
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -238,7 +239,7 @@ function calc(){
   var note = "আপনার নিয়োগকর্তাকে আপনার চুক্তি শেষ হওয়ার 14 দিনের মধ্যে সব চাকরি-সমাপ্তির অধিকার দিতে হবে (ধারা 53)।";
   if(years < 1) note = "1 বছরের কম সেবা: কোনো গ্র্যাচুইটি প্রদেয় নয়, কিন্তু ইতিমধ্যে অর্জিত ছুটির জন্য অব্যবহৃত-ছুটির বেতন এখনো পাওনা হতে পারে — আপনার চুক্তি যাচাই করুন।";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","leave","notice","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

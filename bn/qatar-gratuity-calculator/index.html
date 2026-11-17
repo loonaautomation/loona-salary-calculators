@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="days">প্রতি সেবার বছরের জন্য মজুরির দিন (21 = আইনি ন্যূনতম; আপনার চুক্তির হার বেশি হলে তা ব্যবহার করুন)</label>
 <input type="number" id="days" min="0" step="any" value="21" inputmode="decimal">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>মোট প্রদেয় গ্র্যাচুইটি</div>
 <div class="big" id="total">QAR 0</div>
@@ -214,9 +215,9 @@ function calc(){
   var dpy = parseFloat(document.getElementById("days").value)||21;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার মৌলিক বেতন ও দুটি তারিখই লিখুন — শেষ তারিখ অবশ্যই শুরুর তারিখের পরে হতে হবে।";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="শেষ তারিখ অবশ্যই শুরুর তারিখের পরে হতে হবে — অনুগ্রহ করে আপনার তারিখগুলো যাচাই করুন।";m.style.display="block";} return; }
   var years = days/365.25;
   var r = qatarGratuity(basic, years, dpy);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -229,7 +230,7 @@ function calc(){
     "1 বছরের কম সেবা: ধারা 54-এর অধীনে কোনো গ্র্যাচুইটি প্রদেয় নয়।" :
     (dpy>21 ? "আপনার চুক্তি হারে হিসাব করা " + dpy + " দিন প্রতি বছরে, যা 21-দিন আইনি ন্যূনতমের উপরে।" :
     "21-দিন আইনি ন্যূনতমে হিসাব করা। আপনার চুক্তি বছরে আরও দিন প্রতিশ্রুতি দিলে, উপরে সেই হার লিখুন।");
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","days","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

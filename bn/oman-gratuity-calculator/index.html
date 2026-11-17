@@ -126,6 +126,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">যোগদানের তারিখ</label><input type="date" id="start" value="2020-01-01"></div>
 <div><label for="end">শেষ কর্মদিবস</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>মোট প্রদেয় গ্র্যাচুইটি</div>
 <div class="big" id="total">OMR 0</div>
@@ -217,9 +218,9 @@ function calc(){
   var basic = parseFloat(document.getElementById("basic").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="আপনার মৌলিক বেতন ও দুটি তারিখই লিখুন — শেষ তারিখ অবশ্যই শুরুর তারিখের পরে হতে হবে।";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="শেষ তারিখ অবশ্যই শুরুর তারিখের পরে হতে হবে — অনুগ্রহ করে আপনার তারিখগুলো যাচাই করুন।";m.style.display="block";} return; }
   var totalYears = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var yearsBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -236,7 +237,7 @@ function calc(){
   document.getElementById("rNote").textContent = yearsBefore>0 ?
     "আপনার সেবা 1 আগস্ট 2023 আইন পরিবর্তন জুড়ে বিস্তৃত, তাই উভয় আইন তাদের নিজের কালে প্রযোজ্য, প্রতিটি আপনার শেষ মৌলিক মজুরিতে।" :
     "আপনার সব সেবা 2023 আইনের অধীনে পড়ে: বছরে এক মাস মৌলিক মজুরি, প্রথম বছর থেকে।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
