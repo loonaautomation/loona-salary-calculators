@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">पाकिस्तान</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">केवल वेतनभोगी व्यक्ति। 2024 (TY2024): केवल पहले दो बैंड (PKR 600,000 तक 0%, PKR 1,200,000 तक 2.5%) खोज परिणामों में पुष्टि हुए — शेष Finance Act 2023 के अनुसार है और UNVERIFIED चिह्नित; प्रकाशन से पहले FBR दोबारा जाँचें। 2025 (TY2025, Finance Act 2024) और 2026 (TY2026, Finance Act 2025) पूरी तरह पुष्टि। ध्यान दें यहाँ 2026 आँकड़े TY2026 (जुलाई 2025-जून 2026) स्लैब हैं; नए Finance Act 2026 स्लैब (TY2027, जुलाई 2026-जून 2027: नए 5.6M/7M सीमाओं सहित 1%/11%/20%/25%/29%/32%/35%) अलग वर्ष हैं — मिलाएँ नहीं। स्रोत: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>शुद्ध वेतन प्रति माह</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="कृपया अपना परिणाम देखने के लिए शून्य से अधिक राशि दर्ज करें।";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " प्रति माह";
   document.getElementById("rNote").textContent = "केवल वेतनभोगी व्यक्ति। 2024 (TY2024): खोज परिणामों में केवल पहले दो बैंड (0% PKR 600,000 तक, 2.5% PKR 1,200,000 तक) की पुष्टि हुई \u2014 शेष Finance Act 2023 के अनुसार है और UNVERIFIED चिह्नित है; प्रकाशित करने से पहले FBR से दोबारा जाँचें। 2025 (TY2025, Finance Act 2024) और 2026 (TY2026, Finance Act 2025) पूरी तरह पुष्ट। ध्यान दें कि यहाँ के 2026 आँकड़े TY2026 (Jul 2025-Jun 2026) स्लैब हैं; नए Finance Act 2026 स्लैब (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35%, नई 5.6M/7M सीमाओं के साथ) एक अलग वर्ष हैं \u2014 मिलाएँ नहीं। स्रोत: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

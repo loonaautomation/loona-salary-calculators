@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">शामिल होने की तारीख़</label><input type="date" id="start" value="2019-01-01"></div>
 <div><label for="end">अंतिम कार्य दिवस</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>देश अनुसार सेवा-समाप्ति राशि (वही इनपुट)</div>
 <table>
@@ -253,9 +254,9 @@ function calc(){
   var reason = document.getElementById("reason").value;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="अपना मूल वेतन (या कुल मज़दूरी) और दोनों तिथियाँ दर्ज करें — समाप्ति तिथि प्रारंभ तिथि के बाद होनी चाहिए।";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="समाप्ति तिथि प्रारंभ तिथि के बाद होनी चाहिए — कृपया अपनी तिथियाँ जाँचें।";m.style.display="block";} return; }
   var years = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var omanBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -270,7 +271,7 @@ function calc(){
   var vals = [["UAE",r.uae],["सऊदी अरब",r.saudi],["कतर",r.qatar],["कुवैत",r.kuwait],["ओमान",r.oman],["बहरीन",r.bahrain]];
   vals.sort(function(a,b){return b[1]-a[1];});
   document.getElementById("rNote").textContent = "इन आँकड़ों पर सबसे उदार सूत्र है " + vals[0][0] + " (" + fmt(vals[0][1]) + ") और सबसे कम है " + vals[5][0] + " (" + fmt(vals[5][1]) + ") — प्रत्येक देश की अपनी मुद्रा इकाइयों में, के लिए " + years.toFixed(2) + " वर्ष की सेवा। Qatar अपने 21-दिन के कानूनी न्यूनतम पर दिखाया गया है; बेहतर अनुबंध दर इसे बढ़ाती है।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","social","reason","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

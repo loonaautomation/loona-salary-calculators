@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <option value="ty26">कर वर्ष 2025-26 (Finance Act 2025)</option>
 </select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>प्रति माह काटा गया कर</div>
 <div class="big" id="rTaxM">Rs 0</div>
@@ -247,7 +248,7 @@ function calc(){
   var monthly = parseFloat(document.getElementById("monthly").value)||0;
   var year = document.getElementById("tyear").value;
   var box = document.getElementById("result");
-  if(monthly<=0){ box.style.display="none"; return; }
+  if(monthly<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="कृपया अपने कर की गणना के लिए अपना मासिक वेतन दर्ज करें।";m.style.display="block";} return; }
   var annual = monthly*12;
   var r = pkSalaryTax(annual, year);
   document.getElementById("rAnnual").textContent = fmt(annual);
@@ -263,7 +264,7 @@ function calc(){
     ? "कर वर्ष 2026-27: वेतनभोगी व्यक्तियों पर किसी भी आय पर कोई अधिभार लागू नहीं होता।"
     : (annual>10000000 ? "कर वर्ष 2025-26: 9% section 4AB अधिभार लागू होता है क्योंकि आय Rs 10 million से अधिक है।" : "कर वर्ष 2025-26: 9% अधिभार केवल Rs 10 million से ऊपर की करयोग्य आय पर लागू होगा।");
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["monthly","tyear"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

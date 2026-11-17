@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">कर स्थिति</label>
 <select id="filer"><option value="filer" selected>फ़ाइलर (सक्रिय करदाता सूची पर)</option><option value="nonfiler">गैर-फ़ाइलर (दसवीं अनुसूची दरें)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>वर्ष के लिए धारा 154A अंतिम कर</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="कृपया अपने कर की गणना के लिए अपनी आय दर्ज करें।";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% सकल प्रेषणों का";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "आपकी रिटर्न दाखिल होने पर Section 154A कर अंतिम है। अपना PSEB पंजीकरण सक्रिय रखें और व्यवस्था में बने रहने के लिए प्राप्तियाँ बैंकिंग चैनलों से भेजें।" :
     "दिखाई गई गैर-फ़ाइलर दर व्यवसायी-लागू Tenth Schedule दोहरीकरण है — फ़ाइलर बनना इसे आधा कर देता है और आपके अन्य बैंकिंग लेनदेनों पर ऊँची रोक भी हटाता है।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -79,6 +79,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <input type="number" id="gross" min="0" step="any" value="42000" inputmode="decimal">
 <div><label for="worker">स्थिति (statut)</label>
 <select id="worker"><option value="noncadre" selected>गैर-काडर — शुल्क ≈ 23% (अनुमान)</option><option value="cadre">Cadre — शुल्क ≈ 25% (अनुमान)</option></select></div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>अनुमानित शुद्ध प्रति माह (आयकर से पहले)</div>
 <div class="big" id="total">—</div>
@@ -164,7 +165,7 @@ function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="कृपया अपना परिणाम देखने के लिए शून्य से अधिक राशि दर्ज करें।";m.style.display="block";} return; }
   var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
   var r = netCalc(gross, opt);
   document.getElementById("rGross").textContent = fmt(gross);
@@ -175,7 +176,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " प्रति माह";
   document.getElementById("rNote").textContent = "अनुमान: लगभग शुल्क " + (opt === "cadre" ? "25%" : "23%") + " सकल का। आयकर (PAS) आपकी व्यक्तिगत दर पर रोका जाता है और शामिल नहीं है — नीचे के नोट देखें।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

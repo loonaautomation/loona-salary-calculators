@@ -132,6 +132,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="leave">अप्रयुक्त वार्षिक-छुट्टी दिन</label><input type="number" id="leave" min="0" step="any" value="10" inputmode="decimal"></div>
 <div><label for="notice">आपको देय नोटिस दिन (0 यदि नोटिस दिया गया था)</label><input type="number" id="notice" min="0" step="any" value="30" inputmode="decimal"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>कुल अंतिम निपटान</div>
 <div class="big" id="total">AED 0</div>
@@ -223,9 +224,9 @@ function calc(){
   var notice = parseFloat(document.getElementById("notice").value)||0;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="अपना मूल वेतन (या कुल मज़दूरी) और दोनों तिथियाँ दर्ज करें — समाप्ति तिथि प्रारंभ तिथि के बाद होनी चाहिए।";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="समाप्ति तिथि प्रारंभ तिथि के बाद होनी चाहिए — कृपया अपनी तिथियाँ जाँचें।";m.style.display="block";} return; }
   var years = days/365.25;
   var r = uaeFinalSettlement({basic:basic, totalWage:wage, years:years, leaveDays:leave, noticeDays:notice});
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -238,7 +239,7 @@ function calc(){
   var note = "आपके नियोक्ता को आपके अनुबंध की समाप्ति के 14 दिनों के भीतर सभी सेवा-समाप्ति अधिकार देने चाहिए (Article 53)।";
   if(years < 1) note = "1 वर्ष से कम सेवा: कोई ग्रेच्युटी देय नहीं है, लेकिन पहले से अर्जित छुट्टी का न-लिया-गया छुट्टी वेतन फिर भी देय हो सकता है — अपना अनुबंध जाँचें।";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","leave","notice","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

@@ -142,6 +142,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="basis">निसाब मानक</label>
 <select id="basis"><option value="silver" selected>चांदी निसाब — 52.5 तोला (मिश्रित संपत्ति के लिए सामान्य)</option><option value="gold">सोना निसाब — 7.5 तोला</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>आपकी देय ज़कात</div>
 <div class="big" id="total">0</div>
@@ -242,7 +243,7 @@ function calc(){
     receivables:num("recv"), debts:num("debts"),
     goldRate:num("goldRate"), silverRate:num("silverRate"),
     basis:document.getElementById("basis").value});
-  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; return; }
+  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="कृपया अपनी ज़कात की गणना के लिए अपनी संपत्तियाँ, या सोने या चाँदी की दर दर्ज करें।";m.style.display="block";} return; }
   document.getElementById("rGold").textContent = fmt(r.goldValue);
   document.getElementById("rSilver").textContent = fmt(r.silverValue);
   document.getElementById("rAssets").textContent = fmt(r.assets);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.nisabMet ?
     "आपकी शुद्ध ज़कात-योग्य संपत्ति निसाब पर या उससे ऊपर है, इसलिए 2.5% ज़कात देय है (जब उस पर चंद्र वर्ष — hawl — बीत जाए)।" :
     "आपकी शुद्ध ज़कात-योग्य संपत्ति निसाब से नीचे है, इसलिए इन आँकड़ों पर कोई ज़कात देय नहीं है। यदि आपकी संपत्ति निसाब पार करके एक चंद्र वर्ष वहाँ रहे, तो ज़कात देय हो जाती है।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["goldRate","silverRate","goldG","karat","silverG","cash","stock","recv","debts","basis"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

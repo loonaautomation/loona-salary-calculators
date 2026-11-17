@@ -81,6 +81,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="mode">गणना</label><select id="mode"><option value="add" selected>VAT जोड़ें (शुद्ध → सकल)</option><option value="remove">VAT हटाएँ (सकल → शुद्ध)</option></select></div>
 <div><label for="rate">VAT दर</label><select id="rate"><option value="21" selected>21% — मानक दर</option><option value="9">9% — घटी हुई दर</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>सकल राशि (VAT सहित)</div>
 <div class="big" id="rGross">—</div>
@@ -163,14 +164,14 @@ function calc(){
   var mode = document.getElementById("mode").value;
   var rate = parseFloat(document.getElementById("rate").value);
   var box = document.getElementById("result");
-  if(!(amount >= 0) || isNaN(amount)){ box.style.display = "none"; return; }
+  if(!(amount >= 0) || isNaN(amount)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="कृपया कर की गणना के लिए मान्य राशि (0 या अधिक) दर्ज करें।";m.style.display="block";} return; }
   var r = vatCalc(amount, rate, mode);
   document.getElementById("rNet").textContent = fmt(r.net);
   document.getElementById("rVat").textContent = fmt(r.vat);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rRate").textContent = rate + "%";
   document.getElementById("rNote").textContent = mode === "add" ? "VAT जोड़ें मोड: आपकी राशि को शुद्ध (VAT-रहित) मूल्य माना गया।" : "VAT हटाएँ मोड: आपकी राशि को सकल (VAT-समावेशी) मूल्य माना गया।";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 function fillExamples(){
   var a = vatCalc(100, STD_RATE, "add");
