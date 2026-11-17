@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="start">Data dołączenia</label><input type="date" id="start" value="2019-01-01"></div>
 <div><label for="end">Ostatni dzień pracy</label><input type="date" id="end" value="2026-01-01"></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Kwota z tytułu zakończenia pracy według kraju (te same dane wejściowe)</div>
 <table>
@@ -253,9 +254,9 @@ function calc(){
   var reason = document.getElementById("reason").value;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; return; }
+  if(!s || !e || (basic<=0 && wage<=0)){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Wprowadź wynagrodzenie podstawowe (lub łączne wynagrodzenie) i obie daty — data zakończenia musi przypadać po dacie rozpoczęcia.";m.style.display="block";} return; }
   var start = new Date(s), end = new Date(e), split = new Date("2023-08-01");
-  if(end < start){ box.style.display="none"; return; }
+  if(end < start){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Data zakończenia musi przypadać po dacie rozpoczęcia — sprawdź daty.";m.style.display="block";} return; }
   var years = (end-start)/86400000/365.25;
   var beforeEnd = end < split ? end : split;
   var omanBefore = start < split ? Math.max(0,(beforeEnd-start)/86400000/365.25) : 0;
@@ -270,7 +271,7 @@ function calc(){
   var vals = [["UAE",r.uae],["Arabia Saudyjska",r.saudi],["Katar",r.qatar],["Kuwejt",r.kuwait],["Oman",r.oman],["Bahrajn",r.bahrain]];
   vals.sort(function(a,b){return b[1]-a[1];});
   document.getElementById("rNote").textContent = "Przy tych kwotach najhojniejszym wzorem jest " + vals[0][0] + " (" + fmt(vals[0][1]) + ") a najmniej jest " + vals[5][0] + " (" + fmt(vals[5][1]) + ") — w jednostkach waluty własnej każdego kraju, dla " + years.toFixed(2) + " lat stażu. Katar jest pokazany przy jego ustawowej podłodze 21 dni; lepsza stawka umowna ją podnosi.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","wage","social","reason","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

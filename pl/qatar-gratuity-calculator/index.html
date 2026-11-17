@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="days">Dni wynagrodzenia za każdy rok pracy (21 = minimum prawne; użyj stawki swojej umowy, jeśli jest wyższa)</label>
 <input type="number" id="days" min="0" step="any" value="21" inputmode="decimal">
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Łączna należna odprawa</div>
 <div class="big" id="total">QAR 0</div>
@@ -214,9 +215,9 @@ function calc(){
   var dpy = parseFloat(document.getElementById("days").value)||21;
   var s = document.getElementById("start").value, e = document.getElementById("end").value;
   var box = document.getElementById("result");
-  if(!s || !e || basic<=0){ box.style.display="none"; return; }
+  if(!s || !e || basic<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Wprowadź wynagrodzenie podstawowe i obie daty — data zakończenia musi przypadać po dacie rozpoczęcia.";m.style.display="block";} return; }
   var days = (new Date(e) - new Date(s)) / 86400000;
-  if(days < 0){ box.style.display="none"; return; }
+  if(days < 0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Data zakończenia musi przypadać po dacie rozpoczęcia — sprawdź daty.";m.style.display="block";} return; }
   var years = days/365.25;
   var r = qatarGratuity(basic, years, dpy);
   var yy = Math.floor(years), mm = Math.round((years-yy)*12);
@@ -229,7 +230,7 @@ function calc(){
     "Poniżej 1 roku stażu: żadna odprawa nie przysługuje na podstawie Artykułu 54." :
     (dpy>21 ? "Obliczone przy Twojej stawce umownej " + dpy + " dni w roku, co jest powyżej ustawowego minimum 21 dni." :
     "Obliczone przy ustawowym minimum 21 dni. Jeśli Twoja umowa obiecuje więcej dni rocznie, wpisz tę stawkę powyżej.");
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["basic","days","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

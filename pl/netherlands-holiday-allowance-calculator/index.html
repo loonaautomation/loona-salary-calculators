@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="ruling">ulga 30%?</label>
 <select id="ruling"><option value="0" selected>Brak ulgi</option><option value="30">Tak — ulga 30% ma zastosowanie</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Dodatek urlopowy netto (po podatku)</div>
 <div class="big" id="total">€0</div>
@@ -264,7 +265,7 @@ function calc(){
   var incl = document.getElementById("hol").value==="yes";
   var ruling = parseFloat(document.getElementById("ruling").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Wprowadź kwotę większą niż zero, aby zobaczyć wynik.";m.style.display="block";} return; }
   var r = nlHoliday({gross:gross, includesHoliday:incl, rulingPct:ruling});
   document.getElementById("rHol").textContent = fmt(r.holiday);
   document.getElementById("rTax").textContent = fmt(r.taxOnHoliday);
@@ -272,7 +273,7 @@ function calc(){
   document.getElementById("rGross").textContent = fmt(r.totalGross);
   document.getElementById("total").textContent = fmt(r.netHoliday);
   document.getElementById("rNote").textContent = "Stawka podatku od dodatku jest wyższa niż Twoja średnia stawka, ponieważ cała kwota jest opodatkowana według Twojej najwyższej stawki i wycofuje Twoje kredyty podatkowe. Każde nadmierne potrącenie jest rozliczane w Twojej rocznej deklaracji podatkowej.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","ruling"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
