@@ -154,6 +154,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="zusatz">Helseforsikrers tilleggspremie % (2026 gjennomsnitt 2.9)</label><input type="number" id="zusatz" min="0" max="10" step="any" value="2.9" inputmode="decimal"></div>
 </div>
 <label class="ck"><input type="checkbox" id="childless"> Jeg er barnløs og 23 år eller eldre (pleieforsikring +0.6 %)</label>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Nettolønn per måned</div>
 <div class="big" id="rNetM">€0</div>
@@ -286,7 +287,7 @@ function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Skriv inn et beløp som er større enn null for å se resultatet ditt.";m.style.display="block";} return; }
   var r = deNet({gross:gross,
     tclass:parseInt(document.getElementById("tclass").value,10),
     church:parseFloat(document.getElementById("church").value)||0,
@@ -307,7 +308,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.soli>0
     ? "Inntektsskatten din passerer terskelen for solidaritetstillegg, så soli gjelder (faset inn gjennom dempingssonen). Tall er årlige; månedlige lønnsslipper deler dem på 12."
     : "Ingen solidaritetstillegg ved denne inntekten — de fleste ansatte betaler ingen. Tall er årlige; månedlige lønnsslipper deler dem på 12.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","tclass","church","children","zusatz","childless"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
