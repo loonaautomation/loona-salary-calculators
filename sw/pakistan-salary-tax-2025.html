@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Watu wenye mshahara pekee. 2024 (TY2024): ngazi mbili za kwanza pekee (0% hadi PKR 600,000, 2.5% hadi PKR 1,200,000) ndizo zilithibitishwa katika matokeo ya utafutaji — iliyobaki ni kwa Finance Act 2023 na imewekwa alama HAIJATHIBITISHWA; angalia FBR tena kabla ya kuchapisha. 2025 (TY2025, Finance Act 2024) na 2026 (TY2026, Finance Act 2025) zimethibitishwa kikamilifu. Kumbuka takwimu za 2026 hapa ni slabs za TY2026 (Jul 2025-Jun 2026); slabs mpya za Finance Act 2026 (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% na vizingiti vipya vya 5.6M/7M) ni mwaka tofauti — usichanganye. Vyanzo: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Mshahara halisi kwa mwezi</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Tafadhali ingiza kiasi kikubwa kuliko sifuri ili kuona matokeo yako.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " kwa mwezi";
   document.getElementById("rNote").textContent = "Watu binafsi wenye mishahara pekee. 2024 (TY2024): ni mikanda miwili ya kwanza tu (0% hadi PKR 600,000, 2.5% hadi PKR 1,200,000) iliyothibitishwa katika matokeo ya utafutaji — iliyobaki ni kwa mujibu wa Sheria ya Fedha 2023 na imewekwa alama HAIJATHIBITISHWA; kagua tena FBR kabla ya kuchapisha. 2025 (TY2025, Sheria ya Fedha 2024) na 2026 (TY2026, Sheria ya Fedha 2025) zimethibitishwa kikamilifu. Kumbuka takwimu za 2026 hapa ni slab za TY2026 (Jul 2025-Jun 2026); slab mpya za Sheria ya Fedha 2026 (TY2027, Jul 2026-Jun 2027: 1%/11%/20%/25%/29%/32%/35% zenye vizingiti vipya vya 5.6M/7M) ni za mwaka tofauti — usizichanganye. Vyanzo: https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

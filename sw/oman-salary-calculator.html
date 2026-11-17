@@ -79,6 +79,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <input type="number" id="gross" min="0" step="any" value="18000" inputmode="decimal">
 <div><label for="worker">Aina ya mwajiriwa</label>
 <select id="worker"><option value="expat" selected>Mfanyakazi mhamiaji — hakuna makato</option><option value="citizen">Raia wa Oman — Mfuko wa Ulinzi wa Jamii 7.5%</option></select></div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Mshahara halisi kwa mwezi</div>
 <div class="big" id="total">—</div>
@@ -163,7 +164,7 @@ function fmt(n){return "OMR " + n.toLocaleString("en-US",{minimumFractionDigits:
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Tafadhali ingiza kiasi kikubwa kuliko sifuri ili kuona matokeo yako.";m.style.display="block";} return; }
   var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
   var r = netCalc(gross, opt);
   document.getElementById("rGross").textContent = fmt(gross);
@@ -174,7 +175,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " kwa mwezi";
   document.getElementById("rNote").textContent = opt === "citizen" ? "Raia wa Oman: mchango wa Mfuko wa Ulinzi wa Jamii wa 7.5% huondolewa; kodi ya mapato ni sifuri nchini Oman mwaka 2026." : "Mfanyakazi mgeni: hakuna kodi ya mapato na hakuna mchango wa jamii wa mfanyakazi unaotumika nchini Oman — malipo halisi ni sawa na malipo ghafi." ;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
