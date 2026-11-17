@@ -136,6 +136,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </select></div>
 </div>
 <label class="ck"><input type="checkbox" id="master"> Мне меньше 30 лет и у меня есть соответствующая степень магистра (более низкая норма зарплаты)</label>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Чистая зарплата в месяц</div>
 <div class="big" id="rNetM">€0</div>
@@ -272,7 +273,7 @@ function fmt(n){return "€" + n.toLocaleString("en-US",{minimumFractionDigits:2
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Введите сумму больше нуля, чтобы увидеть результат.";m.style.display="block";} return; }
   var rv = document.getElementById("ruling").value;
   var pct = rv==="2026"||rv==="pre2024" ? 30 : (rv==="2027" ? 27 : 0);
   var r = nlNet({gross:gross, includesHoliday:document.getElementById("inclHol").checked,
@@ -293,7 +294,7 @@ function calc(){
   if(r.normLimited) note = "Применена норма зарплаты: необлагаемая льгота была уменьшена, чтобы ваша облагаемая зарплата оставалась на норме 2026 года. " + note;
   if(r.normFailed) note = "Ваша зарплата не проходит норму зарплаты 2026 года после пенсии, поэтому правило не даёт выгоды в этой оценке. " + note;
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","inclHol","pension","ruling","master"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

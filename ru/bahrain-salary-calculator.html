@@ -79,6 +79,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <input type="number" id="gross" min="0" step="any" value="18000" inputmode="decimal">
 <div><label for="worker">Тип работника</label>
 <select id="worker"><option value="expat" selected>Работник-экспатриант — SIO 1% (безработица)</option><option value="citizen">Гражданин Бахрейна — SIO 8%</option></select></div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Чистая зарплата в месяц</div>
 <div class="big" id="total">—</div>
@@ -163,7 +164,7 @@ function fmt(n){return "BHD " + n.toLocaleString("en-US",{minimumFractionDigits:
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Введите сумму больше нуля, чтобы увидеть результат.";m.style.display="block";} return; }
   var opt = document.getElementById("worker") ? document.getElementById("worker").value : "";
   var r = netCalc(gross, opt);
   document.getElementById("rGross").textContent = fmt(gross);
@@ -174,7 +175,7 @@ function calc(){
   document.getElementById("rMonth").textContent = fmt(r.monthly);
   document.getElementById("total").textContent = fmt(r.monthly) + " в месяц";
   document.getElementById("rNote").textContent = opt === "citizen" ? "Гражданин Бахрейна: вычет взноса работника SIO 8%; подоходный налог в Бахрейне равен нулю." : "Работник-экспатриант: вычитается только взнос по безработице SIO 1%; подоходный налог в Бахрейне равен нулю." ;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","worker"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();
