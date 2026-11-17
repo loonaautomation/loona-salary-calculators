@@ -236,7 +236,7 @@ function saudiGOSI(o){
 function fmt(n){return "SAR " + n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
 var PENSION = {"saudi-old":0.09, "saudi-2025":0.095, "saudi-2026":0.10, "saudi-2027":0.105, "saudi-2028":0.11};
 function calc(){
-  var basic = parseFloat(document.getElementById("основна").value)||0;
+  var basic = parseFloat(document.getElementById("basic").value)||0;
   var housing = parseFloat(document.getElementById("housing").value)||0;
   var other = parseFloat(document.getElementById("other").value)||0;
   var nat = document.getElementById("nat").value;
@@ -256,7 +256,7 @@ function calc(){
     "Като несаудитски служител нямате никакво приспадане GOSI; клонът за професионални рискове от 2% се плаща само от работодателя ви.";
   var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
-["основна","housing","other","nat"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
+["basic","housing","other","nat"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
 </script>
 <script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Инсталирай приложението';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Инсталирайте това приложение: докоснете бутона Споделяне, после изберете „Добавяне към начален екран”.');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
