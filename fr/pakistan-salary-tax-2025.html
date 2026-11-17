@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Pakistan</label>
 <input type="number" id="gross" min="0" step="any" value="2400000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Salariés uniquement. 2024 (TY2024) : seules les deux premières tranches (0% jusqu’à PKR 600,000, 2.5% jusqu’à PKR 1,200,000) ont été confirmées dans les résultats de recherche — le reste relève du Finance Act 2023 et est signalé comme NON VÉRIFIÉ ; à revérifier auprès du FBR avant publication. 2025 (TY2025, Finance Act 2024) et 2026 (TY2026, Finance Act 2025) entièrement confirmés. Notez que les chiffres de 2026 présentés ici correspondent aux tranches TY2026 (juil. 2025-juin 2026) ; les tranches plus récentes du Finance Act 2026 (TY2027, juil. 2026-juin 2027 : 1%/11%/20%/25%/29%/32%/35% avec de nouveaux seuils de 5.6M/7M) concernent une autre année — ne les mélangez pas. Sources : https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Salaire net par mois</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Veuillez saisir un montant supérieur à zéro pour voir votre résultat.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " par mois";
   document.getElementById("rNote").textContent = "Salariés uniquement. 2024 (TY2024) : seules les deux premières tranches (0% jusqu’à PKR 600,000, 2.5% jusqu’à PKR 1,200,000) ont été confirmées dans les résultats de recherche — le reste relève de la Finance Act 2023 et est signalé comme NON VÉRIFIÉ ; revérifiez auprès du FBR avant publication. 2025 (TY2025, Finance Act 2024) et 2026 (TY2026, Finance Act 2025) entièrement confirmés. Notez que les chiffres de 2026 présentés ici sont les tranches TY2026 (juil. 2025-juin 2026) ; les tranches plus récentes de la Finance Act 2026 (TY2027, juil. 2026-juin 2027 : 1%/11%/20%/25%/29%/32%/35% avec de nouveaux seuils de 5.6M/7M) relèvent d’une autre année — ne les mélangez pas. Sources : https://fairtaxint.com/pk/tools/salary-tax-calculator ; https://taxcalculation.pk/income-tax-slabs/";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

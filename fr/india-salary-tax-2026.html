@@ -78,6 +78,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <label for="gross">Inde</label>
 <input type="number" id="gross" min="0" step="any" value="1200000" inputmode="decimal">
 <p style="font-size:.85rem;color:var(--mut);margin-top:6px">Nouveau régime (par défaut), tous âges. Une taxe de 4% pour la santé et l’éducation s’applique en plus de l’impôt calculé — la page doit le préciser. Abattement u/s 87A : aucun impôt jusqu’à INR 7 lakh (2024), jusqu’à INR 12 lakh (2025, 2026). Déduction forfaitaire de INR 75,000 pour les salariés (2024-2026). Sources : https://tax2win.in/guide/income-tax-slabs ; https://www.hrcalcy.in/2025/01/income-tax-slab-fy-2024-25.html</p>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Salaire net par mois</div>
 <div class="big" id="total">—</div>
@@ -183,7 +184,7 @@ function fmt(n){return SYM + n.toLocaleString("en-US",{minimumFractionDigits:2,m
 function calc(){
   var gross = parseFloat(document.getElementById("gross").value)||0;
   var box = document.getElementById("result");
-  if(gross<=0){ box.style.display="none"; return; }
+  if(gross<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Veuillez saisir un montant supérieur à zéro pour voir votre résultat.";m.style.display="block";} return; }
   var r = netCalc(gross);
   document.getElementById("rGross").textContent = fmt(r.gross);
   document.getElementById("rTax").textContent = fmt(r.tax);
@@ -195,7 +196,7 @@ function calc(){
   document.getElementById("rWeek").textContent = fmt(r.weekly);
   document.getElementById("total").textContent = fmt(r.monthly) + " par mois";
   document.getElementById("rNote").textContent = "Nouveau régime (par défaut), tous âges. Une cess santé et éducation de 4% s’applique en plus de l’impôt calculé — la page doit l’indiquer. Abattement u/s 87A : aucun impôt jusqu’à INR 7 lakh (2024), jusqu’à INR 12 lakh (2025, 2026). Déduction standard INR 75,000 pour les salariés (2024-2026). Sources : https://tax2win.in/guide/income-tax-slabs ; https://www.hrcalcy.in/2025/01/income-tax-slab-fy-2024-25.html";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross"].forEach(function(id){var el=document.getElementById(id); if(el){el.addEventListener("input",calc); el.addEventListener("change",calc);}});
 calc();

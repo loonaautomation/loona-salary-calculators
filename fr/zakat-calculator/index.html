@@ -142,6 +142,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="basis">Référence du nisab</label>
 <select id="basis"><option value="silver" selected>Nisab de l’argent — 52.5 tola (habituel pour un patrimoine mixte)</option><option value="gold">Nisab de l’or — 7.5 tola</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Votre Zakat à payer</div>
 <div class="big" id="total">0</div>
@@ -242,7 +243,7 @@ function calc(){
     receivables:num("recv"), debts:num("debts"),
     goldRate:num("goldRate"), silverRate:num("silverRate"),
     basis:document.getElementById("basis").value});
-  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; return; }
+  if(r.assets<=0 && num("goldRate")<=0 && num("silverRate")<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Veuillez saisir vos biens, ou le cours de l’or ou de l’argent, pour calculer votre Zakat.";m.style.display="block";} return; }
   document.getElementById("rGold").textContent = fmt(r.goldValue);
   document.getElementById("rSilver").textContent = fmt(r.silverValue);
   document.getElementById("rAssets").textContent = fmt(r.assets);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = r.nisabMet ?
     "Votre patrimoine net soumis à la Zakat est égal ou supérieur au nisab, donc une Zakat de 2.5% est due (une fois que l’année lunaire — hawl — s’est écoulée sur ce patrimoine)." :
     "Votre patrimoine net soumis à la Zakat est inférieur au nisab, donc aucune Zakat n’est due sur ces chiffres. Si votre patrimoine dépasse le nisab et y reste pendant une année lunaire, la Zakat devient due.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["goldRate","silverRate","goldG","karat","silverG","cash","stock","recv","debts","basis"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

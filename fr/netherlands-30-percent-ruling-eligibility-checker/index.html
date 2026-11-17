@@ -139,6 +139,7 @@ footer a{color:var(--gold2);text-decoration:none}
 </div>
 <label for="empl">Votre employeur est-il un redevable néerlandais de la retenue sur les salaires (un employeur néerlandais ou une paie néerlandaise) ?</label>
 <select id="empl"><option value="yes" selected>Oui</option><option value="no">Non</option></select>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div class="big" id="total">—</div>
 <table>
@@ -250,7 +251,7 @@ function calc(){
   var recr = document.getElementById("recr").value==="yes";
   var empl = document.getElementById("empl").value==="yes";
   var box = document.getElementById("result");
-  if(grossIn<=0){ box.style.display="none"; return; }
+  if(grossIn<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Veuillez saisir votre salaire annuel brut pour vérifier votre éligibilité.";m.style.display="block";} return; }
   var r = nlEligibility({gross:gross, category:cat, distanceOk:dist, recruitedOk:recr, employerOk:empl});
   var salText = r.salaryStatus==="exempt" ? "✓ Exonéré (chercheur)" :
     r.salaryStatus==="full" ? "✓ Réussi — 30% complets possibles" :
@@ -267,7 +268,7 @@ function calc(){
   if(r.salaryStatus==="reduced") note = "Votre salaire dépasse la norme, mais les 30% complets ne le feraient pas, donc l’allocation est limitée à environ " + fmt(r.allowance) + " — le reste imposable se situe juste au-dessus de €" + r.norm.toLocaleString("en-US") + " norme. " + note;
   if(!r.overall) note = "Vérifiez le test en échec ci-dessus — chacun est une condition impérative. Les chiffres de salaire utilisent les normes de 2026 ; si votre début est en 2027, des normes plus élevées s’appliqueront.";
   document.getElementById("rNote").textContent = note;
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["gross","hol","cat","dist","recr","empl"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();

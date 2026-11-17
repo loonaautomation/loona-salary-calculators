@@ -128,6 +128,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div><label for="filer">Statut fiscal</label>
 <select id="filer"><option value="filer" selected>Déclarant (sur la Liste des contribuables actifs)</option><option value="nonfiler">Non-déclarant (taux du Tenth Schedule)</option></select></div>
 </div>
+<p id="calcMsg" role="alert" style="display:none;margin-top:18px;background:#fdf3e7;border:1px solid #e8cfa8;border-radius:10px;padding:14px 16px;color:#7a4b12;font-weight:600"></p>
 <div class="result" id="result">
 <div>Impôt final de la Section 154A pour l’année</div>
 <div class="big" id="total">Rs 0</div>
@@ -243,7 +244,7 @@ function calc(){
   var pseb = document.getElementById("pseb").value==="yes";
   var filer = document.getElementById("filer").value==="filer";
   var box = document.getElementById("result");
-  if(income<=0){ box.style.display="none"; return; }
+  if(income<=0){ box.style.display="none"; var m=document.getElementById("calcMsg"); if(m){m.textContent="Veuillez saisir votre revenu pour calculer votre taxe.";m.style.display="block";} return; }
   var r = pkFreelancer({income:income, pseb:pseb, filer:filer});
   document.getElementById("rRate").textContent = (r.rate*100).toFixed(2) + "% des transferts bruts";
   document.getElementById("r154").textContent = fmt(r.tax154a);
@@ -254,7 +255,7 @@ function calc(){
   document.getElementById("rNote").textContent = filer ?
     "L’impôt de la section 154A est définitif lorsque votre déclaration est déposée. Maintenez votre enregistrement PSEB actif et faites transiter les recettes par les circuits bancaires pour rester dans le régime." :
     "Le taux pour non-déclarant indiqué est le doublement appliqué par les praticiens selon le Tenth Schedule — devenir déclarant le divise par deux et supprime également les retenues plus élevées sur vos autres opérations bancaires.";
-  box.style.display = "block";
+  var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["income","pseb","filer"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
 calc();
