@@ -2,7 +2,7 @@
   "name": "Loona Spain VAT Calculator",
   "short_name": "Spain VAT Calculator",
   "description": "Free Spain VAT calculator: add or remove 21% VAT in seconds and reduced 10%/4%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-gb/vat-calculator-spain.html",
+  "id": "/en-gb/vat-calculator-spain.html",
   "start_url": "./vat-calculator-spain.html",
   "scope": "./vat-calculator-spain.html",
   "display": "standalone",

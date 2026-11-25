@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في إيطاليا — تقدير IRPEF وINPS ‏2026",
   "short_name": "حاسبة صافي الراتب في إيطاليا",
   "description": "قدّر راتبك الصافي في إيطاليا لعام 2026: مساهمات موظف INPS بنسبة 9.19% وIRPEF بشرائح 2026 (23% / 33% / 43%) مع ائتمان ضريبة العمل. تقدير موسوم. مجاني.",
-  "id": "/loona-salary-calculators/ar/italy-salary-calculator.html",
+  "id": "/ar/italy-salary-calculator.html",
   "start_url": "./italy-salary-calculator.html",
   "scope": "./italy-salary-calculator.html",
   "display": "standalone",

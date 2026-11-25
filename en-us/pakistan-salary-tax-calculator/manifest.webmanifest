@@ -2,7 +2,7 @@
   "name": "Loona Pakistan Salary Tax Calculator",
   "short_name": "Pakistan Salary Tax Calculator",
   "description": "Calculate salary income tax in Pakistan on the current Finance Act 2026 slabs for Tax Year 2026-27, with the 2025-26 table included. Monthly and annual tax.",
-  "id": "/loona-salary-calculators/en-us/pakistan-salary-tax-calculator/",
+  "id": "/en-us/pakistan-salary-tax-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

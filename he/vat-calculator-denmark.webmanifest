@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של דנמרק (שיעור 25%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של דנמרק (שיעור 25%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון VAT חינמי לדנמרק: הוסיפו או הסירו 25% VAT תוך שניות ללא שיעור מופחת, נוסחה מלאה ודוגמאות מחושבות ב-DKK. ללא הרשמה, פועל על המכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-denmark.html",
+  "id": "/he/vat-calculator-denmark.html",
   "start_url": "./vat-calculator-denmark.html",
   "scope": "./vat-calculator-denmark.html",
   "display": "standalone",

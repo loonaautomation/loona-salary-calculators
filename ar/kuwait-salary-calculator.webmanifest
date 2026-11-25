@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في الكويت — بدون ضريبة دخل 2026",
   "short_name": "حاسبة صافي الراتب في الكويت",
   "description": "احسب راتبك الصافي في الكويت: لا ضريبة دخل للموظفين. يدفع المواطنون الكويتيون ضمان PIFSS الاجتماعي (حصة موظف 10.5%)؛ يحتفظ المغتربون بـ100% من الإجمالي. مجاني.",
-  "id": "/loona-salary-calculators/ar/kuwait-salary-calculator.html",
+  "id": "/ar/kuwait-salary-calculator.html",
   "start_url": "./kuwait-salary-calculator.html",
   "scope": "./kuwait-salary-calculator.html",
   "display": "standalone",

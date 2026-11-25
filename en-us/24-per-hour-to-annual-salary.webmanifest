@@ -2,7 +2,7 @@
   "name": "Loona $24 an Hour Is How Much a Year?",
   "short_name": "$24 an Hour Is How Much a Year?",
   "description": "$24 an hour is $49,920.00 a year gross ($42,290.72 after federal tax, single filer, 2026). Monthly, weekly and take-home hourly pay — free calculator.",
-  "id": "/loona-salary-calculators/en-us/24-per-hour-to-annual-salary.html",
+  "id": "/en-us/24-per-hour-to-annual-salary.html",
   "start_url": "./24-per-hour-to-annual-salary.html",
   "scope": "./24-per-hour-to-annual-salary.html",
   "display": "standalone",

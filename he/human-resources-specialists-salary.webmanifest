@@ -2,7 +2,7 @@
   "name": "משכורת מומחי משאבי אנוש 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מומחי משאבי אנוש 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מומחי משאבי אנוש? שכר חציוני $75,940 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/human-resources-specialists-salary.html",
+  "id": "/he/human-resources-specialists-salary.html",
   "start_url": "./human-resources-specialists-salary.html",
   "scope": "./human-resources-specialists-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب ماريلاند 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب ماريلاند 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في ماريلاند في 2026؟ الضريبة الاتحادية + ضريبة دخل ماريلاند والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/maryland-paycheck-calculator.html",
+  "id": "/ar/maryland-paycheck-calculator.html",
   "start_url": "./maryland-paycheck-calculator.html",
   "scope": "./maryland-paycheck-calculator.html",
   "display": "standalone",

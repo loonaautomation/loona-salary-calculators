@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب أركنساس 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب أركنساس 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في أركنساس في 2026؟ الضريبة الاتحادية + ضريبة دخل أركنساس والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/arkansas-paycheck-calculator.html",
+  "id": "/ar/arkansas-paycheck-calculator.html",
   "start_url": "./arkansas-paycheck-calculator.html",
   "scope": "./arkansas-paycheck-calculator.html",
   "display": "standalone",

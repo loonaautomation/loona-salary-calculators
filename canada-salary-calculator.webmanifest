@@ -2,7 +2,7 @@
   "name": "Loona Canada Net Salary Calculator",
   "short_name": "Canada Net Salary Calculator",
   "description": "Calculate your 2026 take-home pay in Canada: federal tax, Ontario provincial tax with surtax and health premium, CPP (including CPP2) and EI. Free, Ontario model stated openly.",
-  "id": "/loona-salary-calculators/canada-salary-calculator.html",
+  "id": "/canada-salary-calculator.html",
   "start_url": "./canada-salary-calculator.html",
   "scope": "./canada-salary-calculator.html",
   "display": "standalone",

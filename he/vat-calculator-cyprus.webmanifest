@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של קפריסין (שיעור 19%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של קפריסין (שיעור 19%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של קפריסין: הוסיפו או הסירו 19% מע\"מ בתוך שניות ומופחת 9%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-cyprus.html",
+  "id": "/he/vat-calculator-cyprus.html",
   "start_url": "./vat-calculator-cyprus.html",
   "scope": "./vat-calculator-cyprus.html",
   "display": "standalone",

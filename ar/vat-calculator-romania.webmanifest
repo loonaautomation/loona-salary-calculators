@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في رومانيا (معدل 21%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في رومانيا (معدل 21%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية في رومانيا: أضف أو أزل ضريبة قيمة مضافة 21% في ثوانٍ والمخفّضة 11%، الصيغة الكاملة وأمثلة محسوبة بـ RON. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-romania.html",
+  "id": "/ar/vat-calculator-romania.html",
   "start_url": "./vat-calculator-romania.html",
   "scope": "./vat-calculator-romania.html",
   "display": "standalone",

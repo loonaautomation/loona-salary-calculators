@@ -2,7 +2,7 @@
   "name": "משכורת מנהלי מסדי נתונים 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מנהלי מסדי נתונים 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מנהלי מסדי נתונים? שכר חציוני $104,620 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/database-administrators-salary.html",
+  "id": "/he/database-administrators-salary.html",
   "start_url": "./database-administrators-salary.html",
   "scope": "./database-administrators-salary.html",
   "display": "standalone",

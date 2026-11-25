@@ -2,7 +2,7 @@
   "name": "Loona Medical Assistants Salary 2026",
   "short_name": "Medical Assistants Salary 2026",
   "description": "How much does a medical assistants make? Median pay $45,690 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/en-us/medical-assistants-salary.html",
+  "id": "/en-us/medical-assistants-salary.html",
   "start_url": "./medical-assistants-salary.html",
   "scope": "./medical-assistants-salary.html",
   "display": "standalone",

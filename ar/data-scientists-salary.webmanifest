@@ -2,7 +2,7 @@
   "name": "رواتب علماء البيانات 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب علماء البيانات 2026",
   "description": "كم يكسب علماء البيانات؟ متوسط الأجر $120,230 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/data-scientists-salary.html",
+  "id": "/ar/data-scientists-salary.html",
   "start_url": "./data-scientists-salary.html",
   "scope": "./data-scientists-salary.html",
   "display": "standalone",

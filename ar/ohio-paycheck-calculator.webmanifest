@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب أوهايو 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب أوهايو 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في أوهايو في 2026؟ الضريبة الاتحادية + ضريبة دخل أوهايو والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/ohio-paycheck-calculator.html",
+  "id": "/ar/ohio-paycheck-calculator.html",
   "start_url": "./ohio-paycheck-calculator.html",
   "scope": "./ohio-paycheck-calculator.html",
   "display": "standalone",

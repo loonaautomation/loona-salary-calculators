@@ -2,7 +2,7 @@
   "name": "Loona Netherlands Salary Calculator — Net Salary 2026",
   "short_name": "Netherlands Salary Calculator — Net Salary 2026",
   "description": "Dutch gross-to-net salary calculator for 2026: Box 1 tax, general and labor tax credits, 8% holiday allowance and the 30% ruling with its salary norm.",
-  "id": "/loona-salary-calculators/en-us/netherlands-salary-calculator/",
+  "id": "/en-us/netherlands-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

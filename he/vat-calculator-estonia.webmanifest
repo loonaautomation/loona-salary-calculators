@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של אסטוניה (שיעור 24%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של אסטוניה (שיעור 24%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של אסטוניה: הוסיפו או הסירו 24% מע\"מ בתוך שניות ו-9% מופחת, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-estonia.html",
+  "id": "/he/vat-calculator-estonia.html",
   "start_url": "./vat-calculator-estonia.html",
   "scope": "./vat-calculator-estonia.html",
   "display": "standalone",

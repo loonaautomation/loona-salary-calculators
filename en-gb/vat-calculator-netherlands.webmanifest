@@ -2,7 +2,7 @@
   "name": "Loona Netherlands VAT Calculator",
   "short_name": "Netherlands VAT Calculator",
   "description": "Free Netherlands VAT calculator: add or remove 21% VAT in seconds and reduced 9%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-gb/vat-calculator-netherlands.html",
+  "id": "/en-gb/vat-calculator-netherlands.html",
   "start_url": "./vat-calculator-netherlands.html",
   "scope": "./vat-calculator-netherlands.html",
   "display": "standalone",

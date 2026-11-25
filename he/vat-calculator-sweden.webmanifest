@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של שוודיה (שיעור 25%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של שוודיה (שיעור 25%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון VAT לשוודיה חינמי: הוסיפו או הסירו VAT ב-25% ומופחת 12%/6% תוך שניות, נוסחה מלאה ודוגמאות מחושבות ב-SEK. ללא הרשמה, פועל על המכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-sweden.html",
+  "id": "/he/vat-calculator-sweden.html",
   "start_url": "./vat-calculator-sweden.html",
   "scope": "./vat-calculator-sweden.html",
   "display": "standalone",

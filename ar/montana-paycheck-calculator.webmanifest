@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب مونتانا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب مونتانا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في مونتانا في 2026؟ الضريبة الاتحادية + ضريبة دخل مونتانا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/montana-paycheck-calculator.html",
+  "id": "/ar/montana-paycheck-calculator.html",
   "start_url": "./montana-paycheck-calculator.html",
   "scope": "./montana-paycheck-calculator.html",
   "display": "standalone",

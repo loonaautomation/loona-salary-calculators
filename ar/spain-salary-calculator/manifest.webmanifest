@@ -2,7 +2,7 @@
   "name": "حاسبة صافي راتب إسبانيا — IRPF والضمان الاجتماعي 2026",
   "short_name": "حاسبة صافي راتب إسبانيا",
   "description": "احسب راتبك الصافي في إسبانيا: ضمان اجتماعي للموظف 6.50% بالإضافة إلى ضريبة دخل IRPF على المقياس القياسي، مع تطبيق الحد الأدنى الشخصي. مجاني.",
-  "id": "/loona-salary-calculators/ar/spain-salary-calculator/",
+  "id": "/ar/spain-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

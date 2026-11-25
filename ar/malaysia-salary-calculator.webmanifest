@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في ماليزيا — EPF وSOCSO وPCB ‏2026",
   "short_name": "حاسبة صافي الراتب في ماليزيا",
   "description": "احسب راتبك الصافي في ماليزيا: EPF ‏11%، وSOCSO وEIS حتى سقف الأجر RM6,000، وضريبة دخل PCB على مقياس المقيم مع إعفاءات شخصية. مجاني.",
-  "id": "/loona-salary-calculators/ar/malaysia-salary-calculator.html",
+  "id": "/ar/malaysia-salary-calculator.html",
   "start_url": "./malaysia-salary-calculator.html",
   "scope": "./malaysia-salary-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון GST של אוסטרליה (שיעור 10%) — הוספה או הסרה של GST | Loona",
   "short_name": "מחשבון GST של אוסטרליה (שיעור 10%) — הוספה או הסרה של GST",
   "description": "מחשבון GST חינמי לאוסטרליה: הוסיפו או הסירו 10% GST תוך שניות, עם הנוסחה המלאה ודוגמאות מחושבות ב-AUD. ללא הרשמה, פועל על המכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/gst-calculator-australia.html",
+  "id": "/he/gst-calculator-australia.html",
   "start_url": "./gst-calculator-australia.html",
   "scope": "./gst-calculator-australia.html",
   "display": "standalone",

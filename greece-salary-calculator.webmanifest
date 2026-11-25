@@ -2,7 +2,7 @@
   "name": "Loona Greece Salary Calculator 2026",
   "short_name": "Greece Salary Calculator 2026",
   "description": "What is a €20,000.00 salary worth after tax in Greece in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
-  "id": "/loona-salary-calculators/greece-salary-calculator.html",
+  "id": "/greece-salary-calculator.html",
   "start_url": "./greece-salary-calculator.html",
   "scope": "./greece-salary-calculator.html",
   "display": "standalone",

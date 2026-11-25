@@ -2,7 +2,7 @@
   "name": "Loona Construction Labourers Salary 2026",
   "short_name": "Construction Labourers Salary 2026",
   "description": "How much does a construction labourers make? Median pay $47,120 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/en-gb/construction-laborers-salary.html",
+  "id": "/en-gb/construction-laborers-salary.html",
   "start_url": "./construction-laborers-salary.html",
   "scope": "./construction-laborers-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "Loona PayPal Fee Calculator",
   "short_name": "PayPal Fee Calculator",
   "description": "Free PayPal fee calculator at the standard US commercial rate of 2.99% + $0.49: see the fee on a payment, what you actually receive, and how much to request to receive an exact amount. Editable rates, verified November 2026.",
-  "id": "/loona-salary-calculators/en-gb/paypal-fee-calculator.html",
+  "id": "/en-gb/paypal-fee-calculator.html",
   "start_url": "./paypal-fee-calculator.html",
   "scope": "./paypal-fee-calculator.html",
   "display": "standalone",

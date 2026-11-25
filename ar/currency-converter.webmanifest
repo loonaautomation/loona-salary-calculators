@@ -2,7 +2,7 @@
   "name": "محول العملات — أسعار البنك المركزي الأوروبي المرجعية لـ30 عملة",
   "short_name": "محول العملات",
   "description": "محول عملات مجاني يستخدم أسعار البنك المركزي الأوروبي المرجعية بتاريخ 6 نوفمبر 2026: حوّل بين 30 عملة وتصفح جدول اليورو المرجعي الكامل. أسعار مؤرخة وصادقة — للدلالة فقط.",
-  "id": "/loona-salary-calculators/ar/currency-converter.html",
+  "id": "/ar/currency-converter.html",
   "start_url": "./currency-converter.html",
   "scope": "./currency-converter.html",
   "display": "standalone",

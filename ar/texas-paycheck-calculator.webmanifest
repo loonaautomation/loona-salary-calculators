@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب تكساس 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب تكساس 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في تكساس في 2026؟ الضريبة الاتحادية + ضريبة دخل تكساس والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/texas-paycheck-calculator.html",
+  "id": "/ar/texas-paycheck-calculator.html",
   "start_url": "./texas-paycheck-calculator.html",
   "scope": "./texas-paycheck-calculator.html",
   "display": "standalone",

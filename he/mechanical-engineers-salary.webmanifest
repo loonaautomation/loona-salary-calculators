@@ -2,7 +2,7 @@
   "name": "משכורת מהנדסי מכונות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מהנדסי מכונות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מהנדסי מכונות? שכר חציוני $104,110 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/mechanical-engineers-salary.html",
+  "id": "/he/mechanical-engineers-salary.html",
   "start_url": "./mechanical-engineers-salary.html",
   "scope": "./mechanical-engineers-salary.html",
   "display": "standalone",

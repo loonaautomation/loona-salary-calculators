@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في البحرين — بدون ضريبة دخل 2026",
   "short_name": "حاسبة صافي الراتب في البحرين",
   "description": "احسب راتبك الصافي في البحرين: لا ضريبة دخل. يدفع الموظفون البحرينيون تأمين SIO اجتماعي 8%؛ يدفع المغتربون فقط مساهمة البطالة 1%. مجاني.",
-  "id": "/loona-salary-calculators/ar/bahrain-salary-calculator.html",
+  "id": "/ar/bahrain-salary-calculator.html",
   "start_url": "./bahrain-salary-calculator.html",
   "scope": "./bahrain-salary-calculator.html",
   "display": "standalone",

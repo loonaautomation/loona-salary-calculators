@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في إستونيا (معدل 24%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في إستونيا (معدل 24%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـإستونيا: أضف أو أزل ضريبة 24% في ثوانٍ والمخفّضة 9%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-estonia.html",
+  "id": "/ar/vat-calculator-estonia.html",
   "start_url": "./vat-calculator-estonia.html",
   "scope": "./vat-calculator-estonia.html",
   "display": "standalone",

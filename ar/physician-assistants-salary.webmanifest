@@ -2,7 +2,7 @@
   "name": "رواتب مساعدو الأطباء 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب مساعدو الأطباء 2026",
   "description": "كم يكسب مساعدو الأطباء؟ متوسط الأجر $135,880 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/physician-assistants-salary.html",
+  "id": "/ar/physician-assistants-salary.html",
   "start_url": "./physician-assistants-salary.html",
   "scope": "./physician-assistants-salary.html",
   "display": "standalone",

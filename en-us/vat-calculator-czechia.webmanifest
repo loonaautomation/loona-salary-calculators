@@ -2,7 +2,7 @@
   "name": "Loona Czechia VAT Calculator",
   "short_name": "Czechia VAT Calculator",
   "description": "Free Czechia VAT calculator: add or remove 21% VAT in seconds and reduced 12%/0%, full formula and worked examples in CZK. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-czechia.html",
+  "id": "/en-us/vat-calculator-czechia.html",
   "start_url": "./vat-calculator-czechia.html",
   "scope": "./vat-calculator-czechia.html",
   "display": "standalone",

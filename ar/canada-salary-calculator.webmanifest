@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في كندا — ضريبة اتحادية وأونتاريو 2026",
   "short_name": "حاسبة صافي الراتب في كندا",
   "description": "احسب أجرك الصافي المستلم في 2026 في كندا: ضريبة اتحادية، ضريبة مقاطعة أونتاريو مع رسم إضافي وعلاوة صحة، CPP (تشمل CPP2) وEI. مجاني، نموذج أونتاريو مذكور صراحةً.",
-  "id": "/loona-salary-calculators/ar/canada-salary-calculator.html",
+  "id": "/ar/canada-salary-calculator.html",
   "start_url": "./canada-salary-calculator.html",
   "scope": "./canada-salary-calculator.html",
   "display": "standalone",

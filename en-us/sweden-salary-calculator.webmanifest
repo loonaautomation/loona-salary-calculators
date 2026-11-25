@@ -2,7 +2,7 @@
   "name": "Loona Sweden Salary Calculator 2026",
   "short_name": "Sweden Salary Calculator 2026",
   "description": "What is a kr480,000 salary worth after tax in Sweden in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
-  "id": "/loona-salary-calculators/en-us/sweden-salary-calculator.html",
+  "id": "/en-us/sweden-salary-calculator.html",
   "start_url": "./sweden-salary-calculator.html",
   "scope": "./sweden-salary-calculator.html",
   "display": "standalone",

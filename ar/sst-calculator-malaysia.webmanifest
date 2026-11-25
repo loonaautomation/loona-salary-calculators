@@ -2,7 +2,7 @@
   "name": "حاسبة SST في ماليزيا — ضريبة خدمات 8% وضريبة مبيعات 10% | Loona",
   "short_name": "حاسبة SST في ماليزيا",
   "description": "حاسبة SST مجانية في ماليزيا: أضف أو أزل ضريبة خدمات بنسبة 8% (أو 6% للفئات المحتفظ بها) وضريبة مبيعات بنسبة 10% أو 5%، مع شرح نظام SST وأمثلة محسوبة بـ MYR.",
-  "id": "/loona-salary-calculators/ar/sst-calculator-malaysia.html",
+  "id": "/ar/sst-calculator-malaysia.html",
   "start_url": "./sst-calculator-malaysia.html",
   "scope": "./sst-calculator-malaysia.html",
   "display": "standalone",

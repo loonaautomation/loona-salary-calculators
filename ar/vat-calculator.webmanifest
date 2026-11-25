@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة — إضافة أو إزالة ضريبة القيمة المضافة لـ30 دولة أوروبية",
   "short_name": "حاسبة ضريبة القيمة المضافة",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـ30 دولة أوروبية: أضف أو أزل ضريبة القيمة المضافة بالمعدل القياسي الموثّق وشاهد الصافي وضريبة القيمة المضافة والإجمالي فورًا. لا حاجة للتسجيل.",
-  "id": "/loona-salary-calculators/ar/vat-calculator.html",
+  "id": "/ar/vat-calculator.html",
   "start_url": "./vat-calculator.html",
   "scope": "./vat-calculator.html",
   "display": "standalone",

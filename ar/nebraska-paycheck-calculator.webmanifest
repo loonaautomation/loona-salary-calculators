@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب نبراسكا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب نبراسكا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في نبراسكا في 2026؟ الضريبة الاتحادية + ضريبة دخل نبراسكا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/nebraska-paycheck-calculator.html",
+  "id": "/ar/nebraska-paycheck-calculator.html",
   "start_url": "./nebraska-paycheck-calculator.html",
   "scope": "./nebraska-paycheck-calculator.html",
   "display": "standalone",

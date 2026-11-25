@@ -2,7 +2,7 @@
   "name": "Loona Dentists Salary 2026",
   "short_name": "Dentists Salary 2026",
   "description": "How much does a dentists make? Median pay $170,950 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/en-us/dentists-general-salary.html",
+  "id": "/en-us/dentists-general-salary.html",
   "start_url": "./dentists-general-salary.html",
   "scope": "./dentists-general-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب أريزونا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب أريزونا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في أريزونا في 2026؟ الضريبة الاتحادية + ضريبة دخل أريزونا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/arizona-paycheck-calculator.html",
+  "id": "/ar/arizona-paycheck-calculator.html",
   "start_url": "./arizona-paycheck-calculator.html",
   "scope": "./arizona-paycheck-calculator.html",
   "display": "standalone",

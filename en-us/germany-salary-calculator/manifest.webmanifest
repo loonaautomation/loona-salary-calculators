@@ -2,7 +2,7 @@
   "name": "Loona Germany Gross-to-Net Salary Calculator (in English)",
   "short_name": "Germany Gross-to-Net Salary Calculator (in English)",
   "description": "German gross-to-net salary calculator in English for 2026: tax by tax class, solidarity surcharge, church tax and all four social insurances, itemized.",
-  "id": "/loona-salary-calculators/en-us/germany-salary-calculator/",
+  "id": "/en-us/germany-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

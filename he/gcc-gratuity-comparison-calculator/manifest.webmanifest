@@ -2,7 +2,7 @@
   "name": "מחשבון השוואת מענק GCC — כל שש מדינות המפרץ",
   "short_name": "מחשבון השוואת מענק GCC — כל שש מדינות המפרץ",
   "description": "השוו מענק סיום שירות בכל שש מדינות המפרץ — איחוד האמירויות, ערב הסעודית, קטר, כווית, עומאן ובחריין — עבור שכר ותקופת שירות אחת. חינם.",
-  "id": "/loona-salary-calculators/he/gcc-gratuity-comparison-calculator/",
+  "id": "/he/gcc-gratuity-comparison-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

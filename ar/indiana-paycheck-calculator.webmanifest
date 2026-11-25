@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب إنديانا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب إنديانا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في إنديانا في 2026؟ الضريبة الاتحادية + ضريبة دخل إنديانا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/indiana-paycheck-calculator.html",
+  "id": "/ar/indiana-paycheck-calculator.html",
   "start_url": "./indiana-paycheck-calculator.html",
   "scope": "./indiana-paycheck-calculator.html",
   "display": "standalone",

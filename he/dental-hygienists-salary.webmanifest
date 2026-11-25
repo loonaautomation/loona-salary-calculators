@@ -2,7 +2,7 @@
   "name": "משכורת שינניות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת שינניות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח שינניות? שכר חציוני $98,100 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/dental-hygienists-salary.html",
+  "id": "/he/dental-hygienists-salary.html",
   "start_url": "./dental-hygienists-salary.html",
   "scope": "./dental-hygienists-salary.html",
   "display": "standalone",

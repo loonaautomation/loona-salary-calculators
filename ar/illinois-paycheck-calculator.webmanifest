@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب إلينوي 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب إلينوي 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في إلينوي في 2026؟ الضريبة الاتحادية + ضريبة دخل إلينوي والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/illinois-paycheck-calculator.html",
+  "id": "/ar/illinois-paycheck-calculator.html",
   "start_url": "./illinois-paycheck-calculator.html",
   "scope": "./illinois-paycheck-calculator.html",
   "display": "standalone",

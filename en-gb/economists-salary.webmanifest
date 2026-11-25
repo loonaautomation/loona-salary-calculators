@@ -2,7 +2,7 @@
   "name": "Loona Economists Salary 2026",
   "short_name": "Economists Salary 2026",
   "description": "How much does a economists make? Median pay $124,720 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/en-gb/economists-salary.html",
+  "id": "/en-gb/economists-salary.html",
   "start_url": "./economists-salary.html",
   "scope": "./economists-salary.html",
   "display": "standalone",

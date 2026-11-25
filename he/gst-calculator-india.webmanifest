@@ -2,7 +2,7 @@
   "name": "מחשבון GST להודו (שיעור סטנדרטי 18%) — הוספה או הסרה של GST | Loona",
   "short_name": "מחשבון GST להודו (שיעור סטנדרטי 18%) — הוספה או הסרה של GST",
   "description": "מחשבון GST חינמי להודו עם מדרגות שלאחר ספטמבר 2025: הוסיפו או הסירו GST בשיעורי זכות 5%, סטנדרטי 18% או נזק 40%, בתוספת שיעור הזהב של 3%. דוגמאות מחושבות ב-INR.",
-  "id": "/loona-salary-calculators/he/gst-calculator-india.html",
+  "id": "/he/gst-calculator-india.html",
   "start_url": "./gst-calculator-india.html",
   "scope": "./gst-calculator-india.html",
   "display": "standalone",

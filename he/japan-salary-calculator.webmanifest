@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת של יפן 2026 – שכר נטו אחרי מס | Loona Salary",
   "short_name": "מחשבון משכורת של יפן 2026 – שכר נטו אחרי מס",
   "description": "כמה שווה שכר של ¥5,000,000 לאחר מס ביפן ב-2026? מס הכנסה ותרומות חברתיות, מחושב לפי טבלת 2026 — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/japan-salary-calculator.html",
+  "id": "/he/japan-salary-calculator.html",
   "start_url": "./japan-salary-calculator.html",
   "scope": "./japan-salary-calculator.html",
   "display": "standalone",

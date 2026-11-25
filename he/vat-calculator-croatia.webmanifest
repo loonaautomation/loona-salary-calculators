@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של קרואטיה (שיעור 25%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של קרואטיה (שיעור 25%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של קרואטיה: הוסיפו או הסירו 25% מע\"מ בתוך שניות ומופחת 13%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-croatia.html",
+  "id": "/he/vat-calculator-croatia.html",
   "start_url": "./vat-calculator-croatia.html",
   "scope": "./vat-calculator-croatia.html",
   "display": "standalone",

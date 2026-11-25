@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب أيداهو 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب أيداهو 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في أيداهو في 2026؟ الضريبة الاتحادية + ضريبة دخل أيداهو والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/idaho-paycheck-calculator.html",
+  "id": "/ar/idaho-paycheck-calculator.html",
   "start_url": "./idaho-paycheck-calculator.html",
   "scope": "./idaho-paycheck-calculator.html",
   "display": "standalone",

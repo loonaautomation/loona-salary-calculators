@@ -2,7 +2,7 @@
   "name": "Loona Germany VAT Calculator",
   "short_name": "Germany VAT Calculator",
   "description": "Free Germany VAT calculator: add or remove 19% VAT in seconds and reduced 7%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-gb/vat-calculator-germany.html",
+  "id": "/en-gb/vat-calculator-germany.html",
   "start_url": "./vat-calculator-germany.html",
   "scope": "./vat-calculator-germany.html",
   "display": "standalone",

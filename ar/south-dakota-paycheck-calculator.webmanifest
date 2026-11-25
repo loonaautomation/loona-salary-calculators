@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب داكوتا الجنوبية 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب داكوتا الجنوبية 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في داكوتا الجنوبية في 2026؟ الضريبة الاتحادية + ضريبة دخل داكوتا الجنوبية والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/south-dakota-paycheck-calculator.html",
+  "id": "/ar/south-dakota-paycheck-calculator.html",
   "start_url": "./south-dakota-paycheck-calculator.html",
   "scope": "./south-dakota-paycheck-calculator.html",
   "display": "standalone",

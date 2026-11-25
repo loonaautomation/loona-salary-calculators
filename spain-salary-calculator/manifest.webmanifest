@@ -2,7 +2,7 @@
   "name": "Loona Spain Net Salary Calculator",
   "short_name": "Spain Net Salary Calculator",
   "description": "Calculate your net salary in Spain: 6.50% employee social security plus IRPF income tax on the standard scale, with the personal minimum applied. Free.",
-  "id": "/loona-salary-calculators/spain-salary-calculator/",
+  "id": "/spain-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

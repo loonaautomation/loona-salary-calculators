@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في السويد (معدل 25%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في السويد (معدل 25%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية في السويد: أضف أو أزل ضريبة قيمة مضافة 25% في ثوانٍ والمخفّضة 12%/6%، الصيغة الكاملة وأمثلة محسوبة بـ SEK. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-sweden.html",
+  "id": "/ar/vat-calculator-sweden.html",
   "start_url": "./vat-calculator-sweden.html",
   "scope": "./vat-calculator-sweden.html",
   "display": "standalone",

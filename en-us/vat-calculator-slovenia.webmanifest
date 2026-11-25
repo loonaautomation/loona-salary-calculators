@@ -2,7 +2,7 @@
   "name": "Loona Slovenia VAT Calculator",
   "short_name": "Slovenia VAT Calculator",
   "description": "Free Slovenia VAT calculator: add or remove 22% VAT in seconds and reduced 9.5%/5%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-slovenia.html",
+  "id": "/en-us/vat-calculator-slovenia.html",
   "start_url": "./vat-calculator-slovenia.html",
   "scope": "./vat-calculator-slovenia.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת של ברזיל 2026 – שכר נטו אחרי מס | Loona Salary",
   "short_name": "מחשבון משכורת של ברזיל 2026 – שכר נטו אחרי מס",
   "description": "כמה שווה שכר של R$120,000 לאחר מס בברזיל ב-2026? מס הכנסה ותרומות חברתיות, מחושב לפי טבלת 2026 — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/brazil-salary-calculator.html",
+  "id": "/he/brazil-salary-calculator.html",
   "start_url": "./brazil-salary-calculator.html",
   "scope": "./brazil-salary-calculator.html",
   "display": "standalone",

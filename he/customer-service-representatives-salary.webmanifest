@@ -2,7 +2,7 @@
   "name": "משכורת נציגי שירות לקוחות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת נציגי שירות לקוחות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח נציגי שירות לקוחות? שכר חציוני $44,770 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/customer-service-representatives-salary.html",
+  "id": "/he/customer-service-representatives-salary.html",
   "start_url": "./customer-service-representatives-salary.html",
   "scope": "./customer-service-representatives-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "رواتب المساعدون الطبيون 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب المساعدون الطبيون 2026",
   "description": "كم يكسب المساعدون الطبيون؟ متوسط الأجر $45,690 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/medical-assistants-salary.html",
+  "id": "/ar/medical-assistants-salary.html",
   "start_url": "./medical-assistants-salary.html",
   "scope": "./medical-assistants-salary.html",
   "display": "standalone",

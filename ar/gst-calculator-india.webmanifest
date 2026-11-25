@@ -2,7 +2,7 @@
   "name": "حاسبة GST في الهند (المعدل القياسي 18%) — إضافة أو إزالة GST | Loona",
   "short_name": "حاسبة GST في الهند (المعدل القياسي 18%)",
   "description": "حاسبة GST مجانية في الهند بشرائح ما بعد سبتمبر 2025: أضف أو أزل GST بمعدلات جدارة 5%، وقياسي 18% أو عقابي 40%، بالإضافة إلى معدل الذهب 3%. أمثلة محسوبة بـ INR.",
-  "id": "/loona-salary-calculators/ar/gst-calculator-india.html",
+  "id": "/ar/gst-calculator-india.html",
   "start_url": "./gst-calculator-india.html",
   "scope": "./gst-calculator-india.html",
   "display": "standalone",

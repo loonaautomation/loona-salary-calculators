@@ -2,7 +2,7 @@
   "name": "حاسبة مكافأة البحرين — مكافأة مغادرة (المادة 116)",
   "short_name": "حاسبة مكافأة البحرين",
   "description": "احسب مكافأة مغادرة البحرين بموجب المادة 116: نصف أجر شهر سنويًا للسنوات الـ3 الأولى، شهر واحد سنويًا بعدها، بلا سقف. مجاني.",
-  "id": "/loona-salary-calculators/ar/bahrain-indemnity-calculator/",
+  "id": "/ar/bahrain-indemnity-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

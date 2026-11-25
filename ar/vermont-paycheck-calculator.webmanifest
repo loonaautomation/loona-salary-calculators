@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب فيرمونت 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب فيرمونت 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في فيرمونت في 2026؟ الضريبة الاتحادية + ضريبة دخل فيرمونت والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/vermont-paycheck-calculator.html",
+  "id": "/ar/vermont-paycheck-calculator.html",
   "start_url": "./vermont-paycheck-calculator.html",
   "scope": "./vermont-paycheck-calculator.html",
   "display": "standalone",

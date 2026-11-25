@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת של הפיליפינים 2026 – שכר נטו אחרי מס | Loona Salary",
   "short_name": "מחשבון משכורת של הפיליפינים 2026 – שכר נטו אחרי מס",
   "description": "כמה שווה שכר של ₱600,000 לאחר מס בפיליפינים ב-2026? מס הכנסה ותרומות חברתיות, מחושב לפי טבלת 2026 — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/philippines-salary-calculator.html",
+  "id": "/he/philippines-salary-calculator.html",
   "start_url": "./philippines-salary-calculator.html",
   "scope": "./philippines-salary-calculator.html",
   "display": "standalone",

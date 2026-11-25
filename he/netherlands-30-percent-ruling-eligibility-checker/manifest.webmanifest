@@ -2,7 +2,7 @@
   "name": "בודק זכאות להחלטת 30% — האם אתם זכאים? (הולנד)",
   "short_name": "בודק זכאות להחלטת 30% — האם אתם זכאים? (הולנד)",
   "description": "בדקו אם אתם זכאים להחלטת ה-30% של הולנד: נורמות השכר 2026, כלל ה-150 km, גיוס מחו\"ל ומבחני המעסיק. בדיקה חינמית.",
-  "id": "/loona-salary-calculators/he/netherlands-30-percent-ruling-eligibility-checker/",
+  "id": "/he/netherlands-30-percent-ruling-eligibility-checker/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

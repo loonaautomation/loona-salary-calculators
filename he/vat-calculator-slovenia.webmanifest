@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של סלובניה (שיעור 22%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של סלובניה (שיעור 22%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של סלובניה: הוסיפו או הסירו 22% מע\"מ בתוך שניות ומופחת 9.5%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-slovenia.html",
+  "id": "/he/vat-calculator-slovenia.html",
   "start_url": "./vat-calculator-slovenia.html",
   "scope": "./vat-calculator-slovenia.html",
   "display": "standalone",

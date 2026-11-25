@@ -2,7 +2,7 @@
   "name": "Loona Italy Net Salary Calculator",
   "short_name": "Italy Net Salary Calculator",
   "description": "Estimate your net salary in Italy for 2026: INPS employee contributions of 9.19% and IRPEF at the 2026 brackets (23% / 33% / 43%) with the employment tax credit. Labelled estimate. Free.",
-  "id": "/loona-salary-calculators/en-gb/italy-salary-calculator.html",
+  "id": "/en-gb/italy-salary-calculator.html",
   "start_url": "./italy-salary-calculator.html",
   "scope": "./italy-salary-calculator.html",
   "display": "standalone",

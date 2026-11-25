@@ -2,7 +2,7 @@
   "name": "משכורת פקידי הלוואות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת פקידי הלוואות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח פקידי הלוואות? שכר חציוני $76,690 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/loan-officers-salary.html",
+  "id": "/he/loan-officers-salary.html",
   "start_url": "./loan-officers-salary.html",
   "scope": "./loan-officers-salary.html",
   "display": "standalone",

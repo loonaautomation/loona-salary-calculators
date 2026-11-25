@@ -2,7 +2,7 @@
   "name": "حاسبة الرواتب الأمريكية 2026 – الراتب بعد الضريبة في كل ولاية | Loona Salary",
   "short_name": "حاسبة الرواتب الأمريكية 2026",
   "description": "احسب أجرك الصافي المستلم في 2026: الضريبة الاتحادية والضمان الاجتماعي والرعاية الطبية، بالإضافة إلى ضريبة دخل كل ولاية — حاسبة مجانية لجميع الولايات الـ50 والعاصمة.",
-  "id": "/loona-salary-calculators/ar/us-paycheck-calculator.html",
+  "id": "/ar/us-paycheck-calculator.html",
   "start_url": "./us-paycheck-calculator.html",
   "scope": "./us-paycheck-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "משכורת חרטים ומפעילי מכונות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת חרטים ומפעילי מכונות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח חרטים ומפעילי מכונות? שכר חציוני $58,750 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/machinists-salary.html",
+  "id": "/he/machinists-salary.html",
   "start_url": "./machinists-salary.html",
   "scope": "./machinists-salary.html",
   "display": "standalone",

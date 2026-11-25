@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة المبيعات في باكستان (معدل 18%) — إضافة أو إزالة ضريبة المبيعات | Loona",
   "short_name": "حاسبة ضريبة المبيعات في باكستان (معدل 18%)",
   "description": "حاسبة ضريبة مبيعات مجانية في باكستان: أضف أو أزل ضريبة مبيعات 18% في ثوانٍ، مع الصيغة الكاملة وأمثلة محسوبة بـ PKR. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-pakistan.html",
+  "id": "/ar/vat-calculator-pakistan.html",
   "start_url": "./vat-calculator-pakistan.html",
   "scope": "./vat-calculator-pakistan.html",
   "display": "standalone",

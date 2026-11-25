@@ -2,7 +2,7 @@
   "name": "حاسبة راتب ألمانيا — الإجمالي إلى الصافي (Brutto-Netto) بالإنجليزية 2026",
   "short_name": "حاسبة راتب ألمانيا",
   "description": "حاسبة راتب إجمالي إلى صافي ألمانية بالإنجليزية لعام 2026: الضريبة حسب فئة الضريبة، رسم التضامن الإضافي، ضريبة الكنيسة وتأمينات اجتماعية أربعة كلها، مفصّلة.",
-  "id": "/loona-salary-calculators/ar/germany-salary-calculator/",
+  "id": "/ar/germany-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

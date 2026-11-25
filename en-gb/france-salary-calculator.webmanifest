@@ -2,7 +2,7 @@
   "name": "Loona France Net Salary Calculator",
   "short_name": "France Net Salary Calculator",
   "description": "Estimate your net salary in France (salaire brut en net): about 23% employee contributions for non-cadre staff and 25% for cadre. Clear ESTIMATE — income tax (PAS) explained. Free.",
-  "id": "/loona-salary-calculators/en-gb/france-salary-calculator.html",
+  "id": "/en-gb/france-salary-calculator.html",
   "start_url": "./france-salary-calculator.html",
   "scope": "./france-salary-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب فرجينيا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب فرجينيا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في فرجينيا في 2026؟ الضريبة الاتحادية + ضريبة دخل فرجينيا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/virginia-paycheck-calculator.html",
+  "id": "/ar/virginia-paycheck-calculator.html",
   "start_url": "./virginia-paycheck-calculator.html",
   "scope": "./virginia-paycheck-calculator.html",
   "display": "standalone",

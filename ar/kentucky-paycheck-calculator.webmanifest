@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب كنتاكي 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب كنتاكي 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في كنتاكي في 2026؟ الضريبة الاتحادية + ضريبة دخل كنتاكي والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/kentucky-paycheck-calculator.html",
+  "id": "/ar/kentucky-paycheck-calculator.html",
   "start_url": "./kentucky-paycheck-calculator.html",
   "scope": "./kentucky-paycheck-calculator.html",
   "display": "standalone",

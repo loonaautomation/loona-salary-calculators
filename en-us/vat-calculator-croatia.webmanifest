@@ -2,7 +2,7 @@
   "name": "Loona Croatia VAT Calculator",
   "short_name": "Croatia VAT Calculator",
   "description": "Free Croatia VAT calculator: add or remove 25% VAT in seconds and reduced 13%/5%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-croatia.html",
+  "id": "/en-us/vat-calculator-croatia.html",
   "start_url": "./vat-calculator-croatia.html",
   "scope": "./vat-calculator-croatia.html",
   "display": "standalone",

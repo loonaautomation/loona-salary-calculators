@@ -2,7 +2,7 @@
   "name": "השוואת סיווגי מס בגרמניה — שכר נטו Steuerklassen I–VI",
   "short_name": "השוואת סיווגי מס בגרמניה — שכר נטו Steuerklassen I–VI",
   "description": "השוו שכר נטו גרמני בכל ששת סיווגי המס (Steuerklassen I–VI) על אותו ברוטו, כולל הבחירה בין III/V לבין IV/IV לזוגות. חינם.",
-  "id": "/loona-salary-calculators/he/germany-tax-class-comparison-calculator/",
+  "id": "/he/germany-tax-class-comparison-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

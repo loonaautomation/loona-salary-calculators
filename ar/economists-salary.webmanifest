@@ -2,7 +2,7 @@
   "name": "رواتب الاقتصاديون 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب الاقتصاديون 2026",
   "description": "كم يكسب الاقتصاديون؟ متوسط الأجر $124,720 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/economists-salary.html",
+  "id": "/ar/economists-salary.html",
   "start_url": "./economists-salary.html",
   "scope": "./economists-salary.html",
   "display": "standalone",

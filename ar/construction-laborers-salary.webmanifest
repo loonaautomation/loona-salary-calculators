@@ -2,7 +2,7 @@
   "name": "رواتب عمال البناء 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب عمال البناء 2026",
   "description": "كم يكسب عمال البناء؟ متوسط الأجر $47,120 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/construction-laborers-salary.html",
+  "id": "/ar/construction-laborers-salary.html",
   "start_url": "./construction-laborers-salary.html",
   "scope": "./construction-laborers-salary.html",
   "display": "standalone",

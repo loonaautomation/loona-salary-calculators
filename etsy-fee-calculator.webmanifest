@@ -2,7 +2,7 @@
   "name": "Loona Etsy Fee Calculator",
   "short_name": "Etsy Fee Calculator",
   "description": "Free Etsy fee calculator: 6.5% transaction fee, $0.20 listing fee, payment processing, regulatory fee and Offsite Ads — full breakdown and your real profit. Every rate editable; US defaults verified November 2026.",
-  "id": "/loona-salary-calculators/etsy-fee-calculator.html",
+  "id": "/etsy-fee-calculator.html",
   "start_url": "./etsy-fee-calculator.html",
   "scope": "./etsy-fee-calculator.html",
   "display": "standalone",

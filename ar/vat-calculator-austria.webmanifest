@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في النمسا (معدل 20%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في النمسا (معدل 20%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـالنمسا: أضف أو أزل ضريبة 20% في ثوانٍ والمخفّضة 10%/13%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-austria.html",
+  "id": "/ar/vat-calculator-austria.html",
   "start_url": "./vat-calculator-austria.html",
   "scope": "./vat-calculator-austria.html",
   "display": "standalone",

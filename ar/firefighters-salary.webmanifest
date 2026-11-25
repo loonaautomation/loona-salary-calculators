@@ -2,7 +2,7 @@
   "name": "رواتب رجال الإطفاء 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب رجال الإطفاء 2026",
   "description": "كم يكسب رجال الإطفاء؟ متوسط الأجر $59,280 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/firefighters-salary.html",
+  "id": "/ar/firefighters-salary.html",
   "start_url": "./firefighters-salary.html",
   "scope": "./firefighters-salary.html",
   "display": "standalone",

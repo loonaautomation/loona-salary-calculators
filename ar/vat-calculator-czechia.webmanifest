@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في التشيك (معدل 21%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في التشيك (معدل 21%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية في التشيك: أضف أو أزل ضريبة قيمة مضافة 21% في ثوانٍ والمخفّضة 12%/0%، الصيغة الكاملة وأمثلة محسوبة بـ CZK. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-czechia.html",
+  "id": "/ar/vat-calculator-czechia.html",
   "start_url": "./vat-calculator-czechia.html",
   "scope": "./vat-calculator-czechia.html",
   "display": "standalone",

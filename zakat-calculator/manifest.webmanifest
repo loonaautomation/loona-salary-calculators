@@ -2,7 +2,7 @@
   "name": "Loona Zakat Calculator",
   "short_name": "Zakat Calculator",
   "description": "Calculate your Zakat at 2.5% on net zakatable assets — gold, silver, cash, stock and receivables minus debts — with the nisab check built in. Free to use.",
-  "id": "/loona-salary-calculators/zakat-calculator/",
+  "id": "/zakat-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

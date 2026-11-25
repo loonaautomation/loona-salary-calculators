@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في لاتفيا (معدل 21%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في لاتفيا (معدل 21%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـلاتفيا: أضف أو أزل ضريبة 21% في ثوانٍ والمخفّضة 12%/5%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-latvia.html",
+  "id": "/ar/vat-calculator-latvia.html",
   "start_url": "./vat-calculator-latvia.html",
   "scope": "./vat-calculator-latvia.html",
   "display": "standalone",

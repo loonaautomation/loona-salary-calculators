@@ -2,7 +2,7 @@
   "name": "Loona UAE Gratuity Calculator",
   "short_name": "UAE Gratuity Calculator",
   "description": "Calculate your UAE end-of-service gratuity in seconds: 21 days' basic wage per year for 5 years, 30 days after — Article 51 rules, no resignation cut. Free.",
-  "id": "/loona-salary-calculators/uae-gratuity-calculator/",
+  "id": "/uae-gratuity-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "משכורת מדעני נתונים 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מדעני נתונים 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מדעני נתונים? שכר חציוני $120,230 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/data-scientists-salary.html",
+  "id": "/he/data-scientists-salary.html",
   "start_url": "./data-scientists-salary.html",
   "scope": "./data-scientists-salary.html",
   "display": "standalone",

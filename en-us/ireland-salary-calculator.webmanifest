@@ -2,7 +2,7 @@
   "name": "Loona Ireland Net Salary Calculator",
   "short_name": "Ireland Net Salary Calculator",
   "description": "Calculate your take-home pay in Ireland for 2026: PAYE at 20%/40% with €4,000 of tax credits, USC at the 2026 bands and PRSI at 4.2%. Single person, standard credits. Free.",
-  "id": "/loona-salary-calculators/en-us/ireland-salary-calculator.html",
+  "id": "/en-us/ireland-salary-calculator.html",
   "start_url": "./ireland-salary-calculator.html",
   "scope": "./ireland-salary-calculator.html",
   "display": "standalone",

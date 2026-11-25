@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة السلع والخدمات (GST) في نيوزيلندا (معدل 15%) — إضافة أو إزالة GST | Loona",
   "short_name": "حاسبة ضريبة السلع والخدمات (GST) في نيوزيلندا (معدل 15%)",
   "description": "حاسبة GST مجانية في نيوزيلندا: أضف أو أزل GST ‏15% في ثوانٍ، مع الصيغة الكاملة وأمثلة محسوبة بـ NZD. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/gst-calculator-new-zealand.html",
+  "id": "/ar/gst-calculator-new-zealand.html",
   "start_url": "./gst-calculator-new-zealand.html",
   "scope": "./gst-calculator-new-zealand.html",
   "display": "standalone",

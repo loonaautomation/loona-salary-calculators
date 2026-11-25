@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب ألاباما 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب ألاباما 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في ألاباما في 2026؟ الضريبة الاتحادية + ضريبة دخل ألاباما والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/alabama-paycheck-calculator.html",
+  "id": "/ar/alabama-paycheck-calculator.html",
   "start_url": "./alabama-paycheck-calculator.html",
   "scope": "./alabama-paycheck-calculator.html",
   "display": "standalone",

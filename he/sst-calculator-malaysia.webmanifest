@@ -2,7 +2,7 @@
   "name": "מחשבון SST למלזיה — מס שירותים 8% ומס מכירות 10% | Loona",
   "short_name": "מחשבון SST למלזיה — מס שירותים 8% ומס מכירות 10%",
   "description": "מחשבון SST חינמי למלזיה: הוסיפו או הסירו מס שירותים ב-8% (או 6% עבור קטגוריות שנשמרו) ומס מכירות ב-10% או 5%, עם מערכת ה-SST מוסברת ודוגמאות מחושבות ב-MYR.",
-  "id": "/loona-salary-calculators/he/sst-calculator-malaysia.html",
+  "id": "/he/sst-calculator-malaysia.html",
   "start_url": "./sst-calculator-malaysia.html",
   "scope": "./sst-calculator-malaysia.html",
   "display": "standalone",

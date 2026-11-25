@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في الإمارات (معدل 5%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في الإمارات (معدل 5%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية في الإمارات: أضف أو أزل ضريبة قيمة مضافة 5% في ثوانٍ، مع الصيغة الكاملة وأمثلة محسوبة بـ AED. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-uae.html",
+  "id": "/ar/vat-calculator-uae.html",
   "start_url": "./vat-calculator-uae.html",
   "scope": "./vat-calculator-uae.html",
   "display": "standalone",

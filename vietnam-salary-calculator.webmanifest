@@ -2,7 +2,7 @@
   "name": "Loona Vietnam Salary Calculator 2026",
   "short_name": "Vietnam Salary Calculator 2026",
   "description": "What is a ₫300,000,000 salary worth after tax in Vietnam in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
-  "id": "/loona-salary-calculators/vietnam-salary-calculator.html",
+  "id": "/vietnam-salary-calculator.html",
   "start_url": "./vietnam-salary-calculator.html",
   "scope": "./vietnam-salary-calculator.html",
   "display": "standalone",

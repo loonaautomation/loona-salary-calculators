@@ -2,7 +2,7 @@
   "name": "حاسبة الزكاة — 2.5% على الأصول الخاضعة للزكاة مع فحص النصاب",
   "short_name": "حاسبة الزكاة",
   "description": "احسب زكاتك بنسبة 2.5% على صافي الأصول الخاضعة للزكاة — ذهب، فضة، نقد، مخزون ومستحقات ناقص الديون — مع فحص النصاب المدمج. مجاني للاستخدام.",
-  "id": "/loona-salary-calculators/ar/zakat-calculator/",
+  "id": "/ar/zakat-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

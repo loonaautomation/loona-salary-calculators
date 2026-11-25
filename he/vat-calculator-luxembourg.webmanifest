@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של לוקסמבורג (שיעור 17%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של לוקסמבורג (שיעור 17%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של לוקסמבורג: הוסיפו או הסירו 17% מע\"מ בתוך שניות ומופחת 8%/3%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-luxembourg.html",
+  "id": "/he/vat-calculator-luxembourg.html",
   "start_url": "./vat-calculator-luxembourg.html",
   "scope": "./vat-calculator-luxembourg.html",
   "display": "standalone",

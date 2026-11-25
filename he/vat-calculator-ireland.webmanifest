@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של אירלנד (שיעור 23%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של אירלנד (שיעור 23%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של אירלנד: הוסיפו או הסירו 23% מע\"מ בתוך שניות ומופחת 13.5%/9%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-ireland.html",
+  "id": "/he/vat-calculator-ireland.html",
   "start_url": "./vat-calculator-ireland.html",
   "scope": "./vat-calculator-ireland.html",
   "display": "standalone",

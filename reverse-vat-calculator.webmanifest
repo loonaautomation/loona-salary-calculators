@@ -2,7 +2,7 @@
   "name": "Loona Reverse VAT Calculator",
   "short_name": "Reverse VAT Calculator",
   "description": "Free reverse VAT calculator for 30 European countries: enter a VAT-inclusive price and instantly split it into net amount and VAT. Verified rates, private.",
-  "id": "/loona-salary-calculators/reverse-vat-calculator.html",
+  "id": "/reverse-vat-calculator.html",
   "start_url": "./reverse-vat-calculator.html",
   "scope": "./reverse-vat-calculator.html",
   "display": "standalone",

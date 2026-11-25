@@ -2,7 +2,7 @@
   "name": "Loona Lawyers Salary 2026",
   "short_name": "Lawyers Salary 2026",
   "description": "How much does a lawyers make? Median pay $159,670 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/lawyers-salary.html",
+  "id": "/lawyers-salary.html",
   "start_url": "./lawyers-salary.html",
   "scope": "./lawyers-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة بدل إجازة هولندا — 8% Vakantiegeld والضريبة",
   "short_name": "حاسبة بدل إجازة هولندا",
   "description": "احسب بدل الإجازة الهولندي (vakantiegeld): ‏8% القانونية من الراتب الإجمالي، والضريبة التي ستدفعها فعليًا عليها في مايو. مجاني للاستخدام.",
-  "id": "/loona-salary-calculators/ar/netherlands-holiday-allowance-calculator/",
+  "id": "/ar/netherlands-holiday-allowance-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

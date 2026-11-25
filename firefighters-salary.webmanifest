@@ -2,7 +2,7 @@
   "name": "Loona Firefighters Salary 2026",
   "short_name": "Firefighters Salary 2026",
   "description": "How much does a firefighters make? Median pay $59,280 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/firefighters-salary.html",
+  "id": "/firefighters-salary.html",
   "start_url": "./firefighters-salary.html",
   "scope": "./firefighters-salary.html",
   "display": "standalone",

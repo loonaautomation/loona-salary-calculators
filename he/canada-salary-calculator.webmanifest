@@ -2,7 +2,7 @@
   "name": "מחשבון שכר נטו קנדה — מס פדרלי &amp; אונטריו 2026",
   "short_name": "מחשבון שכר נטו קנדה — מס פדרלי &amp; אונטריו 2026",
   "description": "חשבו את שכר הביתה שלכם ל-2026 בקנדה: מס פדרלי, מס מחוזי באונטריו עם היטל נוסף ופרמיית בריאות, CPP (כולל CPP2) ו-EI. בחינם, מודל אונטריו מצוין בגלוי.",
-  "id": "/loona-salary-calculators/he/canada-salary-calculator.html",
+  "id": "/he/canada-salary-calculator.html",
   "start_url": "./canada-salary-calculator.html",
   "scope": "./canada-salary-calculator.html",
   "display": "standalone",

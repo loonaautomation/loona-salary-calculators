@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب فلوريدا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب فلوريدا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في فلوريدا في 2026؟ الضريبة الاتحادية + ضريبة دخل فلوريدا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/florida-paycheck-calculator.html",
+  "id": "/ar/florida-paycheck-calculator.html",
   "start_url": "./florida-paycheck-calculator.html",
   "scope": "./florida-paycheck-calculator.html",
   "display": "standalone",

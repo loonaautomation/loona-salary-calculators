@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب مينيسوتا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب مينيسوتا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في مينيسوتا في 2026؟ الضريبة الاتحادية + ضريبة دخل مينيسوتا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/minnesota-paycheck-calculator.html",
+  "id": "/ar/minnesota-paycheck-calculator.html",
   "start_url": "./minnesota-paycheck-calculator.html",
   "scope": "./minnesota-paycheck-calculator.html",
   "display": "standalone",

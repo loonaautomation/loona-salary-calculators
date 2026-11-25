@@ -2,7 +2,7 @@
   "name": "Loona Luxembourg VAT Calculator",
   "short_name": "Luxembourg VAT Calculator",
   "description": "Free Luxembourg VAT calculator: add or remove 17% VAT in seconds and reduced 8%/3%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-luxembourg.html",
+  "id": "/en-us/vat-calculator-luxembourg.html",
   "start_url": "./vat-calculator-luxembourg.html",
   "scope": "./vat-calculator-luxembourg.html",
   "display": "standalone",

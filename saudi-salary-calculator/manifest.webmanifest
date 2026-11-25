@@ -2,7 +2,7 @@
   "name": "Loona Saudi Salary Calculator",
   "short_name": "Saudi Salary Calculator",
   "description": "Calculate Saudi net pay with GOSI: 0% deduction for expats, 9.75% or the new-system rate for Saudi employees, on basic plus housing up to SAR 45,000. Free.",
-  "id": "/loona-salary-calculators/saudi-salary-calculator/",
+  "id": "/saudi-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

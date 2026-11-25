@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של הולנד (שיעור 21%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של הולנד (שיעור 21%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של הולנד: הוסיפו או הסירו 21% מע\"מ בתוך שניות ו-9% מופחת, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-netherlands.html",
+  "id": "/he/vat-calculator-netherlands.html",
   "start_url": "./vat-calculator-netherlands.html",
   "scope": "./vat-calculator-netherlands.html",
   "display": "standalone",

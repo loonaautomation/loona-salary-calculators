@@ -2,7 +2,7 @@
   "name": "מחשבון שכר נטו צרפת — הערכת ברוטו לנטו 2026",
   "short_name": "מחשבון שכר נטו צרפת — הערכת ברוטו לנטו 2026",
   "description": "העריכו את שכר הנטו שלכם בצרפת (salaire brut en net): בערך 23% תרומות עובד לעובדים שאינם cadre ו-25% ל-cadre. הערכה ברורה — מס הכנסה (PAS) מוסבר. בחינם.",
-  "id": "/loona-salary-calculators/he/france-salary-calculator.html",
+  "id": "/he/france-salary-calculator.html",
   "start_url": "./france-salary-calculator.html",
   "scope": "./france-salary-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון מס פרילנסרים בפקיסטן — סעיף 154A יצוא IT",
   "short_name": "מחשבון מס פרילנסרים בפקיסטן — סעיף 154A יצוא IT",
   "description": "חשבו מס פרילנסרים ויצוא IT בפקיסטן לפי סעיף 154A: 0.25% אם רשומים ב-PSEB, 1% אם לא, עם שיעורי מגישים ולא-מגישים מושווים. חינם.",
-  "id": "/loona-salary-calculators/he/pakistan-freelancer-tax-calculator/",
+  "id": "/he/pakistan-freelancer-tax-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

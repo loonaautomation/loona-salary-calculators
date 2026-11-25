@@ -2,7 +2,7 @@
   "name": "מחשבון שכר נטו לאוסטרליה — מס PAYG 2025–26",
   "short_name": "מחשבון שכר נטו לאוסטרליה — מס PAYG 2025–26",
   "description": "חשבו את שכר הביתה שלכם באוסטרליה ל-2025–26: שיעורי מס הכנסה PAYG לתושב, קיזוז מס הכנסה נמוכה (LITO) והיטל Medicare של 2%. בחינם.",
-  "id": "/loona-salary-calculators/he/australia-salary-calculator.html",
+  "id": "/he/australia-salary-calculator.html",
   "start_url": "./australia-salary-calculator.html",
   "scope": "./australia-salary-calculator.html",
   "display": "standalone",

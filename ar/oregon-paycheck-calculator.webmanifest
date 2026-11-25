@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب أوريغون 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب أوريغون 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في أوريغون في 2026؟ الضريبة الاتحادية + ضريبة دخل أوريغون والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/oregon-paycheck-calculator.html",
+  "id": "/ar/oregon-paycheck-calculator.html",
   "start_url": "./oregon-paycheck-calculator.html",
   "scope": "./oregon-paycheck-calculator.html",
   "display": "standalone",

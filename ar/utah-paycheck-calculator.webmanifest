@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب يوتا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب يوتا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في يوتا في 2026؟ الضريبة الاتحادية + ضريبة دخل يوتا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/utah-paycheck-calculator.html",
+  "id": "/ar/utah-paycheck-calculator.html",
   "start_url": "./utah-paycheck-calculator.html",
   "scope": "./utah-paycheck-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון שכר נטו בספרד — IRPF וביטוח סוציאלי 2026",
   "short_name": "מחשבון שכר נטו בספרד — IRPF וביטוח סוציאלי 2026",
   "description": "חשבו את שכר הנטו שלכם בספרד: 6.50% ביטוח סוציאלי לעובד בתוספת מס הכנסה IRPF על הסולם הסטנדרטי, עם המינימום האישי מוחל. חינם.",
-  "id": "/loona-salary-calculators/he/spain-salary-calculator/",
+  "id": "/he/spain-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

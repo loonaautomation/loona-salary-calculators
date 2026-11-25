@@ -2,7 +2,7 @@
   "name": "Loona Hungary VAT Calculator",
   "short_name": "Hungary VAT Calculator",
   "description": "Free Hungary VAT calculator: add or remove 27% VAT in seconds and reduced 18%/5%, full formula and worked examples in HUF. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-hungary.html",
+  "id": "/en-us/vat-calculator-hungary.html",
   "start_url": "./vat-calculator-hungary.html",
   "scope": "./vat-calculator-hungary.html",
   "display": "standalone",

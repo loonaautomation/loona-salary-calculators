@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת של יוון 2026 – שכר נטו אחרי מס | Loona Salary",
   "short_name": "מחשבון משכורת של יוון 2026 – שכר נטו אחרי מס",
   "description": "כמה שווה משכורת של €20,000.00 אחרי מס ב-יוון ב-2026? מס הכנסה והפרשות סוציאליות, מחושבים לפי טבלת 2026 — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/greece-salary-calculator.html",
+  "id": "/he/greece-salary-calculator.html",
   "start_url": "./greece-salary-calculator.html",
   "scope": "./greece-salary-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "Loona Estonia VAT Calculator",
   "short_name": "Estonia VAT Calculator",
   "description": "Free Estonia VAT calculator: add or remove 24% VAT in seconds and reduced 9%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-estonia.html",
+  "id": "/en-us/vat-calculator-estonia.html",
   "start_url": "./vat-calculator-estonia.html",
   "scope": "./vat-calculator-estonia.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "Loona VAT Calculator",
   "short_name": "VAT Calculator",
   "description": "Free VAT calculator for 30 European countries: add or remove VAT at the verified standard rate and see net, VAT and gross instantly. No sign-up needed.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator.html",
+  "id": "/en-us/vat-calculator.html",
   "start_url": "./vat-calculator.html",
   "scope": "./vat-calculator.html",
   "display": "standalone",

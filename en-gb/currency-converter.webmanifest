@@ -2,7 +2,7 @@
   "name": "Loona Currency Converter",
   "short_name": "Currency Converter",
   "description": "Free currency converter using European Central Bank reference rates dated 6 November 2026: convert between 30 currencies and browse the full euro reference table. Dated, honest rates — for indication only.",
-  "id": "/loona-salary-calculators/en-gb/currency-converter.html",
+  "id": "/en-gb/currency-converter.html",
   "start_url": "./currency-converter.html",
   "scope": "./currency-converter.html",
   "display": "standalone",

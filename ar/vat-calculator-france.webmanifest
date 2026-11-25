@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في فرنسا (معدل 20%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في فرنسا (معدل 20%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـفرنسا: أضف أو أزل ضريبة 20% في ثوانٍ والمخفّضة 10%/5.5%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-france.html",
+  "id": "/ar/vat-calculator-france.html",
   "start_url": "./vat-calculator-france.html",
   "scope": "./vat-calculator-france.html",
   "display": "standalone",

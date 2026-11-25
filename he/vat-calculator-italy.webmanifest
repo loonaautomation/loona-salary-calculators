@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של איטליה (שיעור 22%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של איטליה (שיעור 22%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של איטליה: הוסיפו או הסירו 22% מע\"מ בתוך שניות ומופחת 10%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-italy.html",
+  "id": "/he/vat-calculator-italy.html",
   "start_url": "./vat-calculator-italy.html",
   "scope": "./vat-calculator-italy.html",
   "display": "standalone",

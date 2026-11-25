@@ -2,7 +2,7 @@
   "name": "מחשבון מס שכר בפקיסטן — מדרגות חוק הכספים 2026 (שנת מס 2026-27)",
   "short_name": "מחשבון מס שכר בפקיסטן — מדרגות חוק הכספים 2026 (שנת מס 2026-27)",
   "description": "חשבו מס הכנסה על שכר בפקיסטן על מדרגות חוק הכספים 2026 הנוכחיות לשנת המס 2026-27, עם טבלת 2025-26 כלולה. מס חודשי ושנתי.",
-  "id": "/loona-salary-calculators/he/pakistan-salary-tax-calculator/",
+  "id": "/he/pakistan-salary-tax-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

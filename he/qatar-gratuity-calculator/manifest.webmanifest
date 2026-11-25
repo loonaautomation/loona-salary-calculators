@@ -2,7 +2,7 @@
   "name": "מחשבון פיצויי סיום שירות של קטאר — סיום שירות (סעיף 54)",
   "short_name": "מחשבון פיצויי סיום שירות של קטאר — סיום שירות (סעיף 54)",
   "description": "חשבו מענק סיום שירות בקטר לפי סעיף 54 של חוק העבודה: לפחות 21 ימים משכר הבסיס בשנה, או שיעור החוזה הטוב יותר שלכם. חינם.",
-  "id": "/loona-salary-calculators/he/qatar-gratuity-calculator/",
+  "id": "/he/qatar-gratuity-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

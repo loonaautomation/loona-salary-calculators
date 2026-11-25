@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب كاليفورنيا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب كاليفورنيا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في كاليفورنيا في 2026؟ الضريبة الاتحادية + ضريبة دخل كاليفورنيا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/california-paycheck-calculator.html",
+  "id": "/ar/california-paycheck-calculator.html",
   "start_url": "./california-paycheck-calculator.html",
   "scope": "./california-paycheck-calculator.html",
   "display": "standalone",

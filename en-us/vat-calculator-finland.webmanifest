@@ -2,7 +2,7 @@
   "name": "Loona Finland VAT Calculator",
   "short_name": "Finland VAT Calculator",
   "description": "Free Finland VAT calculator: add or remove 25.5% VAT in seconds and reduced 13.5%/10%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-finland.html",
+  "id": "/en-us/vat-calculator-finland.html",
   "start_url": "./vat-calculator-finland.html",
   "scope": "./vat-calculator-finland.html",
   "display": "standalone",

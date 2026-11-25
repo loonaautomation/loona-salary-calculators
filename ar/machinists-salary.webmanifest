@@ -2,7 +2,7 @@
   "name": "رواتب مشغّلو الآلات 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب مشغّلو الآلات 2026",
   "description": "كم يكسب مشغّلو الآلات؟ متوسط الأجر $58,750 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/machinists-salary.html",
+  "id": "/ar/machinists-salary.html",
   "start_url": "./machinists-salary.html",
   "scope": "./machinists-salary.html",
   "display": "standalone",

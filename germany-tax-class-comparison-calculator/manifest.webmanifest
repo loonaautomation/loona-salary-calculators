@@ -2,7 +2,7 @@
   "name": "Loona Germany Tax Class Comparison",
   "short_name": "Germany Tax Class Comparison",
   "description": "Compare German net salary across all six tax classes (Steuerklassen I–VI) on the same gross, including the III/V versus IV/IV choice for couples. Free.",
-  "id": "/loona-salary-calculators/germany-tax-class-comparison-calculator/",
+  "id": "/germany-tax-class-comparison-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

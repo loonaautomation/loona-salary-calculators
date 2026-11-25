@@ -2,7 +2,7 @@
   "name": "מחשבון שכר נטו לסינגפור — CPF ומס הכנסה 2026",
   "short_name": "מחשבון שכר נטו לסינגפור — CPF ומס הכנסה 2026",
   "description": "חשבו את שכר הביתה שלכם בסינגפור ל-2026: תרומות CPF לפי גיל לאזרחים ותושבי קבע (20% עד תקרת השכר S$8,000), אף אחת לזרים, בתוספת מס הכנסה לתושב. בחינם.",
-  "id": "/loona-salary-calculators/he/singapore-salary-calculator.html",
+  "id": "/he/singapore-salary-calculator.html",
   "start_url": "./singapore-salary-calculator.html",
   "scope": "./singapore-salary-calculator.html",
   "display": "standalone",

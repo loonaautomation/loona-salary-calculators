@@ -2,7 +2,7 @@
   "name": "رواتب مديرو المبيعات 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب مديرو المبيعات 2026",
   "description": "كم يكسب مديرو المبيعات؟ متوسط الأجر $148,270 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/sales-managers-salary.html",
+  "id": "/ar/sales-managers-salary.html",
   "start_url": "./sales-managers-salary.html",
   "scope": "./sales-managers-salary.html",
   "display": "standalone",

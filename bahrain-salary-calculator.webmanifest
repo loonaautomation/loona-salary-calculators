@@ -2,7 +2,7 @@
   "name": "Loona Bahrain Net Salary Calculator",
   "short_name": "Bahrain Net Salary Calculator",
   "description": "Calculate your net salary in Bahrain: no income tax. Bahraini employees pay 8% SIO social insurance; expatriates pay only the 1% unemployment contribution. Free.",
-  "id": "/loona-salary-calculators/bahrain-salary-calculator.html",
+  "id": "/bahrain-salary-calculator.html",
   "start_url": "./bahrain-salary-calculator.html",
   "scope": "./bahrain-salary-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "Loona Professions — Median Salaries 2026",
   "short_name": "Professions — Median Salaries 2026",
   "description": "Median pay for 60 occupations in the United States (BLS OEWS May 2025) — from fast-food workers to family physicians — with the take-home pay after federal tax.",
-  "id": "/loona-salary-calculators/en-us/professions.html",
+  "id": "/en-us/professions.html",
   "start_url": "./professions.html",
   "scope": "./professions.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب ألاسكا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب ألاسكا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في ألاسكا في 2026؟ الضريبة الاتحادية + ضريبة دخل ألاسكا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/alaska-paycheck-calculator.html",
+  "id": "/ar/alaska-paycheck-calculator.html",
   "start_url": "./alaska-paycheck-calculator.html",
   "scope": "./alaska-paycheck-calculator.html",
   "display": "standalone",

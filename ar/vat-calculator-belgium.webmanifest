@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في بلجيكا (معدل 21%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في بلجيكا (معدل 21%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـبلجيكا: أضف أو أزل ضريبة 21% في ثوانٍ والمخفّضة 6%/12%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-belgium.html",
+  "id": "/ar/vat-calculator-belgium.html",
   "start_url": "./vat-calculator-belgium.html",
   "scope": "./vat-calculator-belgium.html",
   "display": "standalone",

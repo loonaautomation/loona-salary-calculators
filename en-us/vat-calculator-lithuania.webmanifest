@@ -2,7 +2,7 @@
   "name": "Loona Lithuania VAT Calculator",
   "short_name": "Lithuania VAT Calculator",
   "description": "Free Lithuania VAT calculator: add or remove 21% VAT in seconds and reduced 12%/5%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-lithuania.html",
+  "id": "/en-us/vat-calculator-lithuania.html",
   "start_url": "./vat-calculator-lithuania.html",
   "scope": "./vat-calculator-lithuania.html",
   "display": "standalone",

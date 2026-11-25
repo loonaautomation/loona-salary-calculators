@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب ميشيغان 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب ميشيغان 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في ميشيغان في 2026؟ الضريبة الاتحادية + ضريبة دخل ميشيغان والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/michigan-paycheck-calculator.html",
+  "id": "/ar/michigan-paycheck-calculator.html",
   "start_url": "./michigan-paycheck-calculator.html",
   "scope": "./michigan-paycheck-calculator.html",
   "display": "standalone",

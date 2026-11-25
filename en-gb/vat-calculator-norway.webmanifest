@@ -2,7 +2,7 @@
   "name": "Loona Norway VAT Calculator",
   "short_name": "Norway VAT Calculator",
   "description": "Free Norway VAT calculator: add or remove 25% VAT in seconds and reduced 15%/12%, full formula and worked examples in NOK. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-gb/vat-calculator-norway.html",
+  "id": "/en-gb/vat-calculator-norway.html",
   "start_url": "./vat-calculator-norway.html",
   "scope": "./vat-calculator-norway.html",
   "display": "standalone",

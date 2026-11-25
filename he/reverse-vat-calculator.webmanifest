@@ -2,7 +2,7 @@
   "name": "מחשבון VAT הפוך — הסרת VAT מכל מחיר אירופי",
   "short_name": "מחשבון VAT הפוך — הסרת VAT מכל מחיר אירופי",
   "description": "מחשבון VAT הפוך חינמי ל-30 מדינות אירופה: הזינו מחיר כולל VAT ופצלו אותו באופן מיידי לסכום נטו ול-VAT. שיעורים מאומתים, פרטי.",
-  "id": "/loona-salary-calculators/he/reverse-vat-calculator.html",
+  "id": "/he/reverse-vat-calculator.html",
   "start_url": "./reverse-vat-calculator.html",
   "scope": "./reverse-vat-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة راتب باكستان — شرائح قانون المالية 2026 (سنة الضريبة 2026-27)",
   "short_name": "حاسبة ضريبة راتب باكستان",
   "description": "احسب ضريبة دخل الراتب في باكستان على شرائح قانون المالية 2026 الحالية لسنة الضريبة 2026-27، مع تضمين جدول 2025-26. ضريبة شهرية وسنوية.",
-  "id": "/loona-salary-calculators/ar/pakistan-salary-tax-calculator/",
+  "id": "/ar/pakistan-salary-tax-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

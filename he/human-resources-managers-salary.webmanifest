@@ -2,7 +2,7 @@
   "name": "משכורת מנהלי משאבי אנוש 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מנהלי משאבי אנוש 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מנהלי משאבי אנוש? שכר חציוני $149,280 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/human-resources-managers-salary.html",
+  "id": "/he/human-resources-managers-salary.html",
   "start_url": "./human-resources-managers-salary.html",
   "scope": "./human-resources-managers-salary.html",
   "display": "standalone",

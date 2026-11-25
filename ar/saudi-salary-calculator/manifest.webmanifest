@@ -2,7 +2,7 @@
   "name": "حاسبة راتب السعودية — صافي أجر GOSI للسعوديين والمغتربين",
   "short_name": "حاسبة راتب السعودية",
   "description": "احسب صافي أجر السعودية مع GOSI: خصم 0% للمغتربين، 9.75% أو معدل النظام الجديد للموظفين السعوديين، على الأساسي بالإضافة إلى السكن حتى SAR 45,000. مجاني.",
-  "id": "/loona-salary-calculators/ar/saudi-salary-calculator/",
+  "id": "/ar/saudi-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

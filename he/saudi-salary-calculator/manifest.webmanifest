@@ -2,7 +2,7 @@
   "name": "מחשבון שכר סעודי — שכר נטו GOSI לסעודים ולגולים",
   "short_name": "מחשבון שכר סעודי — שכר נטו GOSI לסעודים ולגולים",
   "description": "חשבו שכר נטו סעודי עם GOSI: ניכוי של 0% לגולים, 9.75% או שיעור המערכת החדשה לעובדים סעודים, על בסיס בתוספת דיור עד SAR 45,000. חינם.",
-  "id": "/loona-salary-calculators/he/saudi-salary-calculator/",
+  "id": "/he/saudi-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "Loona Sales Managers Salary 2026",
   "short_name": "Sales Managers Salary 2026",
   "description": "How much does a sales managers make? Median pay $148,270 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/sales-managers-salary.html",
+  "id": "/sales-managers-salary.html",
   "start_url": "./sales-managers-salary.html",
   "scope": "./sales-managers-salary.html",
   "display": "standalone",

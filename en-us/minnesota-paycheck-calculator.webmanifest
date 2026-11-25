@@ -2,7 +2,7 @@
   "name": "Loona Minnesota Paycheck Calculator 2026",
   "short_name": "Minnesota Paycheck Calculator 2026",
   "description": "What is a salary worth after tax in Minnesota in 2026? Federal + Minnesota income tax, Social Security and Medicare — free paycheck calculator with the 2026 tables.",
-  "id": "/loona-salary-calculators/en-us/minnesota-paycheck-calculator.html",
+  "id": "/en-us/minnesota-paycheck-calculator.html",
   "start_url": "./minnesota-paycheck-calculator.html",
   "scope": "./minnesota-paycheck-calculator.html",
   "display": "standalone",

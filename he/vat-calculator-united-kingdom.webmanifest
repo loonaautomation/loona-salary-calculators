@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של הממלכה המאוחדת (שיעור 20%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של הממלכה המאוחדת (שיעור 20%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון VAT חינמי לממלכה המאוחדת — הוסיפו או הסירו 20% VAT באופן מיידי ומופחת 5%/0%. נוסחה, דוגמאות מחושבות ומדריך שיעורים ב-GBP. ללא צורך בהרשמה.",
-  "id": "/loona-salary-calculators/he/vat-calculator-united-kingdom.html",
+  "id": "/he/vat-calculator-united-kingdom.html",
   "start_url": "./vat-calculator-united-kingdom.html",
   "scope": "./vat-calculator-united-kingdom.html",
   "display": "standalone",

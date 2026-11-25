@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في إسبانيا (معدل 21%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في إسبانيا (معدل 21%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـإسبانيا: أضف أو أزل ضريبة 21% في ثوانٍ والمخفّضة 10%/4%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-spain.html",
+  "id": "/ar/vat-calculator-spain.html",
   "start_url": "./vat-calculator-spain.html",
   "scope": "./vat-calculator-spain.html",
   "display": "standalone",

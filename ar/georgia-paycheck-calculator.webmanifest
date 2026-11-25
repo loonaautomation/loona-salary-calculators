@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب جورجيا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب جورجيا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في جورجيا في 2026؟ الضريبة الاتحادية + ضريبة دخل جورجيا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/georgia-paycheck-calculator.html",
+  "id": "/ar/georgia-paycheck-calculator.html",
   "start_url": "./georgia-paycheck-calculator.html",
   "scope": "./georgia-paycheck-calculator.html",
   "display": "standalone",

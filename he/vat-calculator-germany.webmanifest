@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של גרמניה (שיעור 19%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של גרמניה (שיעור 19%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של גרמניה: הוסיפו או הסירו 19% מע\"מ בתוך שניות ו-7% מופחת, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-germany.html",
+  "id": "/he/vat-calculator-germany.html",
   "start_url": "./vat-calculator-germany.html",
   "scope": "./vat-calculator-germany.html",
   "display": "standalone",

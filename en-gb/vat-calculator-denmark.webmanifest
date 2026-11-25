@@ -2,7 +2,7 @@
   "name": "Loona Denmark VAT Calculator",
   "short_name": "Denmark VAT Calculator",
   "description": "Free Denmark VAT calculator: add or remove 25% VAT in seconds with no reduced rate, full formula and worked examples in DKK. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-gb/vat-calculator-denmark.html",
+  "id": "/en-gb/vat-calculator-denmark.html",
   "start_url": "./vat-calculator-denmark.html",
   "scope": "./vat-calculator-denmark.html",
   "display": "standalone",

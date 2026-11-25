@@ -2,7 +2,7 @@
   "name": "משכורת אחיות מוסמכות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת אחיות מוסמכות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח אחיות מוסמכות? שכר חציוני $97,550 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/registered-nurses-salary.html",
+  "id": "/he/registered-nurses-salary.html",
   "start_url": "./registered-nurses-salary.html",
   "scope": "./registered-nurses-salary.html",
   "display": "standalone",

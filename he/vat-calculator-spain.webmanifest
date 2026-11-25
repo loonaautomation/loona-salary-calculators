@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של ספרד (שיעור 21%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של ספרד (שיעור 21%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של ספרד: הוסיפו או הסירו 21% מע\"מ בתוך שניות ומופחת 10%/4%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-spain.html",
+  "id": "/he/vat-calculator-spain.html",
   "start_url": "./vat-calculator-spain.html",
   "scope": "./vat-calculator-spain.html",
   "display": "standalone",

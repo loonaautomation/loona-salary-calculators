@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في الدنمارك (معدل 25%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في الدنمارك (معدل 25%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية في الدنمارك: أضف أو أزل ضريبة قيمة مضافة 25% في ثوانٍ دون معدل مخفّض، الصيغة الكاملة وأمثلة محسوبة بـ DKK. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-denmark.html",
+  "id": "/ar/vat-calculator-denmark.html",
   "start_url": "./vat-calculator-denmark.html",
   "scope": "./vat-calculator-denmark.html",
   "display": "standalone",

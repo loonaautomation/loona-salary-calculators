@@ -2,7 +2,7 @@
   "name": "حاسبة راتب هولندا — صافي الراتب 2026 مع قرار 30%",
   "short_name": "حاسبة راتب هولندا",
   "description": "حاسبة إجمالي إلى صافي هولندية لعام 2026: ضريبة Box 1، ائتمانات ضريبية عامة وعمل، بدل إجازة 8% وقرار 30% مع معيار راتبه.",
-  "id": "/loona-salary-calculators/ar/netherlands-salary-calculator/",
+  "id": "/ar/netherlands-salary-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

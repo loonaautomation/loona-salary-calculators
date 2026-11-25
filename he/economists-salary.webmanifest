@@ -2,7 +2,7 @@
   "name": "משכורת כלכלנים 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת כלכלנים 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח כלכלנים? שכר חציוני $124,720 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/economists-salary.html",
+  "id": "/he/economists-salary.html",
   "start_url": "./economists-salary.html",
   "scope": "./economists-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب كولورادو 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب كولورادو 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في كولورادو في 2026؟ الضريبة الاتحادية + ضريبة دخل كولورادو والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/colorado-paycheck-calculator.html",
+  "id": "/ar/colorado-paycheck-calculator.html",
   "start_url": "./colorado-paycheck-calculator.html",
   "scope": "./colorado-paycheck-calculator.html",
   "display": "standalone",

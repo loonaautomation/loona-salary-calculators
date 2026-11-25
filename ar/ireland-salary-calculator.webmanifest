@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في أيرلندا — PAYE وUSC وPRSI ‏2026",
   "short_name": "حاسبة صافي الراتب في أيرلندا",
   "description": "احسب أجرك الصافي المستلم في أيرلندا لعام 2026: PAYE بنسبة 20%/40% مع ائتمانات ضريبية €4,000، وUSC بنطاقات 2026 وPRSI بنسبة 4.2%. شخص وحيد، ائتمانات قياسية. مجاني.",
-  "id": "/loona-salary-calculators/ar/ireland-salary-calculator.html",
+  "id": "/ar/ireland-salary-calculator.html",
   "start_url": "./ireland-salary-calculator.html",
   "scope": "./ireland-salary-calculator.html",
   "display": "standalone",

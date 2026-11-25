@@ -2,7 +2,7 @@
   "name": "رواتب النجارون 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب النجارون 2026",
   "description": "كم يكسب النجارون؟ متوسط الأجر $60,580 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/carpenters-salary.html",
+  "id": "/ar/carpenters-salary.html",
   "start_url": "./carpenters-salary.html",
   "scope": "./carpenters-salary.html",
   "display": "standalone",

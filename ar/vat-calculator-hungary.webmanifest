@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في المجر (معدل 27%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في المجر (معدل 27%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية في المجر: أضف أو أزل ضريبة قيمة مضافة 27% في ثوانٍ والمخفّضة 18%/5%، الصيغة الكاملة وأمثلة محسوبة بـ HUF. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-hungary.html",
+  "id": "/ar/vat-calculator-hungary.html",
   "start_url": "./vat-calculator-hungary.html",
   "scope": "./vat-calculator-hungary.html",
   "display": "standalone",

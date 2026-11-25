@@ -2,7 +2,7 @@
   "name": "Loona Latvia VAT Calculator",
   "short_name": "Latvia VAT Calculator",
   "description": "Free Latvia VAT calculator: add or remove 21% VAT in seconds and reduced 12%/5%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-latvia.html",
+  "id": "/en-us/vat-calculator-latvia.html",
   "start_url": "./vat-calculator-latvia.html",
   "scope": "./vat-calculator-latvia.html",
   "display": "standalone",

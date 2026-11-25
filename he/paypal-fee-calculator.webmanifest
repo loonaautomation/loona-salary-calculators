@@ -2,7 +2,7 @@
   "name": "מחשבון עמלות PayPal — עמלות וכמה לבקש",
   "short_name": "מחשבון עמלות PayPal — עמלות וכמה לבקש",
   "description": "מחשבון עמלות PayPal חינמי בשיעור המסחרי הסטנדרטי בארה\"ב של 2.99% + $0.49: ראו את העמלה על תשלום, מה אתם מקבלים בפועל, וכמה לבקש כדי לקבל סכום מדויק. שיעורים ניתנים לעריכה, אומתו בנובמבר 2026.",
-  "id": "/loona-salary-calculators/he/paypal-fee-calculator.html",
+  "id": "/he/paypal-fee-calculator.html",
   "start_url": "./paypal-fee-calculator.html",
   "scope": "./paypal-fee-calculator.html",
   "display": "standalone",

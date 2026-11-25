@@ -2,7 +2,7 @@
   "name": "Loona Netherlands Holiday Allowance Calculator",
   "short_name": "Netherlands Holiday Allowance Calculator",
   "description": "Calculate your Netherlands holiday allowance (vakantiegeld): the statutory 8% of gross salary, and the tax you will actually pay on it in May. Free to use.",
-  "id": "/loona-salary-calculators/en-us/netherlands-holiday-allowance-calculator/",
+  "id": "/en-us/netherlands-holiday-allowance-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

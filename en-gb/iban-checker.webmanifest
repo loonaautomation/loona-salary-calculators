@@ -2,7 +2,7 @@
   "name": "Loona IBAN Checker",
   "short_name": "IBAN Checker",
   "description": "Free IBAN checker: validate any European IBAN instantly with the real mod-97 checksum, country length check and grouped formatting. No sign-up, private.",
-  "id": "/loona-salary-calculators/en-gb/iban-checker.html",
+  "id": "/en-gb/iban-checker.html",
   "start_url": "./iban-checker.html",
   "scope": "./iban-checker.html",
   "display": "standalone",

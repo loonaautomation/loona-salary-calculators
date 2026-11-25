@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת של שוודיה 2026 – שכר נטו אחרי מס | Loona Salary",
   "short_name": "מחשבון משכורת של שוודיה 2026 – שכר נטו אחרי מס",
   "description": "כמה שווה משכורת של kr480,000 אחרי מס ב-שוודיה ב-2026? מס הכנסה והפרשות סוציאליות, מחושבים לפי טבלת 2026 — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/sweden-salary-calculator.html",
+  "id": "/he/sweden-salary-calculator.html",
   "start_url": "./sweden-salary-calculator.html",
   "scope": "./sweden-salary-calculator.html",
   "display": "standalone",

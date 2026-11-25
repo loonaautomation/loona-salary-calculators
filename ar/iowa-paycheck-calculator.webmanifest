@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب آيوا 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب آيوا 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في آيوا في 2026؟ الضريبة الاتحادية + ضريبة دخل آيوا والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/iowa-paycheck-calculator.html",
+  "id": "/ar/iowa-paycheck-calculator.html",
   "start_url": "./iowa-paycheck-calculator.html",
   "scope": "./iowa-paycheck-calculator.html",
   "display": "standalone",

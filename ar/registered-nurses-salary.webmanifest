@@ -2,7 +2,7 @@
   "name": "رواتب الممرضون المسجلون 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب الممرضون المسجلون 2026",
   "description": "كم يكسب الممرضون المسجلون؟ متوسط الأجر $97,550 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/registered-nurses-salary.html",
+  "id": "/ar/registered-nurses-salary.html",
   "start_url": "./registered-nurses-salary.html",
   "scope": "./registered-nurses-salary.html",
   "display": "standalone",

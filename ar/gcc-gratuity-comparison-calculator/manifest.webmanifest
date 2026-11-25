@@ -2,7 +2,7 @@
   "name": "حاسبة مقارنة مكافأة دول الخليج — دول الخليج الست كلها",
   "short_name": "حاسبة مقارنة مكافأة دول الخليج",
   "description": "قارن مكافأة نهاية الخدمة عبر دول الخليج الست كلها — الإمارات، السعودية، قطر، الكويت، عُمان والبحرين — لراتب واحد وفترة خدمة واحدة. مجاني.",
-  "id": "/loona-salary-calculators/ar/gcc-gratuity-comparison-calculator/",
+  "id": "/ar/gcc-gratuity-comparison-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

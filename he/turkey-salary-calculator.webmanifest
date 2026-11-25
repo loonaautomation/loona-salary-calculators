@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת של טורקיה 2026 – שכר נטו אחרי מס | Loona Salary",
   "short_name": "מחשבון משכורת של טורקיה 2026 – שכר נטו אחרי מס",
   "description": "כמה שווה שכר של ₺600,000 לאחר מס בטורקיה ב-2026? מס הכנסה ותרומות חברתיות, מחושב לפי טבלת 2026 — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/turkey-salary-calculator.html",
+  "id": "/he/turkey-salary-calculator.html",
   "start_url": "./turkey-salary-calculator.html",
   "scope": "./turkey-salary-calculator.html",
   "display": "standalone",

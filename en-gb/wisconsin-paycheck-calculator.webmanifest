@@ -2,7 +2,7 @@
   "name": "Loona Wisconsin Paycheck Calculator 2026",
   "short_name": "Wisconsin Paycheck Calculator 2026",
   "description": "What is a salary worth after tax in Wisconsin in 2026? Federal + Wisconsin income tax, Social Security and Medicare — free paycheck calculator with the 2026 tables.",
-  "id": "/loona-salary-calculators/en-gb/wisconsin-paycheck-calculator.html",
+  "id": "/en-gb/wisconsin-paycheck-calculator.html",
   "start_url": "./wisconsin-paycheck-calculator.html",
   "scope": "./wisconsin-paycheck-calculator.html",
   "display": "standalone",

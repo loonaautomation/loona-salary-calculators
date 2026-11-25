@@ -2,7 +2,7 @@
   "name": "Loona Pharmacists Salary 2026",
   "short_name": "Pharmacists Salary 2026",
   "description": "How much does a pharmacists make? Median pay $140,910 a year (BLS May 2025) and the take-home pay after federal tax — free calculator.",
-  "id": "/loona-salary-calculators/pharmacists-salary.html",
+  "id": "/pharmacists-salary.html",
   "start_url": "./pharmacists-salary.html",
   "scope": "./pharmacists-salary.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة السلع والخدمات (GST) في أستراليا (معدل 10%) — إضافة أو إزالة GST | Loona",
   "short_name": "حاسبة ضريبة السلع والخدمات (GST) في أستراليا (معدل 10%)",
   "description": "حاسبة GST مجانية في أستراليا: أضف أو أزل GST ‏10% في ثوانٍ، مع الصيغة الكاملة وأمثلة محسوبة بـ AUD. بلا تسجيل، يعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/gst-calculator-australia.html",
+  "id": "/ar/gst-calculator-australia.html",
   "start_url": "./gst-calculator-australia.html",
   "scope": "./gst-calculator-australia.html",
   "display": "standalone",

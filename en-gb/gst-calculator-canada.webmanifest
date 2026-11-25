@@ -2,7 +2,7 @@
   "name": "Loona Canada GST/HST Calculator",
   "short_name": "Canada GST/HST Calculator",
   "description": "Free Canada GST/HST calculator: 5% GST plus provincial HST, PST, RST or QST by province. Add or remove tax with the full formula and worked examples in CAD.",
-  "id": "/loona-salary-calculators/en-gb/gst-calculator-canada.html",
+  "id": "/en-gb/gst-calculator-canada.html",
   "start_url": "./gst-calculator-canada.html",
   "scope": "./gst-calculator-canada.html",
   "display": "standalone",

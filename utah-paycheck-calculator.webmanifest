@@ -2,7 +2,7 @@
   "name": "Loona Utah Paycheck Calculator 2026",
   "short_name": "Utah Paycheck Calculator 2026",
   "description": "What is a salary worth after tax in Utah in 2026? Federal + Utah income tax, Social Security and Medicare — free paycheck calculator with the 2026 tables.",
-  "id": "/loona-salary-calculators/utah-paycheck-calculator.html",
+  "id": "/utah-paycheck-calculator.html",
   "start_url": "./utah-paycheck-calculator.html",
   "scope": "./utah-paycheck-calculator.html",
   "display": "standalone",

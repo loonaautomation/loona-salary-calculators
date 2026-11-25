@@ -1,8 +1,8 @@
 {
   "name": "Loona — حاسبات الرواتب والضرائب",
   "short_name": "Loona Salary",
-  "start_url": "https://loonaautomation.github.io/loona-salary-calculators/ar/",
-  "scope": "https://loonaautomation.github.io/loona-salary-calculators/ar/",
+  "start_url": "https://salary.loonaautomation.com/ar/",
+  "scope": "https://salary.loonaautomation.com/ar/",
   "display": "standalone",
   "theme_color": "#07332f",
   "background_color": "#f6f3ea",

@@ -2,7 +2,7 @@
   "name": "مقارنة فئات ضريبة ألمانيا — صافي راتب Steuerklassen I–VI",
   "short_name": "مقارنة فئات ضريبة ألمانيا",
   "description": "قارن صافي الراتب الألماني عبر فئات الضريبة الست كلها (Steuerklassen I–VI) على الإجمالي نفسه، تشمل اختيار III/V مقابل IV/IV للأزواج. مجاني.",
-  "id": "/loona-salary-calculators/ar/germany-tax-class-comparison-calculator/",
+  "id": "/ar/germany-tax-class-comparison-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

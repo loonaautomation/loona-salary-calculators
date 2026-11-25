@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת נטו של קטאר — ללא מס הכנסה 2026",
   "short_name": "מחשבון משכורת נטו של קטאר — ללא מס הכנסה 2026",
   "description": "חשבו את שכר הנטו שלכם בקטאר: אין מס הכנסה אישי, כך ששכר הנטו של גולה שווה לשכר הברוטו. אזרחי קטאר משלמים 7% ביטוח לאומי GRSIA. בחינם.",
-  "id": "/loona-salary-calculators/he/qatar-salary-calculator.html",
+  "id": "/he/qatar-salary-calculator.html",
   "start_url": "./qatar-salary-calculator.html",
   "scope": "./qatar-salary-calculator.html",
   "display": "standalone",

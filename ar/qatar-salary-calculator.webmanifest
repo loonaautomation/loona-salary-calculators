@@ -2,7 +2,7 @@
   "name": "حاسبة صافي الراتب في قطر — بدون ضريبة دخل 2026",
   "short_name": "حاسبة صافي الراتب في قطر",
   "description": "احسب راتبك الصافي في قطر: لا توجد ضريبة دخل شخصية، لذا صافي أجر المغترب يساوي الأجر الإجمالي. يدفع المواطنون القطريون تأمين GRSIA اجتماعي 7%. مجاني.",
-  "id": "/loona-salary-calculators/ar/qatar-salary-calculator.html",
+  "id": "/ar/qatar-salary-calculator.html",
   "start_url": "./qatar-salary-calculator.html",
   "scope": "./qatar-salary-calculator.html",
   "display": "standalone",

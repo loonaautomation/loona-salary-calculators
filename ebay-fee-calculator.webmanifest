@@ -2,7 +2,7 @@
   "name": "Loona eBay Fee Calculator",
   "short_name": "eBay Fee Calculator",
   "description": "Free eBay fee calculator: 13.6% final value fee plus the $0.30/$0.40 per-order fee, the below-standard surcharge, and your profit after costs. Editable rates; US defaults verified November 2026.",
-  "id": "/loona-salary-calculators/ebay-fee-calculator.html",
+  "id": "/ebay-fee-calculator.html",
   "start_url": "./ebay-fee-calculator.html",
   "scope": "./ebay-fee-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب نيويورك 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب نيويورك 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في نيويورك في 2026؟ الضريبة الاتحادية + ضريبة دخل نيويورك والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/new-york-paycheck-calculator.html",
+  "id": "/ar/new-york-paycheck-calculator.html",
   "start_url": "./new-york-paycheck-calculator.html",
   "scope": "./new-york-paycheck-calculator.html",
   "display": "standalone",

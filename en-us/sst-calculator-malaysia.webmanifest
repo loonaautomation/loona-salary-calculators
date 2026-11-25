@@ -2,7 +2,7 @@
   "name": "Loona Malaysia SST Calculator",
   "short_name": "Malaysia SST Calculator",
   "description": "Free Malaysia SST calculator: add or remove service tax at 8% (or 6% for kept categories) and sales tax at 10% or 5%, with the SST system explained and worked examples in MYR.",
-  "id": "/loona-salary-calculators/en-us/sst-calculator-malaysia.html",
+  "id": "/en-us/sst-calculator-malaysia.html",
   "start_url": "./sst-calculator-malaysia.html",
   "scope": "./sst-calculator-malaysia.html",
   "display": "standalone",

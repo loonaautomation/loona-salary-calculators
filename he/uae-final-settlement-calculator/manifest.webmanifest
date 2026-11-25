@@ -2,7 +2,7 @@
   "name": "מחשבון הסדר סופי באיחוד האמירויות — מענק + תשלום חופשה + תשלום הודעה",
   "short_name": "מחשבון הסדר סופי באיחוד האמירויות — מענק + תשלום חופשה + תשלום הודעה",
   "description": "חשבו את ההסדר הסופי המלא שלכם באיחוד האמירויות במקום אחד: מענק סעיף 51 בתוספת תשלום חופשה שנתית שלא נוצלה ופיצוי תקופת הודעה, מפורטים. חינם.",
-  "id": "/loona-salary-calculators/he/uae-final-settlement-calculator/",
+  "id": "/he/uae-final-settlement-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

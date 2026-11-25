@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في كرواتيا (معدل 25%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في كرواتيا (معدل 25%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـكرواتيا: أضف أو أزل ضريبة 25% في ثوانٍ والمخفّضة 13%/5%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-croatia.html",
+  "id": "/ar/vat-calculator-croatia.html",
   "start_url": "./vat-calculator-croatia.html",
   "scope": "./vat-calculator-croatia.html",
   "display": "standalone",

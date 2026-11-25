@@ -2,7 +2,7 @@
   "name": "משכורת מוכרים קמעונאיים 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מוכרים קמעונאיים 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מוכרים קמעונאיים? שכר חציוני $35,410 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/retail-salespersons-salary.html",
+  "id": "/he/retail-salespersons-salary.html",
   "start_url": "./retail-salespersons-salary.html",
   "scope": "./retail-salespersons-salary.html",
   "display": "standalone",

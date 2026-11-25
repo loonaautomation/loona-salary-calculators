@@ -2,7 +2,7 @@
   "name": "משכורת מנהלי מכירות 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מנהלי מכירות 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מנהלי מכירות? שכר חציוני $148,270 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/sales-managers-salary.html",
+  "id": "/he/sales-managers-salary.html",
   "start_url": "./sales-managers-salary.html",
   "scope": "./sales-managers-salary.html",
   "display": "standalone",

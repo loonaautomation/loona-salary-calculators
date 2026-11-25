@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب ميزوري 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب ميزوري 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في ميزوري في 2026؟ الضريبة الاتحادية + ضريبة دخل ميزوري والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/missouri-paycheck-calculator.html",
+  "id": "/ar/missouri-paycheck-calculator.html",
   "start_url": "./missouri-paycheck-calculator.html",
   "scope": "./missouri-paycheck-calculator.html",
   "display": "standalone",

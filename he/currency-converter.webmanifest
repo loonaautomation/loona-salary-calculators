@@ -2,7 +2,7 @@
   "name": "ממיר מטבעות — שערי ייחוס של ה-ECB ל-30 מטבעות",
   "short_name": "ממיר מטבעות — שערי ייחוס של ה-ECB ל-30 מטבעות",
   "description": "ממיר מטבעות חינמי לפי שערי ייחוס של הבנק המרכזי האירופי מתאריך 6 בנובמבר 2026: המירו בין 30 מטבעות ועיינו בטבלת הייחוס המלאה של האירו. שערים מתוארכים וכנים — לציון בלבד.",
-  "id": "/loona-salary-calculators/he/currency-converter.html",
+  "id": "/he/currency-converter.html",
   "start_url": "./currency-converter.html",
   "scope": "./currency-converter.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון מס מכירות לפקיסטן (שיעור 18%) — הוספה או הסרה של מס מכירות | Loona",
   "short_name": "מחשבון מס מכירות לפקיסטן (שיעור 18%) — הוספה או הסרה של מס מכירות",
   "description": "מחשבון מס מכירות לפקיסטן חינמי: הוסיפו או הסירו מס מכירות ב-18% תוך שניות, עם הנוסחה המלאה ודוגמאות מחושבות ב-PKR. ללא הרשמה, פועל על המכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-pakistan.html",
+  "id": "/he/vat-calculator-pakistan.html",
   "start_url": "./vat-calculator-pakistan.html",
   "scope": "./vat-calculator-pakistan.html",
   "display": "standalone",

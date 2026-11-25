@@ -2,7 +2,7 @@
   "name": "رواتب ممثلو خدمة العملاء 2026 – متوسط الأجر &amp; الأجر الصافي المستلم | Loona Salary",
   "short_name": "رواتب ممثلو خدمة العملاء 2026",
   "description": "كم يكسب ممثلو خدمة العملاء؟ متوسط الأجر $44,770 سنويًا (BLS مايو 2025) والأجر الصافي المستلم بعد الضريبة الاتحادية — حاسبة مجانية.",
-  "id": "/loona-salary-calculators/ar/customer-service-representatives-salary.html",
+  "id": "/ar/customer-service-representatives-salary.html",
   "start_url": "./customer-service-representatives-salary.html",
   "scope": "./customer-service-representatives-salary.html",
   "display": "standalone",

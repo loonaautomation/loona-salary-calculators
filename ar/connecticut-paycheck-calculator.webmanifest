@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب كونيتيكت 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب كونيتيكت 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في كونيتيكت في 2026؟ الضريبة الاتحادية + ضريبة دخل كونيتيكت والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/connecticut-paycheck-calculator.html",
+  "id": "/ar/connecticut-paycheck-calculator.html",
   "start_url": "./connecticut-paycheck-calculator.html",
   "scope": "./connecticut-paycheck-calculator.html",
   "display": "standalone",

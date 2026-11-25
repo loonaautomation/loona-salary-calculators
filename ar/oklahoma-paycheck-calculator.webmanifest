@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب أوكلاهوما 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب أوكلاهوما 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في أوكلاهوما في 2026؟ الضريبة الاتحادية + ضريبة دخل أوكلاهوما والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/oklahoma-paycheck-calculator.html",
+  "id": "/ar/oklahoma-paycheck-calculator.html",
   "start_url": "./oklahoma-paycheck-calculator.html",
   "scope": "./oklahoma-paycheck-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة ضريبة القيمة المضافة في سلوفاكيا (معدل 23%) — إضافة أو إزالة ضريبة القيمة المضافة | Loona",
   "short_name": "حاسبة ضريبة القيمة المضافة في سلوفاكيا (معدل 23%)",
   "description": "حاسبة ضريبة قيمة مضافة مجانية لـسلوفاكيا: أضف أو أزل ضريبة 23% في ثوانٍ والمخفّضة 19%/5%، مع الصيغة الكاملة وأمثلة محلولة باليورو (EUR). بدون تسجيل، وتعمل على جهازك.",
-  "id": "/loona-salary-calculators/ar/vat-calculator-slovakia.html",
+  "id": "/ar/vat-calculator-slovakia.html",
   "start_url": "./vat-calculator-slovakia.html",
   "scope": "./vat-calculator-slovakia.html",
   "display": "standalone",

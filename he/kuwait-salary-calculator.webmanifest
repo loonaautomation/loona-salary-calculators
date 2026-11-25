@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת נטו של כווית — ללא מס הכנסה 2026",
   "short_name": "מחשבון משכורת נטו של כווית — ללא מס הכנסה 2026",
   "description": "חשבו את שכר הנטו שלכם בכווית: אין מס הכנסה לעובדים. אזרחי כווית משלמים ביטוח לאומי PIFSS (נתח עובד 10.5%); גולים שומרים על 100% מהברוטו. בחינם.",
-  "id": "/loona-salary-calculators/he/kuwait-salary-calculator.html",
+  "id": "/he/kuwait-salary-calculator.html",
   "start_url": "./kuwait-salary-calculator.html",
   "scope": "./kuwait-salary-calculator.html",
   "display": "standalone",

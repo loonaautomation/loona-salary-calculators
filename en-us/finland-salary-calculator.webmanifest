@@ -2,7 +2,7 @@
   "name": "Loona Finland Salary Calculator 2026",
   "short_name": "Finland Salary Calculator 2026",
   "description": "What is a €48,000.00 salary worth after tax in Finland in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
-  "id": "/loona-salary-calculators/en-us/finland-salary-calculator.html",
+  "id": "/en-us/finland-salary-calculator.html",
   "start_url": "./finland-salary-calculator.html",
   "scope": "./finland-salary-calculator.html",
   "display": "standalone",

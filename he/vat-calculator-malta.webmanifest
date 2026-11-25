@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של מלטה (שיעור 18%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של מלטה (שיעור 18%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של מלטה: הוסיפו או הסירו 18% מע\"מ בתוך שניות ומופחת 7%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-malta.html",
+  "id": "/he/vat-calculator-malta.html",
   "start_url": "./vat-calculator-malta.html",
   "scope": "./vat-calculator-malta.html",
   "display": "standalone",

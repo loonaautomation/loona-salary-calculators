@@ -2,7 +2,7 @@
   "name": "Loona Kuwait Indemnity Calculator",
   "short_name": "Kuwait Indemnity Calculator",
   "description": "Calculate Kuwait end-of-service indemnity under Articles 51 and 53 of Labour Law 6/2010: 15 days per year for 5 years, one month after, with the cap. Free.",
-  "id": "/loona-salary-calculators/kuwait-indemnity-calculator/",
+  "id": "/kuwait-indemnity-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

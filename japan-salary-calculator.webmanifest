@@ -2,7 +2,7 @@
   "name": "Loona Japan Salary Calculator 2026",
   "short_name": "Japan Salary Calculator 2026",
   "description": "What is a ¥5,000,000 salary worth after tax in Japan in 2026? Income tax and social contributions, worked out on the 2026 table — free calculator.",
-  "id": "/loona-salary-calculators/japan-salary-calculator.html",
+  "id": "/japan-salary-calculator.html",
   "start_url": "./japan-salary-calculator.html",
   "scope": "./japan-salary-calculator.html",
   "display": "standalone",

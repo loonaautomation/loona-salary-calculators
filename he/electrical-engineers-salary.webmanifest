@@ -2,7 +2,7 @@
   "name": "משכורת מהנדסי חשמל 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מהנדסי חשמל 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מהנדסי חשמל? שכר חציוני $120,630 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/electrical-engineers-salary.html",
+  "id": "/he/electrical-engineers-salary.html",
   "start_url": "./electrical-engineers-salary.html",
   "scope": "./electrical-engineers-salary.html",
   "display": "standalone",

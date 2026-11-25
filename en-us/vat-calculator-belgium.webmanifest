@@ -2,7 +2,7 @@
   "name": "Loona Belgium VAT Calculator",
   "short_name": "Belgium VAT Calculator",
   "description": "Free Belgium VAT calculator: add or remove 21% VAT in seconds and reduced 6%/12%, full formula and worked examples in EUR. No sign-up, runs on your device.",
-  "id": "/loona-salary-calculators/en-us/vat-calculator-belgium.html",
+  "id": "/en-us/vat-calculator-belgium.html",
   "start_url": "./vat-calculator-belgium.html",
   "scope": "./vat-calculator-belgium.html",
   "display": "standalone",

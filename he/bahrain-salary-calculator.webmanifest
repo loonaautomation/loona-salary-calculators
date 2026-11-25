@@ -2,7 +2,7 @@
   "name": "מחשבון משכורת נטו של בחריין — ללא מס הכנסה 2026",
   "short_name": "מחשבון משכורת נטו של בחריין — ללא מס הכנסה 2026",
   "description": "חשבו את שכר הנטו שלכם בבחריין: אין מס הכנסה. עובדים בחריינים משלמים 8% ביטוח לאומי SIO; גולים משלמים רק את תרומת האבטלה של 1%. בחינם.",
-  "id": "/loona-salary-calculators/he/bahrain-salary-calculator.html",
+  "id": "/he/bahrain-salary-calculator.html",
   "start_url": "./bahrain-salary-calculator.html",
   "scope": "./bahrain-salary-calculator.html",
   "display": "standalone",

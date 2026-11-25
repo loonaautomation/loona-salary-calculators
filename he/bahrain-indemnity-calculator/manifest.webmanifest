@@ -2,7 +2,7 @@
   "name": "מחשבון פיצוי בחריין — פיצוי עזיבה (סעיף 116)",
   "short_name": "מחשבון פיצוי בחריין — פיצוי עזיבה (סעיף 116)",
   "description": "חשבו פיצוי עזיבה בבחריין לפי סעיף 116: שכר של חצי חודש בשנה ב-3 השנים הראשונות, חודש אחד בשנה לאחר מכן, ללא תקרה. חינם.",
-  "id": "/loona-salary-calculators/he/bahrain-indemnity-calculator/",
+  "id": "/he/bahrain-indemnity-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب كانساس 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب كانساس 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في كانساس في 2026؟ الضريبة الاتحادية + ضريبة دخل كانساس والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/kansas-paycheck-calculator.html",
+  "id": "/ar/kansas-paycheck-calculator.html",
   "start_url": "./kansas-paycheck-calculator.html",
   "scope": "./kansas-paycheck-calculator.html",
   "display": "standalone",

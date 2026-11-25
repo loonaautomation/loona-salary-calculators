@@ -2,7 +2,7 @@
   "name": "מחשבון עמלות eBay — עמלות ערך סופי והרווח שלכם",
   "short_name": "מחשבון עמלות eBay — עמלות ערך סופי והרווח שלכם",
   "description": "מחשבון עמלות eBay חינמי: עמלת ערך סופי של 13.6% בתוספת עמלת הזמנה של $0.30/$0.40, תוספת מתחת לסטנדרט, והרווח שלכם לאחר עלויות. שיעורים ניתנים לעריכה; ברירות המחדל לארה\"ב אומתו בנובמבר 2026.",
-  "id": "/loona-salary-calculators/he/ebay-fee-calculator.html",
+  "id": "/he/ebay-fee-calculator.html",
   "start_url": "./ebay-fee-calculator.html",
   "scope": "./ebay-fee-calculator.html",
   "display": "standalone",

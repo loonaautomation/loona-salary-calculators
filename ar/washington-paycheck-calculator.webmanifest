@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب واشنطن 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب واشنطن 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في واشنطن في 2026؟ الضريبة الاتحادية + ضريبة دخل واشنطن والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/washington-paycheck-calculator.html",
+  "id": "/ar/washington-paycheck-calculator.html",
   "start_url": "./washington-paycheck-calculator.html",
   "scope": "./washington-paycheck-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של דרום אפריקה (שיעור 15%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של דרום אפריקה (שיעור 15%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון VAT לדרום אפריקה חינמי: הוסיפו או הסירו VAT ב-15% תוך שניות, עם הנוסחה המלאה ודוגמאות מחושבות ב-ZAR (rand). ללא הרשמה, פועל על המכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-south-africa.html",
+  "id": "/he/vat-calculator-south-africa.html",
   "start_url": "./vat-calculator-south-africa.html",
   "scope": "./vat-calculator-south-africa.html",
   "display": "standalone",

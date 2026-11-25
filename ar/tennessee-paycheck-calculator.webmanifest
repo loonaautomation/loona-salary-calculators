@@ -2,7 +2,7 @@
   "name": "حاسبة رواتب تينيسي 2026 – الراتب بعد الضريبة | Loona Salary",
   "short_name": "حاسبة رواتب تينيسي 2026",
   "description": "كم تبلغ قيمة الراتب بعد الضريبة في تينيسي في 2026؟ الضريبة الاتحادية + ضريبة دخل تينيسي والضمان الاجتماعي والرعاية الطبية — حاسبة رواتب مجانية مع جداول 2026.",
-  "id": "/loona-salary-calculators/ar/tennessee-paycheck-calculator.html",
+  "id": "/ar/tennessee-paycheck-calculator.html",
   "start_url": "./tennessee-paycheck-calculator.html",
   "scope": "./tennessee-paycheck-calculator.html",
   "display": "standalone",

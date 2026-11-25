@@ -2,7 +2,7 @@
   "name": "מחשבון VAT — הוספה או הסרה של VAT ל-30 מדינות אירופה",
   "short_name": "מחשבון VAT — הוספה או הסרה של VAT ל-30 מדינות אירופה",
   "description": "מחשבון VAT חינמי ל-30 מדינות אירופה: הוסיפו או הסירו VAT בשיעור הסטנדרטי המאומת וראו נטו, VAT וברוטו באופן מיידי. ללא צורך בהרשמה.",
-  "id": "/loona-salary-calculators/he/vat-calculator.html",
+  "id": "/he/vat-calculator.html",
   "start_url": "./vat-calculator.html",
   "scope": "./vat-calculator.html",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "حاسبة مكافأة نهاية الخدمة في قطر — نهاية الخدمة (المادة 54)",
   "short_name": "حاسبة مكافأة نهاية الخدمة في قطر",
   "description": "احسب مكافأة نهاية خدمة قطر بموجب المادة 54 من قانون العمل: 21 يومًا على الأقل من الأجر الأساسي سنويًا، أو معدل عقدك الأفضل. مجاني.",
-  "id": "/loona-salary-calculators/ar/qatar-gratuity-calculator/",
+  "id": "/ar/qatar-gratuity-calculator/",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של ליטא (שיעור 21%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של ליטא (שיעור 21%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של ליטא: הוסיפו או הסירו 21% מע\"מ בתוך שניות ומופחת 12%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-lithuania.html",
+  "id": "/he/vat-calculator-lithuania.html",
   "start_url": "./vat-calculator-lithuania.html",
   "scope": "./vat-calculator-lithuania.html",
   "display": "standalone",

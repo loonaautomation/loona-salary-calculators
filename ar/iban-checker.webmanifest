@@ -2,7 +2,7 @@
   "name": "مدقق IBAN — مدقق IBAN مجاني (اختبار Mod-97)",
   "short_name": "مدقق IBAN",
   "description": "مدقق IBAN مجاني: تحقق من أي IBAN أوروبي فورًا مع اختبار mod-97 الحقيقي، وفحص طول الدولة والتنسيق المجمع. بلا تسجيل، خاص.",
-  "id": "/loona-salary-calculators/ar/iban-checker.html",
+  "id": "/ar/iban-checker.html",
   "start_url": "./iban-checker.html",
   "scope": "./iban-checker.html",
   "display": "standalone",

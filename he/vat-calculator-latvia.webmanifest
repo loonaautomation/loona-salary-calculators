@@ -2,7 +2,7 @@
   "name": "מחשבון מע\"מ של לטביה (שיעור 21%) — הוספה או הסרה של מע\"מ | Loona",
   "short_name": "מחשבון מע\"מ של לטביה (שיעור 21%) — הוספה או הסרה של מע\"מ",
   "description": "מחשבון מע\"מ חינמי של לטביה: הוסיפו או הסירו 21% מע\"מ בתוך שניות ומופחת 12%/5%, נוסחה מלאה ודוגמאות מחושבות ב-EUR. ללא הרשמה, פועל במכשיר שלכם.",
-  "id": "/loona-salary-calculators/he/vat-calculator-latvia.html",
+  "id": "/he/vat-calculator-latvia.html",
   "start_url": "./vat-calculator-latvia.html",
   "scope": "./vat-calculator-latvia.html",
   "display": "standalone",

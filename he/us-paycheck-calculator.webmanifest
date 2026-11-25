@@ -2,7 +2,7 @@
   "name": "מחשבון תלוש שכר של ארה\"ב 2026 – משכורת אחרי מס בכל מדינה | Loona Salary",
   "short_name": "מחשבון תלוש שכר של ארה\"ב 2026 – משכורת אחרי מס בכל מדינה",
   "description": "חשבו את שכר הנטו שלכם ב-2026: מס פדרלי, Social Security ו-Medicare, בתוספת מס ההכנסה של כל מדינה — מחשבון חינמי לכל 50 המדינות ו-DC.",
-  "id": "/loona-salary-calculators/he/us-paycheck-calculator.html",
+  "id": "/he/us-paycheck-calculator.html",
   "start_url": "./us-paycheck-calculator.html",
   "scope": "./us-paycheck-calculator.html",
   "display": "standalone",

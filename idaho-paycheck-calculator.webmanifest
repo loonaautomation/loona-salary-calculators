@@ -2,7 +2,7 @@
   "name": "Loona Idaho Paycheck Calculator 2026",
   "short_name": "Idaho Paycheck Calculator 2026",
   "description": "What is a salary worth after tax in Idaho in 2026? Federal + Idaho income tax, Social Security and Medicare — free paycheck calculator with the 2026 tables.",
-  "id": "/loona-salary-calculators/idaho-paycheck-calculator.html",
+  "id": "/idaho-paycheck-calculator.html",
   "start_url": "./idaho-paycheck-calculator.html",
   "scope": "./idaho-paycheck-calculator.html",
   "display": "standalone",

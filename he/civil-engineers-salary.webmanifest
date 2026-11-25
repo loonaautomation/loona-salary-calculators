@@ -2,7 +2,7 @@
   "name": "משכורת מהנדסי בניין 2026 – שכר חציוני ושכר נטו | Loona Salary",
   "short_name": "משכורת מהנדסי בניין 2026 – שכר חציוני ושכר נטו",
   "description": "כמה מרוויח מהנדסי בניין? שכר חציוני $100,840 לשנה (BLS מאי 2025) ושכר הנטו אחרי מס פדרלי — מחשבון חינמי.",
-  "id": "/loona-salary-calculators/he/civil-engineers-salary.html",
+  "id": "/he/civil-engineers-salary.html",
   "start_url": "./civil-engineers-salary.html",
   "scope": "./civil-engineers-salary.html",
   "display": "standalone",

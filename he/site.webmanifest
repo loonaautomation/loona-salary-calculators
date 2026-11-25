@@ -1,8 +1,8 @@
 {
   "name": "Loona — מחשבוני משכורת ומס",
   "short_name": "Loona Salary",
-  "start_url": "https://loonaautomation.github.io/loona-salary-calculators/he/",
-  "scope": "https://loonaautomation.github.io/loona-salary-calculators/he/",
+  "start_url": "https://salary.loonaautomation.com/he/",
+  "scope": "https://salary.loonaautomation.com/he/",
   "display": "standalone",
   "theme_color": "#07332f",
   "background_color": "#f6f3ea",
