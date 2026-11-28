@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Calculate Work Hours and Overtime — Steps, Decimal Hours &amp; Worked Examples</title>
+<meta name="description" content="How to calculate work hours and overtime, step by step: subtract start from end, remove unpaid breaks, convert minutes to decimal hours, split the week at the overtime threshold and apply time and a half — with worked examples.">
+<meta name="keywords" content="how to calculate work hours, how to calculate overtime pay, decimal hours, time and a half, hours worked calculator">
+<link rel="canonical" href="https://salary.loonaautomation.com/guides/how-to-calculate-work-hours-and-overtime/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Calculate Work Hours and Overtime — Loona">
+<meta property="og:description" content="The step-by-step method: decimal hours, unpaid breaks, time and a half and double time — with a full worked week.">
+<meta property="og:url" content="https://salary.loonaautomation.com/guides/how-to-calculate-work-hours-and-overtime/">
+<meta property="og:image" content="https://salary.loonaautomation.com/og-image.jpg">
+<meta property="og:site_name" content="Loona Salary &amp; Tax Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Calculate Work Hours and Overtime">
+<meta name="twitter:description" content="Subtract start from end, remove unpaid breaks, convert to decimal hours, then split the week at 40 hours — the full method with examples.">
+<meta name="twitter:image" content="https://salary.loonaautomation.com/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<meta name="theme-color" content="#07332f">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1566440962454692" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L43M13ZYT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5L43M13ZYT');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z599jkwoy9");</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "How to Calculate Work Hours and Overtime — Steps, Decimal Hours & Worked Examples", "description": "How to calculate work hours and overtime, step by step: subtract start from end, remove unpaid breaks, convert minutes to decimal hours, split the week at the overtime threshold and apply time and a half — with worked examples.", "author": {"@type": "Organization", "name": "Loona Automation"}, "publisher": {"@type": "Organization", "name": "Loona Automation"}, "datePublished": "2026-11-28", "dateModified": "2026-11-28", "mainEntityOfPage": "https://salary.loonaautomation.com/guides/how-to-calculate-work-hours-and-overtime/"}
+</script>
+<style>
+:root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:26px 18px 22px}
+header .in{max-width:860px;margin:0 auto}
+header a.home{color:var(--gold2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+header h1{font-size:1.5rem;margin:8px 0 6px;line-height:1.3}
+header p{color:#d9e8e4;font-size:.95rem;max-width:720px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.sec{margin-top:26px}
+.sec h2{color:var(--teal);font-size:1.22rem;margin-bottom:8px}
+.sec p{font-size:.96rem;margin-bottom:10px}
+.sec ul,.sec ol{margin:0 0 10px 20px;font-size:.96rem}
+.sec li{margin-bottom:5px}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:.93rem;background:var(--card)}
+td,th{padding:7px 8px;border-bottom:1px solid #dce5e0;text-align:left}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.faq{background:var(--card);border:1px solid #e4ddc8;border-radius:10px;padding:14px 16px;margin-top:10px}
+.faq h3{font-size:.98rem;color:var(--teal2);margin-bottom:4px}
+.faq p{font-size:.94rem}
+.note{background:#fdf6dd;border:1px solid #eadfae;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:22px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{background:var(--teal);color:#fff;text-decoration:none;padding:8px 13px;border-radius:20px;font-size:.84rem}
+.links a.alt{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+footer{background:var(--teal);color:#cfe0db;text-align:center;padding:20px 16px;font-size:.84rem;margin-top:36px;line-height:1.9}
+footer a{color:var(--gold2);text-decoration:none}
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I calculate the hours I worked?", "acceptedAnswer": {"@type": "Answer", "text": "Subtract your start time from your end time, then subtract any unpaid breaks. For example, 8:15 AM to 5:00 PM is 8 hours 45 minutes; minus a 30-minute unpaid lunch, that is 8 hours 15 minutes worked — 8.25 in decimal hours."}}, {"@type": "Question", "name": "How do I convert minutes to decimal hours?", "acceptedAnswer": {"@type": "Answer", "text": "Divide the minutes by 60 and add the whole hours. 15 minutes is 0.25, 30 minutes is 0.50 and 45 minutes is 0.75, so 7 hours 45 minutes is 7.75 hours. Never write it as 7.45 — that would mean 7 hours 27 minutes."}}, {"@type": "Question", "name": "How is overtime pay calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Split the week at the overtime threshold, then pay each part at its own rate: gross pay = (regular hours × hourly rate) + (overtime hours × hourly rate × multiplier). At $20 an hour with 6 overtime hours at time and a half: (40 × $20) + (6 × $20 × 1.5) = $800 + $180 = $980."}}, {"@type": "Question", "name": "What is time and a half of $20 an hour?", "acceptedAnswer": {"@type": "Answer", "text": "Time and a half means 1.5 times the regular rate, so $20 × 1.5 = $30 an hour. Double time is 2 times the rate — $40 an hour on a $20 rate."}}, {"@type": "Question", "name": "When does overtime start?", "acceptedAnswer": {"@type": "Answer", "text": "Under the US Fair Labor Standards Act (FLSA), covered non-exempt employees earn overtime at at least 1.5 times their regular rate for hours over 40 in a single workweek. Each workweek stands alone — hours cannot be averaged over two weeks. Outside the US, the threshold and multiplier come from local law or your contract."}}, {"@type": "Question", "name": "Should lunch breaks be subtracted from my hours?", "acceptedAnswer": {"@type": "Answer", "text": "Unpaid meal breaks are subtracted; paid breaks are not. As a general rule under US federal law, short rest breaks of about 5 to 20 minutes are paid, while a genuine meal break of 30 minutes or more, during which you are fully relieved of duty, can be unpaid. Your contract or local law may differ."}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://salary.loonaautomation.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://salary.loonaautomation.com/#guides"}, {"@type": "ListItem", "position": 3, "name": "How to Calculate Work Hours and Overtime", "item": "https://salary.loonaautomation.com/guides/how-to-calculate-work-hours-and-overtime/"}]}
+</script>
+<link rel="manifest" href="../../manifest.webmanifest">
+</head>
+<body>
+<header><div class="in">
+<a class="home" href="../../">← Loona Salary &amp; Tax Calculators</a>
+<h1>How to Calculate Work Hours and Overtime</h1>
+<p>Every payslip starts with one number: the hours you actually worked. This guide shows the exact method payroll uses — subtract start from end, remove unpaid breaks, convert minutes to decimal hours, then split the week at the overtime threshold and apply the right multiplier — with worked examples you can check line by line.</p>
+</div></header>
+<div class="wrap">
+<div class="sec" style="margin-top:2px"><p><strong>In short:</strong> Hours worked = end time − start time − unpaid breaks. Convert the result to decimal hours (minutes ÷ 60) before multiplying by your rate. For overtime, pay the hours up to the threshold at your regular rate and the hours beyond it at the multiplier — under US federal law (the FLSA), that is at least 1.5× for hours over 40 in a single workweek for covered, non-exempt employees.</p></div>
+
+<div class="sec">
+<h2>The basic formula</h2>
+<p>One formula handles almost every shift:</p>
+<p><strong>Hours worked = (end time − start time) − unpaid breaks</strong></p>
+<p>And once you have the hours, pay follows from a second one:</p>
+<p><strong>Gross pay = (regular hours × hourly rate) + (overtime hours × hourly rate × multiplier)</strong></p>
+<p>Everything below is these two formulas applied carefully — the mistakes happen in the details: breaks, minutes that are not decimals, night shifts, and weeks that cross the overtime threshold.</p>
+</div>
+
+<div class="sec">
+<h2>Step by step: from time card to total hours</h2>
+<ol>
+<li><strong>Write down the start and end time of every shift</strong>, exactly as clocked — including the minutes, not rounded to the nearest hour.</li>
+<li><strong>Convert both times to 24-hour format.</strong> Morning times stay as they are; add 12 to afternoon and evening hours (5:00 PM becomes 17:00). This makes subtraction simple and prevents AM/PM errors.</li>
+<li><strong>Subtract the start from the end.</strong> If the minutes go negative, borrow one hour as 60 minutes. If the end time is earlier than the start, the shift crossed midnight — add 24 hours to the end first (see the night-shift example below).</li>
+<li><strong>Subtract unpaid breaks only</strong> — typically an unpaid meal break. Paid rest breaks stay in your hours.</li>
+<li><strong>Convert minutes to decimal hours</strong> (next section) if the total will be multiplied by an hourly rate or entered into payroll software.</li>
+<li><strong>Add up the whole week first, then split it</strong> into regular and overtime hours at your threshold. Add the days in hours and minutes, and convert to a decimal once, at the end — rounding each day separately quietly loses minutes.</li>
+</ol>
+</div>
+
+<div class="sec">
+<h2>Convert minutes to decimal hours</h2>
+<p>Payroll systems, invoices and spreadsheets want hours as a decimal — 8.25, not 8:15. The conversion is:</p>
+<p><strong>Decimal hours = whole hours + (minutes ÷ 60)</strong></p>
+<table>
+<tr><th>Minutes</th><th>Decimal hours</th></tr>
+<tr><td>5</td><td>0.08</td></tr>
+<tr><td>10</td><td>0.17</td></tr>
+<tr><td>15</td><td>0.25</td></tr>
+<tr><td>20</td><td>0.33</td></tr>
+<tr><td>25</td><td>0.42</td></tr>
+<tr><td>30</td><td>0.50</td></tr>
+<tr><td>35</td><td>0.58</td></tr>
+<tr><td>40</td><td>0.67</td></tr>
+<tr><td>45</td><td>0.75</td></tr>
+<tr><td>50</td><td>0.83</td></tr>
+<tr><td>55</td><td>0.92</td></tr>
+</table>
+<p>The trap: <strong>7 hours 45 minutes is 7.75 hours, not 7.45</strong>. The digits after the decimal point are sixtieths of an hour, not minutes — 0.45 of an hour is 0.45 × 60 = 27 minutes. Writing 8:30 as “8.30 hours” underpays every shift by 12 minutes. A quick mental check: every 6 minutes is exactly one tenth of an hour (0.10), so 36 minutes is 0.60 and 54 minutes is 0.90. To convert back, multiply the decimal part by 60: 7.6 hours = 7 hours + (0.6 × 60) = 7 hours 36 minutes.</p>
+</div>
+
+<div class="sec">
+<h2>Worked example 1: one day, with a lunch break</h2>
+<p>You clock in at <strong>8:15 AM</strong> and out at <strong>5:00 PM</strong>, with a <strong>30-minute unpaid lunch</strong>. Your rate is <strong>$20 an hour</strong>.</p>
+<ul>
+<li>Elapsed time: 17:00 − 08:15 = 8 hours 45 minutes</li>
+<li>Minus the unpaid lunch: 8:45 − 0:30 = <strong>8 hours 15 minutes</strong></li>
+<li>In decimal hours: 8 + (15 ÷ 60) = <strong>8.25 hours</strong></li>
+<li>Pay for the day: 8.25 × $20 = <strong>$165.00</strong></li>
+</ul>
+<p>If the lunch had been a paid break, nothing would be subtracted: 8 hours 45 minutes = 8.75 hours, and the day would pay 8.75 × $20 = $175.00. Whether a break is paid or unpaid is worth $10 a day in this example — check your contract before you subtract anything.</p>
+</div>
+
+<div class="sec">
+<h2>Night shifts: when the shift crosses midnight</h2>
+<p>If the end time is earlier than the start time, add 24 hours to the end before subtracting. A shift from <strong>10:00 PM to 6:30 AM</strong>:</p>
+<ul>
+<li>End time with 24 hours added: 6:30 + 24:00 = 30:30</li>
+<li>Subtract the start: 30:30 − 22:00 = 8 hours 30 minutes</li>
+<li>In decimal hours: 8 + (30 ÷ 60) = <strong>8.50 hours</strong> (before any unpaid break)</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>Worked example 2: a full week, day by day</h2>
+<p>One week, a 30-minute unpaid lunch on the weekday shifts, and an hourly rate of <strong>$18</strong>:</p>
+<table>
+<tr><th>Day</th><th>Start – end</th><th>Hours worked</th><th>Decimal</th></tr>
+<tr><td>Monday</td><td>9:00 AM – 5:30 PM</td><td>8 h 00 min</td><td>8.00</td></tr>
+<tr><td>Tuesday</td><td>9:00 AM – 5:30 PM</td><td>8 h 00 min</td><td>8.00</td></tr>
+<tr><td>Wednesday</td><td>9:00 AM – 6:15 PM</td><td>8 h 45 min</td><td>8.75</td></tr>
+<tr><td>Thursday</td><td>9:00 AM – 5:30 PM</td><td>8 h 00 min</td><td>8.00</td></tr>
+<tr><td>Friday</td><td>9:00 AM – 7:00 PM</td><td>9 h 30 min</td><td>9.50</td></tr>
+<tr><td>Saturday</td><td>10:00 AM – 2:00 PM</td><td>4 h 00 min</td><td>4.00</td></tr>
+<tr><td><strong>Week total</strong></td><td></td><td><strong>46 h 15 min</strong></td><td><strong>46.25</strong></td></tr>
+</table>
+<p>Now split the week at a 40-hour overtime threshold:</p>
+<ul>
+<li>Regular hours: 40 × $18 = <strong>$720.00</strong></li>
+<li>Overtime hours: 46.25 − 40 = 6.25 hours, at time and a half ($18 × 1.5 = $27): 6.25 × $27 = <strong>$168.75</strong></li>
+<li>Gross pay for the week: $720.00 + $168.75 = <strong>$888.75</strong> (before tax and deductions)</li>
+</ul>
+<p>Note that the split happens on the <em>week</em>, not on any single day: Friday's long day is not overtime by itself — the week's total decides. (Some contracts and some local laws also set daily overtime thresholds; if yours does, apply whichever rule your contract or law specifies.)</p>
+</div>
+
+<div class="sec">
+<h2>How overtime pay works</h2>
+<p>Overtime is the higher rate paid for hours beyond a set threshold. The two multipliers you will meet most often:</p>
+<ul>
+<li><strong>Time and a half (1.5×):</strong> your regular rate plus half again. $20 an hour becomes $30.</li>
+<li><strong>Double time (2×):</strong> twice the regular rate. $20 an hour becomes $40. US federal law does not require double time — where it applies, it comes from a contract, company policy or state rule.</li>
+</ul>
+<p>In the United States, the federal baseline is the <strong>Fair Labor Standards Act (FLSA)</strong>: covered, non-exempt employees must be paid at least <strong>1.5× their regular rate for hours over 40 in a workweek</strong>. A workweek is a fixed, recurring period of 168 hours (seven consecutive days); it can start on any day, but each workweek stands alone — an employer cannot average a 50-hour week with a 30-hour week to avoid overtime. Some states add their own rules on top, and exempt (salaried-exempt) employees are not covered by the federal overtime requirement. Outside the US, the threshold and multiplier come from your local labour law or contract, so check which rules apply to you before using the examples below.</p>
+</div>
+
+<div class="sec">
+<h2>Worked example 3: overtime at time and a half</h2>
+<p>You earn <strong>$20 an hour</strong> and work <strong>46 hours</strong> in one week, with overtime at 1.5× over 40 hours:</p>
+<ul>
+<li>Overtime rate: $20 × 1.5 = $30 an hour</li>
+<li>Regular pay: 40 × $20 = <strong>$800</strong></li>
+<li>Overtime pay: 6 × $30 = <strong>$180</strong></li>
+<li>Gross pay: $800 + $180 = <strong>$980</strong></li>
+</ul>
+<p>Two ways to read the same answer: the 6 overtime hours earned $180 instead of the $120 they would have paid at the plain rate, so the overtime premium — the extra above straight time — is $60. If payroll has already paid you straight time for all 46 hours ($920), only that $60 premium is still owed. And if 2 of the overtime hours were paid at double time under your contract instead, they would pay 2 × $40 = $80 rather than 2 × $30 = $60, taking the week to $1,000.</p>
+</div>
+
+<div class="sec">
+<h2>If you are salaried: find your hourly rate first</h2>
+<p>Overtime maths needs an hourly rate. For a salary, divide by the paid hours in the period. On a common full-time pattern of 40 hours a week × 52 weeks = 2,080 hours a year, a <strong>$52,000 salary</strong> is $52,000 ÷ 2,080 = <strong>$25 an hour</strong> — so time and a half would be $25 × 1.5 = $37.50 an hour. Whether a salaried employee is owed overtime at all depends on exemption status and local law; the conversion itself is just arithmetic.</p>
+</div>
+
+<div class="sec">
+<h2>Doing it in a spreadsheet</h2>
+<p>In Excel or Google Sheets, times are stored as fractions of a day, so multiply the difference by 24 to get decimal hours:</p>
+<ul>
+<li>Same-day shift (start in B2, end in C2): <strong>=(C2−B2)*24</strong> — 9:00 AM to 5:30 PM returns 8.5.</li>
+<li>Overnight shift: <strong>=MOD(C2−B2,1)*24</strong> — handles the negative result when the shift crosses midnight.</li>
+<li>With an unpaid break entered as a decimal (0.5 in D2): <strong>=(C2−B2)*24−D2</strong>.</li>
+</ul>
+<p>Format the result as a number with two decimal places, not as a clock time.</p>
+</div>
+
+<div class="sec">
+<h2>Common mistakes that cost money</h2>
+<ul>
+<li><strong>Writing clock time as a decimal.</strong> 8:30 entered as 8.30 loses 12 minutes per shift; over a month of shifts that is hours of pay.</li>
+<li><strong>Subtracting paid breaks</strong> — or forgetting to subtract unpaid ones. Know which breaks your contract treats as unpaid before you calculate.</li>
+<li><strong>Paying the multiplier on all hours.</strong> Only the hours beyond the threshold earn the higher rate; the first 40 (in the US federal example) stay at the regular rate.</li>
+<li><strong>Counting the premium twice.</strong> Time-and-a-half pay already includes the base rate for those hours. If you add “all hours × rate” <em>plus</em> “overtime hours × 1.5 × rate”, you have paid the overtime hours twice.</li>
+<li><strong>Averaging two weeks.</strong> Under the FLSA each workweek stands alone; a 50-hour week followed by a 30-hour week is still 10 overtime hours, not zero.</li>
+<li><strong>Rounding every day.</strong> Round once, at the end. Rounding each day to the nearest quarter or tenth first can add or remove minutes that were never worked.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>Frequently asked questions</h2>
+<div class="faq"><h3>How do I calculate the hours I worked?</h3><p>Subtract your start time from your end time, then subtract any unpaid breaks. For example, 8:15 AM to 5:00 PM is 8 hours 45 minutes; minus a 30-minute unpaid lunch, that is 8 hours 15 minutes worked — 8.25 in decimal hours.</p></div>
+<div class="faq"><h3>How do I convert minutes to decimal hours?</h3><p>Divide the minutes by 60 and add the whole hours. 15 minutes is 0.25, 30 minutes is 0.50 and 45 minutes is 0.75, so 7 hours 45 minutes is 7.75 hours. Never write it as 7.45 — that would mean 7 hours 27 minutes.</p></div>
+<div class="faq"><h3>How is overtime pay calculated?</h3><p>Split the week at the overtime threshold, then pay each part at its own rate: gross pay = (regular hours × hourly rate) + (overtime hours × hourly rate × multiplier). At $20 an hour with 6 overtime hours at time and a half: (40 × $20) + (6 × $20 × 1.5) = $800 + $180 = $980.</p></div>
+<div class="faq"><h3>What is time and a half of $20 an hour?</h3><p>Time and a half means 1.5 times the regular rate, so $20 × 1.5 = $30 an hour. Double time is 2 times the rate — $40 an hour on a $20 rate.</p></div>
+<div class="faq"><h3>When does overtime start?</h3><p>Under the US Fair Labor Standards Act (FLSA), covered non-exempt employees earn overtime at at least 1.5 times their regular rate for hours over 40 in a single workweek. Each workweek stands alone — hours cannot be averaged over two weeks. Outside the US, the threshold and multiplier come from local law or your contract.</p></div>
+<div class="faq"><h3>Should lunch breaks be subtracted from my hours?</h3><p>Unpaid meal breaks are subtracted; paid breaks are not. As a general rule under US federal law, short rest breaks of about 5 to 20 minutes are paid, while a genuine meal break of 30 minutes or more, during which you are fully relieved of duty, can be unpaid. Your contract or local law may differ.</p></div>
+</div>
+
+<div class="note"><strong>Disclaimer:</strong> this guide explains the general method for calculating work hours and overtime. The US figures describe the federal FLSA baseline in general terms; state law, local law outside the US, and your contract can set different thresholds, multipliers and break rules. This is general information, not legal or payroll advice. Figures last verified: 28 November 2026.</div>
+
+<div class="sec"><h2>Try it with your own numbers</h2>
+<div class="links">
+<a href="https://hours.loonaautomation.com/overtime-calculator.html">Overtime Calculator</a>
+<a href="https://hours.loonaautomation.com/time-and-a-half-calculator.html">Time and a Half Calculator</a>
+<a href="https://hours.loonaautomation.com/hours-calculator.html">Hours Calculator</a>
+<a class="alt" href="../../">All salary calculators</a>
+</div></div>
+</div>
+<footer>© 2026 Loona Automation — <a href="../../">Loona Salary &amp; Tax Calculators</a><br><a href="../../about.html">About</a> · <a href="../../privacy.html">Privacy Policy</a> · <a href="../../terms.html">Terms</a> · <a href="../../contact.html">Contact</a> · <a href="https://loonaautomation.github.io/">More free tools — Loona Automation</a><div id="loona-lang-strip" style="text-align:center;padding:16px 16px 6px;font-size:.93rem;line-height:2;color:#cfe0d6">🌐 Also available in: <a href="https://salary.loonaautomation.com/ar/" hreflang="ar" style="color:#cfe0d6;text-decoration:underline">العربية</a> · <a href="https://salary.loonaautomation.com/bn/" hreflang="bn" style="color:#cfe0d6;text-decoration:underline">বাংলা</a> · <a href="https://salary.loonaautomation.com/bg/" hreflang="bg" style="color:#cfe0d6;text-decoration:underline">Български</a> · <a href="https://salary.loonaautomation.com/zh/" hreflang="zh" style="color:#cfe0d6;text-decoration:underline">中文</a> · <a href="https://salary.loonaautomation.com/zh-hant/" hreflang="zh-hant" style="color:#cfe0d6;text-decoration:underline">繁體中文</a> · <a href="https://salary.loonaautomation.com/hr/" hreflang="hr" style="color:#cfe0d6;text-decoration:underline">Hrvatski</a> · <a href="https://salary.loonaautomation.com/cs/" hreflang="cs" style="color:#cfe0d6;text-decoration:underline">Čeština</a> · <a href="https://salary.loonaautomation.com/da/" hreflang="da" style="color:#cfe0d6;text-decoration:underline">Dansk</a> · <a href="https://salary.loonaautomation.com/nl/" hreflang="nl" style="color:#cfe0d6;text-decoration:underline">Nederlands</a> · <a href="https://salary.loonaautomation.com/fi/" hreflang="fi" style="color:#cfe0d6;text-decoration:underline">Suomi</a> · <a href="https://salary.loonaautomation.com/fr/" hreflang="fr" style="color:#cfe0d6;text-decoration:underline">Français</a> · <a href="https://salary.loonaautomation.com/de/" hreflang="de" style="color:#cfe0d6;text-decoration:underline">Deutsch</a> · <a href="https://salary.loonaautomation.com/el/" hreflang="el" style="color:#cfe0d6;text-decoration:underline">Ελληνικά</a> · <a href="https://salary.loonaautomation.com/he/" hreflang="he" style="color:#cfe0d6;text-decoration:underline">עברית</a> · <a href="https://salary.loonaautomation.com/hi/" hreflang="hi" style="color:#cfe0d6;text-decoration:underline">हिन्दी</a> · <a href="https://salary.loonaautomation.com/hu/" hreflang="hu" style="color:#cfe0d6;text-decoration:underline">Magyar</a> · <a href="https://salary.loonaautomation.com/id/" hreflang="id" style="color:#cfe0d6;text-decoration:underline">Bahasa Indonesia</a> · <a href="https://salary.loonaautomation.com/it/" hreflang="it" style="color:#cfe0d6;text-decoration:underline">Italiano</a> · <a href="https://salary.loonaautomation.com/ja/" hreflang="ja" style="color:#cfe0d6;text-decoration:underline">日本語</a> · <a href="https://salary.loonaautomation.com/ko/" hreflang="ko" style="color:#cfe0d6;text-decoration:underline">한국어</a> · <a href="https://salary.loonaautomation.com/ms/" hreflang="ms" style="color:#cfe0d6;text-decoration:underline">Bahasa Melayu</a> · <a href="https://salary.loonaautomation.com/nb/" hreflang="nb" style="color:#cfe0d6;text-decoration:underline">Norsk</a> · <a href="https://salary.loonaautomation.com/pl/" hreflang="pl" style="color:#cfe0d6;text-decoration:underline">Polski</a> · <a href="https://salary.loonaautomation.com/pt/" hreflang="pt" style="color:#cfe0d6;text-decoration:underline">Português</a> · <a href="https://salary.loonaautomation.com/ro/" hreflang="ro" style="color:#cfe0d6;text-decoration:underline">Română</a> · <a href="https://salary.loonaautomation.com/ru/" hreflang="ru" style="color:#cfe0d6;text-decoration:underline">Русский</a> · <a href="https://salary.loonaautomation.com/sk/" hreflang="sk" style="color:#cfe0d6;text-decoration:underline">Slovenčina</a> · <a href="https://salary.loonaautomation.com/es/" hreflang="es" style="color:#cfe0d6;text-decoration:underline">Español</a> · <a href="https://salary.loonaautomation.com/sw/" hreflang="sw" style="color:#cfe0d6;text-decoration:underline">Kiswahili</a> · <a href="https://salary.loonaautomation.com/sv/" hreflang="sv" style="color:#cfe0d6;text-decoration:underline">Svenska</a> · <a href="https://salary.loonaautomation.com/th/" hreflang="th" style="color:#cfe0d6;text-decoration:underline">ไทย</a> · <a href="https://salary.loonaautomation.com/tr/" hreflang="tr" style="color:#cfe0d6;text-decoration:underline">Türkçe</a> · <a href="https://salary.loonaautomation.com/uk/" hreflang="uk" style="color:#cfe0d6;text-decoration:underline">Українська</a> · <a href="https://salary.loonaautomation.com/ur/" hreflang="ur" style="color:#cfe0d6;text-decoration:underline">اردو</a> · <a href="https://salary.loonaautomation.com/vi/" hreflang="vi" style="color:#cfe0d6;text-decoration:underline">Tiếng Việt</a></div>
+</footer>
+<script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Install App';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Install this app: tap the Share button, then choose "Add to Home Screen".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
+</body>
+</html>
