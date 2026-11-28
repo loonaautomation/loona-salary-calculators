@@ -94,6 +94,8 @@ footer a{color:var(--gold2);text-decoration:none}
 <tr><td>Length of service</td><td id="rYears">—</td></tr>
 <tr><td>First 3 years — half a month per year</td><td id="rFirst">—</td></tr>
 <tr><td>After 3 years — one month per year</td><td id="rAfter">—</td></tr>
+<tr><td>Paid directly by your employer — service before 1 March 2024 (Article 116)</td><td id="rEmp">—</td></tr>
+<tr><td>Paid by the SIO — service from 1 March 2024 (Decision No. 109 of 2023)</td><td id="rSIO">—</td></tr>
 </table>
 <p id="rNote" style="margin-top:8px;font-size:.88rem;color:var(--mut)"></p>
 </div>
@@ -128,7 +130,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <li>1 March 2025 – 28 February 2026 (one year, at a full month): 1 × BHD 600 = <strong>BHD 600 — paid by the SIO</strong>.</li>
 <li>Total: BHD 600 from your employer + BHD 900 from the SIO = <strong>BHD 1,500</strong>.</li>
 </ul>
-<p>The calculator above gives your <strong>total</strong> indemnity under Article 116. To split it, apply the same scale separately to the service before and after 1 March 2024, as in the example — the three-year half-month/full-month boundary always counts from your original joining date, on whichever side of March 2024 it falls.</p>
+<p>The calculator above shows this split in its result. It applies the same scale separately to your service before and after 1 March 2024, exactly as in the example — the three-year half-month/full-month boundary always counts from your original joining date, on whichever side of March 2024 it falls.</p>
 </div>
 
 <div class="sec">
@@ -243,7 +245,18 @@ function calc(){
   document.getElementById("rFirst").textContent = fmt(r.first);
   document.getElementById("rAfter").textContent = fmt(r.after);
   document.getElementById("total").textContent = fmt(r.total);
-  document.getElementById("rNote").textContent = "No cap applies in Bahrain, and resigning does not reduce the indemnity. Make sure the wage you entered is basic plus social allowance only (Article 47).";
+  var preDays = Math.min(Math.max((new Date("2024-03-01") - new Date(s)) / 86400000, 0), days);
+  var preYears = preDays / 365.25;
+  var empPart = wage * (0.5 * Math.min(preYears, 3) + Math.max(preYears - 3, 0));
+  var sioPart = r.total - empPart;
+  if(Math.abs(sioPart) < 0.0005) sioPart = 0;
+  document.getElementById("rEmp").textContent = fmt(empPart);
+  document.getElementById("rSIO").textContent = fmt(sioPart);
+  var splitNote = "";
+  if(empPart > 0.0005 && sioPart > 0.0005){ splitNote = " Your service spans 1 March 2024, so you collect from two places: your employer pays the earlier part directly in your final settlement (Article 116), and the Social Insurance Organization (SIO) pays the rest under Decision No. 109 of 2023, funded by your employer's monthly contributions of 4.2% of your wage in your first three years of service and 8.4% after that. The SIO part cannot exceed the contributions actually paid for you."; }
+  else if(sioPart > 0.0005){ splitNote = " All of your service is from 1 March 2024 onwards, so the whole amount is paid by the Social Insurance Organization (SIO) under Decision No. 109 of 2023, funded by your employer's monthly contributions of 4.2% of your wage in your first three years of service and 8.4% after that. The SIO part cannot exceed the contributions actually paid for you."; }
+  else if(empPart > 0.0005){ splitNote = " All of your service ended before 1 March 2024, so the whole amount is paid directly by your employer under Article 116."; }
+  document.getElementById("rNote").textContent = "No cap applies in Bahrain, and resigning does not reduce the indemnity. Make sure the wage you entered is basic plus social allowance only (Article 47)." + splitNote;
   var m2=document.getElementById("calcMsg"); if(m2){m2.style.display="none";} box.style.display = "block";
 }
 ["wage","start","end"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
