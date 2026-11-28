@@ -30,14 +30,132 @@
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Germany Salary Calculator","url":"https://salary.loonaautomation.com/germany-salary-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Loona Automation"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How much tax do I pay on a €60,000 salary in Germany?","acceptedAnswer":{"@type":"Answer","text":"It depends mainly on your tax class and church membership. In tax class I with no church tax, a €60,000 gross salary in 2026 leaves €38,124 net per year (about €3,177 a month) after income tax and the four social insurances. Use the calculator above for your own class and situation — this is an estimate, not a payslip."}},
-{"@type":"Question","name":"What are the German tax classes (Steuerklassen)?","acceptedAnswer":{"@type":"Answer","text":"Class I: single, divorced or widowed. Class II: single parents (extra relief of €4,260). Class III: married higher earner (income splitting — the joint income is taxed as two halves). Class IV: married with similar incomes — the default for couples. Class V: married lower earner whose partner is in III (no basic allowance). Class VI: a second job. Classes change monthly withholding only, not your final annual tax bill."}},
-{"@type":"Question","name":"Do I still pay the solidarity surcharge (Soli)?","acceptedAnswer":{"@type":"Answer","text":"Most employees pay none. Since 2021 the 5.5% surcharge only starts once your annual income tax passes €20,350 (single assessment, 2026; €40,700 for joint assessment), and a mitigation zone phases it in so there is no cliff."}},
-{"@type":"Question","name":"What social contributions come out of a German salary?","acceptedAnswer":{"@type":"Answer","text":"Four, each with a ceiling: pension 9.3% (up to €101,400 a year), unemployment 1.3% (same ceiling), health 7.3% plus half your insurer's supplementary contribution — 8.75% at the 2026 average of 2.9% — (up to €69,750), and long-term care 1.8%, or 2.4% if you are childless and 23 or older (up to €69,750). Together they take roughly 20-21% of gross."}},
-{"@type":"Question","name":"Why is church tax in the calculator?","acceptedAnswer":{"@type":"Answer","text":"If you are a registered member of a tax-collecting church in Germany, the state withholds church tax for it: 8% of your income tax in Bavaria and Baden-Württemberg, 9% in all other states. Leave it at 'None' if it does not apply to you."}},
-{"@type":"Question","name":"Is this calculator exact?","acceptedAnswer":{"@type":"Answer","text":"The wage tax itself is exact: it uses the statutory tariff formula of §32a EStG for 2026, including income splitting for tax class III. The final net pay is still an estimate, because official payroll works out taxable income with a detailed pension-relief calculation (Vorsorgepauschale) while this tool uses the standard lump-sum simplification — so small differences from a real payslip are normal."}}
-]}
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What are the tax classes?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "I single · II single parent (+€4,260 relief) · III married higher earner (income splitting) · IV married, similar incomes · V married lower earner (no allowance) · VI second job. They change monthly withholding, not the final annual tax."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do I pay the solidarity surcharge?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Probably not: it only starts above €20,350 of annual income tax (2026, single; €40,700 for joint assessment), with a phase-in zone. Most employees pay €0."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which contributions come out of my salary?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Pension 9.3%, unemployment 1.3%, health about 8.75% (at the average supplementary rate) and care 1.8–2.4% — each capped, roughly 20–21% of gross in total."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why 8% vs 9% church tax?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Bavaria and Baden-Württemberg charge 8% of income tax; every other state charges 9%. Only registered members of a tax-collecting church pay it."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is the result exact?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The wage tax is computed with the exact statutory §32a formula for 2026, including income splitting for class III. The net pay remains a careful estimate, because payroll derives taxable income in more detail (the Vorsorgepauschale) than this tool's lump-sum simplification — small differences from a real payslip are normal, but the structure and the big numbers are right."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why does the number of children change my care-insurance rate?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Long-term care (Pflegeversicherung) is the only contribution with family adjustments. The standard employee rate used here is 1.8%; parents pay 0.25 points less for each child from the second to the fifth under 25 (down to 0.8%), while employees who are childless and aged 23 or over pay a 0.6-point surcharge (2.4%). On a €45,000 salary the childless surcharge alone is €270 a year, before the small tax knock-on."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "At what salary does the solidarity surcharge actually start?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Soli is 5.5% of your income tax, but only once that tax passes €20,350 a year (single) or €40,700 (joint assessment, e.g. class III), and it phases in gradually, capped at 11.9% of the excess. At €45,000 in class IV the tax is €5,470, so soli is €0; even at €120,000 in class I (tax €31,127) soli is only €1,282.46 a year, not the full 5.5%."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why is my health contribution not simply 14.6% of my salary?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Because 14.6% is the combined employer-plus-employee rate. You pay 7.3%, plus half of your insurer's supplementary contribution (Zusatzbeitrag) — at the 2026 average of 2.9% that makes your share 8.75%. Your employer pays the other half, and both parts stop at the €69,750 ceiling."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does this calculator include my employer's contributions?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. It shows your payslip: only the employee shares are deducted from your gross. Your employer pays roughly the same again on top — their halves of the pension, unemployment, health and care contributions, plus accident insurance in full. That is employer cost, never part of your gross, and it does not appear in your net."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why does an extra euro of gross lose so much value in the middle income range?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Between €17,800 and €69,878 of taxable income you are in the second progressive zone of the §32a tariff, where the marginal rate climbs steadily from about 24% to 42% — the formula is a curve, not steps. Stacked on roughly 21% of social contributions, each extra euro of gross can lose close to half its value before any church tax. The annual return, not the payslip, settles the final figure."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How much net do I keep from €50,000 a year?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In tax class I, childless and aged 23 or over, with no church tax and the average 2.9% health supplementary contribution, this calculator gives social contributions of €10,875 and wage tax of €6,539 on a €50,000 gross salary — a net of €32,586 a year, €2,715.50 a month, so you keep 65.2% of gross. With a child the care rate is lower and the net slightly higher; in class III it is higher again. These are estimates, not a payslip."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What gross salary do I need for €3,000 net a month?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "On the same assumptions as the table above (class I, childless, no church tax), you need a gross salary of roughly €56,400 a year to take home €3,000 a month in 2026. A married higher earner in class III reaches €3,000 net at a noticeably lower gross, because splitting lowers the monthly withholding — but the couple's final annual bill is settled in the joint tax return either way."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is the difference between Lohnsteuer and Einkommensteuer?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "They are the same tax collected in two steps. Lohnsteuer (wage tax) is the advance payment your employer withholds from every payslip and sends to the tax office, using your tax class. Einkommensteuer (income tax) is the final amount assessed on your annual income in your tax return. If more wage tax was withheld than the final bill, you get a refund; if less, you pay the difference."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do I have to file a German tax return, and can I get money back?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not every employee has to file — but many choose to, because the average outcome of a voluntary return is a refund. Filing is usually mandatory if you and your spouse used the III/V class combination, if you had a second job in class VI, or if you received certain wage-replacement benefits. A voluntary return (Antragsveranlagung) can be filed up to four years back. Common refund triggers: a class change or wedding during the year, a job started or ended mid-year, and deductible costs such as a long commute. This is general information, not tax advice."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is a Minijob, and how is it taxed?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A Minijob is a small part-time job paying up to €603 a month in 2026. As the employee you normally pay no wage tax and no health, unemployment or care contributions on it; for pension insurance you top up 3.6% unless you apply for exemption, while your employer pays flat-rate charges instead. Minijob pay follows different rules from a regular salary, so this calculator — which models regular employment — does not apply to it."
+   }
+  }
+ ]
+}
 </script>
 <style>
 :root{--teal:#07332f;--teal2:#0b4f47;--gold:#c9a227;--gold2:#e8c95a;--bg:#f6f3ea;--card:#fff;--ink:#1c2422;--mut:#5a6a66}
@@ -154,7 +272,66 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="faq"><h3>Is the result exact?</h3><p>The wage tax is computed with the exact statutory §32a formula for 2026, including income splitting for class III. The net pay remains a careful estimate, because payroll derives taxable income in more detail (the Vorsorgepauschale) than this tool's lump-sum simplification — small differences from a real payslip are normal, but the structure and the big numbers are right.</p></div>
 </div>
 
-<div class="note"><strong>Privacy:</strong> this calculation runs 100% on your device — your salary never leaves your browser. <strong>Disclaimer:</strong> estimate only, not tax advice. The wage tax uses the exact statutory tariff of §32a EStG (2026; official law text at gesetze-im-internet.de) and the 2026 social-contribution rates and ceilings; taxable income is approximated with lump sums, so a real payslip can differ slightly. Figures last verified: 2 November 2026.</div>
+<div class="note"><strong>Privacy:</strong> this calculation runs 100% on your device — your salary never leaves your browser. <strong>Disclaimer:</strong> estimate only, not tax advice. The wage tax uses the exact statutory tariff of §32a EStG (2026; official law text at gesetze-im-internet.de) and the 2026 social-contribution rates and ceilings; taxable income is approximated with lump sums, so a real payslip can differ slightly. Figures last verified: 28 November 2026.</div>
+
+<div class="sec">
+<h2>How to use this calculator — 3 steps</h2>
+<ol style="margin-left:20px">
+<li><strong>Enter your gross annual salary</strong> in euros. If your offer is monthly, multiply it by 12 — German offers are usually quoted per year, before any deduction (Brutto).</li>
+<li><strong>Pick your tax class (Steuerklasse)</strong>, say whether you pay church tax, enter the number of children under 25, and adjust the health insurer's supplementary contribution if you know yours (2.9% is the 2026 average). Tick the childless box if it applies — it raises your care-insurance rate.</li>
+<li><strong>Read the itemised result:</strong> your net per month and per year, each of the four social contributions, the wage tax, any solidarity surcharge and church tax — the same lines you will see on a real German payslip (Lohnabrechnung).</li>
+</ol>
+</div>
+
+<div class="sec">
+<h2>Every deduction at a glance — 2026 rates</h2>
+<p>Your employer withholds three layers: the four social insurances below, wage tax under the §32a tariff, and — only where they apply — the solidarity surcharge (5.5% of the wage tax, above a high threshold) and church tax (8–9% of the wage tax, members only). The social rates and ceilings for 2026:</p>
+<table>
+<tr><th>Insurance</th><th>Total rate</th><th>You pay</th><th>Employer pays</th><th>Charged on gross up to</th></tr>
+<tr><td>Pension (Rentenversicherung)</td><td>18.6%</td><td>9.3%</td><td>9.3%</td><td>€101,400 / year</td></tr>
+<tr><td>Unemployment (Arbeitslosenversicherung)</td><td>2.6%</td><td>1.3%</td><td>1.3%</td><td>€101,400 / year</td></tr>
+<tr><td>Health (Krankenversicherung)</td><td>14.6% + your insurer's supplementary contribution (2.9% average in 2026)</td><td>7.3% + half the supplementary rate (≈ 8.75% at the average)</td><td>7.3% + half the supplementary rate (≈ 8.75%)</td><td>€69,750 / year</td></tr>
+<tr><td>Long-term care (Pflegeversicherung)</td><td>3.6% — 4.2% if childless and 23+</td><td>1.8% — 2.4% if childless and 23+; 0.25 points less per child from the second to the fifth under 25</td><td>1.8% (1.3% in Saxony, where you pay 2.3% — 2.9% if childless)</td><td>€69,750 / year</td></tr>
+</table>
+<p style="margin-top:8px">Above a ceiling, that contribution simply stops growing — which is why the share of gross you keep stops falling at high salaries. Accident insurance is paid by the employer alone and never appears in your deductions.</p>
+</div>
+
+<div class="sec">
+<h2>What common salaries leave you with in 2026</h2>
+<p>Computed with this calculator's own method, so the figures match what it shows: tax class I, childless and aged 23 or over, no church tax, health supplementary contribution at the 2026 average of 2.9%. The class III column assumes the splitting procedure for a married higher earner. All figures are estimates — your payslip can differ slightly, as explained below.</p>
+<table>
+<tr><th>Gross per year</th><th>Net per month (class I)</th><th>Net per year (class I)</th><th>You keep</th><th>Net per month (class III)</th></tr>
+<tr><td>€30,000</td><td>€1,779.17</td><td>€21,350</td><td>71.2%</td><td>€1,956.25</td></tr>
+<tr><td>€40,000</td><td>€2,256.17</td><td>€27,074</td><td>67.7%</td><td>€2,535.33</td></tr>
+<tr><td>€50,000</td><td>€2,715.50</td><td>€32,586</td><td>65.2%</td><td>€3,042.58</td></tr>
+<tr><td>€60,000</td><td>€3,157.17</td><td>€37,886</td><td>63.1%</td><td>€3,531.33</td></tr>
+<tr><td>€70,000</td><td>€3,582.66</td><td>€42,992</td><td>61.4%</td><td>€4,013.07</td></tr>
+<tr><td>€80,000</td><td>€4,045.32</td><td>€48,544</td><td>60.7%</td><td>€4,550.57</td></tr>
+<tr><td>€100,000</td><td>€4,895.05</td><td>€58,741</td><td>58.7%</td><td>€5,590.91</td></tr>
+<tr><td>€120,000</td><td>€5,771.83</td><td>€69,262</td><td>57.7%</td><td>€6,692.21</td></tr>
+</table>
+<p style="margin-top:8px">The share you keep falls as pay rises because the tax tariff is progressive — until the contribution ceilings bite and social contributions stop growing with the salary.</p>
+</div>
+
+<div class="sec">
+<h2>The six tax classes (Steuerklassen) at a glance</h2>
+<p>Your tax class decides how much wage tax your employer withholds each month — never how much tax you finally owe for the year. Any difference is settled in the annual income tax return.</p>
+<table>
+<tr><th>Class</th><th>Who it is for</th><th>How the withholding works</th></tr>
+<tr><td>I</td><td>Single, divorced, or widowed (from the year after the spouse's death); also married employees whose spouse lives permanently abroad</td><td>The standard tariff with the full basic allowance of €12,348 (2026)</td></tr>
+<tr><td>II</td><td>Single parents living with at least one child</td><td>Like class I, plus the single-parent relief of €4,260, so less tax is withheld</td></tr>
+<tr><td>III</td><td>Married higher earner whose partner is in class V or has no employment income; also widowed employees in the year of death and the year after</td><td>Income splitting: the tax is worked out on half the income and doubled — the lowest monthly withholding</td></tr>
+<tr><td>IV</td><td>Married couples where both earn a similar amount — the default combination</td><td>Withholding much like class I for each partner</td></tr>
+<tr><td>V</td><td>Married lower earner whose partner is in class III</td><td>No basic allowance, so tax is withheld from almost the first euro — the highest withholding of the married classes</td></tr>
+<tr><td>VI</td><td>A second job alongside your main job</td><td>No allowances at all; only the second job is taxed in this class</td></tr>
+</table>
+<p style="margin-top:8px">Married couples can switch between III/V and IV/IV (or IV with the factor method) — compare the combinations side by side in our <a href="../germany-tax-class-comparison-calculator/">Germany Tax Class Comparison Calculator</a>, and read the full walkthrough in our <a href="../guides/germany-gross-to-net-explained.html">guide to Germany gross to net, explained</a>.</p>
+</div>
+
+<div class="sec">
+<h2>What your employer pays on top of your salary</h2>
+<p>Your gross salary is not your employer's full cost. The employer pays roughly the same social contributions again on top — at the €60,000 worked example on this page (one child, no church tax) that is pension €5,580 + unemployment €780 + health €5,250 + care €1,080 = <strong>€12,690 a year, so the job costs the employer about €72,690 a year (€6,057.50 a month)</strong> before the employer-only accident insurance and the small U1/U2 and insolvency levies, which vary by employer and industry. None of that employer share is deducted from your pay — it is added to it.</p>
+</div>
 
 <div class="sec">
 <h2>How it works — the formula</h2>
@@ -166,7 +343,12 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="faq"><h3>At what salary does the solidarity surcharge actually start?</h3><p>Soli is 5.5% of your income tax, but only once that tax passes €20,350 a year (single) or €40,700 (joint assessment, e.g. class III), and it phases in gradually, capped at 11.9% of the excess. At €45,000 in class IV the tax is €5,470, so soli is €0; even at €120,000 in class I (tax €31,127) soli is only €1,282.46 a year, not the full 5.5%.</p></div>
 <div class="faq"><h3>Why is my health contribution not simply 14.6% of my salary?</h3><p>Because 14.6% is the combined employer-plus-employee rate. You pay 7.3%, plus half of your insurer's supplementary contribution (Zusatzbeitrag) — at the 2026 average of 2.9% that makes your share 8.75%. Your employer pays the other half, and both parts stop at the €69,750 ceiling.</p></div>
 <div class="faq"><h3>Does this calculator include my employer's contributions?</h3><p>No. It shows your payslip: only the employee shares are deducted from your gross. Your employer pays roughly the same again on top — their halves of the pension, unemployment, health and care contributions, plus accident insurance in full. That is employer cost, never part of your gross, and it does not appear in your net.</p></div>
-<div class="faq"><h3>Why does an extra euro of gross lose so much value in the middle income range?</h3><p>Between €17,800 and €69,878 of taxable income you are in the second progressive zone of the §32a tariff, where the marginal rate climbs steadily from about 24% to 42% — the formula is a curve, not steps. Stacked on roughly 21% of social contributions, each extra euro of gross can lose close to half its value before any church tax. The annual return, not the payslip, settles the final figure.</p></div>
+<div class="faq"><h3>Why does an extra euro of gross lose so much value in the middle income range?</h3><p>Between €17,800 and €69,878 of taxable income you are in the second progressive zone of the §32a tariff, where the marginal rate climbs steadily from about 24% to 42% — the formula is a curve, not steps. Stacked on roughly 21% of social contributions, each extra euro of gross can lose close to half its value before any church tax. The annual return, not the payslip, settles the final figure.</p></div><div class="faq"><h3>How much net do I keep from €50,000 a year?</h3><p>In tax class I, childless and aged 23 or over, with no church tax and the average 2.9% health supplementary contribution, this calculator gives social contributions of €10,875 and wage tax of €6,539 on a €50,000 gross salary — a net of €32,586 a year, €2,715.50 a month, so you keep 65.2% of gross. With a child the care rate is lower and the net slightly higher; in class III it is higher again. These are estimates, not a payslip.</p></div>
+<div class="faq"><h3>What gross salary do I need for €3,000 net a month?</h3><p>On the same assumptions as the table above (class I, childless, no church tax), you need a gross salary of roughly €56,400 a year to take home €3,000 a month in 2026. A married higher earner in class III reaches €3,000 net at a noticeably lower gross, because splitting lowers the monthly withholding — but the couple's final annual bill is settled in the joint tax return either way.</p></div>
+<div class="faq"><h3>What is the difference between Lohnsteuer and Einkommensteuer?</h3><p>They are the same tax collected in two steps. Lohnsteuer (wage tax) is the advance payment your employer withholds from every payslip and sends to the tax office, using your tax class. Einkommensteuer (income tax) is the final amount assessed on your annual income in your tax return. If more wage tax was withheld than the final bill, you get a refund; if less, you pay the difference.</p></div>
+<div class="faq"><h3>Do I have to file a German tax return, and can I get money back?</h3><p>Not every employee has to file — but many choose to, because the average outcome of a voluntary return is a refund. Filing is usually mandatory if you and your spouse used the III/V class combination, if you had a second job in class VI, or if you received certain wage-replacement benefits. A voluntary return (Antragsveranlagung) can be filed up to four years back. Common refund triggers: a class change or wedding during the year, a job started or ended mid-year, and deductible costs such as a long commute. This is general information, not tax advice.</p></div>
+<div class="faq"><h3>What is a Minijob, and how is it taxed?</h3><p>A Minijob is a small part-time job paying up to €603 a month in 2026. As the employee you normally pay no wage tax and no health, unemployment or care contributions on it; for pension insurance you top up 3.6% unless you apply for exemption, while your employer pays flat-rate charges instead. Minijob pay follows different rules from a regular salary, so this calculator — which models regular employment — does not apply to it.</p></div>
+
 </div>
 <div class="sec"><h2>More calculators</h2>
 <div class="links">
